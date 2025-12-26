@@ -1,0 +1,3 @@
+[submodule "mermaid"]
+	path = mermaid
+	url = https://github.com/jonkeda/mermaid.git
