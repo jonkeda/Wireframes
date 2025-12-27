@@ -44,7 +44,7 @@ wireframe sketch
 |---|---------|-------------|
 | 📝 | **Simple Syntax** | Keyword-based, easy to learn and remember |
 | 🎨 | **4 Themes** | Sketch, Blueprint, Clean, Realistic |
-| 🧩 | **40+ Controls** | Buttons, inputs, tables, navigation, and more |
+| 🧩 | **50+ Controls** | Buttons, inputs, tables, navigation, grids, and more |
 | 📐 | **6 Layouts** | Vertical, Horizontal, Grid, Dock, Canvas, Scroll |
 | ⚡ | **Live Preview** | See changes instantly in VS Code |
 | 🔌 | **Mermaid Plugin** | Use in any Mermaid-enabled environment |
@@ -82,6 +82,8 @@ Or search for **"Wireframe"** in VS Code Extensions (`Ctrl+Shift+X`).
 ✅ Error diagnostics  
 ✅ Export to SVG/PNG  
 ✅ Theme switching  
+✅ Zoom controls (Ctrl++, Ctrl+-, Ctrl+0)  
+✅ Mouse wheel zoom (Ctrl+scroll)  
 
 ---
 
@@ -156,8 +158,10 @@ wireframe [theme]       // Start (sketch|blueprint|clean|realistic)
 | **Layout** | `Vertical`, `Horizontal`, `Grid`, `Dock`, `Canvas`, `Scroll` |
 | **Sections** | `Card`, `Panel`, `Header`, `Footer`, `Sidebar`, `Window`, `Modal` |
 | **Navigation** | `Menu`, `MenuItem`, `Tabs`, `Tab`, `Breadcrumb`, `Pagination` |
-| **Data** | `Table`, `DataGrid`, `List`, `Tree` |
+| **Data** | `Table`, `DataGrid`, `List`, `Tree`, `Row`, `Cell` |
+| **DataGrid Columns** | `ColumnText`, `ColumnDate`, `ColumnNumber`, `ColumnCheckbox`, `ColumnImage`, `ColumnLink`, `ColumnButton` |
 | **Feedback** | `Alert`, `Toast`, `Dialog`, `Progress`, `Badge` |
+| **Visual** | `Avatar` (with sizes), `Badge` (with variants), `Icon`, `Image` |
 
 ### Attributes
 
@@ -166,6 +170,10 @@ Button "Label" primary              // Style modifier
 TextInput "Name" :txtName required  // ID and validation
 Vertical gap=16 padding=24          // Layout properties
 Icon $settings                      // Icon reference
+Avatar "JD" size=lg circle          // Avatar with size
+Badge "New" variant=success         // Badge with variant
+Button "Cell" grid=0,1,1,2          // Grid positioning
+Button "Abs" canvas=100,50          // Canvas positioning
 ```
 
 ---

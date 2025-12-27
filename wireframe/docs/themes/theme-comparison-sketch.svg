@@ -9,20 +9,20 @@
   </style>
   
   <rect width="100%" height="100%" fill="#fefefe" />
-  <text x="16" y="31" class="wire-text wire-text-bold">Component Showcase</text><text x="16" y="71" class="wire-text">Standard components that demonstrate theme differences.</text><line x1="16" y1="96" x2="216" y2="96" stroke="#888888" stroke-width="1" /><rect x="16" y="117" width="768" height="667" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><text x="32" y="148" class="wire-text wire-text-bold">Buttons</text><g opacity="1">
-      <rect x="32" y="161" width="100" height="36" rx="0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+  <text x="16" y="31" class="wire-text wire-text-bold">Component Showcase</text><text x="16" y="71" class="wire-text">Standard components that demonstrate theme differences.</text><line x1="16" y1="96" x2="216" y2="96" stroke="#888888" stroke-width="1" /><path d="M16.0 117.7 Q400.0 121.6 784.0 117.4 M784.7 117.0 Q786.4 450.5 783.4 784.0 M784.0 783.2 Q400.0 780.3 16.0 784.6 M15.4 784.0 Q12.7 450.5 15.5 117.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><text x="32" y="148" class="wire-text wire-text-bold">Buttons</text><g opacity="1">
+      <path d="M32.0 161.5 Q82.0 158.9 132.0 161.1 M133.0 161.0 Q135.1 179.0 131.3 197.0 M132.0 196.4 Q82.0 195.5 32.0 197.3 M31.2 197.0 Q28.1 179.0 31.2 161.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
       <text x="82" y="184" text-anchor="middle" class="wire-text" fill="#ffffff">Primary</text>
     </g><g opacity="1">
-      <rect x="140" y="161" width="104" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <path d="M140.0 162.4 Q192.0 154.1 244.0 160.1 M244.0 161.0 Q244.7 179.0 245.4 197.0 M244.0 198.5 Q192.0 205.2 140.0 197.3 M140.1 197.0 Q142.2 179.0 140.5 161.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
       <text x="192" y="184" text-anchor="middle" class="wire-text" fill="#333333">Secondary</text>
     </g><g opacity="1">
-      <rect x="252" y="161" width="100" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <path d="M252.0 160.1 Q302.0 160.4 352.0 160.5 M351.4 161.0 Q353.5 179.0 352.7 197.0 M352.0 197.8 Q302.0 195.6 252.0 197.2 M252.8 197.0 Q247.6 179.0 250.6 161.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
       <text x="302" y="184" text-anchor="middle" class="wire-text" fill="#333333">Default</text>
     </g><g opacity="0.5">
-      <rect x="360" y="161" width="100" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <path d="M360.0 160.7 Q410.0 154.7 460.0 159.9 M458.7 161.0 Q458.6 179.0 459.3 197.0 M460.0 197.1 Q410.0 205.9 360.0 195.8 M361.4 197.0 Q360.3 179.0 359.7 161.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
       <text x="410" y="184" text-anchor="middle" class="wire-text" fill="#333333">Disabled</text>
-    </g><rect x="16" y="804" width="768" height="200" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><text x="32" y="835" class="wire-text wire-text-bold">Form Controls</text><g>
-      <rect x="32" y="848" width="200" height="36" rx="0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+    </g><path d="M16.0 802.7 Q400.0 804.0 784.0 804.5 M783.7 804.0 Q789.5 904.0 783.4 1004.0 M784.0 1005.2 Q400.0 1000.9 16.0 1004.6 M16.4 1004.0 Q9.6 904.0 17.2 804.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><text x="32" y="835" class="wire-text wire-text-bold">Form Controls</text><g>
+      <path d="M32.0 847.0 Q132.0 849.5 232.0 848.2 M231.4 848.0 Q232.5 866.0 232.0 884.0 M232.0 884.9 Q132.0 879.4 32.0 884.8 M32.7 884.0 Q30.4 866.0 31.0 848.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
       <text x="44" y="871" class="wire-text wire-text-secondary">Text input</text>
       
     </g><g>
@@ -34,7 +34,7 @@
       <line x1="950" y1="916" x2="1150" y2="916" stroke="#888888" stroke-width="4" stroke-linecap="round" />
       <line x1="950" y1="916" x2="1050" y2="916" stroke="#4a90d9" stroke-width="4" stroke-linecap="round" />
       <circle cx="1050" cy="916" r="8" fill="#4a90d9" stroke="#fefefe" stroke-width="2" />
-    </g><rect x="16" y="1024" width="768" height="128" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><text x="32" y="1055" class="wire-text wire-text-bold">Progress &amp; Status</text><text x="32" y="1083" class="wire-text">Progress Bars</text><g>
+    </g><path d="M16.0 1024.8 Q400.0 1027.1 784.0 1022.9 M784.6 1024.0 Q786.8 1088.0 783.3 1152.0 M784.0 1151.0 Q400.0 1149.8 16.0 1151.2 M15.5 1152.0 Q13.8 1088.0 16.3 1024.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><text x="32" y="1055" class="wire-text wire-text-bold">Progress &amp; Status</text><text x="32" y="1083" class="wire-text">Progress Bars</text><g>
       <rect x="32" y="1092" width="200" height="8" rx="4" fill="#f5f5f5" />
       <rect x="32" y="1092" width="50" height="8" rx="4" fill="#4a90d9" />
     </g><g>
@@ -58,17 +58,17 @@
     </g><g>
       <rect x="868" y="1092" width="24" height="24" rx="12" fill="#6c757d" />
       <text x="880" y="1108" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
-    </g><rect x="16" y="1172" width="768" height="388" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><text x="32" y="1203" class="wire-text wire-text-bold">Navigation</text><rect x="32" y="1216" width="736" height="184" fill="none" stroke="#888888" stroke-width="2" /><g>
+    </g><path d="M16.0 1170.6 Q400.0 1166.6 784.0 1172.7 M783.8 1172.0 Q780.1 1366.0 784.1 1560.0 M784.0 1561.2 Q400.0 1563.6 16.0 1560.0 M16.3 1560.0 Q21.9 1366.0 16.1 1172.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><text x="32" y="1203" class="wire-text wire-text-bold">Navigation</text><path d="M32.0 1215.6 Q400.0 1213.5 768.0 1214.9 M766.9 1216.0 Q765.5 1308.0 769.0 1400.0 M768.0 1400.3 Q400.0 1405.9 32.0 1398.5 M33.3 1400.0 Q37.6 1308.0 32.9 1216.0" fill="none" stroke="#888888" stroke-width="2" /><g>
       <text x="48" y="1439" class="wire-text" fill="#4a90d9" style="text-decoration: underline">Link</text>
     </g><g>
       <text x="48" y="1467" class="wire-text" fill="#4a90d9" style="text-decoration: underline">Link</text>
     </g><g>
       <text x="48" y="1495" class="wire-text" fill="#4a90d9" style="text-decoration: underline">Link</text>
-    </g><text x="48" y="1523" class="wire-text">Current Page</text><rect x="16" y="1580" width="768" height="180" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><text x="32" y="1611" class="wire-text wire-text-bold">Cards</text><rect x="32" y="1624" width="736" height="116" rx="0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" /><text x="48" y="1655" class="wire-text wire-text-bold">Card Title</text><text x="48" y="1679" class="wire-text">Card content goes here with some description text.</text><g opacity="1">
-      <rect x="48" y="1688" width="100" height="36" rx="0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+    </g><text x="48" y="1523" class="wire-text">Current Page</text><path d="M16.0 1579.6 Q400.0 1572.5 784.0 1580.7 M782.8 1580.0 Q784.8 1670.0 783.5 1760.0 M784.0 1760.3 Q400.0 1768.4 16.0 1758.7 M17.3 1760.0 Q18.3 1670.0 15.5 1580.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><text x="32" y="1611" class="wire-text wire-text-bold">Cards</text><path d="M32.0 1624.2 Q400.0 1629.5 768.0 1625.3 M769.3 1624.0 Q770.0 1682.0 766.5 1740.0 M768.0 1739.7 Q400.0 1732.5 32.0 1741.4 M30.9 1740.0 Q33.1 1682.0 32.4 1624.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><text x="48" y="1655" class="wire-text wire-text-bold">Card Title</text><text x="48" y="1679" class="wire-text">Card content goes here with some description text.</text><g opacity="1">
+      <path d="M48.0 1688.7 Q98.0 1688.4 148.0 1688.5 M148.8 1688.0 Q152.7 1706.0 147.4 1724.0 M148.0 1723.2 Q98.0 1724.5 48.0 1724.6 M47.4 1724.0 Q45.3 1706.0 49.2 1688.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
       <text x="98" y="1711" text-anchor="middle" class="wire-text" fill="#ffffff">Action</text>
-    </g><rect x="780" y="1624" width="-12" height="120" rx="0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" /><g>
+    </g><path d="M780.0 1623.6 Q774.0 1624.0 768.0 1623.5 M769.0 1624.0 Q767.8 1684.0 768.7 1744.0 M768.0 1744.5 Q774.0 1743.2 780.0 1743.5 M779.1 1744.0 Q782.3 1684.0 779.6 1624.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g>
       <circle cx="816" cy="1660" r="20" fill="#4a90d9" />
-      <text x="816" y="1665" text-anchor="middle" class="wire-text" fill="#ffffff">J</text>
+      <text x="816" y="1664.4444444444443" text-anchor="middle" class="wire-text" style="font-size: 13.333333333333334px" fill="#ffffff">J</text>
     </g><text x="796" y="1699" class="wire-text wire-text-bold">John Doe</text><text x="796" y="1723" class="wire-text">Developer</text>
 </svg>

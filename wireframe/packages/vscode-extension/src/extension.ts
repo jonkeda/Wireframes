@@ -11,6 +11,7 @@ import { compile, parse } from '@jonkeda/wireframe-core';
 let previewPanel: vscode.WebviewPanel | undefined;
 let diagnosticCollection: vscode.DiagnosticCollection;
 let currentTheme = 'clean';
+let currentZoom = 100;
 
 /**
  * Activate the extension
@@ -87,6 +88,31 @@ export function activate(context: vscode.ExtensionContext): void {
     }
   });
   
+  // Zoom commands
+  const zoomInCommand = vscode.commands.registerCommand('wireframe.zoomIn', () => {
+    currentZoom = Math.min(200, currentZoom + 25);
+    const editor = vscode.window.activeTextEditor;
+    if (editor && previewPanel) {
+      updatePreview(editor.document);
+    }
+  });
+  
+  const zoomOutCommand = vscode.commands.registerCommand('wireframe.zoomOut', () => {
+    currentZoom = Math.max(25, currentZoom - 25);
+    const editor = vscode.window.activeTextEditor;
+    if (editor && previewPanel) {
+      updatePreview(editor.document);
+    }
+  });
+  
+  const zoomResetCommand = vscode.commands.registerCommand('wireframe.zoomReset', () => {
+    currentZoom = 100;
+    const editor = vscode.window.activeTextEditor;
+    if (editor && previewPanel) {
+      updatePreview(editor.document);
+    }
+  });
+  
   // Watch for document changes
   const changeWatcher = vscode.workspace.onDidChangeTextDocument((event) => {
     if (event.document.languageId === 'wireframe') {
@@ -142,6 +168,9 @@ export function activate(context: vscode.ExtensionContext): void {
     validateCommand,
     changeThemeCommand,
     insertSnippetCommand,
+    zoomInCommand,
+    zoomOutCommand,
+    zoomResetCommand,
     changeWatcher,
     openWatcher,
     saveWatcher,
@@ -243,6 +272,10 @@ function updatePreview(document: vscode.TextDocument): void {
           background: var(--vscode-editor-background);
           font-family: var(--vscode-font-family);
           color: var(--vscode-foreground);
+          height: 100vh;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
         }
         .toolbar {
           display: flex;
@@ -251,6 +284,7 @@ function updatePreview(document: vscode.TextDocument): void {
           padding: 8px;
           background: var(--vscode-sideBar-background);
           border-radius: 4px;
+          flex-shrink: 0;
         }
         .toolbar-btn {
           padding: 4px 12px;
@@ -260,9 +294,19 @@ function updatePreview(document: vscode.TextDocument): void {
           border-radius: 4px;
           cursor: pointer;
           font-size: 12px;
+          min-width: 32px;
         }
         .toolbar-btn:hover {
           background: var(--vscode-button-hoverBackground);
+        }
+        .toolbar-btn:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
+        .toolbar-separator {
+          width: 1px;
+          background: var(--vscode-panel-border);
+          margin: 0 4px;
         }
         .toolbar-info {
           margin-left: auto;
@@ -270,12 +314,29 @@ function updatePreview(document: vscode.TextDocument): void {
           color: var(--vscode-descriptionForeground);
           align-self: center;
         }
+        .zoom-display {
+          font-size: 12px;
+          min-width: 50px;
+          text-align: center;
+          align-self: center;
+          color: var(--vscode-foreground);
+        }
+        .preview-container {
+          flex: 1;
+          overflow: auto;
+          background: #f0f0f0;
+          border-radius: 8px;
+          padding: 16px;
+        }
         .preview {
           background: white;
           border-radius: 8px;
           box-shadow: 0 2px 8px rgba(0,0,0,0.1);
           padding: 16px;
-          overflow: auto;
+          display: inline-block;
+          transform-origin: top left;
+          transform: scale(${currentZoom / 100});
+          min-width: ${width}px;
         }
         .errors {
           background: var(--vscode-inputValidation-warningBackground);
@@ -283,6 +344,7 @@ function updatePreview(document: vscode.TextDocument): void {
           border-radius: 4px;
           padding: 12px;
           margin-bottom: 16px;
+          flex-shrink: 0;
         }
         .error-title {
           font-weight: bold;
@@ -294,22 +356,109 @@ function updatePreview(document: vscode.TextDocument): void {
           font-family: var(--vscode-editor-font-family);
         }
         svg {
-          max-width: 100%;
-          height: auto;
+          display: block;
         }
       </style>
     </head>
     <body>
       <div class="toolbar">
+        <button class="toolbar-btn" onclick="zoomOut()" title="Zoom Out (Ctrl+-)">−</button>
+        <span class="zoom-display">${currentZoom}%</span>
+        <button class="toolbar-btn" onclick="zoomIn()" title="Zoom In (Ctrl++)">+</button>
+        <button class="toolbar-btn" onclick="zoomReset()" title="Reset Zoom">100%</button>
+        <button class="toolbar-btn" onclick="zoomFit()" title="Fit to Window">Fit</button>
+        <div class="toolbar-separator"></div>
         <span class="toolbar-info">Theme: ${currentTheme} | ${width}×${height}</span>
       </div>
       ${errorHtml}
-      <div class="preview">
-        ${svg}
+      <div class="preview-container" id="previewContainer">
+        <div class="preview" id="preview">
+          ${svg}
+        </div>
       </div>
+      <script>
+        const vscode = acquireVsCodeApi();
+        let zoom = ${currentZoom};
+        
+        function updateZoom(newZoom) {
+          zoom = Math.max(25, Math.min(200, newZoom));
+          document.querySelector('.zoom-display').textContent = zoom + '%';
+          document.getElementById('preview').style.transform = 'scale(' + (zoom / 100) + ')';
+        }
+        
+        function zoomIn() {
+          vscode.postMessage({ command: 'zoomIn' });
+        }
+        
+        function zoomOut() {
+          vscode.postMessage({ command: 'zoomOut' });
+        }
+        
+        function zoomReset() {
+          vscode.postMessage({ command: 'zoomReset' });
+        }
+        
+        function zoomFit() {
+          const container = document.getElementById('previewContainer');
+          const preview = document.getElementById('preview');
+          const svg = preview.querySelector('svg');
+          if (!svg) return;
+          
+          const containerWidth = container.clientWidth - 32;
+          const containerHeight = container.clientHeight - 32;
+          const svgWidth = svg.getAttribute('width') || ${width};
+          const svgHeight = svg.getAttribute('height') || ${height};
+          
+          const scaleX = containerWidth / svgWidth;
+          const scaleY = containerHeight / svgHeight;
+          const newZoom = Math.floor(Math.min(scaleX, scaleY) * 100);
+          
+          updateZoom(newZoom);
+        }
+        
+        // Mouse wheel zoom
+        document.getElementById('previewContainer').addEventListener('wheel', function(e) {
+          if (e.ctrlKey) {
+            e.preventDefault();
+            const delta = e.deltaY > 0 ? -10 : 10;
+            updateZoom(zoom + delta);
+          }
+        }, { passive: false });
+        
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+          if (e.ctrlKey) {
+            if (e.key === '=' || e.key === '+') {
+              e.preventDefault();
+              zoomIn();
+            } else if (e.key === '-') {
+              e.preventDefault();
+              zoomOut();
+            } else if (e.key === '0') {
+              e.preventDefault();
+              zoomReset();
+            }
+          }
+        });
+      </script>
     </body>
     </html>
   `;
+  
+  // Handle messages from webview
+  previewPanel.webview.onDidReceiveMessage(message => {
+    switch (message.command) {
+      case 'zoomIn':
+        vscode.commands.executeCommand('wireframe.zoomIn');
+        break;
+      case 'zoomOut':
+        vscode.commands.executeCommand('wireframe.zoomOut');
+        break;
+      case 'zoomReset':
+        vscode.commands.executeCommand('wireframe.zoomReset');
+        break;
+    }
+  });
 }
 
 /**

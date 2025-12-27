@@ -12,6 +12,7 @@ import {
 } from '../parser/ast.js';
 import { Theme, getTheme } from './theme.js';
 import { LayoutEngine, LayoutInfo, BoundingBox } from './layout.js';
+import { sketchyRect, sketchyRoundedRect, sketchyLine, sketchyCircle } from './sketch.js';
 
 /**
  * Render options
@@ -207,6 +208,10 @@ export class SVGRenderer {
         return this.renderPagination(node, bounds);
       case 'Table':
         return this.renderTable(node, bounds);
+      case 'Row':
+        return this.renderRow(node, bounds);
+      case 'Cell':
+        return this.renderCell(node, bounds);
       case 'Tree':
         return this.renderTree(node, bounds);
       case 'TreeItem':
@@ -217,6 +222,22 @@ export class SVGRenderer {
         return this.renderAccordionSection(node, bounds);
       case 'DataGrid':
         return this.renderDataGrid(node, bounds);
+      case 'Column':
+        return this.renderColumn(node, bounds);
+      case 'ColumnText':
+        return this.renderColumn(node, bounds);
+      case 'ColumnDate':
+        return this.renderColumn(node, bounds);
+      case 'ColumnNumber':
+        return this.renderColumn(node, bounds);
+      case 'ColumnCheckbox':
+        return this.renderColumn(node, bounds);
+      case 'ColumnImage':
+        return this.renderColumn(node, bounds);
+      case 'ColumnLink':
+        return this.renderColumn(node, bounds);
+      case 'ColumnButton':
+        return this.renderColumn(node, bounds);
       case 'Heading':
         return this.renderHeading(node, bounds);
       case 'Link':
@@ -244,8 +265,15 @@ export class SVGRenderer {
     const textColor = isPrimary ? this.theme.colors.primaryText : this.theme.colors.text;
     const opacity = isDisabled ? 0.5 : 1;
 
+    const rect = this.createRect(x, y, width, height, {
+      rx: this.theme.borders.radius,
+      fill: bgColor,
+      stroke: this.theme.colors.border,
+      strokeWidth: this.theme.borders.width,
+    });
+
     return `<g opacity="${opacity}">
-      <rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${this.theme.borders.radius}" fill="${bgColor}" stroke="${this.theme.colors.border}" stroke-width="${this.theme.borders.width}" />
+      ${rect}
       <text x="${x + width / 2}" y="${y + height / 2 + 5}" text-anchor="middle" class="wire-text" fill="${textColor}">${this.escapeXml(node.text || 'Button')}</text>
     </g>`;
   }
@@ -293,8 +321,15 @@ export class SVGRenderer {
       typeIndicator = '123';
     }
 
+    const rect = this.createRect(x, y, width, height, {
+      rx: this.theme.borders.radius,
+      fill: this.theme.colors.inputBackground,
+      stroke: this.theme.colors.border,
+      strokeWidth: this.theme.borders.width,
+    });
+
     return `<g>
-      <rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${this.theme.borders.radius}" fill="${this.theme.colors.inputBackground}" stroke="${this.theme.colors.border}" stroke-width="${this.theme.borders.width}" />
+      ${rect}
       <text x="${x + 12}" y="${y + height / 2 + 5}" class="wire-text wire-text-secondary">${this.escapeXml(typeIndicator || placeholder)}</text>
       ${node.modifiers.required ? `<text x="${x + width - 12}" y="${y + height / 2 + 5}" text-anchor="end" fill="${this.theme.colors.error}">*</text>` : ''}
     </g>`;
@@ -462,8 +497,18 @@ export class SVGRenderer {
    * Render an avatar
    */
   private renderAvatar(node: ControlNode, bounds: BoundingBox): string {
-    const { x, y, width, height } = bounds;
-    const size = Math.min(width, height);
+    const { x, y } = bounds;
+    
+    // Size variants: xs=24, sm=32, md=40, lg=56, xl=80
+    const sizeVariants: Record<string, number> = {
+      xs: 24,
+      sm: 32,
+      md: 40,
+      lg: 56,
+      xl: 80,
+    };
+    const sizeAttr = (node.attributes['size'] as string) || 'md';
+    const size = sizeVariants[sizeAttr] || sizeVariants.md;
     const cx = x + size / 2;
     const cy = y + size / 2;
 
@@ -476,9 +521,12 @@ export class SVGRenderer {
       .substring(0, 2)
       .toUpperCase();
 
+    // Adjust font size based on avatar size
+    const fontSize = Math.max(10, size / 3);
+
     return `<g>
       <circle cx="${cx}" cy="${cy}" r="${size / 2}" fill="${this.theme.colors.primary}" />
-      <text x="${cx}" y="${cy + 5}" text-anchor="middle" class="wire-text" fill="${this.theme.colors.primaryText}">${initials || '?'}</text>
+      <text x="${cx}" y="${cy + fontSize / 3}" text-anchor="middle" class="wire-text" style="font-size: ${fontSize}px" fill="${this.theme.colors.primaryText}">${initials || '?'}</text>
     </g>`;
   }
 
@@ -558,19 +606,21 @@ export class SVGRenderer {
     const { x, y, width, height } = bounds;
     const variant = (node.attributes['variant'] as string) || 'default';
     
-    const variantColors: Record<string, string> = {
-      default: this.theme.colors.secondary,
-      primary: this.theme.colors.primary,
-      success: this.theme.colors.success,
-      warning: this.theme.colors.warning,
-      error: this.theme.colors.error,
-      info: this.theme.colors.info,
+    const variantColors: Record<string, { bg: string; text: string }> = {
+      default: { bg: this.theme.colors.secondary, text: this.theme.colors.primaryText },
+      primary: { bg: this.theme.colors.primary, text: this.theme.colors.primaryText },
+      secondary: { bg: this.theme.colors.secondary, text: this.theme.colors.primaryText },
+      success: { bg: this.theme.colors.success, text: '#ffffff' },
+      warning: { bg: this.theme.colors.warning, text: '#000000' },
+      error: { bg: this.theme.colors.error, text: '#ffffff' },
+      danger: { bg: this.theme.colors.error, text: '#ffffff' },
+      info: { bg: this.theme.colors.info, text: '#000000' },
     };
-    const bgColor = variantColors[variant] || variantColors.default;
+    const colors = variantColors[variant] || variantColors.default;
 
     return `<g>
-      <rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${height / 2}" fill="${bgColor}" />
-      <text x="${x + width / 2}" y="${y + height / 2 + 4}" text-anchor="middle" class="wire-text wire-text-small" fill="${this.theme.colors.primaryText}">${this.escapeXml(node.text || '')}</text>
+      <rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${height / 2}" fill="${colors.bg}" />
+      <text x="${x + width / 2}" y="${y + height / 2 + 4}" text-anchor="middle" class="wire-text wire-text-small" fill="${colors.text}">${this.escapeXml(node.text || '')}</text>
     </g>`;
   }
 
@@ -764,21 +814,23 @@ export class SVGRenderer {
     const { x, y, width, height } = bounds;
     const level = (node.attributes['level'] as number) || 0;
     const expanded = node.modifiers.expanded;
+    const hasChildren = node.children && node.children.length > 0;
     const indent = level * 20;
     
     let svg = `<rect x="${x}" y="${y}" width="${width}" height="${height}" fill="transparent" />`;
     
-    // Expand/collapse icon
+    // Expand/collapse icon - only show if node has children
     const iconX = x + indent + 4;
     const iconY = y + height / 2;
-    if (expanded !== undefined) {
+    if (hasChildren) {
       svg += expanded
         ? `<path d="M${iconX} ${iconY - 4} L${iconX + 8} ${iconY - 4} L${iconX + 4} ${iconY + 4} Z" fill="${this.theme.colors.textSecondary}" />`
         : `<path d="M${iconX} ${iconY - 4} L${iconX + 8} ${iconY} L${iconX} ${iconY + 4} Z" fill="${this.theme.colors.textSecondary}" />`;
     }
     
-    // Text
-    svg += `<text x="${x + indent + 24}" y="${y + height / 2 + 5}" class="wire-text">${this.escapeXml(node.text || 'Tree Item')}</text>`;
+    // Text - adjust position based on whether there's an expand icon
+    const textX = hasChildren ? x + indent + 24 : x + indent + 8;
+    svg += `<text x="${textX}" y="${y + height / 2 + 5}" class="wire-text">${this.escapeXml(node.text || 'Tree Item')}</text>`;
 
     return `<g>${svg}</g>`;
   }
@@ -819,31 +871,61 @@ export class SVGRenderer {
   }
 
   /**
-   * Render a data grid
+   * Render a data grid with typed columns and sample data
    */
   private renderDataGrid(node: ControlNode, bounds: BoundingBox): string {
     const { x, y, width, height } = bounds;
     const rows = (node.attributes['rows'] as number) || 5;
-    const cols = (node.attributes['cols'] as number) || 4;
     const headerHeight = 40;
+    const showSelection = node.modifiers.selected; // Enable row selection checkboxes
+    
+    // Get column definitions from children or use defaults
+    const columnChildren = node.children?.filter(
+      (c) => c.controlType?.startsWith('Column') || c.controlType === 'Column'
+    ) || [];
+    const cols = columnChildren.length > 0 ? columnChildren.length : (node.attributes['cols'] as number) || 4;
+    
+    // Calculate column widths
+    const selectionColWidth = showSelection ? 40 : 0;
+    const availableWidth = width - selectionColWidth;
+    const colWidth = availableWidth / cols;
     const rowHeight = Math.min(36, (height - headerHeight) / (rows - 1));
-    const colWidth = width / cols;
 
     let svg = `<rect x="${x}" y="${y}" width="${width}" height="${height}" fill="${this.theme.colors.background}" stroke="${this.theme.colors.border}" stroke-width="${this.theme.borders.width}" />`;
 
-    // Header row with sort indicators
+    // Header row background
     svg += `<rect x="${x}" y="${y}" width="${width}" height="${headerHeight}" fill="${this.theme.colors.surface}" />`;
+    
+    // Selection column header (checkbox)
+    if (showSelection) {
+      const checkX = x + (selectionColWidth - 14) / 2;
+      const checkY = y + (headerHeight - 14) / 2;
+      svg += `<rect x="${checkX}" y="${checkY}" width="14" height="14" rx="2" fill="${this.theme.colors.inputBackground}" stroke="${this.theme.colors.border}" stroke-width="1" />`;
+      svg += `<line x1="${x + selectionColWidth}" y1="${y}" x2="${x + selectionColWidth}" y2="${y + height}" stroke="${this.theme.colors.border}" stroke-width="1" />`;
+    }
+    
+    // Column headers
     for (let c = 0; c < cols; c++) {
-      const cellX = x + c * colWidth;
+      const cellX = x + selectionColWidth + c * colWidth;
       if (c > 0) {
         svg += `<line x1="${cellX}" y1="${y}" x2="${cellX}" y2="${y + height}" stroke="${this.theme.colors.border}" stroke-width="1" />`;
       }
-      svg += `<text x="${cellX + 12}" y="${y + headerHeight / 2 + 5}" class="wire-text wire-text-bold wire-text-small">Column ${c + 1}</text>`;
+      
+      // Get column info from children if available
+      const colDef = columnChildren[c];
+      const colName = colDef?.text || `Column ${c + 1}`;
+      const colType = colDef?.controlType || 'ColumnText';
+      
+      svg += `<text x="${cellX + 12}" y="${y + headerHeight / 2 + 5}" class="wire-text wire-text-bold wire-text-small">${this.escapeXml(colName)}</text>`;
+      
       // Sort indicator
       svg += `<path d="M${cellX + colWidth - 20} ${y + headerHeight / 2 - 2} L${cellX + colWidth - 16} ${y + headerHeight / 2 - 6} L${cellX + colWidth - 12} ${y + headerHeight / 2 - 2}" stroke="${this.theme.colors.textSecondary}" stroke-width="1" fill="none" />`;
+      
+      // Type indicator for typed columns
+      svg += this.renderColumnTypeIcon(colType, cellX + colWidth - 36, y + headerHeight / 2);
     }
 
-    // Rows with alternating background
+    // Data rows with alternating background
     for (let r = 1; r < rows; r++) {
       const rowY = y + headerHeight + (r - 1) * rowHeight;
       if (r % 2 === 0) {
@@ -851,12 +933,179 @@ export class SVGRenderer {
       }
       svg += `<line x1="${x}" y1="${rowY}" x2="${x + width}" y2="${rowY}" stroke="${this.theme.colors.border}" stroke-width="1" />`;
       
-      // First column checkbox
-      const checkX = x + 8;
-      const checkY = rowY + (rowHeight - 14) / 2;
-      svg += `<rect x="${checkX}" y="${checkY}" width="14" height="14" rx="2" fill="${this.theme.colors.inputBackground}" stroke="${this.theme.colors.border}" stroke-width="1" />`;
+      // Selection checkbox
+      if (showSelection) {
+        const checkX = x + (selectionColWidth - 14) / 2;
+        const checkY = rowY + (rowHeight - 14) / 2;
+        svg += `<rect x="${checkX}" y="${checkY}" width="14" height="14" rx="2" fill="${this.theme.colors.inputBackground}" stroke="${this.theme.colors.border}" stroke-width="1" />`;
+      }
+      
+      // Render sample data for each column
+      for (let c = 0; c < cols; c++) {
+        const cellX = x + selectionColWidth + c * colWidth;
+        const colDef = columnChildren[c];
+        const colType = colDef?.controlType || 'ColumnText';
+        svg += this.renderSampleData(colType, cellX, rowY, colWidth, rowHeight, r);
+      }
     }
 
+    return `<g>${svg}</g>`;
+  }
+
+  /**
+   * Render column type indicator icon
+   */
+  private renderColumnTypeIcon(colType: string, x: number, y: number): string {
+    switch (colType) {
+      case 'ColumnDate':
+        return `<text x="${x}" y="${y + 4}" class="wire-text wire-text-small wire-text-secondary">📅</text>`;
+      case 'ColumnNumber':
+        return `<text x="${x}" y="${y + 4}" class="wire-text wire-text-small wire-text-secondary" font-family="monospace">#</text>`;
+      case 'ColumnCheckbox':
+        return `<rect x="${x}" y="${y - 5}" width="10" height="10" rx="2" fill="none" stroke="${this.theme.colors.textSecondary}" stroke-width="1" />`;
+      case 'ColumnImage':
+        return `<rect x="${x}" y="${y - 5}" width="10" height="10" rx="1" fill="none" stroke="${this.theme.colors.textSecondary}" stroke-width="1" /><line x1="${x + 2}" y1="${y + 3}" x2="${x + 8}" y2="${y - 3}" stroke="${this.theme.colors.textSecondary}" stroke-width="1" />`;
+      case 'ColumnLink':
+        return `<text x="${x}" y="${y + 4}" class="wire-text wire-text-small" fill="${this.theme.colors.primary}">🔗</text>`;
+      case 'ColumnButton':
+        return `<rect x="${x}" y="${y - 4}" width="12" height="8" rx="2" fill="none" stroke="${this.theme.colors.textSecondary}" stroke-width="1" />`;
+      default:
+        return '';
+    }
+  }
+
+  /**
+   * Render sample data based on column type
+   */
+  private renderSampleData(colType: string, x: number, y: number, width: number, height: number, rowIndex: number): string {
+    const textY = y + height / 2 + 4;
+    const textX = x + 12;
+    
+    switch (colType) {
+      case 'ColumnDate':
+        const month = ((rowIndex * 3) % 12) + 1;
+        const day = ((rowIndex * 7) % 28) + 1;
+        return `<text x="${textX}" y="${textY}" class="wire-text wire-text-small wire-text-secondary">${month.toString().padStart(2, '0')}/${day.toString().padStart(2, '0')}/2024</text>`;
+      
+      case 'ColumnNumber':
+        const num = (rowIndex * 123 + 42).toString();
+        return `<text x="${textX}" y="${textY}" class="wire-text wire-text-small wire-text-secondary" font-family="monospace">${num}</text>`;
+      
+      case 'ColumnCheckbox':
+        const checked = rowIndex % 3 === 0;
+        const checkX = x + (width - 14) / 2;
+        const checkY = y + (height - 14) / 2;
+        let svg = `<rect x="${checkX}" y="${checkY}" width="14" height="14" rx="2" fill="${this.theme.colors.inputBackground}" stroke="${this.theme.colors.border}" stroke-width="1" />`;
+        if (checked) {
+          svg += `<path d="M${checkX + 3} ${checkY + 7} L${checkX + 6} ${checkY + 10} L${checkX + 11} ${checkY + 4}" stroke="${this.theme.colors.primary}" stroke-width="2" fill="none" />`;
+        }
+        return svg;
+      
+      case 'ColumnImage':
+        const imgSize = Math.min(height - 8, 28);
+        const imgX = x + 8;
+        const imgY = y + (height - imgSize) / 2;
+        return `<rect x="${imgX}" y="${imgY}" width="${imgSize}" height="${imgSize}" rx="4" fill="${this.theme.colors.surface}" stroke="${this.theme.colors.border}" stroke-width="1" />`;
+      
+      case 'ColumnLink':
+        return `<text x="${textX}" y="${textY}" class="wire-text wire-text-small" fill="${this.theme.colors.primary}" style="text-decoration: underline">Link ${rowIndex}</text>`;
+      
+      case 'ColumnButton':
+        const btnWidth = width - 24;
+        const btnHeight = height - 12;
+        const btnX = x + 12;
+        const btnY = y + 6;
+        return `<rect x="${btnX}" y="${btnY}" width="${btnWidth}" height="${btnHeight}" rx="4" fill="${this.theme.colors.buttonBackground}" stroke="${this.theme.colors.border}" stroke-width="1" /><text x="${btnX + btnWidth / 2}" y="${btnY + btnHeight / 2 + 4}" text-anchor="middle" class="wire-text wire-text-small">Action</text>`;
+      
+      default: // ColumnText or Column
+        return `<text x="${textX}" y="${textY}" class="wire-text wire-text-small wire-text-secondary">Data ${rowIndex}</text>`;
+    }
+  }
+
+  /**
+   * Render a row (container for cells)
+   */
+  private renderRow(node: ControlNode, bounds: BoundingBox): string {
+    const { x, y, width, height } = bounds;
+    const isHeader = node.modifiers.selected; // Using 'selected' modifier for header styling
+    
+    const bgColor = isHeader ? this.theme.colors.surface : 'transparent';
+    
+    let svg = `<rect x="${x}" y="${y}" width="${width}" height="${height}" fill="${bgColor}" />`;
+    svg += `<line x1="${x}" y1="${y + height}" x2="${x + width}" y2="${y + height}" stroke="${this.theme.colors.border}" stroke-width="1" />`;
+    
+    return `<g>${svg}</g>`;
+  }
+
+  /**
+   * Render a cell within a row
+   */
+  private renderCell(node: ControlNode, bounds: BoundingBox): string {
+    const { x, y, width, height } = bounds;
+    const align = (node.attributes['align'] as string) || 'left';
+    
+    let textAnchor = 'start';
+    let textX = x + 8;
+    if (align === 'center') {
+      textAnchor = 'middle';
+      textX = x + width / 2;
+    } else if (align === 'right') {
+      textAnchor = 'end';
+      textX = x + width - 8;
+    }
+    
+    let svg = `<rect x="${x}" y="${y}" width="${width}" height="${height}" fill="transparent" />`;
+    svg += `<line x1="${x + width}" y1="${y}" x2="${x + width}" y2="${y + height}" stroke="${this.theme.colors.border}" stroke-width="1" />`;
+    svg += `<text x="${textX}" y="${y + height / 2 + 5}" text-anchor="${textAnchor}" class="wire-text wire-text-small">${this.escapeXml(node.text || '')}</text>`;
+    
+    return `<g>${svg}</g>`;
+  }
+
+  /**
+   * Render a column header (for DataGrid)
+   */
+  private renderColumn(node: ControlNode, bounds: BoundingBox): string {
+    const { x, y, width, height } = bounds;
+    const controlType = node.controlType;
+    const sortable = node.modifiers.selected; // Using 'selected' modifier for sortable
+    
+    // Column type indicator
+    let typeIcon = '';
+    const iconY = y + height / 2;
+    const iconX = x + width - 20;
+    
+    switch (controlType) {
+      case 'ColumnDate':
+        typeIcon = `<text x="${iconX}" y="${iconY + 4}" class="wire-text wire-text-small wire-text-secondary">📅</text>`;
+        break;
+      case 'ColumnNumber':
+        typeIcon = `<text x="${iconX}" y="${iconY + 4}" class="wire-text wire-text-small wire-text-secondary">#</text>`;
+        break;
+      case 'ColumnCheckbox':
+        typeIcon = `<rect x="${iconX}" y="${iconY - 6}" width="12" height="12" rx="2" fill="none" stroke="${this.theme.colors.textSecondary}" stroke-width="1" />`;
+        break;
+      case 'ColumnImage':
+        typeIcon = `<rect x="${iconX}" y="${iconY - 6}" width="12" height="12" rx="1" fill="none" stroke="${this.theme.colors.textSecondary}" stroke-width="1" />`;
+        break;
+      case 'ColumnLink':
+        typeIcon = `<text x="${iconX}" y="${iconY + 4}" class="wire-text wire-text-small" fill="${this.theme.colors.primary}">🔗</text>`;
+        break;
+      case 'ColumnButton':
+        typeIcon = `<rect x="${iconX - 2}" y="${iconY - 5}" width="16" height="10" rx="2" fill="none" stroke="${this.theme.colors.textSecondary}" stroke-width="1" />`;
+        break;
+    }
+    
+    let svg = `<rect x="${x}" y="${y}" width="${width}" height="${height}" fill="${this.theme.colors.surface}" />`;
+    svg += `<line x1="${x + width}" y1="${y}" x2="${x + width}" y2="${y + height}" stroke="${this.theme.colors.border}" stroke-width="1" />`;
+    svg += `<text x="${x + 8}" y="${y + height / 2 + 5}" class="wire-text wire-text-bold wire-text-small">${this.escapeXml(node.text || 'Column')}</text>`;
+    
+    // Sort indicator if sortable
+    if (sortable) {
+      svg += `<path d="M${x + width - 32} ${y + height / 2 - 2} L${x + width - 28} ${y + height / 2 - 6} L${x + width - 24} ${y + height / 2 - 2}" stroke="${this.theme.colors.textSecondary}" stroke-width="1" fill="none" />`;
+    }
+    
+    svg += typeIcon;
+    
     return `<g>${svg}</g>`;
   }
 
@@ -992,14 +1241,24 @@ export class SVGRenderer {
 
     // Different styles for different section types
     if (node.sectionType === 'Card') {
-      return `<rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${this.theme.borders.radiusLarge}" fill="${this.theme.colors.background}" stroke="${strokeColor}" stroke-width="${this.theme.borders.width}" filter="url(#shadow)" />`;
+      const cardRect = this.createRect(x, y, width, height, {
+        rx: this.theme.borders.radiusLarge,
+        fill: this.theme.colors.background,
+        stroke: strokeColor,
+        strokeWidth: this.theme.borders.width,
+      });
+      return cardRect.replace('/>', ' filter="url(#shadow)" />');
     }
 
     if (node.sectionType === 'Header' || node.sectionType === 'Footer') {
       bgColor = this.theme.colors.surface;
     }
 
-    return `<rect x="${x}" y="${y}" width="${width}" height="${height}" fill="${bgColor}" stroke="${strokeColor}" stroke-width="${this.theme.borders.width}" />`;
+    return this.createRect(x, y, width, height, {
+      fill: bgColor,
+      stroke: strokeColor,
+      strokeWidth: this.theme.borders.width,
+    });
   }
 
   /**
@@ -1018,12 +1277,23 @@ export class SVGRenderer {
 
     switch (node.componentType) {
       case 'Card':
-        return `<rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${this.theme.borders.radiusLarge}" fill="${this.theme.colors.background}" stroke="${this.theme.colors.border}" stroke-width="${this.theme.borders.width}" />`;
+        return this.createRect(x, y, width, height, {
+          rx: this.theme.borders.radiusLarge,
+          fill: this.theme.colors.background,
+          stroke: this.theme.colors.border,
+          strokeWidth: this.theme.borders.width,
+        });
 
       case 'Dialog':
         // Add a darkened overlay effect
+        const dialogRect = this.createRect(x, y, width, height, {
+          rx: this.theme.borders.radiusLarge,
+          fill: this.theme.colors.background,
+          stroke: this.theme.colors.border,
+          strokeWidth: this.theme.borders.width,
+        });
         return `<g>
-          <rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${this.theme.borders.radiusLarge}" fill="${this.theme.colors.background}" stroke="${this.theme.colors.border}" stroke-width="${this.theme.borders.width}" />
+          ${dialogRect}
           ${node.text ? `<text x="${x + 16}" y="${y + 24}" class="wire-text wire-text-bold">${this.escapeXml(node.text)}</text>` : ''}
         </g>`;
 
@@ -1036,18 +1306,104 @@ export class SVGRenderer {
           error: this.theme.colors.error,
         };
         const alertColor = alertColors[alertType] || alertColors.info;
+        const alertRect = this.createRect(x, y, width, height, {
+          rx: this.theme.borders.radius,
+          fill: `${alertColor}20`,
+          stroke: alertColor,
+          strokeWidth: this.theme.borders.width,
+        });
 
         return `<g>
-          <rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${this.theme.borders.radius}" fill="${alertColor}20" stroke="${alertColor}" stroke-width="${this.theme.borders.width}" />
+          ${alertRect}
           <rect x="${x}" y="${y}" width="4" height="${height}" fill="${alertColor}" />
         </g>`;
 
       case 'Tabs':
-        return `<rect x="${x}" y="${y}" width="${width}" height="${height}" fill="none" stroke="${this.theme.colors.border}" stroke-width="${this.theme.borders.width}" />`;
+        return this.createRect(x, y, width, height, {
+          fill: 'none',
+          stroke: this.theme.colors.border,
+          strokeWidth: this.theme.borders.width,
+        });
 
       default:
         return '';
     }
+  }
+
+  /**
+   * Check if the current theme is the sketch theme
+   */
+  private isSketchTheme(): boolean {
+    return this.theme.name === 'sketch';
+  }
+
+  /**
+   * Create a rectangle - sketchy style if sketch theme is active
+   */
+  private createRect(
+    x: number,
+    y: number,
+    width: number,
+    height: number,
+    options: { rx?: number; fill?: string; stroke?: string; strokeWidth?: number } = {}
+  ): string {
+    const fill = options.fill ?? 'none';
+    const stroke = options.stroke ?? this.theme.colors.border;
+    const strokeWidth = options.strokeWidth ?? this.theme.borders.width;
+    const rx = options.rx ?? 0;
+
+    if (this.isSketchTheme()) {
+      const path = rx > 0
+        ? sketchyRoundedRect(x, y, width, height, rx, { roughness: 1 })
+        : sketchyRect(x, y, width, height, { roughness: 1 });
+      return `<path d="${path}" fill="${fill}" stroke="${stroke}" stroke-width="${strokeWidth}" />`;
+    }
+
+    return rx > 0
+      ? `<rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${rx}" fill="${fill}" stroke="${stroke}" stroke-width="${strokeWidth}" />`
+      : `<rect x="${x}" y="${y}" width="${width}" height="${height}" fill="${fill}" stroke="${stroke}" stroke-width="${strokeWidth}" />`;
+  }
+
+  /**
+   * Create a line - sketchy style if sketch theme is active
+   */
+  private createLine(
+    x1: number,
+    y1: number,
+    x2: number,
+    y2: number,
+    options: { stroke?: string; strokeWidth?: number } = {}
+  ): string {
+    const stroke = options.stroke ?? this.theme.colors.border;
+    const strokeWidth = options.strokeWidth ?? this.theme.borders.width;
+
+    if (this.isSketchTheme()) {
+      const path = sketchyLine(x1, y1, x2, y2, { roughness: 1 });
+      return `<path d="${path}" fill="none" stroke="${stroke}" stroke-width="${strokeWidth}" />`;
+    }
+
+    return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${stroke}" stroke-width="${strokeWidth}" />`;
+  }
+
+  /**
+   * Create a circle - sketchy style if sketch theme is active
+   */
+  private createCircle(
+    cx: number,
+    cy: number,
+    r: number,
+    options: { fill?: string; stroke?: string; strokeWidth?: number } = {}
+  ): string {
+    const fill = options.fill ?? 'none';
+    const stroke = options.stroke ?? this.theme.colors.border;
+    const strokeWidth = options.strokeWidth ?? this.theme.borders.width;
+
+    if (this.isSketchTheme()) {
+      const path = sketchyCircle(cx, cy, r, { roughness: 1 });
+      return `<path d="${path}" fill="${fill}" stroke="${stroke}" stroke-width="${strokeWidth}" />`;
+    }
+
+    return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${fill}" stroke="${stroke}" stroke-width="${strokeWidth}" />`;
   }
 
   /**

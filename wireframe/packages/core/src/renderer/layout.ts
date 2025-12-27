@@ -177,7 +177,7 @@ export class LayoutEngine {
       theme: this.theme,
     };
 
-    const children = this.layoutChildren(node.children, innerContext, node.layoutType, gap);
+    const children = this.layoutChildren(node.children, innerContext, node.layoutType, gap, node);
 
     // Calculate bounds
     const bounds = this.calculateBoundsFromChildren(children, context, padding);
@@ -340,7 +340,8 @@ export class LayoutEngine {
     children: ElementNode[],
     context: LayoutContext,
     layoutType: string,
-    gap?: number
+    gap?: number,
+    parentNode?: ElementNode
   ): LayoutInfo[] {
     const effectiveGap = gap ?? this.theme.spacing.gap;
 
@@ -350,7 +351,7 @@ export class LayoutEngine {
       case 'Horizontal':
         return this.layoutHorizontal(children, context, effectiveGap);
       case 'Grid':
-        return this.layoutGrid(children, context, effectiveGap);
+        return this.layoutGrid(children, context, effectiveGap, parentNode);
       case 'Dock':
         return this.layoutDock(children, context);
       case 'Canvas':
@@ -419,66 +420,127 @@ export class LayoutEngine {
   }
 
   /**
-   * Layout children in a grid
+   * Layout children in a grid with support for grid=row,col,rowSpan,colSpan attribute
    */
-  private layoutGrid(children: ElementNode[], context: LayoutContext, gap: number): LayoutInfo[] {
+  private layoutGrid(children: ElementNode[], context: LayoutContext, gap: number, parentNode?: ElementNode): LayoutInfo[] {
     const layouts: LayoutInfo[] = [];
     
-    // Determine grid columns - default to 2 if not specified
-    const cols = 2;
+    // Get cols from parent attributes or default to 2
+    const cols = parentNode && (isLayoutNode(parentNode) || isSectionNode(parentNode))
+      ? ((parentNode.attributes['cols'] as number) || 2)
+      : 2;
+    const rows = parentNode && (isLayoutNode(parentNode) || isSectionNode(parentNode))
+      ? ((parentNode.attributes['rows'] as number) || undefined)
+      : undefined;
     
     // Calculate cell dimensions
     const cellWidth = (context.availableWidth - gap * (cols - 1)) / cols;
-    let col = 0;
-    let rowHeight = 0;
-    let y = context.y;
-
+    const cellHeight = rows ? (context.availableHeight - gap * (rows - 1)) / rows : undefined;
+    
+    // Track which cells are occupied (for spanning)
+    const occupied: Set<string> = new Set();
+    
+    // First pass: layout children with explicit grid positions
+    const positioned: Map<ElementNode, { row: number; col: number; rowSpan: number; colSpan: number }> = new Map();
+    let autoRow = 0;
+    let autoCol = 0;
+    
     for (const child of children) {
-      const x = context.x + col * (cellWidth + gap);
+      const gridAttr = (isControlNode(child) || isComponentNode(child)) 
+        ? child.attributes['grid'] as string
+        : undefined;
+      
+      if (gridAttr) {
+        // Parse grid=row,col,rowSpan,colSpan (0-indexed)
+        const parts = gridAttr.split(',').map(p => parseInt(p.trim(), 10));
+        const row = parts[0] || 0;
+        const col = parts[1] || 0;
+        const rowSpan = parts[2] || 1;
+        const colSpan = parts[3] || 1;
+        positioned.set(child, { row, col, rowSpan, colSpan });
+        
+        // Mark cells as occupied
+        for (let r = row; r < row + rowSpan; r++) {
+          for (let c = col; c < col + colSpan; c++) {
+            occupied.add(`${r},${c}`);
+          }
+        }
+      }
+    }
+    
+    // Second pass: assign auto positions to children without grid attribute
+    for (const child of children) {
+      if (!positioned.has(child)) {
+        // Find next available cell
+        while (occupied.has(`${autoRow},${autoCol}`)) {
+          autoCol++;
+          if (autoCol >= cols) {
+            autoCol = 0;
+            autoRow++;
+          }
+        }
+        positioned.set(child, { row: autoRow, col: autoCol, rowSpan: 1, colSpan: 1 });
+        occupied.add(`${autoRow},${autoCol}`);
+        autoCol++;
+        if (autoCol >= cols) {
+          autoCol = 0;
+          autoRow++;
+        }
+      }
+    }
+    
+    // Layout each child at its grid position
+    for (const child of children) {
+      const pos = positioned.get(child)!;
+      const x = context.x + pos.col * (cellWidth + gap);
+      const y = context.y + pos.row * ((cellHeight || 40) + gap);
+      const spanWidth = cellWidth * pos.colSpan + gap * (pos.colSpan - 1);
+      const spanHeight = cellHeight ? cellHeight * pos.rowSpan + gap * (pos.rowSpan - 1) : undefined;
       
       const childContext: LayoutContext = {
         x,
         y,
-        availableWidth: cellWidth,
-        availableHeight: context.availableHeight - (y - context.y),
+        availableWidth: spanWidth,
+        availableHeight: spanHeight || context.availableHeight - (y - context.y),
         theme: this.theme,
       };
 
       const layout = this.layoutElement(child, childContext);
       
       // Adjust width to fit cell if needed
-      if (layout.bounds.width > cellWidth) {
-        layout.bounds.width = cellWidth;
+      if (layout.bounds.width > spanWidth) {
+        layout.bounds.width = spanWidth;
       }
       
       layouts.push(layout);
-      rowHeight = Math.max(rowHeight, layout.bounds.height);
-
-      col++;
-      if (col >= cols) {
-        col = 0;
-        y += rowHeight + gap;
-        rowHeight = 0;
-      }
     }
 
     return layouts;
   }
 
   /**
-   * Layout children with canvas (absolute) positioning
+   * Layout children with canvas (absolute) positioning using canvas=x,y attribute
    */
   private layoutCanvas(children: ElementNode[], context: LayoutContext): LayoutInfo[] {
     const layouts: LayoutInfo[] = [];
 
     for (const child of children) {
-      // Get explicit x, y positions from attributes if available
-      const childX = (isControlNode(child) || isComponentNode(child)) 
-        ? (this.getSizeAttribute(child, 'x') ?? context.x)
-        : context.x;
-      const childY = (isControlNode(child) || isComponentNode(child))
-        ? (this.getSizeAttribute(child, 'y') ?? context.y)
-        : context.y;
+      let childX = 0;
+      let childY = 0;
+      
+      if (isControlNode(child) || isComponentNode(child)) {
+        // Check for canvas=x,y attribute first
+        const canvasAttr = child.attributes['canvas'] as string;
+        if (canvasAttr) {
+          const parts = canvasAttr.split(',').map(p => parseFloat(p.trim()));
+          childX = parts[0] || 0;
+          childY = parts[1] || 0;
+        } else {
+          // Fall back to individual x, y attributes
+          childX = this.getSizeAttribute(child, 'x') ?? 0;
+          childY = this.getSizeAttribute(child, 'y') ?? 0;
+        }
+      }
 
       const childContext: LayoutContext = {
         x: context.x + childX,
@@ -627,7 +689,10 @@ export class LayoutEngine {
       case 'Image':
         return sizes.image;
       case 'Avatar':
-        return sizes.avatar;
+        // Size variants: xs=24, sm=32, md=40, lg=56, xl=80
+        const avatarSizes: Record<string, number> = { xs: 24, sm: 32, md: 40, lg: 56, xl: 80 };
+        const avatarSize = avatarSizes[(node.attributes['size'] as string) || 'md'] || 40;
+        return { width: avatarSize, height: avatarSize };
       case 'Badge':
         return sizes.badge;
       case 'Progress':
@@ -653,6 +718,10 @@ export class LayoutEngine {
         return sizes.pagination;
       case 'Table':
         return sizes.table;
+      case 'Row':
+        return { width: sizes.table.width, height: 36 };
+      case 'Cell':
+        return { width: 120, height: 36 };
       case 'Tree':
         return sizes.tree;
       case 'TreeItem':
@@ -663,6 +732,15 @@ export class LayoutEngine {
         return sizes.accordionSection;
       case 'DataGrid':
         return sizes.dataGrid;
+      case 'Column':
+      case 'ColumnText':
+      case 'ColumnDate':
+      case 'ColumnNumber':
+      case 'ColumnCheckbox':
+      case 'ColumnImage':
+      case 'ColumnLink':
+      case 'ColumnButton':
+        return { width: 120, height: 40 };
       case 'Heading':
         const headingWidth = (node.text?.length || 10) * 12;
         return { width: Math.max(100, headingWidth), height: sizes.heading.height };

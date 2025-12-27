@@ -32,6 +32,7 @@ The Wireframe VS Code Extension provides IDE support for `.wire` files including
 | **Snippets** | Quick insertion of common patterns |
 | **Outline** | Document structure navigation |
 | **Formatting** | Code formatting support |
+| **Zoom Controls** | Zoom in/out, reset, fit to view |
 
 ---
 
@@ -116,6 +117,21 @@ packages/vscode-extension/
         "command": "wireframe.exportPng",
         "title": "Export to PNG",
         "category": "Wireframe"
+      },
+      {
+        "command": "wireframe.zoomIn",
+        "title": "Zoom In",
+        "category": "Wireframe"
+      },
+      {
+        "command": "wireframe.zoomOut",
+        "title": "Zoom Out",
+        "category": "Wireframe"
+      },
+      {
+        "command": "wireframe.zoomReset",
+        "title": "Reset Zoom",
+        "category": "Wireframe"
       }
     ],
     
@@ -139,12 +155,32 @@ packages/vscode-extension/
       ]
     },
     
-    "keybindings": [{
-      "command": "wireframe.preview",
-      "key": "ctrl+shift+v",
-      "mac": "cmd+shift+v",
-      "when": "resourceLangId == wireframe"
-    }]
+    "keybindings": [
+      {
+        "command": "wireframe.preview",
+        "key": "ctrl+shift+v",
+        "mac": "cmd+shift+v",
+        "when": "resourceLangId == wireframe"
+      },
+      {
+        "command": "wireframe.zoomIn",
+        "key": "ctrl+=",
+        "mac": "cmd+=",
+        "when": "resourceLangId == wireframe"
+      },
+      {
+        "command": "wireframe.zoomOut",
+        "key": "ctrl+-",
+        "mac": "cmd+-",
+        "when": "resourceLangId == wireframe"
+      },
+      {
+        "command": "wireframe.zoomReset",
+        "key": "ctrl+0",
+        "mac": "cmd+0",
+        "when": "resourceLangId == wireframe"
+      }
+    ]
   }
 }
 ```
@@ -445,23 +481,74 @@ function getPreviewHtml(svg: string): string {
           margin: 0;
           padding: 16px;
           display: flex;
-          justify-content: center;
+          flex-direction: column;
+          align-items: center;
           background: #f5f5f5;
+        }
+        .zoom-controls {
+          display: flex;
+          gap: 8px;
+          margin-bottom: 16px;
+          padding: 8px;
+          background: white;
+          border-radius: 4px;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .zoom-controls button {
+          padding: 4px 12px;
+          border: 1px solid #ccc;
+          background: white;
+          cursor: pointer;
+          border-radius: 3px;
+        }
+        .zoom-controls button:hover {
+          background: #f0f0f0;
         }
         .preview {
           background: white;
           box-shadow: 0 2px 8px rgba(0,0,0,0.1);
           padding: 16px;
+          transform-origin: center top;
         }
       </style>
     </head>
     <body>
-      <div class="preview">
-        ${svg}
+      <div class="zoom-controls">
+        <button onclick="zoomOut()">−</button>
+        <button onclick="zoomReset()">100%</button>
+        <button onclick="zoomIn()">+</button>
+        <button onclick="zoomFit()">Fit</button>
       </div>
+      <div class="preview" id="preview">
+        \${svg}
+      </div>
+      <script>
+        let zoom = 1;
+        const preview = document.getElementById('preview');
+        
+        function updateZoom() {
+          preview.style.transform = \`scale(\${zoom})\`;
+          document.querySelector('.zoom-controls button:nth-child(2)').textContent = 
+            Math.round(zoom * 100) + '%';
+        }
+        
+        function zoomIn() { zoom = Math.min(zoom * 1.25, 4); updateZoom(); }
+        function zoomOut() { zoom = Math.max(zoom / 1.25, 0.25); updateZoom(); }
+        function zoomReset() { zoom = 1; updateZoom(); }
+        function zoomFit() { /* Calculate fit */ zoom = 1; updateZoom(); }
+        
+        // Mouse wheel zoom with Ctrl
+        document.addEventListener('wheel', (e) => {
+          if (e.ctrlKey) {
+            e.preventDefault();
+            if (e.deltaY < 0) zoomIn();
+            else zoomOut();
+          }
+        }, { passive: false });
+      </script>
     </body>
     </html>
-  `;
+  \`;
 }
 ```
 

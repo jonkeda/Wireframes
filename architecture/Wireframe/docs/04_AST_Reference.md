@@ -306,7 +306,10 @@ export type ControlType =
   | 'Breadcrumb' | 'Pagination'
   | 'Table' | 'Tree' | 'TreeItem'
   | 'Accordion' | 'AccordionSection'
-  | 'DataGrid' | 'Toast' | 'Skeleton' | 'Stepper';
+  | 'DataGrid' | 'Toast' | 'Skeleton' | 'Stepper'
+  | 'Row' | 'Cell'
+  | 'ColumnText' | 'ColumnDate' | 'ColumnNumber' 
+  | 'ColumnCheckbox' | 'ColumnImage' | 'ColumnLink' | 'ColumnButton';
 
 /**
  * Control node
@@ -354,8 +357,8 @@ export interface ControlNode extends ElementBase {
 **Visual:**
 - `Icon` - Icon display
 - `Image` - Image placeholder
-- `Avatar` - User avatar
-- `Badge` - Badge/count indicator
+- `Avatar` - User avatar (with `size` attribute: xs/sm/md/lg/xl)
+- `Badge` - Badge/count indicator (with `variant` attribute: info/success/warning/error)
 - `Progress` - Progress bar
 - `Slider` - Range slider
 - `Chip` - Tag/chip
@@ -363,6 +366,17 @@ export interface ControlNode extends ElementBase {
 **Feedback:**
 - `Toast` - Toast notification
 - `Skeleton` - Loading skeleton
+
+**Table Components:**
+- `Row` - Table row container (with `selected` modifier for header styling)
+- `Cell` - Table cell (with `align` attribute: left/center/right)
+- `ColumnText` - DataGrid text column
+- `ColumnDate` - DataGrid date column (MM/DD/YYYY)
+- `ColumnNumber` - DataGrid numeric column
+- `ColumnCheckbox` - DataGrid checkbox column
+- `ColumnImage` - DataGrid image column
+- `ColumnLink` - DataGrid link column
+- `ColumnButton` - DataGrid button column
 
 ### 7.3 Example
 

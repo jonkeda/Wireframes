@@ -15,7 +15,7 @@
       <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite" />
     </rect><rect x="16" y="108" width="200" height="20" rx="4" fill="#f8f9fa">
       <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite" />
-    </rect><line x1="16" y1="144" x2="216" y2="144" stroke="#dee2e6" stroke-width="1" /><text x="16" y="176" class="wire-text wire-text-bold">Card Skeleton</text><rect x="16" y="197" width="768" height="387" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><rect x="32" y="213" width="200" height="20" rx="4" fill="#f8f9fa">
+    </rect><line x1="16" y1="144" x2="216" y2="144" stroke="#dee2e6" stroke-width="1" /><text x="16" y="176" class="wire-text wire-text-bold">Card Skeleton</text><rect x="16" y="197" width="768" height="387" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><rect x="32" y="213" width="200" height="20" rx="4" fill="#f8f9fa">
       <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite" />
     </rect><rect x="248" y="213" width="200" height="20" rx="4" fill="#f8f9fa">
       <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite" />

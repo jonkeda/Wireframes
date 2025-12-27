@@ -9,7 +9,7 @@
   </style>
   
   <rect width="100%" height="100%" fill="#ffffff" />
-  <text x="16" y="31" class="wire-text wire-text-bold">Vertical Layout (Default)</text><rect x="16" y="52" width="768" height="532" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><g opacity="1">
+  <text x="16" y="31" class="wire-text wire-text-bold">Vertical Layout (Default)</text><rect x="16" y="52" width="768" height="532" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g opacity="1">
       <rect x="32" y="68" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
       <text x="82" y="91" text-anchor="middle" class="wire-text" fill="#212529">Item 1</text>
     </g><g opacity="1">
@@ -18,21 +18,21 @@
     </g><g opacity="1">
       <rect x="32" y="156" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
       <text x="82" y="179" text-anchor="middle" class="wire-text" fill="#212529">Item 3</text>
-    </g><line x1="16" y1="600" x2="216" y2="600" stroke="#dee2e6" stroke-width="1" /><text x="16" y="632" class="wire-text wire-text-bold">Vertical with Alignment</text><rect x="16" y="653" width="768" height="140" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><text x="32" y="684" class="wire-text">Left Aligned</text><g opacity="1">
+    </g><line x1="16" y1="600" x2="216" y2="600" stroke="#dee2e6" stroke-width="1" /><text x="16" y="632" class="wire-text wire-text-bold">Vertical with Alignment</text><rect x="16" y="653" width="768" height="140" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><text x="32" y="684" class="wire-text">Left Aligned</text><g opacity="1">
       <rect x="32" y="697" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
       <text x="82" y="720" text-anchor="middle" class="wire-text" fill="#212529">Button</text>
     </g><g>
       <rect x="32" y="741" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
       <text x="44" y="764" class="wire-text wire-text-secondary">Input</text>
       
-    </g><rect x="800" y="653" width="-16" height="140" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><text x="816" y="684" class="wire-text">Center Aligned</text><g opacity="1">
+    </g><rect x="800" y="653" width="-16" height="140" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><text x="816" y="684" class="wire-text">Center Aligned</text><g opacity="1">
       <rect x="816" y="697" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
       <text x="866" y="720" text-anchor="middle" class="wire-text" fill="#212529">Button</text>
     </g><g>
       <rect x="816" y="741" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
       <text x="828" y="764" class="wire-text wire-text-secondary">Input</text>
       
-    </g><rect x="800" y="653" width="-16" height="140" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><text x="816" y="684" class="wire-text">Right Aligned</text><g opacity="1">
+    </g><rect x="800" y="653" width="-16" height="140" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><text x="816" y="684" class="wire-text">Right Aligned</text><g opacity="1">
       <rect x="816" y="697" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
       <text x="866" y="720" text-anchor="middle" class="wire-text" fill="#212529">Button</text>
     </g><g>

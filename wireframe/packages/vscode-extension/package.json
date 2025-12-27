@@ -1,23 +1,37 @@
 {
   "name": "wireframe-vscode",
-  "version": "0.0.6",
-  "description": "VS Code extension for Wireframe preview and editing",
+  "version": "0.0.7",
+  "description": "Create beautiful UI wireframes and mockups using a simple text-based DSL. Features live preview, multiple themes (clean, sketch, blueprint, realistic), syntax highlighting, auto-completion, and SVG export.",
   "publisher": "jonkeda",
   "license": "MIT",
   "displayName": "Wireframe - UI Mockup DSL",
+  "icon": "images/wireframe.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonkeda/Wireframes"
+  },
+  "bugs": {
+    "url": "https://github.com/jonkeda/Wireframes/issues"
+  },
+  "homepage": "https://github.com/jonkeda/Wireframes#readme",
   "engines": {
     "vscode": "^1.107.0"
   },
   "categories": [
     "Programming Languages",
-    "Visualization"
+    "Visualization",
+    "Other"
   ],
   "keywords": [
     "wireframe",
     "mockup",
     "ui",
     "prototype",
-    "diagram"
+    "diagram",
+    "design",
+    "svg",
+    "preview",
+    "dsl"
   ],
   "activationEvents": [
     "onLanguage:wireframe"
@@ -72,6 +86,20 @@
       {
         "command": "wireframe.changeTheme",
         "title": "Wireframe: Change Theme"
+      },
+      {
+        "command": "wireframe.zoomIn",
+        "title": "Wireframe: Zoom In",
+        "icon": "$(zoom-in)"
+      },
+      {
+        "command": "wireframe.zoomOut",
+        "title": "Wireframe: Zoom Out",
+        "icon": "$(zoom-out)"
+      },
+      {
+        "command": "wireframe.zoomReset",
+        "title": "Wireframe: Reset Zoom"
       }
     ],
     "menus": {
@@ -106,6 +134,24 @@
         "key": "ctrl+shift+v",
         "mac": "cmd+shift+v",
         "when": "resourceLangId == wireframe"
+      },
+      {
+        "command": "wireframe.zoomIn",
+        "key": "ctrl+=",
+        "mac": "cmd+=",
+        "when": "resourceLangId == wireframe && wireframe.previewFocused"
+      },
+      {
+        "command": "wireframe.zoomOut",
+        "key": "ctrl+-",
+        "mac": "cmd+-",
+        "when": "resourceLangId == wireframe && wireframe.previewFocused"
+      },
+      {
+        "command": "wireframe.zoomReset",
+        "key": "ctrl+0",
+        "mac": "cmd+0",
+        "when": "resourceLangId == wireframe && wireframe.previewFocused"
       }
     ],
     "configuration": {

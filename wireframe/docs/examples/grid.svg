@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="925" viewBox="0 0 800 925" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="757" viewBox="0 0 800 757" role="img">
   <style>
     .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
     .wire-text-secondary { fill: #6c757d; }
@@ -16,34 +16,34 @@
       <rect x="404" y="52" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
       <text x="454" y="75" text-anchor="middle" class="wire-text" fill="#212529">Cell 2</text>
     </g><g opacity="1">
-      <rect x="16" y="96" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="66" y="119" text-anchor="middle" class="wire-text" fill="#212529">Cell 3</text>
+      <rect x="16" y="100" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="66" y="123" text-anchor="middle" class="wire-text" fill="#212529">Cell 3</text>
     </g><g opacity="1">
-      <rect x="404" y="96" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="454" y="119" text-anchor="middle" class="wire-text" fill="#212529">Cell 4</text>
-    </g><line x1="16" y1="148" x2="216" y2="148" stroke="#dee2e6" stroke-width="1" /><text x="16" y="180" class="wire-text wire-text-bold">3-Column Grid</text><rect x="16" y="201" width="380" height="383" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><text x="32" y="232" class="wire-text">Card 1</text><rect x="404" y="201" width="380" height="383" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><text x="420" y="232" class="wire-text">Card 2</text><rect x="16" y="592" width="380" height="52" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><text x="32" y="623" class="wire-text">Card 3</text><rect x="404" y="592" width="380" height="52" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><text x="420" y="623" class="wire-text">Card 4</text><rect x="16" y="652" width="380" height="52" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><text x="32" y="683" class="wire-text">Card 5</text><rect x="404" y="652" width="380" height="52" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><text x="420" y="683" class="wire-text">Card 6</text><line x1="16" y1="720" x2="216" y2="720" stroke="#dee2e6" stroke-width="1" /><text x="16" y="752" class="wire-text wire-text-bold">4-Column Grid</text><g>
-      <rect x="16" y="773" width="24" height="24" rx="12" fill="#6c757d" />
-      <text x="28" y="789" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+      <rect x="404" y="100" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="454" y="123" text-anchor="middle" class="wire-text" fill="#212529">Cell 4</text>
+    </g><line x1="16" y1="152" x2="216" y2="152" stroke="#dee2e6" stroke-width="1" /><text x="16" y="184" class="wire-text wire-text-bold">3-Column Grid</text><rect x="16" y="205" width="250.66666666666666" height="379" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><text x="32" y="236" class="wire-text">Card 1</text><rect x="274.66666666666663" y="205" width="250.66666666666666" height="379" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><text x="290.66666666666663" y="236" class="wire-text">Card 2</text><rect x="533.3333333333333" y="205" width="250.66666666666666" height="379" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><text x="549.3333333333333" y="236" class="wire-text">Card 3</text><rect x="16" y="253" width="250.66666666666666" height="331" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><text x="32" y="284" class="wire-text">Card 4</text><rect x="274.66666666666663" y="253" width="250.66666666666666" height="331" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><text x="290.66666666666663" y="284" class="wire-text">Card 5</text><rect x="533.3333333333333" y="253" width="250.66666666666666" height="331" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><text x="549.3333333333333" y="284" class="wire-text">Card 6</text><line x1="16" y1="600" x2="216" y2="600" stroke="#dee2e6" stroke-width="1" /><text x="16" y="632" class="wire-text wire-text-bold">4-Column Grid</text><g>
+      <rect x="16" y="653" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="28" y="669" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
     </g><g>
-      <rect x="404" y="773" width="24" height="24" rx="12" fill="#6c757d" />
-      <text x="416" y="789" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+      <rect x="210" y="653" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="222" y="669" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
     </g><g>
-      <rect x="16" y="805" width="24" height="24" rx="12" fill="#6c757d" />
-      <text x="28" y="821" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+      <rect x="404" y="653" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="416" y="669" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
     </g><g>
-      <rect x="404" y="805" width="24" height="24" rx="12" fill="#6c757d" />
-      <text x="416" y="821" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+      <rect x="598" y="653" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="610" y="669" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
     </g><g>
-      <rect x="16" y="837" width="24" height="24" rx="12" fill="#6c757d" />
-      <text x="28" y="853" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+      <rect x="16" y="701" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="28" y="717" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
     </g><g>
-      <rect x="404" y="837" width="24" height="24" rx="12" fill="#6c757d" />
-      <text x="416" y="853" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+      <rect x="210" y="701" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="222" y="717" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
     </g><g>
-      <rect x="16" y="869" width="24" height="24" rx="12" fill="#6c757d" />
-      <text x="28" y="885" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+      <rect x="404" y="701" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="416" y="717" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
     </g><g>
-      <rect x="404" y="869" width="24" height="24" rx="12" fill="#6c757d" />
-      <text x="416" y="885" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+      <rect x="598" y="701" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="610" y="717" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
     </g>
 </svg>

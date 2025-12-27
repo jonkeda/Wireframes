@@ -23,6 +23,7 @@ This document specifies all Wireframe UI components based on the current impleme
 | **Controls** | Button, IconButton, TextInput, NumberInput, DateInput, PasswordInput, TextArea, Label, Heading, Link, Checkbox, Radio, Dropdown, Option, Separator, Spacer |
 | **Visual** | Icon, Image, Avatar, Badge, Progress, Slider, Switch, Chip, Pagination, Toast, Skeleton |
 | **Components** | Tabs, Tab, Expander, Tree, TreeItem, List, Menu, MenuItem, Hamburger, Breadcrumb, BreadcrumbItem, Accordion, AccordionSection, Stepper, Step, Dialog, Alert, Hover, Table, DataGrid, Column |
+| **Table** | Row, Cell, ColumnText, ColumnDate, ColumnNumber, ColumnCheckbox, ColumnImage, ColumnLink, ColumnButton |
 
 ---
 
@@ -34,7 +35,7 @@ Grid layout with rows and columns.
 
 **Syntax:**
 ```wireframe
-Grid columns=3 rows=2 gap=16
+Grid cols=3 rows=2 gap=16
     Button "Cell 1"
     Button "Cell 2"
     Button "Cell 3"
@@ -48,9 +49,28 @@ Grid columns=3 rows=2 gap=16
 
 | Attribute | Type | Default | Description |
 |-----------|------|---------|-------------|
-| columns | number | 1 | Number of columns |
+| cols | number | 1 | Number of columns |
 | rows | number | auto | Number of rows |
 | gap | number | 0 | Gap between cells |
+
+**Child Positioning with `grid=` attribute:**
+
+Children can specify their grid position using `grid=row,col[,rowSpan,colSpan]`:
+
+```wireframe
+Grid cols=3 rows=2
+    Button "Span 2 columns" grid=0,0,1,2
+    Button "Normal cell" grid=0,2
+    Button "Span 2 rows" grid=1,0,2,1
+/Grid
+```
+
+| Parameter | Description |
+|-----------|-------------|
+| row | Row index (0-based) |
+| col | Column index (0-based) |
+| rowSpan | Number of rows to span (default: 1) |
+| colSpan | Number of columns to span (default: 1) |
 
 ---
 
@@ -139,8 +159,8 @@ Absolute positioning canvas.
 
 **Syntax:**
 ```wireframe
-Canvas width=400 height=300
-    Button "Positioned" x=50 y=100
+Canvas w=400 h=300
+    Button "Positioned" canvas=50,100
 /Canvas
 ```
 
@@ -148,15 +168,25 @@ Canvas width=400 height=300
 
 | Attribute | Type | Default | Description |
 |-----------|------|---------|-------------|
-| width | number | 100% | Canvas width |
-| height | number | 100% | Canvas height |
+| w | number | 100% | Canvas width |
+| h | number | 100% | Canvas height |
 
-**Child Attributes:**
+**Child Positioning with `canvas=` attribute:**
 
-| Attribute | Type | Description |
-|-----------|------|-------------|
-| x | number | X position |
-| y | number | Y position |
+Children use `canvas=x,y` for absolute positioning:
+
+```wireframe
+Canvas w=400 h=300
+    Button "At 10,20" canvas=10,20
+    Button "At 200,150" canvas=200,150
+    Icon $star canvas=350,250
+/Canvas
+```
+
+| Parameter | Description |
+|-----------|-------------|
+| x | X position from left |
+| y | Y position from top |
 
 ---
 
@@ -653,29 +683,65 @@ Image "Product photo" width=200 height=150
 
 ### 6.3 Avatar
 
-User avatar.
+User avatar with size variants.
 
 **Syntax:**
 ```wireframe
 Avatar "JD"
 Avatar "John Doe" circle
-Avatar $icon:user circle
+Avatar $icon:user circle size=lg
 ```
+
+**Attributes:**
+
+| Attribute | Type | Default | Description |
+|-----------|------|---------|-------------|
+| size | string | md | Size: xs (24px), sm (32px), md (40px), lg (56px), xl (80px) |
 
 **Modifiers:**
 - `circle` - Circular avatar
+
+**Size Examples:**
+```wireframe
+Horizontal gap=8 align=center
+    Avatar "XS" size=xs
+    Avatar "SM" size=sm
+    Avatar "MD" size=md
+    Avatar "LG" size=lg
+    Avatar "XL" size=xl
+/Horizontal
+```
 
 ---
 
 ### 6.4 Badge
 
-Badge/count indicator.
+Badge/count indicator with color variants.
 
 **Syntax:**
 ```wireframe
 Badge "3"
 Badge "New" primary
+Badge "Success" variant=success
+Badge "Warning" variant=warning
+Badge "Error" variant=error
+Badge "Info" variant=info
 ```
+
+**Attributes:**
+
+| Attribute | Type | Default | Description |
+|-----------|------|---------|-------------|
+| variant | string | - | Color variant: info, success, warning, error |
+
+**Variant Colors:**
+
+| Variant | Background | Text Color |
+|---------|------------|------------|
+| info | Blue (#3b82f6) | White |
+| success | Green (#22c55e) | White |
+| warning | Yellow (#eab308) | Black |
+| error | Red (#ef4444) | White |
 
 ---
 
@@ -1057,27 +1123,133 @@ Table
 
 ---
 
-### 9.2 DataGrid
+### 9.2 Row
 
-Data grid with columns.
+Table row container.
 
 **Syntax:**
 ```wireframe
-DataGrid ?items
-    Column "Name" ?name
-    Column "Email" ?email
-    Column "Actions"
-        Button "Edit" secondary
-        Button "Delete" secondary
-    /Column
+Row
+    Cell "Column 1"
+    Cell "Column 2"
+    Cell "Column 3"
+/Row
+```
+
+**Modifiers:**
+
+| Modifier | Description |
+|----------|-------------|
+| selected | Header row styling (darker background) |
+
+**Example:**
+```wireframe
+Vertical
+    Row selected
+        Cell "Name" align=left
+        Cell "Email" align=left
+        Cell "Role" align=center
+    /Row
+    Row
+        Cell "John Doe"
+        Cell "john@example.com"
+        Cell "Admin"
+    /Row
+/Vertical
+```
+
+---
+
+### 9.3 Cell
+
+Table cell with text content and alignment.
+
+**Syntax:**
+```wireframe
+Cell "Content"
+Cell "Centered" align=center
+Cell "Right-aligned" align=right
+```
+
+**Attributes:**
+
+| Attribute | Type | Default | Description |
+|-----------|------|---------|-------------|
+| align | string | left | Text alignment: left, center, right |
+
+---
+
+### 9.4 DataGrid
+
+Data grid with typed columns and sample data generation.
+
+**Syntax:**
+```wireframe
+DataGrid rows=5 selected
+    ColumnText "Name"
+    ColumnDate "Created"
+    ColumnNumber "Count"
+    ColumnCheckbox "Active"
+    ColumnButton "Actions"
+/DataGrid
+```
+
+**Attributes:**
+
+| Attribute | Type | Default | Description |
+|-----------|------|---------|-------------|
+| rows | number | 5 | Number of sample data rows to generate |
+
+**Modifiers:**
+
+| Modifier | Description |
+|----------|-------------|
+| selected | Adds a selection checkbox column |
+
+---
+
+### 9.5 DataGrid Column Types
+
+Typed column definitions for DataGrid.
+
+| Component | Data Type | Sample Display |
+|-----------|-----------|----------------|
+| ColumnText | String | "Text value" |
+| ColumnDate | Date | MM/DD/YYYY format |
+| ColumnNumber | Number | 123 |
+| ColumnCheckbox | Boolean | ☐ or ☑ |
+| ColumnImage | Image | Small thumbnail |
+| ColumnLink | URL | Underlined link |
+| ColumnButton | Action | Action button |
+
+**Syntax:**
+```wireframe
+ColumnText "Header"
+ColumnDate "Date Column"
+ColumnNumber "Amount"
+ColumnCheckbox "Active"
+ColumnImage "Photo"
+ColumnLink "Website"
+ColumnButton "Actions"
+```
+
+**Complete Example:**
+```wireframe
+DataGrid rows=3 selected
+    ColumnText "Name"
+    ColumnText "Email"
+    ColumnDate "Created"
+    ColumnNumber "Score"
+    ColumnCheckbox "Active"
+    ColumnButton "Edit"
 /DataGrid
 ```
 
 ---
 
-### 9.3 Column
+### 9.6 Column (Legacy)
 
-DataGrid column.
+Generic DataGrid column (for backward compatibility).
 
 **Syntax:**
 ```wireframe
@@ -1089,7 +1261,7 @@ Column "With Content"
 
 ---
 
-### 9.4 Tree
+### 9.7 Tree
 
 Tree view with +/- syntax.
 

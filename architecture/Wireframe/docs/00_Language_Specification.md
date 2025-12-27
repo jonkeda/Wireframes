@@ -198,6 +198,23 @@ Grid rows=2 cols=3 gap=16
 /Grid
 ```
 
+**Attributes:**
+- `cols=n` - Number of columns
+- `rows=n` - Number of rows
+- `gap=n` - Gap between cells
+
+**Child Positioning:**
+
+Use `grid=row,col[,rowSpan,colSpan]` to position children:
+
+```wireframe
+Grid cols=3 rows=2
+    Button "Span 2 cols" grid=0,0,1,2
+    Button "Normal" grid=0,2
+    Button "Span 2 rows" grid=1,0,2,1
+/Grid
+```
+
 ### 5.4 Dock Layout
 
 ```wireframe
@@ -221,6 +238,24 @@ Dock
 ```
 
 **Dock positions:** `top`, `bottom`, `left`, `right`, `fill`
+
+### 5.5 Canvas Layout
+
+```wireframe
+Canvas w=400 h=300
+    Button "Positioned" canvas=50,100
+    Icon $star canvas=200,150
+/Canvas
+```
+
+**Child Positioning:**
+
+Use `canvas=x,y` for absolute positioning:
+
+| Parameter | Description |
+|-----------|-------------|
+| x | X position from left |
+| y | Y position from top |
 
 ---
 
@@ -379,8 +414,8 @@ Dropdown "USA" "Canada" "UK" :ddlCountry
 | `Spacer` | `Spacer` |
 | `Icon` | `Icon $settings` |
 | `Image` | `Image "photo.jpg"` |
-| `Avatar` | `Avatar "JD"` or `Avatar "John Doe"` |
-| `Badge` | `Badge "5"` |
+| `Avatar` | `Avatar "JD"` or `Avatar "John Doe" size=lg` |
+| `Badge` | `Badge "5"` or `Badge "New" variant=success` |
 | `Progress` | `Progress value=75` |
 | `Slider` | `Slider min=0 max=100 value=50` |
 | `Switch` | `Switch "Dark Mode"` |
@@ -492,12 +527,47 @@ Table
 ### 8.8 DataGrid
 
 ```wireframe
-DataGrid :dgOrders
-    Column field=product header="Product"
-    Column field=quantity header="Qty" editable
-    Column field=price header="Price" format=currency
+DataGrid :dgOrders rows=5 selected
+    ColumnText "Product"
+    ColumnNumber "Qty"
+    ColumnDate "Date"
+    ColumnCheckbox "Shipped"
+    ColumnButton "Actions"
 /DataGrid
 ```
+
+**Column Types:**
+
+| Type | Description |
+|------|-------------|
+| `ColumnText` | Text column |
+| `ColumnDate` | Date (MM/DD/YYYY) |
+| `ColumnNumber` | Numeric column |
+| `ColumnCheckbox` | Boolean checkbox |
+| `ColumnImage` | Image thumbnail |
+| `ColumnLink` | Clickable link |
+| `ColumnButton` | Action button |
+
+### 8.9 Row and Cell
+
+```wireframe
+Vertical
+    Row selected
+        Cell "Name" align=left
+        Cell "Email" align=center
+    /Row
+    Row
+        Cell "John Doe"
+        Cell "john@example.com"
+    /Row
+/Vertical
+```
+
+**Cell Attributes:**
+- `align` - Text alignment: `left`, `center`, `right`
+
+**Row Modifiers:**
+- `selected` - Header row styling
 
 ---
 

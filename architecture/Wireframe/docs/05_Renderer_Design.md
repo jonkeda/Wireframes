@@ -554,7 +554,80 @@ function renderFallback(node: ASTNode, box: LayoutBox): string {
 
 ---
 
-## 11. Related Documents
+## 11. Sketch Theme Rendering
+
+The sketch theme uses hand-drawn style rendering implemented in `sketch.ts`.
+
+### 11.1 Sketch Helpers Module
+
+```typescript
+// packages/core/src/renderer/sketch.ts
+
+/**
+ * Generate a sketchy line path between two points
+ */
+export function sketchyLine(
+  x1: number, y1: number,
+  x2: number, y2: number,
+  roughness?: number
+): string;
+
+/**
+ * Generate a sketchy rectangle path
+ */
+export function sketchyRect(
+  x: number, y: number,
+  width: number, height: number,
+  roughness?: number
+): string;
+
+/**
+ * Generate a sketchy circle/ellipse path
+ */
+export function sketchyCircle(
+  cx: number, cy: number,
+  rx: number, ry: number,
+  roughness?: number
+): string;
+```
+
+### 11.2 Algorithm
+
+The sketchy rendering algorithm adds controlled randomness:
+
+1. **Line Jitter** - Add small random offsets to line endpoints
+2. **Multi-Stroke** - Draw 2-3 overlapping strokes for hand-drawn effect
+3. **Curve Variation** - Use bezier curves instead of straight lines
+4. **Roughness Control** - Configurable roughness factor (0-1)
+
+### 11.3 Theme Integration
+
+```typescript
+class SVGRenderer {
+  private createRect(x, y, w, h, rx, fill, stroke): string {
+    if (this.theme.name === 'sketch') {
+      const path = sketchyRect(x, y, w, h, 0.5);
+      return `<path d="${path}" fill="${fill}" stroke="${stroke}" />`;
+    }
+    return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rx}" ... />`;
+  }
+}
+```
+
+### 11.4 Affected Components
+
+Components that use sketchy rendering when `theme=sketch`:
+
+- Button, IconButton
+- TextInput, TextArea, NumberInput
+- Card, Panel, Section containers
+- Checkbox, Radio (outline)
+- Progress bar
+- Table/DataGrid borders
+
+---
+
+## 12. Related Documents
 
 | Document | Description |
 |----------|-------------|

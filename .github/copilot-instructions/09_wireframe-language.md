@@ -58,6 +58,10 @@ wireframe <style>
 | `Label` | `Label "Text"` | Text label |
 | `Separator` | `Separator` | Visual divider |
 | `Spacer` | `Spacer` | Empty space |
+| `Row` | `Row` with `Cell` children, `selected` for header | Table row container |
+| `Cell` | `Cell "Text" align=center` | Table cell with alignment |
+| `Avatar` | `Avatar "JD" size=lg circle` | Avatar with size (xs/sm/md/lg/xl) |
+| `Badge` | `Badge "New" variant=success` | Badge with variant (info/success/warning/error) |
 
 ### Layouts
 
@@ -65,10 +69,33 @@ wireframe <style>
 |--------|--------|-------------|
 | `Vertical` | `Vertical gap=8` | Stack children vertically |
 | `Horizontal` | `Horizontal gap=8` | Stack children horizontally |
-| `Grid` | `Grid cols=2 rows=2 gap=16` | Grid layout |
+| `Grid` | `Grid cols=3 rows=2 gap=16` | Grid layout with positioning |
 | `Dock` | `Dock` | Dock layout with regions |
-| `Canvas` | `Canvas` | Absolute positioning |
+| `Canvas` | `Canvas w=400 h=300` | Absolute positioning |
 | `Scroll` | `Scroll` | Scrollable container |
+
+#### Grid Positioning
+
+Children in a Grid can be positioned with `grid=row,col[,rowSpan,colSpan]`:
+
+```wireframe
+Grid cols=3 rows=2
+    Button "Span 2 cols" grid=0,0,1,2
+    Button "Normal" grid=0,2
+    Button "Row 1" grid=1,0
+/Grid
+```
+
+#### Canvas Positioning
+
+Children in a Canvas use `canvas=x,y` for absolute positioning:
+
+```wireframe
+Canvas w=400 h=300
+    Button "At 10,20" canvas=10,20
+    Button "At 200,150" canvas=200,150
+/Canvas
+```
 
 ### Containers
 
@@ -222,17 +249,30 @@ wireframe clean
         
         Separator
         
-        DataGrid :dgUsers
-            Column "Name" field=name
-            Column "Email" field=email
-            Column "Role" field=role
-            Column "Actions" w=100
+        DataGrid :dgUsers rows=5 selected
+            ColumnText "Name"
+            ColumnText "Email"
+            ColumnDate "Created"
+            ColumnCheckbox "Active"
+            ColumnButton "Actions"
         /DataGrid
         
         Pagination :pgUsers
     /Card
 /wireframe
 ```
+
+**DataGrid Column Types:**
+
+| Column Type | Description |
+|-------------|-------------|
+| `ColumnText` | Text column |
+| `ColumnDate` | Date (MM/DD/YYYY) |
+| `ColumnNumber` | Numeric column |
+| `ColumnCheckbox` | Boolean checkbox |
+| `ColumnImage` | Image thumbnail |
+| `ColumnLink` | Clickable link |
+| `ColumnButton` | Action button |
 
 ---
 

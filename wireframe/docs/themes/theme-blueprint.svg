@@ -15,8 +15,8 @@
       
     </g><g>
       <circle cx="460" cy="141" r="20" fill="#ffffff" />
-      <text x="460" y="146" text-anchor="middle" class="wire-text" fill="#1e3a5f">J</text>
-    </g><rect x="16" y="600" width="768" height="240" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="32" y="631" class="wire-text wire-text-bold">Navigation</text><rect x="800" y="600" width="-16" height="92" rx="8" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1" filter="url(#shadow)" /><text x="816" y="631" class="wire-text wire-text-bold">System Status</text><text x="816" y="659" class="wire-text">CPU Usage</text><g>
+      <text x="460" y="145.44444444444446" text-anchor="middle" class="wire-text" style="font-size: 13.333333333333334px" fill="#1e3a5f">J</text>
+    </g><rect x="16" y="600" width="768" height="240" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="32" y="631" class="wire-text wire-text-bold">Navigation</text><rect x="800" y="600" width="-16" height="92" rx="8" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1"  filter="url(#shadow)" /><text x="816" y="631" class="wire-text wire-text-bold">System Status</text><text x="816" y="659" class="wire-text">CPU Usage</text><g>
       <rect x="816" y="668" width="200" height="8" rx="4" fill="#2a4a6f" />
       <rect x="816" y="668" width="90" height="8" rx="4" fill="#ffffff" />
     </g><text x="1032" y="659" class="wire-text">Memory</text><g>
@@ -25,7 +25,7 @@
     </g><text x="1248" y="659" class="wire-text">Storage</text><g>
       <rect x="1248" y="668" width="200" height="8" rx="4" fill="#2a4a6f" />
       <rect x="1248" y="668" width="76" height="8" rx="4" fill="#ffffff" />
-    </g><rect x="800" y="708" width="-16" height="140" rx="8" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1" filter="url(#shadow)" /><text x="816" y="739" class="wire-text wire-text-bold">Configuration</text><g>
+    </g><rect x="800" y="708" width="-16" height="140" rx="8" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1"  filter="url(#shadow)" /><text x="816" y="739" class="wire-text wire-text-bold">Configuration</text><g>
       <rect x="816" y="752" width="200" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
       <text x="828" y="775" class="wire-text">US-East</text>
       <path d="M996 768 L1002 774 L1008 768" stroke="#ffffff" stroke-width="2" fill="none" />

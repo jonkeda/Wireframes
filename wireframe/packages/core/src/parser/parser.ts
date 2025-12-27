@@ -138,8 +138,17 @@ const TOKEN_TO_COMPONENT: Record<string, ComponentType> = {
   [TokenType.ALERT]: 'Alert',
   [TokenType.HOVER]: 'Hover',
   [TokenType.TABLE]: 'Table',
+  [TokenType.ROW]: 'Row',
+  [TokenType.CELL]: 'Cell',
   [TokenType.DATA_GRID]: 'DataGrid',
   [TokenType.COLUMN]: 'Column',
+  [TokenType.COLUMN_TEXT]: 'ColumnText',
+  [TokenType.COLUMN_DATE]: 'ColumnDate',
+  [TokenType.COLUMN_NUMBER]: 'ColumnNumber',
+  [TokenType.COLUMN_CHECKBOX]: 'ColumnCheckbox',
+  [TokenType.COLUMN_IMAGE]: 'ColumnImage',
+  [TokenType.COLUMN_LINK]: 'ColumnLink',
+  [TokenType.COLUMN_BUTTON]: 'ColumnButton',
 };
 
 /**

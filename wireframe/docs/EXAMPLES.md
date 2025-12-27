@@ -550,6 +550,196 @@ wireframe realistic
 /wireframe
 ```
 
+---
+
+## New Features
+
+### DataGrid with Typed Columns
+
+```wireframe
+wireframe clean
+    %title: DataGrid with Typed Columns
+    
+    Card
+        Vertical gap=16
+            Label "**User Management**"
+            
+            DataGrid rows=5 selected
+                ColumnText "Name"
+                ColumnText "Email"
+                ColumnDate "Created"
+                ColumnNumber "Score"
+                ColumnCheckbox "Active"
+                ColumnButton "Actions"
+            /DataGrid
+            
+            Pagination pages=5 current=1
+        /Vertical
+    /Card
+/wireframe
+```
+
+### Grid Positioning
+
+```wireframe
+wireframe clean
+    %title: Grid Positioning Example
+    
+    Card
+        Vertical gap=16
+            Label "**Grid with Positioning**"
+            
+            Grid cols=3 rows=3 gap=8
+                Button "Span 2 cols" grid=0,0,1,2
+                Button "Top right" grid=0,2
+                Button "Span 2 rows" grid=1,0,2,1
+                Button "Center" grid=1,1
+                Button "Right" grid=1,2
+                Button "Bottom span" grid=2,1,1,2
+            /Grid
+        /Vertical
+    /Card
+/wireframe
+```
+
+### Canvas Positioning
+
+```wireframe
+wireframe clean
+    %title: Canvas Positioning Example
+    
+    Canvas w=400 h=300
+        Label "**Absolute Positioning**" canvas=10,10
+        Button "Top Left" canvas=10,40
+        Button "Center" canvas=150,130
+        Button "Bottom Right" canvas=280,250
+        Icon $star canvas=350,10
+    /Canvas
+/wireframe
+```
+
+### Avatar Sizes
+
+```wireframe
+wireframe clean
+    %title: Avatar Size Variants
+    
+    Card
+        Vertical gap=16
+            Label "**Avatar Sizes**"
+            
+            Horizontal gap=16 align=center
+                Vertical gap=4 align=center
+                    Avatar "XS" size=xs circle
+                    Label "xs (24px)"
+                /Vertical
+                Vertical gap=4 align=center
+                    Avatar "SM" size=sm circle
+                    Label "sm (32px)"
+                /Vertical
+                Vertical gap=4 align=center
+                    Avatar "MD" size=md circle
+                    Label "md (40px)"
+                /Vertical
+                Vertical gap=4 align=center
+                    Avatar "LG" size=lg circle
+                    Label "lg (56px)"
+                /Vertical
+                Vertical gap=4 align=center
+                    Avatar "XL" size=xl circle
+                    Label "xl (80px)"
+                /Vertical
+            /Horizontal
+        /Vertical
+    /Card
+/wireframe
+```
+
+### Badge Variants
+
+```wireframe
+wireframe clean
+    %title: Badge Color Variants
+    
+    Card
+        Vertical gap=16
+            Label "**Badge Variants**"
+            
+            Horizontal gap=8
+                Badge "Info" variant=info
+                Badge "Success" variant=success
+                Badge "Warning" variant=warning
+                Badge "Error" variant=error
+            /Horizontal
+            
+            Separator
+            
+            Vertical gap=8
+                Horizontal gap=8 align=center
+                    Icon $info
+                    Label "Info badge uses blue background"
+                /Horizontal
+                Horizontal gap=8 align=center
+                    Icon $check
+                    Label "Success badge uses green background"
+                /Horizontal
+                Horizontal gap=8 align=center
+                    Icon $warning
+                    Label "Warning badge uses yellow (black text)"
+                /Horizontal
+                Horizontal gap=8 align=center
+                    Icon $error
+                    Label "Error badge uses red background"
+                /Horizontal
+            /Vertical
+        /Vertical
+    /Card
+/wireframe
+```
+
+### Row and Cell Table
+
+```wireframe
+wireframe clean
+    %title: Row and Cell Table
+    
+    Card
+        Vertical gap=16
+            Label "**Custom Table with Row/Cell**"
+            
+            Vertical gap=0
+                Row selected
+                    Cell "Name" align=left
+                    Cell "Email" align=left
+                    Cell "Role" align=center
+                    Cell "Status" align=center
+                /Row
+                Row
+                    Cell "John Doe"
+                    Cell "john@example.com"
+                    Cell "Admin"
+                    Cell "Active"
+                /Row
+                Row
+                    Cell "Jane Smith"
+                    Cell "jane@example.com"
+                    Cell "Editor"
+                    Cell "Active"
+                /Row
+                Row
+                    Cell "Bob Wilson"
+                    Cell "bob@example.com"
+                    Cell "Viewer"
+                    Cell "Inactive"
+                /Row
+            /Vertical
+        /Vertical
+    /Card
+/wireframe
+```
+
+---
+
 ## Accessibility Examples
 
 ### Accessible Form

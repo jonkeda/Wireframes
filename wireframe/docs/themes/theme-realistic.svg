@@ -9,9 +9,9 @@
   </style>
   
   <rect width="100%" height="100%" fill="#ffffff" />
-  <text x="16" y="31" class="wire-text wire-text-bold">Realistic Theme</text><text x="16" y="67" class="wire-text">A high-fidelity style for polished presentations and client demos.</text><line x1="16" y1="88" x2="216" y2="88" stroke="#dee2e6" stroke-width="1" /><rect x="16" y="105" width="768" height="573" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><g>
+  <text x="16" y="31" class="wire-text wire-text-bold">Realistic Theme</text><text x="16" y="67" class="wire-text">A high-fidelity style for polished presentations and client demos.</text><line x1="16" y1="88" x2="216" y2="88" stroke="#dee2e6" stroke-width="1" /><rect x="16" y="105" width="768" height="573" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g>
       <circle cx="52" cy="141" r="20" fill="#0d6efd" />
-      <text x="52" y="146" text-anchor="middle" class="wire-text" fill="#ffffff">A</text>
+      <text x="52" y="145.44444444444446" text-anchor="middle" class="wire-text" style="font-size: 13.333333333333334px" fill="#ffffff">A</text>
     </g><text x="88" y="136" class="wire-text wire-text-bold">Alex Brown</text><text x="88" y="160" class="wire-text">Senior Product Designer</text><g>
       <rect x="88" y="169" width="24" height="24" rx="12" fill="#6c757d" />
       <text x="100" y="185" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
@@ -21,7 +21,7 @@
     </g><g opacity="1">
       <rect x="816" y="121" width="128" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
       <text x="880" y="144" text-anchor="middle" class="wire-text" fill="#212529">Edit Profile</text>
-    </g><line x1="32" y1="209" x2="232" y2="209" stroke="#dee2e6" stroke-width="1" /><rect x="32" y="226" width="736" height="184" fill="none" stroke="#dee2e6" stroke-width="1" /><text x="32" y="441" class="wire-text wire-text-bold">Recent Projects</text><rect x="32" y="458" width="736" height="204" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><g>
+    </g><line x1="32" y1="209" x2="232" y2="209" stroke="#dee2e6" stroke-width="1" /><rect x="32" y="226" width="736" height="184" fill="none" stroke="#dee2e6" stroke-width="1" /><text x="32" y="441" class="wire-text wire-text-bold">Recent Projects</text><rect x="32" y="458" width="736" height="204" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g>
       <rect x="48" y="474" width="150" height="100" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
       <line x1="48" y1="474" x2="198" y2="574" stroke="#dee2e6" stroke-width="1" />
       <line x1="198" y1="474" x2="48" y2="574" stroke="#dee2e6" stroke-width="1" />
@@ -29,7 +29,7 @@
     </g><text x="48" y="597" class="wire-text wire-text-bold">E-commerce Redesign</text><text x="48" y="625" class="wire-text">Updated 2 days ago</text><g>
       <rect x="48" y="638" width="200" height="8" rx="4" fill="#f8f9fa" />
       <rect x="48" y="638" width="170" height="8" rx="4" fill="#0d6efd" />
-    </g><rect x="780" y="458" width="-12" height="204" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><g>
+    </g><rect x="780" y="458" width="-12" height="204" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g>
       <rect x="796" y="474" width="150" height="100" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
       <line x1="796" y1="474" x2="946" y2="574" stroke="#dee2e6" stroke-width="1" />
       <line x1="946" y1="474" x2="796" y2="574" stroke="#dee2e6" stroke-width="1" />
@@ -37,7 +37,7 @@
     </g><text x="796" y="597" class="wire-text wire-text-bold">Mobile App UI</text><text x="796" y="625" class="wire-text">Updated 1 week ago</text><g>
       <rect x="796" y="638" width="200" height="8" rx="4" fill="#f8f9fa" />
       <rect x="796" y="638" width="120" height="8" rx="4" fill="#0d6efd" />
-    </g><rect x="780" y="458" width="-12" height="204" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><g>
+    </g><rect x="780" y="458" width="-12" height="204" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g>
       <rect x="796" y="474" width="150" height="100" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
       <line x1="796" y1="474" x2="946" y2="574" stroke="#dee2e6" stroke-width="1" />
       <line x1="946" y1="474" x2="796" y2="574" stroke="#dee2e6" stroke-width="1" />
