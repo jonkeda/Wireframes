@@ -55,7 +55,11 @@ interface CompileResult {
 ```typescript
 import { compile } from '@aspect-ui/wireframe-core';
 
-const { svg, errors } = compile('/Button "Click"', {
+const { svg, errors } = compile(`
+uiwire sketch
+    Button "Click Me"
+/uiwire
+`, {
   width: 400,
   height: 300,
   theme: 'sketch'
@@ -86,7 +90,13 @@ interface ParseResult {
 ```typescript
 import { parse } from '@aspect-ui/wireframe-core';
 
-const { document, errors } = parse('/Header "Title"');
+const { document, errors } = parse(`
+uiwire clean
+    Header
+        Label "Title"
+    /Header
+/uiwire
+`);
 if (document) {
   console.log(document.children.length);
 }
@@ -131,7 +141,11 @@ function validate(source: string): {
 **Example:**
 
 ```typescript
-const { valid, errors } = validate('/Button @invalid');
+const { valid, errors } = validate(`
+uiwire clean
+    Button @invalid
+/uiwire
+`);
 if (!valid) {
   errors.forEach(e => console.error(`Line ${e.line}: ${e.message}`));
 }
@@ -401,7 +415,11 @@ function benchmark(
 
 ```typescript
 const result = benchmark('parse', () => {
-  parse('/Button "Test"');
+  parse(`
+uiwire clean
+    Button "Test"
+/uiwire
+`);
 }, { iterations: 1000 });
 
 console.log(formatBenchmarkResult(result));

@@ -7,35 +7,53 @@ A collection of example wireframes demonstrating various UI patterns.
 ### Hello World
 
 ```wireframe
-/Header "Hello World"
-/Button "Click Me"
+uiwire clean
+    %title: Hello World
+    
+    Label "**Hello World**"
+    Button "Click Me" primary
+/uiwire
 ```
 
 ### Login Form
 
 ```wireframe
-@style clean
-
-/Card
-  /Heading "Login"
-  /Vertical @gap=16
-    /TextInput "Email" @placeholder="Enter your email" @required
-    /PasswordInput "Password" @placeholder="Enter password" @required
-    /Checkbox "Remember me"
-    /Button "Sign In" @primary
-    /Link "Forgot password?"
+uiwire clean
+    %title: Login Form
+    
+    Card w=300
+        Vertical gap=16
+            Label "**Login**"
+            
+            Label "Email:"
+            TextInput "Enter your email" :txtEmail required
+            
+            Label "Password:"
+            PasswordInput "Enter password" :txtPass required
+            
+            Checkbox "Remember me" :chkRemember
+            
+            Button "Sign In" :btnLogin primary
+            Label "Forgot password?" @ForgotPassword
+        /Vertical
+    /Card
+/uiwire
 ```
 
 ### Dashboard Header
 
 ```wireframe
-/Header
-  /Horizontal @gap=16
-    /Label "Dashboard" @bold
-    /Spacer
-    /Icon "search"
-    /Icon "notifications"
-    /Avatar "JD"
+uiwire clean
+    Header
+        Horizontal gap=16 justify=between
+            Label "**Dashboard**"
+            Spacer
+            Icon $search
+            Icon $notifications
+            Avatar "JD" :avUser
+        /Horizontal
+    /Header
+/uiwire
 ```
 
 ## Forms
@@ -43,56 +61,97 @@ A collection of example wireframes demonstrating various UI patterns.
 ### Registration Form
 
 ```wireframe
-/Card
-  /Heading "Create Account"
-  /Vertical @gap=12
-    /Horizontal @gap=8
-      /TextInput "First Name" @placeholder="John"
-      /TextInput "Last Name" @placeholder="Doe"
-    /TextInput "Email" @placeholder="john@example.com" @required
-    /PasswordInput "Password" @placeholder="Min 8 characters" @required
-    /PasswordInput "Confirm Password" @required
-    /Checkbox "I agree to the Terms of Service" @required
-    /Button "Create Account" @primary
-    /Separator
-    /Label "Already have an account?" @secondary
-    /Link "Sign in instead"
+uiwire clean
+    %title: Registration
+    
+    Card w=400
+        Vertical gap=12
+            Label "**Create Account**"
+            
+            Horizontal gap=8
+                TextInput "First Name" :txtFirst
+                TextInput "Last Name" :txtLast
+            /Horizontal
+            
+            TextInput "Email" :txtEmail required pattern=email
+            PasswordInput "Password" :txtPass required min=8
+            PasswordInput "Confirm Password" :txtConfirm required
+            
+            Checkbox "I agree to the Terms of Service" :chkTerms required
+            
+            Button "Create Account" :btnCreate primary
+            
+            Separator
+            
+            Label "Already have an account?"
+            Label "Sign in instead" @Login
+        /Vertical
+    /Card
+/uiwire
 ```
 
 ### Contact Form
 
 ```wireframe
-/Card
-  /Heading "Contact Us"
-  /Vertical @gap=12
-    /TextInput "Name" @required
-    /TextInput "Email" @required
-    /Dropdown "Subject"
-      "General Inquiry"
-      "Technical Support"
-      "Sales"
-      "Other"
-    /TextArea "Message" @placeholder="How can we help you?"
-    /Button "Send Message" @primary
+uiwire clean
+    %title: Contact Us
+    
+    Card w=400
+        Vertical gap=12
+            Label "**Contact Us**"
+            
+            Label "Name:"
+            TextInput "Your name" :txtName required
+            
+            Label "Email:"
+            TextInput "Your email" :txtEmail required
+            
+            Label "Subject:"
+            Dropdown :ddlSubject
+                Option "General Inquiry"
+                Option "Technical Support"
+                Option "Sales"
+                Option "Other"
+            /Dropdown
+            
+            Label "Message:"
+            TextArea "How can we help you?" :txtMessage rows=4
+            
+            Button "Send Message" :btnSend primary
+        /Vertical
+    /Card
+/uiwire
 ```
 
 ### Settings Form
 
 ```wireframe
-/Card
-  /Heading "Settings"
-  /Vertical @gap=16
-    /Label "Notifications" @bold
-    /Switch "Email notifications"
-    /Switch "Push notifications" @checked
-    /Separator
-    /Label "Privacy" @bold
-    /Switch "Public profile"
-    /Switch "Show online status" @checked
-    /Separator
-    /Horizontal @gap=8
-      /Button "Cancel"
-      /Button "Save Changes" @primary
+uiwire clean
+    %title: Settings
+    
+    Card w=400
+        Vertical gap=16
+            Label "**Settings**"
+            
+            Label "**Notifications**"
+            Switch "Email notifications" :swEmail
+            Switch "Push notifications" :swPush checked=true
+            
+            Separator
+            
+            Label "**Privacy**"
+            Switch "Public profile" :swPublic
+            Switch "Show online status" :swOnline checked=true
+            
+            Separator
+            
+            Horizontal gap=8 justify=end
+                Button "Cancel" @:back
+                Button "Save Changes" :btnSave primary
+            /Horizontal
+        /Vertical
+    /Card
+/uiwire
 ```
 
 ## Navigation
@@ -100,34 +159,58 @@ A collection of example wireframes demonstrating various UI patterns.
 ### Sidebar Navigation
 
 ```wireframe
-/Sidebar
-  /Vertical @gap=4
-    /Label "MENU" @secondary @small
-    /MenuItem "Dashboard" @active
-    /MenuItem "Projects"
-    /MenuItem "Tasks"
-    /MenuItem "Calendar"
-    /Separator
-    /Label "SETTINGS" @secondary @small
-    /MenuItem "Profile"
-    /MenuItem "Preferences"
-    /MenuItem "Help"
+uiwire clean
+    Sidebar w=200
+        Vertical gap=4
+            Label "MENU"
+            MenuItem "Dashboard" icon=$home selected
+            MenuItem "Projects" icon=$folder
+            MenuItem "Tasks" icon=$check
+            MenuItem "Calendar" icon=$calendar
+            
+            Separator
+            
+            Label "SETTINGS"
+            MenuItem "Profile" icon=$user
+            MenuItem "Preferences" icon=$settings
+            MenuItem "Help" icon=$info
+        /Vertical
+    /Sidebar
+/uiwire
 ```
 
 ### Tab Navigation
 
 ```wireframe
-/Tabs
-  /Tab "Overview" @active
-  /Tab "Analytics"
-  /Tab "Reports"
-  /Tab "Settings"
+uiwire clean
+    Tabs :tabMain
+        Tab "Overview"
+            Label "Overview content"
+        /Tab
+        Tab "Analytics"
+            Label "Analytics content"
+        /Tab
+        Tab "Reports"
+            Label "Reports content"
+        /Tab
+        Tab "Settings"
+            Label "Settings content"
+        /Tab
+    /Tabs
+/uiwire
 ```
 
 ### Breadcrumb Navigation
 
 ```wireframe
-/Breadcrumb "Home > Products > Electronics > Phones"
+uiwire clean
+    Breadcrumb
+        BreadcrumbItem "Home" @Home
+        BreadcrumbItem "Products" @Products
+        BreadcrumbItem "Electronics" @Electronics
+        BreadcrumbItem "Phones"
+    /Breadcrumb
+/uiwire
 ```
 
 ## Data Display
@@ -135,46 +218,79 @@ A collection of example wireframes demonstrating various UI patterns.
 ### User Table
 
 ```wireframe
-/Card
-  /Heading "Users"
-  /Table @columns="Name,Email,Role,Status"
-    "John Doe" "john@example.com" "Admin" "Active"
-    "Jane Smith" "jane@example.com" "Editor" "Active"
-    "Bob Wilson" "bob@example.com" "Viewer" "Inactive"
-  /Pagination @pages=5 @current=1
+uiwire clean
+    %title: User Management
+    
+    Card
+        Vertical gap=16
+            Label "**Users**"
+            
+            Table :tblUsers
+                | Name | Email | Role | Status |
+                |------|-------|------|--------|
+                | John Doe | john@example.com | Admin | Active |
+                | Jane Smith | jane@example.com | Editor | Active |
+                | Bob Wilson | bob@example.com | Viewer | Inactive |
+            /Table
+            
+            Pagination pages=5 current=1 :pgUsers
+        /Vertical
+    /Card
+/uiwire
 ```
 
 ### Stats Cards
 
 ```wireframe
-/Horizontal @gap=16
-  /Card
-    /Label "Total Users" @secondary
-    /Heading "12,345"
-    /Badge "↑ 12%" @success
-  /Card
-    /Label "Revenue" @secondary
-    /Heading "$45,678"
-    /Badge "↑ 8%" @success
-  /Card
-    /Label "Orders" @secondary
-    /Heading "1,234"
-    /Badge "↓ 3%" @error
+uiwire clean
+    Horizontal gap=16
+        Card w=200
+            Vertical gap=8
+                Label "Total Users"
+                Label "**12,345**"
+                Badge "↑ 12%" type=success
+            /Vertical
+        /Card
+        
+        Card w=200
+            Vertical gap=8
+                Label "Revenue"
+                Label "**$45,678**"
+                Badge "↑ 8%" type=success
+            /Vertical
+        /Card
+        
+        Card w=200
+            Vertical gap=8
+                Label "Orders"
+                Label "**1,234**"
+                Badge "↓ 3%" type=error
+            /Vertical
+        /Card
+    /Horizontal
+/uiwire
 ```
 
 ### Tree View
 
 ```wireframe
-/Card
-  /Heading "File Browser"
-  /Tree
-    /TreeItem "Documents" @expanded
-      /TreeItem "Work"
-        /TreeItem "Report.pdf"
-        /TreeItem "Presentation.pptx"
-      /TreeItem "Personal"
-    /TreeItem "Images"
-    /TreeItem "Downloads"
+uiwire clean
+    Card
+        Vertical gap=12
+            Label "**File Browser**"
+            
+            Tree :treeFiles
+                + Documents
+                    + Work
+                        - Report.pdf
+                        - Presentation.pptx
+                    + Personal
+                + Images
+                + Downloads
+            /Tree
+        /Vertical
+    /Card
+/uiwire
 ```
 
 ## Feedback
@@ -182,35 +298,47 @@ A collection of example wireframes demonstrating various UI patterns.
 ### Toast Notifications
 
 ```wireframe
-/Vertical @gap=8
-  /Toast "Success! Your changes have been saved." @success
-  /Toast "Warning: Your session will expire soon." @warning
-  /Toast "Error: Failed to load data." @error
-  /Toast "Info: New updates available." @info
+uiwire clean
+    Vertical gap=8
+        Toast "Success! Your changes have been saved." type=success
+        Toast "Warning: Your session will expire soon." type=warning
+        Toast "Error: Failed to load data." type=error
+        Toast "Info: New updates available." type=info
+    /Vertical
+/uiwire
 ```
 
 ### Progress Indicators
 
 ```wireframe
-/Card
-  /Heading "Upload Progress"
-  /Vertical @gap=12
-    /Progress @value=75
-    /Label "Uploading file... 75%"
-    /Horizontal @gap=8
-      /Button "Cancel"
-      /Spacer
-      /Label "3 of 4 files" @secondary
+uiwire clean
+    Card w=400
+        Vertical gap=12
+            Label "**Upload Progress**"
+            
+            Progress value=75 :prgUpload
+            Label "Uploading file... 75%"
+            
+            Horizontal gap=8 justify=between
+                Button "Cancel" @:back
+                Label "3 of 4 files"
+            /Horizontal
+        /Vertical
+    /Card
+/uiwire
 ```
 
 ### Stepper
 
 ```wireframe
-/Stepper
-  "Cart" @completed
-  "Shipping" @active
-  "Payment"
-  "Confirm"
+uiwire clean
+    Stepper :stpCheckout
+        Step "Cart" completed=true
+        Step "Shipping" current=true
+        Step "Payment"
+        Step "Confirm"
+    /Stepper
+/uiwire
 ```
 
 ## Complex Layouts
@@ -218,91 +346,146 @@ A collection of example wireframes demonstrating various UI patterns.
 ### Dashboard
 
 ```wireframe
-@style clean
-
-/Header
-  /Horizontal
-    /Label "Analytics Dashboard" @bold
-    /Spacer
-    /Dropdown "Last 7 days"
-      "Last 7 days"
-      "Last 30 days"
-      "Last 90 days"
-
-/Horizontal @gap=16
-  /Card @width=200
-    /Label "Page Views" @secondary
-    /Heading "45.2K"
-    /Progress @value=72
-  /Card @width=200
-    /Label "Visitors" @secondary
-    /Heading "12.8K"
-    /Progress @value=58
-  /Card @width=200
-    /Label "Bounce Rate" @secondary
-    /Heading "32%"
-    /Progress @value=32
-
-/Card
-  /Heading "Recent Activity"
-  /Table @columns="Event,User,Time"
-    "Page view" "john@example.com" "2 min ago"
-    "Sign up" "jane@example.com" "5 min ago"
-    "Purchase" "bob@example.com" "12 min ago"
+uiwire clean
+    %title: Analytics Dashboard
+    
+    Dock
+        Header dock=top h=60
+            Horizontal justify=between padding=16
+                Label "**Analytics Dashboard**"
+                Dropdown :ddlPeriod
+                    Option "Last 7 days"
+                    Option "Last 30 days"
+                    Option "Last 90 days"
+                /Dropdown
+            /Horizontal
+        /Header
+        
+        Content dock=fill padding=16
+            Vertical gap=16
+                Horizontal gap=16
+                    Card w=200
+                        Label "Page Views"
+                        Label "**45.2K**"
+                        Progress value=72
+                    /Card
+                    
+                    Card w=200
+                        Label "Visitors"
+                        Label "**12.8K**"
+                        Progress value=58
+                    /Card
+                    
+                    Card w=200
+                        Label "Bounce Rate"
+                        Label "**32%**"
+                        Progress value=32
+                    /Card
+                /Horizontal
+                
+                Card
+                    Vertical gap=12
+                        Label "**Recent Activity**"
+                        
+                        Table :tblActivity
+                            | Event | User | Time |
+                            |-------|------|------|
+                            | Page view | john@example.com | 2 min ago |
+                            | Sign up | jane@example.com | 5 min ago |
+                            | Purchase | bob@example.com | 12 min ago |
+                        /Table
+                    /Vertical
+                /Card
+            /Vertical
+        /Content
+    /Dock
+/uiwire
 ```
 
 ### E-commerce Product Page
 
 ```wireframe
-@style realistic
-
-/Header
-  /Horizontal
-    /Label "STORE" @bold
-    /Spacer
-    /TextInput "" @placeholder="Search products..."
-    /Icon "cart"
-
-/Horizontal @gap=24
-  /Card @width=400
-    /Image "product-image" @ratio="1:1"
-    /Horizontal @gap=8
-      /Image "thumb-1" @width=80
-      /Image "thumb-2" @width=80
-      /Image "thumb-3" @width=80
-
-  /Vertical @gap=16
-    /Breadcrumb "Home > Electronics > Headphones"
-    /Heading "Premium Wireless Headphones"
-    /Horizontal @gap=8
-      /Label "$299" @bold @large
-      /Label "$399" @secondary @strikethrough
-      /Badge "25% OFF" @success
-    /Label "★★★★☆ (128 reviews)" @secondary
-    /Separator
-    /Label "Color" @bold
-    /Horizontal @gap=8
-      /Chip "Black" @selected
-      /Chip "White"
-      /Chip "Navy"
-    /Separator
-    /Horizontal @gap=8
-      /NumberInput "1" @width=80
-      /Button "Add to Cart" @primary
-      /IconButton "heart"
+uiwire realistic
+    %title: Product Page
+    
+    Dock
+        Header dock=top h=60
+            Horizontal padding=16 justify=between
+                Label "**STORE**"
+                TextInput "Search products..." :txtSearch
+                IconButton $cart "Cart"
+            /Horizontal
+        /Header
+        
+        Content dock=fill padding=24
+            Horizontal gap=24
+                Card w=400
+                    Image "product-image" h=300
+                    Horizontal gap=8
+                        Image "thumb-1" w=80 h=80
+                        Image "thumb-2" w=80 h=80
+                        Image "thumb-3" w=80 h=80
+                    /Horizontal
+                /Card
+                
+                Vertical gap=16 w=400
+                    Breadcrumb
+                        BreadcrumbItem "Home" @Home
+                        BreadcrumbItem "Electronics" @Electronics
+                        BreadcrumbItem "Headphones"
+                    /Breadcrumb
+                    
+                    Label "**Premium Wireless Headphones**"
+                    
+                    Horizontal gap=8
+                        Label "**$299**"
+                        Label "~~$399~~"
+                        Badge "25% OFF" type=success
+                    /Horizontal
+                    
+                    Label "★★★★☆ (128 reviews)"
+                    
+                    Separator
+                    
+                    Label "**Color**"
+                    Horizontal gap=8
+                        Chip "Black" selected=true
+                        Chip "White"
+                        Chip "Navy"
+                    /Horizontal
+                    
+                    Separator
+                    
+                    Horizontal gap=8
+                        NumberInput "1" :txtQty w=80
+                        Button "Add to Cart" :btnAdd primary
+                        IconButton $star "Favorite"
+                    /Horizontal
+                /Vertical
+            /Horizontal
+        /Content
+    /Dock
+/uiwire
 ```
 
 ### Modal Dialog
 
 ```wireframe
-/Modal
-  /Heading "Confirm Delete"
-  /Label "Are you sure you want to delete this item? This action cannot be undone."
-  /Separator
-  /Horizontal @gap=8
-    /Spacer
-    /Button "Cancel"
-    /Button "Delete" @error
+uiwire clean
+    Dialog "Confirm Delete" :dlgConfirm
+        Vertical gap=16
+            Label "Are you sure you want to delete this item?"
+            Label "This action cannot be undone."
+            
+            Separator
+            
+            Horizontal gap=8 justify=end
+                Button "Cancel" @:close
+                Button "Delete" :btnDelete primary
+            /Horizontal
+        /Vertical
+    /Dialog
+/uiwire
 ```
 
 ## Theme Showcase
@@ -310,49 +493,61 @@ A collection of example wireframes demonstrating various UI patterns.
 ### Clean Theme
 
 ```wireframe
-@style clean
-
-/Card
-  /Heading "Clean Theme"
-  /Label "Modern and minimal design"
-  /Button "Primary" @primary
-  /Button "Default"
+uiwire clean
+    Card w=300
+        Vertical gap=12
+            Label "**Clean Theme**"
+            Label "Modern and minimal design"
+            Button "Primary" primary
+            Button "Default"
+        /Vertical
+    /Card
+/uiwire
 ```
 
 ### Sketch Theme
 
 ```wireframe
-@style sketch
-
-/Card
-  /Heading "Sketch Theme"
-  /Label "Hand-drawn, informal style"
-  /Button "Primary" @primary
-  /Button "Default"
+uiwire sketch
+    Card w=300
+        Vertical gap=12
+            Label "**Sketch Theme**"
+            Label "Hand-drawn, informal style"
+            Button "Primary" primary
+            Button "Default"
+        /Vertical
+    /Card
+/uiwire
 ```
 
 ### Blueprint Theme
 
 ```wireframe
-@style blueprint
-
-/Card
-  /Heading "Blueprint Theme"
-  /Label "Technical, grid-based design"
-  /Button "Primary" @primary
-  /Button "Default"
+uiwire blueprint
+    Card w=300
+        Vertical gap=12
+            Label "**Blueprint Theme**"
+            Label "Technical, grid-based design"
+            Button "Primary" primary
+            Button "Default"
+        /Vertical
+    /Card
+/uiwire
 ```
 
 ### Realistic Theme
 
 ```wireframe
-@style realistic
-
-/Card
-  /Heading "Realistic Theme"
-  /Label "Polished, production-like"
-  /Button "Primary" @primary
-  /Button "Default"
+uiwire realistic
+    Card w=300
+        Vertical gap=12
+            Label "**Realistic Theme**"
+            Label "Polished, production-like"
+            Button "Primary" primary
+            Button "Default"
+        /Vertical
+    /Card
+/uiwire
 ```
 
 ## Accessibility Examples
@@ -360,18 +555,23 @@ A collection of example wireframes demonstrating various UI patterns.
 ### Accessible Form
 
 ```wireframe
-/Card
-  /Heading "Accessible Form Example"
-  /Vertical @gap=12
-    /Label "Email Address *" @id="email-label"
-    /TextInput "" @labelledby="email-label" @required @describedby="email-help"
-    /Label "Enter a valid email address" @id="email-help" @secondary @small
+uiwire clean
+    %title: Accessible Form Example
     
-    /Label "Password *" @id="pass-label"
-    /PasswordInput "" @labelledby="pass-label" @required @describedby="pass-help"
-    /Label "Minimum 8 characters" @id="pass-help" @secondary @small
-    
-    /Button "Submit" @primary
+    Card w=400
+        Vertical gap=12
+            Label "**Accessible Form Example**"
+            
+            Label "Email Address *"
+            TextInput "Enter a valid email address" :txtEmail required pattern=email
+            
+            Label "Password *"
+            PasswordInput "Minimum 8 characters" :txtPass required min=8
+            
+            Button "Submit" :btnSubmit primary
+        /Vertical
+    /Card
+/uiwire
 ```
 
 ---

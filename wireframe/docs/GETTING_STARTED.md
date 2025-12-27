@@ -25,14 +25,23 @@ Install the **Wireframe Preview** extension from the VSCode marketplace for synt
 Create a file with the `.wire` extension:
 
 ```wireframe
-// My first wireframe
-/Header "My Application"
-
-/Card
-  /Label "Welcome!"
-  /Button "Get Started"
-
-/Footer "© 2025 My Company"
+uiwire clean
+    %title: My First Wireframe
+    
+    // My first wireframe
+    Header
+        Label "My Application"
+    /Header
+    
+    Card
+        Label "Welcome!"
+        Button "Get Started" primary
+    /Card
+    
+    Footer
+        Label "© 2025 My Company"
+    /Footer
+/uiwire
 ```
 
 ### Compile to SVG
@@ -41,8 +50,12 @@ Create a file with the `.wire` extension:
 import { compile } from '@aspect-ui/wireframe-core';
 
 const source = `
-/Header "My App"
-/Button "Click Me"
+uiwire clean
+    Header
+        Label "My App"
+    /Header
+    Button "Click Me"
+/uiwire
 `;
 
 const { svg, errors } = compile(source, {
@@ -60,15 +73,18 @@ if (errors.length === 0) {
 
 ### Controls
 
-Controls are UI elements prefixed with `/`:
+Controls are UI elements with text in quotes:
 
 ```wireframe
-/Button "Click Me"
-/TextInput "Enter name..." @placeholder
-/Checkbox "Remember me" @checked
-/Dropdown "Select option"
-  "Option 1"
-  "Option 2"
+uiwire clean
+    Button "Click Me"
+    TextInput "Enter name..." :txtName
+    Checkbox "Remember me" :chkRemember checked
+    Dropdown :ddlOption
+        Option "Option 1"
+        Option "Option 2"
+    /Dropdown
+/uiwire
 ```
 
 ### Layouts
@@ -76,11 +92,15 @@ Controls are UI elements prefixed with `/`:
 Organize controls with layout containers:
 
 ```wireframe
-/Vertical @gap=16
-  /Header "Title"
-  /Horizontal @gap=8
-    /Button "Cancel"
-    /Button "Submit" @primary
+uiwire clean
+    Vertical gap=16
+        Label "**Title**"
+        Horizontal gap=8
+            Button "Cancel"
+            Button "Submit" primary
+        /Horizontal
+    /Vertical
+/uiwire
 ```
 
 ### Sections
@@ -88,26 +108,34 @@ Organize controls with layout containers:
 Create semantic regions:
 
 ```wireframe
-/Header
-  /Label "My App" @bold
-
-/Content
-  /Card
-    /Label "Main content here"
-
-/Footer
-  /Label "Footer text"
+uiwire clean
+    Header
+        Label "**My App**"
+    /Header
+    
+    Content
+        Card
+            Label "Main content here"
+        /Card
+    /Content
+    
+    Footer
+        Label "Footer text"
+    /Footer
+/uiwire
 ```
 
 ### Modifiers
 
-Customize controls with `@` modifiers:
+Customize controls with keyword modifiers:
 
 ```wireframe
-/Button "Primary" @primary
-/Button "Disabled" @disabled
-/TextInput "Email" @required @placeholder="Enter email"
-/Label "Error" @error
+uiwire clean
+    Button "Primary" primary
+    Button "Disabled" disabled
+    TextInput "Email" :txtEmail required
+    Label "Error message" 
+/uiwire
 ```
 
 ## Themes
@@ -130,68 +158,72 @@ const { svg } = compile(source, { theme: 'sketch' });
 Or in the document:
 
 ```wireframe
-@style sketch
-
-/Header "Sketchy Design"
+uiwire sketch
+    %title: Sketchy Design
+    
+    Header
+        Label "Sketchy Design"
+    /Header
+/uiwire
 ```
 
 ## Available Controls
 
 ### Basic
-- `/Button` - Clickable button
-- `/IconButton` - Button with icon
-- `/Label` - Text label
-- `/Heading` - Heading text
-- `/Link` - Hyperlink
-- `/Separator` - Horizontal line
-- `/Spacer` - Empty space
+- `Button` - Clickable button
+- `IconButton` - Button with icon (`IconButton $save "Save"`)
+- `Label` - Text label (supports `**bold**`, `*italic*`)
+- `Link` - Hyperlink (`Label "Click here" @Target`)
+- `Separator` - Horizontal line
+- `Spacer` - Flexible spacer
 
 ### Input
-- `/TextInput` - Single-line text
-- `/PasswordInput` - Password field
-- `/NumberInput` - Numeric input
-- `/DateInput` - Date picker
-- `/TextArea` - Multi-line text
+- `TextInput` - Single-line text
+- `PasswordInput` - Password field
+- `NumberInput` - Numeric input
+- `DateInput` - Date picker
+- `TextArea` - Multi-line text
 
 ### Selection
-- `/Checkbox` - Checkbox control
-- `/Radio` - Radio button
-- `/Dropdown` - Select dropdown
-- `/Switch` - Toggle switch
-- `/Slider` - Range slider
+- `Checkbox` - Checkbox control
+- `Radio` - Radio button
+- `Dropdown` / `Option` - Select dropdown
+- `Switch` - Toggle switch
+- `Slider` - Range slider
 
 ### Display
-- `/Icon` - Icon display
-- `/Image` - Image placeholder
-- `/Avatar` - User avatar
-- `/Badge` - Status badge
-- `/Progress` - Progress bar
-- `/Chip` - Tag/chip element
+- `Icon` - Icon display (`Icon $settings`)
+- `Image` - Image placeholder
+- `Avatar` - User avatar
+- `Badge` - Status badge
+- `Progress` - Progress bar
+- `Chip` - Tag/chip element
 
 ### Navigation
-- `/Tabs` - Tab container
-- `/Tab` - Individual tab
-- `/Menu` - Menu container
-- `/MenuItem` - Menu item
-- `/Breadcrumb` - Breadcrumb navigation
-- `/Pagination` - Page navigation
+- `Tabs` / `Tab` - Tab container
+- `Menu` / `MenuItem` - Menu container
+- `Breadcrumb` / `BreadcrumbItem` - Breadcrumb navigation
+- `Pagination` - Page navigation
 
 ### Data
-- `/Table` - Data table
-- `/DataGrid` - Advanced data grid
-- `/Tree` - Tree view
-- `/TreeItem` - Tree node
+- `Table` - Data table
+- `DataGrid` / `Column` - Advanced data grid
+- `Tree` - Tree view
+- `List` - List items
 
 ### Containers
-- `/Card` - Card container
-- `/Accordion` - Collapsible sections
-- `/AccordionSection` - Accordion item
-- `/Modal` - Modal dialog
+- `Card` - Card container
+- `Panel` - Generic panel
+- `Accordion` / `AccordionSection` - Collapsible sections
+- `Modal` - Modal dialog
+- `Dialog` - Dialog box
+- `Drawer` - Slide-out drawer
 
 ### Feedback
-- `/Toast` - Notification toast
-- `/Skeleton` - Loading placeholder
-- `/Stepper` - Step indicator
+- `Toast` - Notification toast
+- `Alert` - Alert/notification box
+- `Skeleton` - Loading placeholder
+- `Stepper` / `Step` - Step indicator
 
 ## CLI Usage
 
@@ -250,12 +282,17 @@ registerWireframe(mermaid);
 
 Then in your Mermaid diagrams:
 
+````markdown
+```mermaid
+wireframe-beta
+    Header
+        Label "Dashboard"
+    /Header
+    Card
+        Label "Welcome back!"
+    /Card
 ```
-wireframe
-  /Header "Dashboard"
-  /Card
-    /Label "Welcome back!"
-```
+````
 
 ## Performance Tips
 
