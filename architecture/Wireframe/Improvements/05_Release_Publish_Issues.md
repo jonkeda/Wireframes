@@ -81,8 +81,9 @@ Add a step to build all packages before building the VS Code extension:
 1. ✅ Create this document
 2. ✅ Fix Issue 1: Configured npm Trusted Publishers (OIDC), removed NODE_AUTH_TOKEN
 3. ✅ Fix Issue 2: Added `pnpm build` step before vscode extension build in publish-vscode job
-4. ⏳ Commit and push fixes
-5. ⏳ Create new release to test
+4. ✅ Fix Issue 3: Checkout release tag explicitly (was checking out main instead of tag)
+5. ⏳ Commit and push fixes
+6. ⏳ Create new release to test
 
 ---
 
