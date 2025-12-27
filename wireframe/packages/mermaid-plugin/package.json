@@ -1,6 +1,6 @@
 {
   "name": "@jonkeda/wireframe-mermaid",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Mermaid.js plugin for Wireframe diagrams",
   "type": "module",
   "main": "./dist/index.js",

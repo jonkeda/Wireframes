@@ -1,6 +1,6 @@
 {
   "name": "wireframe-vscode",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "VS Code extension for Wireframe preview and editing",
   "publisher": "jonkeda",
   "license": "MIT",
