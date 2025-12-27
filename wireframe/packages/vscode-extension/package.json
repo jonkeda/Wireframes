@@ -1,0 +1,59 @@
+{
+  "name": "@aspect-ui/wireframe-vscode",
+  "version": "0.0.1",
+  "description": "VS Code extension for Wireframe preview and editing",
+  "publisher": "aspect-ui",
+  "displayName": "Wireframe - UI Mockup DSL",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Visualization"
+  ],
+  "activationEvents": [
+    "onLanguage:wireframe"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "wireframe",
+        "aliases": ["Wireframe", "Wire"],
+        "extensions": [".wire"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "wireframe.preview",
+        "title": "Wireframe: Preview"
+      },
+      {
+        "command": "wireframe.exportSvg",
+        "title": "Wireframe: Export to SVG"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "wireframe.preview",
+          "when": "resourceLangId == wireframe",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "watch": "tsc -p tsconfig.build.json --watch",
+    "package": "vsce package"
+  },
+  "dependencies": {
+    "@aspect-ui/wireframe-core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^2.22.0"
+  }
+}

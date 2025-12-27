@@ -1,0 +1,144 @@
+// Simple Form Wireframe
+// Demonstrates: Form elements, validation states
+
+Screen "ContactForm"
+  @title "Contact Us"
+  @theme clean
+  @width 600
+  @height 700
+
+  Card "formCard"
+    @padding 32
+
+    Vertical
+      @spacing 24
+
+      // Header
+      Vertical
+        @spacing 8
+        @align center
+
+        Heading "Get in Touch"
+          @level 1
+
+        Text "We'd love to hear from you. Send us a message!"
+          @style muted
+
+      EndVertical
+
+      // Form
+      Form "contactForm"
+        @action "/contact"
+
+        Vertical
+          @spacing 20
+
+          // Name row
+          Horizontal
+            @spacing 16
+
+            Vertical
+              @flex 1
+              @spacing 4
+
+              Label "First Name"
+                @required
+              Input "firstName"
+                @placeholder "John"
+                @required
+
+            EndVertical
+
+            Vertical
+              @flex 1
+              @spacing 4
+
+              Label "Last Name"
+                @required
+              Input "lastName"
+                @placeholder "Doe"
+                @required
+
+            EndVertical
+
+          EndHorizontal
+
+          // Email
+          Vertical
+            @spacing 4
+
+            Label "Email Address"
+              @required
+            Input "email"
+              @type email
+              @placeholder "john@example.com"
+              @required
+
+          EndVertical
+
+          // Phone (optional)
+          Vertical
+            @spacing 4
+
+            Label "Phone Number"
+            Input "phone"
+              @type tel
+              @placeholder "+1 (555) 123-4567"
+
+          EndVertical
+
+          // Subject dropdown
+          Vertical
+            @spacing 4
+
+            Label "Subject"
+              @required
+            Select "subject"
+              @placeholder "Select a subject"
+              @required
+
+              Option "General Inquiry"
+              Option "Support Request"
+              Option "Feature Request"
+              Option "Bug Report"
+              Option "Partnership"
+              Option "Other"
+
+            EndSelect
+
+          EndVertical
+
+          // Message textarea
+          Vertical
+            @spacing 4
+
+            Label "Message"
+              @required
+            TextArea "message"
+              @placeholder "Tell us what's on your mind..."
+              @rows 5
+              @required
+
+          EndVertical
+
+          // Terms checkbox
+          Checkbox "terms"
+            @label "I agree to the Terms of Service and Privacy Policy"
+            @required
+
+          // Submit button
+          Button "submit"
+            @label "Send Message"
+            @style primary
+            @width full
+            @action submit
+
+        EndVertical
+
+      EndForm
+
+    EndVertical
+
+  EndCard
+
+EndScreen

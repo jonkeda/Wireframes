@@ -1,0 +1,9 @@
+Vertical gap=16
+    Label "Login Form"
+    TextInput "Enter email" :txtEmail
+    TextInput "Enter password" :txtPass
+    Horizontal gap=8
+        Button "Cancel"
+        Button "Login" primary
+    /Horizontal
+/Vertical

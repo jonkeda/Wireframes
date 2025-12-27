@@ -1,0 +1,307 @@
+// Dashboard Wireframe
+// Demonstrates: Complex layouts, Cards, Tables, Charts
+
+Screen "Dashboard"
+  @title "Analytics Dashboard"
+  @theme clean
+  @width 1200
+  @height 800
+
+  Vertical
+    @spacing 0
+
+    // Top navigation bar
+    Navbar "topNav"
+      @height 60
+
+      Horizontal
+        @align center
+        @spacing 16
+        @padding 16
+
+        Logo "appLogo"
+          @text "Analytics Pro"
+
+        // Spacer to push items right
+        Spacer
+
+        // Search
+        Input "search"
+          @type search
+          @placeholder "Search..."
+          @width 250
+
+        // User menu
+        Avatar "userAvatar"
+          @src "user.jpg"
+          @size 36
+
+        Dropdown "userMenu"
+          MenuItem "Profile"
+          MenuItem "Settings"
+          Divider
+          MenuItem "Logout"
+        EndDropdown
+
+      EndHorizontal
+
+    EndNavbar
+
+    // Main content area with sidebar
+    Horizontal
+      @spacing 0
+
+      // Sidebar navigation
+      Sidebar "mainSidebar"
+        @width 240
+        @collapsed false
+
+        Menu "navMenu"
+          MenuItem "Dashboard"
+            @icon dashboard
+            @active
+          MenuItem "Analytics"
+            @icon chart
+          MenuItem "Reports"
+            @icon document
+          MenuItem "Users"
+            @icon users
+          MenuItem "Settings"
+            @icon settings
+        EndMenu
+
+      EndSidebar
+
+      // Main content
+      Content "mainContent"
+        @padding 24
+
+        Vertical
+          @spacing 24
+
+          // Page header
+          Header "pageHeader"
+            Horizontal
+              @align center
+
+              Heading "Dashboard Overview"
+                @level 1
+
+              Spacer
+
+              Button "exportBtn"
+                @label "Export"
+                @style secondary
+                @icon download
+
+              Button "refreshBtn"
+                @label "Refresh"
+                @style primary
+                @icon refresh
+
+            EndHorizontal
+          EndHeader
+
+          // Stats cards row
+          Grid "statsGrid"
+            @columns 4
+            @gap 16
+
+            Card "totalUsers"
+              @padding 20
+
+              Vertical
+                @spacing 8
+
+                Label "Total Users"
+                  @style muted
+
+                Heading "24,521"
+                  @level 2
+
+                Badge "growth"
+                  @label "+12.5%"
+                  @variant success
+
+              EndVertical
+
+            EndCard
+
+            Card "revenue"
+              @padding 20
+
+              Vertical
+                @spacing 8
+
+                Label "Revenue"
+                  @style muted
+
+                Heading "$84,230"
+                  @level 2
+
+                Badge "growth"
+                  @label "+8.2%"
+                  @variant success
+
+              EndVertical
+
+            EndCard
+
+            Card "orders"
+              @padding 20
+
+              Vertical
+                @spacing 8
+
+                Label "Orders"
+                  @style muted
+
+                Heading "1,429"
+                  @level 2
+
+                Badge "decline"
+                  @label "-2.4%"
+                  @variant error
+
+              EndVertical
+
+            EndCard
+
+            Card "conversion"
+              @padding 20
+
+              Vertical
+                @spacing 8
+
+                Label "Conversion"
+                  @style muted
+
+                Heading "3.24%"
+                  @level 2
+
+                Badge "neutral"
+                  @label "0%"
+                  @variant neutral
+
+              EndVertical
+
+            EndCard
+
+          EndGrid
+
+          // Charts row
+          Horizontal
+            @spacing 16
+
+            // Main chart
+            Card "chartCard"
+              @flex 2
+              @padding 20
+
+              Vertical
+                @spacing 16
+
+                Heading "Revenue Over Time"
+                  @level 3
+
+                Chart "revenueChart"
+                  @type line
+                  @height 300
+
+              EndVertical
+
+            EndCard
+
+            // Pie chart
+            Card "pieCard"
+              @flex 1
+              @padding 20
+
+              Vertical
+                @spacing 16
+
+                Heading "Traffic Sources"
+                  @level 3
+
+                Chart "trafficChart"
+                  @type pie
+                  @height 300
+
+              EndVertical
+
+            EndCard
+
+          EndHorizontal
+
+          // Recent activity table
+          Card "activityCard"
+            @padding 20
+
+            Vertical
+              @spacing 16
+
+              Horizontal
+                @align center
+
+                Heading "Recent Activity"
+                  @level 3
+
+                Spacer
+
+                Link "viewAll"
+                  @label "View All"
+                  @href "/activity"
+
+              EndHorizontal
+
+              Table "activityTable"
+                @columns "User, Action, Date, Status"
+
+                TableRow
+                  TableCell "John Doe"
+                  TableCell "Purchased Plan"
+                  TableCell "2 hours ago"
+                  TableCell
+                    Badge "completed"
+                      @label "Completed"
+                      @variant success
+                  EndTableCell
+                EndTableRow
+
+                TableRow
+                  TableCell "Jane Smith"
+                  TableCell "Signed Up"
+                  TableCell "4 hours ago"
+                  TableCell
+                    Badge "new"
+                      @label "New"
+                      @variant info
+                  EndTableCell
+                EndTableRow
+
+                TableRow
+                  TableCell "Bob Wilson"
+                  TableCell "Updated Profile"
+                  TableCell "Yesterday"
+                  TableCell
+                    Badge "completed"
+                      @label "Completed"
+                      @variant success
+                  EndTableCell
+                EndTableRow
+
+              EndTable
+
+            EndVertical
+
+          EndCard
+
+        EndVertical
+
+      EndContent
+
+    EndHorizontal
+
+  EndVertical
+
+EndScreen

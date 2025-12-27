@@ -1,0 +1,27 @@
+{
+  "name": "@aspect-ui/wireframe-cli",
+  "version": "0.0.1",
+  "description": "Command-line interface for Wireframe",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "wire": "./dist/cli.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aspect-ui/wireframe-core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.4.0"
+  },
+  "keywords": ["wireframe", "cli", "mockup"],
+  "license": "MIT"
+}

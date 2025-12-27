@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe - UI Mockup DSL Demo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #1a1a2e;
+      color: #eee;
+      min-height: 100vh;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 24px 32px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .header h1 {
+      margin: 0 0 8px 0;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .header p {
+      margin: 0;
+      opacity: 0.9;
+      font-size: 14px;
+    }
+
+    .container {
+      display: flex;
+      height: calc(100vh - 100px);
+    }
+
+    .editor-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid #333;
+    }
+
+    .preview-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: #f5f5f5;
+    }
+
+    .panel-header {
+      padding: 12px 16px;
+      background: #252538;
+      border-bottom: 1px solid #333;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .preview-panel .panel-header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      color: #333;
+    }
+
+    .panel-header h2 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .panel-header select {
+      padding: 6px 12px;
+      border-radius: 4px;
+      border: 1px solid #444;
+      background: #333;
+      color: #fff;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .preview-panel .panel-header select {
+      border-color: #ccc;
+      background: #fff;
+      color: #333;
+    }
+
+    textarea {
+      flex: 1;
+      padding: 16px;
+      background: #16162a;
+      color: #f8f8f2;
+      border: none;
+      resize: none;
+      font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+      font-size: 13px;
+      line-height: 1.6;
+      outline: none;
+    }
+
+    textarea::placeholder {
+      color: #666;
+    }
+
+    .preview-content {
+      flex: 1;
+      padding: 24px;
+      overflow: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .preview-svg {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      max-width: 100%;
+      overflow: auto;
+    }
+
+    .preview-svg svg {
+      display: block;
+    }
+
+    .errors {
+      padding: 12px 16px;
+      background: #ff6b6b;
+      color: white;
+      font-size: 13px;
+    }
+
+    .errors-list {
+      margin: 8px 0 0 0;
+      padding-left: 20px;
+    }
+
+    .errors-list li {
+      margin: 4px 0;
+    }
+
+    .toolbar {
+      padding: 8px 16px;
+      background: #1e1e32;
+      display: flex;
+      gap: 8px;
+      border-bottom: 1px solid #333;
+    }
+
+    .toolbar button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      background: #667eea;
+      color: white;
+      font-size: 13px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .toolbar button:hover {
+      background: #5a6fd6;
+    }
+
+    .toolbar button.secondary {
+      background: #444;
+    }
+
+    .toolbar button.secondary:hover {
+      background: #555;
+    }
+
+    .status {
+      margin-left: auto;
+      color: #888;
+      font-size: 12px;
+      align-self: center;
+    }
+
+    .examples {
+      padding: 16px;
+      background: #1e1e32;
+      border-bottom: 1px solid #333;
+    }
+
+    .examples label {
+      font-size: 12px;
+      color: #888;
+      margin-right: 8px;
+    }
+
+    .examples select {
+      padding: 6px 12px;
+      border-radius: 4px;
+      border: 1px solid #444;
+      background: #333;
+      color: #fff;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🎨 Wireframe - UI Mockup DSL</h1>
+    <p>A domain-specific language for creating wireframe diagrams. Edit the code below and see the preview update in real-time.</p>
+  </div>
+
+  <div class="container">
+    <div class="editor-panel">
+      <div class="examples">
+        <label>Load Example:</label>
+        <select id="exampleSelect">
+          <option value="">-- Select --</option>
+          <option value="login">Login Screen</option>
+          <option value="dashboard">Dashboard</option>
+          <option value="form">Contact Form</option>
+          <option value="simple">Simple Card</option>
+        </select>
+      </div>
+      <div class="panel-header">
+        <h2>📝 Wireframe Source</h2>
+      </div>
+      <div class="toolbar">
+        <button id="compileBtn">▶ Compile</button>
+        <button id="clearBtn" class="secondary">Clear</button>
+        <button id="copyBtn" class="secondary">Copy SVG</button>
+        <span class="status" id="status">Ready</span>
+      </div>
+      <textarea id="editor" placeholder="// Enter your Wireframe code here...
+
+Screen &quot;MyScreen&quot;
+  Card &quot;main&quot;
+    Button &quot;hello&quot;
+      @label &quot;Hello World&quot;
+  EndCard
+EndScreen"></textarea>
+    </div>
+
+    <div class="preview-panel">
+      <div class="panel-header">
+        <h2>👁 Preview</h2>
+        <select id="themeSelect">
+          <option value="clean">Clean Theme</option>
+          <option value="sketch">Sketch Theme</option>
+          <option value="blueprint">Blueprint Theme</option>
+          <option value="realistic">Realistic Theme</option>
+        </select>
+      </div>
+      <div id="errors" class="errors" style="display: none;"></div>
+      <div class="preview-content">
+        <div class="preview-svg" id="preview">
+          <svg width="400" height="200" viewBox="0 0 400 200">
+            <rect x="0" y="0" width="400" height="200" fill="#f5f5f5"/>
+            <text x="200" y="100" text-anchor="middle" fill="#999" font-family="sans-serif" font-size="14">
+              Enter Wireframe code and click Compile
+            </text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    // Import the Wireframe compiler (when built)
+    // import { compile } from '../packages/core/dist/index.js';
+
+    const editor = document.getElementById('editor');
+    const preview = document.getElementById('preview');
+    const errors = document.getElementById('errors');
+    const status = document.getElementById('status');
+    const compileBtn = document.getElementById('compileBtn');
+    const clearBtn = document.getElementById('clearBtn');
+    const copyBtn = document.getElementById('copyBtn');
+    const themeSelect = document.getElementById('themeSelect');
+    const exampleSelect = document.getElementById('exampleSelect');
+
+    // Example Wireframe code
+    const examples = {
+      simple: `// Simple Card Example
+Screen "SimpleDemo"
+  @width 400
+  @height 300
+
+  Card "main"
+    @padding 24
+
+    Vertical
+      @spacing 16
+      @align center
+
+      Heading "Welcome!"
+        @level 1
+
+      Text "This is a simple Wireframe demo."
+
+      Button "action"
+        @label "Get Started"
+        @style primary
+
+    EndVertical
+
+  EndCard
+
+EndScreen`,
+
+      login: `// Login Screen
+Screen "Login"
+  @width 400
+  @height 500
+
+  Card "loginCard"
+    @padding 32
+
+    Vertical
+      @spacing 20
+      @align center
+
+      Heading "Sign In"
+        @level 1
+
+      Form "loginForm"
+        Vertical
+          @spacing 16
+
+          Label "Email"
+          Input "email"
+            @type email
+            @placeholder "you@example.com"
+
+          Label "Password"
+          Input "password"
+            @type password
+            @placeholder "••••••••"
+
+          Checkbox "remember"
+            @label "Remember me"
+
+          Button "submit"
+            @label "Sign In"
+            @style primary
+            @width full
+
+        EndVertical
+      EndForm
+
+      Divider
+
+      Link "forgot"
+        @label "Forgot password?"
+
+    EndVertical
+
+  EndCard
+
+EndScreen`,
+
+      dashboard: `// Dashboard Layout
+Screen "Dashboard"
+  @width 800
+  @height 600
+
+  Vertical
+    @spacing 0
+
+    // Header
+    Navbar "header"
+      @height 56
+
+      Horizontal
+        @padding 16
+        @align center
+
+        Logo "brand"
+          @text "Dashboard"
+
+        Spacer
+
+        Avatar "user"
+          @size 32
+
+      EndHorizontal
+
+    EndNavbar
+
+    // Content
+    Horizontal
+      @spacing 0
+
+      Sidebar "nav"
+        @width 200
+
+        Menu "menu"
+          MenuItem "Home"
+            @icon home
+            @active
+          MenuItem "Analytics"
+            @icon chart
+          MenuItem "Settings"
+            @icon settings
+        EndMenu
+
+      EndSidebar
+
+      Content "main"
+        @padding 24
+
+        Grid
+          @columns 2
+          @gap 16
+
+          Card "stat1"
+            @padding 16
+
+            Vertical
+              Label "Users"
+                @style muted
+              Heading "1,234"
+                @level 2
+            EndVertical
+
+          EndCard
+
+          Card "stat2"
+            @padding 16
+
+            Vertical
+              Label "Revenue"
+                @style muted
+              Heading "$5,678"
+                @level 2
+            EndVertical
+
+          EndCard
+
+        EndGrid
+
+      EndContent
+
+    EndHorizontal
+
+  EndVertical
+
+EndScreen`,
+
+      form: `// Contact Form
+Screen "ContactForm"
+  @width 500
+  @height 600
+
+  Card "formCard"
+    @padding 32
+
+    Vertical
+      @spacing 24
+
+      Heading "Contact Us"
+        @level 1
+
+      Form "contact"
+        Vertical
+          @spacing 16
+
+          Horizontal
+            @spacing 12
+
+            Vertical
+              @flex 1
+
+              Label "First Name"
+              Input "firstName"
+                @placeholder "John"
+
+            EndVertical
+
+            Vertical
+              @flex 1
+
+              Label "Last Name"
+              Input "lastName"
+                @placeholder "Doe"
+
+            EndVertical
+
+          EndHorizontal
+
+          Label "Email"
+          Input "email"
+            @type email
+            @placeholder "john@example.com"
+
+          Label "Subject"
+          Select "subject"
+            Option "General Inquiry"
+            Option "Support"
+            Option "Feedback"
+          EndSelect
+
+          Label "Message"
+          TextArea "message"
+            @rows 4
+            @placeholder "Your message..."
+
+          Button "send"
+            @label "Send Message"
+            @style primary
+            @width full
+
+        EndVertical
+      EndForm
+
+    EndVertical
+
+  EndCard
+
+EndScreen`
+    };
+
+    // Mock compile function (until real compiler is built)
+    function mockCompile(source, options = {}) {
+      const theme = options.theme || 'clean';
+      const width = options.width || 800;
+      const height = options.height || 600;
+
+      // Very basic parsing to extract some info
+      const titleMatch = source.match(/Screen\s+"([^"]+)"/);
+      const title = titleMatch ? titleMatch[1] : 'Wireframe';
+
+      // Count elements for demo purposes
+      const buttonCount = (source.match(/Button\s+"/g) || []).length;
+      const inputCount = (source.match(/Input\s+"/g) || []).length;
+      const cardCount = (source.match(/Card\s+"/g) || []).length;
+
+      // Generate a simple preview SVG
+      const themeColors = {
+        clean: { bg: '#ffffff', text: '#333333', accent: '#0066cc', border: '#dddddd' },
+        sketch: { bg: '#fffff8', text: '#333333', accent: '#333333', border: '#333333' },
+        blueprint: { bg: '#1a3a5c', text: '#ffffff', accent: '#4a9eff', border: '#4a9eff' },
+        realistic: { bg: '#f8f9fa', text: '#212529', accent: '#007bff', border: '#dee2e6' }
+      };
+
+      const colors = themeColors[theme] || themeColors.clean;
+
+      return {
+        svg: `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <style>
+              .title { font: bold 18px sans-serif; fill: ${colors.text}; }
+              .label { font: 12px sans-serif; fill: ${colors.text}; }
+              .muted { font: 11px sans-serif; fill: #888; }
+            </style>
+          </defs>
+          
+          <!-- Background -->
+          <rect width="100%" height="100%" fill="${colors.bg}"/>
+          
+          <!-- Border -->
+          <rect x="1" y="1" width="${width-2}" height="${height-2}" fill="none" stroke="${colors.border}" stroke-width="1"/>
+          
+          <!-- Title bar -->
+          <rect x="0" y="0" width="${width}" height="40" fill="${colors.accent}" fill-opacity="0.1"/>
+          <text x="20" y="26" class="title">${title}</text>
+          
+          <!-- Info section -->
+          <g transform="translate(20, 60)">
+            <text y="0" class="muted">Wireframe Preview (Demo Mode)</text>
+            <text y="30" class="label">Theme: ${theme}</text>
+            <text y="50" class="label">Elements detected:</text>
+            <text y="70" class="label">  • ${cardCount} Card(s)</text>
+            <text y="90" class="label">  • ${buttonCount} Button(s)</text>
+            <text y="110" class="label">  • ${inputCount} Input(s)</text>
+          </g>
+          
+          <!-- Sample button -->
+          ${buttonCount > 0 ? `
+          <g transform="translate(20, 200)">
+            <rect x="0" y="0" width="120" height="36" rx="4" fill="${colors.accent}"/>
+            <text x="60" y="23" text-anchor="middle" fill="white" font-family="sans-serif" font-size="13">Button</text>
+          </g>` : ''}
+          
+          <!-- Sample input -->
+          ${inputCount > 0 ? `
+          <g transform="translate(20, 250)">
+            <rect x="0" y="0" width="200" height="36" rx="4" fill="white" stroke="${colors.border}"/>
+            <text x="12" y="23" fill="#999" font-family="sans-serif" font-size="13">Input field...</text>
+          </g>` : ''}
+          
+          <!-- Sample card -->
+          ${cardCount > 0 ? `
+          <g transform="translate(20, 300)">
+            <rect x="0" y="0" width="200" height="100" rx="8" fill="white" stroke="${colors.border}"/>
+            <text x="16" y="30" class="label">Card Component</text>
+            <text x="16" y="50" class="muted">Card content area</text>
+          </g>` : ''}
+          
+          <!-- Footer note -->
+          <text x="${width/2}" y="${height - 20}" text-anchor="middle" class="muted">
+            Full rendering requires @aspect-ui/wireframe-core package
+          </text>
+        </svg>`,
+        errors: []
+      };
+    }
+
+    // Compile and update preview
+    function compileAndPreview() {
+      const source = editor.value;
+      const theme = themeSelect.value;
+
+      if (!source.trim()) {
+        preview.innerHTML = `<svg width="400" height="200" viewBox="0 0 400 200">
+          <rect x="0" y="0" width="400" height="200" fill="#f5f5f5"/>
+          <text x="200" y="100" text-anchor="middle" fill="#999" font-family="sans-serif" font-size="14">
+            Enter Wireframe code and click Compile
+          </text>
+        </svg>`;
+        errors.style.display = 'none';
+        status.textContent = 'Ready';
+        return;
+      }
+
+      try {
+        const result = mockCompile(source, { theme, width: 600, height: 500 });
+        
+        preview.innerHTML = result.svg;
+        
+        if (result.errors && result.errors.length > 0) {
+          errors.innerHTML = `<strong>⚠ Warnings:</strong><ul class="errors-list">${
+            result.errors.map(e => `<li>Line ${e.line}: ${e.message}</li>`).join('')
+          }</ul>`;
+          errors.style.display = 'block';
+        } else {
+          errors.style.display = 'none';
+        }
+        
+        status.textContent = 'Compiled successfully';
+      } catch (e) {
+        errors.innerHTML = `<strong>❌ Error:</strong> ${e.message}`;
+        errors.style.display = 'block';
+        status.textContent = 'Compilation failed';
+      }
+    }
+
+    // Event listeners
+    compileBtn.addEventListener('click', compileAndPreview);
+    
+    clearBtn.addEventListener('click', () => {
+      editor.value = '';
+      preview.innerHTML = '';
+      errors.style.display = 'none';
+      status.textContent = 'Ready';
+    });
+
+    copyBtn.addEventListener('click', () => {
+      const svg = preview.innerHTML;
+      navigator.clipboard.writeText(svg).then(() => {
+        status.textContent = 'SVG copied to clipboard!';
+        setTimeout(() => { status.textContent = 'Ready'; }, 2000);
+      });
+    });
+
+    themeSelect.addEventListener('change', compileAndPreview);
+
+    exampleSelect.addEventListener('change', (e) => {
+      const example = examples[e.target.value];
+      if (example) {
+        editor.value = example;
+        compileAndPreview();
+      }
+    });
+
+    // Auto-compile on Ctrl+Enter
+    editor.addEventListener('keydown', (e) => {
+      if (e.ctrlKey && e.key === 'Enter') {
+        compileAndPreview();
+      }
+    });
+
+    // Load simple example by default
+    editor.value = examples.simple;
+    compileAndPreview();
+  </script>
+</body>
+</html>

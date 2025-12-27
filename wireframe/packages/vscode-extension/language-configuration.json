@@ -1,0 +1,26 @@
+{
+  "comments": {
+    "lineComment": "//"
+  },
+  "brackets": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"]
+  ],
+  "autoClosingPairs": [
+    { "open": "{", "close": "}" },
+    { "open": "[", "close": "]" },
+    { "open": "(", "close": ")" },
+    { "open": "\"", "close": "\"" }
+  ],
+  "surroundingPairs": [
+    { "open": "\"", "close": "\"" },
+    { "open": "(", "close": ")" },
+    { "open": "[", "close": "]" },
+    { "open": "{", "close": "}" }
+  ],
+  "indentationRules": {
+    "increaseIndentPattern": "^\\s*(Screen|Window|Dialog|Modal|Card|Panel|Group|Section|Header|Content|Footer|Sidebar|Navbar|Toolbar|Menu|Dropdown|List|Table|Form|Row|Column|Tabs|TabItem|Grid|Dock|Horizontal|Vertical|Component|State|Repeat)\\b",
+    "decreaseIndentPattern": "^\\s*(End|EndScreen|EndWindow|EndDialog|EndModal|EndCard|EndPanel|EndGroup|EndSection|EndHeader|EndContent|EndFooter|EndSidebar|EndNavbar|EndToolbar|EndMenu|EndDropdown|EndList|EndTable|EndForm|EndRow|EndColumn|EndTabs|EndTabItem|EndGrid|EndDock|EndHorizontal|EndVertical|EndComponent|EndState|EndRepeat)\\b"
+  }
+}

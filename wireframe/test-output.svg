@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="16" y="31" class="wire-text">Login Form</text><g>
+      <rect x="16" y="52" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="28" y="75" class="wire-text wire-text-secondary">Enter email</text>
+      
+    </g><g>
+      <rect x="16" y="104" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="28" y="127" class="wire-text wire-text-secondary">Enter password</text>
+      
+    </g><g opacity="1">
+      <rect x="16" y="156" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="66" y="179" text-anchor="middle" class="wire-text" fill="#212529">Cancel</text>
+    </g><g opacity="1">
+      <rect x="124" y="156" width="100" height="36" rx="4" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="174" y="179" text-anchor="middle" class="wire-text" fill="#ffffff">Login</text>
+    </g>
+</svg>
