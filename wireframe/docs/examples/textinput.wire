@@ -1,0 +1,37 @@
+// TextInput Control Examples
+wireframe clean
+%title: TextInput Examples
+
+Vertical gap=16
+    Label "**Text Input Variants**"
+    
+    Vertical gap=8
+        Label "Default:"
+        TextInput "Enter text here..."
+        
+        Label "Required:"
+        TextInput "Required field" required
+        
+        Label "Disabled:"
+        TextInput "Cannot edit" disabled
+        
+        Label "Read-only:"
+        TextInput "Read only value" readonly
+    /Vertical
+    
+    Separator
+    
+    Label "**Specialized Inputs**"
+    
+    Vertical gap=8
+        Label "Number Input:"
+        NumberInput "42"
+        
+        Label "Date Input:"
+        DateInput "2025-12-27"
+        
+        Label "Password Input:"
+        PasswordInput "••••••••"
+    /Vertical
+/Vertical
+/wireframe

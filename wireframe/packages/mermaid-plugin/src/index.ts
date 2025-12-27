@@ -4,7 +4,7 @@
  * Integrates Wireframe diagrams into Mermaid.js
  */
 
-import { compile, parse, render, getTheme } from '@aspect-ui/wireframe-core';
+import { compile, parse, render, getTheme } from '@jonkeda/wireframe-core';
 
 /**
  * Configuration options for Wireframe diagrams
@@ -62,8 +62,7 @@ export function detector(text: string): boolean {
   const trimmed = text.trim().toLowerCase();
   return (
     trimmed.startsWith('wireframe') ||
-    trimmed.startsWith('wire') ||
-    trimmed.startsWith('uiwire')
+    trimmed.startsWith('wire')
   );
 }
 
@@ -75,7 +74,7 @@ function extractContent(text: string): string {
   const firstLine = lines[0].trim().toLowerCase();
   
   // Remove the diagram type identifier from first line
-  if (firstLine === 'wireframe' || firstLine === 'wire' || firstLine === 'uiwire') {
+  if (firstLine === 'wireframe' || firstLine === 'wire') {
     return lines.slice(1).join('\n');
   }
   
@@ -172,7 +171,7 @@ export const wireDiagram = {
  * Usage:
  * ```typescript
  * import mermaid from 'mermaid';
- * import { registerWireframe } from '@aspect-ui/wireframe-mermaid';
+ * import { registerWireframe } from '@jonkeda/wireframe-mermaid';
  * 
  * registerWireframe(mermaid);
  * ```

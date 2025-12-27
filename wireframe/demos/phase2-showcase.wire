@@ -2,7 +2,7 @@
 %theme: clean
 %device: desktop
 
-UIWire "Admin Dashboard - Phase 2 Controls"
+wireframe "Admin Dashboard - Phase 2 Controls"
   
   // Header with navigation
   Header
@@ -113,4 +113,4 @@ UIWire "Admin Dashboard - Phase 2 Controls"
   // Toast notification example (positioned via canvas later)
   Toast "Changes saved successfully!" variant=success
 
-/UIWire
+/wireframe

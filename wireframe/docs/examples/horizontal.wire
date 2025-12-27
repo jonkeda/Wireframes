@@ -1,0 +1,46 @@
+// Layout Control Examples - Horizontal
+wireframe clean
+%title: Horizontal Layout Examples
+
+Vertical gap=16
+    Label "**Horizontal Layout**"
+    
+    Card padding=16
+        Horizontal gap=8
+            Button "Item 1"
+            Button "Item 2"
+            Button "Item 3"
+        /Horizontal
+    /Card
+    
+    Separator
+    
+    Label "**Horizontal with Alignment**"
+    
+    Vertical gap=8
+        Card padding=16
+            Horizontal gap=8 align=top
+                Label "Top"
+                Button "Tall\nButton"
+                TextInput "Input"
+            /Horizontal
+        /Card
+        
+        Card padding=16
+            Horizontal gap=8 align=center
+                Label "Center"
+                Button "Tall\nButton"
+                TextInput "Input"
+            /Horizontal
+        /Card
+        
+        Card padding=16
+            Horizontal gap=8 align=bottom
+                Label "Bottom"
+                Button "Tall\nButton"
+                TextInput "Input"
+            /Horizontal
+        /Card
+    /Vertical
+/Vertical
+/wireframe

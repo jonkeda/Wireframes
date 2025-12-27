@@ -1,0 +1,57 @@
+// Sketch Theme Example - Hand-drawn wireframe style
+wireframe sketch
+%title: Sketch Theme Demo
+
+Vertical gap=16
+    Label "**Sketch Theme**"
+    Label "A hand-drawn style perfect for early design concepts and brainstorming."
+    
+    Separator
+    
+    Horizontal gap=16
+        Card padding=16
+            Vertical gap=8
+                Label "**Login Form**"
+                TextInput "Username"
+                PasswordInput "Password"
+                Checkbox "Keep me logged in"
+                Button "Sign In" primary
+                Link "Forgot password?"
+            /Vertical
+        /Card
+        
+        Card padding=16
+            Vertical gap=8
+                Label "**Quick Actions**"
+                Horizontal gap=8
+                    IconButton $icon:home
+                    IconButton $icon:search
+                    IconButton $icon:settings
+                    IconButton $icon:user
+                /Horizontal
+                Separator
+                Menu
+                    MenuItem "Dashboard" $icon:home active
+                    MenuItem "Projects" $icon:folder
+                    MenuItem "Messages" $icon:mail
+                /Menu
+            /Vertical
+        /Card
+    /Horizontal
+    
+    Separator
+    
+    Panel padding=12
+        Vertical gap=8
+            Label "**Data Table**"
+            Table
+                | Name | Status | Progress |
+                |------|--------|----------|
+                | Project A | Active | 75% |
+                | Project B | Pending | 30% |
+                | Project C | Done | 100% |
+            /Table
+        /Vertical
+    /Panel
+/Vertical
+/wireframe

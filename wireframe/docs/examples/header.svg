@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="995" viewBox="0 0 800 995" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="16" y="31" class="wire-text wire-text-bold">Header</text><rect x="16" y="52" width="768" height="532" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><text x="32" y="83" class="wire-text wire-text-bold">MyApp</text><g>
+      <text x="152" y="83" class="wire-text" fill="#0d6efd" style="text-decoration: underline">Link</text>
+    </g><g>
+      <text x="216" y="83" class="wire-text" fill="#0d6efd" style="text-decoration: underline">Link</text>
+    </g><g>
+      <text x="280" y="83" class="wire-text" fill="#0d6efd" style="text-decoration: underline">Link</text>
+    </g><g opacity="1">
+      <rect x="376" y="68" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="426" y="91" text-anchor="middle" class="wire-text" fill="#212529">Sign In</text>
+    </g><line x1="16" y1="600" x2="216" y2="600" stroke="#dee2e6" stroke-width="1" /><text x="16" y="632" class="wire-text wire-text-bold">Footer</text><rect x="16" y="653" width="768" height="52" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><text x="32" y="684" class="wire-text">© 2025 MyApp</text><g>
+      <text x="176" y="684" class="wire-text" fill="#0d6efd" style="text-decoration: underline">Link</text>
+    </g><g>
+      <text x="240" y="684" class="wire-text" fill="#0d6efd" style="text-decoration: underline">Link</text>
+    </g><g>
+      <text x="304" y="684" class="wire-text" fill="#0d6efd" style="text-decoration: underline">Link</text>
+    </g><line x1="16" y1="721" x2="216" y2="721" stroke="#dee2e6" stroke-width="1" /><text x="16" y="753" class="wire-text wire-text-bold">Toolbar</text><rect x="16" y="774" width="768" height="68" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g><rect x="32" y="790" width="36" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><rect x="42" y="800" width="16" height="16" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /></g><line x1="76" y1="790" x2="276" y2="790" stroke="#dee2e6" stroke-width="1" /><g><rect x="284" y="790" width="36" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><rect x="294" y="800" width="16" height="16" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /></g><g><rect x="328" y="790" width="36" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><rect x="338" y="800" width="16" height="16" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /></g><g><rect x="372" y="790" width="36" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><rect x="382" y="800" width="16" height="16" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /></g><line x1="416" y1="790" x2="616" y2="790" stroke="#dee2e6" stroke-width="1" /><g><rect x="624" y="790" width="36" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><rect x="634" y="800" width="16" height="16" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /></g><g><rect x="668" y="790" width="36" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><rect x="678" y="800" width="16" height="16" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /></g><g><rect x="712" y="790" width="36" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><rect x="722" y="800" width="16" height="16" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /></g><line x1="16" y1="858" x2="216" y2="858" stroke="#dee2e6" stroke-width="1" /><text x="16" y="890" class="wire-text wire-text-bold">StatusBar</text><rect x="16" y="911" width="768" height="52" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><text x="32" y="942" class="wire-text">Ready</text><text x="130" y="942" class="wire-text">Ln 42, Col 18</text><text x="250" y="942" class="wire-text">UTF-8</text><text x="316" y="942" class="wire-text">TypeScript</text>
+</svg>

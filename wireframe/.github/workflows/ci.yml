@@ -5,6 +5,8 @@ on:
     branches: [main, develop]
   pull_request:
     branches: [main]
+  release:
+    types: [published]
 
 jobs:
   test:
@@ -12,7 +14,7 @@ jobs:
     
     strategy:
       matrix:
-        node-version: [18.x, 20.x]
+        node-version: [18.x, 20.x, 22.x]
 
     steps:
       - uses: actions/checkout@v4
@@ -61,10 +63,10 @@ jobs:
         with:
           version: 9
 
-      - name: Use Node.js 20.x
+      - name: Use Node.js 22.x
         uses: actions/setup-node@v4
         with:
-          node-version: 20.x
+          node-version: 22.x
           cache: 'pnpm'
 
       - name: Install dependencies
@@ -78,3 +80,81 @@ jobs:
         with:
           name: dist
           path: packages/*/dist
+
+  # Publish npm packages using Trusted Publishers (OIDC)
+  # No NPM_TOKEN needed - uses OpenID Connect
+  publish-npm:
+    if: github.event_name == 'release'
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      contents: read
+      id-token: write  # Required for npm trusted publishers (OIDC)
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+
+      - name: Use Node.js 22.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          cache: 'pnpm'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build packages
+        run: pnpm build
+
+      - name: Publish to npm (using OIDC trusted publishing)
+        run: pnpm -r publish --access public --no-git-checks
+        # No NODE_AUTH_TOKEN needed with trusted publishers!
+        # npm CLI automatically detects OIDC environment
+
+  # Publish VS Code extension
+  # Still requires PAT token (no OIDC support yet)
+  publish-vscode:
+    if: github.event_name == 'release'
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+
+      - name: Use Node.js 22.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build packages
+        run: pnpm build
+
+      - name: Package VS Code extension
+        run: |
+          cd packages/vscode-extension
+          npx vsce package --no-dependencies
+
+      - name: Publish to VS Code Marketplace
+        run: |
+          cd packages/vscode-extension
+          npx vsce publish --no-dependencies -p ${{ secrets.VSCE_TOKEN }}
+
+      - name: Publish to Open VSX
+        run: |
+          cd packages/vscode-extension
+          npx ovsx publish --no-dependencies -p ${{ secrets.OVSX_TOKEN }}

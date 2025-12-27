@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="948" viewBox="0 0 800 948" role="img">
+  <style>
+    .wire-text { font-family: "Courier New", monospace; font-size: 14px; fill: #ffffff; }
+    .wire-text-secondary { fill: #a0c4e8; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#1e3a5f" />
+  <text x="16" y="31" class="wire-text wire-text-bold">Blueprint Theme</text><text x="16" y="67" class="wire-text">A technical style reminiscent of engineering blueprints and schematics.</text><line x1="16" y1="88" x2="216" y2="88" stroke="#4a7ab0" stroke-width="1" /><rect x="16" y="105" width="768" height="479" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="32" y="136" class="wire-text wire-text-bold">ACME Dashboard</text><g>
+      <rect x="224" y="121" width="200" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
+      <text x="236" y="144" class="wire-text wire-text-secondary">Search...</text>
+      
+    </g><g>
+      <circle cx="460" cy="141" r="20" fill="#ffffff" />
+      <text x="460" y="146" text-anchor="middle" class="wire-text" fill="#1e3a5f">J</text>
+    </g><rect x="16" y="600" width="768" height="240" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="32" y="631" class="wire-text wire-text-bold">Navigation</text><rect x="800" y="600" width="-16" height="92" rx="8" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1" filter="url(#shadow)" /><text x="816" y="631" class="wire-text wire-text-bold">System Status</text><text x="816" y="659" class="wire-text">CPU Usage</text><g>
+      <rect x="816" y="668" width="200" height="8" rx="4" fill="#2a4a6f" />
+      <rect x="816" y="668" width="90" height="8" rx="4" fill="#ffffff" />
+    </g><text x="1032" y="659" class="wire-text">Memory</text><g>
+      <rect x="1032" y="668" width="200" height="8" rx="4" fill="#2a4a6f" />
+      <rect x="1032" y="668" width="144" height="8" rx="4" fill="#ffffff" />
+    </g><text x="1248" y="659" class="wire-text">Storage</text><g>
+      <rect x="1248" y="668" width="200" height="8" rx="4" fill="#2a4a6f" />
+      <rect x="1248" y="668" width="76" height="8" rx="4" fill="#ffffff" />
+    </g><rect x="800" y="708" width="-16" height="140" rx="8" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1" filter="url(#shadow)" /><text x="816" y="739" class="wire-text wire-text-bold">Configuration</text><g>
+      <rect x="816" y="752" width="200" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
+      <text x="828" y="775" class="wire-text">US-East</text>
+      <path d="M996 768 L1002 774 L1008 768" stroke="#ffffff" stroke-width="2" fill="none" />
+    </g><g>
+      <rect x="816" y="788" width="100" height="30" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="866" y="808" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="816" y="826" width="100" height="30" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="866" y="846" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="816" y="864" width="100" height="30" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="866" y="884" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="816" y="902" width="100" height="30" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="866" y="922" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="1032" y="752" width="200" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
+      <text x="1044" y="775" class="wire-text">Production</text>
+      <path d="M1212 768 L1218 774 L1224 768" stroke="#ffffff" stroke-width="2" fill="none" />
+    </g><g>
+      <rect x="1032" y="788" width="100" height="30" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="1082" y="808" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="1032" y="826" width="100" height="30" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="1082" y="846" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="1032" y="864" width="100" height="30" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="1082" y="884" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g opacity="1">
+      <rect x="816" y="796" width="100" height="36" rx="4" fill="#ffffff" stroke="#4a7ab0" stroke-width="1" />
+      <text x="866" y="819" text-anchor="middle" class="wire-text" fill="#1e3a5f">Apply</text>
+    </g><g opacity="1">
+      <rect x="924" y="796" width="100" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
+      <text x="974" y="819" text-anchor="middle" class="wire-text" fill="#ffffff">Reset</text>
+    </g><rect x="16" y="864" width="768" height="52" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="32" y="895" class="wire-text">System v2.1.0</text><text x="184" y="895" class="wire-text">Last updated: 2025-12-27</text>
+</svg>

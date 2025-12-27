@@ -1,14 +1,14 @@
 {
-  "UIWire Document": {
-    "prefix": "uiwire",
+  "Wireframe Document": {
+    "prefix": "wireframe",
     "body": [
       "%title: ${1:My Wireframe}",
       "%theme: ${2|clean,sketch,blueprint,realistic|}",
       "%device: ${3|desktop,tablet,mobile|}",
       "",
-      "UIWire \"${1:My Wireframe}\"",
+      "wireframe \"${1:My Wireframe}\"",
       "  $0",
-      "/UIWire"
+      "/wireframe"
     ],
     "description": "Create a new Wireframe document"
   },

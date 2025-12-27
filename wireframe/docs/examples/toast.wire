@@ -1,0 +1,26 @@
+// Toast Control Examples
+wireframe clean
+%title: Toast Examples
+
+Vertical gap=16
+    Label "**Toast Notifications**"
+    
+    Vertical gap=8
+        Toast "This is an info message" type=info
+        Toast "Operation completed successfully!" type=success
+        Toast "Please check your input" type=warning
+        Toast "An error occurred" type=error
+    /Vertical
+    
+    Separator
+    
+    Label "**Toast with Actions**"
+    
+    // Toast with actions shown inline
+    Horizontal gap=8
+        Toast "New update available" type=info
+        Button "Update Now" primary
+        Button "Later"
+    /Horizontal
+/Vertical
+/wireframe

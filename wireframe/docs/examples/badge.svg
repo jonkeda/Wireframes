@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="16" y="31" class="wire-text wire-text-bold">Badge Variants</text><g>
+      <rect x="16" y="52" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="28" y="68" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+    </g><g>
+      <rect x="56" y="52" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="68" y="68" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+    </g><g>
+      <rect x="96" y="52" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="108" y="68" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+    </g><g>
+      <rect x="136" y="52" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="148" y="68" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+    </g><g>
+      <rect x="176" y="52" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="188" y="68" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+    </g><line x1="16" y1="92" x2="216" y2="92" stroke="#dee2e6" stroke-width="1" /><text x="16" y="124" class="wire-text wire-text-bold">Badges with Icons</text><rect x="16" y="145" width="24" height="24" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /><g>
+      <rect x="44" y="145" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="56" y="161" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+    </g><text x="16" y="188" class="wire-text">Messages</text><rect x="808" y="145" width="24" height="24" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /><g>
+      <rect x="836" y="145" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="848" y="161" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+    </g><text x="808" y="188" class="wire-text">Notifications</text><rect x="936" y="145" width="24" height="24" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /><g>
+      <rect x="964" y="145" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="976" y="161" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+    </g><text x="936" y="188" class="wire-text">Cart</text>
+</svg>

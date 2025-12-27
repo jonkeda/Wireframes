@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="16" y="31" class="wire-text wire-text-bold">Chip Variants</text><g>
+      <rect x="16" y="52" width="80" height="28" rx="14" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+      <text x="56" y="70" text-anchor="middle" class="wire-text wire-text-small" fill="#212529">Default</text>
+    </g><g>
+      <rect x="104" y="52" width="80" height="28" rx="14" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="144" y="70" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">Selected</text>
+    </g><g>
+      <rect x="192" y="52" width="80" height="28" rx="14" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+      <text x="232" y="70" text-anchor="middle" class="wire-text wire-text-small" fill="#212529">Disabled</text>
+    </g><g>
+      <rect x="280" y="52" width="80" height="28" rx="14" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+      <text x="320" y="70" text-anchor="middle" class="wire-text wire-text-small" fill="#212529">Removable</text>
+    </g><line x1="16" y1="96" x2="216" y2="96" stroke="#dee2e6" stroke-width="1" /><text x="16" y="128" class="wire-text wire-text-bold">Filter Chips</text><g>
+      <rect x="16" y="149" width="80" height="28" rx="14" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="56" y="167" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">All</text>
+    </g><g>
+      <rect x="104" y="149" width="80" height="28" rx="14" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+      <text x="144" y="167" text-anchor="middle" class="wire-text wire-text-small" fill="#212529">Active</text>
+    </g><g>
+      <rect x="192" y="149" width="80" height="28" rx="14" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+      <text x="232" y="167" text-anchor="middle" class="wire-text wire-text-small" fill="#212529">Completed</text>
+    </g><g>
+      <rect x="280" y="149" width="80" height="28" rx="14" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+      <text x="320" y="167" text-anchor="middle" class="wire-text wire-text-small" fill="#212529">Archived</text>
+    </g><line x1="16" y1="193" x2="216" y2="193" stroke="#dee2e6" stroke-width="1" /><text x="16" y="225" class="wire-text wire-text-bold">Tag Chips</text><g>
+      <rect x="16" y="246" width="80" height="28" rx="14" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+      <text x="56" y="264" text-anchor="middle" class="wire-text wire-text-small" fill="#212529">JavaScript</text>
+    </g><g>
+      <rect x="104" y="246" width="80" height="28" rx="14" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="144" y="264" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">TypeScript</text>
+    </g><g>
+      <rect x="192" y="246" width="80" height="28" rx="14" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+      <text x="232" y="264" text-anchor="middle" class="wire-text wire-text-small" fill="#212529">React</text>
+    </g><g>
+      <rect x="280" y="246" width="80" height="28" rx="14" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+      <text x="320" y="264" text-anchor="middle" class="wire-text wire-text-small" fill="#212529">Vue</text>
+    </g><g>
+      <rect x="368" y="246" width="80" height="28" rx="14" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+      <text x="408" y="264" text-anchor="middle" class="wire-text wire-text-small" fill="#212529">Angular</text>
+    </g>
+</svg>

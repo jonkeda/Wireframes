@@ -21,18 +21,18 @@ describe('Parser', () => {
       expect(document?.children).toHaveLength(0);
     });
 
-    it('should parse document with uiwire wrapper', () => {
-      const { document, errors } = parse('uiwire sketch\n/uiwire');
+    it('should parse document with wireframe wrapper', () => {
+      const { document, errors } = parse('wireframe sketch\n/wireframe');
       expect(errors).toHaveLength(0);
       expect(document?.style).toBe('sketch');
     });
 
     it('should parse document attributes', () => {
-      const source = `uiwire clean
+      const source = `wireframe clean
     %title: My Wireframe
     %version: 1.0
     %author: Test
-/uiwire`;
+/wireframe`;
       const { document, errors } = parse(source);
 
       // Document attributes parsing may produce warnings for unrecognized syntax
@@ -45,7 +45,7 @@ describe('Parser', () => {
     it('should parse all wireframe styles', () => {
       const styles = ['sketch', 'blueprint', 'clean', 'realistic'];
       for (const style of styles) {
-        const { document, errors } = parse(`uiwire ${style}\n/uiwire`);
+        const { document, errors } = parse(`wireframe ${style}\n/wireframe`);
         expect(errors).toHaveLength(0);
         expect(document?.style).toBe(style);
       }
@@ -498,9 +498,9 @@ describe('Parser', () => {
 
   describe('Data Section Parsing', () => {
     it('should parse data section', () => {
-      const source = `uiwire clean
+      const source = `wireframe clean
     Label "Test"
-/uiwire
+/wireframe
 data
     | Source | Type |
     |--------|------|
@@ -550,7 +550,7 @@ Button "C" :btn3`;
 
   describe('Complex Examples', () => {
     it('should parse a complete form', () => {
-      const source = `uiwire clean
+      const source = `wireframe clean
     %title: Login Form
     
     Card :crdLogin
@@ -575,7 +575,7 @@ Button "C" :btn3`;
             /Horizontal
         /Vertical
     /Card
-/uiwire`;
+/wireframe`;
       const { document } = parse(source);
       // Complex parsing - document should be created even if there are warnings
       expect(document).toBeDefined();
@@ -620,8 +620,8 @@ Button "B"`;
     });
 
     it('should report unknown wireframe style', () => {
-      const source = `uiwire invalid
-/uiwire`;
+      const source = `wireframe invalid
+/wireframe`;
       const { errors } = parse(source);
 
       expect(errors.some((e) => e.message.includes('Unknown wireframe style'))).toBe(true);

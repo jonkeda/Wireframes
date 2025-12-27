@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="669" viewBox="0 0 800 669" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="16" y="31" class="wire-text wire-text-bold">Basic Table</text><line x1="16" y1="100" x2="216" y2="100" stroke="#dee2e6" stroke-width="1" /><text x="16" y="132" class="wire-text wire-text-bold">Data Grid</text><text x="32" y="184" class="wire-text wire-text-bold">Name</text><text x="32" y="212" class="wire-text wire-text-bold">Email</text><text x="32" y="240" class="wire-text wire-text-bold">Role</text><text x="32" y="268" class="wire-text wire-text-bold">Status</text><text x="32" y="296" class="wire-text">John Doe</text><text x="32" y="324" class="wire-text">john@example.com</text><text x="32" y="352" class="wire-text">Admin</text><g>
+      <rect x="32" y="365" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="44" y="381" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+    </g><text x="32" y="412" class="wire-text">Jane Smith</text><text x="32" y="440" class="wire-text">jane@example.com</text><text x="32" y="468" class="wire-text">Editor</text><g>
+      <rect x="32" y="481" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="44" y="497" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+    </g><text x="32" y="528" class="wire-text">Bob Johnson</text><text x="32" y="556" class="wire-text">bob@example.com</text><text x="32" y="584" class="wire-text">Viewer</text><g>
+      <rect x="32" y="597" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="44" y="613" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+    </g>
+</svg>

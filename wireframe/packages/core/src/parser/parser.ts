@@ -94,6 +94,8 @@ const TOKEN_TO_CONTROL: Record<string, ControlType> = {
   [TokenType.PASSWORD_INPUT]: 'PasswordInput',
   [TokenType.TEXT_AREA]: 'TextArea',
   [TokenType.LABEL]: 'Label',
+  [TokenType.HEADING]: 'Heading',
+  [TokenType.LINK]: 'Link',
   [TokenType.CHECKBOX]: 'Checkbox',
   [TokenType.RADIO]: 'Radio',
   [TokenType.DROPDOWN]: 'Dropdown',
@@ -109,6 +111,8 @@ const TOKEN_TO_CONTROL: Record<string, ControlType> = {
   [TokenType.SWITCH]: 'Switch',
   [TokenType.CHIP]: 'Chip',
   [TokenType.PAGINATION]: 'Pagination',
+  [TokenType.TOAST]: 'Toast',
+  [TokenType.SKELETON]: 'Skeleton',
 };
 
 /**
@@ -119,6 +123,7 @@ const TOKEN_TO_COMPONENT: Record<string, ComponentType> = {
   [TokenType.TAB]: 'Tab',
   [TokenType.EXPANDER]: 'Expander',
   [TokenType.TREE]: 'Tree',
+  [TokenType.TREE_ITEM]: 'TreeItem',
   [TokenType.LIST]: 'List',
   [TokenType.MENU]: 'Menu',
   [TokenType.MENU_ITEM]: 'MenuItem',
@@ -130,9 +135,7 @@ const TOKEN_TO_COMPONENT: Record<string, ComponentType> = {
   [TokenType.STEPPER]: 'Stepper',
   [TokenType.STEP]: 'Step',
   [TokenType.DIALOG]: 'Dialog',
-  [TokenType.TOAST]: 'Toast',
   [TokenType.ALERT]: 'Alert',
-  [TokenType.SKELETON]: 'Skeleton',
   [TokenType.HOVER]: 'Hover',
   [TokenType.TABLE]: 'Table',
   [TokenType.DATA_GRID]: 'DataGrid',
@@ -214,15 +217,15 @@ export class Parser {
   private parseDocument(): DocumentNode {
     this.skipNewlines();
 
-    // Check for uiwire keyword
-    if (!this.check(TokenType.UIWIRE)) {
-      // Allow documents without explicit uiwire wrapper
+    // Check for wireframe keyword
+    if (!this.check(TokenType.WIREFRAME)) {
+      // Allow documents without explicit wireframe wrapper
       const doc = createDocumentNode('clean');
       doc.children = this.parseElements();
       return doc;
     }
 
-    const startToken = this.advance(); // consume 'uiwire'
+    const startToken = this.advance(); // consume 'wireframe'
     const doc = createDocumentNode();
     doc.start = startToken.start;
 
@@ -255,13 +258,13 @@ export class Parser {
     // Parse data sections
     doc.dataSections = this.parseDataSections();
 
-    // Expect /uiwire
+    // Expect /wireframe
     this.skipNewlines();
-    if (this.check(TokenType.END_UIWIRE)) {
+    if (this.check(TokenType.END_WIREFRAME)) {
       const endToken = this.advance();
       doc.end = endToken.end;
     } else if (!this.isAtEnd()) {
-      this.addError('Expected /uiwire to close document');
+      this.addError('Expected /wireframe to close document');
     }
 
     return doc;
@@ -316,7 +319,7 @@ export class Parser {
       token.type !== TokenType.EOF &&
       token.type !== TokenType.NEWLINE &&
       token.type !== TokenType.END_BLOCK &&
-      token.type !== TokenType.END_UIWIRE
+      token.type !== TokenType.END_WIREFRAME
     ) {
       this.addError(`Unexpected token: ${token.value}`);
       this.advance();
@@ -529,11 +532,16 @@ export class Parser {
         }
       }
     } else if (componentType === 'Tree') {
-      // Parse tree items
-      node.treeItems = [];
+      // Parse tree items - support both +/- syntax and TreeItem syntax
       if (this.check(TokenType.INDENT)) {
         this.advance();
-        node.treeItems = this.parseTreeItems(0);
+        // Check if using +/- tree syntax or TreeItem syntax
+        if (this.check(TokenType.TREE_BRANCH) || this.check(TokenType.TREE_LEAF)) {
+          node.treeItems = this.parseTreeItems(0);
+        } else {
+          // Using TreeItem component syntax
+          node.children = this.parseElements();
+        }
         if (this.check(TokenType.DEDENT)) {
           this.advance();
         }
@@ -756,7 +764,7 @@ export class Parser {
   }
 
   private parseElementModifiers(
-    node: { attributes: AttributeMap; modifiers: ModifierSet; id?: string; binding?: string; navigation?: string }
+    node: { attributes: AttributeMap; modifiers: ModifierSet; id?: string; binding?: string; navigation?: string; icon?: string }
   ): void {
     while (!this.isAtEnd() && !this.check(TokenType.NEWLINE) && !this.check(TokenType.INDENT)) {
       const token = this.peek();
@@ -816,6 +824,27 @@ export class Parser {
           case TokenType.EDITABLE:
             node.modifiers.editable = true;
             break;
+          case TokenType.ACTIVE:
+            node.modifiers.active = true;
+            break;
+          case TokenType.EXPANDED:
+            node.modifiers.expanded = true;
+            break;
+          case TokenType.REMOVABLE:
+            node.modifiers.removable = true;
+            break;
+          case TokenType.CIRCLE:
+            node.modifiers.circle = true;
+            break;
+          case TokenType.INDETERMINATE:
+            node.modifiers.indeterminate = true;
+            break;
+          case TokenType.COMPLETED:
+            node.modifiers.completed = true;
+            break;
+          case TokenType.BORDER:
+            node.modifiers.border = true;
+            break;
         }
         continue;
       }
@@ -839,10 +868,16 @@ export class Parser {
         continue;
       }
 
-      // Icon reference (for IconButton)
+      // Icon reference ($icon:name or $iconName)
       if (token.type === TokenType.ICON_REF) {
-        // Handled in control-specific parsing
-        break;
+        this.advance();
+        // Extract icon name from $icon:name or $iconName format
+        let iconValue = token.value.substring(1); // Remove $
+        if (iconValue.startsWith('icon:')) {
+          iconValue = iconValue.substring(5); // Remove 'icon:'
+        }
+        node.icon = iconValue;
+        continue;
       }
 
       // String (handled in control-specific parsing)
@@ -872,7 +907,7 @@ export class Parser {
     const token = this.peek();
     return (
       token.type === TokenType.END_BLOCK ||
-      token.type === TokenType.END_UIWIRE ||
+      token.type === TokenType.END_WIREFRAME ||
       token.type === TokenType.DEDENT ||
       token.type === TokenType.DATA ||
       token.type === TokenType.VALIDATIONS ||

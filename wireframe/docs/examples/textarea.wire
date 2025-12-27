@@ -1,0 +1,22 @@
+// TextArea Control Examples
+wireframe clean
+%title: TextArea Examples
+
+Vertical gap=16
+    Label "**TextArea Variants**"
+    
+    Vertical gap=8
+        Label "Default:"
+        TextArea "Enter multiple lines of text here..." rows=3
+        
+        Label "Required:"
+        TextArea "This field is required" rows=3 required
+        
+        Label "Disabled:"
+        TextArea "Cannot edit this content" rows=3 disabled
+        
+        Label "Large:"
+        TextArea "A larger text area for more content..." rows=6
+    /Vertical
+/Vertical
+/wireframe

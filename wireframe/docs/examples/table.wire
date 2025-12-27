@@ -1,0 +1,39 @@
+// Table Control Examples
+wireframe clean
+%title: Table Examples
+
+Vertical gap=16
+    Label "**Basic Table**"
+    
+    Table rows=4 cols=3
+    /Table
+    
+    Separator
+    
+    Label "**Data Grid**"
+    
+    DataGrid
+        // Header row
+        Label "**Name**"
+        Label "**Email**"
+        Label "**Role**"
+        Label "**Status**"
+        
+        // Data rows
+        Label "John Doe"
+        Label "john@example.com"
+        Label "Admin"
+        Badge "Active"
+        
+        Label "Jane Smith"
+        Label "jane@example.com"
+        Label "Editor"
+        Badge "Active"
+        
+        Label "Bob Johnson"
+        Label "bob@example.com"
+        Label "Viewer"
+        Badge "Inactive" secondary
+    /DataGrid
+/Vertical
+/wireframe

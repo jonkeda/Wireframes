@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="849" viewBox="0 0 800 849" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="16" y="31" class="wire-text wire-text-bold">Clean Theme</text><text x="16" y="67" class="wire-text">A modern, minimal design with clean lines and subtle shadows.</text><line x1="16" y1="88" x2="216" y2="88" stroke="#dee2e6" stroke-width="1" /><rect x="16" y="105" width="768" height="479" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><text x="32" y="136" class="wire-text wire-text-bold">Form Example</text><g>
+      <rect x="32" y="149" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="172" class="wire-text wire-text-secondary">Enter your name</text>
+      <text x="220" y="172" text-anchor="end" fill="#dc3545">*</text>
+    </g><g>
+      <rect x="32" y="193" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="216" class="wire-text wire-text-secondary">Enter your email</text>
+      
+    </g><g opacity="1">
+      <rect x="32" y="237" width="100" height="36" rx="4" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="82" y="260" text-anchor="middle" class="wire-text" fill="#ffffff">Submit</text>
+    </g><g opacity="1">
+      <rect x="140" y="237" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="190" y="260" text-anchor="middle" class="wire-text" fill="#212529">Cancel</text>
+    </g><rect x="800" y="105" width="-16" height="479" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><text x="816" y="136" class="wire-text wire-text-bold">Controls</text><g><rect x="816" y="152" width="18" height="18" rx="2" fill="#ffffff" stroke="#dee2e6" stroke-width="1" /><path d="M820 161 L824 165 L830 157" stroke="#0d6efd" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" /><text x="842" y="166" class="wire-text">Remember me</text></g><g><rect x="816" y="184" width="18" height="18" rx="2" fill="#ffffff" stroke="#dee2e6" stroke-width="1" /><text x="842" y="198" class="wire-text">Send notifications</text></g><g><rect x="816" y="213" width="44" height="24" rx="12" fill="#dee2e6" /><circle cx="828" cy="225" r="10" fill="#ffffff" /><text x="868" y="230" class="wire-text">Dark mode</text></g><g>
+      <rect x="816" y="245" width="200" height="8" rx="4" fill="#f8f9fa" />
+      <rect x="816" y="245" width="130" height="8" rx="4" fill="#0d6efd" />
+    </g><line x1="16" y1="600" x2="216" y2="600" stroke="#dee2e6" stroke-width="1" /><rect x="16" y="617" width="768" height="80" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><text x="32" y="648" class="wire-text wire-text-bold">Status Badges</text><g>
+      <rect x="32" y="657" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="44" y="673" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+    </g><g>
+      <rect x="64" y="657" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="76" y="673" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+    </g><g>
+      <rect x="96" y="657" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="108" y="673" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
+    </g><rect x="800" y="617" width="-16" height="200" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><text x="816" y="648" class="wire-text wire-text-bold">Navigation</text><rect x="816" y="657" width="-48" height="144" fill="none" stroke="#dee2e6" stroke-width="1" />
+</svg>

@@ -8,7 +8,7 @@ export type {
   ThemeShadows,
   ThemeComponents,
   ThemeName,
-} from '@aspect-ui/wireframe-core';
+} from '@jonkeda/wireframe-core';
 
 export {
   themes,
@@ -17,7 +17,7 @@ export {
   blueprintTheme,
   realisticTheme,
   getTheme,
-} from '@aspect-ui/wireframe-core';
+} from '@jonkeda/wireframe-core';
 
 // Additional theme utilities
 
@@ -29,7 +29,7 @@ export function createTheme(
   baseTheme: string,
   overrides: Record<string, unknown>
 ): unknown {
-  const { getTheme } = require('@aspect-ui/wireframe-core');
+  const { getTheme } = require('@jonkeda/wireframe-core');
   const base = getTheme(baseTheme);
   return deepMerge({ ...base, name }, overrides);
 }

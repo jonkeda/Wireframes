@@ -11,11 +11,11 @@ describe('Lexer', () => {
       expect(tokens[0].type).toBe(TokenType.EOF);
     });
 
-    it('should tokenize uiwire keyword', () => {
-      const lexer = new Lexer('uiwire sketch\n/uiwire');
+    it('should tokenize wireframe keyword', () => {
+      const lexer = new Lexer('wireframe sketch\n/wireframe');
       const { tokens, errors } = lexer.tokenize();
       expect(errors).toHaveLength(0);
-      expect(tokens[0].type).toBe(TokenType.UIWIRE);
+      expect(tokens[0].type).toBe(TokenType.WIREFRAME);
       expect(tokens[1].type).toBe(TokenType.IDENTIFIER);
       expect(tokens[1].value).toBe('sketch');
     });
@@ -373,11 +373,11 @@ describe('Lexer', () => {
   });
 
   describe('Closing Keywords', () => {
-    it('should tokenize /uiwire', () => {
-      const lexer = new Lexer('/uiwire');
+    it('should tokenize /wireframe', () => {
+      const lexer = new Lexer('/wireframe');
       const { tokens } = lexer.tokenize();
 
-      expect(tokens[0].type).toBe(TokenType.END_UIWIRE);
+      expect(tokens[0].type).toBe(TokenType.END_WIREFRAME);
     });
 
     it('should tokenize /Vertical', () => {

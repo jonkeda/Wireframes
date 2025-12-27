@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1006" viewBox="0 0 800 1006" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="16" y="31" class="wire-text wire-text-bold">Basic Panel</text><rect x="16" y="52" width="768" height="532" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><text x="32" y="83" class="wire-text">This is a panel - a simple container without decoration.</text><line x1="16" y1="600" x2="216" y2="600" stroke="#dee2e6" stroke-width="1" /><text x="16" y="632" class="wire-text wire-text-bold">Panel with Border</text><rect x="16" y="653" width="768" height="80" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><text x="32" y="684" class="wire-text wire-text-bold">Panel Title</text><text x="32" y="712" class="wire-text">Panel with a border around it.</text><line x1="16" y1="749" x2="216" y2="749" stroke="#dee2e6" stroke-width="1" /><text x="16" y="781" class="wire-text wire-text-bold">Nested Panels</text><rect x="16" y="802" width="768" height="172" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><text x="32" y="833" class="wire-text wire-text-bold">Outer Panel</text><rect x="32" y="846" width="736" height="52" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><text x="48" y="877" class="wire-text">Inner panel 1</text><rect x="32" y="906" width="736" height="52" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><text x="48" y="937" class="wire-text">Inner panel 2</text>
+</svg>

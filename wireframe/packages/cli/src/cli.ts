@@ -8,7 +8,7 @@
 
 import * as fs from 'node:fs';
 import * as path from 'node:path';
-import { compile, parse } from '@aspect-ui/wireframe-core';
+import { compile, parse } from '@jonkeda/wireframe-core';
 
 interface CLIOptions {
   input?: string;

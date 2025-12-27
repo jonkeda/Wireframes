@@ -1,0 +1,40 @@
+// Progress Control Examples
+wireframe clean
+%title: Progress Examples
+
+Vertical gap=16
+    Label "**Progress Bar Variants**"
+    
+    Vertical gap=12
+        Vertical gap=4
+            Label "0% Complete"
+            Progress value=0
+        /Vertical
+        
+        Vertical gap=4
+            Label "25% Complete"
+            Progress value=25
+        /Vertical
+        
+        Vertical gap=4
+            Label "50% Complete"
+            Progress value=50
+        /Vertical
+        
+        Vertical gap=4
+            Label "75% Complete"
+            Progress value=75
+        /Vertical
+        
+        Vertical gap=4
+            Label "100% Complete"
+            Progress value=100
+        /Vertical
+    /Vertical
+    
+    Separator
+    
+    Label "**Loading State**"
+    Progress indeterminate
+/Vertical
+/wireframe

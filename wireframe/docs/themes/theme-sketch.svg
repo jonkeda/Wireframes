@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="741" viewBox="0 0 800 741" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <text x="16" y="31" class="wire-text wire-text-bold">Sketch Theme</text><text x="16" y="67" class="wire-text">A hand-drawn style perfect for early design concepts and brainstorming.</text><line x1="16" y1="88" x2="216" y2="88" stroke="#888888" stroke-width="1" /><rect x="16" y="105" width="768" height="479" rx="0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" /><text x="32" y="136" class="wire-text wire-text-bold">Login Form</text><g>
+      <rect x="32" y="149" width="200" height="36" rx="0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="172" class="wire-text wire-text-secondary">Username</text>
+      
+    </g><g>
+      <rect x="32" y="193" width="200" height="36" rx="0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="216" class="wire-text wire-text-secondary">••••</text>
+      
+    </g><g><rect x="32" y="240" width="18" height="18" rx="2" fill="#ffffff" stroke="#888888" stroke-width="2" /><text x="58" y="254" class="wire-text">Keep me logged in</text></g><g opacity="1">
+      <rect x="32" y="269" width="100" height="36" rx="0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="82" y="292" text-anchor="middle" class="wire-text" fill="#ffffff">Sign In</text>
+    </g><g>
+      <text x="32" y="328" class="wire-text" fill="#4a90d9" style="text-decoration: underline">Link</text>
+    </g><rect x="800" y="105" width="-16" height="479" rx="0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" /><text x="816" y="136" class="wire-text wire-text-bold">Quick Actions</text><g><rect x="816" y="149" width="36" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="826" y="159" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g><g><rect x="860" y="149" width="36" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="870" y="159" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g><g><rect x="904" y="149" width="36" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="914" y="159" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g><g><rect x="948" y="149" width="36" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="958" y="159" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g><line x1="816" y1="193" x2="1016" y2="193" stroke="#888888" stroke-width="1" /><line x1="16" y1="600" x2="216" y2="600" stroke="#888888" stroke-width="1" /><rect x="16" y="617" width="768" height="92" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><text x="32" y="648" class="wire-text wire-text-bold">Data Table</text>
+</svg>

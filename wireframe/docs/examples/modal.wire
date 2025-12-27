@@ -1,0 +1,60 @@
+// Section Control Examples - Modal and Dialog
+wireframe clean
+%title: Modal and Dialog Examples
+
+Vertical gap=16
+    Label "**Modal**"
+    
+    Modal title="Confirm Action"
+        Vertical gap=16
+            Label "Are you sure you want to proceed?"
+            Label "This action cannot be undone."
+            
+            Horizontal gap=8
+                Button "Cancel"
+                Button "Confirm" primary
+            /Horizontal
+        /Vertical
+    /Modal
+    
+    Separator
+    
+    Label "**Dialog**"
+    
+    Dialog title="Edit Profile"
+        Vertical gap=16
+            Vertical gap=4
+                Label "Name:"
+                TextInput "John Doe"
+            /Vertical
+            
+            Vertical gap=4
+                Label "Email:"
+                TextInput "john@example.com"
+            /Vertical
+            
+            Vertical gap=4
+                Label "Bio:"
+                TextArea "A short bio..." rows=3
+            /Vertical
+            
+            Horizontal gap=8
+                Button "Cancel"
+                Button "Save Changes" primary
+            /Horizontal
+        /Vertical
+    /Dialog
+    
+    Separator
+    
+    Label "**Alert**"
+    
+    Alert type=warning
+        Vertical gap=8
+            Label "**Warning**"
+            Label "Your session will expire in 5 minutes."
+            Button "Extend Session"
+        /Vertical
+    /Alert
+/Vertical
+/wireframe

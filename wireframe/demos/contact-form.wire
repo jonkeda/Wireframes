@@ -1,7 +1,7 @@
 // Contact Form Wireframe
 // Demonstrates: Form elements, validation, Dropdown
 
-uiwire clean
+wireframe clean
     %title: Contact Us
 
     Card padding=32
@@ -65,4 +65,4 @@ uiwire clean
             /Vertical
         /Vertical
     /Card
-/uiwire
+/wireframe

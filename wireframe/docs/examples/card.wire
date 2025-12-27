@@ -1,0 +1,48 @@
+// Section Control Examples - Card
+wireframe clean
+%title: Card Examples
+
+Vertical gap=16
+    Label "**Basic Card**"
+    
+    Card padding=16
+        Label "This is a simple card with padding."
+    /Card
+    
+    Separator
+    
+    Label "**Card with Header**"
+    
+    Card
+        Header padding=16
+            Label "**Card Title**"
+        /Header
+        Content padding=16
+            Label "Card content goes here."
+        /Content
+        Footer padding=16
+            Horizontal gap=8
+                Button "Cancel"
+                Button "Save" primary
+            /Horizontal
+        /Footer
+    /Card
+    
+    Separator
+    
+    Label "**Product Card**"
+    
+    Card padding=0
+        Image width=200 height=150 placeholder="Product Image"
+        Vertical padding=16 gap=8
+            Label "**Product Name**"
+            Label "A great product description"
+            Horizontal gap=8
+                Label "**$29.99**"
+                Badge "Sale"
+            /Horizontal
+            Button "Add to Cart" primary
+        /Vertical
+    /Card
+/Vertical
+/wireframe

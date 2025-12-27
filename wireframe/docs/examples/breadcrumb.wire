@@ -1,0 +1,37 @@
+// Breadcrumb Control Examples
+wireframe clean
+%title: Breadcrumb Examples
+
+Vertical gap=16
+    Label "**Basic Breadcrumb**"
+    
+    Breadcrumb
+        Link "Home"
+        Link "Products"
+        Link "Electronics"
+        Label "Smartphones"
+    /Breadcrumb
+    
+    Separator
+    
+    Label "**Short Breadcrumb**"
+    
+    Breadcrumb
+        Link "Home"
+        Label "Dashboard"
+    /Breadcrumb
+    
+    Separator
+    
+    Label "**Long Breadcrumb**"
+    
+    Breadcrumb
+        Link "Home"
+        Link "Categories"
+        Link "Technology"
+        Link "Computers"
+        Link "Laptops"
+        Label "MacBook Pro 16"
+    /Breadcrumb
+/Vertical
+/wireframe

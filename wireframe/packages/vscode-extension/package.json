@@ -1,10 +1,9 @@
 {
-  "name": "@aspect-ui/wireframe-vscode",
+  "name": "wireframe-vscode",
   "version": "0.0.1",
   "description": "VS Code extension for Wireframe preview and editing",
-  "publisher": "aspect-ui",
+  "publisher": "jonkeda",
   "displayName": "Wireframe - UI Mockup DSL",
-  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -27,8 +26,15 @@
     "languages": [
       {
         "id": "wireframe",
-        "aliases": ["Wireframe", "Wire", "wire"],
-        "extensions": [".wire", ".wireframe"],
+        "aliases": [
+          "Wireframe",
+          "Wire",
+          "wire"
+        ],
+        "extensions": [
+          ".wire",
+          ".wireframe"
+        ],
         "configuration": "./language-configuration.json"
       }
     ],
@@ -107,7 +113,12 @@
         "wireframe.defaultTheme": {
           "type": "string",
           "default": "clean",
-          "enum": ["clean", "sketch", "blueprint", "realistic"],
+          "enum": [
+            "clean",
+            "sketch",
+            "blueprint",
+            "realistic"
+          ],
           "description": "Default theme for wireframe preview"
         },
         "wireframe.previewWidth": {
@@ -140,15 +151,18 @@
     ]
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "watch": "tsc -p tsconfig.build.json --watch",
-    "package": "vsce package"
+    "build": "node esbuild.js",
+    "build:prod": "node esbuild.js --production",
+    "watch": "node esbuild.js --watch",
+    "compile": "tsc -p tsconfig.build.json",
+    "package": "npm run build:prod && vsce package --no-dependencies --allow-missing-repository"
   },
   "dependencies": {
-    "@aspect-ui/wireframe-core": "workspace:*"
+    "@jonkeda/wireframe-core": "workspace:*"
   },
   "devDependencies": {
     "@types/vscode": "^1.85.0",
-    "@vscode/vsce": "^2.22.0"
+    "@vscode/vsce": "^2.22.0",
+    "esbuild": "^0.27.2"
   }
 }

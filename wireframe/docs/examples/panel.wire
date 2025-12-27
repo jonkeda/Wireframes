@@ -1,0 +1,39 @@
+// Section Control Examples - Panel
+wireframe clean
+%title: Panel Examples
+
+Vertical gap=16
+    Label "**Basic Panel**"
+    
+    Panel padding=16
+        Label "This is a panel - a simple container without decoration."
+    /Panel
+    
+    Separator
+    
+    Label "**Panel with Border**"
+    
+    Panel padding=16 border
+        Vertical gap=8
+            Label "**Panel Title**"
+            Label "Panel with a border around it."
+        /Vertical
+    /Panel
+    
+    Separator
+    
+    Label "**Nested Panels**"
+    
+    Panel padding=16 border
+        Vertical gap=8
+            Label "**Outer Panel**"
+            Panel padding=12 border
+                Label "Inner panel 1"
+            /Panel
+            Panel padding=12 border
+                Label "Inner panel 2"
+            /Panel
+        /Vertical
+    /Panel
+/Vertical
+/wireframe

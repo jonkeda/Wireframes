@@ -4,8 +4,8 @@
  */
 export enum TokenType {
   // Document
-  UIWIRE = 'UIWIRE',
-  END_UIWIRE = 'END_UIWIRE',
+  WIREFRAME = 'WIREFRAME',
+  END_WIREFRAME = 'END_WIREFRAME',
 
   // Layouts
   GRID = 'GRID',
@@ -36,6 +36,8 @@ export enum TokenType {
   PASSWORD_INPUT = 'PASSWORD_INPUT',
   TEXT_AREA = 'TEXT_AREA',
   LABEL = 'LABEL',
+  HEADING = 'HEADING',
+  LINK = 'LINK',
   CHECKBOX = 'CHECKBOX',
   RADIO = 'RADIO',
   DROPDOWN = 'DROPDOWN',
@@ -48,6 +50,7 @@ export enum TokenType {
   TAB = 'TAB',
   EXPANDER = 'EXPANDER',
   TREE = 'TREE',
+  TREE_ITEM = 'TREE_ITEM',
   LIST = 'LIST',
   MENU = 'MENU',
   MENU_ITEM = 'MENU_ITEM',
@@ -120,6 +123,13 @@ export enum TokenType {
   SELECTED = 'SELECTED',
   READONLY = 'READONLY',
   EDITABLE = 'EDITABLE',
+  ACTIVE = 'ACTIVE',
+  EXPANDED = 'EXPANDED',
+  REMOVABLE = 'REMOVABLE',
+  CIRCLE = 'CIRCLE',
+  INDETERMINATE = 'INDETERMINATE',
+  COMPLETED = 'COMPLETED',
+  BORDER = 'BORDER',
 
   // Table Syntax
   TABLE_ROW = 'TABLE_ROW', // | col | col | col |
@@ -154,9 +164,9 @@ export enum TokenType {
  */
 export const KEYWORDS: Record<string, TokenType> = {
   // Document
-  uiwire: TokenType.UIWIRE,
+  wireframe: TokenType.WIREFRAME,
 
-  // Wireframe styles (used after uiwire)
+  // Wireframe styles (used after wireframe)
   sketch: TokenType.IDENTIFIER,
   blueprint: TokenType.IDENTIFIER,
   clean: TokenType.IDENTIFIER,
@@ -191,6 +201,8 @@ export const KEYWORDS: Record<string, TokenType> = {
   PasswordInput: TokenType.PASSWORD_INPUT,
   TextArea: TokenType.TEXT_AREA,
   Label: TokenType.LABEL,
+  Heading: TokenType.HEADING,
+  Link: TokenType.LINK,
   Checkbox: TokenType.CHECKBOX,
   Radio: TokenType.RADIO,
   Dropdown: TokenType.DROPDOWN,
@@ -203,6 +215,7 @@ export const KEYWORDS: Record<string, TokenType> = {
   Tab: TokenType.TAB,
   Expander: TokenType.EXPANDER,
   Tree: TokenType.TREE,
+  TreeItem: TokenType.TREE_ITEM,
   List: TokenType.LIST,
   Menu: TokenType.MENU,
   MenuItem: TokenType.MENU_ITEM,
@@ -257,6 +270,13 @@ export const KEYWORDS: Record<string, TokenType> = {
   selected: TokenType.SELECTED,
   readonly: TokenType.READONLY,
   editable: TokenType.EDITABLE,
+  active: TokenType.ACTIVE,
+  expanded: TokenType.EXPANDED,
+  removable: TokenType.REMOVABLE,
+  circle: TokenType.CIRCLE,
+  indeterminate: TokenType.INDETERMINATE,
+  completed: TokenType.COMPLETED,
+  border: TokenType.BORDER,
 
   // Boolean literals
   true: TokenType.BOOLEAN,
@@ -267,7 +287,7 @@ export const KEYWORDS: Record<string, TokenType> = {
  * Maps closing keywords to their block type
  */
 export const CLOSING_KEYWORDS: Record<string, TokenType> = {
-  '/uiwire': TokenType.END_UIWIRE,
+  '/wireframe': TokenType.END_WIREFRAME,
   '/Grid': TokenType.END_BLOCK,
   '/Vertical': TokenType.END_BLOCK,
   '/Horizontal': TokenType.END_BLOCK,
@@ -289,6 +309,7 @@ export const CLOSING_KEYWORDS: Record<string, TokenType> = {
   '/Tab': TokenType.END_BLOCK,
   '/Expander': TokenType.END_BLOCK,
   '/Tree': TokenType.END_BLOCK,
+  '/TreeItem': TokenType.END_BLOCK,
   '/List': TokenType.END_BLOCK,
   '/Menu': TokenType.END_BLOCK,
   '/MenuItem': TokenType.END_BLOCK,
@@ -300,6 +321,8 @@ export const CLOSING_KEYWORDS: Record<string, TokenType> = {
   '/Dialog': TokenType.END_BLOCK,
   '/Alert': TokenType.END_BLOCK,
   '/Hover': TokenType.END_BLOCK,
+  '/Toast': TokenType.END_BLOCK,
+  '/Skeleton': TokenType.END_BLOCK,
   '/Table': TokenType.END_BLOCK,
   '/DataGrid': TokenType.END_BLOCK,
   '/Column': TokenType.END_BLOCK,
@@ -455,6 +478,8 @@ export function isControlToken(type: TokenType): boolean {
     TokenType.PASSWORD_INPUT,
     TokenType.TEXT_AREA,
     TokenType.LABEL,
+    TokenType.HEADING,
+    TokenType.LINK,
     TokenType.CHECKBOX,
     TokenType.RADIO,
     TokenType.DROPDOWN,
@@ -469,6 +494,9 @@ export function isControlToken(type: TokenType): boolean {
     TokenType.SLIDER,
     TokenType.SWITCH,
     TokenType.CHIP,
+    TokenType.PAGINATION,
+    TokenType.TOAST,
+    TokenType.SKELETON,
   ].includes(type);
 }
 
@@ -481,6 +509,7 @@ export function isComponentToken(type: TokenType): boolean {
     TokenType.TAB,
     TokenType.EXPANDER,
     TokenType.TREE,
+    TokenType.TREE_ITEM,
     TokenType.LIST,
     TokenType.MENU,
     TokenType.MENU_ITEM,
@@ -511,6 +540,13 @@ export function isModifierToken(type: TokenType): boolean {
     TokenType.SELECTED,
     TokenType.READONLY,
     TokenType.EDITABLE,
+    TokenType.ACTIVE,
+    TokenType.EXPANDED,
+    TokenType.REMOVABLE,
+    TokenType.CIRCLE,
+    TokenType.INDETERMINATE,
+    TokenType.COMPLETED,
+    TokenType.BORDER,
   ].includes(type);
 }
 
@@ -522,7 +558,7 @@ export function canHaveChildren(type: TokenType): boolean {
     isLayoutToken(type) ||
     isSectionToken(type) ||
     isComponentToken(type) ||
-    type === TokenType.UIWIRE ||
+    type === TokenType.WIREFRAME ||
     type === TokenType.DROPDOWN ||
     type === TokenType.DATA ||
     type === TokenType.VALIDATIONS ||

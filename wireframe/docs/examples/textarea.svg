@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="620" viewBox="0 0 800 620" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="16" y="31" class="wire-text wire-text-bold">TextArea Variants</text><text x="16" y="67" class="wire-text">Default:</text><g>
+      <rect x="16" y="80" width="300" height="100" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="28" y="100" class="wire-text wire-text-secondary">Enter multiple lines of text here...</text>
+      <line x1="296" y1="172" x2="308" y2="172" stroke="#dee2e6" stroke-width="2" />
+      <line x1="302" y1="166" x2="308" y2="172" stroke="#dee2e6" stroke-width="2" />
+    </g><text x="16" y="203" class="wire-text">Required:</text><g>
+      <rect x="16" y="216" width="300" height="100" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="28" y="236" class="wire-text wire-text-secondary">This field is required</text>
+      <line x1="296" y1="308" x2="308" y2="308" stroke="#dee2e6" stroke-width="2" />
+      <line x1="302" y1="302" x2="308" y2="308" stroke="#dee2e6" stroke-width="2" />
+    </g><text x="16" y="339" class="wire-text">Disabled:</text><g>
+      <rect x="16" y="352" width="300" height="100" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="28" y="372" class="wire-text wire-text-secondary">Cannot edit this content</text>
+      <line x1="296" y1="444" x2="308" y2="444" stroke="#dee2e6" stroke-width="2" />
+      <line x1="302" y1="438" x2="308" y2="444" stroke="#dee2e6" stroke-width="2" />
+    </g><text x="16" y="475" class="wire-text">Large:</text><g>
+      <rect x="16" y="488" width="300" height="100" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="28" y="508" class="wire-text wire-text-secondary">A larger text area for more content...</text>
+      <line x1="296" y1="580" x2="308" y2="580" stroke="#dee2e6" stroke-width="2" />
+      <line x1="302" y1="574" x2="308" y2="580" stroke="#dee2e6" stroke-width="2" />
+    </g>
+</svg>

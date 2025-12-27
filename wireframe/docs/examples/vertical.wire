@@ -1,0 +1,46 @@
+// Layout Control Examples - Vertical
+wireframe clean
+%title: Vertical Layout Examples
+
+Vertical gap=16
+    Label "**Vertical Layout (Default)**"
+    
+    Card padding=16
+        Vertical gap=8
+            Button "Item 1"
+            Button "Item 2"
+            Button "Item 3"
+        /Vertical
+    /Card
+    
+    Separator
+    
+    Label "**Vertical with Alignment**"
+    
+    Horizontal gap=16
+        Card padding=16
+            Vertical gap=8 align=left
+                Label "Left Aligned"
+                Button "Button"
+                TextInput "Input"
+            /Vertical
+        /Card
+        
+        Card padding=16
+            Vertical gap=8 align=center
+                Label "Center Aligned"
+                Button "Button"
+                TextInput "Input"
+            /Vertical
+        /Card
+        
+        Card padding=16
+            Vertical gap=8 align=right
+                Label "Right Aligned"
+                Button "Button"
+                TextInput "Input"
+            /Vertical
+        /Card
+    /Horizontal
+/Vertical
+/wireframe

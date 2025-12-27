@@ -79,6 +79,11 @@ export interface ModifierSet {
   editable?: boolean;
   active?: boolean;
   expanded?: boolean;
+  removable?: boolean;
+  circle?: boolean;
+  indeterminate?: boolean;
+  completed?: boolean;
+  border?: boolean;
 }
 
 // ============ Layout Nodes ============
@@ -218,6 +223,7 @@ export type ComponentType =
   | 'Tab'
   | 'Expander'
   | 'Tree'
+  | 'TreeItem'
   | 'List'
   | 'Menu'
   | 'MenuItem'
@@ -229,9 +235,7 @@ export type ComponentType =
   | 'Stepper'
   | 'Step'
   | 'Dialog'
-  | 'Toast'
   | 'Alert'
-  | 'Skeleton'
   | 'Hover'
   | 'Table'
   | 'DataGrid'
@@ -244,6 +248,7 @@ export interface ComponentNode extends ElementBase {
   type: 'Component';
   componentType: ComponentType;
   text?: string;
+  icon?: string;
   children: ElementNode[];
   tableRows?: TableRowData[];
   treeItems?: TreeItemNode[];

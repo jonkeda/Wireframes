@@ -33,11 +33,6 @@ describe('Mermaid Plugin', () => {
       expect(detector('  wire\n/Header')).toBe(true);
     });
 
-    it('should detect uiwire prefix', () => {
-      expect(detector('uiwire\n/Header "Test"')).toBe(true);
-      expect(detector('uiwire')).toBe(true);
-    });
-
     it('should not detect other prefixes', () => {
       expect(detector('flowchart LR')).toBe(false);
       expect(detector('sequenceDiagram')).toBe(false);

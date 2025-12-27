@@ -50,7 +50,7 @@
       "patterns": [
         {
           "name": "keyword.control.wireframe",
-          "match": "\\b(UIWire|If|Else|ElseIf|EndIf|Repeat|Data|Validations|Calculations|Rules|Fields|Component)\\b"
+          "match": "\\b(wireframe|If|Else|ElseIf|EndIf|Repeat|Data|Validations|Calculations|Rules|Fields|Component)\\b"
         },
         {
           "name": "keyword.control.closing.wireframe",
@@ -86,7 +86,7 @@
       "patterns": [
         {
           "name": "storage.modifier.wireframe",
-          "match": "\\[(primary|secondary|required|disabled|checked|selected|readonly|editable|active|expanded)\\]"
+          "match": "\\b(primary|secondary|required|disabled|checked|selected|readonly|editable|active|expanded)\\b"
         }
       ]
     },

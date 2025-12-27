@@ -1,7 +1,7 @@
 // Dashboard Wireframe
 // Demonstrates: Dock layout, Sidebar, Cards, Tables, Menu
 
-uiwire clean
+wireframe clean
     %title: Analytics Dashboard
 
     Dock
@@ -94,4 +94,4 @@ uiwire clean
             /Scroll
         /Content
     /Dock
-/uiwire
+/wireframe

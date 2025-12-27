@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="16" y="31" class="wire-text wire-text-bold">Dropdown Variants</text><text x="16" y="67" class="wire-text">Default:</text><g>
+      <rect x="16" y="80" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="28" y="103" class="wire-text">Select...</text>
+      <path d="M196 96 L202 102 L208 96" stroke="#212529" stroke-width="2" fill="none" />
+    </g><g>
+      <rect x="16" y="116" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="66" y="136" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="16" y="154" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="66" y="174" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="16" y="192" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="66" y="212" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="16" y="230" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="66" y="250" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><text x="16" y="139" class="wire-text">With selection:</text><g>
+      <rect x="16" y="152" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="28" y="175" class="wire-text">Select...</text>
+      <path d="M196 168 L202 174 L208 168" stroke="#212529" stroke-width="2" fill="none" />
+    </g><g>
+      <rect x="16" y="188" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="66" y="208" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="16" y="226" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="66" y="246" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="16" y="264" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="66" y="284" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="16" y="302" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="66" y="322" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><text x="16" y="211" class="wire-text">Required:</text><g>
+      <rect x="16" y="224" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="28" y="247" class="wire-text">Select...</text>
+      <path d="M196 240 L202 246 L208 240" stroke="#212529" stroke-width="2" fill="none" />
+    </g><g>
+      <rect x="16" y="260" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="66" y="280" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="16" y="298" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="66" y="318" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="16" y="336" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="66" y="356" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="16" y="374" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="66" y="394" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><text x="16" y="283" class="wire-text">Disabled:</text><g>
+      <rect x="16" y="296" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="28" y="319" class="wire-text">Select...</text>
+      <path d="M196 312 L202 318 L208 312" stroke="#212529" stroke-width="2" fill="none" />
+    </g><g>
+      <rect x="16" y="332" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="66" y="352" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g>
+</svg>

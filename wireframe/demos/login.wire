@@ -1,7 +1,7 @@
 // Login Screen Wireframe
 // Demonstrates: Card, Form inputs, Buttons, Layouts
 
-uiwire clean
+wireframe clean
     %title: Login Form
 
     Vertical align=center gap=24 padding=40
@@ -41,4 +41,4 @@ uiwire clean
         Label "Don't have an account? Sign up" @Register
         
     /Vertical
-/uiwire
+/wireframe

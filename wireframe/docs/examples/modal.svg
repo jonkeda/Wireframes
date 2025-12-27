@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1238" viewBox="0 0 800 1238" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="16" y="31" class="wire-text wire-text-bold">Modal</text><rect x="16" y="52" width="768" height="532" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><text x="32" y="83" class="wire-text">Are you sure you want to proceed?</text><text x="32" y="119" class="wire-text">This action cannot be undone.</text><g opacity="1">
+      <rect x="32" y="140" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="82" y="163" text-anchor="middle" class="wire-text" fill="#212529">Cancel</text>
+    </g><g opacity="1">
+      <rect x="140" y="140" width="100" height="36" rx="4" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="190" y="163" text-anchor="middle" class="wire-text" fill="#ffffff">Confirm</text>
+    </g><line x1="16" y1="600" x2="216" y2="600" stroke="#dee2e6" stroke-width="1" /><text x="16" y="632" class="wire-text wire-text-bold">Dialog</text><g>
+          <rect x="16" y="653" width="768" height="360" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+          
+        </g><text x="32" y="684" class="wire-text">Name:</text><g>
+      <rect x="32" y="693" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="716" class="wire-text wire-text-secondary">John Doe</text>
+      
+    </g><text x="32" y="760" class="wire-text">Email:</text><g>
+      <rect x="32" y="769" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="792" class="wire-text wire-text-secondary">john@example.com</text>
+      
+    </g><text x="32" y="836" class="wire-text">Bio:</text><g>
+      <rect x="32" y="845" width="300" height="100" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="865" class="wire-text wire-text-secondary">A short bio...</text>
+      <line x1="312" y1="937" x2="324" y2="937" stroke="#dee2e6" stroke-width="2" />
+      <line x1="318" y1="931" x2="324" y2="937" stroke="#dee2e6" stroke-width="2" />
+    </g><g opacity="1">
+      <rect x="32" y="961" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="82" y="984" text-anchor="middle" class="wire-text" fill="#212529">Cancel</text>
+    </g><g opacity="1">
+      <rect x="140" y="961" width="128" height="36" rx="4" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="204" y="984" text-anchor="middle" class="wire-text" fill="#ffffff">Save Changes</text>
+    </g><line x1="16" y1="1029" x2="216" y2="1029" stroke="#dee2e6" stroke-width="1" /><text x="16" y="1061" class="wire-text wire-text-bold">Alert</text><g>
+          <rect x="16" y="1082" width="768" height="124" rx="4" fill="#ffc10720" stroke="#ffc107" stroke-width="1" />
+          <rect x="16" y="1082" width="4" height="124" fill="#ffc107" />
+        </g><text x="32" y="1113" class="wire-text wire-text-bold">Warning</text><text x="32" y="1141" class="wire-text">Your session will expire in 5 minutes.</text><g opacity="1">
+      <rect x="32" y="1154" width="144" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="104" y="1177" text-anchor="middle" class="wire-text" fill="#212529">Extend Session</text>
+    </g>
+</svg>

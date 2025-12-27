@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="16" y="31" class="wire-text wire-text-bold">Toast Notifications</text><g>
+      <rect x="16" y="52" width="320" height="56" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" />
+      <rect x="16" y="52" width="4" height="56" rx="4 0 0 4" fill="#0dcaf0" />
+      <text x="32" y="85" class="wire-text">This is an info message</text>
+      <path d="M311 75 L321 85 M321 75 L311 85" stroke="#6c757d" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    </g><g>
+      <rect x="16" y="116" width="320" height="56" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" />
+      <rect x="16" y="116" width="4" height="56" rx="4 0 0 4" fill="#0dcaf0" />
+      <text x="32" y="149" class="wire-text">Operation completed successfully!</text>
+      <path d="M311 139 L321 149 M321 139 L311 149" stroke="#6c757d" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    </g><g>
+      <rect x="16" y="180" width="320" height="56" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" />
+      <rect x="16" y="180" width="4" height="56" rx="4 0 0 4" fill="#0dcaf0" />
+      <text x="32" y="213" class="wire-text">Please check your input</text>
+      <path d="M311 203 L321 213 M321 203 L311 213" stroke="#6c757d" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    </g><g>
+      <rect x="16" y="244" width="320" height="56" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" />
+      <rect x="16" y="244" width="4" height="56" rx="4 0 0 4" fill="#0dcaf0" />
+      <text x="32" y="277" class="wire-text">An error occurred</text>
+      <path d="M311 267 L321 277 M321 267 L311 277" stroke="#6c757d" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    </g><line x1="16" y1="316" x2="216" y2="316" stroke="#dee2e6" stroke-width="1" /><text x="16" y="348" class="wire-text wire-text-bold">Toast with Actions</text><g>
+      <rect x="16" y="369" width="320" height="56" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" />
+      <rect x="16" y="369" width="4" height="56" rx="4 0 0 4" fill="#0dcaf0" />
+      <text x="32" y="402" class="wire-text">New update available</text>
+      <path d="M311 392 L321 402 M321 392 L311 402" stroke="#6c757d" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    </g><g opacity="1">
+      <rect x="344" y="369" width="112" height="36" rx="4" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="400" y="392" text-anchor="middle" class="wire-text" fill="#ffffff">Update Now</text>
+    </g><g opacity="1">
+      <rect x="464" y="369" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="514" y="392" text-anchor="middle" class="wire-text" fill="#212529">Later</text>
+    </g>
+</svg>

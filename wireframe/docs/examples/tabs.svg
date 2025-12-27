@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="713" viewBox="0 0 800 713" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="16" y="31" class="wire-text wire-text-bold">Basic Tabs</text><rect x="16" y="52" width="768" height="184" fill="none" stroke="#dee2e6" stroke-width="1" /><line x1="16" y1="252" x2="216" y2="252" stroke="#dee2e6" stroke-width="1" /><text x="16" y="284" class="wire-text wire-text-bold">Tabs with Content</text><rect x="16" y="305" width="768" height="376" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><rect x="32" y="321" width="736" height="144" fill="none" stroke="#dee2e6" stroke-width="1" /><rect x="32" y="473" width="736" height="192" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><text x="48" y="504" class="wire-text wire-text-bold">Profile Settings</text><text x="48" y="532" class="wire-text">Manage your profile information</text><text x="48" y="560" class="wire-text">Display Name:</text><g>
+      <rect x="48" y="569" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="60" y="592" class="wire-text wire-text-secondary">John Doe</text>
+      
+    </g><g opacity="1">
+      <rect x="48" y="613" width="128" height="36" rx="4" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="112" y="636" text-anchor="middle" class="wire-text" fill="#ffffff">Save Changes</text>
+    </g>
+</svg>

@@ -1,0 +1,66 @@
+// Section Control Examples - Header and Footer
+wireframe clean
+%title: Header and Footer Examples
+
+Vertical gap=16
+    Label "**Header**"
+    
+    Header padding=16
+        Horizontal gap=16
+            Label "**MyApp**"
+            Spacer
+            Link "Home"
+            Link "About"
+            Link "Contact"
+            Spacer
+            Button "Sign In"
+        /Horizontal
+    /Header
+    
+    Separator
+    
+    Label "**Footer**"
+    
+    Footer padding=16
+        Horizontal gap=16
+            Label "© 2025 MyApp"
+            Spacer
+            Link "Privacy"
+            Link "Terms"
+            Link "Contact"
+        /Horizontal
+    /Footer
+    
+    Separator
+    
+    Label "**Toolbar**"
+    
+    Toolbar padding=8
+        Horizontal gap=8
+            IconButton $icon:menu
+            Separator
+            IconButton $icon:bold
+            IconButton $icon:italic
+            IconButton $icon:underline
+            Separator
+            IconButton $icon:alignLeft
+            IconButton $icon:alignCenter
+            IconButton $icon:alignRight
+        /Horizontal
+    /Toolbar
+    
+    Separator
+    
+    Label "**StatusBar**"
+    
+    StatusBar padding=8
+        Horizontal gap=16
+            Label "Ready"
+            Spacer
+            Label "Ln 42, Col 18"
+            Label "UTF-8"
+            Label "TypeScript"
+        /Horizontal
+    /StatusBar
+/Vertical
+/wireframe

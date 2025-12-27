@@ -1,5 +1,5 @@
 {
-  "name": "@aspect-ui/wireframe-core",
+  "name": "@jonkeda/wireframe-core",
   "version": "0.0.1",
   "description": "Core parser and renderer for Wireframe - UI Mockup DSL",
   "type": "module",

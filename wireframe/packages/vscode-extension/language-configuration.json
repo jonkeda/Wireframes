@@ -21,13 +21,13 @@
   ],
   "folding": {
     "markers": {
-      "start": "^\\s*(UIWire|Header|Footer|Sidebar|Content|Panel|Card|Grid|Vertical|Horizontal|Dock|Canvas|Scroll|Tabs|Menu|Accordion|Tree|Data|Validations|Rules|If)\\b",
-      "end": "^\\s*/(UIWire|Header|Footer|Sidebar|Content|Panel|Card|Grid|Vertical|Horizontal|Dock|Canvas|Scroll|Tabs|Menu|Accordion|Tree|Data|Validations|Rules|If)\\b"
+      "start": "^\\s*(wireframe|Header|Footer|Sidebar|Content|Panel|Card|Grid|Vertical|Horizontal|Dock|Canvas|Scroll|Tabs|Menu|Accordion|Tree|Data|Validations|Rules|If)\\b",
+      "end": "^\\s*/(wireframe|Header|Footer|Sidebar|Content|Panel|Card|Grid|Vertical|Horizontal|Dock|Canvas|Scroll|Tabs|Menu|Accordion|Tree|Data|Validations|Rules|If)\\b"
     }
   },
   "indentationRules": {
-    "increaseIndentPattern": "^\\s*(UIWire|Header|Footer|Sidebar|Content|Panel|Card|Grid|Vertical|Horizontal|Dock|Canvas|Scroll|Tabs|Tab|Menu|MenuItem|Accordion|AccordionSection|Tree|TreeItem|Data|Validations|Rules|If|Else|ElseIf|Repeat)\\b.*$",
-    "decreaseIndentPattern": "^\\s*/(UIWire|Header|Footer|Sidebar|Content|Panel|Card|Grid|Vertical|Horizontal|Dock|Canvas|Scroll|Tabs|Menu|Accordion|Tree|Data|Validations|Rules|If)\\b"
+    "increaseIndentPattern": "^\\s*(wireframe|Header|Footer|Sidebar|Content|Panel|Card|Grid|Vertical|Horizontal|Dock|Canvas|Scroll|Tabs|Tab|Menu|MenuItem|Accordion|AccordionSection|Tree|TreeItem|Data|Validations|Rules|If|Else|ElseIf|Repeat)\\b.*$",
+    "decreaseIndentPattern": "^\\s*/(wireframe|Header|Footer|Sidebar|Content|Panel|Card|Grid|Vertical|Horizontal|Dock|Canvas|Scroll|Tabs|Menu|Accordion|Tree|Data|Validations|Rules|If)\\b"
   },
   "wordPattern": "(-?\\d*\\.\\d\\w*)|([^\\`\\~\\!\\@\\#\\%\\^\\&\\*\\(\\)\\-\\=\\+\\[\\{\\]\\}\\\\\\|\\;\\:\\'\\\"\\,\\.\\<\\>\\/\\?\\s]+)"
 }

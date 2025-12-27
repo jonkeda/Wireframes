@@ -220,7 +220,7 @@ export class Lexer {
       return;
     }
 
-    // Closing keyword (e.g., /Grid, /uiwire)
+    // Closing keyword (e.g., /Grid, /wireframe)
     if (char === '/') {
       if (this.scanClosingKeyword()) {
         return;
@@ -533,6 +533,14 @@ export class Lexer {
     let value = '$';
     while (!this.isAtEnd() && (this.isAlphaNumeric(this.peek()) || this.peek() === '_')) {
       value += this.advance();
+    }
+
+    // Handle $icon:name syntax - continue after colon to get the icon name
+    if (this.peek() === ':' && (value === '$icon' || value === '$' + 'Icon')) {
+      value += this.advance(); // :
+      while (!this.isAtEnd() && (this.isAlphaNumeric(this.peek()) || this.peek() === '_' || this.peek() === '-')) {
+        value += this.advance();
+      }
     }
 
     this.tokens.push({

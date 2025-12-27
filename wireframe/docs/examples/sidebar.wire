@@ -1,0 +1,59 @@
+// Section Control Examples - Sidebar and Drawer
+wireframe clean
+%title: Sidebar and Drawer Examples
+
+Vertical gap=16
+    Label "**Sidebar**"
+    
+    Horizontal gap=0
+        Sidebar width=200 padding=16
+            Vertical gap=8
+                Label "**Navigation**"
+                Menu
+                    MenuItem "Dashboard" $icon:home active
+                    MenuItem "Projects" $icon:folder
+                    MenuItem "Team" $icon:users
+                    MenuItem "Calendar" $icon:calendar
+                    MenuItem "Settings" $icon:settings
+                /Menu
+            /Vertical
+        /Sidebar
+        
+        Content padding=16
+            Label "Main content area"
+        /Content
+    /Horizontal
+    
+    Separator
+    
+    Label "**Drawer**"
+    
+    Drawer side=right width=300 title="Notifications"
+        Vertical gap=12 padding=16
+            Card padding=12
+                Vertical gap=4
+                    Label "**New message**"
+                    Label "John sent you a message"
+                    Label "2 minutes ago"
+                /Vertical
+            /Card
+            
+            Card padding=12
+                Vertical gap=4
+                    Label "**Task completed**"
+                    Label "Project review finished"
+                    Label "1 hour ago"
+                /Vertical
+            /Card
+            
+            Card padding=12
+                Vertical gap=4
+                    Label "**Reminder**"
+                    Label "Team meeting at 3 PM"
+                    Label "3 hours ago"
+                /Vertical
+            /Card
+        /Vertical
+    /Drawer
+/Vertical
+/wireframe
