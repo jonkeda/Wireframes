@@ -167,7 +167,6 @@ export function sketchyCircle(
     const p1 = points[(i + 1) % segments];
 
     // Control points for smooth curve
-    const midAngle = (i + 0.5) * angleStep;
     const ctrlRadius = radius * (4 / 3) * Math.tan(angleStep / 4);
     const wobble1 = roughness * rng.offset();
     const wobble2 = roughness * rng.offset();
@@ -216,7 +215,6 @@ export function sketchyEllipse(
   for (let i = 0; i < segments; i++) {
     const p0 = points[i];
     const p1 = points[(i + 1) % segments];
-    const nextAngle = (i + 1) * angleStep;
 
     const ctrl1X = p0.x + roughness * rng.offset();
     const ctrl1Y = p0.y + roughness * rng.offset();
@@ -232,7 +230,7 @@ export function sketchyEllipse(
 /**
  * Create SVG path with sketchy stroke style
  */
-export function sketchyPath(d: string, options: SketchOptions = {}): string {
+export function sketchyPath(d: string, _options: SketchOptions = {}): string {
   // For now, just return the path - in a more advanced version,
   // we could parse and re-render each segment with wobble
   return d;

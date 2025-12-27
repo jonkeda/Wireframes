@@ -12,7 +12,7 @@ import {
 } from '../parser/ast.js';
 import { Theme, getTheme } from './theme.js';
 import { LayoutEngine, LayoutInfo, BoundingBox } from './layout.js';
-import { sketchyRect, sketchyRoundedRect, sketchyLine, sketchyCircle } from './sketch.js';
+import { sketchyRect, sketchyRoundedRect } from './sketch.js';
 
 /**
  * Render options
@@ -880,9 +880,9 @@ export class SVGRenderer {
     const showSelection = node.modifiers.selected; // Enable row selection checkboxes
     
     // Get column definitions from children or use defaults
-    const columnChildren = node.children?.filter(
-      (c) => c.controlType?.startsWith('Column') || c.controlType === 'Column'
-    ) || [];
+    const columnChildren = (node.children?.filter(
+      (c): c is ControlNode => isControlNode(c) && (c.controlType?.startsWith('Column') || c.controlType === 'Column')
+    ) || []) as ControlNode[];
     const cols = columnChildren.length > 0 ? columnChildren.length : (node.attributes['cols'] as number) || 4;
     
     // Calculate column widths
@@ -1362,48 +1362,6 @@ export class SVGRenderer {
     return rx > 0
       ? `<rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${rx}" fill="${fill}" stroke="${stroke}" stroke-width="${strokeWidth}" />`
       : `<rect x="${x}" y="${y}" width="${width}" height="${height}" fill="${fill}" stroke="${stroke}" stroke-width="${strokeWidth}" />`;
-  }
-
-  /**
-   * Create a line - sketchy style if sketch theme is active
-   */
-  private createLine(
-    x1: number,
-    y1: number,
-    x2: number,
-    y2: number,
-    options: { stroke?: string; strokeWidth?: number } = {}
-  ): string {
-    const stroke = options.stroke ?? this.theme.colors.border;
-    const strokeWidth = options.strokeWidth ?? this.theme.borders.width;
-
-    if (this.isSketchTheme()) {
-      const path = sketchyLine(x1, y1, x2, y2, { roughness: 1 });
-      return `<path d="${path}" fill="none" stroke="${stroke}" stroke-width="${strokeWidth}" />`;
-    }
-
-    return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${stroke}" stroke-width="${strokeWidth}" />`;
-  }
-
-  /**
-   * Create a circle - sketchy style if sketch theme is active
-   */
-  private createCircle(
-    cx: number,
-    cy: number,
-    r: number,
-    options: { fill?: string; stroke?: string; strokeWidth?: number } = {}
-  ): string {
-    const fill = options.fill ?? 'none';
-    const stroke = options.stroke ?? this.theme.colors.border;
-    const strokeWidth = options.strokeWidth ?? this.theme.borders.width;
-
-    if (this.isSketchTheme()) {
-      const path = sketchyCircle(cx, cy, r, { roughness: 1 });
-      return `<path d="${path}" fill="${fill}" stroke="${stroke}" stroke-width="${strokeWidth}" />`;
-    }
-
-    return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${fill}" stroke="${stroke}" stroke-width="${strokeWidth}" />`;
   }
 
   /**

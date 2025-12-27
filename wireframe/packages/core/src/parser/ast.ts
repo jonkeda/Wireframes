@@ -248,8 +248,17 @@ export type ComponentType =
   | 'Alert'
   | 'Hover'
   | 'Table'
+  | 'Row'
+  | 'Cell'
   | 'DataGrid'
-  | 'Column';
+  | 'Column'
+  | 'ColumnText'
+  | 'ColumnDate'
+  | 'ColumnNumber'
+  | 'ColumnCheckbox'
+  | 'ColumnImage'
+  | 'ColumnLink'
+  | 'ColumnButton';
 
 /**
  * Component node
