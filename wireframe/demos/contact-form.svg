@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="696" viewBox="0 0 800 696">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <rect x="16" y="16" width="768" height="648" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><text x="32" y="47" class="wire-text wire-text-bold">Get in Touch</text><text x="32" y="75" class="wire-text">We&apos;d love to hear from you. Send us a message!</text><text x="32" y="119" class="wire-text">First Name:</text><g>
+      <rect x="32" y="128" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="151" class="wire-text wire-text-secondary">John</text>
+      <text x="220" y="151" text-anchor="end" fill="#dc3545">*</text>
+    </g><text x="784" y="119" class="wire-text">Last Name:</text><g>
+      <rect x="784" y="128" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="796" y="151" class="wire-text wire-text-secondary">Doe</text>
+      <text x="972" y="151" text-anchor="end" fill="#dc3545">*</text>
+    </g><text x="32" y="199" class="wire-text">Email Address:</text><g>
+      <rect x="32" y="208" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="231" class="wire-text wire-text-secondary">john@example.com</text>
+      <text x="220" y="231" text-anchor="end" fill="#dc3545">*</text>
+    </g><text x="32" y="279" class="wire-text">Phone Number:</text><g>
+      <rect x="32" y="288" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="311" class="wire-text wire-text-secondary">+1 (555) 123-4567</text>
+      
+    </g><text x="32" y="359" class="wire-text">Subject:</text><g>
+      <rect x="32" y="368" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="391" class="wire-text">Select...</text>
+      <path d="M212 384 L218 390 L224 384" stroke="#212529" stroke-width="2" fill="none" />
+    </g><g>
+      <rect x="32" y="404" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="82" y="424" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="32" y="442" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="82" y="462" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="32" y="480" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="82" y="500" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="32" y="518" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="82" y="538" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><g>
+      <rect x="32" y="556" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="82" y="576" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g><text x="32" y="439" class="wire-text">Message:</text><g>
+      <rect x="32" y="448" width="300" height="100" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="468" class="wire-text wire-text-secondary">Tell us what&apos;s on your mind...</text>
+      <line x1="312" y1="540" x2="324" y2="540" stroke="#dee2e6" stroke-width="2" />
+      <line x1="318" y1="534" x2="324" y2="540" stroke="#dee2e6" stroke-width="2" />
+    </g><g><rect x="32" y="571" width="18" height="18" rx="2" fill="#ffffff" stroke="#dee2e6" stroke-width="1" /><text x="58" y="585" class="wire-text">I agree to the Terms of Service</text></g><g opacity="1">
+      <rect x="32" y="612" width="128" height="36" rx="4" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="96" y="635" text-anchor="middle" class="wire-text" fill="#ffffff">Send Message</text>
+    </g>
+</svg>

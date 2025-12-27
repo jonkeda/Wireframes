@@ -1,80 +1,44 @@
 // Login Screen Wireframe
-// Demonstrates: Window, Form, Input, Button controls
+// Demonstrates: Card, Form inputs, Buttons, Layouts
 
-Screen "Login"
-  @title "Welcome Back"
-  @theme clean
-  @width 400
-  @height 500
+uiwire clean
+    %title: Login Form
 
-  Vertical
-    @align center
-    @spacing 24
-    @padding 40
-
-    // Logo placeholder
-    Image "logo"
-      @src "logo.png"
-      @width 120
-      @height 120
-      @alt "Company Logo"
-
-    // Login form
-    Form "loginForm"
-      @action "/auth/login"
-
-      Vertical
-        @spacing 16
-
-        Label "Email Address"
-        Input "email"
-          @type email
-          @placeholder "Enter your email"
-          @required
-
-        Label "Password"
-        Input "password"
-          @type password
-          @placeholder "Enter your password"
-          @required
-
-        Checkbox "remember"
-          @label "Remember me"
-
-        Button "login"
-          @label "Sign In"
-          @style primary
-          @action submit
-
-      EndVertical
-
-    EndForm
-
-    // Divider
-    Divider
-
-    // Social login options
-    Horizontal
-      @spacing 12
-      @align center
-
-      Button "googleLogin"
-        @label "Google"
-        @style secondary
-        @icon google
-
-      Button "githubLogin"
-        @label "GitHub"
-        @style secondary
-        @icon github
-
-    EndHorizontal
-
-    // Sign up link
-    Link "signup"
-      @href "/register"
-      @label "Don't have an account? Sign up"
-
-  EndVertical
-
-EndScreen
+    Vertical align=center gap=24 padding=40
+        
+        // Logo
+        Image "logo" w=120 h=120
+        
+        // Login form
+        Card
+            Vertical gap=16
+                Label "**Welcome Back**"
+                
+                Vertical gap=8
+                    Label "Email Address"
+                    TextInput "Enter your email" :txtEmail required
+                /Vertical
+                
+                Vertical gap=8
+                    Label "Password"
+                    PasswordInput "Enter your password" :txtPass required
+                /Vertical
+                
+                Checkbox "Remember me" :chkRemember
+                
+                Button "Sign In" :btnLogin primary
+            /Vertical
+        /Card
+        
+        Separator
+        
+        // Social login
+        Horizontal gap=12
+            Button "Google" :btnGoogle secondary
+            Button "GitHub" :btnGithub secondary
+        /Horizontal
+        
+        Label "Don't have an account? Sign up" @Register
+        
+    /Vertical
+/uiwire

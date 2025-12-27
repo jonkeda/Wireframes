@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1028" viewBox="0 0 800 1028">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <rect x="16" y="16" width="768" height="217" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><rect x="48" y="48" width="24" height="24" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /><text x="88" y="63" class="wire-text wire-text-bold">Analytics Pro</text><g>
+      <rect x="272" y="48" width="250" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="284" y="71" class="wire-text wire-text-secondary">Search...</text>
+      
+    </g><g>
+      <circle cx="558" cy="68" r="20" fill="#0d6efd" />
+      <text x="558" y="73" text-anchor="middle" class="wire-text" fill="#ffffff">J</text>
+    </g><line x1="610" y1="144" x2="810" y2="144" stroke="#dee2e6" stroke-width="1" /><rect x="16" y="233" width="240" height="351" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><rect x="256" y="233" width="528" height="763" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><text x="296" y="288" class="wire-text wire-text-bold">Dashboard Overview</text><g opacity="1">
+      <rect x="504" y="273" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="554" y="296" text-anchor="middle" class="wire-text" fill="#212529">Export</text>
+    </g><g opacity="1">
+      <rect x="612" y="273" width="100" height="36" rx="4" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="662" y="296" text-anchor="middle" class="wire-text" fill="#ffffff">Refresh</text>
+    </g><rect x="296" y="333" width="448" height="211" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><text x="312" y="364" class="wire-text">Total Users</text><text x="312" y="392" class="wire-text wire-text-bold">24,521</text><rect x="296" y="560" width="448" height="80" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><text x="312" y="591" class="wire-text">Revenue</text><text x="312" y="619" class="wire-text wire-text-bold">$84,230</text><rect x="296" y="656" width="448" height="80" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><text x="312" y="687" class="wire-text">Orders</text><text x="312" y="715" class="wire-text wire-text-bold">1,429</text><rect x="296" y="752" width="448" height="80" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><text x="312" y="783" class="wire-text">Conversion</text><text x="312" y="811" class="wire-text wire-text-bold">3.24%</text><rect x="296" y="856" width="448" height="100" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><text x="312" y="887" class="wire-text wire-text-bold">Recent Activity</text><text x="496" y="887" class="wire-text">View All</text>
+</svg>
