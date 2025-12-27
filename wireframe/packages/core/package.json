@@ -1,6 +1,6 @@
 {
   "name": "@jonkeda/wireframe-core",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "Core parser and renderer for Wireframe - UI Mockup DSL",
   "type": "module",
   "main": "./dist/index.js",

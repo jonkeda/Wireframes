@@ -1,3 +1,6 @@
 [submodule "mermaid"]
 	path = mermaid
 	url = https://github.com/jonkeda/mermaid.git
+[submodule "vditor"]
+	path = vditor
+	url = https://github.com/jonkeda/vditor

@@ -6,20 +6,98 @@
  */
 
 import * as vscode from 'vscode';
-import { compile, parse } from '@jonkeda/wireframe-core';
+import { compile, parse, Parser, SVGRenderer, getTheme } from '@jonkeda/wireframe-core';
+
+// markdown-it types for the plugin
+interface Token {
+  info: string;
+  content: string;
+}
+
+interface Renderer {
+  render(tokens: Token[], options: unknown, env: unknown): string;
+}
+
+interface MarkdownItInstance {
+  renderer: {
+    rules: {
+      fence?: (tokens: Token[], idx: number, options: unknown, env: unknown, self: Renderer) => string;
+    };
+  };
+}
 
 let previewPanel: vscode.WebviewPanel | undefined;
 let diagnosticCollection: vscode.DiagnosticCollection;
 let currentTheme = 'clean';
 let currentZoom = 100;
 
+// Output channel for debugging
+let outputChannel: vscode.OutputChannel;
+
+/**
+ * Escape HTML special characters
+ */
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+/**
+ * Render wireframe source to HTML for markdown preview
+ */
+function renderWireframeToHtml(source: string, themeName: string): string {
+  try {
+    const parser = new Parser();
+    const result = parser.parse(source);
+
+    if (result.errors.length > 0) {
+      const errorMessages = result.errors
+        .map((e) => `Line ${e.location.line}: ${e.message}`)
+        .join('<br>');
+      return `<div class="wireframe-error" style="padding: 12px; background: #5a1d1d; border: 1px solid #be1100; border-radius: 4px; color: #f48771; font-family: monospace; font-size: 13px;">
+        <strong>Wireframe Parse Error:</strong><br>${errorMessages}
+      </div>`;
+    }
+
+    if (!result.document) {
+      return `<div class="wireframe-error" style="padding: 12px; background: #5a1d1d; border: 1px solid #be1100; border-radius: 4px; color: #f48771;">
+        <strong>Wireframe Error:</strong> Failed to parse document.
+      </div>`;
+    }
+
+    // Determine theme from document or use default
+    const documentTheme = result.document.theme || themeName;
+    const theme = getTheme(documentTheme);
+
+    const renderer = new SVGRenderer(theme);
+    const svg = renderer.render(result.document);
+
+    const bgColor = documentTheme === 'blueprint' ? '#1a365d' : '#ffffff';
+    const borderColor = documentTheme === 'blueprint' ? '#2a4a7f' : '#e0e0e0';
+
+    return `<div class="wireframe-diagram" style="margin: 16px 0; padding: 16px; background: ${bgColor}; border: 1px solid ${borderColor}; border-radius: 4px; overflow-x: auto;">${svg}</div>`;
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    return `<div class="wireframe-error" style="padding: 12px; background: #5a1d1d; border: 1px solid #be1100; border-radius: 4px; color: #f48771;">
+      <strong>Wireframe Error:</strong> ${escapeHtml(message)}
+    </div>`;
+  }
+}
+
 /**
  * Activate the extension
  */
-export function activate(context: vscode.ExtensionContext): void {
+export function activate(context: vscode.ExtensionContext) {
+  // Create output channel for debugging
+  outputChannel = vscode.window.createOutputChannel('Wireframe');
+  outputChannel.appendLine('[Wireframe] Extension activating...');
+  
   // Create diagnostic collection
   diagnosticCollection = vscode.languages.createDiagnosticCollection('wireframe');
-  context.subscriptions.push(diagnosticCollection);
+  context.subscriptions.push(diagnosticCollection, outputChannel);
   
   // Register commands
   const previewCommand = vscode.commands.registerCommand('wireframe.preview', () => {
@@ -181,6 +259,101 @@ export function activate(context: vscode.ExtensionContext): void {
   // Load configuration
   const config = vscode.workspace.getConfiguration('wireframe');
   currentTheme = config.get('defaultTheme') || 'clean';
+  
+  outputChannel.appendLine('[Wireframe] Extension activated successfully');
+  outputChannel.show(true); // Show output channel to help debugging
+
+  // Return markdown-it plugin for markdown preview integration
+  // This is called by VS Code when rendering markdown previews
+  const exports = {
+    extendMarkdownIt(md: any) {
+      try {
+        outputChannel.appendLine('[Wireframe] extendMarkdownIt called by VS Code markdown preview');
+        outputChannel.appendLine(`[Wireframe] markdown-it instance received: ${typeof md}`);
+        
+        const markdownConfig = vscode.workspace.getConfiguration('wireframe.markdown');
+        const enabled = markdownConfig.get<boolean>('enabled', true);
+        
+        outputChannel.appendLine(`[Wireframe] markdown.enabled: ${enabled}`);
+        
+        if (!enabled) {
+          outputChannel.appendLine('[Wireframe] Markdown integration is disabled, returning unmodified md');
+          return md;
+        }
+
+        const lightTheme = markdownConfig.get<string>('lightTheme', 'clean');
+        const darkTheme = markdownConfig.get<string>('darkTheme', 'blueprint');
+        const maxSize = markdownConfig.get<number>('maxSize', 50000);
+
+        outputChannel.appendLine(`[Wireframe] Themes: light=${lightTheme}, dark=${darkTheme}, maxSize=${maxSize}`);
+
+        // Store original fence renderer
+        const defaultFence = md.renderer.rules.fence;
+        outputChannel.appendLine(`[Wireframe] Original fence renderer: ${typeof defaultFence}`);
+
+        md.renderer.rules.fence = (tokens: any[], idx: number, options: any, env: any, self: any) => {
+          const token = tokens[idx];
+          const info = token.info.trim().toLowerCase();
+
+          // Check if this is a wireframe code block
+          if (info === 'wireframe' || info === 'wire') {
+            outputChannel.appendLine(`[Wireframe] Rendering wireframe code block (${token.content.length} chars)`);
+            
+            const source = token.content;
+
+            // Size check
+            if (source.length > maxSize) {
+              outputChannel.appendLine(`[Wireframe] Code block exceeds max size: ${source.length} > ${maxSize}`);
+              return `<div class="wireframe-error" style="padding: 12px; background: #5a1d1d; border: 1px solid #be1100; border-radius: 4px; color: #f48771;">
+                <strong>Wireframe Error:</strong> Diagram exceeds maximum size of ${maxSize} characters.
+              </div>`;
+            }
+
+            // Use dark theme for dark mode (determined by VS Code)
+            // Since we're in the extension host, we check the color theme
+            const colorTheme = vscode.window.activeColorTheme;
+            const isDark = colorTheme.kind === vscode.ColorThemeKind.Dark || 
+                           colorTheme.kind === vscode.ColorThemeKind.HighContrast;
+            const themeName = isDark ? darkTheme : lightTheme;
+
+            outputChannel.appendLine(`[Wireframe] Using theme: ${themeName} (isDark: ${isDark})`);
+
+            try {
+              const result = renderWireframeToHtml(source, themeName);
+              outputChannel.appendLine(`[Wireframe] Render successful, output length: ${result.length}`);
+              return result;
+            } catch (renderError) {
+              const message = renderError instanceof Error ? renderError.message : String(renderError);
+              outputChannel.appendLine(`[Wireframe] Render error: ${message}`);
+              return `<div class="wireframe-error" style="padding: 12px; background: #5a1d1d; border: 1px solid #be1100; border-radius: 4px; color: #f48771;">
+                <strong>Wireframe Render Error:</strong> ${escapeHtml(message)}
+              </div>`;
+            }
+          }
+
+          // Fall back to default rendering
+          if (defaultFence) {
+            return defaultFence(tokens, idx, options, env, self);
+          }
+          return `<pre><code class="language-${info}">${escapeHtml(token.content)}</code></pre>`;
+        };
+
+        outputChannel.appendLine('[Wireframe] Successfully installed fence renderer');
+        return md;
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error);
+        outputChannel.appendLine(`[Wireframe] ERROR in extendMarkdownIt: ${message}`);
+        if (error instanceof Error && error.stack) {
+          outputChannel.appendLine(`[Wireframe] Stack: ${error.stack}`);
+        }
+        // Return md unmodified to avoid breaking other extensions
+        return md;
+      }
+    }
+  };
+
+  outputChannel.appendLine('[Wireframe] Returning exports with extendMarkdownIt function');
+  return exports;
 }
 
 /**

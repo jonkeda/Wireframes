@@ -1,7 +1,7 @@
 {
   "name": "wireframe-vscode",
-  "version": "0.0.7",
-  "description": "Create beautiful UI wireframes and mockups using a simple text-based DSL. Features live preview, multiple themes (clean, sketch, blueprint, realistic), syntax highlighting, auto-completion, and SVG export.",
+  "version": "0.0.11",
+  "description": "Create beautiful UI wireframes and mockups using a simple text-based DSL. Features live preview, multiple themes (clean, sketch, blueprint, realistic), syntax highlighting, auto-completion, SVG export, and Markdown preview integration.",
   "publisher": "jonkeda",
   "license": "MIT",
   "displayName": "Wireframe - UI Mockup DSL",
@@ -31,13 +31,29 @@
     "design",
     "svg",
     "preview",
-    "dsl"
+    "dsl",
+    "markdown"
   ],
   "activationEvents": [
-    "onLanguage:wireframe"
+    "onLanguage:wireframe",
+    "onLanguage:markdown"
   ],
   "main": "./dist/extension.js",
   "contributes": {
+    "markdown.previewScripts": [
+      "./dist/markdown-preview.js"
+    ],
+    "markdown.markdownItPlugins": true,
+    "notebookRenderer": [
+      {
+        "id": "jonkeda.markdown-it.wireframe",
+        "displayName": "Wireframe Diagram Renderer",
+        "entrypoint": {
+          "extends": "vscode.markdown-it-renderer",
+          "path": "./dist/notebook-renderer.js"
+        }
+      }
+    ],
     "languages": [
       {
         "id": "wireframe",
@@ -187,6 +203,35 @@
           "type": "boolean",
           "default": true,
           "description": "Validate wireframe documents on save"
+        },
+        "wireframe.markdown.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable wireframe diagram rendering in Markdown preview"
+        },
+        "wireframe.markdown.lightTheme": {
+          "type": "string",
+          "enum": [
+            "clean",
+            "sketch",
+            "realistic"
+          ],
+          "default": "clean",
+          "description": "Theme for wireframe diagrams in light mode Markdown preview"
+        },
+        "wireframe.markdown.darkTheme": {
+          "type": "string",
+          "enum": [
+            "blueprint",
+            "sketch"
+          ],
+          "default": "blueprint",
+          "description": "Theme for wireframe diagrams in dark mode Markdown preview"
+        },
+        "wireframe.markdown.maxSize": {
+          "type": "number",
+          "default": 50000,
+          "description": "Maximum character size for wireframe diagrams in Markdown"
         }
       }
     },
