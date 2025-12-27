@@ -1,6 +1,6 @@
 {
   "name": "@jonkeda/wireframe-themes",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Theme definitions for Wireframe",
   "type": "module",
   "main": "./dist/index.js",
