@@ -111,22 +111,30 @@ jobs:
         working-directory: wireframe
         run: pnpm build
       
-      # Publish packages in dependency order (uses OIDC Trusted Publishers - no token needed)
+      # Publish packages in dependency order
       - name: Publish @jonkeda/wireframe-core
         working-directory: wireframe
-        run: pnpm --filter @jonkeda/wireframe-core publish --access public --no-git-checks --provenance
+        run: pnpm --filter @jonkeda/wireframe-core publish --access public --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish @jonkeda/wireframe-themes
         working-directory: wireframe
-        run: pnpm --filter @jonkeda/wireframe-themes publish --access public --no-git-checks --provenance
+        run: pnpm --filter @jonkeda/wireframe-themes publish --access public --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish @jonkeda/wireframe-mermaid
         working-directory: wireframe
-        run: pnpm --filter @jonkeda/wireframe-mermaid publish --access public --no-git-checks --provenance
+        run: pnpm --filter @jonkeda/wireframe-mermaid publish --access public --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish @jonkeda/wireframe-cli
         working-directory: wireframe
-        run: pnpm --filter @jonkeda/wireframe-cli publish --access public --no-git-checks --provenance
+        run: pnpm --filter @jonkeda/wireframe-cli publish --access public --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   publish-vscode:
     name: Publish VS Code Extension
@@ -163,6 +171,10 @@ jobs:
       - name: Build VS Code extension
         working-directory: wireframe/packages/vscode-extension
         run: pnpm build:prod
+      
+      - name: Clean old packages
+        working-directory: wireframe/packages/vscode-extension
+        run: rm -f *.vsix
       
       - name: Package VS Code extension
         working-directory: wireframe/packages/vscode-extension
