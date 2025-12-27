@@ -1,8 +1,9 @@
 {
   "name": "wireframe-vscode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "VS Code extension for Wireframe preview and editing",
   "publisher": "jonkeda",
+  "license": "MIT",
   "displayName": "Wireframe - UI Mockup DSL",
   "engines": {
     "vscode": "^1.85.0"

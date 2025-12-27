@@ -17,8 +17,8 @@ Welcome to the Wireframe project! This guide explains how to contribute to the c
 
 ### 2.1 Prerequisites
 
-- **Node.js:** v18 or later
-- **pnpm:** v8 or later
+- **Node.js:** v20 or later (v22 recommended)
+- **pnpm:** v9 or later
 - **Git:** Latest version
 - **VS Code:** Recommended editor
 
@@ -451,15 +451,90 @@ Update documents in `architecture/Wireframe/docs/`:
 
 ---
 
-## 12. Release Process
+## 12. CI/CD Pipeline
 
-### 12.1 Version Bump
+### 12.1 Continuous Integration
+
+The CI pipeline runs on every push and pull request:
+
+| Job | Description |
+|-----|-------------|
+| `test` | Run tests on Node.js 20.x and 22.x |
+| `build` | Build all packages and VS Code extension |
+
+```yaml
+# Trigger conditions
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+```
+
+### 12.2 Release Pipeline
+
+The release pipeline is triggered by pushing a version tag:
+
+```bash
+# Create and push a release tag
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+The release workflow:
+
+1. **Build Job:** Compiles all packages and creates VSIX
+2. **Publish npm Job:** Publishes packages in dependency order:
+   - `@jonkeda/wireframe-core`
+   - `@jonkeda/wireframe-themes`
+   - `@jonkeda/wireframe-mermaid`
+   - `@jonkeda/wireframe-cli`
+3. **Publish VS Code Job:** 
+   - Publishes to VS Code Marketplace
+   - Publishes to Open VSX Registry
+4. **Create Release Job:** Creates GitHub Release with artifacts
+
+### 12.3 Required Secrets
+
+Configure these secrets in GitHub repository settings:
+
+| Secret | Purpose |
+|--------|---------|
+| `NPM_TOKEN` | npm automation token for publishing packages |
+| `VSCE_TOKEN` | VS Code Marketplace Personal Access Token |
+| `OVSX_TOKEN` | Open VSX Registry access token |
+
+### 12.4 VS Code Extension Publishing
+
+The extension is published using pre-built VSIX files:
+
+```bash
+# Package the extension
+npx @vscode/vsce package --no-dependencies --allow-missing-repository
+
+# Publish to VS Code Marketplace
+npx @vscode/vsce publish --packagePath *.vsix -p $VSCE_TOKEN
+
+# Publish to Open VSX
+npx ovsx publish *.vsix -p $OVSX_TOKEN
+```
+
+**Important Notes:**
+- The extension package.json MUST include a `"license"` field for Open VSX
+- Use `--no-dependencies` to avoid pnpm workspace resolution issues
+- Use `--allow-missing-repository` if no repository field is set
+
+---
+
+## 13. Release Process
+
+### 13.1 Version Bump
 
 ```bash
 pnpm changeset
 ```
 
-### 12.2 Create Release
+### 13.2 Create Release
 
 ```bash
 pnpm changeset version
@@ -469,7 +544,7 @@ pnpm changeset publish
 
 ---
 
-## 13. Getting Help
+## 14. Getting Help
 
 - **Discussions:** Ask questions in GitHub Discussions
 - **Issues:** Report bugs or request features
@@ -477,13 +552,13 @@ pnpm changeset publish
 
 ---
 
-## 14. Code of Conduct
+## 15. Code of Conduct
 
 Be respectful and inclusive. See CODE_OF_CONDUCT.md for details.
 
 ---
 
-## 15. Related Documents
+## 16. Related Documents
 
 | Document | Description |
 |----------|-------------|
