@@ -80,6 +80,9 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     if: github.event_name == 'release'
+    permissions:
+      contents: read
+      id-token: write  # Required for npm provenance
     
     steps:
       - name: Checkout code
@@ -106,30 +109,22 @@ jobs:
         working-directory: wireframe
         run: pnpm build
       
-      # Publish packages in dependency order
+      # Publish packages in dependency order (uses OIDC Trusted Publishers - no token needed)
       - name: Publish @jonkeda/wireframe-core
         working-directory: wireframe
-        run: pnpm --filter @jonkeda/wireframe-core publish --access public --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm --filter @jonkeda/wireframe-core publish --access public --no-git-checks --provenance
 
       - name: Publish @jonkeda/wireframe-themes
         working-directory: wireframe
-        run: pnpm --filter @jonkeda/wireframe-themes publish --access public --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm --filter @jonkeda/wireframe-themes publish --access public --no-git-checks --provenance
 
       - name: Publish @jonkeda/wireframe-mermaid
         working-directory: wireframe
-        run: pnpm --filter @jonkeda/wireframe-mermaid publish --access public --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm --filter @jonkeda/wireframe-mermaid publish --access public --no-git-checks --provenance
 
       - name: Publish @jonkeda/wireframe-cli
         working-directory: wireframe
-        run: pnpm --filter @jonkeda/wireframe-cli publish --access public --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm --filter @jonkeda/wireframe-cli publish --access public --no-git-checks --provenance
 
   publish-vscode:
     name: Publish VS Code Extension
@@ -156,6 +151,10 @@ jobs:
       - name: Install dependencies
         working-directory: wireframe
         run: pnpm install --frozen-lockfile
+      
+      - name: Build all packages
+        working-directory: wireframe
+        run: pnpm build
       
       - name: Build VS Code extension
         working-directory: wireframe/packages/vscode-extension
