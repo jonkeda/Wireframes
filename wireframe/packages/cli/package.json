@@ -1,6 +1,6 @@
 {
   "name": "@jonkeda/wireframe-cli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Command-line interface for Wireframe",
   "type": "module",
   "main": "./dist/index.js",
