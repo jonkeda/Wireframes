@@ -82,7 +82,7 @@ Create a custom parser file:
 
 ```javascript
 // ~/.mume/parser.js
-const Wireframe = require('@aspect-ui/wireframe-core');
+const Wireframe = require('@jonkeda/wireframe-core');
 
 module.exports = {
     onWillParseMarkdown: async function(markdown) {
@@ -119,17 +119,17 @@ Since Wireframe is designed as a Mermaid diagram type, any extension that suppor
 
 **How It Works:**
 
-The `@aspect-ui/wireframe-mermaid-plugin` auto-registers with Mermaid when imported:
+The `@jonkeda/wireframe-mermaid-plugin` auto-registers with Mermaid when imported:
 
 ```typescript
 // The plugin registers automatically
-import '@aspect-ui/wireframe-mermaid-plugin';
+import '@jonkeda/wireframe-mermaid-plugin';
 
-// Mermaid now recognizes uiwire syntax
+// Mermaid now recognizes wireframe syntax
 mermaid.render('diagram', `
-uiwire clean
+wireframe clean
     Button "Hello World"
-/uiwire
+/wireframe
 `);
 ```
 
@@ -141,21 +141,21 @@ uiwire clean
 Here's a wireframe:
 
 ```mermaid
-uiwire clean
+wireframe clean
     Card
         Label "**Login**"
         TextInput "Username" :txtUser
         PasswordInput "Password" :txtPass
         Button "Login" primary
     /Card
-/uiwire
+/wireframe
 ```
 ````
 
 **Installation:**
 
 ```bash
-npm install @aspect-ui/wireframe-mermaid-plugin
+npm install @jonkeda/wireframe-mermaid-plugin
 ```
 
 ---
@@ -196,7 +196,7 @@ Use VSCode tasks to render Wireframe files with existing tooling:
         {
             "label": "Wireframe: Render Current File",
             "type": "shell",
-            "command": "npx @aspect-ui/wireframe-cli render ${file} -o ${fileDirname}/${fileBasenameNoExtension}.svg",
+            "command": "npx @jonkeda/wireframe-cli render ${file} -o ${fileDirname}/${fileBasenameNoExtension}.svg",
             "group": "build",
             "presentation": {
                 "reveal": "silent"
@@ -206,7 +206,7 @@ Use VSCode tasks to render Wireframe files with existing tooling:
         {
             "label": "Wireframe: Watch Current File",
             "type": "shell", 
-            "command": "npx @aspect-ui/wireframe-cli watch ${file} --serve",
+            "command": "npx @jonkeda/wireframe-cli watch ${file} --serve",
             "isBackground": true,
             "problemMatcher": [],
             "presentation": {
@@ -217,7 +217,7 @@ Use VSCode tasks to render Wireframe files with existing tooling:
         {
             "label": "Wireframe: Validate Current File",
             "type": "shell",
-            "command": "npx @aspect-ui/wireframe-cli validate ${file}",
+            "command": "npx @jonkeda/wireframe-cli validate ${file}",
             "group": "test",
             "problemMatcher": {
                 "owner": "Wireframe",
@@ -234,7 +234,7 @@ Use VSCode tasks to render Wireframe files with existing tooling:
         {
             "label": "Wireframe: Export to PNG",
             "type": "shell",
-            "command": "npx @aspect-ui/wireframe-cli render ${file} -o ${fileDirname}/${fileBasenameNoExtension}.png --format png",
+            "command": "npx @jonkeda/wireframe-cli render ${file} -o ${fileDirname}/${fileBasenameNoExtension}.png --format png",
             "group": "build",
             "problemMatcher": []
         }
@@ -265,7 +265,7 @@ If you maintain your own VSCode extension, you can add Wireframe preview support
 ```typescript
 // In your existing extension's activate function
 import * as vscode from 'vscode';
-import { parse, render } from '@aspect-ui/wireframe-core';
+import { parse, render } from '@jonkeda/wireframe-core';
 
 export function addWireframeSupport(context: vscode.ExtensionContext) {
     // Register for .wire files
@@ -430,7 +430,7 @@ function getErrorHtml(error: Error): string {
 .                                                                  .
 .  Phase 1: Mermaid Plugin                                        .
 .  .....................                                          .
-.  � Install @aspect-ui/wireframe-mermaid-plugin                                .
+.  � Install @jonkeda/wireframe-mermaid-plugin                                .
 .  � Works with existing Mermaid extensions                       .
 .  � Zero configuration required                                  .
 .                                                                  .
@@ -444,7 +444,7 @@ function getErrorHtml(error: Error): string {
 .  .....................................                          .
 .  � Install lightweight Wireframe extension                          .
 .  � Provides completion, hover, diagnostics                      .
-.  � Delegates rendering to @aspect-ui/wireframe-core                           .
+.  � Delegates rendering to @jonkeda/wireframe-core                           .
 .                                                                  .
 ...................................................................
 ```
@@ -454,25 +454,25 @@ function getErrorHtml(error: Error): string {
 **Step 1: Install CLI globally**
 
 ```bash
-npm install -g @aspect-ui/wireframe-cli
+npm install -g @jonkeda/wireframe-cli
 ```
 
 **Step 2: Install Mermaid plugin in your project**
 
 ```bash
-npm install @aspect-ui/wireframe-mermaid-plugin
+npm install @jonkeda/wireframe-mermaid-plugin
 ```
 
 **Step 3: Use in markdown files**
 
 ````markdown
 ```mermaid
-uiwire sketch
+wireframe sketch
     Card
         Label "**Quick Demo**"
         Button "It Works!" primary
     /Card
-/uiwire
+/wireframe
 ```
 ````
 
@@ -568,7 +568,7 @@ jobs:
           node-version: '20'
       
       - name: Install Wireframe CLI
-        run: npm install -g @aspect-ui/wireframe-cli
+        run: npm install -g @jonkeda/wireframe-cli
       
       - name: Validate Wireframe files
         run: |
@@ -594,7 +594,7 @@ jobs:
 
 | Issue | Solution |
 |-------|----------|
-| Mermaid not detecting Wireframe | Ensure `@aspect-ui/wireframe-mermaid-plugin` is imported before Mermaid initializes |
+| Mermaid not detecting Wireframe | Ensure `@jonkeda/wireframe-mermaid-plugin` is imported before Mermaid initializes |
 | Preview not updating | Check `Wireframe.preview.refreshDelay` setting |
 | Syntax highlighting not working | Verify file association in settings |
 | CLI command not found | Ensure global npm bin is in PATH |

@@ -43,10 +43,10 @@ This document describes the testing strategy for the Wireframe project, covering
 
 | Package | Line Coverage | Branch Coverage |
 |---------|--------------|-----------------|
-| @aspect-ui/wireframe-core | 90% | 85% |
-| @aspect-ui/wireframe-mermaid-plugin | 80% | 75% |
-| @aspect-ui/wireframe-themes | 80% | 75% |
-| @aspect-ui/wireframe-vscode-extension | 70% | 65% |
+| @jonkeda/wireframe-core | 90% | 85% |
+| @jonkeda/wireframe-mermaid-plugin | 80% | 75% |
+| @jonkeda/wireframe-themes | 80% | 75% |
+| @jonkeda/wireframe-vscode-extension | 70% | 65% |
 
 ---
 
@@ -101,11 +101,11 @@ describe('Lexer', () => {
 
     describe('tokenize', () => {
         it('should tokenize document start', () => {
-            const tokens = lexer.tokenize('uiwire clean');
+            const tokens = lexer.tokenize('wireframe clean');
             
             expect(tokens[0]).toMatchObject({
                 type: TokenType.DOCUMENT_START,
-                value: 'uiwire'
+                value: 'wireframe'
             });
             expect(tokens[1]).toMatchObject({
                 type: TokenType.ATTRIBUTE_NAME,
@@ -187,9 +187,9 @@ describe('Parser', () => {
     describe('document parsing', () => {
         it('should parse minimal document', () => {
             const ast = parse(`
-uiwire clean
+wireframe clean
     Button "Click"
-/uiwire
+/wireframe
             `);
             
             expect(ast.type).toBe('Document');
@@ -199,13 +199,13 @@ uiwire clean
 
         it('should parse metadata', () => {
             const ast = parse(`
-uiwire sketch
+wireframe sketch
     %title: Test Form
     %version: 1.0
     %author: Tester
     
     Label "Hello"
-/uiwire
+/wireframe
             `);
             
             expect(ast.metadata).toHaveLength(3);
@@ -219,7 +219,7 @@ uiwire sketch
             const styles = ['sketch', 'clean', 'blueprint', 'realistic'];
             
             for (const style of styles) {
-                const ast = parse(`uiwire ${style}\n    Label "Test"\n/uiwire`);
+                const ast = parse(`wireframe ${style}\n    Label "Test"\n/wireframe`);
                 expect(ast.style).toBe(style);
             }
         });
@@ -228,9 +228,9 @@ uiwire sketch
     describe('control parsing', () => {
         it('should parse Button', () => {
             const ast = parse(`
-uiwire clean
+wireframe clean
     Button "Submit" :btnSubmit primary @Dashboard tooltip="Save changes"
-/uiwire
+/wireframe
             `);
             
             const button = ast.body[0];
@@ -245,9 +245,9 @@ uiwire clean
 
         it('should parse IconButton', () => {
             const ast = parse(`
-uiwire clean
+wireframe clean
     IconButton $save "Save" :btnSave primary
-/uiwire
+/wireframe
             `);
             
             const button = ast.body[0];
@@ -258,9 +258,9 @@ uiwire clean
 
         it('should parse TextInput', () => {
             const ast = parse(`
-uiwire clean
+wireframe clean
     TextInput "Enter name" :txtName required .user.name min=3 max=50
-/uiwire
+/wireframe
             `);
             
             const input = ast.body[0];
@@ -275,13 +275,13 @@ uiwire clean
 
         it('should parse Dropdown with Options', () => {
             const ast = parse(`
-uiwire clean
+wireframe clean
     Dropdown :ddlCountry .user.country
         Option "Select..."
         Option "USA"
         Option "Canada"
     /Dropdown
-/uiwire
+/wireframe
             `);
             
             const dropdown = ast.body[0];
@@ -294,12 +294,12 @@ uiwire clean
     describe('layout parsing', () => {
         it('should parse Vertical layout', () => {
             const ast = parse(`
-uiwire clean
+wireframe clean
     Vertical gap=12 align=center
         Button "One"
         Button "Two"
     /Vertical
-/uiwire
+/wireframe
             `);
             
             const layout = ast.body[0];
@@ -312,7 +312,7 @@ uiwire clean
 
         it('should parse nested layouts', () => {
             const ast = parse(`
-uiwire clean
+wireframe clean
     Vertical gap=8
         Horizontal gap=4
             Button "A"
@@ -320,7 +320,7 @@ uiwire clean
         /Horizontal
         Button "C"
     /Vertical
-/uiwire
+/wireframe
             `);
             
             const vertical = ast.body[0];
@@ -331,14 +331,14 @@ uiwire clean
 
         it('should parse Grid layout', () => {
             const ast = parse(`
-uiwire clean
+wireframe clean
     Grid cols=2 rows=2 gap=16
         Label "A" grid=0,0
         Label "B" grid=0,1
         Label "C" grid=1,0
         Label "D" grid=1,1
     /Grid
-/uiwire
+/wireframe
             `);
             
             const grid = ast.body[0];
@@ -351,19 +351,19 @@ uiwire clean
     describe('error handling', () => {
         it('should throw on unclosed block', () => {
             expect(() => parse(`
-uiwire clean
+wireframe clean
     Vertical
         Button "Test"
-/uiwire
+/wireframe
             `)).toThrow(/unclosed/i);
         });
 
         it('should report line number on error', () => {
             try {
                 parse(`
-uiwire clean
+wireframe clean
     Button
-/uiwire
+/wireframe
                 `);
             } catch (error) {
                 expect(error.location.line).toBe(3);
@@ -385,9 +385,9 @@ describe('Renderer', () => {
     describe('SVG output', () => {
         it('should produce valid SVG', () => {
             const ast = parse(`
-uiwire clean
+wireframe clean
     Button "Click"
-/uiwire
+/wireframe
             `);
             const svg = render(ast);
             
@@ -397,7 +397,7 @@ uiwire clean
         });
 
         it('should include theme class', () => {
-            const ast = parse(`uiwire sketch\n    Label "Test"\n/uiwire`);
+            const ast = parse(`wireframe sketch\n    Label "Test"\n/wireframe`);
             const svg = render(ast);
             
             expect(svg).toContain('Wireframe-theme-sketch');
@@ -407,9 +407,9 @@ uiwire clean
     describe('Button rendering', () => {
         it('should render Button element', () => {
             const ast = parse(`
-uiwire clean
+wireframe clean
     Button "Submit"
-/uiwire
+/wireframe
             `);
             const svg = render(ast);
             
@@ -419,9 +419,9 @@ uiwire clean
 
         it('should render primary Button', () => {
             const ast = parse(`
-uiwire clean
+wireframe clean
     Button "Save" primary
-/uiwire
+/wireframe
             `);
             const svg = render(ast);
             
@@ -430,9 +430,9 @@ uiwire clean
 
         it('should include data-id attribute', () => {
             const ast = parse(`
-uiwire clean
+wireframe clean
     Button "Test" :btnTest
-/uiwire
+/wireframe
             `);
             const svg = render(ast);
             
@@ -443,12 +443,12 @@ uiwire clean
     describe('Layout rendering', () => {
         it('should calculate Vertical layout positions', () => {
             const ast = parse(`
-uiwire clean
+wireframe clean
     Vertical gap=10
         Button "A"
         Button "B"
     /Vertical
-/uiwire
+/wireframe
             `);
             const svg = render(ast, { width: 200 });
             
@@ -458,12 +458,12 @@ uiwire clean
 
         it('should calculate Horizontal layout positions', () => {
             const ast = parse(`
-uiwire clean
+wireframe clean
     Horizontal gap=8
         Button "A"
         Button "B"
     /Horizontal
-/uiwire
+/wireframe
             `);
             const svg = render(ast, { width: 400 });
             
@@ -561,15 +561,15 @@ describe('Parse-Render Pipeline', () => {
         {
             name: 'Simple Button',
             source: `
-uiwire clean
+wireframe clean
     Button "Click Me"
-/uiwire
+/wireframe
             `
         },
         {
             name: 'Login Form',
             source: `
-uiwire clean
+wireframe clean
     Card
         Vertical gap=12
             Label "**Login**"
@@ -578,13 +578,13 @@ uiwire clean
             Button "Login" primary
         /Vertical
     /Card
-/uiwire
+/wireframe
             `
         },
         {
             name: 'Dashboard',
             source: `
-uiwire sketch
+wireframe sketch
     Dock
         Header dock=top h=60
             Label "Dashboard"
@@ -604,7 +604,7 @@ uiwire sketch
             /Grid
         /Content
     /Dock
-/uiwire
+/wireframe
             `
         }
     ];
@@ -657,15 +657,15 @@ describe('Mermaid Integration', () => {
     });
 
     it('should detect Wireframe syntax', async () => {
-        const isWireframe = await mermaid.detect('uiwire clean\n    Button "Test"\n/uiwire');
-        expect(isWireframe).toBe('uiwire');
+        const isWireframe = await mermaid.detect('wireframe clean\n    Button "Test"\n/wireframe');
+        expect(isWireframe).toBe('wireframe');
     });
 
     it('should render Wireframe diagram', async () => {
         const { svg } = await mermaid.render('test-diagram', `
-uiwire clean
+wireframe clean
     Button "Mermaid Button"
-/uiwire
+/wireframe
         `);
         
         expect(svg).toContain('Wireframe-button');
@@ -675,16 +675,16 @@ uiwire clean
     it('should apply Mermaid config', async () => {
         mermaid.initialize({
             startOnLoad: false,
-            uiwire: {
+            wireframe: {
                 theme: 'sketch',
                 primaryColor: '#ff0000'
             }
         });
 
         const { svg } = await mermaid.render('config-test', `
-uiwire clean
+wireframe clean
     Button "Config Test" primary
-/uiwire
+/wireframe
         `);
         
         expect(svg).toContain('Wireframe-theme-sketch');
@@ -717,7 +717,7 @@ describe('Visual Snapshots', () => {
 
     components.forEach((component, i) => {
         it(`should match snapshot for component ${i + 1}`, () => {
-            const ast = parse(`uiwire clean\n    ${component}\n/uiwire`);
+            const ast = parse(`wireframe clean\n    ${component}\n/wireframe`);
             const svg = render(ast);
             
             expect(svg).toMatchSnapshot();
@@ -729,13 +729,13 @@ describe('Visual Snapshots', () => {
     themes.forEach(theme => {
         it(`should match snapshot for ${theme} theme`, () => {
             const ast = parse(`
-uiwire ${theme}
+wireframe ${theme}
     Card
         Label "**${theme.toUpperCase()}**"
         Button "Primary" primary
         TextInput "Input"
     /Card
-/uiwire
+/wireframe
             `);
             const svg = render(ast);
             
@@ -812,19 +812,19 @@ test.describe('VSCode Extension', () => {
     test('should highlight syntax', async () => {
         await vscode.openFile('test.wire');
         await vscode.typeText(`
-uiwire clean
+wireframe clean
     Button "Test" primary
-/uiwire
+/wireframe
         `);
 
         const highlighted = await vscode.getHighlightedTokens();
-        expect(highlighted).toContain('uiwire');
+        expect(highlighted).toContain('wireframe');
         expect(highlighted).toContain('Button');
     });
 
     test('should show preview', async () => {
         await vscode.openFile('test.wire');
-        await vscode.typeText('uiwire clean\n    Button "Test"\n/uiwire');
+        await vscode.typeText('wireframe clean\n    Button "Test"\n/wireframe');
         
         await vscode.executeCommand('Wireframe.previewSide');
         
@@ -834,7 +834,7 @@ uiwire clean
 
     test('should provide completions', async () => {
         await vscode.openFile('test.wire');
-        await vscode.typeText('uiwire clean\n    But');
+        await vscode.typeText('wireframe clean\n    But');
         await vscode.triggerCompletion();
         
         const completions = await vscode.getCompletionItems();
@@ -843,7 +843,7 @@ uiwire clean
 
     test('should show hover information', async () => {
         await vscode.openFile('test.wire');
-        await vscode.typeText('uiwire clean\n    Button "Test"\n/uiwire');
+        await vscode.typeText('wireframe clean\n    Button "Test"\n/wireframe');
         await vscode.hoverWord('Button');
         
         const hover = await vscode.getHoverContent();
@@ -852,7 +852,7 @@ uiwire clean
 
     test('should report diagnostics', async () => {
         await vscode.openFile('test.wire');
-        await vscode.typeText('uiwire clean\n    Button\n/uiwire');
+        await vscode.typeText('wireframe clean\n    Button\n/wireframe');
         
         const diagnostics = await vscode.getDiagnostics();
         expect(diagnostics).toContainEqual(
@@ -892,7 +892,7 @@ test.describe('Browser Rendering', () => {
         const editor = page.locator('#source-editor');
         const preview = page.locator('#preview svg');
         
-        await editor.fill('uiwire clean\n    Button "Updated"\n/uiwire');
+        await editor.fill('wireframe clean\n    Button "Updated"\n/wireframe');
         
         await expect(preview).toContainText('Updated');
     });
@@ -914,13 +914,13 @@ import Benchmark from 'benchmark';
 
 describe('Performance Benchmarks', () => {
     const simpleDoc = `
-uiwire clean
+wireframe clean
     Button "Click"
-/uiwire
+/wireframe
     `;
 
     const complexDoc = `
-uiwire clean
+wireframe clean
     Dock
         Header dock=top h=60
             Horizontal padding=16
@@ -942,7 +942,7 @@ uiwire clean
             /Scroll
         /Content
     /Dock
-/uiwire
+/wireframe
     `;
 
     it('should parse simple document < 5ms', () => {
@@ -993,7 +993,7 @@ import { parse, render } from '../../src';
 
 describe('Memory Usage', () => {
     it('should not leak memory on repeated parsing', () => {
-        const source = 'uiwire clean\n    Button "Test"\n/uiwire';
+        const source = 'wireframe clean\n    Button "Test"\n/wireframe';
         
         // Force GC if available
         if (global.gc) global.gc();

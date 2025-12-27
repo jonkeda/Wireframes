@@ -66,11 +66,11 @@ This document outlines the phased implementation plan for the Wireframe project,
   . Set up Vitest for testing
   
 . Create package structure
-  . @aspect-ui/wireframe-core
-  . @aspect-ui/wireframe-themes
-  . @aspect-ui/wireframe-mermaid-plugin
-  . @aspect-ui/wireframe-vscode-extension
-  . @aspect-ui/wireframe-cli
+  . @jonkeda/wireframe-core
+  . @jonkeda/wireframe-themes
+  . @jonkeda/wireframe-mermaid-plugin
+  . @jonkeda/wireframe-vscode-extension
+  . @jonkeda/wireframe-cli
 
 . Set up CI/CD
   . GitHub Actions workflow
@@ -449,7 +449,7 @@ This document outlines the phased implementation plan for the Wireframe project,
 
 Mermaid Plugin:
 - Configuration API (setConfig, getConfig, resetConfig)
-- Multiple diagram prefixes (wireframe, wire, uiwire)
+- Multiple diagram prefixes (wireframe, wire, wireframe)
 - Standalone renderWireframe() function
 - Theme integration
 - Error SVG generation

@@ -225,8 +225,8 @@ interface RenderResult {
 
 ```typescript
 // Register Wireframe as a Mermaid diagram type
-mermaid.registerDiagram('uiwire', {
-    detector: (text: string) => text.match(/^\s*uiwire\s+(sketch|clean|blueprint|realistic)/),
+mermaid.registerDiagram('wireframe', {
+    detector: (text: string) => text.match(/^\s*wireframe\s+(sketch|clean|blueprint|realistic)/),
     parser: WireframeParser,
     renderer: WireframeRenderer,
     styles: WireframeStyles

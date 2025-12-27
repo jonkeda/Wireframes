@@ -8,11 +8,11 @@ This document provides Wireframe examples using the v7 keyword-based syntax, ran
 
 ### Wireframe
 ```Wireframe
-uiwire clean
+wireframe clean
     %title: Simple Button
     
     Button "Click Me"
-/uiwire
+/wireframe
 ```
 
 ### ASCII Preview
@@ -28,7 +28,7 @@ uiwire clean
 
 ### Wireframe
 ```Wireframe
-uiwire sketch
+wireframe sketch
     %title: Login Form
     
     Vertical gap=12 w=300
@@ -42,7 +42,7 @@ uiwire sketch
         
         Button "Login" :btnLogin primary
     /Vertical
-/uiwire
+/wireframe
 ```
 
 ### ASCII Preview
@@ -72,7 +72,7 @@ uiwire sketch
 
 ### Wireframe
 ```Wireframe
-uiwire clean
+wireframe clean
     %title: Contact Form
     
     Vertical gap=12 w=400
@@ -94,7 +94,7 @@ uiwire clean
             Button "Send" :btnSend primary
         /Horizontal
     /Vertical
-/uiwire
+/wireframe
 ```
 
 ### ASCII Preview
@@ -131,7 +131,7 @@ uiwire clean
 
 ### Wireframe
 ```Wireframe
-uiwire sketch
+wireframe sketch
     %title: Product Cards
     
     Horizontal gap=16
@@ -156,7 +156,7 @@ uiwire sketch
             Button "Add to Cart"
         /Card
     /Horizontal
-/uiwire
+/wireframe
 ```
 
 ### ASCII Preview
@@ -181,7 +181,7 @@ uiwire sketch
 
 ### Wireframe
 ```Wireframe
-uiwire clean
+wireframe clean
     %title: Settings Tabs
     
     Tabs :tabSettings
@@ -222,7 +222,7 @@ uiwire clean
             /Vertical
         /Tab
     /Tabs
-/uiwire
+/wireframe
 ```
 
 ### ASCII Preview
@@ -257,7 +257,7 @@ uiwire clean
 
 ### Wireframe
 ```Wireframe
-uiwire clean
+wireframe clean
     %title: User Management
     
     Vertical gap=16
@@ -276,7 +276,7 @@ uiwire clean
         
         Pagination pages=5 current=1 :pgUsers
     /Vertical
-/uiwire
+/wireframe
 ```
 
 ### ASCII Preview
@@ -306,7 +306,7 @@ uiwire clean
 
 ### Wireframe
 ```Wireframe
-uiwire sketch
+wireframe sketch
     %title: Dashboard
     %author: Design Team
     
@@ -368,7 +368,7 @@ uiwire sketch
             /Scroll
         /Content
     /Dock
-/uiwire
+/wireframe
 ```
 
 ### ASCII Preview
@@ -406,7 +406,7 @@ uiwire sketch
 
 ### Wireframe
 ```Wireframe
-uiwire clean
+wireframe clean
     %title: Chat Interface
     
     Dock h=600
@@ -462,7 +462,7 @@ uiwire clean
             /Horizontal
         /Panel
     /Dock
-/uiwire
+/wireframe
 ```
 
 ### ASCII Preview
@@ -502,7 +502,7 @@ uiwire clean
 
 ### Wireframe
 ```Wireframe
-uiwire sketch
+wireframe sketch
     %title: Registration Wizard
     
     Vertical gap=24 padding=24 w=600
@@ -544,7 +544,7 @@ uiwire sketch
             Button "Next ?" primary @Step3
         /Horizontal
     /Vertical
-/uiwire
+/wireframe
 ```
 
 ### ASCII Preview
@@ -591,7 +591,7 @@ uiwire sketch
 
 ### Wireframe
 ```Wireframe
-uiwire clean
+wireframe clean
     %title: Admin Panel
     %version: 2.0
     %author: Design Team
@@ -760,7 +760,7 @@ uiwire clean
             /Horizontal
         /Footer
     /Dock
-/uiwire
+/wireframe
 
 data
     | Source | Type | Fields |

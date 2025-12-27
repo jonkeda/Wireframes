@@ -93,11 +93,11 @@ This document validates the Wireframe architecture documentation (Documents 20-2
 
 | Package | Doc 20 | Doc 27 (API) | Doc 29 (Roadmap) | Status |
 |---------|--------|--------------|------------------|--------|
-| `@aspect-ui/wireframe-core` | . | . | Week 3-8 | . Aligned |
-| `@aspect-ui/wireframe-mermaid-plugin` | . | . | Week 17-18 | . Aligned |
-| `@aspect-ui/wireframe-themes` | . | . | Week 13-14 | . Aligned |
-| `@aspect-ui/wireframe-vscode-extension` | . | . | Week 19-20 | . Aligned |
-| `@aspect-ui/wireframe-cli` | . | . | Week 21-22 | . Aligned |
+| `@jonkeda/wireframe-core` | . | . | Week 3-8 | . Aligned |
+| `@jonkeda/wireframe-mermaid-plugin` | . | . | Week 17-18 | . Aligned |
+| `@jonkeda/wireframe-themes` | . | . | Week 13-14 | . Aligned |
+| `@jonkeda/wireframe-vscode-extension` | . | . | Week 19-20 | . Aligned |
+| `@jonkeda/wireframe-cli` | . | . | Week 21-22 | . Aligned |
 
 ### 4.3 Theme System Validation
 
@@ -136,7 +136,7 @@ interface Document {
 // Contract defined in Doc 20, implemented in Doc 21
 
 interface DiagramDefinition {
-    id: 'uiwire';
+    id: 'wireframe';
     detector: (text: string) => boolean;
     parser: { parse: (text: string) => Document };
     renderer: { render: (doc: Document) => string };
@@ -154,7 +154,7 @@ interface DiagramDefinition {
 // Contract defined in Doc 20, implemented in Doc 24
 
 // Extension uses:
-import { parse, render, validate } from '@aspect-ui/wireframe-core';
+import { parse, render, validate } from '@jonkeda/wireframe-core';
 
 // Validation: . PASSED
 // - API exports match Doc 27 �3.1
@@ -179,10 +179,10 @@ import { parse, render, validate } from '@aspect-ui/wireframe-core';
 
 | Package | Doc 28 Target | Doc 29 Phase 1 | Doc 29 Phase 2 | Doc 29 Phase 3 |
 |---------|---------------|----------------|----------------|----------------|
-| @aspect-ui/wireframe-core | 90% | 80% | 85% | 90% |
-| @aspect-ui/wireframe-mermaid-plugin | 80% | - | - | 80% |
-| @aspect-ui/wireframe-themes | 80% | - | 80% | 80% |
-| @aspect-ui/wireframe-vscode-extension | 70% | - | - | 70% |
+| @jonkeda/wireframe-core | 90% | 80% | 85% | 90% |
+| @jonkeda/wireframe-mermaid-plugin | 80% | - | - | 80% |
+| @jonkeda/wireframe-themes | 80% | - | 80% | 80% |
+| @jonkeda/wireframe-vscode-extension | 70% | - | - | 70% |
 
 **Validation:** . Progressive coverage targets align with implementation phases
 
@@ -247,15 +247,15 @@ import { parse, render, validate } from '@aspect-ui/wireframe-core';
 .                   Internal Dependency Graph                      .
 ...................................................................
 .                                                                  .
-.                    @aspect-ui/wireframe-cli                                    .
+.                    @jonkeda/wireframe-cli                                    .
 .                        .                                         .
 .           .........................                             .
 .           .           .           .                             .
-.    @aspect-ui/wireframe-mermaid  @aspect-ui/wireframe-vscode  @aspect-ui/wireframe-themes                 .
+.    @jonkeda/wireframe-mermaid  @jonkeda/wireframe-vscode  @jonkeda/wireframe-themes                 .
 .           .           .           .                             .
 .           .........................                             .
 .                       .                                          .
-.                  @aspect-ui/wireframe-core                                     .
+.                  @jonkeda/wireframe-core                                     .
 .                                                                  .
 .  Validation: . No circular dependencies                        .
 .  Validation: . Core is leaf dependency                         .

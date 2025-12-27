@@ -65,15 +65,15 @@ type DiagramDetector = (text: string, config.: MermaidConfig) => boolean;
 ```typescript
 // src/detector.ts
 
-const UIWIRE_PATTERN = /^\s*uiwire\s+(sketch|clean|blueprint|realistic)/i;
+const wireframe_PATTERN = /^\s*wireframe\s+(sketch|clean|blueprint|realistic)/i;
 
 export const WireframeDetector: DiagramDetector = (text: string): boolean => {
-    return UIWIRE_PATTERN.test(text);
+    return wireframe_PATTERN.test(text);
 };
 
 // Alternative patterns for flexibility
 const ALTERNATIVE_PATTERNS = [
-    /^\s*uiwire\b/i,           // Just "uiwire" keyword
+    /^\s*wireframe\b/i,           // Just "wireframe" keyword
     /^\s*wireframe\b/i,         // Alias
     /^\s*ui\s*wire\b/i,         // Space variation
 ];
@@ -91,15 +91,15 @@ import { WireframeRenderer } from './renderer';
 import { WireframeStyles } from './styles';
 
 export function registerWireframeDiagram(): void {
-    mermaid.registerDiagram('uiwire', {
-        id: 'uiwire',
+    mermaid.registerDiagram('wireframe', {
+        id: 'wireframe',
         detector: WireframeDetector,
         parser: new WireframeParser(),
         renderer: new WireframeRenderer(),
         styles: WireframeStyles,
         init: (config) => {
             // Initialize with Mermaid config
-            WireframeConfig.merge(config.uiwire || {});
+            WireframeConfig.merge(config.wireframe || {});
         }
     });
 }
@@ -438,7 +438,7 @@ mermaid.initialize({
     theme: 'default',
     
     // Wireframe specific config
-    uiwire: {
+    wireframe: {
         theme: 'sketch',
         primaryColor: '#007bff',
         fontFamily: 'Comic Sans MS',
@@ -455,7 +455,7 @@ mermaid.initialize({
 
 ````markdown
 ```Wireframe
-uiwire sketch
+wireframe sketch
     %title: Login Form
     
     Vertical gap=12
@@ -464,17 +464,17 @@ uiwire sketch
         PasswordInput "Password" :txtPass required
         Button "Login" primary
     /Vertical
-/uiwire
+/wireframe
 ```
 ````
 
 ### 8.2 Inline Diagram Syntax
 
 ```markdown
-:::uiwire
-uiwire clean
+:::wireframe
+wireframe clean
     Button "Click Me"
-/uiwire
+/wireframe
 :::
 ```
 
@@ -538,7 +538,7 @@ export function renderError(error: WireframeParseError, containerId: string): vo
 ### 10.1 Package Structure
 
 ```
-@aspect-ui/wireframe-mermaid-plugin/
+@jonkeda/wireframe-mermaid-plugin/
 ... dist/
 .   ... Wireframe-mermaid.esm.js      # ES Module
 .   ... Wireframe-mermaid.umd.js      # UMD (browser global)
@@ -558,7 +558,7 @@ export function renderError(error: WireframeParseError, containerId: string): vo
 
 ```json
 {
-    "name": "@aspect-ui/wireframe-mermaid-plugin",
+    "name": "@jonkeda/wireframe-mermaid-plugin",
     "version": "1.0.0",
     "description": "Wireframe wireframe diagram plugin for Mermaid.js",
     "main": "dist/Wireframe-mermaid.umd.js",
@@ -582,13 +582,13 @@ export function renderError(error: WireframeParseError, containerId: string): vo
 
 **NPM Installation:**
 ```bash
-npm install @aspect-ui/wireframe-mermaid-plugin
+npm install @jonkeda/wireframe-mermaid-plugin
 ```
 
 **ES Module:**
 ```javascript
 import mermaid from 'mermaid';
-import '@aspect-ui/wireframe-mermaid-plugin';
+import '@jonkeda/wireframe-mermaid-plugin';
 
 mermaid.initialize({ startOnLoad: true });
 ```
@@ -596,7 +596,7 @@ mermaid.initialize({ startOnLoad: true });
 **Script Tag:**
 ```html
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@aspect-ui/wireframe-mermaid-plugin/dist/Wireframe-mermaid.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@jonkeda/wireframe-mermaid-plugin/dist/Wireframe-mermaid.min.js"></script>
 <script>
     mermaid.initialize({ startOnLoad: true });
 </script>
@@ -612,12 +612,12 @@ mermaid.initialize({ startOnLoad: true });
 // tests/detector.test.ts
 
 describe('Wireframe Detector', () => {
-    it('should detect uiwire sketch', () => {
-        expect(WireframeDetector('uiwire sketch\n...')).toBe(true);
+    it('should detect wireframe sketch', () => {
+        expect(WireframeDetector('wireframe sketch\n...')).toBe(true);
     });
 
-    it('should detect uiwire clean', () => {
-        expect(WireframeDetector('uiwire clean\n...')).toBe(true);
+    it('should detect wireframe clean', () => {
+        expect(WireframeDetector('wireframe clean\n...')).toBe(true);
     });
 
     it('should not detect other diagrams', () => {
@@ -626,8 +626,8 @@ describe('Wireframe Detector', () => {
     });
 
     it('should handle whitespace', () => {
-        expect(WireframeDetector('  uiwire sketch\n...')).toBe(true);
-        expect(WireframeDetector('\n\nuiwire clean\n...')).toBe(true);
+        expect(WireframeDetector('  wireframe sketch\n...')).toBe(true);
+        expect(WireframeDetector('\n\nwireframe clean\n...')).toBe(true);
     });
 });
 ```
@@ -646,9 +646,9 @@ describe('Mermaid Integration', () => {
         const container = document.getElementById('test-container');
         container.innerHTML = `
             <pre class="mermaid">
-                uiwire clean
+                wireframe clean
                     Button "Click Me"
-                /uiwire
+                /wireframe
             </pre>
         `;
 

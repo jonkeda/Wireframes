@@ -28,14 +28,14 @@ Wireframe is a text-based wireframe language that:
 ## Document Structure
 
 ```Wireframe
-uiwire sketch
+wireframe sketch
     %title: Page Title
     %version: 1.0
     %author: Designer
     
     // Content here
     
-/uiwire
+/wireframe
 ```
 
 ### Document Attributes
@@ -53,7 +53,7 @@ All document-level attributes use `%name: value` syntax:
 
 ### Wireframe Styles
 
-Specify style after `uiwire`:
+Specify style after `wireframe`:
 
 | Style | Description |
 |-------|-------------|
@@ -813,9 +813,9 @@ Vertical
 
 ```
 DOCUMENT
-    uiwire style        Document root (sketch/blueprint/clean/realistic)
+    wireframe style        Document root (sketch/blueprint/clean/realistic)
     %name: value        Document attribute
-    /uiwire             Close document
+    /wireframe             Close document
 
 COMMENTS
     //                  Single line comment
@@ -840,6 +840,7 @@ SECTIONS
     StatusBar           Status bar
     Modal               Modal dialog
     Drawer              Slide-out drawer
+    Window              Desktop window container
 
 CONTROLS
     Button "text"       Button
@@ -926,7 +927,7 @@ SECTIONS
 ## Complete Example
 
 ```Wireframe
-uiwire sketch
+wireframe sketch
     %title: Order Form
     %version: 2.0
     %author: Design Team
@@ -1037,7 +1038,7 @@ uiwire sketch
             /Horizontal
         /Footer
     /Dock
-/uiwire
+/wireframe
 
 data
     | Source | Type | Fields |

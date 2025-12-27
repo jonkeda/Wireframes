@@ -7,18 +7,18 @@ A collection of example wireframes demonstrating various UI patterns.
 ### Hello World
 
 ```wireframe
-uiwire clean
+wireframe clean
     %title: Hello World
     
     Label "**Hello World**"
     Button "Click Me" primary
-/uiwire
+/wireframe
 ```
 
 ### Login Form
 
 ```wireframe
-uiwire clean
+wireframe clean
     %title: Login Form
     
     Card w=300
@@ -37,13 +37,13 @@ uiwire clean
             Label "Forgot password?" @ForgotPassword
         /Vertical
     /Card
-/uiwire
+/wireframe
 ```
 
 ### Dashboard Header
 
 ```wireframe
-uiwire clean
+wireframe clean
     Header
         Horizontal gap=16 justify=between
             Label "**Dashboard**"
@@ -53,7 +53,7 @@ uiwire clean
             Avatar "JD" :avUser
         /Horizontal
     /Header
-/uiwire
+/wireframe
 ```
 
 ## Forms
@@ -61,7 +61,7 @@ uiwire clean
 ### Registration Form
 
 ```wireframe
-uiwire clean
+wireframe clean
     %title: Registration
     
     Card w=400
@@ -87,13 +87,13 @@ uiwire clean
             Label "Sign in instead" @Login
         /Vertical
     /Card
-/uiwire
+/wireframe
 ```
 
 ### Contact Form
 
 ```wireframe
-uiwire clean
+wireframe clean
     %title: Contact Us
     
     Card w=400
@@ -120,13 +120,13 @@ uiwire clean
             Button "Send Message" :btnSend primary
         /Vertical
     /Card
-/uiwire
+/wireframe
 ```
 
 ### Settings Form
 
 ```wireframe
-uiwire clean
+wireframe clean
     %title: Settings
     
     Card w=400
@@ -151,7 +151,7 @@ uiwire clean
             /Horizontal
         /Vertical
     /Card
-/uiwire
+/wireframe
 ```
 
 ## Navigation
@@ -159,7 +159,7 @@ uiwire clean
 ### Sidebar Navigation
 
 ```wireframe
-uiwire clean
+wireframe clean
     Sidebar w=200
         Vertical gap=4
             Label "MENU"
@@ -176,13 +176,13 @@ uiwire clean
             MenuItem "Help" icon=$info
         /Vertical
     /Sidebar
-/uiwire
+/wireframe
 ```
 
 ### Tab Navigation
 
 ```wireframe
-uiwire clean
+wireframe clean
     Tabs :tabMain
         Tab "Overview"
             Label "Overview content"
@@ -197,20 +197,20 @@ uiwire clean
             Label "Settings content"
         /Tab
     /Tabs
-/uiwire
+/wireframe
 ```
 
 ### Breadcrumb Navigation
 
 ```wireframe
-uiwire clean
+wireframe clean
     Breadcrumb
         BreadcrumbItem "Home" @Home
         BreadcrumbItem "Products" @Products
         BreadcrumbItem "Electronics" @Electronics
         BreadcrumbItem "Phones"
     /Breadcrumb
-/uiwire
+/wireframe
 ```
 
 ## Data Display
@@ -218,7 +218,7 @@ uiwire clean
 ### User Table
 
 ```wireframe
-uiwire clean
+wireframe clean
     %title: User Management
     
     Card
@@ -236,13 +236,13 @@ uiwire clean
             Pagination pages=5 current=1 :pgUsers
         /Vertical
     /Card
-/uiwire
+/wireframe
 ```
 
 ### Stats Cards
 
 ```wireframe
-uiwire clean
+wireframe clean
     Horizontal gap=16
         Card w=200
             Vertical gap=8
@@ -268,13 +268,13 @@ uiwire clean
             /Vertical
         /Card
     /Horizontal
-/uiwire
+/wireframe
 ```
 
 ### Tree View
 
 ```wireframe
-uiwire clean
+wireframe clean
     Card
         Vertical gap=12
             Label "**File Browser**"
@@ -290,7 +290,7 @@ uiwire clean
             /Tree
         /Vertical
     /Card
-/uiwire
+/wireframe
 ```
 
 ## Feedback
@@ -298,20 +298,20 @@ uiwire clean
 ### Toast Notifications
 
 ```wireframe
-uiwire clean
+wireframe clean
     Vertical gap=8
         Toast "Success! Your changes have been saved." type=success
         Toast "Warning: Your session will expire soon." type=warning
         Toast "Error: Failed to load data." type=error
         Toast "Info: New updates available." type=info
     /Vertical
-/uiwire
+/wireframe
 ```
 
 ### Progress Indicators
 
 ```wireframe
-uiwire clean
+wireframe clean
     Card w=400
         Vertical gap=12
             Label "**Upload Progress**"
@@ -325,20 +325,20 @@ uiwire clean
             /Horizontal
         /Vertical
     /Card
-/uiwire
+/wireframe
 ```
 
 ### Stepper
 
 ```wireframe
-uiwire clean
+wireframe clean
     Stepper :stpCheckout
         Step "Cart" completed=true
         Step "Shipping" current=true
         Step "Payment"
         Step "Confirm"
     /Stepper
-/uiwire
+/wireframe
 ```
 
 ## Complex Layouts
@@ -346,7 +346,7 @@ uiwire clean
 ### Dashboard
 
 ```wireframe
-uiwire clean
+wireframe clean
     %title: Analytics Dashboard
     
     Dock
@@ -399,13 +399,13 @@ uiwire clean
             /Vertical
         /Content
     /Dock
-/uiwire
+/wireframe
 ```
 
 ### E-commerce Product Page
 
 ```wireframe
-uiwire realistic
+wireframe realistic
     %title: Product Page
     
     Dock
@@ -465,13 +465,13 @@ uiwire realistic
             /Horizontal
         /Content
     /Dock
-/uiwire
+/wireframe
 ```
 
 ### Modal Dialog
 
 ```wireframe
-uiwire clean
+wireframe clean
     Dialog "Confirm Delete" :dlgConfirm
         Vertical gap=16
             Label "Are you sure you want to delete this item?"
@@ -485,7 +485,7 @@ uiwire clean
             /Horizontal
         /Vertical
     /Dialog
-/uiwire
+/wireframe
 ```
 
 ## Theme Showcase
@@ -493,7 +493,7 @@ uiwire clean
 ### Clean Theme
 
 ```wireframe
-uiwire clean
+wireframe clean
     Card w=300
         Vertical gap=12
             Label "**Clean Theme**"
@@ -502,13 +502,13 @@ uiwire clean
             Button "Default"
         /Vertical
     /Card
-/uiwire
+/wireframe
 ```
 
 ### Sketch Theme
 
 ```wireframe
-uiwire sketch
+wireframe sketch
     Card w=300
         Vertical gap=12
             Label "**Sketch Theme**"
@@ -517,13 +517,13 @@ uiwire sketch
             Button "Default"
         /Vertical
     /Card
-/uiwire
+/wireframe
 ```
 
 ### Blueprint Theme
 
 ```wireframe
-uiwire blueprint
+wireframe blueprint
     Card w=300
         Vertical gap=12
             Label "**Blueprint Theme**"
@@ -532,13 +532,13 @@ uiwire blueprint
             Button "Default"
         /Vertical
     /Card
-/uiwire
+/wireframe
 ```
 
 ### Realistic Theme
 
 ```wireframe
-uiwire realistic
+wireframe realistic
     Card w=300
         Vertical gap=12
             Label "**Realistic Theme**"
@@ -547,7 +547,7 @@ uiwire realistic
             Button "Default"
         /Vertical
     /Card
-/uiwire
+/wireframe
 ```
 
 ## Accessibility Examples
@@ -555,7 +555,7 @@ uiwire realistic
 ### Accessible Form
 
 ```wireframe
-uiwire clean
+wireframe clean
     %title: Accessible Form Example
     
     Card w=400
@@ -571,7 +571,7 @@ uiwire clean
             Button "Submit" :btnSubmit primary
         /Vertical
     /Card
-/uiwire
+/wireframe
 ```
 
 ---

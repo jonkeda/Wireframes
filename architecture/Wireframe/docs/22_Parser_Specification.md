@@ -58,8 +58,8 @@ enum TokenType {
     SPACER,             // Spacer keyword
     
     // Markers
-    DOCUMENT_START,     // uiwire
-    DOCUMENT_END,       // /uiwire
+    DOCUMENT_START,     // wireframe
+    DOCUMENT_END,       // /wireframe
     METADATA,           // %name: value
     
     // Control
@@ -286,7 +286,7 @@ export class Lexer {
     private getKeywordType(value: string): TokenType {
         const keywords: Record<string, TokenType> = {
             // Document
-            'uiwire': TokenType.DOCUMENT_START,
+            'wireframe': TokenType.DOCUMENT_START,
             
             // Layouts
             'Grid': TokenType.KEYWORD,
@@ -365,10 +365,10 @@ export class Lexer {
 
 ```ebnf
 (* Document Structure *)
-document        = "uiwire" style NEWLINE
+document        = "wireframe" style NEWLINE
                   metadata*
                   content
-                  "/uiwire" ;
+                  "/wireframe" ;
 
 style           = "sketch" | "clean" | "blueprint" | "realistic" ;
 
@@ -704,8 +704,8 @@ export class Parser {
     private parseDocument(): Document {
         const startLocation = this.currentLocation();
 
-        // Parse "uiwire style"
-        this.expect(TokenType.DOCUMENT_START, 'Expected "uiwire"');
+        // Parse "wireframe style"
+        this.expect(TokenType.DOCUMENT_START, 'Expected "wireframe"');
         const styleToken = this.expect(TokenType.ATTRIBUTE_NAME, 'Expected style');
         const style = styleToken.value;
 
@@ -732,8 +732,8 @@ export class Parser {
             }
         }
 
-        // Parse "/uiwire"
-        this.expect(TokenType.CLOSE_KEYWORD, 'Expected "/uiwire"');
+        // Parse "/wireframe"
+        this.expect(TokenType.CLOSE_KEYWORD, 'Expected "/wireframe"');
 
         return this.builder.createDocument(
             style,
@@ -1167,9 +1167,9 @@ describe('Wireframe Parser', () => {
     describe('Document parsing', () => {
         it('should parse minimal document', () => {
             const input = `
-uiwire clean
+wireframe clean
     Button "Click"
-/uiwire
+/wireframe
             `;
             const ast = parse(input);
             
@@ -1180,12 +1180,12 @@ uiwire clean
 
         it('should parse document with metadata', () => {
             const input = `
-uiwire sketch
+wireframe sketch
     %title: My Form
     %version: 1.0
     
     Label "Hello"
-/uiwire
+/wireframe
             `;
             const ast = parse(input);
             
@@ -1198,9 +1198,9 @@ uiwire sketch
     describe('Control parsing', () => {
         it('should parse Button with all options', () => {
             const input = `
-uiwire clean
+wireframe clean
     Button "Submit" :btnSubmit primary @Dashboard tooltip="Save"
-/uiwire
+/wireframe
             `;
             const ast = parse(input);
             const button = ast.body[0] as Control;

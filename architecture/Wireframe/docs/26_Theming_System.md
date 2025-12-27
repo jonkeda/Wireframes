@@ -867,13 +867,13 @@ themeManager.register(darkTheme);
 ### 8.2 Theme Configuration in Wireframe
 
 ```Wireframe
-uiwire clean
+wireframe clean
     %theme-primary: #ff5722
     %theme-border-radius: 8
     %theme-font: "Inter, sans-serif"
     
     // Content with custom theme colors
-/uiwire
+/wireframe
 ```
 
 ---

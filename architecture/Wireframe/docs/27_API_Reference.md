@@ -17,15 +17,15 @@ This document provides the public API reference for the Wireframe library.
 ## 2. Package Structure
 
 ```
-@aspect-ui/wireframe-core           # Core parser and renderer
-@aspect-ui/wireframe-mermaid-plugin # Mermaid.js integration
-@aspect-ui/wireframe-themes         # Theme definitions
-@aspect-ui/wireframe-cli            # Command-line interface
+@jonkeda/wireframe-core           # Core parser and renderer
+@jonkeda/wireframe-mermaid-plugin # Mermaid.js integration
+@jonkeda/wireframe-themes         # Theme definitions
+@jonkeda/wireframe-cli            # Command-line interface
 ```
 
 ---
 
-## 3. Core Library (@aspect-ui/wireframe-core)
+## 3. Core Library (@jonkeda/wireframe-core)
 
 ### 3.1 Main Exports
 
@@ -40,7 +40,7 @@ import {
     Document,
     RenderOptions,
     Theme
-} from '@aspect-ui/wireframe-core';
+} from '@jonkeda/wireframe-core';
 ```
 
 ---
@@ -80,14 +80,14 @@ interface ParseOptions {
 **Example:**
 
 ```typescript
-import { parse } from '@aspect-ui/wireframe-core';
+import { parse } from '@jonkeda/wireframe-core';
 
 const source = `
-uiwire clean
+wireframe clean
     %title: My Form
     
     Button "Click Me"
-/uiwire
+/wireframe
 `;
 
 const document = parse(source);
@@ -144,7 +144,7 @@ interface RenderOptions {
 **Example:**
 
 ```typescript
-import { parse, render } from '@aspect-ui/wireframe-core';
+import { parse, render } from '@jonkeda/wireframe-core';
 
 const document = parse(source);
 const svg = render(document, {
@@ -188,7 +188,7 @@ interface ValidationError {
 **Example:**
 
 ```typescript
-import { parse, validate } from '@aspect-ui/wireframe-core';
+import { parse, validate } from '@jonkeda/wireframe-core';
 
 const document = parse(source);
 const errors = validate(document);
@@ -221,7 +221,7 @@ function getTheme(name: ThemeName): Theme;
 **Example:**
 
 ```typescript
-import { getTheme } from '@aspect-ui/wireframe-core';
+import { getTheme } from '@jonkeda/wireframe-core';
 
 const theme = getTheme('sketch');
 console.log(theme.fontFamily);  // "Comic Sans MS", ...
@@ -240,7 +240,7 @@ function registerTheme(theme: Theme): void;
 **Example:**
 
 ```typescript
-import { registerTheme, getTheme } from '@aspect-ui/wireframe-core';
+import { registerTheme, getTheme } from '@jonkeda/wireframe-core';
 
 const darkTheme = {
     ...getTheme('clean'),
@@ -385,16 +385,16 @@ interface Theme {
 
 ---
 
-## 5. Mermaid Plugin (@aspect-ui/wireframe-mermaid-plugin)
+## 5. Mermaid Plugin (@jonkeda/wireframe-mermaid-plugin)
 
 ### 5.1 Registration
 
 ```typescript
-import '@aspect-ui/wireframe-mermaid-plugin';
+import '@jonkeda/wireframe-mermaid-plugin';
 // Auto-registers with Mermaid
 
 // Or manual registration
-import { registerWireframeDiagram } from '@aspect-ui/wireframe-mermaid-plugin';
+import { registerWireframeDiagram } from '@jonkeda/wireframe-mermaid-plugin';
 registerWireframeDiagram();
 ```
 
@@ -407,7 +407,7 @@ mermaid.initialize({
     startOnLoad: true,
     
     // Wireframe-specific config
-    uiwire: {
+    wireframe: {
         theme: 'sketch',
         width: 800,
         showIds: false,
@@ -440,7 +440,7 @@ interface WireframeConfig {
 
 ---
 
-## 6. CLI (@aspect-ui/wireframe-cli)
+## 6. CLI (@jonkeda/wireframe-cli)
 
 ### 6.1 Commands
 
@@ -482,7 +482,7 @@ Options:
 ### 6.3 Programmatic Usage
 
 ```typescript
-import { cli } from '@aspect-ui/wireframe-cli';
+import { cli } from '@jonkeda/wireframe-cli';
 
 // Render file
 await cli.render('form.wire', {
@@ -553,7 +553,7 @@ interface RendererEvents {
 }
 
 // Usage
-import { createRenderer } from '@aspect-ui/wireframe-core';
+import { createRenderer } from '@jonkeda/wireframe-core';
 
 const renderer = createRenderer({
     interactive: true
@@ -577,7 +577,7 @@ renderer.on('navigation', (nav) => {
 ### 9.1 AST Utilities
 
 ```typescript
-import { walk, find, findAll, getById } from '@aspect-ui/wireframe-core/utils';
+import { walk, find, findAll, getById } from '@jonkeda/wireframe-core/utils';
 
 // Walk all nodes
 walk(document, (node, parent, depth) => {
@@ -601,7 +601,7 @@ const element = getById(document, 'btnSubmit');
 ### 9.2 Theme Utilities
 
 ```typescript
-import { extendTheme, mergeThemes } from '@aspect-ui/wireframe-core/themes';
+import { extendTheme, mergeThemes } from '@jonkeda/wireframe-core/themes';
 
 // Extend a theme
 const customTheme = extendTheme('clean', {
@@ -616,7 +616,7 @@ const merged = mergeThemes(baseTheme, overrides);
 ### 9.3 Source Map
 
 ```typescript
-import { generateSourceMap } from '@aspect-ui/wireframe-core/sourcemap';
+import { generateSourceMap } from '@jonkeda/wireframe-core/sourcemap';
 
 const { svg, sourceMap } = render(document, {
     sourceMap: true
@@ -687,7 +687,7 @@ import type {
     RenderOptions,
     ValidationError,
     SourceLocation
-} from '@aspect-ui/wireframe-core';
+} from '@jonkeda/wireframe-core';
 ```
 
 ### 11.2 Generic Types
@@ -708,7 +708,7 @@ function getButtons(doc: Document): Control[] {
 ### 12.1 Script Tag
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@aspect-ui/wireframe-core/dist/Wireframe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@jonkeda/wireframe-core/dist/Wireframe.min.js"></script>
 <script>
     const { parse, render } = Wireframe;
     
@@ -724,7 +724,7 @@ function getButtons(doc: Document): Control[] {
 
 ```html
 <script type="module">
-    import { parse, render } from 'https://cdn.jsdelivr.net/npm/@aspect-ui/wireframe-core/dist/Wireframe.esm.js';
+    import { parse, render } from 'https://cdn.jsdelivr.net/npm/@jonkeda/wireframe-core/dist/Wireframe.esm.js';
     
     const doc = parse(source);
     const svg = render(doc);

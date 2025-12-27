@@ -13,7 +13,7 @@ First stable release of Wireframe, a domain-specific language for UI wireframes.
 
 ### Added
 
-#### Core Library (`@aspect-ui/wireframe-core`)
+#### Core Library (`@jonkeda/wireframe-core`)
 
 **Language Features**
 - Complete Wireframe DSL with controls, layouts, sections, and modifiers
@@ -52,7 +52,7 @@ First stable release of Wireframe, a domain-specific language for UI wireframes.
 - `getTheme()` - Get theme by name
 - `createCompiler()` - Create compiler instance
 
-#### VSCode Extension (`@aspect-ui/wireframe-vscode`)
+#### VSCode Extension (`@jonkeda/wireframe-vscode`)
 
 - Syntax highlighting with TextMate grammar
 - 17 code snippets for common patterns
@@ -64,7 +64,7 @@ First stable release of Wireframe, a domain-specific language for UI wireframes.
 - Theme switching command
 - Keyboard shortcuts (`Ctrl+Shift+V` for preview)
 
-#### CLI Tool (`@aspect-ui/wireframe-cli`)
+#### CLI Tool (`@jonkeda/wireframe-cli`)
 
 - Compile wireframe files to SVG
 - Watch mode for automatic recompilation
@@ -75,10 +75,10 @@ First stable release of Wireframe, a domain-specific language for UI wireframes.
 - Quiet mode for scripting
 - Validation without output
 
-#### Mermaid Plugin (`@aspect-ui/wireframe-mermaid`)
+#### Mermaid Plugin (`@jonkeda/wireframe-mermaid`)
 
 - Mermaid.js integration
-- Multiple diagram prefixes (`wireframe`, `wire`, `uiwire`)
+- Multiple diagram prefixes (`wireframe`, `wire`, `wireframe`)
 - Configuration API
 - Standalone render function
 - Error SVG generation for invalid content

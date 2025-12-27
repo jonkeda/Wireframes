@@ -20,7 +20,7 @@ This document specifies all Wireframe UI components, including their syntax, pro
 |----------|------------|
 | **Controls** | Button, IconButton, TextInput, NumberInput, DateInput, PasswordInput, TextArea, Label, Checkbox, Radio, Dropdown, Separator, Spacer |
 | **Layout** | Grid, Vertical, Horizontal, Dock, Canvas, Scroll |
-| **Sections** | Header, Footer, Sidebar, Content, Panel, Card, Toolbar, Modal, Drawer |
+| **Sections** | Header, Footer, Sidebar, Content, Panel, Card, Toolbar, Modal, Drawer, Window |
 | **Navigation** | Menu, MenuItem, Hamburger, Breadcrumb, Tabs, Pagination |
 | **Data Display** | Table, DataGrid, List, Tree, Avatar, Badge, Chip, Progress |
 | **Feedback** | Alert, Dialog, Toast, Skeleton, Hover |
@@ -643,6 +643,60 @@ Drawer :drwMenu position=left
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
 | position | string | left | left, right, top, bottom |
+
+---
+
+### 5.7 Window
+
+Desktop-style window container with title bar and optional controls.
+
+**Syntax:**
+```Wireframe
+Window "Application Title"
+    // Window content
+/Window
+
+Window "Settings" :winSettings w=400 h=300
+    Vertical gap=16
+        Label "Window content here"
+    /Vertical
+/Window
+
+Window "Editor" w=800 h=600 closable resizable
+    // Full window with controls
+/Window
+```
+
+**Properties:**
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| title | string | required | Window title text |
+| w | number | 800 | Width in pixels |
+| h | number | 600 | Height in pixels |
+| closable | boolean | true | Show close button |
+| minimizable | boolean | true | Show minimize button |
+| maximizable | boolean | true | Show maximize button |
+| resizable | boolean | true | Allow resizing |
+
+**Default Size:** 800×600px
+
+**Rendering:**
+```svg
+<g class="wireframe-window">
+    <rect class="window-frame" x="0" y="0" width="800" height="600" rx="8"/>
+    <rect class="window-titlebar" x="0" y="0" width="800" height="32" rx="8"/>
+    <text class="window-title" x="12" y="20">Application Title</text>
+    <g class="window-controls">
+        <circle class="close" cx="776" cy="16" r="6"/>
+        <circle class="maximize" cx="756" cy="16" r="6"/>
+        <circle class="minimize" cx="736" cy="16" r="6"/>
+    </g>
+    <g class="window-content" transform="translate(0, 32)">
+        <!-- Content rendered here -->
+    </g>
+</g>
+```
 
 ---
 

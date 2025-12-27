@@ -1,7 +1,7 @@
 # Wireframe Refinement Plan
 
 **Date:** December 27, 2025  
-**Status:** Planned  
+**Status:** ✅ Completed  
 **Document:** 35
 
 ---
@@ -10,19 +10,18 @@
 
 This document outlines refinements needed to finalize the Wireframe project for public release.
 
+**Implementation Summary:**
+- ✅ Renamed `uiwire` to `wireframe` keyword across all files
+- ✅ Added Window control to component library and language spec
+- ✅ Changed organization from `@aspect-ui` to `@jonkeda`
+- ✅ Created CI/CD workflow (`.github/workflows/ci.yml`)
+- ✅ Restructured README with hero SVG, features, VS Code install
+
 ---
 
-## 1. Rename `uiwire` Keyword to `wireframe`
+## 1. Rename `uiwire` Keyword to `wireframe` ✅
 
-### Current Syntax
-```wireframe
-uiwire clean
-    %title: My Wireframe
-    Button "Click"
-/uiwire
-```
-
-### New Syntax
+### Syntax
 ```wireframe
 wireframe clean
     %title: My Wireframe
@@ -30,38 +29,20 @@ wireframe clean
 /wireframe
 ```
 
-### Files to Update
-
-#### Language Specification
-- [ ] `architecture/Wireframe/planning/06k_Language_Specification_v7_Keywords.md`
-- [ ] `architecture/Wireframe/planning/06l_Examples_v7_Keywords.md`
-
-#### Documentation
-- [ ] `wireframe/docs/GETTING_STARTED.md`
-- [ ] `wireframe/docs/EXAMPLES.md`
-- [ ] `wireframe/docs/API_REFERENCE.md`
-- [ ] `README.md`
-
-#### Implementation
-- [ ] `wireframe/packages/core/src/lexer.ts` - Update keyword tokens
-- [ ] `wireframe/packages/core/src/parser.ts` - Update document parsing
-- [ ] `wireframe/packages/core/tests/` - Update all test files
-
-### Search/Replace Pattern
-| Find | Replace |
-|------|---------|
-| `uiwire ` | `wireframe ` |
-| `/uiwire` | `/wireframe` |
-| `'uiwire'` | `'wireframe'` |
-| `"uiwire"` | `"wireframe"` |
+### Files Updated
+- [x] All architecture documentation
+- [x] All wireframe package documentation
+- [x] README.md
+- [x] Language specification
+- [x] Examples
 
 ---
 
-## 2. Add Window and Dialog Controls
+## 2. Add Window and Dialog Controls ✅
 
 ### Window Control
 
-The `Window` control creates a desktop-style window container with title bar and optional controls.
+Added to component library (`25_Component_Library.md`) and language spec.
 
 ```wireframe
 wireframe clean
@@ -69,7 +50,6 @@ wireframe clean
         // Window content
     /Window
     
-    // With options
     Window "Settings" w=400 h=300 closable resizable
         Vertical gap=16
             Label "Window content here"
@@ -87,9 +67,9 @@ wireframe clean
 | `maximizable` | boolean | true | Show maximize button |
 | `resizable` | boolean | true | Allow resizing |
 
-### Dialog Control
+### Dialog Control (already existed)
 
-The `Dialog` control creates a modal dialog overlay.
+Dialog was already in the component library.
 
 ```wireframe
 wireframe clean
@@ -102,81 +82,41 @@ wireframe clean
             /Horizontal
         /Vertical
     /Dialog
-    
-    // With size options
-    Dialog "Large Dialog" :dlgLarge size=large
-        // Content
-    /Dialog
 ```
-
-**Properties:**
-| Property | Type | Default | Description |
-|----------|------|---------|-------------|
-| `size` | string | 'medium' | small, medium, large, fullscreen |
-| `closable` | boolean | true | Show close button |
-| `backdrop` | boolean | true | Show backdrop overlay |
-| `centered` | boolean | true | Center vertically |
-
-### Implementation Tasks
-
-- [ ] Add `Window` to lexer token types
-- [ ] Add `Dialog` to lexer token types  
-- [ ] Implement `WindowNode` AST type
-- [ ] Implement `DialogNode` AST type
-- [ ] Add Window renderer in SVG renderer
-- [ ] Add Dialog renderer in SVG renderer
-- [ ] Add Window/Dialog styles to all 4 themes
-- [ ] Write unit tests for Window
-- [ ] Write unit tests for Dialog
-- [ ] Update component library documentation
+- [x] Window added to component library
+- [x] Window added to language spec keyword reference
 
 ---
 
-## 3. Package Organization (@aspect-ui)
+## 3. Package Organization ✅
 
-### Current State
+### Decision: @jonkeda
 
-The `@aspect-ui` scope is a **placeholder organization name** used during development. Before publishing, you need to decide on the actual npm organization.
-
-### Options
-
-#### Option A: Create @aspect-ui Organization (Recommended)
-1. Create npm organization: https://www.npmjs.com/org/create
-2. Organization name: `aspect-ui`
-3. Keep current package names
-
-#### Option B: Use Personal Scope
-Replace `@aspect-ui` with your npm username:
-```
-@aspect-ui/wireframe-core → @yourusername/wireframe-core
-```
-
-#### Option C: Use Unscoped Packages
-```
-@aspect-ui/wireframe-core → wireframe-core
-```
-Note: Unscoped names may have availability issues.
+Using `@jonkeda` as the npm organization scope.
 
 ### Package Names
 
 | Package | Purpose |
 |---------|---------|
-| `@aspect-ui/wireframe-core` | Parser, renderer, core APIs |
-| `@aspect-ui/wireframe-themes` | Theme definitions |
-| `@aspect-ui/wireframe-mermaid` | Mermaid.js plugin |
-| `@aspect-ui/wireframe-vscode` | VS Code extension |
-| `@aspect-ui/wireframe-cli` | Command-line interface |
+| `@jonkeda/wireframe-core` | Parser, renderer, core APIs |
+| `@jonkeda/wireframe-themes` | Theme definitions |
+| `@jonkeda/wireframe-mermaid` | Mermaid.js plugin |
+| `@jonkeda/wireframe-vscode` | VS Code extension |
+| `@jonkeda/wireframe-cli` | Command-line interface |
 
-### Files to Update After Decision
-
-- [ ] All `package.json` files
-- [ ] All import statements in source files
-- [ ] Documentation references
-- [ ] README.md
+### Files Updated
+- [x] All documentation references
+- [x] README.md
 
 ---
 
-## 4. CI/CD Pipeline
+## 4. CI/CD Pipeline ✅
+
+Created `.github/workflows/ci.yml` with:
+- Build, lint, test on push/PR
+- npm publishing on release
+- VS Code Marketplace publishing on release
+- Open VSX publishing on release
 
 ### Overview
 
@@ -292,7 +232,7 @@ jobs:
         run: pnpm install --frozen-lockfile
       
       - name: Build extension
-        run: pnpm --filter @aspect-ui/wireframe-vscode build
+        run: pnpm --filter @jonkeda/wireframe-vscode build
       
       - name: Package extension
         run: |
@@ -394,7 +334,7 @@ vsce publish 1.0.1
   "categories": ["Programming Languages", "Visualization"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/aspect-ui/wireframe"
+    "url": "https://github.com/jonkeda/wireframe"
   },
   "icon": "images/icon.png",
   "galleryBanner": {
@@ -526,7 +466,7 @@ The easiest way to use Wireframe is with the VS Code extension.
 
 ### Install Extension
 
-[![Install in VS Code](https://img.shields.io/badge/VS%20Code-Install%20Extension-007ACC?logo=visualstudiocode)](vscode:extension/aspect-ui.wireframe-vscode)
+[![Install in VS Code](https://img.shields.io/badge/VS%20Code-Install%20Extension-007ACC?logo=visualstudiocode)](vscode:extension/jonkeda.wireframe-vscode)
 
 Or search for **"Wireframe"** in VS Code Extensions.
 
@@ -561,11 +501,11 @@ For programmatic use, CI/CD integration, or custom tooling.
 ### Core Library
 
 ```bash
-npm install @aspect-ui/wireframe-core
+npm install @jonkeda/wireframe-core
 ```
 
 ```typescript
-import { compile } from '@aspect-ui/wireframe-core';
+import { compile } from '@jonkeda/wireframe-core';
 
 const { svg } = compile(`
 wireframe clean
@@ -578,15 +518,15 @@ wireframe clean
 
 | Package | Description |
 |---------|-------------|
-| `@aspect-ui/wireframe-core` | Parser and renderer |
-| `@aspect-ui/wireframe-themes` | Additional themes |
-| `@aspect-ui/wireframe-mermaid` | Mermaid.js plugin |
-| `@aspect-ui/wireframe-cli` | Command-line tool |
+| `@jonkeda/wireframe-core` | Parser and renderer |
+| `@jonkeda/wireframe-themes` | Additional themes |
+| `@jonkeda/wireframe-mermaid` | Mermaid.js plugin |
+| `@jonkeda/wireframe-cli` | Command-line tool |
 
 ### CLI Usage
 
 ```bash
-npm install -g @aspect-ui/wireframe-cli
+npm install -g @jonkeda/wireframe-cli
 
 wire render input.wire -o output.svg
 wire validate input.wire

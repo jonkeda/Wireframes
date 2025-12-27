@@ -129,7 +129,7 @@ Wireframe-vscode/
         "languages": [
             {
                 "id": "Wireframe",
-                "aliases": ["Wireframe", "Wireframe", "UIWire"],
+                "aliases": ["Wireframe", "Wireframe", "wireframe"],
                 "extensions": [".wire"],
                 "configuration": "./language-configuration.json",
                 "icon": {
@@ -284,7 +284,7 @@ Wireframe-vscode/
         "vsce": "^2.15.0"
     },
     "dependencies": {
-        "@aspect-ui/wireframe-core": "^1.0.0",
+        "@jonkeda/wireframe-core": "^1.0.0",
         "vscode-languageclient": "^9.0.0",
         "vscode-languageserver": "^9.0.0"
     }
@@ -368,7 +368,7 @@ export function deactivate(): Thenable<void> | undefined {
 // src/preview/provider.ts
 
 import * as vscode from 'vscode';
-import { parse, render, Theme, getTheme } from '@aspect-ui/wireframe-core';
+import { parse, render, Theme, getTheme } from '@jonkeda/wireframe-core';
 import { debounce } from '../utils/debounce';
 
 export class WireframePreviewProvider implements vscode.WebviewViewProvider {
@@ -737,7 +737,7 @@ import {
     TextDocumentPositionParams
 } from 'vscode-languageserver/node';
 import { TextDocument } from 'vscode-languageserver-textdocument';
-import { parse, validate, ParseError } from '@aspect-ui/wireframe-core';
+import { parse, validate, ParseError } from '@jonkeda/wireframe-core';
 
 const connection = createConnection(ProposedFeatures.all);
 const documents = new TextDocuments(TextDocument);
@@ -1000,7 +1000,7 @@ export function getHover(word: string): Hover | null {
             "patterns": [
                 {
                     "name": "keyword.control.wire",
-                    "match": "^\\s*(uiwire|/uiwire)\\b"
+                    "match": "^\\s*(wireframe|/wireframe)\\b"
                 },
                 {
                     "name": "constant.language.wire",
@@ -1094,13 +1094,13 @@ export function getHover(word: string): Hover | null {
 ```json
 {
     "Document": {
-        "prefix": "uiwire",
+        "prefix": "wireframe",
         "body": [
-            "uiwire ${1|sketch,clean,blueprint,realistic|}",
+            "wireframe ${1|sketch,clean,blueprint,realistic|}",
             "    %title: ${2:Title}",
             "    ",
             "    $0",
-            "/uiwire"
+            "/wireframe"
         ],
         "description": "Create a new Wireframe document"
     },
@@ -1255,7 +1255,7 @@ export function registerCommands(
 import * as vscode from 'vscode';
 import * as path from 'path';
 import * as fs from 'fs';
-import { parse, render } from '@aspect-ui/wireframe-core';
+import { parse, render } from '@jonkeda/wireframe-core';
 
 export async function exportDocument(format: 'svg' | 'png'): Promise<void> {
     const editor = vscode.window.activeTextEditor;
@@ -1323,7 +1323,7 @@ suite('Extension Test Suite', () => {
     test('Should activate on Wireframe file', async () => {
         const doc = await vscode.workspace.openTextDocument({
             language: 'Wireframe',
-            content: 'uiwire clean\n    Button "Test"\n/uiwire'
+            content: 'wireframe clean\n    Button "Test"\n/wireframe'
         });
         
         await vscode.window.showTextDocument(doc);
@@ -1336,7 +1336,7 @@ suite('Extension Test Suite', () => {
     test('Should provide completions', async () => {
         const doc = await vscode.workspace.openTextDocument({
             language: 'Wireframe',
-            content: 'uiwire clean\n    But'
+            content: 'wireframe clean\n    But'
         });
         
         const position = new vscode.Position(1, 7);

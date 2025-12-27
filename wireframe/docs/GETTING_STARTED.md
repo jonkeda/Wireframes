@@ -8,10 +8,10 @@ Welcome to **Wireframe**, a domain-specific language for creating UI wireframes 
 
 ```bash
 # Install the core library
-npm install @aspect-ui/wireframe-core
+npm install @jonkeda/wireframe-core
 
 # Or with pnpm
-pnpm add @aspect-ui/wireframe-core
+pnpm add @jonkeda/wireframe-core
 ```
 
 ### VSCode Extension
@@ -25,7 +25,7 @@ Install the **Wireframe Preview** extension from the VSCode marketplace for synt
 Create a file with the `.wire` extension:
 
 ```wireframe
-uiwire clean
+wireframe clean
     %title: My First Wireframe
     
     // My first wireframe
@@ -41,21 +41,21 @@ uiwire clean
     Footer
         Label "© 2025 My Company"
     /Footer
-/uiwire
+/wireframe
 ```
 
 ### Compile to SVG
 
 ```typescript
-import { compile } from '@aspect-ui/wireframe-core';
+import { compile } from '@jonkeda/wireframe-core';
 
 const source = `
-uiwire clean
+wireframe clean
     Header
         Label "My App"
     /Header
     Button "Click Me"
-/uiwire
+/wireframe
 `;
 
 const { svg, errors } = compile(source, {
@@ -76,7 +76,7 @@ if (errors.length === 0) {
 Controls are UI elements with text in quotes:
 
 ```wireframe
-uiwire clean
+wireframe clean
     Button "Click Me"
     TextInput "Enter name..." :txtName
     Checkbox "Remember me" :chkRemember checked
@@ -84,7 +84,7 @@ uiwire clean
         Option "Option 1"
         Option "Option 2"
     /Dropdown
-/uiwire
+/wireframe
 ```
 
 ### Layouts
@@ -92,7 +92,7 @@ uiwire clean
 Organize controls with layout containers:
 
 ```wireframe
-uiwire clean
+wireframe clean
     Vertical gap=16
         Label "**Title**"
         Horizontal gap=8
@@ -100,7 +100,7 @@ uiwire clean
             Button "Submit" primary
         /Horizontal
     /Vertical
-/uiwire
+/wireframe
 ```
 
 ### Sections
@@ -108,7 +108,7 @@ uiwire clean
 Create semantic regions:
 
 ```wireframe
-uiwire clean
+wireframe clean
     Header
         Label "**My App**"
     /Header
@@ -122,7 +122,7 @@ uiwire clean
     Footer
         Label "Footer text"
     /Footer
-/uiwire
+/wireframe
 ```
 
 ### Modifiers
@@ -130,12 +130,12 @@ uiwire clean
 Customize controls with keyword modifiers:
 
 ```wireframe
-uiwire clean
+wireframe clean
     Button "Primary" primary
     Button "Disabled" disabled
     TextInput "Email" :txtEmail required
     Label "Error message" 
-/uiwire
+/wireframe
 ```
 
 ## Themes
@@ -158,13 +158,13 @@ const { svg } = compile(source, { theme: 'sketch' });
 Or in the document:
 
 ```wireframe
-uiwire sketch
+wireframe sketch
     %title: Sketchy Design
     
     Header
         Label "Sketchy Design"
     /Header
-/uiwire
+/wireframe
 ```
 
 ## Available Controls
@@ -275,7 +275,7 @@ Use Wireframe diagrams in Mermaid:
 
 ```typescript
 import mermaid from 'mermaid';
-import { registerWireframe } from '@aspect-ui/wireframe-mermaid';
+import { registerWireframe } from '@jonkeda/wireframe-mermaid';
 
 registerWireframe(mermaid);
 ```
@@ -301,7 +301,7 @@ wireframe-beta
 3. **Batch Processing**: Process multiple files with the CLI config
 
 ```typescript
-import { compile, validate, getCacheStats } from '@aspect-ui/wireframe-core';
+import { compile, validate, getCacheStats } from '@jonkeda/wireframe-core';
 
 // Quick validation
 const { valid, errors } = validate(source);
@@ -329,7 +329,7 @@ const { svg } = compile(source, {
 Audit themes for WCAG compliance:
 
 ```typescript
-import { auditTheme, getTheme } from '@aspect-ui/wireframe-core';
+import { auditTheme, getTheme } from '@jonkeda/wireframe-core';
 
 const theme = getTheme('clean');
 const { passed, issues, score } = auditTheme(theme);
@@ -347,6 +347,6 @@ issues.forEach(issue => console.log(`${issue.type}: ${issue.message}`));
 
 ## Support
 
-- [GitHub Issues](https://github.com/aspect-ui/wireframe/issues)
-- [Documentation](https://wireframe.aspect-ui.dev)
+- [GitHub Issues](https://github.com/jonkeda/wireframe/issues)
+- [Documentation](https://wireframe.jonkeda.dev)
 - [Discord Community](#)

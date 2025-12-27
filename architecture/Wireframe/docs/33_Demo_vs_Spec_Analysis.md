@@ -19,8 +19,8 @@ The demo files (`login.wire`, `dashboard.wire`, `contact-form.wire`) use a **com
 
 | Feature | Demo Files | v7 Spec |
 |---------|------------|---------|
-| Root element | `Screen "name"` | `uiwire style` |
-| Closing | `EndScreen` | `/uiwire` |
+| Root element | `Screen "name"` | `wireframe style` |
+| Closing | `EndScreen` | `/wireframe` |
 | Attributes | `@name value` (multi-line) | `attribute=value` (inline) |
 
 **Demo Syntax:**
@@ -33,7 +33,7 @@ Screen "Login"
 
 **Spec Syntax:**
 ```
-uiwire clean
+wireframe clean
     %title: Login Form
     %width: 400
 ```
@@ -124,7 +124,7 @@ The demos use components that don't exist in the v7 spec:
 
 | Demo Component | Status | Notes |
 |----------------|--------|-------|
-| `Screen` | ❌ Not in spec | Use `uiwire` document wrapper |
+| `Screen` | ❌ Not in spec | Use `wireframe` document wrapper |
 | `Form` | ❌ Not in spec | Not a wireframe concern |
 | `Navbar` | ❌ Not in spec | Use `Header` section |
 | `Logo` | ❌ Not in spec | Use `Image` |
@@ -183,7 +183,7 @@ The demos use components that don't exist in the v7 spec:
 ### login.wire (v7 Spec)
 
 ```wire
-uiwire clean
+wireframe clean
     %title: Login Form
 
     Vertical align=center gap=24 padding=40
@@ -223,13 +223,13 @@ uiwire clean
         Label "Don't have an account? Sign up" @Register
         
     /Vertical
-/uiwire
+/wireframe
 ```
 
 ### contact-form.wire (v7 Spec)
 
 ```wire
-uiwire clean
+wireframe clean
     %title: Contact Us
 
     Card padding=32
@@ -293,13 +293,13 @@ uiwire clean
             /Vertical
         /Vertical
     /Card
-/uiwire
+/wireframe
 ```
 
 ### dashboard.wire (v7 Spec)
 
 ```wire
-uiwire clean
+wireframe clean
     %title: Analytics Dashboard
 
     Dock
@@ -396,7 +396,7 @@ uiwire clean
             /Scroll
         /Content
     /Dock
-/uiwire
+/wireframe
 ```
 
 ---

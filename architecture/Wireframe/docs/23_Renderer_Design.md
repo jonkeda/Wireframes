@@ -1122,9 +1122,9 @@ export class IncrementalRenderer {
 describe('SvgRenderer', () => {
     it('should render Button correctly', () => {
         const ast = parse(`
-            uiwire clean
+            wireframe clean
                 Button "Click Me" primary
-            /uiwire
+            /wireframe
         `);
         
         const layout = new LayoutEngine(cleanTheme).calculate(ast, { width: 800 });
@@ -1136,12 +1136,12 @@ describe('SvgRenderer', () => {
 
     it('should render nested layouts', () => {
         const ast = parse(`
-            uiwire clean
+            wireframe clean
                 Vertical gap=8
                     Button "One"
                     Button "Two"
                 /Vertical
-            /uiwire
+            /wireframe
         `);
         
         const layout = new LayoutEngine(cleanTheme).calculate(ast, { width: 800 });

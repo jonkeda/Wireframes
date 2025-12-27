@@ -53,12 +53,12 @@ interface CompileResult {
 **Example:**
 
 ```typescript
-import { compile } from '@aspect-ui/wireframe-core';
+import { compile } from '@jonkeda/wireframe-core';
 
 const { svg, errors } = compile(`
-uiwire sketch
+wireframe sketch
     Button "Click Me"
-/uiwire
+/wireframe
 `, {
   width: 400,
   height: 300,
@@ -88,14 +88,14 @@ interface ParseResult {
 **Example:**
 
 ```typescript
-import { parse } from '@aspect-ui/wireframe-core';
+import { parse } from '@jonkeda/wireframe-core';
 
 const { document, errors } = parse(`
-uiwire clean
+wireframe clean
     Header
         Label "Title"
     /Header
-/uiwire
+/wireframe
 `);
 if (document) {
   console.log(document.children.length);
@@ -142,9 +142,9 @@ function validate(source: string): {
 
 ```typescript
 const { valid, errors } = validate(`
-uiwire clean
+wireframe clean
     Button @invalid
-/uiwire
+/wireframe
 `);
 if (!valid) {
   errors.forEach(e => console.error(`Line ${e.line}: ${e.message}`));
@@ -416,9 +416,9 @@ function benchmark(
 ```typescript
 const result = benchmark('parse', () => {
   parse(`
-uiwire clean
+wireframe clean
     Button "Test"
-/uiwire
+/wireframe
 `);
 }, { iterations: 1000 });
 
@@ -543,7 +543,7 @@ function formatAriaAttributes(attrs: Record<string, string>): string;
 The default export provides all common functions:
 
 ```typescript
-import wireframe from '@aspect-ui/wireframe-core';
+import wireframe from '@jonkeda/wireframe-core';
 
 wireframe.compile(source);
 wireframe.parse(source);

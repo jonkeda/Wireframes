@@ -20,14 +20,14 @@ Wireframe is a text-based UI specification language designed for:
 Every Wireframe document follows this structure:
 
 ```wireframe
-uiwire <style>
+wireframe <style>
     %title: Document Title
     %version: 1.0
     %author: Author Name
     
     // UI components here
     
-/uiwire
+/wireframe
 ```
 
 ### Available Styles
@@ -151,7 +151,7 @@ Vertical gap=8
 
 ### Login Form
 ```wireframe
-uiwire clean
+wireframe clean
     Card w=400
         Label "**Login**"
         Separator
@@ -160,12 +160,12 @@ uiwire clean
         Checkbox "Remember me" :chkRemember
         Button "Sign In" :btnLogin primary
     /Card
-/uiwire
+/wireframe
 ```
 
 ### Dashboard Layout
 ```wireframe
-uiwire clean
+wireframe clean
     Dock
         Header dock=top h=60
             Horizontal padding=16 align=center
@@ -187,12 +187,12 @@ uiwire clean
             // Main content here
         /Content
     /Dock
-/uiwire
+/wireframe
 ```
 
 ### Form with Validation
 ```wireframe
-uiwire clean
+wireframe clean
     Vertical gap=12 w=400
         Label "**Contact Form**"
         
@@ -208,12 +208,12 @@ uiwire clean
             Button "Submit" :btnSubmit primary
         /Horizontal
     /Vertical
-/uiwire
+/wireframe
 ```
 
 ### Data Table
 ```wireframe
-uiwire clean
+wireframe clean
     Card
         Horizontal justify=between align=center
             Label "**Users**"
@@ -231,7 +231,7 @@ uiwire clean
         
         Pagination :pgUsers
     /Card
-/uiwire
+/wireframe
 ```
 
 ---
@@ -271,7 +271,7 @@ uiwire clean
 ## Output Format Guidelines
 
 ### Always Include
-- Document wrapper: `uiwire <style>` ... `/uiwire`
+- Document wrapper: `wireframe <style>` ... `/wireframe`
 - Proper indentation (4 spaces per level)
 - Closing tags for all blocks
 
@@ -292,7 +292,7 @@ uiwire clean
 
 When generating Wireframe, verify:
 
-- [ ] Document starts with `uiwire <style>` and ends with `/uiwire`
+- [ ] Document starts with `wireframe <style>` and ends with `/wireframe`
 - [ ] All blocks are properly closed with `/Keyword`
 - [ ] Indentation is consistent (4 spaces)
 - [ ] IDs are unique within the document

@@ -52,14 +52,14 @@ This document provides a critical evaluation of the Wireframe language concept, 
 ```
 Wireframe:                          HTML:
 ─────────────────────────           ─────────────────────────────────
-uiwire clean                        <div class="container">
+wireframe clean                        <div class="container">
   Card                                <div class="card">
     Label "**Login**"                   <h2>Login</h2>
     TextInput "Username"                <input type="text"
     PasswordInput "Password"              placeholder="Username">
     Button "Login" primary              <input type="password"
   /Card                                   placeholder="Password">
-/uiwire                                 <button class="btn-primary">
+/wireframe                                 <button class="btn-primary">
                                           Login
                                         </button>
                                       </div>
@@ -201,9 +201,9 @@ If the UI is simple enough to describe in one sentence, Wireframe adds overhead:
 vs.
 
 ```Wireframe
-uiwire clean
+wireframe clean
     Button "Submit"
-/uiwire
+/wireframe
 ```
 
 **Rule:** Use Wireframe when structure matters (multiple components, layouts, hierarchy).
@@ -269,7 +269,7 @@ Analyze this screenshot and generate a Wireframe document describing the UI stru
 Input: Screenshot of a login page
 Expected Output:
 
-uiwire clean
+wireframe clean
     Card w=400
         Label "**Welcome Back**"
         Separator
@@ -280,7 +280,7 @@ uiwire clean
         Separator
         Label "Don't have an account. [Sign up](@/register)"
     /Card
-/uiwire
+/wireframe
 ```
 
 ### 6.2 AI as Consumer (Reading Wireframe)
