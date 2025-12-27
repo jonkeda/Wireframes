@@ -39,13 +39,13 @@ jobs:
         working-directory: wireframe
         run: pnpm lint
       
-      - name: Type check
-        working-directory: wireframe
-        run: pnpm typecheck
-      
       - name: Build
         working-directory: wireframe
         run: pnpm build
+      
+      - name: Type check
+        working-directory: wireframe
+        run: pnpm typecheck
       
       - name: Test
         working-directory: wireframe
