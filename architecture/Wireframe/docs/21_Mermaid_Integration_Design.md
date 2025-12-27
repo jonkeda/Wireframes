@@ -10,7 +10,7 @@
 
 ## 1. Overview
 
-This document describes how UIMMD integrates with Mermaid.js as a new diagram type, enabling wireframe rendering in any Mermaid-enabled environment.
+This document describes how Wireframe integrates with Mermaid.js as a new diagram type, enabling wireframe rendering in any Mermaid-enabled environment.
 
 ---
 
@@ -32,10 +32,10 @@ Mermaid supports multiple diagram types, each implementing a standard interface:
 .                                                                  .
 .  ............................................................   .
 .  .                    Diagram Registry                       .   .
-.  .  • detector: (text) => boolean                           .   .
-.  .  • parser: DiagramParser                                  .   .
-.  .  • renderer: DiagramRenderer                              .   .
-.  .  • styles: StyleDefinition                                .   .
+.  .  ï¿½ detector: (text) => boolean                           .   .
+.  .  ï¿½ parser: DiagramParser                                  .   .
+.  .  ï¿½ renderer: DiagramRenderer                              .   .
+.  .  ï¿½ styles: StyleDefinition                                .   .
 .  ............................................................   .
 .                                                                  .
 ...................................................................
@@ -58,7 +58,7 @@ type DiagramDetector = (text: string, config.: MermaidConfig) => boolean;
 
 ---
 
-## 3. UIMMD Diagram Registration
+## 3. Wireframe Diagram Registration
 
 ### 3.1 Detector Implementation
 
@@ -67,7 +67,7 @@ type DiagramDetector = (text: string, config.: MermaidConfig) => boolean;
 
 const UIWIRE_PATTERN = /^\s*uiwire\s+(sketch|clean|blueprint|realistic)/i;
 
-export const uimmdDetector: DiagramDetector = (text: string): boolean => {
+export const WireframeDetector: DiagramDetector = (text: string): boolean => {
     return UIWIRE_PATTERN.test(text);
 };
 
@@ -85,27 +85,27 @@ const ALTERNATIVE_PATTERNS = [
 // src/index.ts
 
 import { mermaid } from 'mermaid';
-import { uimmdDetector } from './detector';
-import { UimmdParser } from './parser';
-import { UimmdRenderer } from './renderer';
-import { uimmdStyles } from './styles';
+import { WireframeDetector } from './detector';
+import { WireframeParser } from './parser';
+import { WireframeRenderer } from './renderer';
+import { WireframeStyles } from './styles';
 
-export function registerUimmdDiagram(): void {
+export function registerWireframeDiagram(): void {
     mermaid.registerDiagram('uiwire', {
         id: 'uiwire',
-        detector: uimmdDetector,
-        parser: new UimmdParser(),
-        renderer: new UimmdRenderer(),
-        styles: uimmdStyles,
+        detector: WireframeDetector,
+        parser: new WireframeParser(),
+        renderer: new WireframeRenderer(),
+        styles: WireframeStyles,
         init: (config) => {
             // Initialize with Mermaid config
-            UimmdConfig.merge(config.uiwire || {});
+            WireframeConfig.merge(config.uiwire || {});
         }
     });
 }
 
 // Auto-register when module is imported
-registerUimmdDiagram();
+registerWireframeDiagram();
 ```
 
 ---
@@ -122,7 +122,7 @@ interface DiagramParser {
 }
 ```
 
-### 4.2 UIMMD Parser Implementation
+### 4.2 Wireframe Parser Implementation
 
 ```typescript
 // src/parser/mermaid-adapter.ts
@@ -131,7 +131,7 @@ import { Lexer } from './lexer';
 import { Parser } from './parser';
 import type { Document } from './ast';
 
-export class UimmdParser implements DiagramParser {
+export class WireframeParser implements DiagramParser {
     private ast: Document | null = null;
     private lexer: Lexer;
     private parser: Parser;
@@ -143,7 +143,7 @@ export class UimmdParser implements DiagramParser {
 
     parse(text: string): void {
         // Remove mermaid code fence if present
-        const cleanText = this.extractUimmdContent(text);
+        const cleanText = this.extractWireframeContent(text);
         
         // Tokenize
         const tokens = this.lexer.tokenize(cleanText);
@@ -168,9 +168,9 @@ export class UimmdParser implements DiagramParser {
         this.parser.reset();
     }
 
-    private extractUimmdContent(text: string): string {
-        // Handle ```uimmd code fences
-        const fenceMatch = text.match(/```uimmd\n([\s\S]*.)```/);
+    private extractWireframeContent(text: string): string {
+        // Handle ```Wireframe code fences
+        const fenceMatch = text.match(/```Wireframe\n([\s\S]*.)```/);
         if (fenceMatch) {
             return fenceMatch[1];
         }
@@ -182,7 +182,7 @@ export class UimmdParser implements DiagramParser {
         
         const errors = validateDocument(this.ast);
         if (errors.length > 0) {
-            throw new UimmdParseError(errors);
+            throw new WireframeParseError(errors);
         }
     }
 }
@@ -201,25 +201,25 @@ interface DiagramRenderer {
 }
 ```
 
-### 5.2 UIMMD Renderer Implementation
+### 5.2 Wireframe Renderer Implementation
 
 ```typescript
 // src/renderer/mermaid-adapter.ts
 
 import { select } from 'd3-selection';
-import { UimmdParser } from '../parser';
+import { WireframeParser } from '../parser';
 import { SvgRenderer } from './svg-renderer';
 import { LayoutEngine } from '../layout';
 import { ThemeManager } from '../themes';
 
-export class UimmdRenderer implements DiagramRenderer {
-    private parser: UimmdParser;
+export class WireframeRenderer implements DiagramRenderer {
+    private parser: WireframeParser;
     private layoutEngine: LayoutEngine;
     private svgRenderer: SvgRenderer;
     private themeManager: ThemeManager;
 
     constructor() {
-        this.parser = new UimmdParser();
+        this.parser = new WireframeParser();
         this.layoutEngine = new LayoutEngine();
         this.svgRenderer = new SvgRenderer();
         this.themeManager = new ThemeManager();
@@ -257,10 +257,10 @@ export class UimmdRenderer implements DiagramRenderer {
 
     getClasses(): Record<string, string> {
         return {
-            'uimmd-container': 'uimmd-container',
-            'uimmd-button': 'uimmd-button',
-            'uimmd-input': 'uimmd-input',
-            'uimmd-label': 'uimmd-label',
+            'Wireframe-container': 'Wireframe-container',
+            'Wireframe-button': 'Wireframe-button',
+            'Wireframe-input': 'Wireframe-input',
+            'Wireframe-label': 'Wireframe-label',
             // ... more classes
         };
     }
@@ -289,86 +289,86 @@ export class UimmdRenderer implements DiagramRenderer {
 ```typescript
 // src/styles/index.ts
 
-export const uimmdStyles = `
+export const WireframeStyles = `
     /* Base styles */
-    .uimmd-container {
-        font-family: var(--uimmd-font-family, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
-        font-size: var(--uimmd-font-size, 14px);
+    .wire-container {
+        font-family: var(--Wireframe-font-family, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+        font-size: var(--Wireframe-font-size, 14px);
     }
 
     /* Button styles */
-    .uimmd-button {
-        fill: var(--uimmd-button-bg, #f0f0f0);
-        stroke: var(--uimmd-button-border, #ccc);
+    .wire-button {
+        fill: var(--Wireframe-button-bg, #f0f0f0);
+        stroke: var(--Wireframe-button-border, #ccc);
         stroke-width: 1;
-        rx: var(--uimmd-border-radius, 4);
+        rx: var(--Wireframe-border-radius, 4);
     }
 
-    .uimmd-button.primary {
-        fill: var(--uimmd-primary-bg, #0066cc);
-        stroke: var(--uimmd-primary-border, #0055aa);
+    .wire-button.primary {
+        fill: var(--Wireframe-primary-bg, #0066cc);
+        stroke: var(--Wireframe-primary-border, #0055aa);
     }
 
-    .uimmd-button text {
-        fill: var(--uimmd-button-text, #333);
+    .wire-button text {
+        fill: var(--Wireframe-button-text, #333);
     }
 
-    .uimmd-button.primary text {
-        fill: var(--uimmd-primary-text, #fff);
+    .wire-button.primary text {
+        fill: var(--Wireframe-primary-text, #fff);
     }
 
     /* Input styles */
-    .uimmd-input {
-        fill: var(--uimmd-input-bg, #fff);
-        stroke: var(--uimmd-input-border, #ccc);
+    .wire-input {
+        fill: var(--Wireframe-input-bg, #fff);
+        stroke: var(--Wireframe-input-border, #ccc);
         stroke-width: 1;
-        rx: var(--uimmd-border-radius, 4);
+        rx: var(--Wireframe-border-radius, 4);
     }
 
-    .uimmd-input.required::after {
+    .wire-input.required::after {
         content: '*';
-        fill: var(--uimmd-required-color, #cc0000);
+        fill: var(--Wireframe-required-color, #cc0000);
     }
 
     /* Label styles */
-    .uimmd-label {
-        fill: var(--uimmd-text-color, #333);
+    .wire-label {
+        fill: var(--Wireframe-text-color, #333);
     }
 
-    .uimmd-label.bold {
+    .wire-label.bold {
         font-weight: bold;
     }
 
     /* Card styles */
-    .uimmd-card {
-        fill: var(--uimmd-card-bg, #fff);
-        stroke: var(--uimmd-card-border, #e0e0e0);
+    .wire-card {
+        fill: var(--Wireframe-card-bg, #fff);
+        stroke: var(--Wireframe-card-border, #e0e0e0);
         stroke-width: 1;
-        rx: var(--uimmd-card-radius, 8);
+        rx: var(--Wireframe-card-radius, 8);
         filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
     }
 
     /* Theme: Sketch */
-    .uimmd-theme-sketch .uimmd-button,
-    .uimmd-theme-sketch .uimmd-input,
-    .uimmd-theme-sketch .uimmd-card {
+    .wire-theme-sketch .wire-button,
+    .wire-theme-sketch .wire-input,
+    .wire-theme-sketch .wire-card {
         stroke-dasharray: 5, 3;
         stroke-linecap: round;
     }
 
     /* Theme: Blueprint */
-    .uimmd-theme-blueprint {
+    .wire-theme-blueprint {
         background: #1a365d;
     }
 
-    .uimmd-theme-blueprint .uimmd-button,
-    .uimmd-theme-blueprint .uimmd-input,
-    .uimmd-theme-blueprint .uimmd-card {
+    .wire-theme-blueprint .wire-button,
+    .wire-theme-blueprint .wire-input,
+    .wire-theme-blueprint .wire-card {
         fill: transparent;
         stroke: #fff;
     }
 
-    .uimmd-theme-blueprint text {
+    .wire-theme-blueprint text {
         fill: #fff;
     }
 `;
@@ -383,7 +383,7 @@ export const uimmdStyles = `
 ```typescript
 // src/config.ts
 
-interface UimmdConfig {
+interface WireframeConfig {
     // Rendering
     theme: 'sketch' | 'clean' | 'blueprint' | 'realistic';
     width: number | 'auto';
@@ -410,7 +410,7 @@ interface UimmdConfig {
     showBindings: boolean;
 }
 
-const defaultConfig: UimmdConfig = {
+const defaultConfig: WireframeConfig = {
     theme: 'clean',
     width: 'auto',
     padding: 20,
@@ -437,7 +437,7 @@ mermaid.initialize({
     startOnLoad: true,
     theme: 'default',
     
-    // UIMMD specific config
+    // Wireframe specific config
     uiwire: {
         theme: 'sketch',
         primaryColor: '#007bff',
@@ -454,7 +454,7 @@ mermaid.initialize({
 ### 8.1 Code Fence Detection
 
 ````markdown
-```uimmd
+```Wireframe
 uiwire sketch
     %title: Login Form
     
@@ -487,13 +487,13 @@ uiwire clean
 ```typescript
 // src/errors.ts
 
-export class UimmdParseError extends Error {
+export class WireframeParseError extends Error {
     constructor(
         public errors: ParseError[],
         message.: string
     ) {
-        super(message || `UIMMD parse error: ${errors.length} error(s)`);
-        this.name = 'UimmdParseError';
+        super(message || `Wireframe parse error: ${errors.length} error(s)`);
+        this.name = 'WireframeParseError';
     }
 }
 
@@ -511,17 +511,17 @@ interface ParseError {
 ```typescript
 // src/renderer/error-renderer.ts
 
-export function renderError(error: UimmdParseError, containerId: string): void {
+export function renderError(error: WireframeParseError, containerId: string): void {
     const container = document.getElementById(containerId);
     if (!container) return;
 
     const errorHtml = `
-        <div class="uimmd-error">
-            <div class="uimmd-error-title">UIMMD Parse Error</div>
+        <div class="Wireframe-error">
+            <div class="Wireframe-error-title">Wireframe Parse Error</div>
             ${error.errors.map(e => `
-                <div class="uimmd-error-item">
-                    <span class="uimmd-error-location">Line ${e.line}:${e.column}</span>
-                    <span class="uimmd-error-message">${e.message}</span>
+                <div class="Wireframe-error-item">
+                    <span class="Wireframe-error-location">Line ${e.line}:${e.column}</span>
+                    <span class="Wireframe-error-message">${e.message}</span>
                 </div>
             `).join('')}
         </div>
@@ -538,11 +538,11 @@ export function renderError(error: UimmdParseError, containerId: string): void {
 ### 10.1 Package Structure
 
 ```
-@uimmd/mermaid-plugin/
+@aspect-ui/wireframe-mermaid-plugin/
 ... dist/
-.   ... uimmd-mermaid.esm.js      # ES Module
-.   ... uimmd-mermaid.umd.js      # UMD (browser global)
-.   ... uimmd-mermaid.min.js      # Minified UMD
+.   ... Wireframe-mermaid.esm.js      # ES Module
+.   ... Wireframe-mermaid.umd.js      # UMD (browser global)
+.   ... Wireframe-mermaid.min.js      # Minified UMD
 .   ... types/                     # TypeScript declarations
 ... src/
 .   ... index.ts
@@ -558,23 +558,23 @@ export function renderError(error: UimmdParseError, containerId: string): void {
 
 ```json
 {
-    "name": "@uimmd/mermaid-plugin",
+    "name": "@aspect-ui/wireframe-mermaid-plugin",
     "version": "1.0.0",
-    "description": "UIMMD wireframe diagram plugin for Mermaid.js",
-    "main": "dist/uimmd-mermaid.umd.js",
-    "module": "dist/uimmd-mermaid.esm.js",
+    "description": "Wireframe wireframe diagram plugin for Mermaid.js",
+    "main": "dist/Wireframe-mermaid.umd.js",
+    "module": "dist/Wireframe-mermaid.esm.js",
     "types": "dist/types/index.d.ts",
     "exports": {
         ".": {
-            "import": "./dist/uimmd-mermaid.esm.js",
-            "require": "./dist/uimmd-mermaid.umd.js",
+            "import": "./dist/Wireframe-mermaid.esm.js",
+            "require": "./dist/Wireframe-mermaid.umd.js",
             "types": "./dist/types/index.d.ts"
         }
     },
     "peerDependencies": {
         "mermaid": ">=10.0.0"
     },
-    "keywords": ["mermaid", "diagram", "wireframe", "uimmd", "ui"]
+    "keywords": ["mermaid", "diagram", "wireframe", "Wireframe", "ui"]
 }
 ```
 
@@ -582,13 +582,13 @@ export function renderError(error: UimmdParseError, containerId: string): void {
 
 **NPM Installation:**
 ```bash
-npm install @uimmd/mermaid-plugin
+npm install @aspect-ui/wireframe-mermaid-plugin
 ```
 
 **ES Module:**
 ```javascript
 import mermaid from 'mermaid';
-import '@uimmd/mermaid-plugin';
+import '@aspect-ui/wireframe-mermaid-plugin';
 
 mermaid.initialize({ startOnLoad: true });
 ```
@@ -596,7 +596,7 @@ mermaid.initialize({ startOnLoad: true });
 **Script Tag:**
 ```html
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@uimmd/mermaid-plugin/dist/uimmd-mermaid.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@aspect-ui/wireframe-mermaid-plugin/dist/Wireframe-mermaid.min.js"></script>
 <script>
     mermaid.initialize({ startOnLoad: true });
 </script>
@@ -611,23 +611,23 @@ mermaid.initialize({ startOnLoad: true });
 ```typescript
 // tests/detector.test.ts
 
-describe('UIMMD Detector', () => {
+describe('Wireframe Detector', () => {
     it('should detect uiwire sketch', () => {
-        expect(uimmdDetector('uiwire sketch\n...')).toBe(true);
+        expect(WireframeDetector('uiwire sketch\n...')).toBe(true);
     });
 
     it('should detect uiwire clean', () => {
-        expect(uimmdDetector('uiwire clean\n...')).toBe(true);
+        expect(WireframeDetector('uiwire clean\n...')).toBe(true);
     });
 
     it('should not detect other diagrams', () => {
-        expect(uimmdDetector('flowchart LR\n...')).toBe(false);
-        expect(uimmdDetector('sequenceDiagram\n...')).toBe(false);
+        expect(WireframeDetector('flowchart LR\n...')).toBe(false);
+        expect(WireframeDetector('sequenceDiagram\n...')).toBe(false);
     });
 
     it('should handle whitespace', () => {
-        expect(uimmdDetector('  uiwire sketch\n...')).toBe(true);
-        expect(uimmdDetector('\n\nuiwire clean\n...')).toBe(true);
+        expect(WireframeDetector('  uiwire sketch\n...')).toBe(true);
+        expect(WireframeDetector('\n\nuiwire clean\n...')).toBe(true);
     });
 });
 ```
@@ -642,7 +642,7 @@ describe('Mermaid Integration', () => {
         document.body.innerHTML = '<div id="test-container"></div>';
     });
 
-    it('should render UIMMD in Mermaid', async () => {
+    it('should render Wireframe in Mermaid', async () => {
         const container = document.getElementById('test-container');
         container.innerHTML = `
             <pre class="mermaid">
@@ -656,7 +656,7 @@ describe('Mermaid Integration', () => {
 
         const svg = container.querySelector('svg');
         expect(svg).toBeTruthy();
-        expect(svg.querySelector('.uimmd-button')).toBeTruthy();
+        expect(svg.querySelector('.wire-button')).toBeTruthy();
     });
 });
 ```

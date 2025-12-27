@@ -4,12 +4,20 @@
   "description": "VS Code extension for Wireframe preview and editing",
   "publisher": "aspect-ui",
   "displayName": "Wireframe - UI Mockup DSL",
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.85.0"
   },
   "categories": [
     "Programming Languages",
     "Visualization"
+  ],
+  "keywords": [
+    "wireframe",
+    "mockup",
+    "ui",
+    "prototype",
+    "diagram"
   ],
   "activationEvents": [
     "onLanguage:wireframe"
@@ -19,19 +27,44 @@
     "languages": [
       {
         "id": "wireframe",
-        "aliases": ["Wireframe", "Wire"],
-        "extensions": [".wire"],
+        "aliases": ["Wireframe", "Wire", "wire"],
+        "extensions": [".wire", ".wireframe"],
         "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "wireframe",
+        "scopeName": "source.wireframe",
+        "path": "./syntaxes/wireframe.tmLanguage.json"
       }
     ],
     "commands": [
       {
         "command": "wireframe.preview",
-        "title": "Wireframe: Preview"
+        "title": "Wireframe: Open Preview",
+        "icon": "$(preview)"
       },
       {
         "command": "wireframe.exportSvg",
-        "title": "Wireframe: Export to SVG"
+        "title": "Wireframe: Export to SVG",
+        "icon": "$(export)"
+      },
+      {
+        "command": "wireframe.exportPng",
+        "title": "Wireframe: Export to PNG"
+      },
+      {
+        "command": "wireframe.validate",
+        "title": "Wireframe: Validate Document"
+      },
+      {
+        "command": "wireframe.insertSnippet",
+        "title": "Wireframe: Insert Snippet"
+      },
+      {
+        "command": "wireframe.changeTheme",
+        "title": "Wireframe: Change Theme"
       }
     ],
     "menus": {
@@ -40,9 +73,71 @@
           "command": "wireframe.preview",
           "when": "resourceLangId == wireframe",
           "group": "navigation"
+        },
+        {
+          "command": "wireframe.exportSvg",
+          "when": "resourceLangId == wireframe",
+          "group": "navigation"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "wireframe.preview",
+          "when": "resourceLangId == wireframe",
+          "group": "wireframe"
+        },
+        {
+          "command": "wireframe.validate",
+          "when": "resourceLangId == wireframe",
+          "group": "wireframe"
         }
       ]
-    }
+    },
+    "keybindings": [
+      {
+        "command": "wireframe.preview",
+        "key": "ctrl+shift+v",
+        "mac": "cmd+shift+v",
+        "when": "resourceLangId == wireframe"
+      }
+    ],
+    "configuration": {
+      "title": "Wireframe",
+      "properties": {
+        "wireframe.defaultTheme": {
+          "type": "string",
+          "default": "clean",
+          "enum": ["clean", "sketch", "blueprint", "realistic"],
+          "description": "Default theme for wireframe preview"
+        },
+        "wireframe.previewWidth": {
+          "type": "number",
+          "default": 800,
+          "description": "Default width for wireframe preview"
+        },
+        "wireframe.previewHeight": {
+          "type": "number",
+          "default": 600,
+          "description": "Default height for wireframe preview"
+        },
+        "wireframe.autoPreview": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically open preview when opening a .wire file"
+        },
+        "wireframe.validateOnSave": {
+          "type": "boolean",
+          "default": true,
+          "description": "Validate wireframe documents on save"
+        }
+      }
+    },
+    "snippets": [
+      {
+        "language": "wireframe",
+        "path": "./snippets/wireframe.json"
+      }
+    ]
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",

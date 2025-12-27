@@ -7,18 +7,97 @@
 import { compile, parse, render, getTheme } from '@aspect-ui/wireframe-core';
 
 /**
+ * Configuration options for Wireframe diagrams
+ */
+export interface WireframeConfig {
+  /** SVG width in pixels */
+  width?: number;
+  /** SVG height in pixels */
+  height?: number;
+  /** Theme name: clean, sketch, blueprint, realistic */
+  theme?: 'clean' | 'sketch' | 'blueprint' | 'realistic';
+  /** Whether to show grid lines */
+  showGrid?: boolean;
+  /** Default font family */
+  fontFamily?: string;
+}
+
+/** Default configuration */
+const defaultConfig: WireframeConfig = {
+  width: 800,
+  height: 600,
+  theme: 'clean',
+  showGrid: false,
+};
+
+/** Current configuration */
+let currentConfig: WireframeConfig = { ...defaultConfig };
+
+/**
+ * Set configuration for Wireframe diagrams
+ */
+export function setConfig(config: Partial<WireframeConfig>): void {
+  currentConfig = { ...currentConfig, ...config };
+}
+
+/**
+ * Get current configuration
+ */
+export function getConfig(): WireframeConfig {
+  return { ...currentConfig };
+}
+
+/**
+ * Reset configuration to defaults
+ */
+export function resetConfig(): void {
+  currentConfig = { ...defaultConfig };
+}
+
+/**
  * Detector function for Wireframe diagrams
+ * Detects both 'wireframe' and 'wire' prefixes
  */
 export function detector(text: string): boolean {
-  const trimmed = text.trim();
-  return trimmed.startsWith('wireframe') || trimmed.startsWith('wire');
+  const trimmed = text.trim().toLowerCase();
+  return (
+    trimmed.startsWith('wireframe') ||
+    trimmed.startsWith('wire') ||
+    trimmed.startsWith('uiwire')
+  );
+}
+
+/**
+ * Extract diagram content (removes the diagram type prefix)
+ */
+function extractContent(text: string): string {
+  const lines = text.split('\n');
+  const firstLine = lines[0].trim().toLowerCase();
+  
+  // Remove the diagram type identifier from first line
+  if (firstLine === 'wireframe' || firstLine === 'wire' || firstLine === 'uiwire') {
+    return lines.slice(1).join('\n');
+  }
+  
+  // Handle inline: wireframe: ... or wire: ...
+  if (firstLine.startsWith('wireframe:')) {
+    lines[0] = lines[0].substring('wireframe:'.length);
+    return lines.join('\n');
+  }
+  if (firstLine.startsWith('wire:')) {
+    lines[0] = lines[0].substring('wire:'.length);
+    return lines.join('\n');
+  }
+  
+  return text;
 }
 
 /**
  * Parse Wireframe source
  */
 export function parser(text: string): { valid: boolean; error?: string } {
-  const { document, errors } = parse(text);
+  const content = extractContent(text);
+  const { document, errors } = parse(content);
   
   if (errors.length > 0) {
     return {
@@ -35,9 +114,16 @@ export function parser(text: string): { valid: boolean; error?: string } {
  */
 export function renderer(
   text: string,
-  options: { width?: number; height?: number; theme?: string } = {}
+  options: Partial<WireframeConfig> = {}
 ): string {
-  const { svg, errors } = compile(text, options);
+  const content = extractContent(text);
+  const config = { ...currentConfig, ...options };
+  
+  const { svg, errors } = compile(content, {
+    width: config.width,
+    height: config.height,
+    theme: config.theme,
+  });
   
   if (errors.length > 0 || !svg) {
     // Return error message as SVG
@@ -67,6 +153,20 @@ export const wireframeDiagram = {
 };
 
 /**
+ * Alternative diagram definition using 'wire' prefix
+ */
+export const wireDiagram = {
+  id: 'wire',
+  detector,
+  parser: {
+    parse: (text: string) => parser(text),
+  },
+  renderer: {
+    render: (text: string, _id: string, _version: string) => renderer(text),
+  },
+};
+
+/**
  * Register Wireframe with Mermaid
  * 
  * Usage:
@@ -77,15 +177,37 @@ export const wireframeDiagram = {
  * registerWireframe(mermaid);
  * ```
  */
-export function registerWireframe(mermaid: unknown): void {
-  const m = mermaid as { registerExternalDiagrams?: (diagrams: unknown[]) => void };
+export function registerWireframe(mermaid: unknown, config?: Partial<WireframeConfig>): void {
+  if (config) {
+    setConfig(config);
+  }
+  
+  const m = mermaid as { 
+    registerExternalDiagrams?: (diagrams: unknown[]) => void;
+    mermaidAPI?: { getConfig?: () => Record<string, unknown> };
+  };
   
   if (typeof m.registerExternalDiagrams === 'function') {
-    m.registerExternalDiagrams([wireframeDiagram]);
+    m.registerExternalDiagrams([wireframeDiagram, wireDiagram]);
   } else {
     // eslint-disable-next-line no-console
     console.warn('Mermaid.registerExternalDiagrams not available. Wireframe plugin not registered.');
   }
+}
+
+/**
+ * Standalone render function for use without Mermaid
+ */
+export function renderWireframe(
+  source: string,
+  options?: Partial<WireframeConfig>
+): { svg: string; errors: Array<{ line: number; message: string }> } {
+  const config = { ...currentConfig, ...options };
+  return compile(source, {
+    width: config.width,
+    height: config.height,
+    theme: config.theme,
+  });
 }
 
 // Default export for convenience
@@ -94,7 +216,12 @@ export default {
   parser,
   renderer,
   wireframeDiagram,
+  wireDiagram,
   registerWireframe,
+  renderWireframe,
+  setConfig,
+  getConfig,
+  resetConfig,
   compile,
   parse,
   render,

@@ -77,6 +77,8 @@ export interface ModifierSet {
   selected?: boolean;
   readonly?: boolean;
   editable?: boolean;
+  active?: boolean;
+  expanded?: boolean;
 }
 
 // ============ Layout Nodes ============
@@ -160,6 +162,8 @@ export type ControlType =
   | 'PasswordInput'
   | 'TextArea'
   | 'Label'
+  | 'Heading'
+  | 'Link'
   | 'Checkbox'
   | 'Radio'
   | 'Dropdown'
@@ -174,7 +178,21 @@ export type ControlType =
   | 'Slider'
   | 'Switch'
   | 'Chip'
-  | 'Pagination';
+  | 'Tabs'
+  | 'Tab'
+  | 'Menu'
+  | 'MenuItem'
+  | 'Breadcrumb'
+  | 'Pagination'
+  | 'Table'
+  | 'Tree'
+  | 'TreeItem'
+  | 'Accordion'
+  | 'AccordionSection'
+  | 'DataGrid'
+  | 'Toast'
+  | 'Skeleton'
+  | 'Stepper';
 
 /**
  * Control node

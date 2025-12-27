@@ -1,4 +1,4 @@
-# UIMMD API Reference
+# Wireframe API Reference
 
 ## Document Information
 - **Version:** 1.0
@@ -10,22 +10,22 @@
 
 ## 1. Overview
 
-This document provides the public API reference for the UIMMD library.
+This document provides the public API reference for the Wireframe library.
 
 ---
 
 ## 2. Package Structure
 
 ```
-@uimmd/core           # Core parser and renderer
-@uimmd/mermaid-plugin # Mermaid.js integration
-@uimmd/themes         # Theme definitions
-@uimmd/cli            # Command-line interface
+@aspect-ui/wireframe-core           # Core parser and renderer
+@aspect-ui/wireframe-mermaid-plugin # Mermaid.js integration
+@aspect-ui/wireframe-themes         # Theme definitions
+@aspect-ui/wireframe-cli            # Command-line interface
 ```
 
 ---
 
-## 3. Core Library (@uimmd/core)
+## 3. Core Library (@aspect-ui/wireframe-core)
 
 ### 3.1 Main Exports
 
@@ -40,14 +40,14 @@ import {
     Document,
     RenderOptions,
     Theme
-} from '@uimmd/core';
+} from '@aspect-ui/wireframe-core';
 ```
 
 ---
 
 ### 3.2 parse()
 
-Parses UIMMD source text into an AST.
+Parses Wireframe source text into an AST.
 
 ```typescript
 function parse(source: string, options.: ParseOptions): Document;
@@ -57,7 +57,7 @@ function parse(source: string, options.: ParseOptions): Document;
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
-| source | string | Yes | UIMMD source text |
+| source | string | Yes | Wireframe source text |
 | options | ParseOptions | No | Parsing options |
 
 **ParseOptions:**
@@ -80,7 +80,7 @@ interface ParseOptions {
 **Example:**
 
 ```typescript
-import { parse } from '@uimmd/core';
+import { parse } from '@aspect-ui/wireframe-core';
 
 const source = `
 uiwire clean
@@ -144,7 +144,7 @@ interface RenderOptions {
 **Example:**
 
 ```typescript
-import { parse, render } from '@uimmd/core';
+import { parse, render } from '@aspect-ui/wireframe-core';
 
 const document = parse(source);
 const svg = render(document, {
@@ -188,7 +188,7 @@ interface ValidationError {
 **Example:**
 
 ```typescript
-import { parse, validate } from '@uimmd/core';
+import { parse, validate } from '@aspect-ui/wireframe-core';
 
 const document = parse(source);
 const errors = validate(document);
@@ -221,7 +221,7 @@ function getTheme(name: ThemeName): Theme;
 **Example:**
 
 ```typescript
-import { getTheme } from '@uimmd/core';
+import { getTheme } from '@aspect-ui/wireframe-core';
 
 const theme = getTheme('sketch');
 console.log(theme.fontFamily);  // "Comic Sans MS", ...
@@ -240,7 +240,7 @@ function registerTheme(theme: Theme): void;
 **Example:**
 
 ```typescript
-import { registerTheme, getTheme } from '@uimmd/core';
+import { registerTheme, getTheme } from '@aspect-ui/wireframe-core';
 
 const darkTheme = {
     ...getTheme('clean'),
@@ -385,17 +385,17 @@ interface Theme {
 
 ---
 
-## 5. Mermaid Plugin (@uimmd/mermaid-plugin)
+## 5. Mermaid Plugin (@aspect-ui/wireframe-mermaid-plugin)
 
 ### 5.1 Registration
 
 ```typescript
-import '@uimmd/mermaid-plugin';
+import '@aspect-ui/wireframe-mermaid-plugin';
 // Auto-registers with Mermaid
 
 // Or manual registration
-import { registerUimmdDiagram } from '@uimmd/mermaid-plugin';
-registerUimmdDiagram();
+import { registerWireframeDiagram } from '@aspect-ui/wireframe-mermaid-plugin';
+registerWireframeDiagram();
 ```
 
 ### 5.2 Configuration
@@ -406,7 +406,7 @@ import mermaid from 'mermaid';
 mermaid.initialize({
     startOnLoad: true,
     
-    // UIMMD-specific config
+    // Wireframe-specific config
     uiwire: {
         theme: 'sketch',
         width: 800,
@@ -417,10 +417,10 @@ mermaid.initialize({
 });
 ```
 
-### 5.3 UimmdConfig
+### 5.3 WireframeConfig
 
 ```typescript
-interface UimmdConfig {
+interface WireframeConfig {
     theme.: 'sketch' | 'clean' | 'blueprint' | 'realistic';
     width.: number | 'auto';
     showIds.: boolean;
@@ -440,31 +440,31 @@ interface UimmdConfig {
 
 ---
 
-## 6. CLI (@uimmd/cli)
+## 6. CLI (@aspect-ui/wireframe-cli)
 
 ### 6.1 Commands
 
 ```bash
 # Parse and validate
-uimmd validate <file.uimmd>
+Wireframe validate <file.wire>
 
 # Render to SVG
-uimmd render <file.uimmd> -o output.svg
+Wireframe render <file.wire> -o output.svg
 
 # Render to PNG
-uimmd render <file.uimmd> -o output.png --format png
+Wireframe render <file.wire> -o output.png --format png
 
 # Watch mode
-uimmd watch <file.uimmd> --serve
+Wireframe watch <file.wire> --serve
 
 # Convert theme
-uimmd render <file.uimmd> --theme sketch -o sketch.svg
+Wireframe render <file.wire> --theme sketch -o sketch.svg
 ```
 
 ### 6.2 CLI Options
 
 ```bash
-uimmd render [options] <input>
+Wireframe render [options] <input>
 
 Options:
   -o, --output <file>     Output file path
@@ -482,16 +482,16 @@ Options:
 ### 6.3 Programmatic Usage
 
 ```typescript
-import { cli } from '@uimmd/cli';
+import { cli } from '@aspect-ui/wireframe-cli';
 
 // Render file
-await cli.render('form.uimmd', {
+await cli.render('form.wire', {
     output: 'form.svg',
     theme: 'clean'
 });
 
 // Validate file
-const result = await cli.validate('form.uimmd');
+const result = await cli.validate('form.wire');
 if (!result.valid) {
     console.error(result.errors);
 }
@@ -505,29 +505,29 @@ if (!result.valid) {
 
 | Command | Description |
 |---------|-------------|
-| `uimmd.preview` | Open preview |
-| `uimmd.previewSide` | Open preview to side |
-| `uimmd.export.svg` | Export as SVG |
-| `uimmd.export.png` | Export as PNG |
-| `uimmd.format` | Format document |
-| `uimmd.insertSnippet` | Insert component snippet |
+| `Wireframe.preview` | Open preview |
+| `Wireframe.previewSide` | Open preview to side |
+| `Wireframe.export.svg` | Export as SVG |
+| `Wireframe.export.png` | Export as PNG |
+| `Wireframe.format` | Format document |
+| `Wireframe.insertSnippet` | Insert component snippet |
 
 ### 7.2 Extension Settings
 
 ```json
 {
-    "uimmd.preview.theme": "auto",
-    "uimmd.preview.refreshDelay": 300,
-    "uimmd.preview.showGrid": false,
-    "uimmd.preview.showIds": false,
-    "uimmd.editor.formatOnSave": false,
-    "uimmd.validation.enabled": true
+    "Wireframe.preview.theme": "auto",
+    "Wireframe.preview.refreshDelay": 300,
+    "Wireframe.preview.showGrid": false,
+    "Wireframe.preview.showIds": false,
+    "Wireframe.editor.formatOnSave": false,
+    "Wireframe.validation.enabled": true
 }
 ```
 
 ### 7.3 Language Server Protocol
 
-The UIMMD language server implements:
+The Wireframe language server implements:
 - `textDocument/completion`
 - `textDocument/hover`
 - `textDocument/definition`
@@ -553,7 +553,7 @@ interface RendererEvents {
 }
 
 // Usage
-import { createRenderer } from '@uimmd/core';
+import { createRenderer } from '@aspect-ui/wireframe-core';
 
 const renderer = createRenderer({
     interactive: true
@@ -577,7 +577,7 @@ renderer.on('navigation', (nav) => {
 ### 9.1 AST Utilities
 
 ```typescript
-import { walk, find, findAll, getById } from '@uimmd/core/utils';
+import { walk, find, findAll, getById } from '@aspect-ui/wireframe-core/utils';
 
 // Walk all nodes
 walk(document, (node, parent, depth) => {
@@ -601,7 +601,7 @@ const element = getById(document, 'btnSubmit');
 ### 9.2 Theme Utilities
 
 ```typescript
-import { extendTheme, mergeThemes } from '@uimmd/core/themes';
+import { extendTheme, mergeThemes } from '@aspect-ui/wireframe-core/themes';
 
 // Extend a theme
 const customTheme = extendTheme('clean', {
@@ -616,7 +616,7 @@ const merged = mergeThemes(baseTheme, overrides);
 ### 9.3 Source Map
 
 ```typescript
-import { generateSourceMap } from '@uimmd/core/sourcemap';
+import { generateSourceMap } from '@aspect-ui/wireframe-core/sourcemap';
 
 const { svg, sourceMap } = render(document, {
     sourceMap: true
@@ -687,7 +687,7 @@ import type {
     RenderOptions,
     ValidationError,
     SourceLocation
-} from '@uimmd/core';
+} from '@aspect-ui/wireframe-core';
 ```
 
 ### 11.2 Generic Types
@@ -708,11 +708,11 @@ function getButtons(doc: Document): Control[] {
 ### 12.1 Script Tag
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@uimmd/core/dist/uimmd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@aspect-ui/wireframe-core/dist/Wireframe.min.js"></script>
 <script>
-    const { parse, render } = UIMMD;
+    const { parse, render } = Wireframe;
     
-    const source = document.getElementById('uimmd-source').textContent;
+    const source = document.getElementById('Wireframe-source').textContent;
     const doc = parse(source);
     const svg = render(doc, { theme: 'clean' });
     
@@ -724,7 +724,7 @@ function getButtons(doc: Document): Control[] {
 
 ```html
 <script type="module">
-    import { parse, render } from 'https://cdn.jsdelivr.net/npm/@uimmd/core/dist/uimmd.esm.js';
+    import { parse, render } from 'https://cdn.jsdelivr.net/npm/@aspect-ui/wireframe-core/dist/Wireframe.esm.js';
     
     const doc = parse(source);
     const svg = render(doc);
@@ -744,4 +744,4 @@ function getButtons(doc: Document): Control[] {
 
 ---
 
-*UIMMD API Reference v1.0 - 2025*
+*Wireframe API Reference v1.0 - 2025*

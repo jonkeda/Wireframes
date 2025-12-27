@@ -1,4 +1,4 @@
-# UIMMD Component Library
+# Wireframe Component Library
 
 ## Document Information
 - **Version:** 1.0
@@ -10,7 +10,7 @@
 
 ## 1. Overview
 
-This document specifies all UIMMD UI components, including their syntax, properties, default sizes, and rendering behavior.
+This document specifies all Wireframe UI components, including their syntax, properties, default sizes, and rendering behavior.
 
 ---
 
@@ -35,7 +35,7 @@ This document specifies all UIMMD UI components, including their syntax, propert
 Interactive button control.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Button "Text"
 Button "Text" :id
 Button "Text" primary
@@ -57,11 +57,11 @@ Button "Text" :id primary @Target tooltip="Hint"
 | tooltip | string | - | Tooltip text |
 | navigation | string | - | Navigation target |
 
-**Default Size:** 100×36px (auto-width based on text)
+**Default Size:** 100ï¿½36px (auto-width based on text)
 
 **Rendering:**
 ```svg
-<g class="uimmd-button primary">
+<g class="Wireframe-button primary">
     <rect x="0" y="0" width="100" height="36" rx="4"/>
     <text x="50" y="18" text-anchor="middle">Button Text</text>
 </g>
@@ -74,7 +74,7 @@ Button "Text" :id primary @Target tooltip="Hint"
 Button with icon, optionally with text.
 
 **Syntax:**
-```uimmd
+```Wireframe
 IconButton $icon
 IconButton $icon "Text"
 IconButton $icon "Text" :id primary
@@ -91,8 +91,8 @@ IconButton $icon "Text" :id primary
 | tooltip | string | - | Tooltip text |
 
 **Default Size:** 
-- Icon only: 36×36px
-- With text: 120×36px
+- Icon only: 36ï¿½36px
+- With text: 120ï¿½36px
 
 ---
 
@@ -101,7 +101,7 @@ IconButton $icon "Text" :id primary
 Single-line text input field.
 
 **Syntax:**
-```uimmd
+```Wireframe
 TextInput "placeholder"
 TextInput "placeholder" :id
 TextInput "placeholder" :id required
@@ -123,7 +123,7 @@ TextInput "placeholder" :id required min=3 max=50 pattern=email
 | disabled | boolean | false | Disabled state |
 | tooltip | string | - | Tooltip text |
 
-**Default Size:** 200×36px
+**Default Size:** 200ï¿½36px
 
 **Validation Patterns:**
 - `email` - Email format
@@ -140,7 +140,7 @@ TextInput "placeholder" :id required min=3 max=50 pattern=email
 Numeric input field.
 
 **Syntax:**
-```uimmd
+```Wireframe
 NumberInput "placeholder"
 NumberInput "0" :txtAge min=0 max=150
 NumberInput "Amount" :txtAmount required .order.amount
@@ -158,7 +158,7 @@ NumberInput "Amount" :txtAmount required .order.amount
 | step | number | 1 | Step increment |
 | binding | string | - | Data binding path |
 
-**Default Size:** 120×36px
+**Default Size:** 120ï¿½36px
 
 ---
 
@@ -167,7 +167,7 @@ NumberInput "Amount" :txtAmount required .order.amount
 Date selection input.
 
 **Syntax:**
-```uimmd
+```Wireframe
 DateInput "Select date"
 DateInput "Birth date" :txtDOB required .user.birthDate
 ```
@@ -183,7 +183,7 @@ DateInput "Birth date" :txtDOB required .user.birthDate
 | min | string | - | Minimum date |
 | max | string | - | Maximum date |
 
-**Default Size:** 150×36px
+**Default Size:** 150ï¿½36px
 
 ---
 
@@ -192,7 +192,7 @@ DateInput "Birth date" :txtDOB required .user.birthDate
 Masked password input.
 
 **Syntax:**
-```uimmd
+```Wireframe
 PasswordInput "Password"
 PasswordInput "Password" :txtPass required min=8
 ```
@@ -207,7 +207,7 @@ PasswordInput "Password" :txtPass required min=8
 | min | number | - | Minimum length |
 | binding | string | - | Data binding path |
 
-**Default Size:** 200×36px
+**Default Size:** 200ï¿½36px
 
 ---
 
@@ -216,7 +216,7 @@ PasswordInput "Password" :txtPass required min=8
 Multi-line text input.
 
 **Syntax:**
-```uimmd
+```Wireframe
 TextArea "Enter description"
 TextArea "Notes" :txtNotes rows=4 .order.notes
 ```
@@ -231,7 +231,7 @@ TextArea "Notes" :txtNotes rows=4 .order.notes
 | required | boolean | false | Required field |
 | binding | string | - | Data binding path |
 
-**Default Size:** 300×100px (height based on rows)
+**Default Size:** 300ï¿½100px (height based on rows)
 
 ---
 
@@ -240,7 +240,7 @@ TextArea "Notes" :txtNotes rows=4 .order.notes
 Text display element.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Label "Plain text"
 Label "**Bold text**"
 Label "*Italic text*"
@@ -272,7 +272,7 @@ Label "Text" :lblId
 Checkable toggle control.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Checkbox "Label"
 Checkbox "Accept terms" :chkTerms
 Checkbox "Active" :chkActive checked
@@ -289,7 +289,7 @@ Checkbox "Subscribe" :chkSub .user.newsletter
 | required | boolean | false | Required field |
 | binding | string | - | Data binding path |
 
-**Default Size:** 150×24px
+**Default Size:** 150ï¿½24px
 
 ---
 
@@ -298,7 +298,7 @@ Checkbox "Subscribe" :chkSub .user.newsletter
 Radio button for single selection.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Radio "Option A" :radA
 Radio "Option B" :radB selected
 Radio "Option C" :radC group=options
@@ -314,7 +314,7 @@ Radio "Option C" :radC group=options
 | group | string | - | Radio group name |
 | binding | string | - | Data binding path |
 
-**Default Size:** 150×24px
+**Default Size:** 150ï¿½24px
 
 ---
 
@@ -323,7 +323,7 @@ Radio "Option C" :radC group=options
 Selection dropdown control.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Dropdown :ddlCountry
     Option "Select..."
     Option "USA"
@@ -349,7 +349,7 @@ Dropdown "USA" "Canada" "UK" :ddlCountry
 | required | boolean | false | Required field |
 | disabled | boolean | false | Disabled state |
 
-**Default Size:** 200×36px
+**Default Size:** 200ï¿½36px
 
 ---
 
@@ -358,11 +358,11 @@ Dropdown "USA" "Canada" "UK" :ddlCountry
 Horizontal dividing line.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Separator
 ```
 
-**Default Size:** 100%×1px
+**Default Size:** 100%ï¿½1px
 
 ---
 
@@ -371,7 +371,7 @@ Separator
 Flexible space filler.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Spacer
 ```
 
@@ -386,7 +386,7 @@ Spacer
 Vertical stack layout.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Vertical
 Vertical gap=12
 Vertical gap=8 align=center
@@ -411,7 +411,7 @@ Vertical gap=16 align=stretch padding=20
 Horizontal stack layout.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Horizontal
 Horizontal gap=8
 Horizontal gap=16 justify=end
@@ -436,7 +436,7 @@ Horizontal justify=between align=center
 Grid layout with rows and columns.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Grid cols=2
 Grid rows=3 cols=2 gap=16
 Grid cols="200px 1fr 100px" rows="auto 1fr auto"
@@ -452,7 +452,7 @@ Grid cols="200px 1fr 100px" rows="auto 1fr auto"
 | padding | number | 0 | Internal padding |
 
 **Child Positioning:**
-```uimmd
+```Wireframe
 Grid cols=3 rows=2
     Label "A" grid=0,0
     Label "B" grid=0,1
@@ -468,7 +468,7 @@ Grid cols=3 rows=2
 Dock layout with edges and fill.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Dock
     Header dock=top h=60
     Sidebar dock=left w=200
@@ -491,7 +491,7 @@ Dock
 Absolute positioning layout.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Canvas w=800 h=600
     Button "A" canvas=10,20
     Button "B" canvas=100,50
@@ -506,7 +506,7 @@ Canvas w=800 h=600
 Scrollable container.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Scroll
     Vertical gap=8
         // Many items...
@@ -535,7 +535,7 @@ Scroll direction=horizontal
 Card container with shadow.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Card
     Label "Card content"
 /Card
@@ -557,7 +557,7 @@ Card :cardId padding=16
 Generic container panel.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Panel :pnlDetails
     // Content
 /Panel
@@ -574,7 +574,7 @@ Panel :pnlAdvanced visible=false
 Page header and footer sections.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Header dock=top h=60
     Horizontal padding=16
         Icon $app
@@ -585,7 +585,7 @@ Header dock=top h=60
 /Header
 
 Footer dock=bottom h=40
-    Label "*© 2025 Company*"
+    Label "*ï¿½ 2025 Company*"
 /Footer
 ```
 
@@ -596,7 +596,7 @@ Footer dock=bottom h=40
 Side navigation panel.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Sidebar dock=left w=220
     Vertical padding=12
         IconButton $home "Home" @Home
@@ -612,7 +612,7 @@ Sidebar dock=left w=220
 Modal dialog overlay.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Modal "Dialog Title" :dlgConfirm
     Label "Modal content"
     Horizontal justify=end gap=8
@@ -629,7 +629,7 @@ Modal "Dialog Title" :dlgConfirm
 Slide-out drawer panel.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Drawer :drwMenu position=left
     Menu
         MenuItem "Option 1"
@@ -653,7 +653,7 @@ Drawer :drwMenu position=left
 Tabbed content container.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Tabs :tabMain
     Tab "General"
         Label "General content"
@@ -671,7 +671,7 @@ Tabs :tabMain
 Hierarchical menu.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Menu :mnuMain
     MenuItem "File"
         MenuItem "New" @New
@@ -693,7 +693,7 @@ Menu :mnuMain
 Mobile hamburger menu.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Hamburger :btnMenu
     MenuItem "Home" icon=$home @Home
     MenuItem "Settings" icon=$settings @Settings
@@ -709,7 +709,7 @@ Hamburger :btnMenu
 Breadcrumb navigation.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Breadcrumb
     BreadcrumbItem "Home" @Home
     BreadcrumbItem "Products" @Products
@@ -724,7 +724,7 @@ Breadcrumb
 Page navigation control.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Pagination pages=10 current=3 :pgNav
 ```
 
@@ -745,7 +745,7 @@ Pagination pages=10 current=3 :pgNav
 Static data table.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Table :tblUsers
     | Name | Email | Role |
     |------|-------|------|
@@ -764,7 +764,7 @@ Table cols="Name,Email,Role" rows=5
 Interactive data grid.
 
 **Syntax:**
-```uimmd
+```Wireframe
 DataGrid :dgOrders data=orderItems
     Column field=product header="Product"
     Column field=quantity header="Qty" editable=true align=right
@@ -796,7 +796,7 @@ DataGrid :dgOrders data=orderItems
 List of items.
 
 **Syntax:**
-```uimmd
+```Wireframe
 List :lstItems
     - Item 1
     - Item 2
@@ -817,7 +817,7 @@ List ordered=true
 Hierarchical tree view.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Tree :treeNav
     + Root
         + Child 1
@@ -839,13 +839,13 @@ Tree :treeNav
 User avatar display.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Avatar "John Doe"
 Avatar "JD" size=48
 Avatar image="photo.jpg" size=64
 ```
 
-**Default Size:** 40×40px
+**Default Size:** 40ï¿½40px
 
 ---
 
@@ -854,7 +854,7 @@ Avatar image="photo.jpg" size=64
 Notification badge.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Button "Notifications" badge="5"
 Icon $bell badge="3"
 ```
@@ -866,13 +866,13 @@ Icon $bell badge="3"
 Progress indicator.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Progress value=75
 Progress value=50 :prgUpload
 Progress indeterminate=true
 ```
 
-**Default Size:** 200×8px
+**Default Size:** 200ï¿½8px
 
 ---
 
@@ -883,7 +883,7 @@ Progress indeterminate=true
 Alert/notification box.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Alert type=info
     Label "Informational message"
 /Alert
@@ -902,7 +902,7 @@ Alert type=error title="Error"
 Modal dialog.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Dialog "Confirm" :dlgConfirm
     Label "Are you sure."
     Horizontal justify=end gap=8
@@ -919,7 +919,7 @@ Dialog "Confirm" :dlgConfirm
 Toast notification.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Toast "Saved successfully" type=success
 Toast "Error occurred" type=error
 ```
@@ -931,7 +931,7 @@ Toast "Error occurred" type=error
 Loading placeholder.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Skeleton type=text lines=3
 Skeleton type=card
 Skeleton type=avatar
@@ -947,7 +947,7 @@ Skeleton type=image w=200 h=150
 Toggle switch.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Switch "Dark Mode" :swDark
 Switch "Notifications" checked=true
 ```
@@ -959,7 +959,7 @@ Switch "Notifications" checked=true
 Range slider.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Slider min=0 max=100 value=50 :sldVolume
 Slider min=0 max=100 step=10
 ```
@@ -971,7 +971,7 @@ Slider min=0 max=100 step=10
 Multi-step indicator.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Stepper :stpWizard
     Step "Account" completed=true
     Step "Details" current=true
@@ -987,7 +987,7 @@ Stepper :stpWizard
 Collapsible sections.
 
 **Syntax:**
-```uimmd
+```Wireframe
 Accordion :accFAQ
     AccordionSection "Question 1."
         Label "Answer 1"
@@ -1036,4 +1036,4 @@ Accordion :accFAQ
 
 ---
 
-*UIMMD Component Library v1.0 - 2025*
+*Wireframe Component Library v1.0 - 2025*

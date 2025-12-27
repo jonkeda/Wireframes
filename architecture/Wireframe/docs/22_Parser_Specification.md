@@ -1,4 +1,4 @@
-# UIMMD Parser Specification
+# Wireframe Parser Specification
 
 ## Document Information
 - **Version:** 1.0
@@ -10,7 +10,7 @@
 
 ## 1. Overview
 
-This document specifies the UIMMD parser, including the lexer, grammar, AST structure, and error handling.
+This document specifies the Wireframe parser, including the lexer, grammar, AST structure, and error handling.
 
 ---
 
@@ -1163,7 +1163,7 @@ export class IncrementalParser {
 ```typescript
 // tests/parser.test.ts
 
-describe('UIMMD Parser', () => {
+describe('Wireframe Parser', () => {
     describe('Document parsing', () => {
         it('should parse minimal document', () => {
             const input = `
@@ -1229,4 +1229,4 @@ uiwire clean
 
 ---
 
-*UIMMD Parser Specification v1.0 - 2025*
+*Wireframe Parser Specification v1.0 - 2025*

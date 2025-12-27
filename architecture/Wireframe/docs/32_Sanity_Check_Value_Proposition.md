@@ -1,4 +1,4 @@
-﻿# Wireframe Sanity Check & Value Proposition
+# Wireframe Sanity Check & Value Proposition
 
 ## Document Information
 - **Version:** 1.0

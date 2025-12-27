@@ -1,4 +1,4 @@
-# UIMMD Integration Guide
+# Wireframe Integration Guide
 
 ## Document Information
 - **Version:** 1.0
@@ -10,7 +10,7 @@
 
 ## 1. Overview
 
-This document describes how to integrate UIMMD preview and editing capabilities into existing development environments and extensions, rather than requiring a standalone extension.
+This document describes how to integrate Wireframe preview and editing capabilities into existing development environments and extensions, rather than requiring a standalone extension.
 
 ---
 
@@ -29,7 +29,7 @@ This document describes how to integrate UIMMD preview and editing capabilities 
 
 ### 2.2 Recommendation: VSCode
 
-**VSCode is the preferred environment** for UIMMD development because:
+**VSCode is the preferred environment** for Wireframe development because:
 
 1. **You're building a VSCode extension** - You need VSCode to develop, test, and debug the extension itself
 
@@ -44,7 +44,7 @@ This document describes how to integrate UIMMD preview and editing capabilities 
 ### 2.3 Technology Stack Alignment
 
 ```
-UIMMD Technology Stack:
+Wireframe Technology Stack:
 ... TypeScript 5.x          . VSCode native
 ... pnpm workspaces         . VSCode native  
 ... Vitest                  . VSCode extensions available
@@ -66,14 +66,14 @@ Visual Studio would only be preferred if:
 
 ### 3.1 Option 1: Markdown Preview Extensions (Easiest)
 
-If you use markdown preview extensions, UIMMD can work like Mermaid does today.
+If you use markdown preview extensions, Wireframe can work like Mermaid does today.
 
 **Compatible Extensions:**
 
 | Extension | Integration Method |
 |-----------|-------------------|
 | **Markdown Preview Enhanced** | Custom parser plugin |
-| **Markdown Preview Mermaid Support** | Add UIMMD as diagram type |
+| **Markdown Preview Mermaid Support** | Add Wireframe as diagram type |
 | **Foam/Dendron** | Custom renderer |
 
 **Example: Markdown Preview Enhanced Integration**
@@ -82,20 +82,20 @@ Create a custom parser file:
 
 ```javascript
 // ~/.mume/parser.js
-const uimmd = require('@uimmd/core');
+const Wireframe = require('@aspect-ui/wireframe-core');
 
 module.exports = {
     onWillParseMarkdown: async function(markdown) {
         return markdown;
     },
     onDidParseMarkdown: async function(html) {
-        // Replace ```uimmd code blocks with rendered SVG
+        // Replace ```Wireframe code blocks with rendered SVG
         return html.replace(
-            /<pre><code class="language-uimmd">([\s\S]*.)<\/code><\/pre>/g,
+            /<pre><code class="language-Wireframe">([\s\S]*.)<\/code><\/pre>/g,
             (match, code) => {
                 try {
-                    const ast = uimmd.parse(code);
-                    return uimmd.render(ast);
+                    const ast = Wireframe.parse(code);
+                    return Wireframe.render(ast);
                 } catch (e) {
                     return `<pre style="color:red">${e.message}</pre>`;
                 }
@@ -109,7 +109,7 @@ module.exports = {
 
 ### 3.2 Option 2: Mermaid Extension Integration (Recommended)
 
-Since UIMMD is designed as a Mermaid diagram type, any extension that supports Mermaid can support UIMMD automatically.
+Since Wireframe is designed as a Mermaid diagram type, any extension that supports Mermaid can support Wireframe automatically.
 
 **Compatible Mermaid Extensions:**
 - Markdown Preview Mermaid Support
@@ -119,11 +119,11 @@ Since UIMMD is designed as a Mermaid diagram type, any extension that supports M
 
 **How It Works:**
 
-The `@uimmd/mermaid-plugin` auto-registers with Mermaid when imported:
+The `@aspect-ui/wireframe-mermaid-plugin` auto-registers with Mermaid when imported:
 
 ```typescript
 // The plugin registers automatically
-import '@uimmd/mermaid-plugin';
+import '@aspect-ui/wireframe-mermaid-plugin';
 
 // Mermaid now recognizes uiwire syntax
 mermaid.render('diagram', `
@@ -155,24 +155,24 @@ uiwire clean
 **Installation:**
 
 ```bash
-npm install @uimmd/mermaid-plugin
+npm install @aspect-ui/wireframe-mermaid-plugin
 ```
 
 ---
 
 ### 3.3 Option 3: Language Server Protocol (LSP) Integration
 
-For extensions that support LSP (like many linting/formatting extensions), UIMMD provides a language server.
+For extensions that support LSP (like many linting/formatting extensions), Wireframe provides a language server.
 
 **VSCode Settings:**
 
 ```json
 // .vscode/settings.json
 {
-    "uimmd.languageServer.enable": true,
-    "[uimmd]": {
+    "Wireframe.languageServer.enable": true,
+    "[Wireframe]": {
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "uimmd.uimmd"
+        "editor.defaultFormatter": "Wireframe.wire"
     }
 }
 ```
@@ -186,7 +186,7 @@ For extensions that support LSP (like many linting/formatting extensions), UIMMD
 
 ### 3.4 Option 4: VSCode Tasks Integration
 
-Use VSCode tasks to render UIMMD files with existing tooling:
+Use VSCode tasks to render Wireframe files with existing tooling:
 
 ```json
 // .vscode/tasks.json
@@ -194,9 +194,9 @@ Use VSCode tasks to render UIMMD files with existing tooling:
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "UIMMD: Render Current File",
+            "label": "Wireframe: Render Current File",
             "type": "shell",
-            "command": "npx @uimmd/cli render ${file} -o ${fileDirname}/${fileBasenameNoExtension}.svg",
+            "command": "npx @aspect-ui/wireframe-cli render ${file} -o ${fileDirname}/${fileBasenameNoExtension}.svg",
             "group": "build",
             "presentation": {
                 "reveal": "silent"
@@ -204,9 +204,9 @@ Use VSCode tasks to render UIMMD files with existing tooling:
             "problemMatcher": []
         },
         {
-            "label": "UIMMD: Watch Current File",
+            "label": "Wireframe: Watch Current File",
             "type": "shell", 
-            "command": "npx @uimmd/cli watch ${file} --serve",
+            "command": "npx @aspect-ui/wireframe-cli watch ${file} --serve",
             "isBackground": true,
             "problemMatcher": [],
             "presentation": {
@@ -215,12 +215,12 @@ Use VSCode tasks to render UIMMD files with existing tooling:
             }
         },
         {
-            "label": "UIMMD: Validate Current File",
+            "label": "Wireframe: Validate Current File",
             "type": "shell",
-            "command": "npx @uimmd/cli validate ${file}",
+            "command": "npx @aspect-ui/wireframe-cli validate ${file}",
             "group": "test",
             "problemMatcher": {
-                "owner": "uimmd",
+                "owner": "Wireframe",
                 "pattern": {
                     "regexp": "^(.+):(\\d+):(\\d+):\\s+(error|warning):\\s+(.+)$",
                     "file": 1,
@@ -232,9 +232,9 @@ Use VSCode tasks to render UIMMD files with existing tooling:
             }
         },
         {
-            "label": "UIMMD: Export to PNG",
+            "label": "Wireframe: Export to PNG",
             "type": "shell",
-            "command": "npx @uimmd/cli render ${file} -o ${fileDirname}/${fileBasenameNoExtension}.png --format png",
+            "command": "npx @aspect-ui/wireframe-cli render ${file} -o ${fileDirname}/${fileBasenameNoExtension}.png --format png",
             "group": "build",
             "problemMatcher": []
         }
@@ -250,8 +250,8 @@ Use VSCode tasks to render UIMMD files with existing tooling:
     {
         "key": "ctrl+shift+u",
         "command": "workbench.action.tasks.runTask",
-        "args": "UIMMD: Render Current File",
-        "when": "editorLangId == uimmd"
+        "args": "Wireframe: Render Current File",
+        "when": "editorLangId == Wireframe"
     }
 ]
 ```
@@ -260,37 +260,37 @@ Use VSCode tasks to render UIMMD files with existing tooling:
 
 ### 3.5 Option 5: Webview Panel API (For Extension Authors)
 
-If you maintain your own VSCode extension, you can add UIMMD preview support:
+If you maintain your own VSCode extension, you can add Wireframe preview support:
 
 ```typescript
 // In your existing extension's activate function
 import * as vscode from 'vscode';
-import { parse, render } from '@uimmd/core';
+import { parse, render } from '@aspect-ui/wireframe-core';
 
-export function addUimmdSupport(context: vscode.ExtensionContext) {
-    // Register for .uimmd files
+export function addWireframeSupport(context: vscode.ExtensionContext) {
+    // Register for .wire files
     context.subscriptions.push(
         vscode.workspace.onDidOpenTextDocument(doc => {
-            if (doc.languageId === 'uimmd' || doc.fileName.endsWith('.uimmd')) {
-                showUimmdPreview(doc);
+            if (doc.languageId === 'Wireframe' || doc.fileName.endsWith('.wire')) {
+                showWireframePreview(doc);
             }
         })
     );
 
     // Register command
     context.subscriptions.push(
-        vscode.commands.registerCommand('myExtension.previewUimmd', () => {
+        vscode.commands.registerCommand('myExtension.previewWireframe', () => {
             const editor = vscode.window.activeTextEditor;
-            if (editor && editor.document.fileName.endsWith('.uimmd')) {
-                showUimmdPreview(editor.document);
+            if (editor && editor.document.fileName.endsWith('.wire')) {
+                showWireframePreview(editor.document);
             }
         })
     );
 }
 
-function showUimmdPreview(document: vscode.TextDocument) {
+function showWireframePreview(document: vscode.TextDocument) {
     const panel = vscode.window.createWebviewPanel(
-        'uimmdPreview',
+        'WireframePreview',
         `Preview: ${document.fileName.split('/').pop()}`,
         vscode.ViewColumn.Beside,
         { 
@@ -430,21 +430,21 @@ function getErrorHtml(error: Error): string {
 .                                                                  .
 .  Phase 1: Mermaid Plugin                                        .
 .  .....................                                          .
-.  • Install @uimmd/mermaid-plugin                                .
-.  • Works with existing Mermaid extensions                       .
-.  • Zero configuration required                                  .
+.  ï¿½ Install @aspect-ui/wireframe-mermaid-plugin                                .
+.  ï¿½ Works with existing Mermaid extensions                       .
+.  ï¿½ Zero configuration required                                  .
 .                                                                  .
 .  Phase 2: Dedicated File Support                                .
 .  ...............................                                .
-.  • Add syntax highlighting via TextMate grammar                 .
-.  • Use CLI for rendering and validation                         .
-.  • Configure VSCode tasks                                       .
+.  ï¿½ Add syntax highlighting via TextMate grammar                 .
+.  ï¿½ Use CLI for rendering and validation                         .
+.  ï¿½ Configure VSCode tasks                                       .
 .                                                                  .
 .  Phase 3: Full IntelliSense (Optional)                          .
 .  .....................................                          .
-.  • Install lightweight UIMMD extension                          .
-.  • Provides completion, hover, diagnostics                      .
-.  • Delegates rendering to @uimmd/core                           .
+.  ï¿½ Install lightweight Wireframe extension                          .
+.  ï¿½ Provides completion, hover, diagnostics                      .
+.  ï¿½ Delegates rendering to @aspect-ui/wireframe-core                           .
 .                                                                  .
 ...................................................................
 ```
@@ -454,13 +454,13 @@ function getErrorHtml(error: Error): string {
 **Step 1: Install CLI globally**
 
 ```bash
-npm install -g @uimmd/cli
+npm install -g @aspect-ui/wireframe-cli
 ```
 
 **Step 2: Install Mermaid plugin in your project**
 
 ```bash
-npm install @uimmd/mermaid-plugin
+npm install @aspect-ui/wireframe-mermaid-plugin
 ```
 
 **Step 3: Use in markdown files**
@@ -488,31 +488,31 @@ This works immediately with extensions like **Markdown Preview Mermaid Support**
 // .vscode/settings.json
 {
     "files.associations": {
-        "*.uimmd": "uimmd"
+        "*.wire": "Wireframe"
     },
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
-                "scope": "keyword.control.uimmd",
+                "scope": "keyword.control.wire",
                 "settings": {
                     "foreground": "#569cd6",
                     "fontStyle": "bold"
                 }
             },
             {
-                "scope": "entity.name.type.uimmd",
+                "scope": "entity.name.type.wire",
                 "settings": {
                     "foreground": "#4ec9b0"
                 }
             },
             {
-                "scope": "string.quoted.double.uimmd",
+                "scope": "string.quoted.double.wire",
                 "settings": {
                     "foreground": "#ce9178"
                 }
             },
             {
-                "scope": "variable.name.uimmd",
+                "scope": "variable.name.wire",
                 "settings": {
                     "foreground": "#9cdcfe"
                 }
@@ -527,10 +527,10 @@ This works immediately with extensions like **Markdown Preview Mermaid Support**
 ```json
 // .vscode/settings.json (workspace)
 {
-    "uimmd.preview.theme": "auto",
-    "uimmd.preview.refreshDelay": 300,
-    "uimmd.validation.enabled": true,
-    "[uimmd]": {
+    "Wireframe.preview.theme": "auto",
+    "Wireframe.preview.refreshDelay": 300,
+    "Wireframe.validation.enabled": true,
+    "[Wireframe]": {
         "editor.tabSize": 4,
         "editor.insertSpaces": true,
         "editor.formatOnSave": true,
@@ -543,19 +543,19 @@ This works immediately with extensions like **Markdown Preview Mermaid Support**
 
 ## 7. CI/CD Integration
 
-### 7.1 GitHub Actions for UIMMD Validation
+### 7.1 GitHub Actions for Wireframe Validation
 
 ```yaml
-# .github/workflows/uimmd-validate.yml
-name: Validate UIMMD Files
+# .github/workflows/Wireframe-validate.yml
+name: Validate Wireframe Files
 
 on:
   push:
     paths:
-      - '**/*.uimmd'
+      - '**/*.wire'
   pull_request:
     paths:
-      - '**/*.uimmd'
+      - '**/*.wire'
 
 jobs:
   validate:
@@ -567,17 +567,17 @@ jobs:
         with:
           node-version: '20'
       
-      - name: Install UIMMD CLI
-        run: npm install -g @uimmd/cli
+      - name: Install Wireframe CLI
+        run: npm install -g @aspect-ui/wireframe-cli
       
-      - name: Validate UIMMD files
+      - name: Validate Wireframe files
         run: |
-          find . -name "*.uimmd" -exec uimmd validate {} \;
+          find . -name "*.wire" -exec Wireframe validate {} \;
       
-      - name: Render UIMMD files
+      - name: Render Wireframe files
         run: |
           mkdir -p output
-          find . -name "*.uimmd" -exec sh -c 'uimmd render "$1" -o "output/$(basename "$1" .uimmd).svg"' _ {} \;
+          find . -name "*.wire" -exec sh -c 'Wireframe render "$1" -o "output/$(basename "$1" .wire).svg"' _ {} \;
       
       - name: Upload rendered wireframes
         uses: actions/upload-artifact@v4
@@ -594,8 +594,8 @@ jobs:
 
 | Issue | Solution |
 |-------|----------|
-| Mermaid not detecting UIMMD | Ensure `@uimmd/mermaid-plugin` is imported before Mermaid initializes |
-| Preview not updating | Check `uimmd.preview.refreshDelay` setting |
+| Mermaid not detecting Wireframe | Ensure `@aspect-ui/wireframe-mermaid-plugin` is imported before Mermaid initializes |
+| Preview not updating | Check `Wireframe.preview.refreshDelay` setting |
 | Syntax highlighting not working | Verify file association in settings |
 | CLI command not found | Ensure global npm bin is in PATH |
 
@@ -604,8 +604,8 @@ jobs:
 ```json
 // .vscode/settings.json
 {
-    "uimmd.debug.enabled": true,
-    "uimmd.debug.logLevel": "verbose"
+    "Wireframe.debug.enabled": true,
+    "Wireframe.debug.logLevel": "verbose"
 }
 ```
 
@@ -623,4 +623,4 @@ jobs:
 
 ---
 
-*UIMMD Integration Guide v1.0 - 2025*
+*Wireframe Integration Guide v1.0 - 2025*

@@ -1,7 +1,7 @@
 # Demo Files vs Language Specification Analysis
 
 **Date:** December 27, 2025  
-**Purpose:** Analyze discrepancies between demo files and UIMMD v7 Language Specification
+**Purpose:** Analyze discrepancies between demo files and Wireframe v7 Language Specification
 
 ---
 

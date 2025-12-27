@@ -642,4 +642,320 @@ describe('SVGRenderer', () => {
       expect(() => renderer.render(doc)).not.toThrow();
     });
   });
+
+  describe('Phase 2 Controls', () => {
+    it('should render Tabs and Tab', () => {
+      const doc: DocumentNode = {
+        type: 'Document',
+        children: [
+          {
+            type: 'Control',
+            controlType: 'Tabs',
+            modifiers: {},
+            attributes: {},
+            location: { line: 1, column: 1, offset: 0 },
+          } as ControlNode,
+          {
+            type: 'Control',
+            controlType: 'Tab',
+            text: 'Home',
+            modifiers: { active: true },
+            attributes: {},
+            location: { line: 2, column: 1, offset: 10 },
+          } as ControlNode,
+        ],
+        dataSections: [],
+        attributes: {},
+        location: { line: 1, column: 1, offset: 0 },
+      };
+
+      const svg = renderer.render(doc);
+      expect(svg).toContain('<svg');
+      expect(svg).toContain('Home');
+    });
+
+    it('should render Table with rows and cols', () => {
+      const doc: DocumentNode = {
+        type: 'Document',
+        children: [
+          {
+            type: 'Control',
+            controlType: 'Table',
+            modifiers: {},
+            attributes: { rows: 4, cols: 3 },
+            location: { line: 1, column: 1, offset: 0 },
+          } as ControlNode,
+        ],
+        dataSections: [],
+        attributes: {},
+        location: { line: 1, column: 1, offset: 0 },
+      };
+
+      const svg = renderer.render(doc);
+      expect(svg).toContain('Column 1');
+      expect(svg).toContain('Column 2');
+      expect(svg).toContain('Data');
+    });
+
+    it('should render Breadcrumb navigation', () => {
+      const doc: DocumentNode = {
+        type: 'Document',
+        children: [
+          {
+            type: 'Control',
+            controlType: 'Breadcrumb',
+            text: 'Home, Products, Details',
+            modifiers: {},
+            attributes: {},
+            location: { line: 1, column: 1, offset: 0 },
+          } as ControlNode,
+        ],
+        dataSections: [],
+        attributes: {},
+        location: { line: 1, column: 1, offset: 0 },
+      };
+
+      const svg = renderer.render(doc);
+      expect(svg).toContain('Home');
+      expect(svg).toContain('Products');
+      expect(svg).toContain('Details');
+      expect(svg).toContain('/'); // separator
+    });
+
+    it('should render Pagination', () => {
+      const doc: DocumentNode = {
+        type: 'Document',
+        children: [
+          {
+            type: 'Control',
+            controlType: 'Pagination',
+            modifiers: {},
+            attributes: { page: 3, total: 10 },
+            location: { line: 1, column: 1, offset: 0 },
+          } as ControlNode,
+        ],
+        dataSections: [],
+        attributes: {},
+        location: { line: 1, column: 1, offset: 0 },
+      };
+
+      const svg = renderer.render(doc);
+      expect(svg).toContain('<svg');
+      // Current page should be highlighted
+      expect(svg).toContain('>3<');
+    });
+
+    it('should render Accordion with sections', () => {
+      const doc: DocumentNode = {
+        type: 'Document',
+        children: [
+          {
+            type: 'Control',
+            controlType: 'AccordionSection',
+            text: 'Section Title',
+            modifiers: { expanded: true },
+            attributes: {},
+            location: { line: 1, column: 1, offset: 0 },
+          } as ControlNode,
+        ],
+        dataSections: [],
+        attributes: {},
+        location: { line: 1, column: 1, offset: 0 },
+      };
+
+      const svg = renderer.render(doc);
+      expect(svg).toContain('Section Title');
+    });
+
+    it('should render Badge with variants', () => {
+      const doc: DocumentNode = {
+        type: 'Document',
+        children: [
+          {
+            type: 'Control',
+            controlType: 'Badge',
+            text: 'New',
+            modifiers: {},
+            attributes: { variant: 'success' },
+            location: { line: 1, column: 1, offset: 0 },
+          } as ControlNode,
+        ],
+        dataSections: [],
+        attributes: {},
+        location: { line: 1, column: 1, offset: 0 },
+      };
+
+      const svg = renderer.render(doc);
+      expect(svg).toContain('New');
+      expect(svg).toContain('#198754'); // success color
+    });
+
+    it('should render Toast notification', () => {
+      const doc: DocumentNode = {
+        type: 'Document',
+        children: [
+          {
+            type: 'Control',
+            controlType: 'Toast',
+            text: 'Saved!',
+            modifiers: {},
+            attributes: { variant: 'success' },
+            location: { line: 1, column: 1, offset: 0 },
+          } as ControlNode,
+        ],
+        dataSections: [],
+        attributes: {},
+        location: { line: 1, column: 1, offset: 0 },
+      };
+
+      const svg = renderer.render(doc);
+      expect(svg).toContain('Saved!');
+    });
+
+    it('should render Stepper', () => {
+      const doc: DocumentNode = {
+        type: 'Document',
+        children: [
+          {
+            type: 'Control',
+            controlType: 'Stepper',
+            modifiers: {},
+            attributes: { steps: 3, current: 2 },
+            location: { line: 1, column: 1, offset: 0 },
+          } as ControlNode,
+        ],
+        dataSections: [],
+        attributes: {},
+        location: { line: 1, column: 1, offset: 0 },
+      };
+
+      const svg = renderer.render(doc);
+      expect(svg).toContain('<svg');
+      // Step circles should be rendered
+      expect(svg).toContain('<circle');
+    });
+
+    it('should render Heading with level', () => {
+      const doc: DocumentNode = {
+        type: 'Document',
+        children: [
+          {
+            type: 'Control',
+            controlType: 'Heading',
+            text: 'Main Title',
+            modifiers: {},
+            attributes: { level: 1 },
+            location: { line: 1, column: 1, offset: 0 },
+          } as ControlNode,
+        ],
+        dataSections: [],
+        attributes: {},
+        location: { line: 1, column: 1, offset: 0 },
+      };
+
+      const svg = renderer.render(doc);
+      expect(svg).toContain('Main Title');
+      expect(svg).toContain('font-size: 24px'); // h1 size
+    });
+
+    it('should render Link', () => {
+      const doc: DocumentNode = {
+        type: 'Document',
+        children: [
+          {
+            type: 'Control',
+            controlType: 'Link',
+            text: 'Click Here',
+            modifiers: {},
+            attributes: {},
+            location: { line: 1, column: 1, offset: 0 },
+          } as ControlNode,
+        ],
+        dataSections: [],
+        attributes: {},
+        location: { line: 1, column: 1, offset: 0 },
+      };
+
+      const svg = renderer.render(doc);
+      expect(svg).toContain('Click Here');
+      expect(svg).toContain('#0d6efd'); // primary color
+      expect(svg).toContain('underline');
+    });
+
+    it('should render Skeleton', () => {
+      const doc: DocumentNode = {
+        type: 'Document',
+        children: [
+          {
+            type: 'Control',
+            controlType: 'Skeleton',
+            modifiers: {},
+            attributes: { variant: 'text' },
+            location: { line: 1, column: 1, offset: 0 },
+          } as ControlNode,
+        ],
+        dataSections: [],
+        attributes: {},
+        location: { line: 1, column: 1, offset: 0 },
+      };
+
+      const svg = renderer.render(doc);
+      expect(svg).toContain('<rect');
+      expect(svg).toContain('animate'); // animation for skeleton
+    });
+
+    it('should render DataGrid', () => {
+      const doc: DocumentNode = {
+        type: 'Document',
+        children: [
+          {
+            type: 'Control',
+            controlType: 'DataGrid',
+            modifiers: {},
+            attributes: { rows: 3, cols: 2 },
+            location: { line: 1, column: 1, offset: 0 },
+          } as ControlNode,
+        ],
+        dataSections: [],
+        attributes: {},
+        location: { line: 1, column: 1, offset: 0 },
+      };
+
+      const svg = renderer.render(doc);
+      expect(svg).toContain('Column 1');
+      // Should have checkboxes in rows
+      expect(svg).toContain('<rect');
+    });
+
+    it('should render Menu with MenuItem', () => {
+      const doc: DocumentNode = {
+        type: 'Document',
+        children: [
+          {
+            type: 'Control',
+            controlType: 'Menu',
+            text: 'Actions',
+            modifiers: {},
+            attributes: {},
+            location: { line: 1, column: 1, offset: 0 },
+          } as ControlNode,
+          {
+            type: 'Control',
+            controlType: 'MenuItem',
+            text: 'Edit',
+            modifiers: {},
+            attributes: {},
+            location: { line: 2, column: 1, offset: 10 },
+          } as ControlNode,
+        ],
+        dataSections: [],
+        attributes: {},
+        location: { line: 1, column: 1, offset: 0 },
+      };
+
+      const svg = renderer.render(doc);
+      expect(svg).toContain('Actions');
+      expect(svg).toContain('Edit');
+    });
+  });
 });

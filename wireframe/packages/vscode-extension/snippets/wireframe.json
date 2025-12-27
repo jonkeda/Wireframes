@@ -1,0 +1,214 @@
+{
+  "UIWire Document": {
+    "prefix": "uiwire",
+    "body": [
+      "%title: ${1:My Wireframe}",
+      "%theme: ${2|clean,sketch,blueprint,realistic|}",
+      "%device: ${3|desktop,tablet,mobile|}",
+      "",
+      "UIWire \"${1:My Wireframe}\"",
+      "  $0",
+      "/UIWire"
+    ],
+    "description": "Create a new Wireframe document"
+  },
+  "Header Section": {
+    "prefix": "header",
+    "body": [
+      "Header",
+      "  Horizontal",
+      "    Label \"${1:Logo}\"",
+      "    Spacer",
+      "    ${0:// Navigation items}",
+      "  /Horizontal",
+      "/Header"
+    ],
+    "description": "Create a header section"
+  },
+  "Footer Section": {
+    "prefix": "footer",
+    "body": [
+      "Footer",
+      "  Horizontal",
+      "    Label \"${1:© 2024}\"",
+      "    Spacer",
+      "    ${0:// Footer links}",
+      "  /Horizontal",
+      "/Footer"
+    ],
+    "description": "Create a footer section"
+  },
+  "Card Component": {
+    "prefix": "card",
+    "body": [
+      "Card",
+      "  Label \"**${1:Card Title}**\"",
+      "  ${0:// Card content}",
+      "/Card"
+    ],
+    "description": "Create a card component"
+  },
+  "Form": {
+    "prefix": "form",
+    "body": [
+      "Vertical",
+      "  Label \"**${1:Form Title}**\"",
+      "  ",
+      "  Label \"${2:Email}\"",
+      "  TextInput \"${3:Enter email}\" [required]",
+      "  ",
+      "  Label \"${4:Password}\"",
+      "  PasswordInput \"${5:Enter password}\" [required]",
+      "  ",
+      "  Horizontal",
+      "    Button \"${6:Submit}\" [primary]",
+      "    Button \"${7:Cancel}\"",
+      "  /Horizontal",
+      "/Vertical"
+    ],
+    "description": "Create a form with inputs"
+  },
+  "Login Form": {
+    "prefix": "loginform",
+    "body": [
+      "Card",
+      "  Label \"**Login**\"",
+      "  ",
+      "  Label \"Email\"",
+      "  TextInput \"Enter your email\" [required]",
+      "  ",
+      "  Label \"Password\"",
+      "  PasswordInput \"Enter password\" [required]",
+      "  ",
+      "  Checkbox \"Remember me\"",
+      "  ",
+      "  Button \"Sign In\" [primary]",
+      "  ",
+      "  Separator",
+      "  ",
+      "  Label \"Don't have an account?\"",
+      "  Link \"Sign up\"",
+      "/Card"
+    ],
+    "description": "Create a login form"
+  },
+  "Navigation Tabs": {
+    "prefix": "tabs",
+    "body": [
+      "Horizontal",
+      "  Tab \"${1:Tab 1}\" [active]",
+      "  Tab \"${2:Tab 2}\"",
+      "  Tab \"${3:Tab 3}\"",
+      "/Horizontal"
+    ],
+    "description": "Create navigation tabs"
+  },
+  "Data Table": {
+    "prefix": "table",
+    "body": [
+      "Vertical",
+      "  Label \"**${1:Table Title}**\"",
+      "  Table rows=${2:5} cols=${3:4}",
+      "  Pagination page=1 total=${4:10}",
+      "/Vertical"
+    ],
+    "description": "Create a data table with pagination"
+  },
+  "Sidebar Navigation": {
+    "prefix": "sidebar",
+    "body": [
+      "Sidebar",
+      "  Menu \"${1:Navigation}\"",
+      "    MenuItem \"Dashboard\" \\$icon:home",
+      "    MenuItem \"Users\" \\$icon:user",
+      "    MenuItem \"Settings\" \\$icon:settings",
+      "    Separator",
+      "    MenuItem \"Logout\"",
+      "  /Menu",
+      "/Sidebar"
+    ],
+    "description": "Create a sidebar navigation"
+  },
+  "Button Group": {
+    "prefix": "buttons",
+    "body": [
+      "Horizontal",
+      "  Button \"${1:Primary}\" [primary]",
+      "  Button \"${2:Secondary}\"",
+      "  Button \"${3:Disabled}\" [disabled]",
+      "/Horizontal"
+    ],
+    "description": "Create a group of buttons"
+  },
+  "Grid Layout": {
+    "prefix": "grid",
+    "body": [
+      "Grid",
+      "  ${0:// Grid items}",
+      "/Grid"
+    ],
+    "description": "Create a 2-column grid layout"
+  },
+  "Vertical Layout": {
+    "prefix": "vertical",
+    "body": [
+      "Vertical",
+      "  ${0:// Vertical items}",
+      "/Vertical"
+    ],
+    "description": "Create a vertical layout"
+  },
+  "Horizontal Layout": {
+    "prefix": "horizontal",
+    "body": [
+      "Horizontal",
+      "  ${0:// Horizontal items}",
+      "/Horizontal"
+    ],
+    "description": "Create a horizontal layout"
+  },
+  "Modal Dialog": {
+    "prefix": "modal",
+    "body": [
+      "Modal",
+      "  Label \"**${1:Dialog Title}**\"",
+      "  Separator",
+      "  ",
+      "  ${0:// Dialog content}",
+      "  ",
+      "  Separator",
+      "  Horizontal",
+      "    Spacer",
+      "    Button \"Cancel\"",
+      "    Button \"Confirm\" [primary]",
+      "  /Horizontal",
+      "/Modal"
+    ],
+    "description": "Create a modal dialog"
+  },
+  "Stepper Progress": {
+    "prefix": "stepper",
+    "body": [
+      "Stepper steps=${1:4} current=${2:1}"
+    ],
+    "description": "Create a stepper progress indicator"
+  },
+  "Accordion": {
+    "prefix": "accordion",
+    "body": [
+      "Accordion",
+      "  AccordionSection \"${1:Section 1}\" [expanded]",
+      "  AccordionSection \"${2:Section 2}\"",
+      "  AccordionSection \"${3:Section 3}\"",
+      "/Accordion"
+    ],
+    "description": "Create an accordion"
+  },
+  "Breadcrumb": {
+    "prefix": "breadcrumb",
+    "body": [
+      "Breadcrumb \"${1:Home}, ${2:Section}, ${3:Page}\""
+    ],
+    "description": "Create breadcrumb navigation"
+  }
+}

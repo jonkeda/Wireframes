@@ -1,4 +1,4 @@
-# UIMMD Theming System
+# Wireframe Theming System
 
 ## Document Information
 - **Version:** 1.0
@@ -10,7 +10,7 @@
 
 ## 1. Overview
 
-This document describes the UIMMD theming system, which provides four built-in wireframe styles and supports custom themes.
+This document describes the Wireframe theming system, which provides four built-in wireframe styles and supports custom themes.
 
 ---
 
@@ -510,37 +510,37 @@ export const realisticTheme: Theme = {
 
 :root {
     /* Base Colors */
-    --uimmd-bg: var(--uimmd-theme-bg, #ffffff);
-    --uimmd-fg: var(--uimmd-theme-fg, #ffffff);
-    --uimmd-text: var(--uimmd-theme-text, #333333);
-    --uimmd-primary: var(--uimmd-theme-primary, #0066cc);
-    --uimmd-primary-text: var(--uimmd-theme-primary-text, #ffffff);
-    --uimmd-secondary: var(--uimmd-theme-secondary, #6c757d);
-    --uimmd-border: var(--uimmd-theme-border, #cccccc);
-    --uimmd-placeholder: var(--uimmd-theme-placeholder, #999999);
-    --uimmd-disabled: var(--uimmd-theme-disabled, #e0e0e0);
+    --Wireframe-bg: var(--Wireframe-theme-bg, #ffffff);
+    --Wireframe-fg: var(--Wireframe-theme-fg, #ffffff);
+    --Wireframe-text: var(--Wireframe-theme-text, #333333);
+    --Wireframe-primary: var(--Wireframe-theme-primary, #0066cc);
+    --Wireframe-primary-text: var(--Wireframe-theme-primary-text, #ffffff);
+    --Wireframe-secondary: var(--Wireframe-theme-secondary, #6c757d);
+    --Wireframe-border: var(--Wireframe-theme-border, #cccccc);
+    --Wireframe-placeholder: var(--Wireframe-theme-placeholder, #999999);
+    --Wireframe-disabled: var(--Wireframe-theme-disabled, #e0e0e0);
     
     /* Status Colors */
-    --uimmd-error: var(--uimmd-theme-error, #dc3545);
-    --uimmd-success: var(--uimmd-theme-success, #28a745);
-    --uimmd-warning: var(--uimmd-theme-warning, #ffc107);
-    --uimmd-info: var(--uimmd-theme-info, #17a2b8);
+    --Wireframe-error: var(--Wireframe-theme-error, #dc3545);
+    --Wireframe-success: var(--Wireframe-theme-success, #28a745);
+    --Wireframe-warning: var(--Wireframe-theme-warning, #ffc107);
+    --Wireframe-info: var(--Wireframe-theme-info, #17a2b8);
     
     /* Typography */
-    --uimmd-font-family: var(--uimmd-theme-font, sans-serif);
-    --uimmd-font-size: var(--uimmd-theme-font-size, 14px);
-    --uimmd-line-height: var(--uimmd-theme-line-height, 1.5);
+    --Wireframe-font-family: var(--Wireframe-theme-font, sans-serif);
+    --Wireframe-font-size: var(--Wireframe-theme-font-size, 14px);
+    --Wireframe-line-height: var(--Wireframe-theme-line-height, 1.5);
     
     /* Spacing */
-    --uimmd-spacing: var(--uimmd-theme-spacing, 8px);
-    --uimmd-padding: var(--uimmd-theme-padding, 8px 16px);
+    --Wireframe-spacing: var(--Wireframe-theme-spacing, 8px);
+    --Wireframe-padding: var(--Wireframe-theme-padding, 8px 16px);
     
     /* Borders */
-    --uimmd-border-width: var(--uimmd-theme-border-width, 1px);
-    --uimmd-border-radius: var(--uimmd-theme-border-radius, 4px);
+    --Wireframe-border-width: var(--Wireframe-theme-border-width, 1px);
+    --Wireframe-border-radius: var(--Wireframe-theme-border-radius, 4px);
     
     /* Shadows */
-    --uimmd-shadow: var(--uimmd-theme-shadow, 0 2px 4px rgba(0,0,0,0.1));
+    --Wireframe-shadow: var(--Wireframe-theme-shadow, 0 2px 4px rgba(0,0,0,0.1));
 }
 ```
 
@@ -550,86 +550,86 @@ export const realisticTheme: Theme = {
 /* src/themes/components.css */
 
 /* Button */
-.uimmd-button {
-    fill: var(--uimmd-fg);
-    stroke: var(--uimmd-border);
-    stroke-width: var(--uimmd-border-width);
+.wire-button {
+    fill: var(--Wireframe-fg);
+    stroke: var(--Wireframe-border);
+    stroke-width: var(--Wireframe-border-width);
 }
 
-.uimmd-button text {
-    fill: var(--uimmd-text);
-    font-family: var(--uimmd-font-family);
-    font-size: var(--uimmd-font-size);
+.wire-button text {
+    fill: var(--Wireframe-text);
+    font-family: var(--Wireframe-font-family);
+    font-size: var(--Wireframe-font-size);
 }
 
-.uimmd-button.primary {
-    fill: var(--uimmd-primary);
-    stroke: var(--uimmd-primary);
+.wire-button.primary {
+    fill: var(--Wireframe-primary);
+    stroke: var(--Wireframe-primary);
 }
 
-.uimmd-button.primary text {
-    fill: var(--uimmd-primary-text);
+.wire-button.primary text {
+    fill: var(--Wireframe-primary-text);
 }
 
-.uimmd-button.secondary {
-    fill: var(--uimmd-secondary);
-    stroke: var(--uimmd-secondary);
+.wire-button.secondary {
+    fill: var(--Wireframe-secondary);
+    stroke: var(--Wireframe-secondary);
 }
 
-.uimmd-button.disabled {
-    fill: var(--uimmd-disabled);
-    stroke: var(--uimmd-disabled);
+.wire-button.disabled {
+    fill: var(--Wireframe-disabled);
+    stroke: var(--Wireframe-disabled);
     opacity: 0.6;
 }
 
 /* Input */
-.uimmd-input {
-    fill: var(--uimmd-fg);
-    stroke: var(--uimmd-border);
-    stroke-width: var(--uimmd-border-width);
+.wire-input {
+    fill: var(--Wireframe-fg);
+    stroke: var(--Wireframe-border);
+    stroke-width: var(--Wireframe-border-width);
 }
 
-.uimmd-input text.placeholder {
-    fill: var(--uimmd-placeholder);
+.wire-input text.placeholder {
+    fill: var(--Wireframe-placeholder);
     font-style: italic;
 }
 
-.uimmd-input .required-indicator {
-    fill: var(--uimmd-error);
+.wire-input .required-indicator {
+    fill: var(--Wireframe-error);
 }
 
 /* Card */
-.uimmd-card {
-    fill: var(--uimmd-fg);
-    stroke: var(--uimmd-border);
-    filter: drop-shadow(var(--uimmd-shadow));
+.wire-card {
+    fill: var(--Wireframe-fg);
+    stroke: var(--Wireframe-border);
+    filter: drop-shadow(var(--Wireframe-shadow));
 }
 
 /* Header */
-.uimmd-header {
-    fill: var(--uimmd-bg);
-    stroke: var(--uimmd-border);
+.wire-header {
+    fill: var(--Wireframe-bg);
+    stroke: var(--Wireframe-border);
 }
 
 /* Alert types */
-.uimmd-alert.error {
-    fill: color-mix(in srgb, var(--uimmd-error) 10%, white);
-    stroke: var(--uimmd-error);
+.wire-alert.error {
+    fill: color-mix(in srgb, var(--Wireframe-error) 10%, white);
+    stroke: var(--Wireframe-error);
 }
 
-.uimmd-alert.success {
-    fill: color-mix(in srgb, var(--uimmd-success) 10%, white);
-    stroke: var(--uimmd-success);
+.wire-alert.success {
+    fill: color-mix(in srgb, var(--Wireframe-success) 10%, white);
+    stroke: var(--Wireframe-success);
 }
 
-.uimmd-alert.warning {
-    fill: color-mix(in srgb, var(--uimmd-warning) 10%, white);
-    stroke: var(--uimmd-warning);
+.wire-alert.warning {
+    fill: color-mix(in srgb, var(--Wireframe-warning) 10%, white);
+    stroke: var(--Wireframe-warning);
 }
 
-.uimmd-alert.info {
-    fill: color-mix(in srgb, var(--uimmd-info) 10%, white);
-    stroke: var(--uimmd-info);
+.wire-alert.info {
+    fill: color-mix(in srgb, var(--Wireframe-info) 10%, white);
+    stroke: var(--Wireframe-info);
 }
 ```
 
@@ -806,39 +806,39 @@ export function applyTheme(theme: Theme, container: SVGElement): void {
     // Set CSS variables on container
     const style = container.style;
     
-    style.setProperty('--uimmd-theme-bg', theme.backgroundColor);
-    style.setProperty('--uimmd-theme-fg', theme.foregroundColor);
-    style.setProperty('--uimmd-theme-text', theme.textColor);
-    style.setProperty('--uimmd-theme-primary', theme.primaryColor);
-    style.setProperty('--uimmd-theme-primary-text', theme.primaryTextColor);
-    style.setProperty('--uimmd-theme-secondary', theme.secondaryColor);
-    style.setProperty('--uimmd-theme-border', theme.borderColor);
-    style.setProperty('--uimmd-theme-placeholder', theme.placeholderColor);
-    style.setProperty('--uimmd-theme-disabled', theme.disabledColor);
+    style.setProperty('--Wireframe-theme-bg', theme.backgroundColor);
+    style.setProperty('--Wireframe-theme-fg', theme.foregroundColor);
+    style.setProperty('--Wireframe-theme-text', theme.textColor);
+    style.setProperty('--Wireframe-theme-primary', theme.primaryColor);
+    style.setProperty('--Wireframe-theme-primary-text', theme.primaryTextColor);
+    style.setProperty('--Wireframe-theme-secondary', theme.secondaryColor);
+    style.setProperty('--Wireframe-theme-border', theme.borderColor);
+    style.setProperty('--Wireframe-theme-placeholder', theme.placeholderColor);
+    style.setProperty('--Wireframe-theme-disabled', theme.disabledColor);
     
-    style.setProperty('--uimmd-theme-error', theme.errorColor);
-    style.setProperty('--uimmd-theme-success', theme.successColor);
-    style.setProperty('--uimmd-theme-warning', theme.warningColor);
-    style.setProperty('--uimmd-theme-info', theme.infoColor);
+    style.setProperty('--Wireframe-theme-error', theme.errorColor);
+    style.setProperty('--Wireframe-theme-success', theme.successColor);
+    style.setProperty('--Wireframe-theme-warning', theme.warningColor);
+    style.setProperty('--Wireframe-theme-info', theme.infoColor);
     
-    style.setProperty('--uimmd-theme-font', theme.fontFamily);
-    style.setProperty('--uimmd-theme-font-size', `${theme.fontSize}px`);
-    style.setProperty('--uimmd-theme-line-height', String(theme.lineHeight));
+    style.setProperty('--Wireframe-theme-font', theme.fontFamily);
+    style.setProperty('--Wireframe-theme-font-size', `${theme.fontSize}px`);
+    style.setProperty('--Wireframe-theme-line-height', String(theme.lineHeight));
     
-    style.setProperty('--uimmd-theme-spacing', `${theme.spacing}px`);
-    style.setProperty('--uimmd-theme-border-width', `${theme.borderWidth}px`);
-    style.setProperty('--uimmd-theme-border-radius', `${theme.borderRadius}px`);
+    style.setProperty('--Wireframe-theme-spacing', `${theme.spacing}px`);
+    style.setProperty('--Wireframe-theme-border-width', `${theme.borderWidth}px`);
+    style.setProperty('--Wireframe-theme-border-radius', `${theme.borderRadius}px`);
     
     if (theme.shadowEnabled) {
         const shadow = `${theme.shadowOffset.x}px ${theme.shadowOffset.y}px ${theme.shadowBlur}px ${theme.shadowColor}`;
-        style.setProperty('--uimmd-theme-shadow', shadow);
+        style.setProperty('--Wireframe-theme-shadow', shadow);
     } else {
-        style.setProperty('--uimmd-theme-shadow', 'none');
+        style.setProperty('--Wireframe-theme-shadow', 'none');
     }
 
     // Add theme class
-    container.classList.remove('uimmd-theme-sketch', 'uimmd-theme-clean', 'uimmd-theme-blueprint', 'uimmd-theme-realistic');
-    container.classList.add(`uimmd-theme-${theme.name}`);
+    container.classList.remove('Wireframe-theme-sketch', 'Wireframe-theme-clean', 'Wireframe-theme-blueprint', 'Wireframe-theme-realistic');
+    container.classList.add(`Wireframe-theme-${theme.name}`);
 }
 ```
 
@@ -864,9 +864,9 @@ const darkTheme = themeManager.extend('clean', {
 themeManager.register(darkTheme);
 ```
 
-### 8.2 Theme Configuration in UIMMD
+### 8.2 Theme Configuration in Wireframe
 
-```uimmd
+```Wireframe
 uiwire clean
     %theme-primary: #ff5722
     %theme-border-radius: 8
@@ -946,4 +946,4 @@ function validateTheme(theme: Theme): ValidationResult[] {
 
 ---
 
-*UIMMD Theming System v1.0 - 2025*
+*Wireframe Theming System v1.0 - 2025*

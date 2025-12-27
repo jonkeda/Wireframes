@@ -53,6 +53,8 @@ const DEFAULT_SIZES = {
   input: { width: 200, height: 36 },
   textarea: { width: 300, height: 100 },
   label: { width: 100, height: 20 },
+  heading: { width: 200, height: 32 },
+  link: { width: 100, height: 20 },
   checkbox: { width: 150, height: 24 },
   radio: { width: 150, height: 24 },
   dropdown: { width: 200, height: 36 },
@@ -68,6 +70,21 @@ const DEFAULT_SIZES = {
   chip: { width: 80, height: 28 },
   card: { width: 300, height: 200 },
   panel: { width: 300, height: 200 },
+  tabs: { width: 300, height: 40 },
+  tab: { width: 100, height: 40 },
+  menu: { width: 180, height: 200 },
+  menuItem: { width: 180, height: 36 },
+  breadcrumb: { width: 300, height: 24 },
+  pagination: { width: 300, height: 36 },
+  table: { width: 400, height: 200 },
+  tree: { width: 250, height: 200 },
+  treeItem: { width: 250, height: 32 },
+  accordion: { width: 300, height: 200 },
+  accordionSection: { width: 300, height: 48 },
+  dataGrid: { width: 500, height: 300 },
+  toast: { width: 320, height: 56 },
+  skeleton: { width: 200, height: 20 },
+  stepper: { width: 400, height: 60 },
 };
 
 /**
@@ -336,6 +353,10 @@ export class LayoutEngine {
         return this.layoutGrid(children, context, effectiveGap);
       case 'Dock':
         return this.layoutDock(children, context);
+      case 'Canvas':
+        return this.layoutCanvas(children, context);
+      case 'Scroll':
+        return this.layoutVertical(children, context, effectiveGap); // Scroll is visual, layout same as vertical
       default:
         return this.layoutVertical(children, context, effectiveGap);
     }
@@ -401,9 +422,79 @@ export class LayoutEngine {
    * Layout children in a grid
    */
   private layoutGrid(children: ElementNode[], context: LayoutContext, gap: number): LayoutInfo[] {
-    // For MVP, treat grid as vertical layout
-    // Full grid implementation would parse cols/rows attributes
-    return this.layoutVertical(children, context, gap);
+    const layouts: LayoutInfo[] = [];
+    
+    // Determine grid columns - default to 2 if not specified
+    let cols = 2;
+    
+    // Calculate cell dimensions
+    const cellWidth = (context.availableWidth - gap * (cols - 1)) / cols;
+    let row = 0;
+    let col = 0;
+    let rowHeight = 0;
+    let y = context.y;
+
+    for (const child of children) {
+      const x = context.x + col * (cellWidth + gap);
+      
+      const childContext: LayoutContext = {
+        x,
+        y,
+        availableWidth: cellWidth,
+        availableHeight: context.availableHeight - (y - context.y),
+        theme: this.theme,
+      };
+
+      const layout = this.layoutElement(child, childContext);
+      
+      // Adjust width to fit cell if needed
+      if (layout.bounds.width > cellWidth) {
+        layout.bounds.width = cellWidth;
+      }
+      
+      layouts.push(layout);
+      rowHeight = Math.max(rowHeight, layout.bounds.height);
+
+      col++;
+      if (col >= cols) {
+        col = 0;
+        row++;
+        y += rowHeight + gap;
+        rowHeight = 0;
+      }
+    }
+
+    return layouts;
+  }
+
+  /**
+   * Layout children with canvas (absolute) positioning
+   */
+  private layoutCanvas(children: ElementNode[], context: LayoutContext): LayoutInfo[] {
+    const layouts: LayoutInfo[] = [];
+
+    for (const child of children) {
+      // Get explicit x, y positions from attributes if available
+      const childX = (isControlNode(child) || isComponentNode(child)) 
+        ? (this.getSizeAttribute(child, 'x') ?? context.x)
+        : context.x;
+      const childY = (isControlNode(child) || isComponentNode(child))
+        ? (this.getSizeAttribute(child, 'y') ?? context.y)
+        : context.y;
+
+      const childContext: LayoutContext = {
+        x: context.x + childX,
+        y: context.y + childY,
+        availableWidth: context.availableWidth,
+        availableHeight: context.availableHeight,
+        theme: this.theme,
+      };
+
+      const layout = this.layoutElement(child, childContext);
+      layouts.push(layout);
+    }
+
+    return layouts;
   }
 
   /**
@@ -549,6 +640,43 @@ export class LayoutEngine {
         return sizes.switch;
       case 'Chip':
         return sizes.chip;
+      case 'Tabs':
+        return sizes.tabs;
+      case 'Tab':
+        const tabWidth = (node.text?.length || 6) * 8 + 24;
+        return { width: Math.max(sizes.tab.width, tabWidth), height: sizes.tab.height };
+      case 'Menu':
+        return sizes.menu;
+      case 'MenuItem':
+        return sizes.menuItem;
+      case 'Breadcrumb':
+        return sizes.breadcrumb;
+      case 'Pagination':
+        return sizes.pagination;
+      case 'Table':
+        return sizes.table;
+      case 'Tree':
+        return sizes.tree;
+      case 'TreeItem':
+        return sizes.treeItem;
+      case 'Accordion':
+        return sizes.accordion;
+      case 'AccordionSection':
+        return sizes.accordionSection;
+      case 'DataGrid':
+        return sizes.dataGrid;
+      case 'Heading':
+        const headingWidth = (node.text?.length || 10) * 12;
+        return { width: Math.max(100, headingWidth), height: sizes.heading.height };
+      case 'Link':
+        const linkWidth = (node.text?.length || 6) * 8;
+        return { width: Math.max(40, linkWidth), height: sizes.link.height };
+      case 'Toast':
+        return sizes.toast;
+      case 'Skeleton':
+        return sizes.skeleton;
+      case 'Stepper':
+        return sizes.stepper;
       default:
         return { width: 100, height: 30 };
     }
@@ -568,7 +696,7 @@ export class LayoutEngine {
     return 0;
   }
 
-  private getSizeAttribute(node: { attributes: Record<string, unknown> }, attr: 'w' | 'h'): number | undefined {
+  private getSizeAttribute(node: { attributes: Record<string, unknown> }, attr: 'w' | 'h' | 'x' | 'y'): number | undefined {
     const value = node.attributes[attr];
     if (typeof value === 'number') {
       return value;

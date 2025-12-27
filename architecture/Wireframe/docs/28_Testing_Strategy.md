@@ -1,4 +1,4 @@
-# UIMMD Testing Strategy
+# Wireframe Testing Strategy
 
 ## Document Information
 - **Version:** 1.0
@@ -10,7 +10,7 @@
 
 ## 1. Overview
 
-This document describes the testing strategy for the UIMMD project, covering unit tests, integration tests, visual regression tests, and end-to-end tests.
+This document describes the testing strategy for the Wireframe project, covering unit tests, integration tests, visual regression tests, and end-to-end tests.
 
 ---
 
@@ -43,10 +43,10 @@ This document describes the testing strategy for the UIMMD project, covering uni
 
 | Package | Line Coverage | Branch Coverage |
 |---------|--------------|-----------------|
-| @uimmd/core | 90% | 85% |
-| @uimmd/mermaid-plugin | 80% | 75% |
-| @uimmd/themes | 80% | 75% |
-| @uimmd/vscode-extension | 70% | 65% |
+| @aspect-ui/wireframe-core | 90% | 85% |
+| @aspect-ui/wireframe-mermaid-plugin | 80% | 75% |
+| @aspect-ui/wireframe-themes | 80% | 75% |
+| @aspect-ui/wireframe-vscode-extension | 70% | 65% |
 
 ---
 
@@ -400,7 +400,7 @@ uiwire clean
             const ast = parse(`uiwire sketch\n    Label "Test"\n/uiwire`);
             const svg = render(ast);
             
-            expect(svg).toContain('uimmd-theme-sketch');
+            expect(svg).toContain('Wireframe-theme-sketch');
         });
     });
 
@@ -413,7 +413,7 @@ uiwire clean
             `);
             const svg = render(ast);
             
-            expect(svg).toContain('class="uimmd-button"');
+            expect(svg).toContain('class="Wireframe-button"');
             expect(svg).toContain('Submit');
         });
 
@@ -656,19 +656,19 @@ describe('Mermaid Integration', () => {
         mermaid.initialize({ startOnLoad: false });
     });
 
-    it('should detect UIMMD syntax', async () => {
-        const isUimmd = await mermaid.detect('uiwire clean\n    Button "Test"\n/uiwire');
-        expect(isUimmd).toBe('uiwire');
+    it('should detect Wireframe syntax', async () => {
+        const isWireframe = await mermaid.detect('uiwire clean\n    Button "Test"\n/uiwire');
+        expect(isWireframe).toBe('uiwire');
     });
 
-    it('should render UIMMD diagram', async () => {
+    it('should render Wireframe diagram', async () => {
         const { svg } = await mermaid.render('test-diagram', `
 uiwire clean
     Button "Mermaid Button"
 /uiwire
         `);
         
-        expect(svg).toContain('uimmd-button');
+        expect(svg).toContain('Wireframe-button');
         expect(svg).toContain('Mermaid Button');
     });
 
@@ -687,7 +687,7 @@ uiwire clean
 /uiwire
         `);
         
-        expect(svg).toContain('uimmd-theme-sketch');
+        expect(svg).toContain('Wireframe-theme-sketch');
     });
 });
 ```
@@ -756,7 +756,7 @@ import percySnapshot from '@percy/playwright';
 test.describe('Percy Visual Tests', () => {
     test('Component Gallery', async ({ page }) => {
         await page.goto('/test/gallery.html');
-        await page.waitForSelector('.uimmd-container');
+        await page.waitForSelector('.wire-container');
         
         await percySnapshot(page, 'Component Gallery');
     });
@@ -767,7 +767,7 @@ test.describe('Percy Visual Tests', () => {
         const themes = ['sketch', 'clean', 'blueprint', 'realistic'];
         for (const theme of themes) {
             await page.click(`[data-theme="${theme}"]`);
-            await page.waitForSelector(`.uimmd-theme-${theme}`);
+            await page.waitForSelector(`.wire-theme-${theme}`);
             await percySnapshot(page, `Theme: ${theme}`);
         }
     });
@@ -810,7 +810,7 @@ test.describe('VSCode Extension', () => {
     });
 
     test('should highlight syntax', async () => {
-        await vscode.openFile('test.uimmd');
+        await vscode.openFile('test.wire');
         await vscode.typeText(`
 uiwire clean
     Button "Test" primary
@@ -823,17 +823,17 @@ uiwire clean
     });
 
     test('should show preview', async () => {
-        await vscode.openFile('test.uimmd');
+        await vscode.openFile('test.wire');
         await vscode.typeText('uiwire clean\n    Button "Test"\n/uiwire');
         
-        await vscode.executeCommand('uimmd.previewSide');
+        await vscode.executeCommand('Wireframe.previewSide');
         
         const preview = await vscode.getPreviewContent();
-        expect(preview).toContain('uimmd-button');
+        expect(preview).toContain('Wireframe-button');
     });
 
     test('should provide completions', async () => {
-        await vscode.openFile('test.uimmd');
+        await vscode.openFile('test.wire');
         await vscode.typeText('uiwire clean\n    But');
         await vscode.triggerCompletion();
         
@@ -842,7 +842,7 @@ uiwire clean
     });
 
     test('should show hover information', async () => {
-        await vscode.openFile('test.uimmd');
+        await vscode.openFile('test.wire');
         await vscode.typeText('uiwire clean\n    Button "Test"\n/uiwire');
         await vscode.hoverWord('Button');
         
@@ -851,7 +851,7 @@ uiwire clean
     });
 
     test('should report diagnostics', async () => {
-        await vscode.openFile('test.uimmd');
+        await vscode.openFile('test.wire');
         await vscode.typeText('uiwire clean\n    Button\n/uiwire');
         
         const diagnostics = await vscode.getDiagnostics();
@@ -873,7 +873,7 @@ test.describe('Browser Rendering', () => {
     test('should render in Chrome', async ({ page }) => {
         await page.goto('/test/render.html');
         
-        const svg = await page.locator('svg.uimmd-container');
+        const svg = await page.locator('svg.wire-container');
         await expect(svg).toBeVisible();
     });
 
@@ -1022,20 +1022,20 @@ describe('Memory Usage', () => {
 tests/
 ... fixtures/
     ... documents/
-    .   ... minimal.uimmd
-    .   ... form-simple.uimmd
-    .   ... form-complex.uimmd
-    .   ... dashboard.uimmd
-    .   ... data-grid.uimmd
-    .   ... all-components.uimmd
+    .   ... minimal.wire
+    .   ... form-simple.wire
+    .   ... form-complex.wire
+    .   ... dashboard.wire
+    .   ... data-grid.wire
+    .   ... all-components.wire
     ... expected/
     .   ... minimal.svg
     .   ... form-simple.svg
     .   ... ...
     ... invalid/
-        ... unclosed-block.uimmd
-        ... duplicate-id.uimmd
-        ... invalid-syntax.uimmd
+        ... unclosed-block.wire
+        ... duplicate-id.wire
+        ... invalid-syntax.wire
         ... ...
 ```
 
@@ -1169,4 +1169,4 @@ jobs:
 
 ---
 
-*UIMMD Testing Strategy v1.0 - 2025*
+*Wireframe Testing Strategy v1.0 - 2025*

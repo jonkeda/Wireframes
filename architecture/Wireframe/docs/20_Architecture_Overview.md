@@ -1,4 +1,4 @@
-# UIMMD Architecture Overview
+# Wireframe Architecture Overview
 
 ## Document Information
 - **Version:** 1.0
@@ -9,10 +9,10 @@
 
 ## 1. Executive Summary
 
-UIMMD (UI Mermaid Markdown) is a text-based wireframe language that extends the Mermaid ecosystem to support UI wireframe diagrams. This document describes the overall architecture for:
+Wireframe is a text-based wireframe language that extends the Mermaid ecosystem to support UI wireframe diagrams. This document describes the overall architecture for:
 
-1. **Mermaid Integration** - Adding UIMMD as a new diagram type to Mermaid.js
-2. **VSCode Extension** - Real-time preview and editing support for `.uimmd` files
+1. **Mermaid Integration** - Adding Wireframe as a new diagram type to Mermaid.js
+2. **VSCode Extension** - Real-time preview and editing support for `.wire` files
 
 ---
 
@@ -31,7 +31,7 @@ UIMMD (UI Mermaid Markdown) is a text-based wireframe language that extends the 
 .         .........................................                       .
 .                             .                                            .
 .                    ...................                                  .
-.                    .   UIMMD Core    .                                  .
+.                    .   Wireframe Core    .                                  .
 .                    .    Library      .                                  .
 .                    ...................                                  .
 .                             .                                            .
@@ -76,7 +76,7 @@ UIMMD (UI Mermaid Markdown) is a text-based wireframe language that extends the 
 
 ```
 ...................................................................
-.                        UIMMD System                              .
+.                        Wireframe System                              .
 ...................................................................
 .                                                                  .
 .  ...........................................................   .
@@ -109,7 +109,7 @@ UIMMD (UI Mermaid Markdown) is a text-based wireframe language that extends the 
 
 | Module | Responsibility |
 |--------|----------------|
-| **Lexer** | Tokenizes UIMMD source text |
+| **Lexer** | Tokenizes Wireframe source text |
 | **Parser** | Builds Abstract Syntax Tree (AST) |
 | **AST** | Represents document structure |
 | **Renderer** | Generates SVG/HTML output |
@@ -224,12 +224,12 @@ interface RenderResult {
 ### 7.1 Mermaid Integration
 
 ```typescript
-// Register UIMMD as a Mermaid diagram type
+// Register Wireframe as a Mermaid diagram type
 mermaid.registerDiagram('uiwire', {
     detector: (text: string) => text.match(/^\s*uiwire\s+(sketch|clean|blueprint|realistic)/),
-    parser: uimmdParser,
-    renderer: uimmdRenderer,
-    styles: uimmdStyles
+    parser: WireframeParser,
+    renderer: WireframeRenderer,
+    styles: WireframeStyles
 });
 ```
 
@@ -239,16 +239,16 @@ mermaid.registerDiagram('uiwire', {
 // Extension activation
 export function activate(context: vscode.ExtensionContext) {
     // Register preview provider
-    const provider = new UimmdPreviewProvider(context);
+    const provider = new WireframePreviewProvider(context);
     context.subscriptions.push(
-        vscode.window.registerWebviewViewProvider('uimmd.preview', provider)
+        vscode.window.registerWebviewViewProvider('Wireframe.preview', provider)
     );
     
     // Register language features
     context.subscriptions.push(
-        vscode.languages.registerCompletionItemProvider('uimmd', new UimmdCompletionProvider()),
-        vscode.languages.registerHoverProvider('uimmd', new UimmdHoverProvider()),
-        vscode.languages.registerDefinitionProvider('uimmd', new UimmdDefinitionProvider())
+        vscode.languages.registerCompletionItemProvider('Wireframe', new WireframeCompletionProvider()),
+        vscode.languages.registerHoverProvider('Wireframe', new WireframeHoverProvider()),
+        vscode.languages.registerDefinitionProvider('Wireframe', new WireframeDefinitionProvider())
     );
 }
 ```
@@ -258,7 +258,7 @@ export function activate(context: vscode.ExtensionContext) {
 ## 8. Package Structure
 
 ```
-uimmd/
+Wireframe/
 ... packages/
 .   ... core/                    # Core library
 .   .   ... src/
@@ -371,4 +371,4 @@ uimmd/
 
 ---
 
-*UIMMD Architecture Overview v1.0 - 2025*
+*Wireframe Architecture Overview v1.0 - 2025*

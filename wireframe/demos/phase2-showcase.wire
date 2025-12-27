@@ -1,0 +1,116 @@
+%title: Phase 2 Features Showcase
+%theme: clean
+%device: desktop
+
+UIWire "Admin Dashboard - Phase 2 Controls"
+  
+  // Header with navigation
+  Header
+    Horizontal
+      Heading "Admin Portal" level=1
+      Spacer
+      Breadcrumb "Home, Dashboard, Reports"
+      Spacer
+      Avatar "John Doe"
+    /Horizontal
+  /Header
+  
+  // Tab navigation
+  Horizontal
+    Tab "Overview" [active]
+    Tab "Users"
+    Tab "Reports"
+    Tab "Settings"
+  /Horizontal
+  
+  Separator
+  
+  // Main content
+  Grid
+    
+    // Left column - Navigation
+    Vertical
+      Menu "Navigation"
+        MenuItem "Dashboard" $icon:home
+        MenuItem "Analytics" $icon:chart
+        MenuItem "Users" $icon:user
+        Separator
+        MenuItem "Settings" $icon:settings
+      /Menu
+      
+      Spacer
+      
+      // Tree navigation
+      Label "**File Explorer**"
+      Tree
+        TreeItem "Documents" [expanded]
+        TreeItem "Reports"
+        TreeItem "Archive"
+      /Tree
+    /Vertical
+    
+    // Right column - Data
+    Vertical
+      
+      // Stats row using badges
+      Horizontal
+        Card
+          Label "Total Users"
+          Heading "1,234" level=2
+          Badge "↑ 12%" variant=success
+        /Card
+        Card
+          Label "Revenue"
+          Heading "$45.2K" level=2
+          Badge "↑ 8%" variant=success  
+        /Card
+        Card
+          Label "Issues"
+          Heading "23" level=2
+          Badge "↓ 5%" variant=warning
+        /Card
+      /Horizontal
+      
+      Spacer
+      
+      // Data table
+      Label "**Recent Activity**"
+      Table rows=5 cols=4
+      
+      // Pagination
+      Pagination page=2 total=10
+      
+      Spacer
+      
+      // Progress indicator
+      Label "**Task Progress**"
+      Stepper steps=4 current=2
+      
+      Spacer
+      
+      // Accordion
+      Label "**FAQ**"
+      Accordion
+        AccordionSection "How do I get started?" [expanded]
+        AccordionSection "What are the pricing plans?"
+        AccordionSection "How to contact support?"
+      /Accordion
+      
+    /Vertical
+  /Grid
+  
+  // Footer with notifications
+  Footer
+    Horizontal
+      Link "Documentation"
+      Link "Support"
+      Link "Privacy Policy"
+      Spacer
+      Label "v2.0.0"
+    /Horizontal
+  /Footer
+  
+  // Toast notification example (positioned via canvas later)
+  Toast "Changes saved successfully!" variant=success
+
+/UIWire

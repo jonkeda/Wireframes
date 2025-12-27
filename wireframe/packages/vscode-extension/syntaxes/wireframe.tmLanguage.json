@@ -1,0 +1,135 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Wireframe",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#directives" },
+    { "include": "#strings" },
+    { "include": "#keywords" },
+    { "include": "#controls" },
+    { "include": "#layouts" },
+    { "include": "#sections" },
+    { "include": "#modifiers" },
+    { "include": "#attributes" },
+    { "include": "#identifiers" },
+    { "include": "#numbers" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.wireframe",
+          "match": "//.*$"
+        }
+      ]
+    },
+    "directives": {
+      "patterns": [
+        {
+          "name": "keyword.control.directive.wireframe",
+          "match": "^\\s*%[a-zA-Z]+:"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.wireframe",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.wireframe",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.wireframe",
+          "match": "\\b(UIWire|If|Else|ElseIf|EndIf|Repeat|Data|Validations|Calculations|Rules|Fields|Component)\\b"
+        },
+        {
+          "name": "keyword.control.closing.wireframe",
+          "match": "/[A-Z][a-zA-Z]*\\b"
+        }
+      ]
+    },
+    "controls": {
+      "patterns": [
+        {
+          "name": "entity.name.type.control.wireframe",
+          "match": "\\b(Button|IconButton|TextInput|NumberInput|DateInput|PasswordInput|TextArea|Label|Heading|Link|Checkbox|Radio|Dropdown|Option|Separator|Spacer|Icon|Image|Avatar|Badge|Progress|Slider|Switch|Chip|Tabs|Tab|Menu|MenuItem|Breadcrumb|Pagination|Table|Tree|TreeItem|Accordion|AccordionSection|DataGrid|Toast|Skeleton|Stepper)\\b"
+        }
+      ]
+    },
+    "layouts": {
+      "patterns": [
+        {
+          "name": "entity.name.type.layout.wireframe",
+          "match": "\\b(Grid|Vertical|Horizontal|Dock|Canvas|Scroll)\\b"
+        }
+      ]
+    },
+    "sections": {
+      "patterns": [
+        {
+          "name": "entity.name.type.section.wireframe",
+          "match": "\\b(Header|Footer|Sidebar|Content|Panel|Card|Toolbar|Statusbar|Modal|Drawer|Dialog|Alert)\\b"
+        }
+      ]
+    },
+    "modifiers": {
+      "patterns": [
+        {
+          "name": "storage.modifier.wireframe",
+          "match": "\\[(primary|secondary|required|disabled|checked|selected|readonly|editable|active|expanded)\\]"
+        }
+      ]
+    },
+    "attributes": {
+      "patterns": [
+        {
+          "name": "variable.parameter.wireframe",
+          "match": "\\b[a-z][a-zA-Z0-9]*(?==)"
+        },
+        {
+          "name": "keyword.operator.assignment.wireframe",
+          "match": "="
+        }
+      ]
+    },
+    "identifiers": {
+      "patterns": [
+        {
+          "name": "variable.other.id.wireframe",
+          "match": ":[a-zA-Z][a-zA-Z0-9_]*"
+        },
+        {
+          "name": "variable.other.binding.wireframe",
+          "match": "\\.[a-zA-Z][a-zA-Z0-9_.]*"
+        },
+        {
+          "name": "variable.other.navigation.wireframe",
+          "match": "@[a-zA-Z][a-zA-Z0-9_]*"
+        },
+        {
+          "name": "variable.other.icon.wireframe",
+          "match": "\\$icon:[a-zA-Z][a-zA-Z0-9_-]*"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.wireframe",
+          "match": "\\b\\d+(\\.\\d+)?\\b"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.wireframe"
+}

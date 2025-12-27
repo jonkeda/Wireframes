@@ -1,12 +1,12 @@
-# UIMMD Language Specification v7
+# Wireframe Language Specification v7
 
-Complete specification for the UIMMD (UI Mermaid Markdown) wireframe language with keyword-based syntax.
+Complete specification for the Wireframe wireframe language with keyword-based syntax.
 
 ---
 
 ## Overview
 
-UIMMD is a text-based wireframe language that:
+Wireframe is a text-based wireframe language that:
 - Uses simple, readable **keyword-based syntax**
 - Is easy to learn and AI-friendly
 - Renders to HTML wireframe previews
@@ -15,7 +15,7 @@ UIMMD is a text-based wireframe language that:
 - Is version control friendly
 
 ### File Extension
-`.uimmd`
+`.wire`
 
 ### Design Philosophy
 - **Keywords over symbols** - Self-documenting syntax
@@ -27,7 +27,7 @@ UIMMD is a text-based wireframe language that:
 
 ## Document Structure
 
-```uimmd
+```Wireframe
 uiwire sketch
     %title: Page Title
     %version: 1.0
@@ -42,7 +42,7 @@ uiwire sketch
 
 All document-level attributes use `%name: value` syntax:
 
-```uimmd
+```Wireframe
 %title: My Wireframe
 %version: 2.0
 %author: Design Team
@@ -66,7 +66,7 @@ Specify style after `uiwire`:
 
 ## Comments
 
-```uimmd
+```Wireframe
 // Single line comment
 
 /*
@@ -81,7 +81,7 @@ Specify style after `uiwire`:
 
 All blocks use `/keyword` closing syntax:
 
-```uimmd
+```Wireframe
 Grid
     Vertical
         Button "Click me"
@@ -104,7 +104,7 @@ Grid
 
 ### Grid Layout
 
-```uimmd
+```Wireframe
 Grid rows=3 cols=2 gap=16
     // Content with grid= positioning
 /Grid
@@ -112,7 +112,7 @@ Grid rows=3 cols=2 gap=16
 
 ### Vertical / Horizontal Layout
 
-```uimmd
+```Wireframe
 Vertical gap=8 align=center
     Button "Button 1"
     Button "Button 2"
@@ -132,7 +132,7 @@ Horizontal gap=16 justify=end
 
 ### Dock Layout
 
-```uimmd
+```Wireframe
 Dock
     Header dock=top h=60
         Label "Title"
@@ -171,7 +171,7 @@ Dock
 
 ### Button
 
-```uimmd
+```Wireframe
 Button "Text"                           // Regular button
 Button "Text" :btnId                    // With ID
 Button "Text" primary                   // Primary style
@@ -188,7 +188,7 @@ IconButton $save "Save" primary         // Primary style
 
 ### TextInput
 
-```uimmd
+```Wireframe
 TextInput "placeholder" :id             // Text input
 TextInput "placeholder" :id required    // Required
 TextInput "placeholder" :id ?binding    // With binding
@@ -197,7 +197,7 @@ TextInput "placeholder" :id required ?user.name   // Combined
 
 ### NumberInput
 
-```uimmd
+```Wireframe
 NumberInput "placeholder" :id           // Number input
 NumberInput "placeholder" :id required  // Required
 NumberInput "0" :txtAge min=0 max=150   // With validation
@@ -205,21 +205,21 @@ NumberInput "0" :txtAge min=0 max=150   // With validation
 
 ### DateInput
 
-```uimmd
+```Wireframe
 DateInput "Select date" :id             // Date input
 DateInput "Select date" :id required    // Required
 ```
 
 ### PasswordInput
 
-```uimmd
+```Wireframe
 PasswordInput "Password" :id            // Password input
 PasswordInput "Password" :id required   // Required
 ```
 
 ### TextArea
 
-```uimmd
+```Wireframe
 TextArea "Enter description" :id        // Multiline text
 TextArea "Bio" :id rows=4               // With row count
 TextArea "Notes" :id ?order.notes       // With binding
@@ -227,7 +227,7 @@ TextArea "Notes" :id ?order.notes       // With binding
 
 ### Label
 
-```uimmd
+```Wireframe
 Label "Plain text"                      // Regular label
 Label "**Bold text**"                   // Bold (markdown)
 Label "*Italic text*"                   // Italic
@@ -238,7 +238,7 @@ Label "Text" :lblId                     // With ID
 
 ### Checkbox
 
-```uimmd
+```Wireframe
 Checkbox "Accept terms" :chkTerms                   // Unchecked
 Checkbox "Accept terms" :chkTerms checked           // Checked
 Checkbox "Accept terms" :chkTerms required          // Required
@@ -247,7 +247,7 @@ Checkbox "Subscribe" :chkNews ?user.newsletter      // With binding
 
 ### Radio
 
-```uimmd
+```Wireframe
 Radio "Option A" :radA                  // Unselected
 Radio "Option A" :radA selected         // Selected
 Radio "Option A" :radA group=colors     // In named group
@@ -255,7 +255,7 @@ Radio "Option A" :radA group=colors     // In named group
 
 ### Dropdown
 
-```uimmd
+```Wireframe
 Dropdown :ddlCountry
     Option "Select..."
     Option "USA"
@@ -275,7 +275,7 @@ Dropdown "USA" "Canada" "UK" :ddlCountry
 
 ### Separator and Spacer
 
-```uimmd
+```Wireframe
 Separator                               // Horizontal line
 Spacer                                  // Flexible spacer
 ```
@@ -286,7 +286,7 @@ Spacer                                  // Flexible spacer
 
 ### Icon
 
-```uimmd
+```Wireframe
 Icon $settings                          // Standalone icon
 Icon $settings tooltip="Open settings"  // With tooltip
 Icon $info :iconHelp                    // With ID
@@ -305,7 +305,7 @@ Icon $info :iconHelp                    // With ID
 
 ### Image
 
-```uimmd
+```Wireframe
 Image "logo"                            // By name
 Image "path/to/image.png"               // File path
 Image "avatar" w=64 h=64                // With dimensions
@@ -317,7 +317,7 @@ Image "placeholder"                     // Placeholder
 
 ## Tooltips
 
-```uimmd
+```Wireframe
 Button "Save" tooltip="Save your changes"
 Icon $info tooltip="More information"
 TextInput "Username" :txtUser tooltip="Enter your username"
@@ -329,7 +329,7 @@ TextInput "Username" :txtUser tooltip="Enter your username"
 
 ### Tabs
 
-```uimmd
+```Wireframe
 Tabs :tabMain
     Tab "General"
         Label "General settings content"
@@ -342,7 +342,7 @@ Tabs :tabMain
 
 ### Expander
 
-```uimmd
+```Wireframe
 Expander "Advanced Options" :expAdvanced
     Label "Option 1:"
     TextInput "Value" :txtOpt1
@@ -355,7 +355,7 @@ Expander "Details" expanded=true
 
 ### Tree
 
-```uimmd
+```Wireframe
 Tree :treeNav
     + Root Node
         + Child 1
@@ -368,7 +368,7 @@ Tree :treeNav
 
 ### List
 
-```uimmd
+```Wireframe
 List :lstItems
     - Item 1
     - Item 2
@@ -383,7 +383,7 @@ List :lstNumbered ordered=true
 
 ### Menu
 
-```uimmd
+```Wireframe
 Menu :mnuMain
     MenuItem "File"
         MenuItem "New" @New
@@ -401,7 +401,7 @@ Menu :mnuMain
 
 ### Hamburger
 
-```uimmd
+```Wireframe
 Hamburger :btnMenu
     MenuItem "Home" icon=$home @Home
     MenuItem "Settings" icon=$settings @Settings
@@ -412,7 +412,7 @@ Hamburger :btnMenu
 
 ### Breadcrumb
 
-```uimmd
+```Wireframe
 Breadcrumb
     BreadcrumbItem "Home" @Home
     BreadcrumbItem "Products" @Products
@@ -422,13 +422,13 @@ Breadcrumb
 
 ### Pagination
 
-```uimmd
+```Wireframe
 Pagination pages=10 current=3 :pgNav
 ```
 
 ### Avatar
 
-```uimmd
+```Wireframe
 Avatar "John Doe" :avUser
 Avatar "JD" size=48
 Avatar image="photo.jpg" size=64
@@ -436,34 +436,34 @@ Avatar image="photo.jpg" size=64
 
 ### Badge
 
-```uimmd
+```Wireframe
 Button "Notifications" badge="5"
 Label "Messages" badge="New"
 ```
 
 ### Progress
 
-```uimmd
+```Wireframe
 Progress value=75 :prgUpload
 Progress indeterminate=true
 ```
 
 ### Slider
 
-```uimmd
+```Wireframe
 Slider min=0 max=100 value=50 :sldVolume
 ```
 
 ### Switch
 
-```uimmd
+```Wireframe
 Switch "Dark Mode" :swDark
 Switch "Notifications" :swNotify checked=true
 ```
 
 ### Chip / Tag
 
-```uimmd
+```Wireframe
 Chip "Tag 1"
 Chip "Tag 2" removable=true
 Chip "Active" selected=true
@@ -471,7 +471,7 @@ Chip "Active" selected=true
 
 ### Accordion
 
-```uimmd
+```Wireframe
 Accordion :accFAQ
     AccordionSection "Question 1?"
         Label "Answer to question 1..."
@@ -484,7 +484,7 @@ Accordion :accFAQ
 
 ### Stepper
 
-```uimmd
+```Wireframe
 Stepper :stpWizard
     Step "Account" completed=true
     Step "Details" current=true
@@ -495,7 +495,7 @@ Stepper :stpWizard
 
 ### Dialog
 
-```uimmd
+```Wireframe
 Dialog "Confirm Delete" :dlgConfirm
     Label "Are you sure you want to delete this item?"
     Horizontal justify=end gap=8
@@ -507,7 +507,7 @@ Dialog "Confirm Delete" :dlgConfirm
 
 ### Toast
 
-```uimmd
+```Wireframe
 Toast "Item saved successfully" type=success
 Toast "Error occurred" type=error
 Toast "Please wait..." type=info
@@ -515,7 +515,7 @@ Toast "Please wait..." type=info
 
 ### Alert
 
-```uimmd
+```Wireframe
 Alert type=info
     Label "This is an informational message."
 /Alert
@@ -531,7 +531,7 @@ Alert type=error title="Validation Failed"
 
 ### Skeleton
 
-```uimmd
+```Wireframe
 Skeleton type=text lines=3
 Skeleton type=card
 Skeleton type=avatar
@@ -540,7 +540,7 @@ Skeleton type=image w=200 h=150
 
 ### Hover
 
-```uimmd
+```Wireframe
 Hover :hvPreview
     Card
         Image "preview" w=200 h=150
@@ -557,7 +557,7 @@ Button "View" hover=hvPreview
 
 ### Table
 
-```uimmd
+```Wireframe
 Table :tblUsers
     | Name | Email | Role |
     |------|-------|------|
@@ -568,13 +568,13 @@ Table :tblUsers
 
 ### Placeholder Table
 
-```uimmd
+```Wireframe
 Table :tblData cols="Name,Email,Role" rows=5
 ```
 
 ### DataGrid
 
-```uimmd
+```Wireframe
 DataGrid :dgOrders data=orderItems
     Column field=product header="Product"
     Column field=quantity header="Qty" editable=true align=right
@@ -595,7 +595,7 @@ DataGrid :dgOrders data=orderItems
 
 Use `:` prefix for IDs:
 
-```uimmd
+```Wireframe
 Button "Save" :btnSave
 TextInput "Name" :txtName
 Panel :pnlDetails
@@ -605,7 +605,7 @@ Panel :pnlDetails
 
 Use `?` prefix for bindings:
 
-```uimmd
+```Wireframe
 TextInput "First name" :txtFirst ?customer.firstName
 TextInput "Last name" :txtLast ?customer.lastName
 NumberInput "Age" :txtAge ?customer.age
@@ -619,8 +619,8 @@ Dropdown :ddlStatus ?customer.status
 
 ## Navigation
 
-```uimmd
-Button "Login" @Dashboard              // Navigate to Dashboard.uimmd
+```Wireframe
+Button "Login" @Dashboard              // Navigate to Dashboard.wire
 Button "Cancel" @:back                 // Go back
 Button "Help" @:modal:HelpDialog       // Open as modal
 Label "Terms of Service" @Terms        // Hyperlink
@@ -636,7 +636,7 @@ Label "Terms of Service" @Terms        // Hyperlink
 
 ## Repeat
 
-```uimmd
+```Wireframe
 Repeat 5
     Card
         Label "Card content"
@@ -653,14 +653,14 @@ Repeat 3 Card
 
 ### Grid Positioning
 
-```uimmd
+```Wireframe
 grid=row,col                    // Position
 grid=row,col,rowspan,colspan    // Position + span
 ```
 
 ### Size Attributes
 
-```uimmd
+```Wireframe
 w=200                           // Width: 200px
 h=100                           // Height: 100px
 w=50%                           // Width: 50%
@@ -674,7 +674,7 @@ w=*                             // Width: flex/fill
 
 ### Inline Validation
 
-```uimmd
+```Wireframe
 TextInput "Username" :txtUser required min=3 max=20 pattern=alphanumeric
 TextInput "Email" :txtEmail required pattern=email
 PasswordInput "Password" :txtPass required min=8
@@ -698,7 +698,7 @@ NumberInput "Age" :txtAge min=0 max=150
 
 ### Data Sources
 
-```uimmd
+```Wireframe
 data
     | Source | Type | Fields |
     |--------|------|--------|
@@ -710,7 +710,7 @@ data
 
 ### Validations
 
-```uimmd
+```Wireframe
 validations
     | Field | Rule | Message |
     |-------|------|---------|
@@ -722,7 +722,7 @@ validations
 
 ### Calculations
 
-```uimmd
+```Wireframe
 calculations
     | Field | Formula | Description |
     |-------|---------|-------------|
@@ -734,7 +734,7 @@ calculations
 
 ### Business Rules
 
-```uimmd
+```Wireframe
 rules
     | ID | Condition | Action | Controls | Message |
     |----|-----------|--------|----------|---------|
@@ -746,7 +746,7 @@ rules
 
 ### Fields Documentation
 
-```uimmd
+```Wireframe
 fields
     | ID | Type | Required | Binding | Description |
     |----|------|----------|---------|-------------|
@@ -759,7 +759,7 @@ fields
 
 ## Component Definitions
 
-```uimmd
+```Wireframe
 component FormField
     params: label, id, type="text", required=false, binding=""
     
@@ -790,7 +790,7 @@ FormField label="Age" id="txtAge" type="number" binding="user.age"
 
 ## Responsive Breakpoints
 
-```uimmd
+```Wireframe
 %desktop
 Grid cols=3
     // 3 column layout
@@ -925,7 +925,7 @@ SECTIONS
 
 ## Complete Example
 
-```uimmd
+```Wireframe
 uiwire sketch
     %title: Order Form
     %version: 2.0
@@ -1112,4 +1112,4 @@ fields
 
 ---
 
-*UIMMD Language Specification v7 - 2025*
+*Wireframe Language Specification v7 - 2025*

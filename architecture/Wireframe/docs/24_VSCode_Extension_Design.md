@@ -10,8 +10,8 @@
 
 ## 1. Overview
 
-This document describes the VSCode extension for UIMMD, providing:
-- Live preview of `.uimmd` files
+This document describes the VSCode extension for Wireframe, providing:
+- Live preview of `.wire` files
 - Syntax highlighting
 - IntelliSense (auto-completion, hover, diagnostics)
 - Code navigation
@@ -37,7 +37,7 @@ This document describes the VSCode extension for UIMMD, providing:
 .  ...........................................................   .
 .                              .                                   .
 .  ...........................................................   .
-.  .                    UIMMD Core                            .   .
+.  .                    Wireframe Core                            .   .
 .  .  ...........  ............  ............               .   .
 .  .  . Parser  .  . Renderer .  .  Themes  .               .   .
 .  .  ...........  ............  ............               .   .
@@ -57,7 +57,7 @@ This document describes the VSCode extension for UIMMD, providing:
 ### 2.2 File Structure
 
 ```
-uimmd-vscode/
+Wireframe-vscode/
 ... src/
 .   ... extension.ts              # Extension entry point
 .   ... language/
@@ -81,9 +81,9 @@ uimmd-vscode/
 .       ... debounce.ts
 .       ... config.ts
 ... syntaxes/
-.   ... uimmd.tmLanguage.json     # Syntax highlighting
+.   ... Wireframe.tmLanguage.json     # Syntax highlighting
 ... snippets/
-.   ... uimmd.json                # Code snippets
+.   ... Wireframe.json                # Code snippets
 ... media/
 .   ... icon.png                  # Extension icon
 .   ... preview.js                # Preview script
@@ -100,11 +100,11 @@ uimmd-vscode/
 
 ```json
 {
-    "name": "uimmd",
-    "displayName": "UIMMD Wireframes",
+    "name": "Wireframe",
+    "displayName": "Wireframe Wireframes",
     "description": "UI wireframe language with live preview",
     "version": "1.0.0",
-    "publisher": "uimmd",
+    "publisher": "Wireframe",
     "icon": "media/icon.png",
     "engines": {
         "vscode": "^1.80.0"
@@ -114,23 +114,23 @@ uimmd-vscode/
         "Visualization"
     ],
     "keywords": [
-        "uimmd",
+        "Wireframe",
         "wireframe",
         "ui",
         "mockup",
         "diagram"
     ],
     "activationEvents": [
-        "onLanguage:uimmd",
-        "onCommand:uimmd.preview"
+        "onLanguage:Wireframe",
+        "onCommand:Wireframe.preview"
     ],
     "main": "./dist/extension.js",
     "contributes": {
         "languages": [
             {
-                "id": "uimmd",
-                "aliases": ["UIMMD", "uimmd", "UIWire"],
-                "extensions": [".uimmd"],
+                "id": "Wireframe",
+                "aliases": ["Wireframe", "Wireframe", "UIWire"],
+                "extensions": [".wire"],
                 "configuration": "./language-configuration.json",
                 "icon": {
                     "light": "./media/icon.png",
@@ -140,129 +140,129 @@ uimmd-vscode/
         ],
         "grammars": [
             {
-                "language": "uimmd",
-                "scopeName": "source.uimmd",
-                "path": "./syntaxes/uimmd.tmLanguage.json"
+                "language": "Wireframe",
+                "scopeName": "source.wire",
+                "path": "./syntaxes/Wireframe.tmLanguage.json"
             }
         ],
         "snippets": [
             {
-                "language": "uimmd",
-                "path": "./snippets/uimmd.json"
+                "language": "Wireframe",
+                "path": "./snippets/Wireframe.json"
             }
         ],
         "commands": [
             {
-                "command": "uimmd.preview",
+                "command": "Wireframe.preview",
                 "title": "Open Preview",
-                "category": "UIMMD",
+                "category": "Wireframe",
                 "icon": "$(open-preview)"
             },
             {
-                "command": "uimmd.previewSide",
+                "command": "Wireframe.previewSide",
                 "title": "Open Preview to Side",
-                "category": "UIMMD",
+                "category": "Wireframe",
                 "icon": "$(open-preview)"
             },
             {
-                "command": "uimmd.export.png",
+                "command": "Wireframe.export.png",
                 "title": "Export as PNG",
-                "category": "UIMMD"
+                "category": "Wireframe"
             },
             {
-                "command": "uimmd.export.svg",
+                "command": "Wireframe.export.svg",
                 "title": "Export as SVG",
-                "category": "UIMMD"
+                "category": "Wireframe"
             },
             {
-                "command": "uimmd.insertSnippet",
+                "command": "Wireframe.insertSnippet",
                 "title": "Insert Component",
-                "category": "UIMMD"
+                "category": "Wireframe"
             },
             {
-                "command": "uimmd.format",
+                "command": "Wireframe.format",
                 "title": "Format Document",
-                "category": "UIMMD"
+                "category": "Wireframe"
             }
         ],
         "menus": {
             "editor/title": [
                 {
-                    "command": "uimmd.previewSide",
-                    "when": "editorLangId == uimmd",
+                    "command": "Wireframe.previewSide",
+                    "when": "editorLangId == Wireframe",
                     "group": "navigation"
                 }
             ],
             "editor/context": [
                 {
-                    "command": "uimmd.preview",
-                    "when": "editorLangId == uimmd",
+                    "command": "Wireframe.preview",
+                    "when": "editorLangId == Wireframe",
                     "group": "navigation"
                 },
                 {
-                    "command": "uimmd.insertSnippet",
-                    "when": "editorLangId == uimmd",
+                    "command": "Wireframe.insertSnippet",
+                    "when": "editorLangId == Wireframe",
                     "group": "1_modification"
                 }
             ],
             "commandPalette": [
                 {
-                    "command": "uimmd.preview",
-                    "when": "editorLangId == uimmd"
+                    "command": "Wireframe.preview",
+                    "when": "editorLangId == Wireframe"
                 },
                 {
-                    "command": "uimmd.export.png",
-                    "when": "editorLangId == uimmd"
+                    "command": "Wireframe.export.png",
+                    "when": "editorLangId == Wireframe"
                 },
                 {
-                    "command": "uimmd.export.svg",
-                    "when": "editorLangId == uimmd"
+                    "command": "Wireframe.export.svg",
+                    "when": "editorLangId == Wireframe"
                 }
             ]
         },
         "keybindings": [
             {
-                "command": "uimmd.previewSide",
+                "command": "Wireframe.previewSide",
                 "key": "ctrl+shift+v",
                 "mac": "cmd+shift+v",
-                "when": "editorLangId == uimmd"
+                "when": "editorLangId == Wireframe"
             },
             {
-                "command": "uimmd.format",
+                "command": "Wireframe.format",
                 "key": "shift+alt+f",
-                "when": "editorLangId == uimmd"
+                "when": "editorLangId == Wireframe"
             }
         ],
         "configuration": {
-            "title": "UIMMD",
+            "title": "Wireframe",
             "properties": {
-                "uimmd.preview.theme": {
+                "Wireframe.preview.theme": {
                     "type": "string",
                     "default": "auto",
                     "enum": ["auto", "sketch", "clean", "blueprint", "realistic"],
                     "description": "Default preview theme"
                 },
-                "uimmd.preview.refreshDelay": {
+                "Wireframe.preview.refreshDelay": {
                     "type": "number",
                     "default": 300,
                     "description": "Delay before refreshing preview (ms)"
                 },
-                "uimmd.preview.showGrid": {
+                "Wireframe.preview.showGrid": {
                     "type": "boolean",
                     "default": false,
                     "description": "Show alignment grid in preview"
                 },
-                "uimmd.preview.showIds": {
+                "Wireframe.preview.showIds": {
                     "type": "boolean",
                     "default": false,
                     "description": "Show element IDs in preview"
                 },
-                "uimmd.editor.formatOnSave": {
+                "Wireframe.editor.formatOnSave": {
                     "type": "boolean",
                     "default": false,
                     "description": "Format document on save"
                 },
-                "uimmd.validation.enabled": {
+                "Wireframe.validation.enabled": {
                     "type": "boolean",
                     "default": true,
                     "description": "Enable real-time validation"
@@ -284,7 +284,7 @@ uimmd-vscode/
         "vsce": "^2.15.0"
     },
     "dependencies": {
-        "@uimmd/core": "^1.0.0",
+        "@aspect-ui/wireframe-core": "^1.0.0",
         "vscode-languageclient": "^9.0.0",
         "vscode-languageserver": "^9.0.0"
     }
@@ -301,27 +301,27 @@ uimmd-vscode/
 // src/extension.ts
 
 import * as vscode from 'vscode';
-import { UimmdPreviewProvider } from './preview/provider';
-import { UimmdLanguageClient } from './language/client';
+import { WireframePreviewProvider } from './preview/provider';
+import { WireframeLanguageClient } from './language/client';
 import { registerCommands } from './commands';
 
-let languageClient: UimmdLanguageClient;
-let previewProvider: UimmdPreviewProvider;
+let languageClient: WireframeLanguageClient;
+let previewProvider: WireframePreviewProvider;
 
 export async function activate(context: vscode.ExtensionContext): Promise<void> {
-    console.log('UIMMD extension activating...');
+    console.log('Wireframe extension activating...');
 
     // Initialize language client
-    languageClient = new UimmdLanguageClient(context);
+    languageClient = new WireframeLanguageClient(context);
     await languageClient.start();
 
     // Initialize preview provider
-    previewProvider = new UimmdPreviewProvider(context);
+    previewProvider = new WireframePreviewProvider(context);
 
     // Register preview panel
     context.subscriptions.push(
         vscode.window.registerWebviewViewProvider(
-            'uimmd.preview',
+            'Wireframe.preview',
             previewProvider
         )
     );
@@ -332,7 +332,7 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
     // Register document change listener for live preview
     context.subscriptions.push(
         vscode.workspace.onDidChangeTextDocument(event => {
-            if (event.document.languageId === 'uimmd') {
+            if (event.document.languageId === 'Wireframe') {
                 previewProvider.update(event.document);
             }
         })
@@ -341,13 +341,13 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
     // Register active editor change listener
     context.subscriptions.push(
         vscode.window.onDidChangeActiveTextEditor(editor => {
-            if (editor..document.languageId === 'uimmd') {
+            if (editor..document.languageId === 'Wireframe') {
                 previewProvider.update(editor.document);
             }
         })
     );
 
-    console.log('UIMMD extension activated');
+    console.log('Wireframe extension activated');
 }
 
 export function deactivate(): Thenable<void> | undefined {
@@ -368,11 +368,11 @@ export function deactivate(): Thenable<void> | undefined {
 // src/preview/provider.ts
 
 import * as vscode from 'vscode';
-import { parse, render, Theme, getTheme } from '@uimmd/core';
+import { parse, render, Theme, getTheme } from '@aspect-ui/wireframe-core';
 import { debounce } from '../utils/debounce';
 
-export class UimmdPreviewProvider implements vscode.WebviewViewProvider {
-    public static readonly viewType = 'uimmd.preview';
+export class WireframePreviewProvider implements vscode.WebviewViewProvider {
+    public static readonly viewType = 'Wireframe.preview';
     
     private _view.: vscode.WebviewView;
     private _document.: vscode.TextDocument;
@@ -408,7 +408,7 @@ export class UimmdPreviewProvider implements vscode.WebviewViewProvider {
 
         // Update with current document
         const editor = vscode.window.activeTextEditor;
-        if (editor..document.languageId === 'uimmd') {
+        if (editor..document.languageId === 'Wireframe') {
             this.update(editor.document);
         }
     }
@@ -422,7 +422,7 @@ export class UimmdPreviewProvider implements vscode.WebviewViewProvider {
         if (!this._view || !this._document) return;
 
         const text = this._document.getText();
-        const config = vscode.workspace.getConfiguration('uimmd.preview');
+        const config = vscode.workspace.getConfiguration('Wireframe.preview');
 
         try {
             // Parse document
@@ -466,11 +466,11 @@ export class UimmdPreviewProvider implements vscode.WebviewViewProvider {
           content="default-src 'none'; style-src ${this._view!.webview.cspSource} 'unsafe-inline'; 
                    script-src ${this._view!.webview.cspSource}; img-src ${this._view!.webview.cspSource} data:;">
     <link href="${styleUri}" rel="stylesheet">
-    <title>UIMMD Preview</title>
+    <title>Wireframe Preview</title>
     <style>
         :root {
-            --uimmd-bg: ${theme.backgroundColor};
-            --uimmd-text: ${theme.textColor};
+            --Wireframe-bg: ${theme.backgroundColor};
+            --Wireframe-text: ${theme.textColor};
         }
         body {
             background: var(--vscode-editor-background);
@@ -479,7 +479,7 @@ export class UimmdPreviewProvider implements vscode.WebviewViewProvider {
             justify-content: center;
         }
         .preview-container {
-            background: var(--uimmd-bg);
+            background: var(--Wireframe-bg);
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.15);
             overflow: auto;
@@ -598,7 +598,7 @@ export class UimmdPreviewProvider implements vscode.WebviewViewProvider {
 // src/preview/controller.ts
 
 import * as vscode from 'vscode';
-import { UimmdPreviewProvider } from './provider';
+import { WireframePreviewProvider } from './provider';
 
 export class PreviewController {
     private panels: Map<string, vscode.WebviewPanel> = new Map();
@@ -616,7 +616,7 @@ export class PreviewController {
 
         // Create new panel
         const panel = vscode.window.createWebviewPanel(
-            'uimmd.preview',
+            'Wireframe.preview',
             `Preview: ${this.getFileName(document)}`,
             side . vscode.ViewColumn.Beside : vscode.ViewColumn.Active,
             {
@@ -678,7 +678,7 @@ import {
     TransportKind
 } from 'vscode-languageclient/node';
 
-export class UimmdLanguageClient {
+export class WireframeLanguageClient {
     private client: LanguageClient;
 
     constructor(context: vscode.ExtensionContext) {
@@ -694,15 +694,15 @@ export class UimmdLanguageClient {
         };
 
         const clientOptions: LanguageClientOptions = {
-            documentSelector: [{ scheme: 'file', language: 'uimmd' }],
+            documentSelector: [{ scheme: 'file', language: 'Wireframe' }],
             synchronize: {
-                fileEvents: vscode.workspace.createFileSystemWatcher('**/*.uimmd')
+                fileEvents: vscode.workspace.createFileSystemWatcher('**/*.wire')
             }
         };
 
         this.client = new LanguageClient(
-            'uimmd',
-            'UIMMD Language Server',
+            'Wireframe',
+            'Wireframe Language Server',
             serverOptions,
             clientOptions
         );
@@ -737,7 +737,7 @@ import {
     TextDocumentPositionParams
 } from 'vscode-languageserver/node';
 import { TextDocument } from 'vscode-languageserver-textdocument';
-import { parse, validate, ParseError } from '@uimmd/core';
+import { parse, validate, ParseError } from '@aspect-ui/wireframe-core';
 
 const connection = createConnection(ProposedFeatures.all);
 const documents = new TextDocuments(TextDocument);
@@ -782,7 +782,7 @@ async function validateDocument(document: TextDocument): Promise<void> {
                     end: document.positionAt(error.location.end.offset)
                 },
                 message: error.message,
-                source: 'uimmd'
+                source: 'Wireframe'
             });
         }
     } catch (error) {
@@ -794,7 +794,7 @@ async function validateDocument(document: TextDocument): Promise<void> {
                     end: document.positionAt(text.length)
                 },
                 message: error.message,
-                source: 'uimmd'
+                source: 'Wireframe'
             });
         }
     }
@@ -944,12 +944,12 @@ export function getHover(word: string): Hover | null {
                 info.description,
                 '',
                 '### Syntax',
-                '```uimmd',
+                '```Wireframe',
                 info.syntax,
                 '```',
                 '',
                 '### Example',
-                '```uimmd',
+                '```Wireframe',
                 info.example,
                 '```'
             ].join('\n')
@@ -967,8 +967,8 @@ export function getHover(word: string): Hover | null {
 ```json
 {
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-    "name": "UIMMD",
-    "scopeName": "source.uimmd",
+    "name": "Wireframe",
+    "scopeName": "source.wire",
     "patterns": [
         { "include": "#comments" },
         { "include": "#document" },
@@ -986,11 +986,11 @@ export function getHover(word: string): Hover | null {
         "comments": {
             "patterns": [
                 {
-                    "name": "comment.line.double-slash.uimmd",
+                    "name": "comment.line.double-slash.wire",
                     "match": "//.*$"
                 },
                 {
-                    "name": "comment.block.uimmd",
+                    "name": "comment.block.wire",
                     "begin": "/\\*",
                     "end": "\\*/"
                 }
@@ -999,11 +999,11 @@ export function getHover(word: string): Hover | null {
         "document": {
             "patterns": [
                 {
-                    "name": "keyword.control.uimmd",
+                    "name": "keyword.control.wire",
                     "match": "^\\s*(uiwire|/uiwire)\\b"
                 },
                 {
-                    "name": "constant.language.uimmd",
+                    "name": "constant.language.wire",
                     "match": "\\b(sketch|clean|blueprint|realistic)\\b"
                 }
             ]
@@ -1011,41 +1011,41 @@ export function getHover(word: string): Hover | null {
         "metadata": {
             "match": "^\\s*(%\\w+):\\s*(.*)$",
             "captures": {
-                "1": { "name": "keyword.other.uimmd" },
-                "2": { "name": "string.unquoted.uimmd" }
+                "1": { "name": "keyword.other.wire" },
+                "2": { "name": "string.unquoted.wire" }
             }
         },
         "keywords": {
             "patterns": [
                 {
-                    "name": "keyword.control.layout.uimmd",
+                    "name": "keyword.control.layout.wire",
                     "match": "\\b(Grid|Vertical|Horizontal|Dock|Canvas|Scroll|/Grid|/Vertical|/Horizontal|/Dock|/Canvas|/Scroll)\\b"
                 },
                 {
-                    "name": "keyword.control.section.uimmd",
+                    "name": "keyword.control.section.wire",
                     "match": "\\b(Header|Footer|Sidebar|Content|Panel|Card|Toolbar|Modal|Drawer|/Header|/Footer|/Sidebar|/Content|/Panel|/Card|/Toolbar|/Modal|/Drawer)\\b"
                 }
             ]
         },
         "controls": {
-            "name": "entity.name.type.uimmd",
+            "name": "entity.name.type.wire",
             "match": "\\b(Button|IconButton|TextInput|NumberInput|DateInput|PasswordInput|TextArea|Label|Checkbox|Radio|Dropdown|Option|Separator|Spacer|Icon|Image|Avatar|Progress|Slider|Switch|Chip|Badge)\\b"
         },
         "strings": {
-            "name": "string.quoted.double.uimmd",
+            "name": "string.quoted.double.wire",
             "begin": "\"",
             "end": "\"",
             "patterns": [
                 {
-                    "name": "constant.character.escape.uimmd",
+                    "name": "constant.character.escape.wire",
                     "match": "\\\\."
                 },
                 {
-                    "name": "markup.bold.uimmd",
+                    "name": "markup.bold.wire",
                     "match": "\\*\\*[^*]+\\*\\*"
                 },
                 {
-                    "name": "markup.italic.uimmd",
+                    "name": "markup.italic.wire",
                     "match": "\\*[^*]+\\*"
                 }
             ]
@@ -1053,32 +1053,32 @@ export function getHover(word: string): Hover | null {
         "identifiers": {
             "patterns": [
                 {
-                    "name": "variable.name.uimmd",
+                    "name": "variable.name.wire",
                     "match": ":[a-zA-Z][a-zA-Z0-9]*"
                 },
                 {
-                    "name": "variable.other.binding.uimmd",
+                    "name": "variable.other.binding.wire",
                     "match": "\\.[a-zA-Z][a-zA-Z0-9.]*"
                 }
             ]
         },
         "icons": {
-            "name": "constant.other.icon.uimmd",
+            "name": "constant.other.icon.wire",
             "match": "\\$[a-zA-Z][a-zA-Z0-9]*"
         },
         "navigation": {
-            "name": "entity.name.function.uimmd",
+            "name": "entity.name.function.wire",
             "match": "@[a-zA-Z:][a-zA-Z0-9:]*"
         },
         "attributes": {
             "match": "\\b([a-z]+)\\s*=\\s*([^\\s]+)",
             "captures": {
-                "1": { "name": "entity.other.attribute-name.uimmd" },
-                "2": { "name": "constant.other.uimmd" }
+                "1": { "name": "entity.other.attribute-name.wire" },
+                "2": { "name": "constant.other.wire" }
             }
         },
         "modifiers": {
-            "name": "keyword.other.modifier.uimmd",
+            "name": "keyword.other.modifier.wire",
             "match": "\\b(primary|secondary|required|disabled|checked|selected)\\b"
         }
     }
@@ -1102,7 +1102,7 @@ export function getHover(word: string): Hover | null {
             "    $0",
             "/uiwire"
         ],
-        "description": "Create a new UIMMD document"
+        "description": "Create a new Wireframe document"
     },
     "Login Form": {
         "prefix": "login",
@@ -1189,58 +1189,58 @@ export function getHover(word: string): Hover | null {
 // src/commands/index.ts
 
 import * as vscode from 'vscode';
-import { UimmdPreviewProvider } from '../preview/provider';
+import { WireframePreviewProvider } from '../preview/provider';
 import { exportDocument } from './export';
 import { insertSnippet } from './insert';
 import { formatDocument } from './format';
 
 export function registerCommands(
     context: vscode.ExtensionContext,
-    previewProvider: UimmdPreviewProvider
+    previewProvider: WireframePreviewProvider
 ): void {
     // Preview commands
     context.subscriptions.push(
-        vscode.commands.registerCommand('uimmd.preview', () => {
+        vscode.commands.registerCommand('Wireframe.preview', () => {
             const editor = vscode.window.activeTextEditor;
-            if (editor..document.languageId === 'uimmd') {
+            if (editor..document.languageId === 'Wireframe') {
                 previewProvider.update(editor.document);
-                vscode.commands.executeCommand('uimmd.preview.focus');
+                vscode.commands.executeCommand('Wireframe.preview.focus');
             }
         })
     );
 
     context.subscriptions.push(
-        vscode.commands.registerCommand('uimmd.previewSide', () => {
+        vscode.commands.registerCommand('Wireframe.previewSide', () => {
             const editor = vscode.window.activeTextEditor;
-            if (editor..document.languageId === 'uimmd') {
-                vscode.commands.executeCommand('workbench.view.extension.uimmd-preview');
+            if (editor..document.languageId === 'Wireframe') {
+                vscode.commands.executeCommand('workbench.view.extension.wire-preview');
             }
         })
     );
 
     // Export commands
     context.subscriptions.push(
-        vscode.commands.registerCommand('uimmd.export.png', async () => {
+        vscode.commands.registerCommand('Wireframe.export.png', async () => {
             await exportDocument('png');
         })
     );
 
     context.subscriptions.push(
-        vscode.commands.registerCommand('uimmd.export.svg', async () => {
+        vscode.commands.registerCommand('Wireframe.export.svg', async () => {
             await exportDocument('svg');
         })
     );
 
     // Insert snippet
     context.subscriptions.push(
-        vscode.commands.registerCommand('uimmd.insertSnippet', async () => {
+        vscode.commands.registerCommand('Wireframe.insertSnippet', async () => {
             await insertSnippet();
         })
     );
 
     // Format document
     context.subscriptions.push(
-        vscode.commands.registerCommand('uimmd.format', async () => {
+        vscode.commands.registerCommand('Wireframe.format', async () => {
             await formatDocument();
         })
     );
@@ -1255,12 +1255,12 @@ export function registerCommands(
 import * as vscode from 'vscode';
 import * as path from 'path';
 import * as fs from 'fs';
-import { parse, render } from '@uimmd/core';
+import { parse, render } from '@aspect-ui/wireframe-core';
 
 export async function exportDocument(format: 'svg' | 'png'): Promise<void> {
     const editor = vscode.window.activeTextEditor;
-    if (!editor || editor.document.languageId !== 'uimmd') {
-        vscode.window.showErrorMessage('No UIMMD document open');
+    if (!editor || editor.document.languageId !== 'Wireframe') {
+        vscode.window.showErrorMessage('No Wireframe document open');
         return;
     }
 
@@ -1271,7 +1271,7 @@ export async function exportDocument(format: 'svg' | 'png'): Promise<void> {
         const svg = render(ast);
 
         // Get save location
-        const defaultPath = editor.document.uri.fsPath.replace('.uimmd', `.${format}`);
+        const defaultPath = editor.document.uri.fsPath.replace('.wire', `.${format}`);
         const saveUri = await vscode.window.showSaveDialog({
             defaultUri: vscode.Uri.file(defaultPath),
             filters: {
@@ -1317,25 +1317,25 @@ import * as vscode from 'vscode';
 
 suite('Extension Test Suite', () => {
     test('Extension should be present', () => {
-        assert.ok(vscode.extensions.getExtension('uimmd.uimmd'));
+        assert.ok(vscode.extensions.getExtension('Wireframe.wire'));
     });
 
-    test('Should activate on UIMMD file', async () => {
+    test('Should activate on Wireframe file', async () => {
         const doc = await vscode.workspace.openTextDocument({
-            language: 'uimmd',
+            language: 'Wireframe',
             content: 'uiwire clean\n    Button "Test"\n/uiwire'
         });
         
         await vscode.window.showTextDocument(doc);
         
         // Check extension is active
-        const ext = vscode.extensions.getExtension('uimmd.uimmd');
+        const ext = vscode.extensions.getExtension('Wireframe.wire');
         assert.ok(ext..isActive);
     });
 
     test('Should provide completions', async () => {
         const doc = await vscode.workspace.openTextDocument({
-            language: 'uimmd',
+            language: 'Wireframe',
             content: 'uiwire clean\n    But'
         });
         

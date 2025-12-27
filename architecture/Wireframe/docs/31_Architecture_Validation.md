@@ -1,4 +1,4 @@
-# UIMMD Architecture Validation
+# Wireframe Architecture Validation
 
 ## Document Information
 - **Version:** 1.0
@@ -10,7 +10,7 @@
 
 ## 1. Overview
 
-This document validates the UIMMD architecture documentation (Documents 20-29), ensuring consistency, completeness, and identifying any gaps or conflicts between specifications.
+This document validates the Wireframe architecture documentation (Documents 20-29), ensuring consistency, completeness, and identifying any gaps or conflicts between specifications.
 
 ---
 
@@ -93,11 +93,11 @@ This document validates the UIMMD architecture documentation (Documents 20-29), 
 
 | Package | Doc 20 | Doc 27 (API) | Doc 29 (Roadmap) | Status |
 |---------|--------|--------------|------------------|--------|
-| `@uimmd/core` | . | . | Week 3-8 | . Aligned |
-| `@uimmd/mermaid-plugin` | . | . | Week 17-18 | . Aligned |
-| `@uimmd/themes` | . | . | Week 13-14 | . Aligned |
-| `@uimmd/vscode-extension` | . | . | Week 19-20 | . Aligned |
-| `@uimmd/cli` | . | . | Week 21-22 | . Aligned |
+| `@aspect-ui/wireframe-core` | . | . | Week 3-8 | . Aligned |
+| `@aspect-ui/wireframe-mermaid-plugin` | . | . | Week 17-18 | . Aligned |
+| `@aspect-ui/wireframe-themes` | . | . | Week 13-14 | . Aligned |
+| `@aspect-ui/wireframe-vscode-extension` | . | . | Week 19-20 | . Aligned |
+| `@aspect-ui/wireframe-cli` | . | . | Week 21-22 | . Aligned |
 
 ### 4.3 Theme System Validation
 
@@ -125,9 +125,9 @@ interface Document {
 }
 
 // Validation: . PASSED
-// - Parser outputs Document (Doc 22 §4)
-// - Renderer accepts Document (Doc 23 §2)
-// - Themes match style enum (Doc 26 §2)
+// - Parser outputs Document (Doc 22 ï¿½4)
+// - Renderer accepts Document (Doc 23 ï¿½2)
+// - Themes match style enum (Doc 26 ï¿½2)
 ```
 
 ### 5.2 Core . Mermaid Plugin Contract
@@ -143,7 +143,7 @@ interface DiagramDefinition {
 }
 
 // Validation: . PASSED
-// - Detector pattern matches Doc 21 §3.1
+// - Detector pattern matches Doc 21 ï¿½3.1
 // - Parser interface aligns with Doc 22
 // - Renderer interface aligns with Doc 23
 ```
@@ -154,11 +154,11 @@ interface DiagramDefinition {
 // Contract defined in Doc 20, implemented in Doc 24
 
 // Extension uses:
-import { parse, render, validate } from '@uimmd/core';
+import { parse, render, validate } from '@aspect-ui/wireframe-core';
 
 // Validation: . PASSED
-// - API exports match Doc 27 §3.1
-// - Extension imports align with Doc 24 §2
+// - API exports match Doc 27 ï¿½3.1
+// - Extension imports align with Doc 24 ï¿½2
 ```
 
 ---
@@ -179,10 +179,10 @@ import { parse, render, validate } from '@uimmd/core';
 
 | Package | Doc 28 Target | Doc 29 Phase 1 | Doc 29 Phase 2 | Doc 29 Phase 3 |
 |---------|---------------|----------------|----------------|----------------|
-| @uimmd/core | 90% | 80% | 85% | 90% |
-| @uimmd/mermaid-plugin | 80% | - | - | 80% |
-| @uimmd/themes | 80% | - | 80% | 80% |
-| @uimmd/vscode-extension | 70% | - | - | 70% |
+| @aspect-ui/wireframe-core | 90% | 80% | 85% | 90% |
+| @aspect-ui/wireframe-mermaid-plugin | 80% | - | - | 80% |
+| @aspect-ui/wireframe-themes | 80% | - | 80% | 80% |
+| @aspect-ui/wireframe-vscode-extension | 70% | - | - | 70% |
 
 **Validation:** . Progressive coverage targets align with implementation phases
 
@@ -194,9 +194,9 @@ import { parse, render, validate } from '@uimmd/core';
 
 | Concern | Doc 20 Mitigation | Implementation Location | Status |
 |---------|-------------------|------------------------|--------|
-| XSS in output | Sanitize text | Doc 23 §Renderer | . Addressed |
-| Path traversal | Validate file access | Doc 24 §Extension | . Addressed |
-| Resource exhaustion | Limit size/nesting | Doc 22 §Parser | . Addressed |
+| XSS in output | Sanitize text | Doc 23 ï¿½Renderer | . Addressed |
+| Path traversal | Validate file access | Doc 24 ï¿½Extension | . Addressed |
+| Resource exhaustion | Limit size/nesting | Doc 22 ï¿½Parser | . Addressed |
 | Code injection | No eval/dynamic code | All modules | . Addressed |
 
 ---
@@ -247,15 +247,15 @@ import { parse, render, validate } from '@uimmd/core';
 .                   Internal Dependency Graph                      .
 ...................................................................
 .                                                                  .
-.                    @uimmd/cli                                    .
+.                    @aspect-ui/wireframe-cli                                    .
 .                        .                                         .
 .           .........................                             .
 .           .           .           .                             .
-.    @uimmd/mermaid  @uimmd/vscode  @uimmd/themes                 .
+.    @aspect-ui/wireframe-mermaid  @aspect-ui/wireframe-vscode  @aspect-ui/wireframe-themes                 .
 .           .           .           .                             .
 .           .........................                             .
 .                       .                                          .
-.                  @uimmd/core                                     .
+.                  @aspect-ui/wireframe-core                                     .
 .                                                                  .
 .  Validation: . No circular dependencies                        .
 .  Validation: . Core is leaf dependency                         .
@@ -271,37 +271,37 @@ import { parse, render, validate } from '@uimmd/core';
 
 | Component | Specification | Ready to Implement |
 |-----------|--------------|-------------------|
-| Lexer | Doc 22 §2 | . Complete spec |
-| Parser | Doc 22 §3-4 | . Complete spec |
-| Basic Renderer | Doc 23 §2-3 | . Complete spec |
-| Clean Theme | Doc 26 §4 | . Complete spec |
-| Project Structure | Doc 20 §8 | . Complete spec |
+| Lexer | Doc 22 ï¿½2 | . Complete spec |
+| Parser | Doc 22 ï¿½3-4 | . Complete spec |
+| Basic Renderer | Doc 23 ï¿½2-3 | . Complete spec |
+| Clean Theme | Doc 26 ï¿½4 | . Complete spec |
+| Project Structure | Doc 20 ï¿½8 | . Complete spec |
 
 ### 10.2 Phase 2 Readiness (Core Features)
 
 | Component | Specification | Ready to Implement |
 |-----------|--------------|-------------------|
-| All Controls | Doc 25 §3 | . Complete spec |
-| All Layouts | Doc 25 §4 | . Complete spec |
-| All Themes | Doc 26 §4-7 | . Complete spec |
-| Data Binding | Doc 25 §8 | . Complete spec |
+| All Controls | Doc 25 ï¿½3 | . Complete spec |
+| All Layouts | Doc 25 ï¿½4 | . Complete spec |
+| All Themes | Doc 26 ï¿½4-7 | . Complete spec |
+| Data Binding | Doc 25 ï¿½8 | . Complete spec |
 
 ### 10.3 Phase 3 Readiness (Integration)
 
 | Component | Specification | Ready to Implement |
 |-----------|--------------|-------------------|
-| Mermaid Plugin | Doc 21 §3-5 | . Complete spec |
-| VSCode Extension | Doc 24 §2-7 | . Complete spec |
-| CLI Tool | Doc 27 §6 | . Complete spec |
-| Testing Suite | Doc 28 §4-8 | . Complete spec |
+| Mermaid Plugin | Doc 21 ï¿½3-5 | . Complete spec |
+| VSCode Extension | Doc 24 ï¿½2-7 | . Complete spec |
+| CLI Tool | Doc 27 ï¿½6 | . Complete spec |
+| Testing Suite | Doc 28 ï¿½4-8 | . Complete spec |
 
 ### 10.4 Phase 4 Readiness (Production)
 
 | Component | Specification | Ready to Implement |
 |-----------|--------------|-------------------|
-| Performance Optimization | Doc 20 §10 | . Targets defined |
-| Accessibility | Doc 26 §8 | . WCAG targets |
-| Documentation | Doc 29 §6.3 | . Plan defined |
+| Performance Optimization | Doc 20 ï¿½10 | . Targets defined |
+| Accessibility | Doc 26 ï¿½8 | . WCAG targets |
+| Documentation | Doc 29 ï¿½6.3 | . Plan defined |
 
 ---
 
@@ -360,4 +360,4 @@ import { parse, render, validate } from '@uimmd/core';
 
 ---
 
-*UIMMD Architecture Validation v1.0 - 2025*
+*Wireframe Architecture Validation v1.0 - 2025*
