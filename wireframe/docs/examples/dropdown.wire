@@ -1,39 +1,39 @@
 // Dropdown Control Examples
 wireframe clean
-%title: Dropdown Examples
+    %title: Dropdown Examples
 
-Vertical gap=16
-    Label "**Dropdown Variants**"
-    
-    Vertical gap=8
-        Label "Default:"
-        Dropdown
-            Option "Select an option"
-            Option "Option 1"
-            Option "Option 2"
-            Option "Option 3"
-        /Dropdown
-        
-        Label "With selection:"
-        Dropdown
-            Option "Option 2" selected
-            Option "Option 1"
-            Option "Option 2"
-            Option "Option 3"
-        /Dropdown
-        
-        Label "Required:"
-        Dropdown required
-            Option "Choose..."
-            Option "Apple"
-            Option "Banana"
-            Option "Cherry"
-        /Dropdown
-        
-        Label "Disabled:"
-        Dropdown disabled
-            Option "Cannot change"
-        /Dropdown
+    Vertical gap=16
+        Label "**Dropdown Variants**"
+
+        Vertical gap=8
+            Label "Default:"
+            Dropdown
+                Option "Select an option"
+                Option "Option 1"
+                Option "Option 2"
+                Option "Option 3"
+            /Dropdown
+
+            Label "With selection:"
+            Dropdown
+                Option "Option 2" selected
+                Option "Option 1"
+                Option "Option 2"
+                Option "Option 3"
+            /Dropdown
+
+            Label "Required:"
+            Dropdown required
+                Option "Choose..."
+                Option "Apple"
+                Option "Banana"
+                Option "Cherry"
+            /Dropdown
+
+            Label "Disabled:"
+            Dropdown disabled
+                Option "Cannot change"
+            /Dropdown
+        /Vertical
     /Vertical
-/Vertical
 /wireframe

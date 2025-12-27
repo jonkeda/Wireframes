@@ -1,78 +1,78 @@
 // Blueprint Theme Example - Technical/engineering style
 wireframe blueprint
-%title: Blueprint Theme Demo
+    %title: Blueprint Theme Demo
 
-Vertical gap=16
-    Label "**Blueprint Theme**"
-    Label "A technical style reminiscent of engineering blueprints and schematics."
-    
-    Separator
-    
-    Header padding=8
+    Vertical gap=16
+        Label "**Blueprint Theme**"
+        Label "A technical style reminiscent of engineering blueprints and schematics."
+
+        Separator
+
+        Header padding=8
+            Horizontal gap=16
+                Label "**ACME Dashboard**"
+                Spacer
+                TextInput "Search..." 
+                Avatar "JD"
+            /Horizontal
+        /Header
+
         Horizontal gap=16
-            Label "**ACME Dashboard**"
-            Spacer
-            TextInput "Search..." 
-            Avatar "JD"
-        /Horizontal
-    /Header
-    
-    Horizontal gap=16
-        Sidebar padding=12
-            Vertical gap=4
-                Label "**Navigation**"
-                Menu
-                    MenuItem "Overview" $icon:home active
-                    MenuItem "Analytics" $icon:chart
-                    MenuItem "Reports" $icon:file
-                    MenuItem "Settings" $icon:settings
-                /Menu
+            Sidebar padding=12
+                Vertical gap=4
+                    Label "**Navigation**"
+                    Menu
+                        MenuItem "Overview" $icon:home active
+                        MenuItem "Analytics" $icon:chart
+                        MenuItem "Reports" $icon:file
+                        MenuItem "Settings" $icon:settings
+                    /Menu
+                /Vertical
+            /Sidebar
+
+            Vertical gap=16
+                Card padding=16
+                    Vertical gap=8
+                        Label "**System Status**"
+                        Horizontal gap=16
+                            Vertical gap=4
+                                Label "CPU Usage"
+                                Progress value=45
+                            /Vertical
+                            Vertical gap=4
+                                Label "Memory"
+                                Progress value=72
+                            /Vertical
+                            Vertical gap=4
+                                Label "Storage"
+                                Progress value=38
+                            /Vertical
+                        /Horizontal
+                    /Vertical
+                /Card
+
+                Card padding=16
+                    Vertical gap=8
+                        Label "**Configuration**"
+                        Horizontal gap=16
+                            Dropdown "Select Region" "US-East" "US-West" "EU-Central" "Asia-Pacific"
+                            Dropdown "Environment" "Production" "Staging" "Development"
+                        /Horizontal
+                        Horizontal gap=8
+                            Button "Apply" primary
+                            Button "Reset" secondary
+                        /Horizontal
+                    /Vertical
+                /Card
             /Vertical
-        /Sidebar
-        
-        Vertical gap=16
-            Card padding=16
-                Vertical gap=8
-                    Label "**System Status**"
-                    Horizontal gap=16
-                        Vertical gap=4
-                            Label "CPU Usage"
-                            Progress value=45
-                        /Vertical
-                        Vertical gap=4
-                            Label "Memory"
-                            Progress value=72
-                        /Vertical
-                        Vertical gap=4
-                            Label "Storage"
-                            Progress value=38
-                        /Vertical
-                    /Horizontal
-                /Vertical
-            /Card
-            
-            Card padding=16
-                Vertical gap=8
-                    Label "**Configuration**"
-                    Horizontal gap=16
-                        Dropdown "Select Region" "US-East" "US-West" "EU-Central" "Asia-Pacific"
-                        Dropdown "Environment" "Production" "Staging" "Development"
-                    /Horizontal
-                    Horizontal gap=8
-                        Button "Apply" primary
-                        Button "Reset" secondary
-                    /Horizontal
-                /Vertical
-            /Card
-        /Vertical
-    /Horizontal
-    
-    Footer padding=8
-        Horizontal gap=16
-            Label "System v2.1.0"
-            Spacer
-            Label "Last updated: 2025-12-27"
         /Horizontal
-    /Footer
-/Vertical
+
+        Footer padding=8
+            Horizontal gap=16
+                Label "System v2.1.0"
+                Spacer
+                Label "Last updated: 2025-12-27"
+            /Horizontal
+        /Footer
+    /Vertical
 /wireframe

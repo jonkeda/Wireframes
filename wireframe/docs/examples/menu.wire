@@ -1,34 +1,34 @@
 // Menu Control Examples
 wireframe clean
-%title: Menu Examples
+    %title: Menu Examples
 
-Vertical gap=16
-    Label "**Menu Items**"
-    
-    Card padding=8
-        Menu
-            MenuItem "Home" $icon:home
-            MenuItem "Profile" $icon:user
-            MenuItem "Settings" $icon:settings
-            Separator
-            MenuItem "Help" $icon:help
-            MenuItem "Logout" $icon:logout
-        /Menu
-    /Card
-    
-    Separator
-    
-    Label "**Menu with States**"
-    
-    Card padding=8
-        Menu
-            MenuItem "Dashboard" active
-            MenuItem "Projects"
-            MenuItem "Team"
-            MenuItem "Reports" disabled
-            Separator
-            MenuItem "Admin Panel"
-        /Menu
-    /Card
-/Vertical
+    Vertical gap=16
+        Label "**Menu Items**"
+
+        Card padding=8
+            Menu
+                MenuItem "Home" $icon:home
+                MenuItem "Profile" $icon:user
+                MenuItem "Settings" $icon:settings
+                Separator
+                MenuItem "Help" $icon:help
+                MenuItem "Logout" $icon:logout
+            /Menu
+        /Card
+
+        Separator
+
+        Label "**Menu with States**"
+
+        Card padding=8
+            Menu
+                MenuItem "Dashboard" active
+                MenuItem "Projects"
+                MenuItem "Team"
+                MenuItem "Reports" disabled
+                Separator
+                MenuItem "Admin Panel"
+            /Menu
+        /Card
+    /Vertical
 /wireframe

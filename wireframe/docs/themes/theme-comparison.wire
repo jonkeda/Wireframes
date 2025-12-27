@@ -1,116 +1,116 @@
 // Theme Comparison - Same UI in different themes
 // This file uses 'clean' but can be rendered with any theme
 wireframe clean
-%title: Theme Comparison Components
+    %title: Theme Comparison Components
 
-Vertical gap=20
-    Label "**Component Showcase**"
-    Label "Standard components that demonstrate theme differences."
-    
-    Separator
-    
-    // Buttons
-    Panel padding=12
-        Vertical gap=8
-            Label "**Buttons**"
-            Horizontal gap=8
-                Button "Primary" primary
-                Button "Secondary" secondary
-                Button "Default"
-                Button "Disabled" disabled
-            /Horizontal
-        /Vertical
-    /Panel
-    
-    // Form Controls
-    Panel padding=12
-        Vertical gap=8
-            Label "**Form Controls**"
-            Horizontal gap=16
-                Vertical gap=4
-                    TextInput "Text input"
-                    TextArea "Multi-line text"
-                /Vertical
-                Vertical gap=4
-                    Checkbox "Unchecked option"
-                    Checkbox "Checked option" checked
-                    Radio "Radio option A" selected
-                    Radio "Radio option B"
-                /Vertical
-                Vertical gap=4
-                    Switch "Toggle off"
-                    Switch "Toggle on" checked
-                    Slider value=50
-                /Vertical
-            /Horizontal
-        /Vertical
-    /Panel
-    
-    // Progress & Status
-    Panel padding=12
-        Vertical gap=8
-            Label "**Progress & Status**"
-            Horizontal gap=16
-                Vertical gap=4
-                    Label "Progress Bars"
-                    Progress value=25
-                    Progress value=50
-                    Progress value=75
-                    Progress value=100
-                /Vertical
-                Vertical gap=4
-                    Label "Badges"
-                    Horizontal gap=4
-                        Badge "Info" type=info
-                        Badge "Success" type=success
-                        Badge "Warning" type=warning
-                        Badge "Error" type=error
-                    /Horizontal
-                /Vertical
-            /Horizontal
-        /Vertical
-    /Panel
-    
-    // Navigation
-    Panel padding=12
-        Vertical gap=8
-            Label "**Navigation**"
-            Tabs
-                Tab "First Tab" active
-                Tab "Second Tab"
-                Tab "Third Tab"
-                Tab "Disabled" disabled
-            /Tabs
-            Breadcrumb
-                Link "Home"
-                Link "Products"
-                Link "Category"
-                Label "Current Page"
-            /Breadcrumb
-        /Vertical
-    /Panel
-    
-    // Cards
-    Panel padding=12
-        Vertical gap=8
-            Label "**Cards**"
-            Horizontal gap=12
-                Card padding=12
+    Vertical gap=20
+        Label "**Component Showcase**"
+        Label "Standard components that demonstrate theme differences."
+
+        Separator
+
+        // Buttons
+        Panel padding=12
+            Vertical gap=8
+                Label "**Buttons**"
+                Horizontal gap=8
+                    Button "Primary" primary
+                    Button "Secondary" secondary
+                    Button "Default"
+                    Button "Disabled" disabled
+                /Horizontal
+            /Vertical
+        /Panel
+
+        // Form Controls
+        Panel padding=12
+            Vertical gap=8
+                Label "**Form Controls**"
+                Horizontal gap=16
                     Vertical gap=4
-                        Label "**Card Title**"
-                        Label "Card content goes here with some description text."
-                        Button "Action" primary
+                        TextInput "Text input"
+                        TextArea "Multi-line text"
                     /Vertical
-                /Card
-                Card padding=12
                     Vertical gap=4
-                        Avatar "JD"
-                        Label "**John Doe**"
-                        Label "Developer"
+                        Checkbox "Unchecked option"
+                        Checkbox "Checked option" checked
+                        Radio "Radio option A" selected
+                        Radio "Radio option B"
                     /Vertical
-                /Card
-            /Horizontal
-        /Vertical
-    /Panel
-/Vertical
+                    Vertical gap=4
+                        Switch "Toggle off"
+                        Switch "Toggle on" checked
+                        Slider value=50
+                    /Vertical
+                /Horizontal
+            /Vertical
+        /Panel
+
+        // Progress & Status
+        Panel padding=12
+            Vertical gap=8
+                Label "**Progress & Status**"
+                Horizontal gap=16
+                    Vertical gap=4
+                        Label "Progress Bars"
+                        Progress value=25
+                        Progress value=50
+                        Progress value=75
+                        Progress value=100
+                    /Vertical
+                    Vertical gap=4
+                        Label "Badges"
+                        Horizontal gap=4
+                            Badge "Info" type=info
+                            Badge "Success" type=success
+                            Badge "Warning" type=warning
+                            Badge "Error" type=error
+                        /Horizontal
+                    /Vertical
+                /Horizontal
+            /Vertical
+        /Panel
+
+        // Navigation
+        Panel padding=12
+            Vertical gap=8
+                Label "**Navigation**"
+                Tabs
+                    Tab "First Tab" active
+                    Tab "Second Tab"
+                    Tab "Third Tab"
+                    Tab "Disabled" disabled
+                /Tabs
+                Breadcrumb
+                    Link "Home"
+                    Link "Products"
+                    Link "Category"
+                    Label "Current Page"
+                /Breadcrumb
+            /Vertical
+        /Panel
+
+        // Cards
+        Panel padding=12
+            Vertical gap=8
+                Label "**Cards**"
+                Horizontal gap=12
+                    Card padding=12
+                        Vertical gap=4
+                            Label "**Card Title**"
+                            Label "Card content goes here with some description text."
+                            Button "Action" primary
+                        /Vertical
+                    /Card
+                    Card padding=12
+                        Vertical gap=4
+                            Avatar "JD"
+                            Label "**John Doe**"
+                            Label "Developer"
+                        /Vertical
+                    /Card
+                /Horizontal
+            /Vertical
+        /Panel
+    /Vertical
 /wireframe

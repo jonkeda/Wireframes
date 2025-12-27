@@ -1,41 +1,41 @@
 // Icon and Image Control Examples
 wireframe clean
-%title: Icon and Image Examples
+    %title: Icon and Image Examples
 
-Vertical gap=16
-    Label "**Icons**"
-    
-    Horizontal gap=16
-        Vertical gap=4 align=center
-            Icon $icon:home
-            Label "Home"
-        /Vertical
-        Vertical gap=4 align=center
-            Icon $icon:settings
-            Label "Settings"
-        /Vertical
-        Vertical gap=4 align=center
-            Icon $icon:user
-            Label "User"
-        /Vertical
-        Vertical gap=4 align=center
-            Icon $icon:search
-            Label "Search"
-        /Vertical
-        Vertical gap=4 align=center
-            Icon $icon:menu
-            Label "Menu"
-        /Vertical
-    /Horizontal
-    
-    Separator
-    
-    Label "**Images**"
-    
-    Horizontal gap=16
-        Image width=100 height=100 placeholder="Product"
-        Image width=150 height=100 placeholder="Banner"
-        Image width=80 height=80 placeholder="Thumbnail"
-    /Horizontal
-/Vertical
+    Vertical gap=16
+        Label "**Icons**"
+
+        Horizontal gap=16
+            Vertical gap=4 align=center
+                Icon $icon:home
+                Label "Home"
+            /Vertical
+            Vertical gap=4 align=center
+                Icon $icon:settings
+                Label "Settings"
+            /Vertical
+            Vertical gap=4 align=center
+                Icon $icon:user
+                Label "User"
+            /Vertical
+            Vertical gap=4 align=center
+                Icon $icon:search
+                Label "Search"
+            /Vertical
+            Vertical gap=4 align=center
+                Icon $icon:menu
+                Label "Menu"
+            /Vertical
+        /Horizontal
+
+        Separator
+
+        Label "**Images**"
+
+        Horizontal gap=16
+            Image width=100 height=100 placeholder="Product"
+            Image width=150 height=100 placeholder="Banner"
+            Image width=80 height=80 placeholder="Thumbnail"
+        /Horizontal
+    /Vertical
 /wireframe

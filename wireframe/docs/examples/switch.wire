@@ -1,62 +1,62 @@
 // Switch Control Examples
 wireframe clean
-%title: Switch Examples
+    %title: Switch Examples
 
-Vertical gap=16
-    Label "**Switch Variants**"
-    
-    Vertical gap=8
-        Horizontal gap=8
-            Switch
-            Label "Off"
-        /Horizontal
-        
-        Horizontal gap=8
-            Switch checked
-            Label "On"
-        /Horizontal
-        
-        Horizontal gap=8
-            Switch disabled
-            Label "Disabled Off"
-        /Horizontal
-        
-        Horizontal gap=8
-            Switch checked disabled
-            Label "Disabled On"
-        /Horizontal
-    /Vertical
-    
-    Separator
-    
-    Label "**Settings Example**"
-    
-    Card padding=16
-        Vertical gap=12
-            Horizontal gap=8
-                Switch checked
-                Vertical gap=2
-                    Label "**Dark Mode**"
-                    Label "Enable dark theme"
-                /Vertical
-            /Horizontal
-            
+    Vertical gap=16
+        Label "**Switch Variants**"
+
+        Vertical gap=8
             Horizontal gap=8
                 Switch
-                Vertical gap=2
-                    Label "**Notifications**"
-                    Label "Receive push notifications"
-                /Vertical
+                Label "Off"
             /Horizontal
-            
+
             Horizontal gap=8
                 Switch checked
-                Vertical gap=2
-                    Label "**Auto-save**"
-                    Label "Save changes automatically"
-                /Vertical
+                Label "On"
+            /Horizontal
+
+            Horizontal gap=8
+                Switch disabled
+                Label "Disabled Off"
+            /Horizontal
+
+            Horizontal gap=8
+                Switch checked disabled
+                Label "Disabled On"
             /Horizontal
         /Vertical
-    /Card
-/Vertical
+
+        Separator
+
+        Label "**Settings Example**"
+
+        Card padding=16
+            Vertical gap=12
+                Horizontal gap=8
+                    Switch checked
+                    Vertical gap=2
+                        Label "**Dark Mode**"
+                        Label "Enable dark theme"
+                    /Vertical
+                /Horizontal
+
+                Horizontal gap=8
+                    Switch
+                    Vertical gap=2
+                        Label "**Notifications**"
+                        Label "Receive push notifications"
+                    /Vertical
+                /Horizontal
+
+                Horizontal gap=8
+                    Switch checked
+                    Vertical gap=2
+                        Label "**Auto-save**"
+                        Label "Save changes automatically"
+                    /Vertical
+                /Horizontal
+            /Vertical
+        /Card
+    /Vertical
 /wireframe

@@ -1,28 +1,28 @@
 // Checkbox Control Examples
 wireframe clean
-%title: Checkbox Examples
+    %title: Checkbox Examples
 
-Vertical gap=16
-    Label "**Checkbox Variants**"
-    
-    Vertical gap=8
-        Checkbox "Unchecked option"
-        Checkbox "Checked option" checked
-        Checkbox "Disabled unchecked" disabled
-        Checkbox "Disabled checked" checked disabled
-        Checkbox "Required option" required
+    Vertical gap=16
+        Label "**Checkbox Variants**"
+
+        Vertical gap=8
+            Checkbox "Unchecked option"
+            Checkbox "Checked option" checked
+            Checkbox "Disabled unchecked" disabled
+            Checkbox "Disabled checked" checked disabled
+            Checkbox "Required option" required
+        /Vertical
+
+        Separator
+
+        Label "**Checkbox Group**"
+
+        Vertical gap=4
+            Label "Select your preferences:"
+            Checkbox "Email notifications" checked
+            Checkbox "SMS notifications"
+            Checkbox "Push notifications" checked
+            Checkbox "Weekly digest"
+        /Vertical
     /Vertical
-    
-    Separator
-    
-    Label "**Checkbox Group**"
-    
-    Vertical gap=4
-        Label "Select your preferences:"
-        Checkbox "Email notifications" checked
-        Checkbox "SMS notifications"
-        Checkbox "Push notifications" checked
-        Checkbox "Weekly digest"
-    /Vertical
-/Vertical
 /wireframe

@@ -1,106 +1,106 @@
 // Realistic Theme Example - High-fidelity mockup style
 wireframe realistic
-%title: Realistic Theme Demo
+    %title: Realistic Theme Demo
 
-Vertical gap=16
-    Label "**Realistic Theme**"
-    Label "A high-fidelity style for polished presentations and client demos."
-    
-    Separator
-    
-    Card padding=20
-        Vertical gap=16
-            Horizontal gap=16
-                Avatar "AB" size=64
-                Vertical gap=4
-                    Label "**Alex Brown**"
-                    Label "Senior Product Designer"
-                    Horizontal gap=8
-                        Badge "Pro" type=primary
-                        Badge "Verified" type=success
+    Vertical gap=16
+        Label "**Realistic Theme**"
+        Label "A high-fidelity style for polished presentations and client demos."
+
+        Separator
+
+        Card padding=20
+            Vertical gap=16
+                Horizontal gap=16
+                    Avatar "AB" size=64
+                    Vertical gap=4
+                        Label "**Alex Brown**"
+                        Label "Senior Product Designer"
+                        Horizontal gap=8
+                            Badge "Pro" type=primary
+                            Badge "Verified" type=success
+                        /Horizontal
+                    /Vertical
+                    Spacer
+                    Button "Edit Profile" secondary
+                /Horizontal
+
+                Separator
+
+                Tabs
+                    Tab "Overview" active
+                    Tab "Projects"
+                    Tab "Activity"
+                    Tab "Settings"
+                /Tabs
+
+                Vertical gap=12
+                    Label "**Recent Projects**"
+
+                    Horizontal gap=12
+                        Card padding=12
+                            Vertical gap=8
+                                Image "project-1.png"
+                                Label "**E-commerce Redesign**"
+                                Label "Updated 2 days ago"
+                                Progress value=85
+                            /Vertical
+                        /Card
+
+                        Card padding=12
+                            Vertical gap=8
+                                Image "project-2.png"
+                                Label "**Mobile App UI**"
+                                Label "Updated 1 week ago"
+                                Progress value=60
+                            /Vertical
+                        /Card
+
+                        Card padding=12
+                            Vertical gap=8
+                                Image "project-3.png"
+                                Label "**Dashboard Analytics**"
+                                Label "Updated 3 weeks ago"
+                                Progress value=100
+                            /Vertical
+                        /Card
                     /Horizontal
                 /Vertical
-                Spacer
-                Button "Edit Profile" secondary
-            /Horizontal
-            
-            Separator
-            
-            Tabs
-                Tab "Overview" active
-                Tab "Projects"
-                Tab "Activity"
-                Tab "Settings"
-            /Tabs
-            
-            Vertical gap=12
-                Label "**Recent Projects**"
-                
-                Horizontal gap=12
-                    Card padding=12
-                        Vertical gap=8
-                            Image "project-1.png"
-                            Label "**E-commerce Redesign**"
-                            Label "Updated 2 days ago"
-                            Progress value=85
-                        /Vertical
-                    /Card
-                    
-                    Card padding=12
-                        Vertical gap=8
-                            Image "project-2.png"
-                            Label "**Mobile App UI**"
-                            Label "Updated 1 week ago"
-                            Progress value=60
-                        /Vertical
-                    /Card
-                    
-                    Card padding=12
-                        Vertical gap=8
-                            Image "project-3.png"
-                            Label "**Dashboard Analytics**"
-                            Label "Updated 3 weeks ago"
-                            Progress value=100
-                        /Vertical
-                    /Card
-                /Horizontal
             /Vertical
-        /Vertical
-    /Card
-    
-    Separator
-    
-    Horizontal gap=16
-        Panel padding=12
-            Vertical gap=8
-                Label "**Notifications**"
-                Vertical gap=4
-                    Toast "New comment on your design" type=info
-                    Toast "Project deadline tomorrow" type=warning
-                    Toast "Design approved!" type=success
+        /Card
+
+        Separator
+
+        Horizontal gap=16
+            Panel padding=12
+                Vertical gap=8
+                    Label "**Notifications**"
+                    Vertical gap=4
+                        Toast "New comment on your design" type=info
+                        Toast "Project deadline tomorrow" type=warning
+                        Toast "Design approved!" type=success
+                    /Vertical
                 /Vertical
-            /Vertical
-        /Panel
-        
-        Panel padding=12
-            Vertical gap=8
-                Label "**Quick Stats**"
-                Horizontal gap=16
-                    Vertical gap=2
-                        Label "**142**"
-                        Label "Projects"
-                    /Vertical
-                    Vertical gap=2
-                        Label "**38**"
-                        Label "Clients"
-                    /Vertical
-                    Vertical gap=2
-                        Label "**4.9**"
-                        Label "Rating"
-                    /Vertical
-                /Horizontal
-            /Vertical
-        /Panel
-    /Horizontal
-/Vertical
+            /Panel
+
+            Panel padding=12
+                Vertical gap=8
+                    Label "**Quick Stats**"
+                    Horizontal gap=16
+                        Vertical gap=2
+                            Label "**142**"
+                            Label "Projects"
+                        /Vertical
+                        Vertical gap=2
+                            Label "**38**"
+                            Label "Clients"
+                        /Vertical
+                        Vertical gap=2
+                            Label "**4.9**"
+                            Label "Rating"
+                        /Vertical
+                    /Horizontal
+                /Vertical
+            /Panel
+        /Horizontal
+    /Vertical
 /wireframe

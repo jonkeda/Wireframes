@@ -1,61 +1,61 @@
 // Clean Theme Example - Modern, minimal design
 wireframe clean
-%title: Clean Theme Demo
+    %title: Clean Theme Demo
 
-Vertical gap=16
-    Label "**Clean Theme**"
-    Label "A modern, minimal design with clean lines and subtle shadows."
-    
-    Separator
-    
-    Horizontal gap=16
-        Card padding=16
-            Vertical gap=8
-                Label "**Form Example**"
-                TextInput "Enter your name" required
-                TextInput "Enter your email"
-                Horizontal gap=8
-                    Button "Submit" primary
-                    Button "Cancel" secondary
-                /Horizontal
-            /Vertical
-        /Card
-        
-        Card padding=16
-            Vertical gap=8
-                Label "**Controls**"
-                Checkbox "Remember me" checked
-                Checkbox "Send notifications"
-                Switch "Dark mode"
-                Progress value=65
-            /Vertical
-        /Card
-    /Horizontal
-    
-    Separator
-    
-    Horizontal gap=16
-        Panel padding=12
-            Vertical gap=4
-                Label "**Status Badges**"
-                Horizontal gap=8
-                    Badge "Active" type=success
-                    Badge "Pending" type=warning
-                    Badge "Error" type=error
-                /Horizontal
-            /Vertical
-        /Panel
-        
-        Panel padding=12
-            Vertical gap=4
-                Label "**Navigation**"
-                Tabs
-                    Tab "Dashboard" active
-                    Tab "Settings"
-                    Tab "Profile"
-                /Tabs
-            /Vertical
-        /Panel
-    /Horizontal
-/Vertical
+    Vertical gap=16
+        Label "**Clean Theme**"
+        Label "A modern, minimal design with clean lines and subtle shadows."
+
+        Separator
+
+        Horizontal gap=16
+            Card padding=16
+                Vertical gap=8
+                    Label "**Form Example**"
+                    TextInput "Enter your name" required
+                    TextInput "Enter your email"
+                    Horizontal gap=8
+                        Button "Submit" primary
+                        Button "Cancel" secondary
+                    /Horizontal
+                /Vertical
+            /Card
+
+            Card padding=16
+                Vertical gap=8
+                    Label "**Controls**"
+                    Checkbox "Remember me" checked
+                    Checkbox "Send notifications"
+                    Switch "Dark mode"
+                    Progress value=65
+                /Vertical
+            /Card
+        /Horizontal
+
+        Separator
+
+        Horizontal gap=16
+            Panel padding=12
+                Vertical gap=4
+                    Label "**Status Badges**"
+                    Horizontal gap=8
+                        Badge "Active" type=success
+                        Badge "Pending" type=warning
+                        Badge "Error" type=error
+                    /Horizontal
+                /Vertical
+            /Panel
+
+            Panel padding=12
+                Vertical gap=4
+                    Label "**Navigation**"
+                    Tabs
+                        Tab "Dashboard" active
+                        Tab "Settings"
+                        Tab "Profile"
+                    /Tabs
+                /Vertical
+            /Panel
+        /Horizontal
+    /Vertical
 /wireframe

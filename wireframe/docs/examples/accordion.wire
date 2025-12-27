@@ -1,46 +1,46 @@
 // Accordion Control Examples
 wireframe clean
-%title: Accordion Examples
+    %title: Accordion Examples
 
-Vertical gap=16
-    Label "**FAQ Accordion**"
-    
-    Accordion
-        AccordionSection "What is Wireframe DSL?" expanded
-            Label "Wireframe DSL is a domain-specific language for creating UI mockups using simple text-based syntax."
-        /AccordionSection
-        
-        AccordionSection "How do I get started?"
-            Label "Install the VS Code extension and create a new .wire file to begin designing your UI."
-        /AccordionSection
-        
-        AccordionSection "Can I export to other formats?"
-            Label "Yes, you can export your wireframes to SVG, PNG, and other image formats."
-        /AccordionSection
-        
-        AccordionSection "Is it free to use?"
-            Label "Yes, Wireframe DSL is open source and free to use for any purpose."
-        /AccordionSection
-    /Accordion
-    
-    Separator
-    
-    Label "**Settings Accordion**"
-    
-    Accordion
-        AccordionSection "Account Settings" $icon:user expanded
-            Vertical gap=8
-                TextInput "john@example.com"
-                Button "Update Email"
-            /Vertical
-        /AccordionSection
-        
-        AccordionSection "Privacy Settings" $icon:lock
-            Vertical gap=8
-                Checkbox "Make profile public"
-                Checkbox "Show email address"
-            /Vertical
-        /AccordionSection
-    /Accordion
-/Vertical
+    Vertical gap=16
+        Label "**FAQ Accordion**"
+
+        Accordion
+            AccordionSection "What is Wireframe DSL?" expanded
+                Label "Wireframe DSL is a domain-specific language for creating UI mockups using simple text-based syntax."
+            /AccordionSection
+
+            AccordionSection "How do I get started?"
+                Label "Install the VS Code extension and create a new .wire file to begin designing your UI."
+            /AccordionSection
+
+            AccordionSection "Can I export to other formats?"
+                Label "Yes, you can export your wireframes to SVG, PNG, and other image formats."
+            /AccordionSection
+
+            AccordionSection "Is it free to use?"
+                Label "Yes, Wireframe DSL is open source and free to use for any purpose."
+            /AccordionSection
+        /Accordion
+
+        Separator
+
+        Label "**Settings Accordion**"
+
+        Accordion
+            AccordionSection "Account Settings" $icon:user expanded
+                Vertical gap=8
+                    TextInput "john@example.com"
+                    Button "Update Email"
+                /Vertical
+            /AccordionSection
+
+            AccordionSection "Privacy Settings" $icon:lock
+                Vertical gap=8
+                    Checkbox "Make profile public"
+                    Checkbox "Show email address"
+                /Vertical
+            /AccordionSection
+        /Accordion
+    /Vertical
 /wireframe

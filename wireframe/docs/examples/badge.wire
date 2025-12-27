@@ -1,44 +1,44 @@
 // Badge Control Examples
 wireframe clean
-%title: Badge Examples
+    %title: Badge Examples
 
-Vertical gap=16
-    Label "**Badge Variants**"
-    
-    Horizontal gap=16
-        Badge "New"
-        Badge "3"
-        Badge "99+"
-        Badge "Sale" primary
-        Badge "Beta" secondary
-    /Horizontal
-    
-    Separator
-    
-    Label "**Badges with Icons**"
-    
-    Horizontal gap=24
-        Vertical gap=4 align=center
-            Horizontal gap=4
-                Icon $icon:mail
-                Badge "5"
-            /Horizontal
-            Label "Messages"
-        /Vertical
-        Vertical gap=4 align=center
-            Horizontal gap=4
-                Icon $icon:bell
-                Badge "12"
-            /Horizontal
-            Label "Notifications"
-        /Vertical
-        Vertical gap=4 align=center
-            Horizontal gap=4
-                Icon $icon:cart
-                Badge "3"
-            /Horizontal
-            Label "Cart"
-        /Vertical
-    /Horizontal
-/Vertical
+    Vertical gap=16
+        Label "**Badge Variants**"
+
+        Horizontal gap=16
+            Badge "New"
+            Badge "3"
+            Badge "99+"
+            Badge "Sale" primary
+            Badge "Beta" secondary
+        /Horizontal
+
+        Separator
+
+        Label "**Badges with Icons**"
+
+        Horizontal gap=24
+            Vertical gap=4 align=center
+                Horizontal gap=4
+                    Icon $icon:mail
+                    Badge "5"
+                /Horizontal
+                Label "Messages"
+            /Vertical
+            Vertical gap=4 align=center
+                Horizontal gap=4
+                    Icon $icon:bell
+                    Badge "12"
+                /Horizontal
+                Label "Notifications"
+            /Vertical
+            Vertical gap=4 align=center
+                Horizontal gap=4
+                    Icon $icon:cart
+                    Badge "3"
+                /Horizontal
+                Label "Cart"
+            /Vertical
+        /Horizontal
+    /Vertical
 /wireframe

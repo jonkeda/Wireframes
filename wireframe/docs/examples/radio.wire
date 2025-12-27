@@ -1,27 +1,27 @@
 // Radio Control Examples
 wireframe clean
-%title: Radio Examples
+    %title: Radio Examples
 
-Vertical gap=16
-    Label "**Radio Button Variants**"
-    
-    Vertical gap=8
-        Radio "Unselected option"
-        Radio "Selected option" selected
-        Radio "Disabled unselected" disabled
-        Radio "Disabled selected" selected disabled
+    Vertical gap=16
+        Label "**Radio Button Variants**"
+
+        Vertical gap=8
+            Radio "Unselected option"
+            Radio "Selected option" selected
+            Radio "Disabled unselected" disabled
+            Radio "Disabled selected" selected disabled
+        /Vertical
+
+        Separator
+
+        Label "**Radio Group**"
+
+        Vertical gap=4
+            Label "Choose a plan:"
+            Radio "Free - $0/month"
+            Radio "Basic - $9/month" selected
+            Radio "Pro - $29/month"
+            Radio "Enterprise - Contact us"
+        /Vertical
     /Vertical
-    
-    Separator
-    
-    Label "**Radio Group**"
-    
-    Vertical gap=4
-        Label "Choose a plan:"
-        Radio "Free - $0/month"
-        Radio "Basic - $9/month" selected
-        Radio "Pro - $29/month"
-        Radio "Enterprise - Contact us"
-    /Vertical
-/Vertical
 /wireframe

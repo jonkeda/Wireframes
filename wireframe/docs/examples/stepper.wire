@@ -1,58 +1,58 @@
 // Stepper Control Examples
 wireframe clean
-%title: Stepper Examples
+    %title: Stepper Examples
 
-Vertical gap=16
-    Label "**Basic Stepper**"
-    
-    Stepper steps=4 current=2
-    
-    Separator
-    
-    Label "**Checkout Stepper**"
-    
-    Card padding=24
-        Vertical gap=24
-            Stepper steps=4 current=2
-                Label "Cart"
-                Label "Shipping"
-                Label "Payment"
-                Label "Confirm"
-            /Stepper
-            
-            Panel padding=16
-                Vertical gap=16
-                    Label "**Shipping Information**"
-                    
-                    Vertical gap=8
-                        Label "Address:"
-                        TextInput "123 Main St"
-                        
+    Vertical gap=16
+        Label "**Basic Stepper**"
+
+        Stepper steps=4 current=2
+
+        Separator
+
+        Label "**Checkout Stepper**"
+
+        Card padding=24
+            Vertical gap=24
+                Stepper steps=4 current=2
+                    Label "Cart"
+                    Label "Shipping"
+                    Label "Payment"
+                    Label "Confirm"
+                /Stepper
+
+                Panel padding=16
+                    Vertical gap=16
+                        Label "**Shipping Information**"
+
+                        Vertical gap=8
+                            Label "Address:"
+                            TextInput "123 Main St"
+
+                            Horizontal gap=8
+                                Vertical gap=4
+                                    Label "City:"
+                                    TextInput "New York"
+                                /Vertical
+                                Vertical gap=4
+                                    Label "ZIP:"
+                                    TextInput "10001"
+                                /Vertical
+                            /Horizontal
+                        /Vertical
+
                         Horizontal gap=8
-                            Vertical gap=4
-                                Label "City:"
-                                TextInput "New York"
-                            /Vertical
-                            Vertical gap=4
-                                Label "ZIP:"
-                                TextInput "10001"
-                            /Vertical
+                            Button "Back"
+                            Button "Continue" primary
                         /Horizontal
                     /Vertical
-                    
-                    Horizontal gap=8
-                        Button "Back"
-                        Button "Continue" primary
-                    /Horizontal
-                /Vertical
-            /Panel
-        /Vertical
-    /Card
-    
-    Separator
-    
-    Label "**Completed Stepper**"
-    
-    Stepper steps=3 current=3 completed
-/Vertical
+                /Panel
+            /Vertical
+        /Card
+
+        Separator
+
+        Label "**Completed Stepper**"
+
+        Stepper steps=3 current=3 completed
+    /Vertical
 /wireframe

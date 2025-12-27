@@ -1,47 +1,47 @@
 // Tree Control Examples
 wireframe clean
-%title: Tree Examples
+    %title: Tree Examples
 
-Vertical gap=16
-    Label "**File Tree**"
-    
-    Card padding=16
-        Tree
-            TreeItem "src" expanded
-                TreeItem "components"
-                    TreeItem "Button.tsx"
-                    TreeItem "Input.tsx"
-                    TreeItem "Modal.tsx"
+    Vertical gap=16
+        Label "**File Tree**"
+
+        Card padding=16
+            Tree
+                TreeItem "src" expanded
+                    TreeItem "components"
+                        TreeItem "Button.tsx"
+                        TreeItem "Input.tsx"
+                        TreeItem "Modal.tsx"
+                    /TreeItem
+                    TreeItem "pages"
+                        TreeItem "Home.tsx"
+                        TreeItem "About.tsx"
+                    /TreeItem
+                    TreeItem "index.ts"
                 /TreeItem
-                TreeItem "pages"
-                    TreeItem "Home.tsx"
-                    TreeItem "About.tsx"
+                TreeItem "public"
+                    TreeItem "images"
+                    TreeItem "index.html"
                 /TreeItem
-                TreeItem "index.ts"
-            /TreeItem
-            TreeItem "public"
-                TreeItem "images"
-                TreeItem "index.html"
-            /TreeItem
-            TreeItem "package.json"
-            TreeItem "README.md"
-        /Tree
-    /Card
-    
-    Separator
-    
-    Label "**Navigation Tree**"
-    
-    Card padding=16
-        Tree
-            TreeItem "Dashboard" $icon:home
-            TreeItem "Projects" $icon:folder expanded
-                TreeItem "Active" selected
-                TreeItem "Archived"
-            /TreeItem
-            TreeItem "Team" $icon:users
-            TreeItem "Settings" $icon:settings
-        /Tree
-    /Card
-/Vertical
+                TreeItem "package.json"
+                TreeItem "README.md"
+            /Tree
+        /Card
+
+        Separator
+
+        Label "**Navigation Tree**"
+
+        Card padding=16
+            Tree
+                TreeItem "Dashboard" $icon:home
+                TreeItem "Projects" $icon:folder expanded
+                    TreeItem "Active" selected
+                    TreeItem "Archived"
+                /TreeItem
+                TreeItem "Team" $icon:users
+                TreeItem "Settings" $icon:settings
+            /Tree
+        /Card
+    /Vertical
 /wireframe

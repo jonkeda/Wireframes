@@ -229,8 +229,7 @@ export class Parser {
     const doc = createDocumentNode();
     doc.start = startToken.start;
 
-    // Parse style
-    this.skipNewlines();
+    // Parse style (on same line as wireframe)
     if (this.check(TokenType.IDENTIFIER)) {
       const styleToken = this.advance();
       const style = styleToken.value.toLowerCase();
@@ -243,17 +242,40 @@ export class Parser {
 
     this.skipNewlines();
 
-    // Parse document attributes (%name: value)
-    while (this.check(TokenType.DOC_ATTRIBUTE)) {
-      const attrToken = this.advance();
-      if (attrToken.attributeName && attrToken.attributeValue !== undefined) {
-        doc.attributes[attrToken.attributeName] = attrToken.attributeValue;
-      }
-      this.skipNewlines();
-    }
+    // Expect INDENT for document content
+    if (this.check(TokenType.INDENT)) {
+      this.advance();
 
-    // Parse children
-    doc.children = this.parseElements();
+      // Parse document attributes (%name: value) - must be indented
+      while (this.check(TokenType.DOC_ATTRIBUTE)) {
+        const attrToken = this.advance();
+        if (attrToken.attributeName && attrToken.attributeValue !== undefined) {
+          doc.attributes[attrToken.attributeName] = attrToken.attributeValue;
+        }
+        this.skipNewlines();
+      }
+
+      // Parse children
+      doc.children = this.parseElements();
+
+      // Expect DEDENT
+      if (this.check(TokenType.DEDENT)) {
+        this.advance();
+      }
+    } else {
+      // Legacy: support unindented content for backwards compatibility
+      // Parse document attributes (%name: value)
+      while (this.check(TokenType.DOC_ATTRIBUTE)) {
+        const attrToken = this.advance();
+        if (attrToken.attributeName && attrToken.attributeValue !== undefined) {
+          doc.attributes[attrToken.attributeName] = attrToken.attributeValue;
+        }
+        this.skipNewlines();
+      }
+
+      // Parse children
+      doc.children = this.parseElements();
+    }
 
     // Parse data sections
     doc.dataSections = this.parseDataSections();

@@ -1,26 +1,26 @@
 // Label and Heading Control Examples
 wireframe clean
-%title: Label and Heading Examples
+    %title: Label and Heading Examples
 
-Vertical gap=16
-    Label "**Label Variants**"
-    
-    Vertical gap=8
-        Label "Regular label text"
-        Label "**Bold label text**"
-        Label "*Italic label text*"
-        Label "Label with `code` inline"
+    Vertical gap=16
+        Label "**Label Variants**"
+
+        Vertical gap=8
+            Label "Regular label text"
+            Label "**Bold label text**"
+            Label "*Italic label text*"
+            Label "Label with `code` inline"
+        /Vertical
+
+        Separator
+
+        Label "**Heading Levels**"
+
+        Vertical gap=8
+            Heading "Heading Level 1" level=1
+            Heading "Heading Level 2" level=2
+            Heading "Heading Level 3" level=3
+            Heading "Heading Level 4" level=4
+        /Vertical
     /Vertical
-    
-    Separator
-    
-    Label "**Heading Levels**"
-    
-    Vertical gap=8
-        Heading "Heading Level 1" level=1
-        Heading "Heading Level 2" level=2
-        Heading "Heading Level 3" level=3
-        Heading "Heading Level 4" level=4
-    /Vertical
-/Vertical
 /wireframe

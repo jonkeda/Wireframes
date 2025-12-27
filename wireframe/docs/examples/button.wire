@@ -1,25 +1,25 @@
 // Button Control Examples
 wireframe clean
-%title: Button Examples
+    %title: Button Examples
 
-Vertical gap=16
-    Label "**Button Variants**"
-    
-    Horizontal gap=8
-        Button "Default"
-        Button "Primary" primary
-        Button "Secondary" secondary
-        Button "Disabled" disabled
-    /Horizontal
-    
-    Separator
-    
-    Label "**Icon Buttons**"
-    Horizontal gap=8
-        IconButton $icon:home
-        IconButton $icon:settings
-        IconButton $icon:search
-        IconButton $icon:menu
-    /Horizontal
-/Vertical
+    Vertical gap=16
+        Label "**Button Variants**"
+
+        Horizontal gap=8
+            Button "Default"
+            Button "Primary" primary
+            Button "Secondary" secondary
+            Button "Disabled" disabled
+        /Horizontal
+
+        Separator
+
+        Label "**Icon Buttons**"
+        Horizontal gap=8
+            IconButton $icon:home
+            IconButton $icon:settings
+            IconButton $icon:search
+            IconButton $icon:menu
+        /Horizontal
+    /Vertical
 /wireframe

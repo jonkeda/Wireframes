@@ -1,55 +1,55 @@
 // Layout Control Examples - Grid
 wireframe clean
-%title: Grid Layout Examples
+    %title: Grid Layout Examples
 
-Vertical gap=16
-    Label "**2-Column Grid (Default)**"
-    
-    Grid gap=8
-        Button "Cell 1"
-        Button "Cell 2"
-        Button "Cell 3"
-        Button "Cell 4"
-    /Grid
-    
-    Separator
-    
-    Label "**3-Column Grid**"
-    
-    Grid cols=3 gap=8
-        Card padding=16
-            Label "Card 1"
-        /Card
-        Card padding=16
-            Label "Card 2"
-        /Card
-        Card padding=16
-            Label "Card 3"
-        /Card
-        Card padding=16
-            Label "Card 4"
-        /Card
-        Card padding=16
-            Label "Card 5"
-        /Card
-        Card padding=16
-            Label "Card 6"
-        /Card
-    /Grid
-    
-    Separator
-    
-    Label "**4-Column Grid**"
-    
-    Grid cols=4 gap=8
-        Badge "1"
-        Badge "2"
-        Badge "3"
-        Badge "4"
-        Badge "5"
-        Badge "6"
-        Badge "7"
-        Badge "8"
-    /Grid
-/Vertical
+    Vertical gap=16
+        Label "**2-Column Grid (Default)**"
+
+        Grid gap=8
+            Button "Cell 1"
+            Button "Cell 2"
+            Button "Cell 3"
+            Button "Cell 4"
+        /Grid
+
+        Separator
+
+        Label "**3-Column Grid**"
+
+        Grid cols=3 gap=8
+            Card padding=16
+                Label "Card 1"
+            /Card
+            Card padding=16
+                Label "Card 2"
+            /Card
+            Card padding=16
+                Label "Card 3"
+            /Card
+            Card padding=16
+                Label "Card 4"
+            /Card
+            Card padding=16
+                Label "Card 5"
+            /Card
+            Card padding=16
+                Label "Card 6"
+            /Card
+        /Grid
+
+        Separator
+
+        Label "**4-Column Grid**"
+
+        Grid cols=4 gap=8
+            Badge "1"
+            Badge "2"
+            Badge "3"
+            Badge "4"
+            Badge "5"
+            Badge "6"
+            Badge "7"
+            Badge "8"
+        /Grid
+    /Vertical
 /wireframe

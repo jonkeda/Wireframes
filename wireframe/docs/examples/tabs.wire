@@ -1,41 +1,41 @@
 // Tabs Control Examples
 wireframe clean
-%title: Tabs Examples
+    %title: Tabs Examples
 
-Vertical gap=16
-    Label "**Basic Tabs**"
-    
-    Tabs
-        Tab "Overview" active
-        Tab "Details"
-        Tab "Settings"
-        Tab "Help"
-    /Tabs
-    
-    Separator
-    
-    Label "**Tabs with Content**"
-    
-    Card padding=0
+    Vertical gap=16
+        Label "**Basic Tabs**"
+
         Tabs
-            Tab "Profile" active
-            Tab "Account"
-            Tab "Notifications"
+            Tab "Overview" active
+            Tab "Details"
+            Tab "Settings"
+            Tab "Help"
         /Tabs
-        
-        Panel padding=16
-            Vertical gap=8
-                Label "**Profile Settings**"
-                Label "Manage your profile information"
-                
-                Vertical gap=4
-                    Label "Display Name:"
-                    TextInput "John Doe"
+
+        Separator
+
+        Label "**Tabs with Content**"
+
+        Card padding=0
+            Tabs
+                Tab "Profile" active
+                Tab "Account"
+                Tab "Notifications"
+            /Tabs
+
+            Panel padding=16
+                Vertical gap=8
+                    Label "**Profile Settings**"
+                    Label "Manage your profile information"
+
+                    Vertical gap=4
+                        Label "Display Name:"
+                        TextInput "John Doe"
+                    /Vertical
+
+                    Button "Save Changes" primary
                 /Vertical
-                
-                Button "Save Changes" primary
-            /Vertical
-        /Panel
-    /Card
-/Vertical
+            /Panel
+        /Card
+    /Vertical
 /wireframe

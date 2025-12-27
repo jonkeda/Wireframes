@@ -62,7 +62,7 @@
       "patterns": [
         {
           "name": "entity.name.type.control.wireframe",
-          "match": "\\b(Button|IconButton|TextInput|NumberInput|DateInput|PasswordInput|TextArea|Label|Heading|Link|Checkbox|Radio|Dropdown|Option|Separator|Spacer|Icon|Image|Avatar|Badge|Progress|Slider|Switch|Chip|Tabs|Tab|Menu|MenuItem|Breadcrumb|Pagination|Table|Tree|TreeItem|Accordion|AccordionSection|DataGrid|Toast|Skeleton|Stepper)\\b"
+          "match": "\\b(Button|IconButton|TextInput|NumberInput|DateInput|PasswordInput|TextArea|Label|Heading|Link|Checkbox|Radio|Dropdown|Option|Separator|Spacer|Icon|Image|Avatar|Badge|Progress|Slider|Switch|Chip|Tabs|Tab|Menu|MenuItem|Breadcrumb|BreadcrumbItem|Pagination|Table|Tree|TreeItem|Accordion|AccordionSection|DataGrid|Toast|Skeleton|Stepper|Expander|Hamburger|Hover|List|Column|Step)\\b"
         }
       ]
     },
@@ -78,7 +78,7 @@
       "patterns": [
         {
           "name": "entity.name.type.section.wireframe",
-          "match": "\\b(Header|Footer|Sidebar|Content|Panel|Card|Toolbar|Statusbar|Modal|Drawer|Dialog|Alert)\\b"
+          "match": "\\b(Header|Footer|Sidebar|Content|Panel|Card|Toolbar|StatusBar|Modal|Drawer|Dialog|Alert)\\b"
         }
       ]
     },
@@ -86,7 +86,7 @@
       "patterns": [
         {
           "name": "storage.modifier.wireframe",
-          "match": "\\b(primary|secondary|required|disabled|checked|selected|readonly|editable|active|expanded)\\b"
+          "match": "\\b(primary|secondary|required|disabled|checked|selected|readonly|editable|active|expanded|removable|circle|indeterminate|completed|border)\\b"
         }
       ]
     },

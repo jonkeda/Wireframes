@@ -1,28 +1,28 @@
 // Pagination Control Examples
 wireframe clean
-%title: Pagination Examples
+    %title: Pagination Examples
 
-Vertical gap=16
-    Label "**Basic Pagination**"
-    
-    Pagination page=1 total=10
-    
-    Separator
-    
-    Label "**Middle Page**"
-    
-    Pagination page=5 total=10
-    
-    Separator
-    
-    Label "**Last Page**"
-    
-    Pagination page=10 total=10
-    
-    Separator
-    
-    Label "**Many Pages**"
-    
-    Pagination page=15 total=50
-/Vertical
+    Vertical gap=16
+        Label "**Basic Pagination**"
+
+        Pagination page=1 total=10
+
+        Separator
+
+        Label "**Middle Page**"
+
+        Pagination page=5 total=10
+
+        Separator
+
+        Label "**Last Page**"
+
+        Pagination page=10 total=10
+
+        Separator
+
+        Label "**Many Pages**"
+
+        Pagination page=15 total=50
+    /Vertical
 /wireframe

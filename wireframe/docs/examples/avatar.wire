@@ -1,50 +1,50 @@
 // Avatar Control Examples
 wireframe clean
-%title: Avatar Examples
+    %title: Avatar Examples
 
-Vertical gap=16
-    Label "**Avatar Sizes**"
-    
-    Horizontal gap=16 align=center
-        Vertical gap=4 align=center
-            Avatar size=24
-            Label "XS"
-        /Vertical
-        Vertical gap=4 align=center
-            Avatar size=32
-            Label "SM"
-        /Vertical
-        Vertical gap=4 align=center
-            Avatar size=48
-            Label "MD"
-        /Vertical
-        Vertical gap=4 align=center
-            Avatar size=64
-            Label "LG"
-        /Vertical
-        Vertical gap=4 align=center
-            Avatar size=96
-            Label "XL"
-        /Vertical
-    /Horizontal
-    
-    Separator
-    
-    Label "**Avatar with Names**"
-    
-    Vertical gap=8
-        Horizontal gap=8 align=center
-            Avatar size=40 initials="JD"
-            Label "John Doe"
+    Vertical gap=16
+        Label "**Avatar Sizes**"
+
+        Horizontal gap=16 align=center
+            Vertical gap=4 align=center
+                Avatar size=24
+                Label "XS"
+            /Vertical
+            Vertical gap=4 align=center
+                Avatar size=32
+                Label "SM"
+            /Vertical
+            Vertical gap=4 align=center
+                Avatar size=48
+                Label "MD"
+            /Vertical
+            Vertical gap=4 align=center
+                Avatar size=64
+                Label "LG"
+            /Vertical
+            Vertical gap=4 align=center
+                Avatar size=96
+                Label "XL"
+            /Vertical
         /Horizontal
-        Horizontal gap=8 align=center
-            Avatar size=40 initials="AS"
-            Label "Alice Smith"
-        /Horizontal
-        Horizontal gap=8 align=center
-            Avatar size=40 initials="BJ"
-            Label "Bob Johnson"
-        /Horizontal
+
+        Separator
+
+        Label "**Avatar with Names**"
+
+        Vertical gap=8
+            Horizontal gap=8 align=center
+                Avatar size=40 initials="JD"
+                Label "John Doe"
+            /Horizontal
+            Horizontal gap=8 align=center
+                Avatar size=40 initials="AS"
+                Label "Alice Smith"
+            /Horizontal
+            Horizontal gap=8 align=center
+                Avatar size=40 initials="BJ"
+                Label "Bob Johnson"
+            /Horizontal
+        /Vertical
     /Vertical
-/Vertical
 /wireframe

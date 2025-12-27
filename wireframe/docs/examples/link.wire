@@ -1,25 +1,25 @@
 // Link Control Examples
 wireframe clean
-%title: Link Examples
+    %title: Link Examples
 
-Vertical gap=16
-    Label "**Link Variants**"
-    
-    Vertical gap=8
-        Link "Simple link"
-        Link "Link with URL" url="https://example.com"
-        Link "External link" @external
-        Link "Disabled link" disabled
+    Vertical gap=16
+        Label "**Link Variants**"
+
+        Vertical gap=8
+            Link "Simple link"
+            Link "Link with URL" url="https://example.com"
+            Link "External link" @external
+            Link "Disabled link" disabled
+        /Vertical
+
+        Separator
+
+        Label "**Links in Context**"
+
+        Horizontal gap=4
+            Label "Visit our"
+            Link "documentation"
+            Label "for more info."
+        /Horizontal
     /Vertical
-    
-    Separator
-    
-    Label "**Links in Context**"
-    
-    Horizontal gap=4
-        Label "Visit our"
-        Link "documentation"
-        Label "for more info."
-    /Horizontal
-/Vertical
 /wireframe

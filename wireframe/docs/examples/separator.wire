@@ -1,30 +1,30 @@
 // Separator and Spacer Control Examples
 wireframe clean
-%title: Separator and Spacer Examples
+    %title: Separator and Spacer Examples
 
-Vertical gap=16
-    Label "**Separator**"
-    
-    Vertical gap=8
-        Label "Content above separator"
-        Separator
-        Label "Content below separator"
+    Vertical gap=16
+        Label "**Separator**"
+
+        Vertical gap=8
+            Label "Content above separator"
+            Separator
+            Label "Content below separator"
+        /Vertical
+
+        Label "**Spacer**"
+
+        Vertical gap=8
+            Label "Content above spacer"
+            Spacer height=32
+            Label "Content below spacer (32px gap)"
+        /Vertical
+
+        Label "**In Horizontal Layout**"
+
+        Horizontal gap=8
+            Button "Left"
+            Spacer
+            Button "Right (pushed by spacer)"
+        /Horizontal
     /Vertical
-    
-    Label "**Spacer**"
-    
-    Vertical gap=8
-        Label "Content above spacer"
-        Spacer height=32
-        Label "Content below spacer (32px gap)"
-    /Vertical
-    
-    Label "**In Horizontal Layout**"
-    
-    Horizontal gap=8
-        Button "Left"
-        Spacer
-        Button "Right (pushed by spacer)"
-    /Horizontal
-/Vertical
 /wireframe

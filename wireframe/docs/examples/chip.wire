@@ -1,38 +1,38 @@
 // Chip Control Examples
 wireframe clean
-%title: Chip Examples
+    %title: Chip Examples
 
-Vertical gap=16
-    Label "**Chip Variants**"
-    
-    Horizontal gap=8
-        Chip "Default"
-        Chip "Selected" selected
-        Chip "Disabled" disabled
-        Chip "Removable" removable
-    /Horizontal
-    
-    Separator
-    
-    Label "**Filter Chips**"
-    
-    Horizontal gap=8
-        Chip "All" selected
-        Chip "Active"
-        Chip "Completed"
-        Chip "Archived"
-    /Horizontal
-    
-    Separator
-    
-    Label "**Tag Chips**"
-    
-    Horizontal gap=8
-        Chip "JavaScript"
-        Chip "TypeScript" selected
-        Chip "React"
-        Chip "Vue"
-        Chip "Angular"
-    /Horizontal
-/Vertical
+    Vertical gap=16
+        Label "**Chip Variants**"
+
+        Horizontal gap=8
+            Chip "Default"
+            Chip "Selected" selected
+            Chip "Disabled" disabled
+            Chip "Removable" removable
+        /Horizontal
+
+        Separator
+
+        Label "**Filter Chips**"
+
+        Horizontal gap=8
+            Chip "All" selected
+            Chip "Active"
+            Chip "Completed"
+            Chip "Archived"
+        /Horizontal
+
+        Separator
+
+        Label "**Tag Chips**"
+
+        Horizontal gap=8
+            Chip "JavaScript"
+            Chip "TypeScript" selected
+            Chip "React"
+            Chip "Vue"
+            Chip "Angular"
+        /Horizontal
+    /Vertical
 /wireframe
