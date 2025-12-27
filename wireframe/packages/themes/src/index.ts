@@ -24,12 +24,12 @@ export {
 /**
  * Create a custom theme by extending an existing theme
  */
-export function createTheme(
+export async function createTheme(
   name: string,
   baseTheme: string,
   overrides: Record<string, unknown>
-): unknown {
-  const { getTheme } = require('@jonkeda/wireframe-core');
+): Promise<unknown> {
+  const { getTheme } = await import('@jonkeda/wireframe-core');
   const base = getTheme(baseTheme);
   return deepMerge({ ...base, name }, overrides);
 }

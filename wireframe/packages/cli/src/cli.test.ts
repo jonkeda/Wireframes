@@ -6,7 +6,6 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import * as fs from 'fs';
-import * as path from 'path';
 
 // Mock fs module
 vi.mock('fs', async () => {
@@ -116,7 +115,7 @@ describe('CLI Utilities', () => {
 
   describe('watch mode', () => {
     it('should detect .wire file changes', () => {
-      const watchPath = '/path/to/watch';
+      // Test file extension detection
       const filename = 'test.wire';
       const isWireFile = filename.endsWith('.wire');
       expect(isWireFile).toBe(true);

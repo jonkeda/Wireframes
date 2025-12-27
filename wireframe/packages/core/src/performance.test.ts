@@ -67,6 +67,7 @@ describe('Performance Utilities', () => {
       const result = benchmark('simple', () => {
         let sum = 0;
         for (let i = 0; i < 100; i++) sum += i;
+        void sum; // Consume the value to avoid unused variable warning
       }, { iterations: 10, warmup: 2 });
 
       expect(result.name).toBe('simple');

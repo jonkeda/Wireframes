@@ -9,7 +9,9 @@
   "bin": {
     "wire": "./dist/cli.js"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "clean": "rm -rf dist",
@@ -19,9 +21,13 @@
     "@jonkeda/wireframe-core": "workspace:*"
   },
   "devDependencies": {
-    "@types/node": "^20.10.0",
-    "typescript": "^5.4.0"
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3"
   },
-  "keywords": ["wireframe", "cli", "mockup"],
+  "keywords": [
+    "wireframe",
+    "cli",
+    "mockup"
+  ],
   "license": "MIT"
 }

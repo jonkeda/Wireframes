@@ -12,7 +12,9 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "clean": "rm -rf dist",
@@ -22,8 +24,12 @@
     "@jonkeda/wireframe-core": "workspace:*"
   },
   "devDependencies": {
-    "typescript": "^5.4.0"
+    "typescript": "^5.9.3"
   },
-  "keywords": ["wireframe", "themes", "mockup"],
+  "keywords": [
+    "wireframe",
+    "themes",
+    "mockup"
+  ],
   "license": "MIT"
 }

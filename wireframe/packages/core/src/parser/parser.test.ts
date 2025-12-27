@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { Parser, parse } from './parser.js';
+import { parse } from './parser.js';
 import {
   isLayoutNode,
   isSectionNode,
@@ -33,7 +33,7 @@ describe('Parser', () => {
     %version: 1.0
     %author: Test
 /wireframe`;
-      const { document, errors } = parse(source);
+      const { document } = parse(source);
 
       // Document attributes parsing may produce warnings for unrecognized syntax
       // Main goal is to parse without fatal errors

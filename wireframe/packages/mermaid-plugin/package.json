@@ -12,7 +12,9 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "clean": "rm -rf dist",
@@ -25,8 +27,13 @@
     "mermaid": ">=10.0.0"
   },
   "devDependencies": {
-    "typescript": "^5.4.0"
+    "typescript": "^5.9.3"
   },
-  "keywords": ["wireframe", "mermaid", "diagram", "mockup"],
+  "keywords": [
+    "wireframe",
+    "mermaid",
+    "diagram",
+    "mockup"
+  ],
   "license": "MIT"
 }

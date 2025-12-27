@@ -425,11 +425,10 @@ export class LayoutEngine {
     const layouts: LayoutInfo[] = [];
     
     // Determine grid columns - default to 2 if not specified
-    let cols = 2;
+    const cols = 2;
     
     // Calculate cell dimensions
     const cellWidth = (context.availableWidth - gap * (cols - 1)) / cols;
-    let row = 0;
     let col = 0;
     let rowHeight = 0;
     let y = context.y;
@@ -458,7 +457,6 @@ export class LayoutEngine {
       col++;
       if (col >= cols) {
         col = 0;
-        row++;
         y += rowHeight + gap;
         rowHeight = 0;
       }

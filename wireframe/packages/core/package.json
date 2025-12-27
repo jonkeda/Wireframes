@@ -24,15 +24,23 @@
       "types": "./dist/renderer/index.d.ts"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit"
   },
-  "keywords": ["wireframe", "parser", "lexer", "mockup", "svg"],
+  "keywords": [
+    "wireframe",
+    "parser",
+    "lexer",
+    "mockup",
+    "svg"
+  ],
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^5.4.0"
+    "typescript": "^5.9.3"
   }
 }

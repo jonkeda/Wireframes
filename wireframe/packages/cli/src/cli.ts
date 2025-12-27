@@ -133,7 +133,7 @@ function loadConfig(configPath: string): ConfigFile {
   try {
     const content = fs.readFileSync(configPath, 'utf-8');
     return JSON.parse(content);
-  } catch (error) {
+  } catch {
     // eslint-disable-next-line no-console
     console.error(`Error: Could not load config file "${configPath}"`);
     process.exit(1);
@@ -162,7 +162,7 @@ function compileFile(
   let source: string;
   try {
     source = fs.readFileSync(inputPath, 'utf-8');
-  } catch (error) {
+  } catch {
     // eslint-disable-next-line no-console
     console.error(`Error: Could not read file "${inputPath}"`);
     return false;
@@ -219,7 +219,7 @@ function compileFile(
     fs.writeFileSync(outputPath, svg);
     log(`✓ ${inputPath} → ${outputPath}`, options.quiet);
     return true;
-  } catch (error) {
+  } catch {
     // eslint-disable-next-line no-console
     console.error(`Error: Could not write to "${outputPath}"`);
     return false;

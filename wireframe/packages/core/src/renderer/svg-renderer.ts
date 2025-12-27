@@ -988,7 +988,7 @@ export class SVGRenderer {
     const { x, y, width, height } = bounds;
 
     let bgColor = this.theme.colors.surface;
-    let strokeColor = this.theme.colors.border;
+    const strokeColor = this.theme.colors.border;
 
     // Different styles for different section types
     if (node.sectionType === 'Card') {
