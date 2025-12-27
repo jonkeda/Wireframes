@@ -45,12 +45,12 @@ This document describes how to integrate UIMMD preview and editing capabilities 
 
 ```
 UIMMD Technology Stack:
-??? TypeScript 5.x          ? VSCode native
-??? pnpm workspaces         ? VSCode native  
-??? Vitest                  ? VSCode extensions available
-??? Vite/esbuild           ? JavaScript tooling
-??? Mermaid.js             ? JavaScript library
-??? VSCode Extension API   ? Must use VSCode
+... TypeScript 5.x          . VSCode native
+... pnpm workspaces         . VSCode native  
+... Vitest                  . VSCode extensions available
+... Vite/esbuild           . JavaScript tooling
+... Mermaid.js             . JavaScript library
+... VSCode Extension API   . Must use VSCode
 ```
 
 ### 2.4 When Visual Studio Would Be Preferred
@@ -91,7 +91,7 @@ module.exports = {
     onDidParseMarkdown: async function(html) {
         // Replace ```uimmd code blocks with rendered SVG
         return html.replace(
-            /<pre><code class="language-uimmd">([\s\S]*?)<\/code><\/pre>/g,
+            /<pre><code class="language-uimmd">([\s\S]*.)<\/code><\/pre>/g,
             (match, code) => {
                 try {
                     const ast = uimmd.parse(code);
@@ -424,29 +424,29 @@ function getErrorHtml(error: Error): string {
 ### 5.1 Recommended Approach
 
 ```
-???????????????????????????????????????????????????????????????????
-?                    Integration Strategy                          ?
-???????????????????????????????????????????????????????????????????
-?                                                                  ?
-?  Phase 1: Mermaid Plugin                                        ?
-?  ?????????????????????                                          ?
-?  • Install @uimmd/mermaid-plugin                                ?
-?  • Works with existing Mermaid extensions                       ?
-?  • Zero configuration required                                  ?
-?                                                                  ?
-?  Phase 2: Dedicated File Support                                ?
-?  ???????????????????????????????                                ?
-?  • Add syntax highlighting via TextMate grammar                 ?
-?  • Use CLI for rendering and validation                         ?
-?  • Configure VSCode tasks                                       ?
-?                                                                  ?
-?  Phase 3: Full IntelliSense (Optional)                          ?
-?  ?????????????????????????????????????                          ?
-?  • Install lightweight UIMMD extension                          ?
-?  • Provides completion, hover, diagnostics                      ?
-?  • Delegates rendering to @uimmd/core                           ?
-?                                                                  ?
-???????????????????????????????????????????????????????????????????
+...................................................................
+.                    Integration Strategy                          .
+...................................................................
+.                                                                  .
+.  Phase 1: Mermaid Plugin                                        .
+.  .....................                                          .
+.  • Install @uimmd/mermaid-plugin                                .
+.  • Works with existing Mermaid extensions                       .
+.  • Zero configuration required                                  .
+.                                                                  .
+.  Phase 2: Dedicated File Support                                .
+.  ...............................                                .
+.  • Add syntax highlighting via TextMate grammar                 .
+.  • Use CLI for rendering and validation                         .
+.  • Configure VSCode tasks                                       .
+.                                                                  .
+.  Phase 3: Full IntelliSense (Optional)                          .
+.  .....................................                          .
+.  • Install lightweight UIMMD extension                          .
+.  • Provides completion, hover, diagnostics                      .
+.  • Delegates rendering to @uimmd/core                           .
+.                                                                  .
+...................................................................
 ```
 
 ### 5.2 Quick Start

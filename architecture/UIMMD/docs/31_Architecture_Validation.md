@@ -18,17 +18,17 @@ This document validates the UIMMD architecture documentation (Documents 20-29), 
 
 | Doc | Title | Purpose | Status |
 |-----|-------|---------|--------|
-| 20 | Architecture Overview | System architecture, modules, tech stack | ? Complete |
-| 21 | Mermaid Integration Design | Mermaid.js plugin registration | ? Complete |
-| 22 | Parser Specification | Lexer, grammar, AST structure | ? Complete |
-| 23 | Renderer Design | Layout engine, SVG generation | ? Complete |
-| 24 | VSCode Extension Design | Extension architecture, features | ? Complete |
-| 25 | Component Library | UI components, properties, sizes | ? Complete |
-| 26 | Theming System | Theme definitions, customization | ? Complete |
-| 27 | API Reference | Public API documentation | ? Complete |
-| 28 | Testing Strategy | Test types, coverage targets | ? Complete |
-| 29 | Implementation Roadmap | Phases, milestones, timeline | ? Complete |
-| 30 | Integration Guide | IDE integration options | ? Complete |
+| 20 | Architecture Overview | System architecture, modules, tech stack | . Complete |
+| 21 | Mermaid Integration Design | Mermaid.js plugin registration | . Complete |
+| 22 | Parser Specification | Lexer, grammar, AST structure | . Complete |
+| 23 | Renderer Design | Layout engine, SVG generation | . Complete |
+| 24 | VSCode Extension Design | Extension architecture, features | . Complete |
+| 25 | Component Library | UI components, properties, sizes | . Complete |
+| 26 | Theming System | Theme definitions, customization | . Complete |
+| 27 | API Reference | Public API documentation | . Complete |
+| 28 | Testing Strategy | Test types, coverage targets | . Complete |
+| 29 | Implementation Roadmap | Phases, milestones, timeline | . Complete |
+| 30 | Integration Guide | IDE integration options | . Complete |
 
 ---
 
@@ -38,33 +38,33 @@ This document validates the UIMMD architecture documentation (Documents 20-29), 
 
 | Component | Doc 20 | Doc 21 | Doc 22 | Doc 23 | Doc 24 | Doc 28 | Status |
 |-----------|--------|--------|--------|--------|--------|--------|--------|
-| TypeScript 5.x | ? | ? | ? | ? | ? | ? | ? Consistent |
-| Vitest | ? | - | - | - | - | ? | ? Consistent |
-| pnpm | ? | - | - | - | - | - | ? Consistent |
-| SVG Output | ? | ? | - | ? | ? | - | ? Consistent |
-| Mermaid 10.x/11.x | ? | ? | - | - | - | - | ? Consistent |
+| TypeScript 5.x | . | . | . | . | . | . | . Consistent |
+| Vitest | . | - | - | - | - | . | . Consistent |
+| pnpm | . | - | - | - | - | - | . Consistent |
+| SVG Output | . | . | - | . | . | - | . Consistent |
+| Mermaid 10.x/11.x | . | . | - | - | - | - | . Consistent |
 
 ### 3.2 Module Interface Consistency
 
 | Interface | Defined In | Used In | Status |
 |-----------|------------|---------|--------|
-| `Token` / `TokenType` | Doc 22 | Doc 20, 28 | ? Consistent |
-| `ASTNode` / `Document` | Doc 22 | Doc 20, 23, 27 | ? Consistent |
-| `Theme` interface | Doc 26 | Doc 20, 23, 27 | ? Consistent |
-| `RenderOptions` | Doc 23 | Doc 20, 27 | ? Consistent |
-| `LayoutNode` | Doc 23 | Doc 23 | ? Consistent |
+| `Token` / `TokenType` | Doc 22 | Doc 20, 28 | . Consistent |
+| `ASTNode` / `Document` | Doc 22 | Doc 20, 23, 27 | . Consistent |
+| `Theme` interface | Doc 26 | Doc 20, 23, 27 | . Consistent |
+| `RenderOptions` | Doc 23 | Doc 20, 27 | . Consistent |
+| `LayoutNode` | Doc 23 | Doc 23 | . Consistent |
 
 ### 3.3 Component Coverage
 
 | Component Category | Doc 25 (Library) | Doc 22 (Parser) | Doc 23 (Renderer) | Status |
 |-------------------|------------------|-----------------|-------------------|--------|
-| Controls | 14 components | ? Grammar | ? Renderers | ? Complete |
-| Layout | 6 layouts | ? Grammar | ? Algorithms | ? Complete |
-| Sections | 9 sections | ? Grammar | ? Renderers | ? Complete |
-| Navigation | 5 components | ? Grammar | ? Renderers | ? Complete |
-| Data Display | 8 components | ? Grammar | ? Renderers | ? Complete |
-| Feedback | 5 components | ? Grammar | ? Renderers | ? Complete |
-| Input | 4 components | ? Grammar | ? Renderers | ? Complete |
+| Controls | 14 components | . Grammar | . Renderers | . Complete |
+| Layout | 6 layouts | . Grammar | . Algorithms | . Complete |
+| Sections | 9 sections | . Grammar | . Renderers | . Complete |
+| Navigation | 5 components | . Grammar | . Renderers | . Complete |
+| Data Display | 8 components | . Grammar | . Renderers | . Complete |
+| Feedback | 5 components | . Grammar | . Renderers | . Complete |
+| Input | 4 components | . Grammar | . Renderers | . Complete |
 
 ---
 
@@ -73,64 +73,64 @@ This document validates the UIMMD architecture documentation (Documents 20-29), 
 ### 4.1 Data Flow Validation
 
 ```
-????????????????????????????????????????????????????????????????????????????
-?                         Data Flow Verification                            ?
-????????????????????????????????????????????????????????????????????????????
-?                                                                           ?
-?  Source Text ??? Lexer ??? Tokens ??? Parser ??? AST ??? Renderer ??? SVG ?
-?                                                                           ?
-?  Doc 20: ? Defined in Section 5.1                                        ?
-?  Doc 22: ? Lexer tokens match parser expectations                        ?
-?  Doc 23: ? Renderer accepts AST from parser                              ?
-?  Doc 27: ? API exposes parse() ? render() pipeline                       ?
-?                                                                           ?
-?  VALIDATION: ? PASSED - Data flow is consistent across all documents     ?
-?                                                                           ?
-????????????????????????????????????????????????????????????????????????????
+............................................................................
+.                         Data Flow Verification                            .
+............................................................................
+.                                                                           .
+.  Source Text ... Lexer ... Tokens ... Parser ... AST ... Renderer ... SVG .
+.                                                                           .
+.  Doc 20: . Defined in Section 5.1                                        .
+.  Doc 22: . Lexer tokens match parser expectations                        .
+.  Doc 23: . Renderer accepts AST from parser                              .
+.  Doc 27: . API exposes parse() . render() pipeline                       .
+.                                                                           .
+.  VALIDATION: . PASSED - Data flow is consistent across all documents     .
+.                                                                           .
+............................................................................
 ```
 
 ### 4.2 Package Structure Validation
 
 | Package | Doc 20 | Doc 27 (API) | Doc 29 (Roadmap) | Status |
 |---------|--------|--------------|------------------|--------|
-| `@uimmd/core` | ? | ? | Week 3-8 | ? Aligned |
-| `@uimmd/mermaid-plugin` | ? | ? | Week 17-18 | ? Aligned |
-| `@uimmd/themes` | ? | ? | Week 13-14 | ? Aligned |
-| `@uimmd/vscode-extension` | ? | ? | Week 19-20 | ? Aligned |
-| `@uimmd/cli` | ? | ? | Week 21-22 | ? Aligned |
+| `@uimmd/core` | . | . | Week 3-8 | . Aligned |
+| `@uimmd/mermaid-plugin` | . | . | Week 17-18 | . Aligned |
+| `@uimmd/themes` | . | . | Week 13-14 | . Aligned |
+| `@uimmd/vscode-extension` | . | . | Week 19-20 | . Aligned |
+| `@uimmd/cli` | . | . | Week 21-22 | . Aligned |
 
 ### 4.3 Theme System Validation
 
 | Theme | Doc 26 (Definition) | Doc 25 (Components) | Doc 28 (Tests) | Status |
 |-------|---------------------|---------------------|----------------|--------|
-| `sketch` | ? Rough.js | ? Wobbly lines | ? Snapshots | ? Complete |
-| `clean` | ? Minimal | ? Straight lines | ? Snapshots | ? Complete |
-| `blueprint` | ? Technical | ? Grid background | ? Snapshots | ? Complete |
-| `realistic` | ? Shadows | ? Modern colors | ? Snapshots | ? Complete |
+| `sketch` | . Rough.js | . Wobbly lines | . Snapshots | . Complete |
+| `clean` | . Minimal | . Straight lines | . Snapshots | . Complete |
+| `blueprint` | . Technical | . Grid background | . Snapshots | . Complete |
+| `realistic` | . Shadows | . Modern colors | . Snapshots | . Complete |
 
 ---
 
 ## 5. Interface Contract Validation
 
-### 5.1 Parser ? Renderer Contract
+### 5.1 Parser . Renderer Contract
 
 ```typescript
 // Contract defined in Doc 22, consumed in Doc 23
 
 interface Document {
     type: 'Document';
-    style: 'sketch' | 'clean' | 'blueprint' | 'realistic';  // ? Matches theme names
+    style: 'sketch' | 'clean' | 'blueprint' | 'realistic';  // . Matches theme names
     metadata: DocumentMetadata;
     body: Element[];
 }
 
-// Validation: ? PASSED
+// Validation: . PASSED
 // - Parser outputs Document (Doc 22 §4)
 // - Renderer accepts Document (Doc 23 §2)
 // - Themes match style enum (Doc 26 §2)
 ```
 
-### 5.2 Core ? Mermaid Plugin Contract
+### 5.2 Core . Mermaid Plugin Contract
 
 ```typescript
 // Contract defined in Doc 20, implemented in Doc 21
@@ -142,13 +142,13 @@ interface DiagramDefinition {
     renderer: { render: (doc: Document) => string };
 }
 
-// Validation: ? PASSED
+// Validation: . PASSED
 // - Detector pattern matches Doc 21 §3.1
 // - Parser interface aligns with Doc 22
 // - Renderer interface aligns with Doc 23
 ```
 
-### 5.3 Core ? VSCode Extension Contract
+### 5.3 Core . VSCode Extension Contract
 
 ```typescript
 // Contract defined in Doc 20, implemented in Doc 24
@@ -156,7 +156,7 @@ interface DiagramDefinition {
 // Extension uses:
 import { parse, render, validate } from '@uimmd/core';
 
-// Validation: ? PASSED
+// Validation: . PASSED
 // - API exports match Doc 27 §3.1
 // - Extension imports align with Doc 24 §2
 ```
@@ -169,11 +169,11 @@ import { parse, render, validate } from '@uimmd/core';
 
 | Metric | Doc 20 Target | Doc 28 Test | Doc 29 Phase | Status |
 |--------|---------------|-------------|--------------|--------|
-| Parse (100 lines) | < 10ms | ? Benchmark | Week 23 | ? Aligned |
-| Render (simple) | < 50ms | ? Benchmark | Week 23 | ? Aligned |
-| Render (complex) | < 200ms | ? Benchmark | Week 23 | ? Aligned |
-| VSCode update | < 100ms | ? E2E Test | Week 19-20 | ? Aligned |
-| Memory (typical) | < 10MB | ? Memory Test | Week 23 | ? Aligned |
+| Parse (100 lines) | < 10ms | . Benchmark | Week 23 | . Aligned |
+| Render (simple) | < 50ms | . Benchmark | Week 23 | . Aligned |
+| Render (complex) | < 200ms | . Benchmark | Week 23 | . Aligned |
+| VSCode update | < 100ms | . E2E Test | Week 19-20 | . Aligned |
+| Memory (typical) | < 10MB | . Memory Test | Week 23 | . Aligned |
 
 ### 6.2 Test Coverage Alignment
 
@@ -184,7 +184,7 @@ import { parse, render, validate } from '@uimmd/core';
 | @uimmd/themes | 80% | - | 80% | 80% |
 | @uimmd/vscode-extension | 70% | - | - | 70% |
 
-**Validation:** ? Progressive coverage targets align with implementation phases
+**Validation:** . Progressive coverage targets align with implementation phases
 
 ---
 
@@ -194,10 +194,10 @@ import { parse, render, validate } from '@uimmd/core';
 
 | Concern | Doc 20 Mitigation | Implementation Location | Status |
 |---------|-------------------|------------------------|--------|
-| XSS in output | Sanitize text | Doc 23 §Renderer | ? Addressed |
-| Path traversal | Validate file access | Doc 24 §Extension | ? Addressed |
-| Resource exhaustion | Limit size/nesting | Doc 22 §Parser | ? Addressed |
-| Code injection | No eval/dynamic code | All modules | ? Addressed |
+| XSS in output | Sanitize text | Doc 23 §Renderer | . Addressed |
+| Path traversal | Validate file access | Doc 24 §Extension | . Addressed |
+| Resource exhaustion | Limit size/nesting | Doc 22 §Parser | . Addressed |
+| Code injection | No eval/dynamic code | All modules | . Addressed |
 
 ---
 
@@ -221,9 +221,9 @@ import { parse, render, validate } from '@uimmd/core';
 
 ### 8.3 No Critical Gaps Identified
 
-? All core functionality is documented
-? All interfaces are consistent
-? All dependencies are aligned
+. All core functionality is documented
+. All interfaces are consistent
+. All dependencies are aligned
 
 ---
 
@@ -233,34 +233,34 @@ import { parse, render, validate } from '@uimmd/core';
 
 | Dependency | Used By | Version | Doc Reference | Status |
 |------------|---------|---------|---------------|--------|
-| Mermaid.js | mermaid-plugin | 10.x, 11.x | Doc 20, 21 | ? Compatible |
-| Rough.js | themes (sketch) | Latest | Doc 26 | ? Compatible |
-| VSCode API | extension | 1.80+ | Doc 20, 24 | ? Compatible |
-| Vitest | testing | Latest | Doc 20, 28 | ? Compatible |
-| Playwright | E2E tests | Latest | Doc 28 | ? Compatible |
-| Percy | Visual tests | Latest | Doc 28 | ? Compatible |
+| Mermaid.js | mermaid-plugin | 10.x, 11.x | Doc 20, 21 | . Compatible |
+| Rough.js | themes (sketch) | Latest | Doc 26 | . Compatible |
+| VSCode API | extension | 1.80+ | Doc 20, 24 | . Compatible |
+| Vitest | testing | Latest | Doc 20, 28 | . Compatible |
+| Playwright | E2E tests | Latest | Doc 28 | . Compatible |
+| Percy | Visual tests | Latest | Doc 28 | . Compatible |
 
 ### 9.2 Internal Dependencies
 
 ```
-???????????????????????????????????????????????????????????????????
-?                   Internal Dependency Graph                      ?
-???????????????????????????????????????????????????????????????????
-?                                                                  ?
-?                    @uimmd/cli                                    ?
-?                        ?                                         ?
-?           ?????????????????????????                             ?
-?           ?           ?           ?                             ?
-?    @uimmd/mermaid  @uimmd/vscode  @uimmd/themes                 ?
-?           ?           ?           ?                             ?
-?           ?????????????????????????                             ?
-?                       ?                                          ?
-?                  @uimmd/core                                     ?
-?                                                                  ?
-?  Validation: ? No circular dependencies                        ?
-?  Validation: ? Core is leaf dependency                         ?
-?                                                                  ?
-???????????????????????????????????????????????????????????????????
+...................................................................
+.                   Internal Dependency Graph                      .
+...................................................................
+.                                                                  .
+.                    @uimmd/cli                                    .
+.                        .                                         .
+.           .........................                             .
+.           .           .           .                             .
+.    @uimmd/mermaid  @uimmd/vscode  @uimmd/themes                 .
+.           .           .           .                             .
+.           .........................                             .
+.                       .                                          .
+.                  @uimmd/core                                     .
+.                                                                  .
+.  Validation: . No circular dependencies                        .
+.  Validation: . Core is leaf dependency                         .
+.                                                                  .
+...................................................................
 ```
 
 ---
@@ -271,37 +271,37 @@ import { parse, render, validate } from '@uimmd/core';
 
 | Component | Specification | Ready to Implement |
 |-----------|--------------|-------------------|
-| Lexer | Doc 22 §2 | ? Complete spec |
-| Parser | Doc 22 §3-4 | ? Complete spec |
-| Basic Renderer | Doc 23 §2-3 | ? Complete spec |
-| Clean Theme | Doc 26 §4 | ? Complete spec |
-| Project Structure | Doc 20 §8 | ? Complete spec |
+| Lexer | Doc 22 §2 | . Complete spec |
+| Parser | Doc 22 §3-4 | . Complete spec |
+| Basic Renderer | Doc 23 §2-3 | . Complete spec |
+| Clean Theme | Doc 26 §4 | . Complete spec |
+| Project Structure | Doc 20 §8 | . Complete spec |
 
 ### 10.2 Phase 2 Readiness (Core Features)
 
 | Component | Specification | Ready to Implement |
 |-----------|--------------|-------------------|
-| All Controls | Doc 25 §3 | ? Complete spec |
-| All Layouts | Doc 25 §4 | ? Complete spec |
-| All Themes | Doc 26 §4-7 | ? Complete spec |
-| Data Binding | Doc 25 §8 | ? Complete spec |
+| All Controls | Doc 25 §3 | . Complete spec |
+| All Layouts | Doc 25 §4 | . Complete spec |
+| All Themes | Doc 26 §4-7 | . Complete spec |
+| Data Binding | Doc 25 §8 | . Complete spec |
 
 ### 10.3 Phase 3 Readiness (Integration)
 
 | Component | Specification | Ready to Implement |
 |-----------|--------------|-------------------|
-| Mermaid Plugin | Doc 21 §3-5 | ? Complete spec |
-| VSCode Extension | Doc 24 §2-7 | ? Complete spec |
-| CLI Tool | Doc 27 §6 | ? Complete spec |
-| Testing Suite | Doc 28 §4-8 | ? Complete spec |
+| Mermaid Plugin | Doc 21 §3-5 | . Complete spec |
+| VSCode Extension | Doc 24 §2-7 | . Complete spec |
+| CLI Tool | Doc 27 §6 | . Complete spec |
+| Testing Suite | Doc 28 §4-8 | . Complete spec |
 
 ### 10.4 Phase 4 Readiness (Production)
 
 | Component | Specification | Ready to Implement |
 |-----------|--------------|-------------------|
-| Performance Optimization | Doc 20 §10 | ? Targets defined |
-| Accessibility | Doc 26 §8 | ? WCAG targets |
-| Documentation | Doc 29 §6.3 | ? Plan defined |
+| Performance Optimization | Doc 20 §10 | . Targets defined |
+| Accessibility | Doc 26 §8 | . WCAG targets |
+| Documentation | Doc 29 §6.3 | . Plan defined |
 
 ---
 
@@ -310,25 +310,25 @@ import { parse, render, validate } from '@uimmd/core';
 ### 11.1 Overall Assessment
 
 ```
-???????????????????????????????????????????????????????????????????????????
-?                    ARCHITECTURE VALIDATION SUMMARY                       ?
-???????????????????????????????????????????????????????????????????????????
-?                                                                          ?
-?  Documents Reviewed:        10 (Doc 20-29 + Doc 30)                     ?
-?  Consistency Checks:        42 passed, 0 failed                         ?
-?  Interface Contracts:       5 validated, all passed                     ?
-?  Dependency Analysis:       Clean, no circular dependencies             ?
-?  Security Review:           All concerns addressed                       ?
-?  Performance Targets:       Defined and testable                         ?
-?  Implementation Readiness:  All phases ready                            ?
-?                                                                          ?
-?  ???????????????????????????????????????????????????????????????????   ?
-?  ?                                                                  ?   ?
-?  ?   OVERALL STATUS:  ? VALIDATED - Ready for Implementation       ?   ?
-?  ?                                                                  ?   ?
-?  ???????????????????????????????????????????????????????????????????   ?
-?                                                                          ?
-???????????????????????????????????????????????????????????????????????????
+...........................................................................
+.                    ARCHITECTURE VALIDATION SUMMARY                       .
+...........................................................................
+.                                                                          .
+.  Documents Reviewed:        10 (Doc 20-29 + Doc 30)                     .
+.  Consistency Checks:        42 passed, 0 failed                         .
+.  Interface Contracts:       5 validated, all passed                     .
+.  Dependency Analysis:       Clean, no circular dependencies             .
+.  Security Review:           All concerns addressed                       .
+.  Performance Targets:       Defined and testable                         .
+.  Implementation Readiness:  All phases ready                            .
+.                                                                          .
+.  ...................................................................   .
+.  .                                                                  .   .
+.  .   OVERALL STATUS:  . VALIDATED - Ready for Implementation       .   .
+.  .                                                                  .   .
+.  ...................................................................   .
+.                                                                          .
+...........................................................................
 ```
 
 ### 11.2 Recommendations

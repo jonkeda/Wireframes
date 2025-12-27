@@ -26,17 +26,17 @@ This document describes the testing strategy for the UIMMD project, covering uni
 ### 2.2 Testing Pyramid
 
 ```
-                    ?????????????
-                    ?   E2E     ?  Few, slow, high confidence
-                    ?   Tests   ?
-                   ???????????????
-                  ?????????????????
-                  ?  Integration  ?  Some, moderate speed
-                  ?    Tests      ?
-                 ???????????????????
-                ?????????????????????
-                ?    Unit Tests     ?  Many, fast, isolated
-                ?????????????????????
+                    .............
+                    .   E2E     .  Few, slow, high confidence
+                    .   Tests   .
+                   ...............
+                  .................
+                  .  Integration  .  Some, moderate speed
+                  .    Tests      .
+                 ...................
+                .....................
+                .    Unit Tests     .  Many, fast, isolated
+                .....................
 ```
 
 ### 2.3 Coverage Targets
@@ -127,7 +127,7 @@ describe('Lexer', () => {
         });
 
         it('should tokenize identifiers', () => {
-            const tokens = lexer.tokenize(':btnSubmit ?user.name @Dashboard $save');
+            const tokens = lexer.tokenize(':btnSubmit .user.name @Dashboard $save');
             
             expect(tokens[0].type).toBe(TokenType.ID);
             expect(tokens[1].type).toBe(TokenType.BINDING);
@@ -169,7 +169,7 @@ Button "Click"
             const errorToken = tokens.find(t => t.type === TokenType.ERROR);
             
             expect(errorToken).toBeDefined();
-            expect(errorToken?.line).toBeGreaterThan(0);
+            expect(errorToken..line).toBeGreaterThan(0);
         });
     });
 });
@@ -259,7 +259,7 @@ uiwire clean
         it('should parse TextInput', () => {
             const ast = parse(`
 uiwire clean
-    TextInput "Enter name" :txtName required ?user.name min=3 max=50
+    TextInput "Enter name" :txtName required .user.name min=3 max=50
 /uiwire
             `);
             
@@ -276,7 +276,7 @@ uiwire clean
         it('should parse Dropdown with Options', () => {
             const ast = parse(`
 uiwire clean
-    Dropdown :ddlCountry ?user.country
+    Dropdown :ddlCountry .user.country
         Option "Select..."
         Option "USA"
         Option "Canada"
@@ -1020,23 +1020,23 @@ describe('Memory Usage', () => {
 
 ```
 tests/
-??? fixtures/
-    ??? documents/
-    ?   ??? minimal.uimmd
-    ?   ??? form-simple.uimmd
-    ?   ??? form-complex.uimmd
-    ?   ??? dashboard.uimmd
-    ?   ??? data-grid.uimmd
-    ?   ??? all-components.uimmd
-    ??? expected/
-    ?   ??? minimal.svg
-    ?   ??? form-simple.svg
-    ?   ??? ...
-    ??? invalid/
-        ??? unclosed-block.uimmd
-        ??? duplicate-id.uimmd
-        ??? invalid-syntax.uimmd
-        ??? ...
+... fixtures/
+    ... documents/
+    .   ... minimal.uimmd
+    .   ... form-simple.uimmd
+    .   ... form-complex.uimmd
+    .   ... dashboard.uimmd
+    .   ... data-grid.uimmd
+    .   ... all-components.uimmd
+    ... expected/
+    .   ... minimal.svg
+    .   ... form-simple.svg
+    .   ... ...
+    ... invalid/
+        ... unclosed-block.uimmd
+        ... duplicate-id.uimmd
+        ... invalid-syntax.uimmd
+        ... ...
 ```
 
 ### 9.2 Test Helpers

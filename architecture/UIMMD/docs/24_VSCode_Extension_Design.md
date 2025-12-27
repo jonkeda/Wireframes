@@ -24,72 +24,72 @@ This document describes the VSCode extension for UIMMD, providing:
 ### 2.1 Component Overview
 
 ```
-???????????????????????????????????????????????????????????????????
-?                    VSCode Extension                              ?
-???????????????????????????????????????????????????????????????????
-?                                                                  ?
-?  ???????????????????????????????????????????????????????????   ?
-?  ?                    Extension Host                        ?   ?
-?  ?  ?????????????  ?????????????  ?????????????????????   ?   ?
-?  ?  ? Language  ?  ?  Preview  ?  ?     Commands      ?   ?   ?
-?  ?  ?  Server   ?  ?  Provider ?  ?                   ?   ?   ?
-?  ?  ?????????????  ?????????????  ?????????????????????   ?   ?
-?  ???????????????????????????????????????????????????????????   ?
-?                              ?                                   ?
-?  ???????????????????????????????????????????????????????????   ?
-?  ?                    UIMMD Core                            ?   ?
-?  ?  ???????????  ????????????  ????????????               ?   ?
-?  ?  ? Parser  ?  ? Renderer ?  ?  Themes  ?               ?   ?
-?  ?  ???????????  ????????????  ????????????               ?   ?
-?  ???????????????????????????????????????????????????????????   ?
-?                                                                  ?
-?  ???????????????????????????????????????????????????????????   ?
-?  ?                    Webview Panel                         ?   ?
-?  ?  ?????????????????????????????????????????????????????  ?   ?
-?  ?  ?                 Preview Content                    ?  ?   ?
-?  ?  ?                    (SVG)                           ?  ?   ?
-?  ?  ?????????????????????????????????????????????????????  ?   ?
-?  ???????????????????????????????????????????????????????????   ?
-?                                                                  ?
-???????????????????????????????????????????????????????????????????
+...................................................................
+.                    VSCode Extension                              .
+...................................................................
+.                                                                  .
+.  ...........................................................   .
+.  .                    Extension Host                        .   .
+.  .  .............  .............  .....................   .   .
+.  .  . Language  .  .  Preview  .  .     Commands      .   .   .
+.  .  .  Server   .  .  Provider .  .                   .   .   .
+.  .  .............  .............  .....................   .   .
+.  ...........................................................   .
+.                              .                                   .
+.  ...........................................................   .
+.  .                    UIMMD Core                            .   .
+.  .  ...........  ............  ............               .   .
+.  .  . Parser  .  . Renderer .  .  Themes  .               .   .
+.  .  ...........  ............  ............               .   .
+.  ...........................................................   .
+.                                                                  .
+.  ...........................................................   .
+.  .                    Webview Panel                         .   .
+.  .  .....................................................  .   .
+.  .  .                 Preview Content                    .  .   .
+.  .  .                    (SVG)                           .  .   .
+.  .  .....................................................  .   .
+.  ...........................................................   .
+.                                                                  .
+...................................................................
 ```
 
 ### 2.2 File Structure
 
 ```
 uimmd-vscode/
-??? src/
-?   ??? extension.ts              # Extension entry point
-?   ??? language/
-?   ?   ??? server.ts             # Language server
-?   ?   ??? completion.ts         # Auto-completion
-?   ?   ??? hover.ts              # Hover information
-?   ?   ??? diagnostics.ts        # Error diagnostics
-?   ?   ??? symbols.ts            # Document symbols
-?   ?   ??? folding.ts            # Code folding
-?   ??? preview/
-?   ?   ??? provider.ts           # Webview provider
-?   ?   ??? controller.ts         # Preview controller
-?   ?   ??? html/
-?   ?       ??? preview.html      # Preview template
-?   ?       ??? styles.css        # Preview styles
-?   ??? commands/
-?   ?   ??? export.ts             # Export commands
-?   ?   ??? insert.ts             # Insert snippets
-?   ?   ??? format.ts             # Format document
-?   ??? utils/
-?       ??? debounce.ts
-?       ??? config.ts
-??? syntaxes/
-?   ??? uimmd.tmLanguage.json     # Syntax highlighting
-??? snippets/
-?   ??? uimmd.json                # Code snippets
-??? media/
-?   ??? icon.png                  # Extension icon
-?   ??? preview.js                # Preview script
-??? package.json                   # Extension manifest
-??? tsconfig.json
-??? README.md
+... src/
+.   ... extension.ts              # Extension entry point
+.   ... language/
+.   .   ... server.ts             # Language server
+.   .   ... completion.ts         # Auto-completion
+.   .   ... hover.ts              # Hover information
+.   .   ... diagnostics.ts        # Error diagnostics
+.   .   ... symbols.ts            # Document symbols
+.   .   ... folding.ts            # Code folding
+.   ... preview/
+.   .   ... provider.ts           # Webview provider
+.   .   ... controller.ts         # Preview controller
+.   .   ... html/
+.   .       ... preview.html      # Preview template
+.   .       ... styles.css        # Preview styles
+.   ... commands/
+.   .   ... export.ts             # Export commands
+.   .   ... insert.ts             # Insert snippets
+.   .   ... format.ts             # Format document
+.   ... utils/
+.       ... debounce.ts
+.       ... config.ts
+... syntaxes/
+.   ... uimmd.tmLanguage.json     # Syntax highlighting
+... snippets/
+.   ... uimmd.json                # Code snippets
+... media/
+.   ... icon.png                  # Extension icon
+.   ... preview.js                # Preview script
+... package.json                   # Extension manifest
+... tsconfig.json
+... README.md
 ```
 
 ---
@@ -341,7 +341,7 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
     // Register active editor change listener
     context.subscriptions.push(
         vscode.window.onDidChangeActiveTextEditor(editor => {
-            if (editor?.document.languageId === 'uimmd') {
+            if (editor..document.languageId === 'uimmd') {
                 previewProvider.update(editor.document);
             }
         })
@@ -374,8 +374,8 @@ import { debounce } from '../utils/debounce';
 export class UimmdPreviewProvider implements vscode.WebviewViewProvider {
     public static readonly viewType = 'uimmd.preview';
     
-    private _view?: vscode.WebviewView;
-    private _document?: vscode.TextDocument;
+    private _view.: vscode.WebviewView;
+    private _document.: vscode.TextDocument;
     private _context: vscode.ExtensionContext;
     
     private updatePreview = debounce(this._updatePreview.bind(this), 300);
@@ -408,7 +408,7 @@ export class UimmdPreviewProvider implements vscode.WebviewViewProvider {
 
         // Update with current document
         const editor = vscode.window.activeTextEditor;
-        if (editor?.document.languageId === 'uimmd') {
+        if (editor..document.languageId === 'uimmd') {
             this.update(editor.document);
         }
     }
@@ -430,7 +430,7 @@ export class UimmdPreviewProvider implements vscode.WebviewViewProvider {
 
             // Get theme
             const themeName = config.get<string>('theme') === 'auto' 
-                ? ast.style 
+                . ast.style 
                 : config.get<string>('theme');
             const theme = getTheme(themeName || 'clean');
 
@@ -618,7 +618,7 @@ export class PreviewController {
         const panel = vscode.window.createWebviewPanel(
             'uimmd.preview',
             `Preview: ${this.getFileName(document)}`,
-            side ? vscode.ViewColumn.Beside : vscode.ViewColumn.Active,
+            side . vscode.ViewColumn.Beside : vscode.ViewColumn.Active,
             {
                 enableScripts: true,
                 retainContextWhenHidden: true,
@@ -748,7 +748,7 @@ connection.onInitialize((params: InitializeParams) => {
             textDocumentSync: TextDocumentSyncKind.Incremental,
             completionProvider: {
                 resolveProvider: true,
-                triggerCharacters: ['$', ':', '?', '@', '"']
+                triggerCharacters: ['$', ':', '.', '@', '"']
             },
             hoverProvider: true,
             definitionProvider: true,
@@ -775,7 +775,7 @@ async function validateDocument(document: TextDocument): Promise<void> {
         for (const error of errors) {
             diagnostics.push({
                 severity: error.severity === 'error' 
-                    ? DiagnosticSeverity.Error 
+                    . DiagnosticSeverity.Error 
                     : DiagnosticSeverity.Warning,
                 range: {
                     start: document.positionAt(error.location.start.offset),
@@ -891,7 +891,7 @@ export function getCompletions(
     }
     
     // Modifier completion
-    if (/\b(Button|TextInput|Checkbox|Radio)\s+"[^"]*"\s+:?\w*\s*$/.test(prefix)) {
+    if (/\b(Button|TextInput|Checkbox|Radio)\s+"[^"]*"\s+:.\w*\s*$/.test(prefix)) {
         return MODIFIERS;
     }
     
@@ -915,8 +915,8 @@ const HOVER_INFO: Record<string, { description: string; syntax: string; example:
     },
     'TextInput': {
         description: 'A single-line text input field.',
-        syntax: 'TextInput "placeholder" [:id] [required] [?binding]',
-        example: 'TextInput "Enter name" :txtName required ?user.name'
+        syntax: 'TextInput "placeholder" [:id] [required] [.binding]',
+        example: 'TextInput "Enter name" :txtName required .user.name'
     },
     'Vertical': {
         description: 'A vertical stack layout that arranges children top to bottom.',
@@ -1058,7 +1058,7 @@ export function getHover(word: string): Hover | null {
                 },
                 {
                     "name": "variable.other.binding.uimmd",
-                    "match": "\\?[a-zA-Z][a-zA-Z0-9.]*"
+                    "match": "\\.[a-zA-Z][a-zA-Z0-9.]*"
                 }
             ]
         },
@@ -1202,7 +1202,7 @@ export function registerCommands(
     context.subscriptions.push(
         vscode.commands.registerCommand('uimmd.preview', () => {
             const editor = vscode.window.activeTextEditor;
-            if (editor?.document.languageId === 'uimmd') {
+            if (editor..document.languageId === 'uimmd') {
                 previewProvider.update(editor.document);
                 vscode.commands.executeCommand('uimmd.preview.focus');
             }
@@ -1212,7 +1212,7 @@ export function registerCommands(
     context.subscriptions.push(
         vscode.commands.registerCommand('uimmd.previewSide', () => {
             const editor = vscode.window.activeTextEditor;
-            if (editor?.document.languageId === 'uimmd') {
+            if (editor..document.languageId === 'uimmd') {
                 vscode.commands.executeCommand('workbench.view.extension.uimmd-preview');
             }
         })
@@ -1330,7 +1330,7 @@ suite('Extension Test Suite', () => {
         
         // Check extension is active
         const ext = vscode.extensions.getExtension('uimmd.uimmd');
-        assert.ok(ext?.isActive);
+        assert.ok(ext..isActive);
     });
 
     test('Should provide completions', async () => {

@@ -50,7 +50,7 @@ import {
 Parses UIMMD source text into an AST.
 
 ```typescript
-function parse(source: string, options?: ParseOptions): Document;
+function parse(source: string, options.: ParseOptions): Document;
 ```
 
 **Parameters:**
@@ -65,13 +65,13 @@ function parse(source: string, options?: ParseOptions): Document;
 ```typescript
 interface ParseOptions {
     // Error handling
-    throwOnError?: boolean;      // Throw on parse error (default: true)
+    throwOnError.: boolean;      // Throw on parse error (default: true)
     
     // Source information
-    filename?: string;           // Source filename for error messages
+    filename.: string;           // Source filename for error messages
     
     // Features
-    allowIncomplete?: boolean;   // Allow incomplete documents (default: false)
+    allowIncomplete.: boolean;   // Allow incomplete documents (default: false)
 }
 ```
 
@@ -104,7 +104,7 @@ console.log(document.body.length);  // 1
 Renders an AST document to SVG.
 
 ```typescript
-function render(document: Document, options?: RenderOptions): string;
+function render(document: Document, options.: RenderOptions): string;
 ```
 
 **Parameters:**
@@ -119,23 +119,23 @@ function render(document: Document, options?: RenderOptions): string;
 ```typescript
 interface RenderOptions {
     // Dimensions
-    width?: number;              // Container width (default: 800)
-    height?: number;             // Container height (auto if not set)
-    padding?: number;            // Outer padding (default: 20)
+    width.: number;              // Container width (default: 800)
+    height.: number;             // Container height (auto if not set)
+    padding.: number;            // Outer padding (default: 20)
     
     // Theme
-    theme?: Theme | string;      // Theme name or object
+    theme.: Theme | string;      // Theme name or object
     
     // Display options
-    showIds?: boolean;           // Show element IDs (default: false)
-    showBindings?: boolean;      // Show data bindings (default: false)
-    showGrid?: boolean;          // Show alignment grid (default: false)
+    showIds.: boolean;           // Show element IDs (default: false)
+    showBindings.: boolean;      // Show data bindings (default: false)
+    showGrid.: boolean;          // Show alignment grid (default: false)
     
     // Interactivity
-    interactive?: boolean;       // Enable interactions (default: false)
+    interactive.: boolean;       // Enable interactions (default: false)
     
     // Output
-    minify?: boolean;            // Minify SVG output (default: false)
+    minify.: boolean;            // Minify SVG output (default: false)
 }
 ```
 
@@ -311,14 +311,14 @@ interface Section {
 interface Control {
     type: 'Control';
     controlType: ControlType;
-    text?: string;
-    id?: string;
-    binding?: string;
-    navigation?: Navigation;
-    icon?: string;
+    text.: string;
+    id.: string;
+    binding.: string;
+    navigation.: Navigation;
+    icon.: string;
     modifiers: Modifier[];
     attributes: Record<string, any>;
-    children?: Element[];
+    children.: Element[];
     location: SourceLocation;
 }
 
@@ -421,20 +421,20 @@ mermaid.initialize({
 
 ```typescript
 interface UimmdConfig {
-    theme?: 'sketch' | 'clean' | 'blueprint' | 'realistic';
-    width?: number | 'auto';
-    showIds?: boolean;
-    showBindings?: boolean;
-    showGrid?: boolean;
+    theme.: 'sketch' | 'clean' | 'blueprint' | 'realistic';
+    width.: number | 'auto';
+    showIds.: boolean;
+    showBindings.: boolean;
+    showGrid.: boolean;
     
     // Theme overrides
-    primaryColor?: string;
-    backgroundColor?: string;
-    textColor?: string;
-    borderColor?: string;
-    fontFamily?: string;
-    fontSize?: number;
-    borderRadius?: number;
+    primaryColor.: string;
+    backgroundColor.: string;
+    textColor.: string;
+    borderColor.: string;
+    fontFamily.: string;
+    fontSize.: number;
+    borderRadius.: number;
 }
 ```
 

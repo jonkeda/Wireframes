@@ -31,7 +31,7 @@ enum TokenType {
     
     // Identifiers
     ID,                 // :btnSave, :txtName
-    BINDING,            // ?user.name
+    BINDING,            // .user.name
     ICON,               // $save, $home
     NAVIGATION,         // @Dashboard, @:back
     
@@ -77,7 +77,7 @@ interface Token {
     line: number;
     column: number;
     length: number;
-    raw?: string;           // Original text
+    raw.: string;           // Original text
 }
 
 interface SourceLocation {
@@ -173,7 +173,7 @@ export class Lexer {
             this.scanId();
             return;
         }
-        if (char === '?') {
+        if (char === '.') {
             this.scanBinding();
             return;
         }
@@ -384,7 +384,7 @@ element         = layout
                 | data_section ;
 
 (* Layouts *)
-layout          = layout_keyword attributes? NEWLINE
+layout          = layout_keyword attributes. NEWLINE
                   INDENT content DEDENT
                   close_keyword ;
 
@@ -392,7 +392,7 @@ layout_keyword  = "Grid" | "Vertical" | "Horizontal"
                 | "Dock" | "Canvas" | "Scroll" ;
 
 (* Sections *)
-section         = section_keyword attributes? NEWLINE
+section         = section_keyword attributes. NEWLINE
                   INDENT content DEDENT
                   close_keyword ;
 
@@ -409,19 +409,19 @@ control         = button
                 | separator
                 | spacer ;
 
-button          = "Button" STRING modifiers? id? navigation? attributes? ;
-icon_button     = "IconButton" ICON STRING? modifiers? id? navigation? attributes? ;
+button          = "Button" STRING modifiers. id. navigation. attributes. ;
+icon_button     = "IconButton" ICON STRING. modifiers. id. navigation. attributes. ;
 
-input           = input_type STRING id? modifiers? binding? attributes? ;
+input           = input_type STRING id. modifiers. binding. attributes. ;
 input_type      = "TextInput" | "NumberInput" | "DateInput" 
                 | "PasswordInput" | "TextArea" ;
 
-label           = "Label" STRING id? navigation? attributes? ;
+label           = "Label" STRING id. navigation. attributes. ;
 
-checkbox        = "Checkbox" STRING id? modifiers? binding? attributes? ;
-radio           = "Radio" STRING id? modifiers? attributes? ;
+checkbox        = "Checkbox" STRING id. modifiers. binding. attributes. ;
+radio           = "Radio" STRING id. modifiers. attributes. ;
 
-dropdown        = "Dropdown" id? binding? NEWLINE
+dropdown        = "Dropdown" id. binding. NEWLINE
                   INDENT option+ DEDENT
                   "/Dropdown" ;
 option          = "Option" STRING ;
@@ -433,7 +433,7 @@ spacer          = "Spacer" ;
 component       = tabs | accordion | menu | stepper | alert
                 | datagrid | table | repeat | hover | dialog ;
 
-tabs            = "Tabs" id? NEWLINE
+tabs            = "Tabs" id. NEWLINE
                   INDENT tab+ DEDENT
                   "/Tabs" ;
 tab             = "Tab" STRING NEWLINE
@@ -453,7 +453,7 @@ modifier        = "primary" | "secondary" | "required"
 
 (* Identifiers *)
 id              = ":" identifier ;
-binding         = "?" dotted_identifier ;
+binding         = "." dotted_identifier ;
 navigation      = "@" navigation_target ;
 navigation_target = identifier | ":back" | ":close" | ":modal:" identifier ;
 
@@ -485,7 +485,7 @@ block_comment   = "/*" .* "*/" ;
 identifier      = letter (letter | digit | "_")* ;
 dotted_identifier = identifier ("." identifier)* ;
 STRING          = '"' [^"]* '"' ;
-NUMBER          = digit+ ("." digit+)? ;
+NUMBER          = digit+ ("." digit+). ;
 BOOLEAN         = "true" | "false" ;
 ICON            = "$" identifier ;
 letter          = [a-zA-Z] ;
@@ -550,14 +550,14 @@ type SectionType = 'Header' | 'Footer' | 'Sidebar' | 'Content' |
 interface Control extends ASTNode {
     type: 'Control';
     controlType: ControlType;
-    text?: string;
-    id?: string;
-    binding?: string;
-    navigation?: Navigation;
-    icon?: string;
+    text.: string;
+    id.: string;
+    binding.: string;
+    navigation.: Navigation;
+    icon.: string;
     modifiers: Modifier[];
     attributes: Attributes;
-    children?: Element[];  // For Dropdown
+    children.: Element[];  // For Dropdown
 }
 
 type ControlType = 'Button' | 'IconButton' | 'TextInput' | 'NumberInput' |
@@ -647,14 +647,14 @@ export class ASTBuilder {
     createControl(
         controlType: ControlType,
         options: {
-            text?: string;
-            id?: string;
-            binding?: string;
-            navigation?: Navigation;
-            icon?: string;
-            modifiers?: Modifier[];
-            attributes?: Attributes;
-            children?: Element[];
+            text.: string;
+            id.: string;
+            binding.: string;
+            navigation.: Navigation;
+            icon.: string;
+            modifiers.: Modifier[];
+            attributes.: Attributes;
+            children.: Element[];
         },
         location: SourceLocation
     ): Control {
@@ -815,7 +815,7 @@ export class Parser {
         const modifiers: Modifier[] = [];
         const attributes: Attributes = {};
 
-        // IconButton: $icon "text"?
+        // IconButton: $icon "text".
         if (controlType === 'IconButton') {
             icon = this.expect(TokenType.ICON, 'Expected icon').value;
             if (this.check(TokenType.STRING)) {
@@ -832,7 +832,7 @@ export class Parser {
             if (this.check(TokenType.ID)) {
                 id = this.advance().value.substring(1); // Remove ':'
             } else if (this.check(TokenType.BINDING)) {
-                binding = this.advance().value.substring(1); // Remove '?'
+                binding = this.advance().value.substring(1); // Remove '.'
             } else if (this.check(TokenType.NAVIGATION)) {
                 navigation = this.parseNavigation();
             } else if (this.isModifier(this.peek().value)) {
@@ -1016,7 +1016,7 @@ export class Validator {
         }
 
         // Validate children
-        control.children?.forEach(child => this.validateElement(child));
+        control.children..forEach(child => this.validateElement(child));
     }
 
     private addError(message: string, location: SourceLocation): void {
@@ -1209,7 +1209,7 @@ uiwire clean
             expect(button.text).toBe('Submit');
             expect(button.id).toBe('btnSubmit');
             expect(button.modifiers).toContain('primary');
-            expect(button.navigation?.target).toBe('Dashboard');
+            expect(button.navigation..target).toBe('Dashboard');
             expect(button.attributes.tooltip).toBe('Save');
         });
     });

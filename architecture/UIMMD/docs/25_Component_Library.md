@@ -105,7 +105,7 @@ Single-line text input field.
 TextInput "placeholder"
 TextInput "placeholder" :id
 TextInput "placeholder" :id required
-TextInput "placeholder" :id ?binding
+TextInput "placeholder" :id .binding
 TextInput "placeholder" :id required min=3 max=50 pattern=email
 ```
 
@@ -143,7 +143,7 @@ Numeric input field.
 ```uimmd
 NumberInput "placeholder"
 NumberInput "0" :txtAge min=0 max=150
-NumberInput "Amount" :txtAmount required ?order.amount
+NumberInput "Amount" :txtAmount required .order.amount
 ```
 
 **Properties:**
@@ -169,7 +169,7 @@ Date selection input.
 **Syntax:**
 ```uimmd
 DateInput "Select date"
-DateInput "Birth date" :txtDOB required ?user.birthDate
+DateInput "Birth date" :txtDOB required .user.birthDate
 ```
 
 **Properties:**
@@ -218,7 +218,7 @@ Multi-line text input.
 **Syntax:**
 ```uimmd
 TextArea "Enter description"
-TextArea "Notes" :txtNotes rows=4 ?order.notes
+TextArea "Notes" :txtNotes rows=4 .order.notes
 ```
 
 **Properties:**
@@ -276,7 +276,7 @@ Checkable toggle control.
 Checkbox "Label"
 Checkbox "Accept terms" :chkTerms
 Checkbox "Active" :chkActive checked
-Checkbox "Subscribe" :chkSub ?user.newsletter
+Checkbox "Subscribe" :chkSub .user.newsletter
 ```
 
 **Properties:**
@@ -330,7 +330,7 @@ Dropdown :ddlCountry
     Option "Canada"
 /Dropdown
 
-Dropdown :ddlCountry ?user.country
+Dropdown :ddlCountry .user.country
     Option "Select..."
     Option "USA"
     Option "Canada"
@@ -904,7 +904,7 @@ Modal dialog.
 **Syntax:**
 ```uimmd
 Dialog "Confirm" :dlgConfirm
-    Label "Are you sure?"
+    Label "Are you sure."
     Horizontal justify=end gap=8
         Button "Cancel"
         Button "Confirm" primary
@@ -989,10 +989,10 @@ Collapsible sections.
 **Syntax:**
 ```uimmd
 Accordion :accFAQ
-    AccordionSection "Question 1?"
+    AccordionSection "Question 1."
         Label "Answer 1"
     /AccordionSection
-    AccordionSection "Question 2?"
+    AccordionSection "Question 2."
         Label "Answer 2"
     /AccordionSection
 /Accordion

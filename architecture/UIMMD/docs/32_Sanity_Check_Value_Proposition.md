@@ -12,9 +12,9 @@
 
 This document provides a critical evaluation of the Wireframe language concept, asking fundamental questions:
 
-1. **Does Wireframe bring unique value?**
-2. **Why not just use HTML, Figma, or existing tools?**
-3. **Does it achieve its stated goals for AI and human collaboration?**
+1. **Does Wireframe bring unique value.**
+2. **Why not just use HTML, Figma, or existing tools.**
+3. **Does it achieve its stated goals for AI and human collaboration.**
 
 **Conclusion:** ✅ Wireframe provides significant value for its specific use case—bridging AI-generated UI descriptions and human verification—but only if positioned correctly.
 
@@ -32,7 +32,7 @@ This document provides a critical evaluation of the Wireframe language concept, 
 
 ### 2.2 Key Question
 
-> *"Can an AI look at a screenshot or description of a UI and output a Wireframe document that a human can easily verify?"*
+> *"Can an AI look at a screenshot or description of a UI and output a Wireframe document that a human can easily verify."*
 
 ---
 
@@ -97,19 +97,19 @@ AI: "The screen has a card with a title 'Login', two input fields for
 ```
 AI outputs:                         Human sees:
 ─────────────────────────           ─────────────────────────────────
-  Card                                ? ???????????????????????
-    Label "**Login**"     ?     ? Login               ? ?
-    TextInput "Username"  ?         ? ??????????????????? ? ?
-    PasswordInput "..."   ?         ? ? Username        ? ? ?
-    Button "Login" primary?         ? ??????????????????? ? ?
-  /Card                   ?         ? ? ??????????????????? ? ?
-─────────────────────────         ? ? ? ��������        ? ? ?
-                                   ? ? ??????????????????? ? ? ?
-  Human: *reads structure*            ? ??????????????????? ? ?
-         *sees preview*               ? ?    [ Login ]    ? ? ?
-         *verifies instantly*         ? ??????????????????? ? ?
-                                   ? ??????????????????????? ?
-                                   ???????????????????????????
+  Card                                . .......................
+    Label "**Login**"     .     . Login               . .
+    TextInput "Username"  .         . ................... . .
+    PasswordInput "..."   .         . . Username        . . .
+    Button "Login" primary.         . ................... . .
+  /Card                   .         . . ................... . .
+─────────────────────────         . . . ��������        . . .
+                                   . . ................... . . .
+  Human: *reads structure*            . ................... . .
+         *sees preview*               . .    [ Login ]    . . .
+         *verifies instantly*         . ................... . .
+                                   . ....................... .
+                                   ...........................
 ```
 
 #### ✅ Value Add #2: Structured AI Output
@@ -154,7 +154,7 @@ Step 4: Documentation
 Wireframe packs more **UI-specific meaning** per line than alternatives:
 
 ```Wireframe
-TextInput "Email" :txtEmail required pattern=email ?user.email
+TextInput "Email" :txtEmail required pattern=email .user.email
 ```
 
 This single line expresses:
@@ -162,7 +162,7 @@ This single line expresses:
 - Placeholder text: `"Email"`
 - DOM ID: `:txtEmail`
 - Validation: `required`, `pattern=email`
-- Data binding: `?user.email`
+- Data binding: `.user.email`
 
 **Equivalent HTML + JS:**
 ```html
@@ -222,7 +222,7 @@ Wireframe describes **structure**, not:
 
 ### 5.1 Primary Use Cases (High Value)
 
-| Use Case | Value | Why Wireframe? |
+| Use Case | Value | Why Wireframe. |
 |----------|-------|----------------|
 | **AI Screenshot Analysis** | ✅️✅️✅️✅️ | Structured output humans can verify |
 | **Requirements Documentation** | ✅️✅️✅️✅️ | Version-controlled, diff-friendly |
@@ -232,7 +232,7 @@ Wireframe describes **structure**, not:
 
 ### 5.2 Secondary Use Cases (Moderate Value)
 
-| Use Case | Value | Why Wireframe? |
+| Use Case | Value | Why Wireframe. |
 |----------|-------|----------------|
 | **Documentation Embedding** | ✅️✅️ | Inline wireframes in markdown |
 | **Stakeholder Communication** | ✅️✅️ | Non-designers can read/edit |
@@ -278,7 +278,7 @@ uiwire clean
         Checkbox "Remember me" :chkRemember
         Button "Sign In" :btnLogin primary
         Separator
-        Label "Don't have an account? [Sign up](@/register)"
+        Label "Don't have an account. [Sign up](@/register)"
     /Card
 /uiwire
 ```
@@ -291,7 +291,7 @@ uiwire clean
 Input: Wireframe document
 Output: React component
 
-// Wireframe ? React transformation is deterministic
+// Wireframe . React transformation is deterministic
 // Each Wireframe element maps to a React component
 ```
 
@@ -300,24 +300,24 @@ Output: React component
 ```
 Verification Loop
 ─────────────────────────
-   ?
-?    ???????????         ?????????????         ???????????
-?    ?   AI    ? ??????? ? Wireframe ? ??????? ?  Human  ?
-?    ? Analyze ?         ?  Output   ?         ? Verify  ?
-?    ???????????         ?????????????         ???????????
+   .
+.    ...........         .............         ...........
+.    .   AI    . ....... . Wireframe . ....... .  Human  .
+.    . Analyze .         .  Output   .         . Verify  .
+.    ...........         .............         ...........
 
-                                    ?
-                          ????????????????????
-                                    ?
-                          ?   ?     ?
-                          ? Correct  ?
-                          ????????????
-                                    ?
-                                    ?
-                          ????????????
-                          ?  Commit  ?
-                          ?  to Git  ?
-                          ????????????
+                                    .
+                          ....................
+                                    .
+                          .   .     .
+                          . Correct  .
+                          ............
+                                    .
+                                    .
+                          ............
+                          .  Commit  .
+                          .  to Git  .
+                          ............
 ```
 
 ---
@@ -339,10 +339,10 @@ Verification Loop
 
 | Question | Answer |
 |----------|--------|
-| Is Wireframe necessary? | No—you can use HTML, Figma, or descriptions |
-| Is Wireframe valuable? | **Yes**—for the specific AI?Human verification workflow |
-| Should everyone use it? | No—only teams with AI-assisted UI documentation needs |
-| Does it replace existing tools? | No—it complements them for a specific use case |
+| Is Wireframe necessary. | No—you can use HTML, Figma, or descriptions |
+| Is Wireframe valuable. | **Yes**—for the specific AI.Human verification workflow |
+| Should everyone use it. | No—only teams with AI-assisted UI documentation needs |
+| Does it replace existing tools. | No—it complements them for a specific use case |
 
 ---
 
@@ -390,7 +390,7 @@ Verification Loop
 Wireframe Positioning Statement
 ─────────────────────────
   Wireframe is NOT:                      Wireframe IS:
-  ?????????????????                      ??????????????
+  .................                      ..............
   � A design tool                        � A specification language
   � A replacement for Figma              � A bridge between AI and humans
   � A full application framework         � A verification format
@@ -415,13 +415,13 @@ Wireframe Positioning Statement
 ```
 SANITY CHECK RESULT
 ─────────────────────────
-  Question: Does Wireframe bring unique value?
+  Question: Does Wireframe bring unique value.
   Answer:   ✅ YES - for AI-assisted UI specification and verification
 
-  Question: Could we just use HTML?
+  Question: Could we just use HTML.
   Answer:   ❌ HTML is too verbose and mixes concerns
 
-  Question: Does it achieve its goals?
+  Question: Does it achieve its goals.
   Answer:   ✅ YES - structured AI output + human-readable verification
 
   RECOMMENDATION: ✅ PROCEED WITH IMPLEMENTATION

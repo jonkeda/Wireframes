@@ -17,21 +17,21 @@ This document outlines the phased implementation plan for the UIMMD project, fro
 ## 2. Release Phases
 
 ```
-???????????????????????????????????????????????????????????????????????????????
-?                         UIMMD Implementation Phases                          ?
-???????????????????????????????????????????????????????????????????????????????
-?                                                                              ?
-?  Phase 1          Phase 2          Phase 3          Phase 4                 ?
-?  Foundation       Core Features    Integration      Production              ?
-?  ???????????      ?????????????    ???????????      ??????????              ?
-?  • Lexer          • All Controls   • Mermaid Plugin • Performance           ?
-?  • Parser         • Layouts        • VSCode Ext     • Accessibility         ?
-?  • Basic Render   • Themes         • CLI            • Documentation         ?
-?  • MVP            • Data Binding   • Testing        • Community             ?
-?                                                                              ?
-?  ??????? 8 weeks ?????????? 8 weeks ?????? 6 weeks ?????? 4 weeks ???      ?
-?                                                                              ?
-???????????????????????????????????????????????????????????????????????????????
+...............................................................................
+.                         UIMMD Implementation Phases                          .
+...............................................................................
+.                                                                              .
+.  Phase 1          Phase 2          Phase 3          Phase 4                 .
+.  Foundation       Core Features    Integration      Production              .
+.  ...........      .............    ...........      ..........              .
+.  • Lexer          • All Controls   • Mermaid Plugin • Performance           .
+.  • Parser         • Layouts        • VSCode Ext     • Accessibility         .
+.  • Basic Render   • Themes         • CLI            • Documentation         .
+.  • MVP            • Data Binding   • Testing        • Community             .
+.                                                                              .
+.  ....... 8 weeks .......... 8 weeks ...... 6 weeks ...... 4 weeks ...      .
+.                                                                              .
+...............................................................................
 ```
 
 ---
@@ -59,97 +59,97 @@ This document outlines the phased implementation plan for the UIMMD project, fro
 #### Week 1-2: Project Infrastructure
 
 ```
-? Initialize monorepo structure
-  ? Configure pnpm workspaces
-  ? Set up TypeScript configuration
-  ? Configure ESLint and Prettier
-  ? Set up Vitest for testing
+. Initialize monorepo structure
+  . Configure pnpm workspaces
+  . Set up TypeScript configuration
+  . Configure ESLint and Prettier
+  . Set up Vitest for testing
   
-? Create package structure
-  ? @uimmd/core
-  ? @uimmd/themes
-  ? @uimmd/mermaid-plugin
-  ? @uimmd/vscode-extension
-  ? @uimmd/cli
+. Create package structure
+  . @uimmd/core
+  . @uimmd/themes
+  . @uimmd/mermaid-plugin
+  . @uimmd/vscode-extension
+  . @uimmd/cli
 
-? Set up CI/CD
-  ? GitHub Actions workflow
-  ? Automated testing
-  ? Code coverage reporting
-  ? Release automation
+. Set up CI/CD
+  . GitHub Actions workflow
+  . Automated testing
+  . Code coverage reporting
+  . Release automation
 ```
 
 #### Week 3-4: Lexer Implementation
 
 ```
-? Define token types
-  ? Keywords (Button, Label, etc.)
-  ? Identifiers (:id, ?binding, @nav, $icon)
-  ? Literals (strings, numbers)
-  ? Attributes and modifiers
+. Define token types
+  . Keywords (Button, Label, etc.)
+  . Identifiers (:id, .binding, @nav, $icon)
+  . Literals (strings, numbers)
+  . Attributes and modifiers
   
-? Implement lexer
-  ? Character scanning
-  ? Token generation
-  ? Indentation handling
-  ? Comment handling
+. Implement lexer
+  . Character scanning
+  . Token generation
+  . Indentation handling
+  . Comment handling
   
-? Add lexer tests
-  ? Token type tests
-  ? Edge case tests
-  ? Error handling tests
+. Add lexer tests
+  . Token type tests
+  . Edge case tests
+  . Error handling tests
 ```
 
 #### Week 5-6: Parser Implementation
 
 ```
-? Define AST types
-  ? Document node
-  ? Element nodes
-  ? Control nodes
-  ? Layout nodes
+. Define AST types
+  . Document node
+  . Element nodes
+  . Control nodes
+  . Layout nodes
 
-? Implement parser
-  ? Recursive descent parser
-  ? Expression parsing
-  ? Block nesting
-  ? Attribute parsing
+. Implement parser
+  . Recursive descent parser
+  . Expression parsing
+  . Block nesting
+  . Attribute parsing
 
-? Add validation
-  ? Semantic validation
-  ? ID uniqueness
-  ? Nesting rules
+. Add validation
+  . Semantic validation
+  . ID uniqueness
+  . Nesting rules
 
-? Error handling
-  ? Error messages
-  ? Error recovery
-  ? Source locations
+. Error handling
+  . Error messages
+  . Error recovery
+  . Source locations
 ```
 
 #### Week 7-8: Basic Renderer
 
 ```
-? Implement layout engine
-  ? Size calculation
-  ? Position calculation
-  ? Vertical layout
-  ? Horizontal layout
+. Implement layout engine
+  . Size calculation
+  . Position calculation
+  . Vertical layout
+  . Horizontal layout
 
-? Implement SVG renderer
-  ? Button rendering
-  ? Label rendering
-  ? Input rendering
-  ? Container rendering
+. Implement SVG renderer
+  . Button rendering
+  . Label rendering
+  . Input rendering
+  . Container rendering
 
-? Create clean theme
-  ? Color palette
-  ? Typography
-  ? Component styles
+. Create clean theme
+  . Color palette
+  . Typography
+  . Component styles
 
-? MVP demo
-  ? Sample wireframes
-  ? Browser demo
-  ? Basic documentation
+. MVP demo
+  . Sample wireframes
+  . Browser demo
+  . Basic documentation
 ```
 
 ### 3.4 Phase 1 Success Criteria
@@ -184,123 +184,123 @@ This document outlines the phased implementation plan for the UIMMD project, fro
 #### Week 9-10: Complete Controls
 
 ```
-? Button variants
-  ? IconButton
-  ? Primary/Secondary styles
-  ? Disabled state
+. Button variants
+  . IconButton
+  . Primary/Secondary styles
+  . Disabled state
   
-? Input controls
-  ? TextInput with validation
-  ? NumberInput
-  ? DateInput
-  ? PasswordInput
-  ? TextArea
+. Input controls
+  . TextInput with validation
+  . NumberInput
+  . DateInput
+  . PasswordInput
+  . TextArea
 
-? Selection controls
-  ? Checkbox
-  ? Radio
-  ? Dropdown with options
-  ? Switch
-  ? Slider
+. Selection controls
+  . Checkbox
+  . Radio
+  . Dropdown with options
+  . Switch
+  . Slider
 
-? Display components
-  ? Label with markdown
-  ? Icon system
-  ? Image placeholder
-  ? Avatar
-  ? Badge
-  ? Progress
+. Display components
+  . Label with markdown
+  . Icon system
+  . Image placeholder
+  . Avatar
+  . Badge
+  . Progress
 
-? Navigation components
-  ? Tabs
-  ? Menu
-  ? Breadcrumb
-  ? Pagination
+. Navigation components
+  . Tabs
+  . Menu
+  . Breadcrumb
+  . Pagination
 ```
 
 #### Week 11-12: Complete Layouts
 
 ```
-? Grid layout
-  ? Row/column positioning
-  ? Column/row spans
-  ? Gap handling
-  ? Responsive columns
+. Grid layout
+  . Row/column positioning
+  . Column/row spans
+  . Gap handling
+  . Responsive columns
 
-? Dock layout
-  ? Top/bottom docking
-  ? Left/right docking
-  ? Fill behavior
+. Dock layout
+  . Top/bottom docking
+  . Left/right docking
+  . Fill behavior
 
-? Canvas layout
-  ? Absolute positioning
-  ? Layering (z-order)
+. Canvas layout
+  . Absolute positioning
+  . Layering (z-order)
 
-? Scroll container
-  ? Vertical scroll
-  ? Horizontal scroll
-  ? Scroll indicators
+. Scroll container
+  . Vertical scroll
+  . Horizontal scroll
+  . Scroll indicators
 
-? Complex components
-  ? DataGrid with columns
-  ? Table rendering
-  ? Tree view
-  ? Accordion
+. Complex components
+  . DataGrid with columns
+  . Table rendering
+  . Tree view
+  . Accordion
 ```
 
 #### Week 13-14: Theme System
 
 ```
-? Sketch theme
-  ? Rough.js integration
-  ? Hand-drawn effects
-  ? Informal typography
+. Sketch theme
+  . Rough.js integration
+  . Hand-drawn effects
+  . Informal typography
 
-? Blueprint theme
-  ? Technical styling
-  ? Grid background
-  ? Monospace fonts
+. Blueprint theme
+  . Technical styling
+  . Grid background
+  . Monospace fonts
 
-? Realistic theme
-  ? Shadows and depth
-  ? Modern colors
-  ? Refined typography
+. Realistic theme
+  . Shadows and depth
+  . Modern colors
+  . Refined typography
 
-? Theme system
-  ? CSS variables
-  ? Theme switching
-  ? Custom theme API
-  ? Dark mode support
+. Theme system
+  . CSS variables
+  . Theme switching
+  . Custom theme API
+  . Dark mode support
 
-? Accessibility
-  ? Contrast checking
-  ? WCAG validation
+. Accessibility
+  . Contrast checking
+  . WCAG validation
 ```
 
 #### Week 15-16: Data Features
 
 ```
-? Data binding
-  ? Binding syntax
-  ? Path resolution
-  ? Display formatting
+. Data binding
+  . Binding syntax
+  . Path resolution
+  . Display formatting
 
-? Validation
-  ? Required fields
-  ? Min/max validation
-  ? Pattern validation
-  ? Error messages
+. Validation
+  . Required fields
+  . Min/max validation
+  . Pattern validation
+  . Error messages
 
-? Business rules
-  ? Conditional visibility
-  ? Conditional enabling
-  ? Calculated fields
+. Business rules
+  . Conditional visibility
+  . Conditional enabling
+  . Calculated fields
 
-? Data sections
-  ? Data source definitions
-  ? Validation section
-  ? Calculations section
-  ? Rules section
+. Data sections
+  . Data source definitions
+  . Validation section
+  . Calculations section
+  . Rules section
 ```
 
 ### 4.4 Phase 2 Success Criteria
@@ -335,90 +335,90 @@ This document outlines the phased implementation plan for the UIMMD project, fro
 #### Week 17-18: Mermaid Integration
 
 ```
-? Diagram registration
-  ? Detector function
-  ? Parser adapter
-  ? Renderer adapter
+. Diagram registration
+  . Detector function
+  . Parser adapter
+  . Renderer adapter
   
-? Mermaid configuration
-  ? Config schema
-  ? Theme integration
-  ? Size handling
+. Mermaid configuration
+  . Config schema
+  . Theme integration
+  . Size handling
 
-? Testing
-  ? Integration tests
-  ? Browser testing
-  ? Compatibility tests
+. Testing
+  . Integration tests
+  . Browser testing
+  . Compatibility tests
 
-? Documentation
-  ? Usage guide
-  ? Configuration docs
-  ? Examples
+. Documentation
+  . Usage guide
+  . Configuration docs
+  . Examples
 
-? Package publishing
-  ? npm package
-  ? CDN distribution
-  ? TypeScript types
+. Package publishing
+  . npm package
+  . CDN distribution
+  . TypeScript types
 ```
 
 #### Week 19-20: VSCode Extension
 
 ```
-? Extension infrastructure
-  ? Package.json manifest
-  ? Activation events
-  ? Command registration
+. Extension infrastructure
+  . Package.json manifest
+  . Activation events
+  . Command registration
 
-? Preview panel
-  ? Webview provider
-  ? Live update
-  ? Theme sync
-  ? Error display
+. Preview panel
+  . Webview provider
+  . Live update
+  . Theme sync
+  . Error display
 
-? Language features
-  ? Syntax highlighting
-  ? Auto-completion
-  ? Hover information
-  ? Diagnostics
-  ? Go to definition
-  ? Code folding
+. Language features
+  . Syntax highlighting
+  . Auto-completion
+  . Hover information
+  . Diagnostics
+  . Go to definition
+  . Code folding
 
-? Commands
-  ? Open preview
-  ? Export SVG/PNG
-  ? Insert snippet
-  ? Format document
+. Commands
+  . Open preview
+  . Export SVG/PNG
+  . Insert snippet
+  . Format document
 
-? Testing
-  ? Extension tests
-  ? Language server tests
+. Testing
+  . Extension tests
+  . Language server tests
 ```
 
 #### Week 21-22: CLI & Comprehensive Testing
 
 ```
-? CLI tool
-  ? Parse command
-  ? Render command
-  ? Validate command
-  ? Watch mode
-  ? Config file support
+. CLI tool
+  . Parse command
+  . Render command
+  . Validate command
+  . Watch mode
+  . Config file support
 
-? Visual regression tests
-  ? Snapshot setup
-  ? Percy integration
-  ? Component snapshots
-  ? Theme snapshots
+. Visual regression tests
+  . Snapshot setup
+  . Percy integration
+  . Component snapshots
+  . Theme snapshots
 
-? E2E tests
-  ? Browser tests
-  ? VSCode tests
-  ? CLI tests
+. E2E tests
+  . Browser tests
+  . VSCode tests
+  . CLI tests
 
-? Performance tests
-  ? Benchmark suite
-  ? Memory tests
-  ? CI integration
+. Performance tests
+  . Benchmark suite
+  . Memory tests
+  . CI integration
 ```
 
 ### 5.4 Phase 3 Success Criteria
@@ -454,94 +454,94 @@ This document outlines the phased implementation plan for the UIMMD project, fro
 #### Week 23: Performance Optimization
 
 ```
-? Parser optimization
-  ? Token caching
-  ? Incremental parsing
-  ? Lazy evaluation
+. Parser optimization
+  . Token caching
+  . Incremental parsing
+  . Lazy evaluation
 
-? Renderer optimization
-  ? Render caching
-  ? Incremental updates
-  ? SVG optimization
+. Renderer optimization
+  . Render caching
+  . Incremental updates
+  . SVG optimization
 
-? Bundle optimization
-  ? Tree shaking
-  ? Code splitting
-  ? Minification
+. Bundle optimization
+  . Tree shaking
+  . Code splitting
+  . Minification
 
-? Benchmarking
-  ? Performance baselines
-  ? Regression detection
-  ? Memory profiling
+. Benchmarking
+  . Performance baselines
+  . Regression detection
+  . Memory profiling
 ```
 
 #### Week 24: Accessibility
 
 ```
-? WCAG compliance
-  ? Color contrast audit
-  ? Screen reader testing
-  ? Keyboard navigation
+. WCAG compliance
+  . Color contrast audit
+  . Screen reader testing
+  . Keyboard navigation
 
-? Accessible output
-  ? ARIA attributes
-  ? Role assignments
-  ? Focus management
+. Accessible output
+  . ARIA attributes
+  . Role assignments
+  . Focus management
 
-? Documentation
-  ? Accessibility guide
-  ? Best practices
+. Documentation
+  . Accessibility guide
+  . Best practices
 ```
 
 #### Week 25: Documentation
 
 ```
-? User documentation
-  ? Getting started guide
-  ? Language reference
-  ? Component gallery
-  ? Theme guide
+. User documentation
+  . Getting started guide
+  . Language reference
+  . Component gallery
+  . Theme guide
 
-? Developer documentation
-  ? API reference
-  ? Architecture guide
-  ? Contributing guide
+. Developer documentation
+  . API reference
+  . Architecture guide
+  . Contributing guide
 
-? Examples
-  ? Sample wireframes
-  ? Interactive demos
-  ? Tutorial series
+. Examples
+  . Sample wireframes
+  . Interactive demos
+  . Tutorial series
 
-? Website
-  ? Landing page
-  ? Documentation site
-  ? Playground
+. Website
+  . Landing page
+  . Documentation site
+  . Playground
 ```
 
 #### Week 26: Launch
 
 ```
-? Release preparation
-  ? Version 1.0.0
-  ? Changelog
-  ? Migration guide
+. Release preparation
+  . Version 1.0.0
+  . Changelog
+  . Migration guide
 
-? Community
-  ? GitHub organization
-  ? Discussion forum
-  ? Discord server
-  ? Twitter presence
+. Community
+  . GitHub organization
+  . Discussion forum
+  . Discord server
+  . Twitter presence
 
-? Marketing
-  ? Blog post
-  ? Product Hunt
-  ? Dev.to article
-  ? YouTube demo
+. Marketing
+  . Blog post
+  . Product Hunt
+  . Dev.to article
+  . YouTube demo
 
-? Support
-  ? Issue templates
-  ? FAQ document
-  ? Support channels
+. Support
+  . Issue templates
+  . FAQ document
+  . Support channels
 ```
 
 ### 6.4 Phase 4 Success Criteria
