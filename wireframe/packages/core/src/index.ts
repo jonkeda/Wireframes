@@ -99,8 +99,9 @@ export function compile(
   }
 
   const svg = render(document, {
-    width: options.width || 800,
-    height: options.height || 600,
+    // No defaults: without a width or a height the picture fits its content
+    ...(options.width ? { width: options.width } : {}),
+    ...(options.height ? { height: options.height } : {}),
     theme: options.theme || document.style,
   });
 

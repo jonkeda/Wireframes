@@ -64,8 +64,8 @@ Options:
                         directory (created if missing). Default: next to each
                         input, with a .wire extension replaced by .svg
                         (any other name gets .svg appended: spec.txt -> spec.txt.svg)
-  -w, --width <n>       SVG width in pixels (default: 800)
-  -h, --height <n>      SVG height in pixels (default: 600)
+  -w, --width <n>       SVG width in pixels (default: fits the content, 800 at most)
+  -h, --height <n>      Minimum SVG height in pixels (default: fits the content)
   -t, --theme <name>    Theme: clean, sketch, blueprint, realistic
                         (default: the document's own "wireframe <style>" header, else clean)
   -v, --validate        Validate only, don't render
@@ -273,8 +273,10 @@ function mapErrors(errors: Array<{ message: string; location: { line: number; co
 export interface CompileFileOptions {
   /** File path, or STDOUT */
   outputPath: string;
-  width: number;
-  height: number;
+  /** Not set: the picture fits its content, up to 800 */
+  width?: number;
+  /** Not set: the picture fits its content */
+  height?: number;
   /** Only set when the user chose a theme; otherwise the document's style is used */
   theme?: string;
   validate?: boolean;
@@ -305,8 +307,8 @@ export function compileFile(inputPath: string, options: CompileFileOptions, io: 
 
   // Compile to SVG
   const { svg, errors } = compile(source, {
-    width: options.width,
-    height: options.height,
+    ...(options.width ? { width: options.width } : {}),
+    ...(options.height ? { height: options.height } : {}),
     ...(options.theme ? { theme: options.theme } : {}),
   });
 
@@ -425,8 +427,8 @@ export function run(argv: string[], io: CLIIO): number | undefined {
   }
 
   // Merge options with config (CLI takes precedence)
-  const width = options.width || config.width || 800;
-  const height = options.height || config.height || 600;
+  const width = options.width || config.width;
+  const height = options.height || config.height;
   const theme = options.theme || config.theme;
   const output = options.output || config.output;
   const multiple = options.inputs.length > 1;

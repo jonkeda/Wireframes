@@ -56,6 +56,10 @@ Fixes from a review of the language as a source for specifications (2026-11-18).
   by name everywhere; `CompileOptions.theme` accepts a theme object; `createTheme` is synchronous.
 
 ### Changed
+- Without a width or a height, `compile()`, `render()` and the CLI fit the SVG to the content
+  instead of drawing 800 by 600. The layout is still made for 800, so the fitted width is 800 at
+  most; a given width is kept, and a given height stays the minimum. The Mermaid plugin and the
+  VS Code preview still pass their own configured size.
 - `compile()` caches only results without errors.
 - The CLI's executable is `dist/bin.js`; `cli.ts` exports `run`, `parseArgs` and helpers for tests.
 - The VS Code extension is split into modules; its HTML rendering has no `vscode` import and is tested.

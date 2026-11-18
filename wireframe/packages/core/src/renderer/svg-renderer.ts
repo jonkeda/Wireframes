@@ -138,8 +138,32 @@ export class SVGRenderer {
     const finalA11yAttrStr = a11yAttrs.length > 0 ? ' ' + a11yAttrs.join(' ') : '';
 
     const t = this.sourceTheme;
-    const svgWidth = Number(width);
-    const svgHeight = Math.max(Number(height), layout.bounds.height + padding * 2);
+    // No width asked for: the picture ends a padding right of its rightmost element. The layout
+    // is still made for the default width, so the picture never gets wider than that.
+    // A layout, a conditional and a repeat take the whole width but draw nothing themselves.
+    const rightmostEdge = (items: LayoutInfo[]): number =>
+      items.reduce((right, item) => {
+        const transparent = ['Layout', 'Conditional', 'Repeat'].includes(item.node.type);
+        const own = transparent ? 0 : item.bounds.x + item.bounds.width;
+        return Math.max(right, own, rightmostEdge(item.children));
+      }, 0);
+    const contentRight = rightmostEdge(layout.children);
+    const svgWidth = options.width === undefined && contentRight > 0
+      ? Math.min(Number(width), Math.ceil(contentRight + padding * 2))
+      : Number(width);
+    // No height asked for: the picture ends a padding below its last element, so a small
+    // screen is not followed by empty space. A given height stays the minimum.
+    // Every element counts, not only the top ones: a dropdown's options lie below its bounds
+    const lowestEdge = (items: LayoutInfo[]): number =>
+      items.reduce(
+        (bottom, item) => Math.max(bottom, item.bounds.y + item.bounds.height, lowestEdge(item.children)),
+        0
+      );
+    const contentBottom = lowestEdge(layout.children);
+    const fitToContent = options.height === undefined && contentBottom > 0;
+    const svgHeight = fitToContent
+      ? Math.ceil(contentBottom + padding * 2)
+      : Math.max(Number(height), layout.bounds.height + padding * 2);
     return roundSvgNumbers(`<svg xmlns="http://www.w3.org/2000/svg" width="${svgWidth}" height="${svgHeight}" viewBox="0 0 ${svgWidth} ${svgHeight}"${finalA11yAttrStr}>${a11yElements}
   <style>
     .wire-text { font-family: ${cssSafe(t.typography.fontFamily)}; font-size: ${cssSafe(t.typography.fontSize)}px; fill: ${cssSafe(t.colors.text)}; }

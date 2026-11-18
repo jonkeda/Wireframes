@@ -34,8 +34,8 @@ function compile(source: string, options?: CompileOptions): CompileResult;
 
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
-| width | `number` | 800 | SVG width in pixels |
-| height | `number` | 600 | SVG height in pixels |
+| width | `number` | fits the content | SVG width in pixels. Without it the picture ends right of its rightmost element, at 800 at most |
+| height | `number` | fits the content | Minimum SVG height in pixels. Without it the picture ends below its last element |
 | theme | `string` | 'clean' | Theme name |
 | useCache | `boolean` | true | Enable result caching |
 
@@ -116,8 +116,8 @@ function render(document: DocumentNode, options?: RenderOptions): string;
 
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
-| width | `number` | 800 | SVG width |
-| height | `number` | 600 | SVG height |
+| width | `number` | fits the content, 800 at most | SVG width |
+| height | `number` | fits the content | Minimum SVG height |
 | theme | `string` | 'clean' | Theme name |
 | padding | `number` | theme | Padding around content |
 | accessible | `boolean` | true | Include ARIA attributes |
