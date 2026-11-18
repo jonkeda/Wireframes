@@ -8,15 +8,15 @@
 import { wireframePlugin } from './plugin';
 
 interface MarkdownItAPI {
-  use: (plugin: (md: unknown, options?: unknown) => void, options?: unknown) => MarkdownItAPI;
+  use: (plugin: typeof wireframePlugin, options?: Parameters<typeof wireframePlugin>[1]) => MarkdownItAPI;
 }
 
 /**
  * Activate function called by VS Code's notebook renderer
  */
-export function activate() {
+export function activate(): { extendMarkdownIt(md: MarkdownItAPI): MarkdownItAPI } {
   return {
-    extendMarkdownIt(md: MarkdownItAPI) {
+    extendMarkdownIt(md: MarkdownItAPI): MarkdownItAPI {
       return md.use(wireframePlugin, {
         lightTheme: 'clean',
         darkTheme: 'blueprint',

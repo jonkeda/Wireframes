@@ -291,10 +291,47 @@ export const realisticTheme: Theme = {
   },
 };
 
+/** Custom themes, registered by name */
+const customThemes = new Map<string, Theme>();
+
 /**
- * Get theme by name
+ * Register a custom theme under its name. From then on getTheme, compile,
+ * the CLI and the Mermaid plugin find it by that name. A custom theme may
+ * replace a built-in one of the same name.
+ */
+export function registerTheme(theme: Theme): void {
+  customThemes.set(theme.name.toLowerCase(), theme);
+}
+
+/**
+ * Remove a registered custom theme. Returns whether it was registered.
+ */
+export function unregisterTheme(name: string): boolean {
+  return customThemes.delete(name.toLowerCase());
+}
+
+/**
+ * Names of the registered custom themes
+ */
+export function getRegisteredThemeNames(): string[] {
+  return [...customThemes.values()].map((t) => t.name);
+}
+
+/**
+ * A theme object as it is, or a theme by name (see getTheme)
+ */
+export function resolveTheme(theme: string | Theme): Theme {
+  return typeof theme === 'string' ? getTheme(theme) : theme;
+}
+
+/**
+ * Get theme by name: a registered custom theme first, then a built-in one, else 'clean'
  */
 export function getTheme(name: string): Theme {
+  const custom = customThemes.get(name.toLowerCase());
+  if (custom) {
+    return custom;
+  }
   switch (name.toLowerCase()) {
     case 'sketch':
       return sketchTheme;

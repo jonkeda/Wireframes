@@ -304,6 +304,19 @@ export function auditTheme(theme: {
  */
 export function formatAriaAttributes(attrs: Record<string, string>): string {
   return Object.entries(attrs)
-    .map(([key, value]) => `${key}="${value}"`)
+    .filter(([key]) => /^[a-zA-Z][\w:-]*$/.test(key))
+    .map(([key, value]) => `${key}="${escapeAttribute(value)}"`)
     .join(' ');
+}
+
+/**
+ * Escape a value for a double- or single-quoted XML attribute
+ */
+function escapeAttribute(value: string): string {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
 }

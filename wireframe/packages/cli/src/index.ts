@@ -2,4 +2,16 @@
  * @jonkeda/wireframe-cli - Command-line interface for Wireframe
  */
 
-export { }; // Module with side-effect only (CLI)
+export {
+  run,
+  parseArgs,
+  defaultOutputName,
+  resolveOutputPath,
+  formatError,
+  compileFile,
+  UsageError,
+  HELP,
+  VERSION,
+  STDOUT,
+} from './cli.js';
+export type { CLIOptions, CLIIO, ConfigFile, CompileFileOptions } from './cli.js';

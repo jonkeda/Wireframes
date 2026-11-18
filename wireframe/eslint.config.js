@@ -60,6 +60,21 @@ export default [
       'no-case-declarations': 'off',
     },
   },
+  {
+    // Code that runs in a browser / VS Code webview (Markdown preview, notebook renderer)
+    files: [
+      'packages/vscode-extension/src/markdown/preview-script.ts',
+      'packages/vscode-extension/src/markdown/theme-detector.ts',
+      'packages/vscode-extension/src/markdown/notebook-renderer.ts',
+    ],
+    languageOptions: {
+      globals: {
+        window: 'readonly',
+        document: 'readonly',
+        navigator: 'readonly',
+      },
+    },
+  },
   prettier,
   {
     ignores: ['**/dist/**', '**/node_modules/**', '**/coverage/**'],

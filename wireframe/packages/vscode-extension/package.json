@@ -247,6 +247,7 @@
     "build:prod": "node esbuild.js --production",
     "watch": "node esbuild.js --watch",
     "compile": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
     "package": "npm run build:prod && vsce package --no-dependencies --allow-missing-repository"
   },
   "dependencies": {

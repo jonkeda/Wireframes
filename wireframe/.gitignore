@@ -6,3 +6,7 @@ coverage/
 *.tsbuildinfo
 .env
 .env.local
+
+# Build artifacts
+*.vsix
+test-output.*

@@ -9,7 +9,7 @@ import { wireframePlugin } from './plugin';
 import { wireframeStyles } from './styles';
 
 interface MarkdownItAPI {
-  use: (plugin: (md: unknown, options?: unknown) => void, options?: unknown) => MarkdownItAPI;
+  use: (plugin: typeof wireframePlugin, options?: Parameters<typeof wireframePlugin>[1]) => MarkdownItAPI;
 }
 
 /**
@@ -34,12 +34,12 @@ function injectStyles(): void {
 /**
  * Activate function called by VS Code's markdown preview
  */
-export function activate() {
+export function activate(): { extendMarkdownIt(md: MarkdownItAPI): MarkdownItAPI } {
   // Inject styles on activation
   injectStyles();
 
   return {
-    extendMarkdownIt(md: MarkdownItAPI) {
+    extendMarkdownIt(md: MarkdownItAPI): MarkdownItAPI {
       // Use the wireframe plugin with default options
       // Theme will be auto-detected from VS Code's color scheme
       return md.use(wireframePlugin, {

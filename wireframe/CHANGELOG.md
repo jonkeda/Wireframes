@@ -5,6 +5,62 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+Fixes from a review of the language as a source for specifications (2026-11-18).
+
+### Fixed
+
+**Parser and lexer** (`@jonkeda/wireframe-core`)
+- An empty table cell is kept; before, the cells after it shifted one column left.
+- A misspelt closing keyword, or one for a block that is not open, is an error at its own line,
+  and the rest of the document is still read; before, everything after it was dropped.
+- `if` / `else if` / `else` / `/if` are parsed into a conditional; before, the else branch and
+  everything after it were lost.
+- The quoted string of `Heading`, `Link`, `Badge` and every non-input control is its text; before,
+  a heading rendered the word "Heading".
+- Ids, navigation targets and identifiers may contain any letter (`:Categorieën`).
+- Data sections may stand anywhere after the screen; tables get `columns` and `records`; a
+  `component` section's body is parsed.
+- A duplicate id is reported at the id; escapes in quoted attribute values match strings;
+  `- ` starts a list item only at the start of a line.
+- A second compile of a source with errors reports its errors again (they are no longer cached away).
+
+**Renderer**
+- Every text and attribute value is escaped (Avatar initials, theme colours, ARIA values).
+- A numeric `grid=` no longer throws; grid rows grow to their tallest child; children of a
+  `Horizontal` share its width.
+- Numbers in the SVG are rounded to two decimals; each control carries its ARIA role and label.
+
+**CLI** (`@jonkeda/wireframe-cli`)
+- Never writes over its input (`spec.txt` → `spec.txt.svg`).
+- Errors print as `file:line:column: error: message`; exit code 1 on errors, 2 on a usage error;
+  no SVG is written for a file with errors unless `--force`.
+- The document's own style is used unless `--theme` is given; `-o -` writes to stdout; several
+  inputs go into the output directory; the summary counts correctly; unknown flags are an error;
+  `--name=value` works.
+
+**Mermaid plugin**
+- Error messages are escaped (a crafted file could inject HTML); the plugin follows Mermaid's
+  external diagram API (`loader`, `renderer.draw`); the detector matches only the word `wireframe`.
+
+**VS Code extension**
+- The preview has a Content Security Policy and nonces, and escapes error messages; its message
+  listener is registered once; diagnostics point at the error's column; the document's own style
+  is used unless a default theme is set.
+
+### Added
+- `label="…"` and `placeholder="…"` on inputs; `show="else"` on a conditional.
+- `wire parse <file>`: the parse tree and errors as JSON.
+- Custom themes: `registerTheme` in core (also re-exported by `@jonkeda/wireframe-themes`), found
+  by name everywhere; `CompileOptions.theme` accepts a theme object; `createTheme` is synchronous.
+
+### Changed
+- `compile()` caches only results without errors.
+- The CLI's executable is `dist/bin.js`; `cli.ts` exports `run`, `parseArgs` and helpers for tests.
+- The VS Code extension is split into modules; its HTML rendering has no `vscode` import and is tested.
+- Build artifacts (`*.vsix`, `test-output.*`) are no longer committed.
+
 ## [1.0.0] - 2025-12-27
 
 ### 🎉 Initial Release

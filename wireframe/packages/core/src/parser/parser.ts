@@ -7,6 +7,7 @@ import {
   isControlToken,
   isComponentToken,
   isModifierToken,
+  CLOSING_KEYWORDS,
 } from '../lexer/tokens.js';
 import { Lexer } from '../lexer/lexer.js';
 import {
@@ -17,6 +18,7 @@ import {
   ControlNode,
   ComponentNode,
   RepeatNode,
+  ConditionalNode,
   DataSectionNode,
   WireframeStyle,
   LayoutType,
@@ -152,6 +154,31 @@ const TOKEN_TO_COMPONENT: Record<string, ComponentType> = {
 };
 
 /**
+ * Controls whose quoted string is a placeholder (a hint inside an empty field).
+ * Every other control's quoted string is its text.
+ */
+const PLACEHOLDER_CONTROLS: ReadonlySet<ControlType> = new Set<ControlType>([
+  'TextInput',
+  'NumberInput',
+  'DateInput',
+  'PasswordInput',
+  'TextArea',
+  'Dropdown',
+]);
+
+/**
+ * Tokens that start a data section
+ */
+const DATA_SECTION_TOKENS: ReadonlySet<TokenType> = new Set([
+  TokenType.DATA,
+  TokenType.VALIDATIONS,
+  TokenType.CALCULATIONS,
+  TokenType.RULES,
+  TokenType.FIELDS,
+  TokenType.COMPONENT,
+]);
+
+/**
  * Wireframe Parser
  *
  * Parses Wireframe tokens into an Abstract Syntax Tree (AST).
@@ -161,6 +188,8 @@ export class Parser {
   private current: number = 0;
   private errors: ParserError[] = [];
   private ids: Set<string> = new Set();
+  /** Names of the blocks open around the current position, innermost last ('if' for a conditional) */
+  private openBlocks: string[] = [];
 
   /**
    * Parse Wireframe source code
@@ -173,6 +202,7 @@ export class Parser {
     this.current = 0;
     this.errors = [];
     this.ids = new Set();
+    this.openBlocks = [];
 
     // Add lexer errors
     for (const error of lexerErrors) {
@@ -205,6 +235,7 @@ export class Parser {
     this.current = 0;
     this.errors = [];
     this.ids = new Set();
+    this.openBlocks = [];
 
     try {
       const document = this.parseDocument();
@@ -230,7 +261,7 @@ export class Parser {
     if (!this.check(TokenType.WIREFRAME)) {
       // Allow documents without explicit wireframe wrapper
       const doc = createDocumentNode('clean');
-      doc.children = this.parseElements();
+      this.parseBody(doc, false);
       return doc;
     }
 
@@ -264,8 +295,8 @@ export class Parser {
         this.skipNewlines();
       }
 
-      // Parse children
-      doc.children = this.parseElements();
+      // Parse children and data sections, in any order
+      this.parseBody(doc, true);
 
       // Expect DEDENT
       if (this.check(TokenType.DEDENT)) {
@@ -281,13 +312,10 @@ export class Parser {
         }
         this.skipNewlines();
       }
-
-      // Parse children
-      doc.children = this.parseElements();
     }
 
-    // Parse data sections
-    doc.dataSections = this.parseDataSections();
+    // Anything after the indented block (data sections are usually written unindented)
+    this.parseBody(doc, false);
 
     // Expect /wireframe
     this.skipNewlines();
@@ -301,13 +329,73 @@ export class Parser {
     return doc;
   }
 
+  /**
+   * Parse a document's elements and data sections, in any order, until /wireframe or the end.
+   * With `insideBlock`, a DEDENT ends the body (it closes the document's indented block);
+   * without, a stray DEDENT is skipped so no content after it is lost.
+   */
+  private parseBody(doc: DocumentNode, insideBlock: boolean): void {
+    for (;;) {
+      this.skipNewlines();
+      // Outside the document's own indented block, indentation carries no structure:
+      // content indented again after an unindented data section is still the document's
+      if (!insideBlock && (this.check(TokenType.DEDENT) || this.check(TokenType.INDENT))) {
+        this.advance();
+        continue;
+      }
+
+      doc.children.push(...this.parseElements());
+      this.skipNewlines();
+
+      if (DATA_SECTION_TOKENS.has(this.peek().type)) {
+        const section = this.parseDataSection();
+        if (section) {
+          doc.dataSections.push(section);
+        }
+        continue;
+      }
+
+      if (!insideBlock && (this.check(TokenType.DEDENT) || this.check(TokenType.INDENT))) {
+        continue;
+      }
+
+      break;
+    }
+  }
+
   private parseElements(): ElementNode[] {
     const elements: ElementNode[] = [];
 
-    while (!this.isAtEnd() && !this.isBlockEnd()) {
+    while (!this.isAtEnd()) {
       this.skipNewlines();
 
-      if (this.isAtEnd() || this.isBlockEnd()) {
+      if (this.isAtEnd()) {
+        break;
+      }
+
+      // A closing keyword that closes no open block is an error at its own place;
+      // parsing goes on, so nothing after it is lost
+      const token = this.peek();
+      if (token.type === TokenType.END_BLOCK && !this.isOpenBlock(token.closingKeyword)) {
+        this.addError(
+          CLOSING_KEYWORDS[token.value]
+            ? `Unexpected ${token.value}: no ${token.closingKeyword} is open here`
+            : `Unknown closing keyword ${token.value}`,
+          token
+        );
+        this.advance();
+        continue;
+      }
+      if (
+        (token.type === TokenType.ELSE || token.type === TokenType.END_IF) &&
+        !this.isOpenBlock('if')
+      ) {
+        this.addError(`Unexpected ${token.value}: no if is open here`, token);
+        this.advance();
+        continue;
+      }
+
+      if (this.isBlockEnd()) {
         break;
       }
 
@@ -345,6 +433,10 @@ export class Parser {
       return this.parseRepeat();
     }
 
+    if (token.type === TokenType.IF) {
+      return this.parseConditional();
+    }
+
     // Skip unknown tokens
     if (
       token.type !== TokenType.EOF &&
@@ -370,6 +462,7 @@ export class Parser {
 
     this.skipNewlines();
 
+    this.openBlocks.push(layoutType);
     // Check for INDENT
     if (this.check(TokenType.INDENT)) {
       this.advance();
@@ -382,15 +475,29 @@ export class Parser {
     }
 
     // Check for explicit end block
-    this.skipNewlines();
-    if (this.check(TokenType.END_BLOCK) && this.peek().closingKeyword === layoutType) {
-      const endToken = this.advance();
-      node.end = endToken.end;
-    } else {
-      node.end = this.previousEnd();
-    }
-
+    node.end = this.closeBlock(layoutType);
     return node;
+  }
+
+  /**
+   * End a block: consume its own closing keyword if one follows, and take it off the open blocks.
+   * Returns where the block ends.
+   */
+  private closeBlock(name: string): SourceLocation {
+    this.skipNewlines();
+    let end = this.previousEnd();
+    if (this.check(TokenType.END_BLOCK) && this.peek().closingKeyword === name) {
+      end = this.advance().end;
+    }
+    const at = this.openBlocks.lastIndexOf(name);
+    if (at >= 0) {
+      this.openBlocks.splice(at, 1);
+    }
+    return end;
+  }
+
+  private isOpenBlock(name: string | undefined): boolean {
+    return name !== undefined && this.openBlocks.includes(name);
   }
 
   private parseSection(): SectionNode {
@@ -409,6 +516,7 @@ export class Parser {
 
     this.skipNewlines();
 
+    this.openBlocks.push(sectionType);
     // Check for INDENT
     if (this.check(TokenType.INDENT)) {
       this.advance();
@@ -421,14 +529,7 @@ export class Parser {
     }
 
     // Check for explicit end block
-    this.skipNewlines();
-    if (this.check(TokenType.END_BLOCK) && this.peek().closingKeyword === sectionType) {
-      const endToken = this.advance();
-      node.end = endToken.end;
-    } else {
-      node.end = this.previousEnd();
-    }
-
+    node.end = this.closeBlock(sectionType);
     return node;
   }
 
@@ -438,25 +539,13 @@ export class Parser {
     const node = createControlNode(controlType);
     node.start = token.start;
 
-    // Parse text/placeholder for controls that have them
+    // The quoted string: a placeholder for an input, the text for every other control
     if (this.check(TokenType.STRING)) {
       const textToken = this.advance();
-      if (
-        [
-          'Button',
-          'Label',
-          'Checkbox',
-          'Radio',
-          'Switch',
-          'Chip',
-          'Avatar',
-          'Dialog',
-          'Toast',
-        ].includes(controlType)
-      ) {
-        node.text = textToken.value;
-      } else {
+      if (PLACEHOLDER_CONTROLS.has(controlType)) {
         node.placeholder = textToken.value;
+      } else {
+        node.text = textToken.value;
       }
     }
 
@@ -485,9 +574,15 @@ export class Parser {
     // Parse remaining modifiers and attributes
     this.parseElementModifiers(node);
 
-    // Extract tooltip if present
-    if (node.attributes['tooltip']) {
+    // Extract tooltip, label and an explicit placeholder if present
+    if (node.attributes['tooltip'] !== undefined) {
       node.tooltip = String(node.attributes['tooltip']);
+    }
+    if (node.attributes['label'] !== undefined) {
+      node.label = String(node.attributes['label']);
+    }
+    if (node.attributes['placeholder'] !== undefined) {
+      node.placeholder = String(node.attributes['placeholder']);
     }
 
     // For Dropdown, check for inline options or children
@@ -503,6 +598,7 @@ export class Parser {
 
       this.skipNewlines();
 
+      this.openBlocks.push('Dropdown');
       // Check for children (Option elements)
       if (this.check(TokenType.INDENT)) {
         this.advance();
@@ -520,11 +616,8 @@ export class Parser {
       }
 
       // Check for explicit end block
-      this.skipNewlines();
-      if (this.check(TokenType.END_BLOCK) && this.peek().closingKeyword === 'Dropdown') {
-        const endToken = this.advance();
-        node.end = endToken.end;
-      }
+      node.end = this.closeBlock('Dropdown');
+      return node;
     }
 
     node.end = this.previousEnd();
@@ -547,6 +640,7 @@ export class Parser {
 
     this.skipNewlines();
 
+    this.openBlocks.push(componentType);
     // Parse children based on component type
     if (componentType === 'Table') {
       // Parse table rows
@@ -603,14 +697,7 @@ export class Parser {
     }
 
     // Check for explicit end block
-    this.skipNewlines();
-    if (this.check(TokenType.END_BLOCK) && this.peek().closingKeyword === componentType) {
-      const endToken = this.advance();
-      node.end = endToken.end;
-    } else {
-      node.end = this.previousEnd();
-    }
-
+    node.end = this.closeBlock(componentType);
     return node;
   }
 
@@ -637,6 +724,7 @@ export class Parser {
 
     this.skipNewlines();
 
+    this.openBlocks.push('Repeat');
     // Parse children
     if (this.check(TokenType.INDENT)) {
       this.advance();
@@ -653,45 +741,78 @@ export class Parser {
     }
 
     // Check for explicit end block
-    this.skipNewlines();
-    if (this.check(TokenType.END_BLOCK) && this.peek().closingKeyword === 'Repeat') {
-      const endToken = this.advance();
-      node.end = endToken.end;
-    } else {
-      node.end = this.previousEnd();
-    }
-
+    node.end = this.closeBlock('Repeat');
     return node;
   }
 
-  private parseDataSections(): DataSectionNode[] {
-    const sections: DataSectionNode[] = [];
-
-    while (
-      this.check(TokenType.DATA) ||
-      this.check(TokenType.VALIDATIONS) ||
-      this.check(TokenType.CALCULATIONS) ||
-      this.check(TokenType.RULES) ||
-      this.check(TokenType.FIELDS) ||
-      this.check(TokenType.COMPONENT)
-    ) {
-      this.skipNewlines();
-      const section = this.parseDataSection();
-      if (section) {
-        sections.push(section);
-      }
-      this.skipNewlines();
+  /**
+   * `if <condition>` … `else` … `/if`. `else if <condition>` nests a conditional in the else branch.
+   * A wireframe shows one state: the renderer draws the then branch unless told otherwise.
+   */
+  private parseConditional(): ConditionalNode {
+    const token = this.advance(); // consume 'if'
+    const node: ConditionalNode = {
+      type: 'Conditional',
+      condition: token.attributeValue ?? '',
+      thenChildren: [],
+      attributes: {},
+      modifiers: createModifierSet(),
+      start: token.start,
+      end: token.end,
+    };
+    if (!node.condition) {
+      this.addError('An if needs a condition', token);
     }
 
-    return sections;
+    this.skipNewlines();
+    this.openBlocks.push('if');
+
+    node.thenChildren = this.parseBranch();
+
+    this.skipNewlines();
+    if (this.check(TokenType.ELSE)) {
+      this.advance();
+      if (this.check(TokenType.IF)) {
+        // else if: the nested conditional owns the rest, including the /if
+        node.elseChildren = [this.parseConditional()];
+      } else {
+        this.skipNewlines();
+        node.elseChildren = this.parseBranch();
+      }
+    }
+
+    this.skipNewlines();
+    if (this.check(TokenType.END_IF)) {
+      node.end = this.advance().end;
+    } else {
+      node.end = this.previousEnd();
+    }
+    const at = this.openBlocks.lastIndexOf('if');
+    if (at >= 0) {
+      this.openBlocks.splice(at, 1);
+    }
+    return node;
+  }
+
+  /**
+   * The elements of one branch of a conditional: an indented block, or lines up to else or /if
+   */
+  private parseBranch(): ElementNode[] {
+    if (this.check(TokenType.INDENT)) {
+      this.advance();
+      const children = this.parseElements();
+      if (this.check(TokenType.DEDENT)) {
+        this.advance();
+      }
+      return children;
+    }
+    return this.parseElements();
   }
 
   private parseDataSection(): DataSectionNode | null {
     const token = this.advance();
-    const loc = createLocation();
 
-    let sectionType: 'data' | 'validations' | 'calculations' | 'rules' | 'fields' | 'component';
-
+    let sectionType: DataSectionNode['sectionType'];
     switch (token.type) {
       case TokenType.DATA:
         sectionType = 'data';
@@ -720,19 +841,44 @@ export class Parser {
       sectionType,
       rows: [],
       start: token.start,
-      end: loc,
+      end: token.end,
     };
+
+    // `component Name params…`: the name and the rest of the line
+    if (sectionType === 'component') {
+      const header: string[] = [];
+      while (!this.isAtEnd() && !this.check(TokenType.NEWLINE) && !this.check(TokenType.INDENT)) {
+        header.push(this.advance().value);
+      }
+      if (header.length === 0) {
+        this.addError('A component needs a name', token);
+      } else {
+        node.componentName = header[0];
+        if (header.length > 1) {
+          node.componentParams = header.slice(1).join(' ');
+        }
+      }
+    }
 
     this.skipNewlines();
 
-    // Parse table rows
+    this.openBlocks.push(sectionType);
     if (this.check(TokenType.INDENT)) {
       this.advance();
 
-      while (this.check(TokenType.TABLE_ROW) || this.check(TokenType.TABLE_SEPARATOR)) {
-        const rowToken = this.advance();
-        node.rows.push(this.parseTableRow(rowToken));
-        this.skipNewlines();
+      if (
+        sectionType === 'component' &&
+        !this.check(TokenType.TABLE_ROW) &&
+        !this.check(TokenType.TABLE_SEPARATOR)
+      ) {
+        // A component's body is elements, like the screen itself
+        node.componentBody = this.parseElements();
+      } else {
+        while (this.check(TokenType.TABLE_ROW) || this.check(TokenType.TABLE_SEPARATOR)) {
+          const rowToken = this.advance();
+          node.rows.push(this.parseTableRow(rowToken));
+          this.skipNewlines();
+        }
       }
 
       if (this.check(TokenType.DEDENT)) {
@@ -740,28 +886,54 @@ export class Parser {
       }
     }
 
-    // Check for explicit end block
-    this.skipNewlines();
-    if (this.check(TokenType.END_BLOCK)) {
-      const endToken = this.advance();
-      node.end = endToken.end;
-    } else {
-      node.end = this.previousEnd();
-    }
+    this.readTableShape(node);
 
+    // Check for explicit end block (/validations, /data, …)
+    node.end = this.closeBlock(sectionType);
     return node;
   }
 
+  /**
+   * A table whose first row is followed by a separator row has a header:
+   * its cells name the columns, and each row below becomes a record
+   */
+  private readTableShape(node: DataSectionNode): void {
+    const [header, separator] = node.rows;
+    if (!header || header.isSeparator || !separator?.isSeparator) {
+      return;
+    }
+    node.columns = header.cells;
+    node.records = node.rows
+      .slice(2)
+      .filter((row) => !row.isSeparator)
+      .map((row) => {
+        if (row.cells.length > header.cells.length) {
+          this.addError(
+            `A row has ${row.cells.length} cells, the header ${header.cells.length}: ${row.cells.join(' | ')}`
+          );
+        }
+        const record: Record<string, string> = {};
+        header.cells.forEach((column, i) => {
+          record[column] = row.cells[i] ?? '';
+        });
+        return record;
+      });
+  }
+
+  /**
+   * Split a table row into cells. Only the outer pipes are dropped:
+   * an empty cell stays an empty cell, so the columns after it do not shift
+   */
   private parseTableRow(token: Token): TableRowData {
     const isSeparator = token.type === TokenType.TABLE_SEPARATOR;
-    const value = token.value.trim();
-
-    // Split by | and clean up
-    const cells = value
-      .split('|')
-      .filter((cell) => cell.trim() !== '')
-      .map((cell) => cell.trim());
-
+    let value = token.value.trim();
+    if (value.startsWith('|')) {
+      value = value.substring(1);
+    }
+    if (value.endsWith('|')) {
+      value = value.substring(0, value.length - 1);
+    }
+    const cells = value.split('|').map((cell) => cell.trim());
     return { cells, isSeparator };
   }
 
@@ -805,7 +977,7 @@ export class Parser {
         this.advance();
         const id = token.value.substring(1); // Remove :
         if (this.ids.has(id)) {
-          this.addError(`Duplicate ID: ${id}`);
+          this.addError(`Duplicate ID: ${id}`, token);
         } else {
           this.ids.add(id);
         }
@@ -940,11 +1112,9 @@ export class Parser {
       token.type === TokenType.END_BLOCK ||
       token.type === TokenType.END_WIREFRAME ||
       token.type === TokenType.DEDENT ||
-      token.type === TokenType.DATA ||
-      token.type === TokenType.VALIDATIONS ||
-      token.type === TokenType.CALCULATIONS ||
-      token.type === TokenType.RULES ||
-      token.type === TokenType.FIELDS
+      token.type === TokenType.ELSE ||
+      token.type === TokenType.END_IF ||
+      DATA_SECTION_TOKENS.has(token.type)
     );
   }
 

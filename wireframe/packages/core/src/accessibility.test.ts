@@ -198,5 +198,15 @@ describe('Accessibility Utilities', () => {
       const result = formatAriaAttributes({});
       expect(result).toBe('');
     });
+
+    it('should escape quotes and markup in values', () => {
+      const result = formatAriaAttributes({ 'aria-label': 'a "b" <c> & \'d\'' });
+      expect(result).toBe('aria-label="a &quot;b&quot; &lt;c&gt; &amp; &apos;d&apos;"');
+    });
+
+    it('should drop attribute names that are not names', () => {
+      const result = formatAriaAttributes({ 'x="1" onload': 'y', 'aria-label': 'ok' });
+      expect(result).toBe('aria-label="ok"');
+    });
   });
 });

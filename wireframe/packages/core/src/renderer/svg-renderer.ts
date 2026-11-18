@@ -10,9 +10,34 @@ import {
   isLayoutNode,
   isComponentNode,
 } from '../parser/ast.js';
-import { Theme, getTheme } from './theme.js';
+import { Theme, resolveTheme } from './theme.js';
 import { LayoutEngine, LayoutInfo, BoundingBox } from './layout.js';
 import { sketchyRect, sketchyRoundedRect } from './sketch.js';
+import {
+  controlText,
+  hasInputLabel,
+  INPUT_LABEL_HEIGHT,
+  escapeXml,
+  roundSvgNumbers,
+} from './control-helpers.js';
+import { getAriaRole, getAriaAttributes, formatAriaAttributes } from '../accessibility.js';
+
+/**
+ * A copy of a theme whose strings are safe to put into attribute values
+ */
+function attributeSafeTheme(theme: Theme): Theme {
+  const colors = Object.fromEntries(
+    Object.entries(theme.colors).map(([key, value]) => [key, escapeXml(value)])
+  ) as unknown as Theme['colors'];
+  return { ...theme, colors };
+}
+
+/**
+ * Make a theme string safe inside the <style> block: no markup and no breaking out of a rule
+ */
+function cssSafe(value: string | number): string {
+  return String(value).replace(/[<>&{}]/g, '');
+}
 
 /**
  * Render options
@@ -20,7 +45,8 @@ import { sketchyRect, sketchyRoundedRect } from './sketch.js';
 export interface RenderOptions {
   width?: number;
   height?: number;
-  theme?: string;
+  /** A theme object, or the name of a registered or built-in theme */
+  theme?: string | Theme;
   padding?: number;
   /** Enable accessibility features (ARIA attributes, roles) */
   accessible?: boolean;
@@ -38,12 +64,17 @@ export interface RenderOptions {
  * Renders Wireframe documents to SVG format.
  */
 export class SVGRenderer {
+  /** The theme with its strings escaped for attribute values */
   private theme: Theme;
+  /** The theme as given, for the <style> block */
+  private sourceTheme: Theme;
   private layoutEngine: LayoutEngine;
   private defs: string[] = [];
+  private accessible = true;
 
   constructor(theme: Theme) {
-    this.theme = theme;
+    this.sourceTheme = theme;
+    this.theme = attributeSafeTheme(theme);
     this.layoutEngine = new LayoutEngine(theme);
   }
 
@@ -55,11 +86,13 @@ export class SVGRenderer {
     const height = options.height || 600;
     const padding = options.padding ?? this.theme.spacing.padding;
     const accessible = options.accessible !== false; // Default to true
+    this.accessible = accessible;
 
     // Update theme if specified
     if (options.theme) {
-      this.theme = getTheme(options.theme);
-      this.layoutEngine = new LayoutEngine(this.theme);
+      this.sourceTheme = resolveTheme(options.theme);
+      this.theme = attributeSafeTheme(this.sourceTheme);
+      this.layoutEngine = new LayoutEngine(this.sourceTheme);
     }
 
     // Calculate layout
@@ -78,7 +111,7 @@ export class SVGRenderer {
     if (accessible) {
       a11yAttrs.push('role="img"');
       if (options.lang) {
-        a11yAttrs.push(`xml:lang="${options.lang}"`);
+        a11yAttrs.push(`xml:lang="${this.escapeXml(options.lang)}"`);
       }
     }
 
@@ -104,19 +137,22 @@ export class SVGRenderer {
     // Rebuild a11yAttrStr with labelledby
     const finalA11yAttrStr = a11yAttrs.length > 0 ? ' ' + a11yAttrs.join(' ') : '';
 
-    return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${Math.max(height, layout.bounds.height + padding * 2)}" viewBox="0 0 ${width} ${Math.max(height, layout.bounds.height + padding * 2)}"${finalA11yAttrStr}>${a11yElements}
+    const t = this.sourceTheme;
+    const svgWidth = Number(width);
+    const svgHeight = Math.max(Number(height), layout.bounds.height + padding * 2);
+    return roundSvgNumbers(`<svg xmlns="http://www.w3.org/2000/svg" width="${svgWidth}" height="${svgHeight}" viewBox="0 0 ${svgWidth} ${svgHeight}"${finalA11yAttrStr}>${a11yElements}
   <style>
-    .wire-text { font-family: ${this.theme.typography.fontFamily}; font-size: ${this.theme.typography.fontSize}px; fill: ${this.theme.colors.text}; }
-    .wire-text-secondary { fill: ${this.theme.colors.textSecondary}; }
-    .wire-text-disabled { fill: ${this.theme.colors.textDisabled}; }
-    .wire-text-bold { font-weight: ${this.theme.typography.fontWeightBold}; }
-    .wire-text-small { font-size: ${this.theme.typography.fontSizeSmall}px; }
-    .wire-text-large { font-size: ${this.theme.typography.fontSizeLarge}px; }
+    .wire-text { font-family: ${cssSafe(t.typography.fontFamily)}; font-size: ${cssSafe(t.typography.fontSize)}px; fill: ${cssSafe(t.colors.text)}; }
+    .wire-text-secondary { fill: ${cssSafe(t.colors.textSecondary)}; }
+    .wire-text-disabled { fill: ${cssSafe(t.colors.textDisabled)}; }
+    .wire-text-bold { font-weight: ${cssSafe(t.typography.fontWeightBold)}; }
+    .wire-text-small { font-size: ${cssSafe(t.typography.fontSizeSmall)}px; }
+    .wire-text-large { font-size: ${cssSafe(t.typography.fontSizeLarge)}px; }
   </style>
   ${defs}
   <rect width="100%" height="100%" fill="${this.theme.colors.background}" />
   ${content}
-</svg>`;
+</svg>`);
   }
 
   /**
@@ -133,7 +169,7 @@ export class SVGRenderer {
     if (node.type === 'Document') {
       // Document is just a container
     } else if (isControlNode(node as ElementNode)) {
-      svg += this.renderControl(node as ControlNode, { ...bounds, x, y });
+      svg += this.withAria(node as ControlNode, this.renderControl(node as ControlNode, { ...bounds, x, y }));
     } else if (isSectionNode(node as ElementNode)) {
       svg += this.renderSection(node as SectionNode, { ...bounds, x, y });
     } else if (isLayoutNode(node as ElementNode)) {
@@ -148,6 +184,44 @@ export class SVGRenderer {
     }
 
     return svg;
+  }
+
+  /**
+   * Wrap a control's drawing in a group carrying its ARIA role and attributes
+   */
+  private withAria(node: ControlNode, inner: string): string {
+    if (!this.accessible || inner === '') {
+      return inner;
+    }
+    const attrs = getAriaAttributes(node.controlType, {
+      label: node.label ?? controlText(node),
+      placeholder: node.placeholder,
+      disabled: node.modifiers?.disabled,
+      required: node.modifiers?.required,
+      checked: node.modifiers?.checked,
+      selected: node.modifiers?.selected,
+      active: node.modifiers?.selected || node.modifiers?.active,
+      expanded: node.modifiers?.expanded,
+      value: node.attributes?.['value'],
+      min: node.attributes?.['min'],
+      max: node.attributes?.['max'],
+    });
+    const aria = formatAriaAttributes(attrs);
+    return `<g role="${this.escapeXml(getAriaRole(node.controlType))}"${aria ? ' ' + aria : ''}>${inner}</g>`;
+  }
+
+  /**
+   * Split off the label line of a labelled input: returns its SVG and the input box below it
+   */
+  private renderInputLabel(node: ControlNode, bounds: BoundingBox): { label: string; box: BoundingBox } {
+    if (!hasInputLabel(node)) {
+      return { label: '', box: bounds };
+    }
+    const label = `<text x="${bounds.x}" y="${bounds.y + INPUT_LABEL_HEIGHT - 6}" class="wire-text wire-text-small">${this.escapeXml(node.label || '')}</text>`;
+    return {
+      label,
+      box: { ...bounds, y: bounds.y + INPUT_LABEL_HEIGHT, height: bounds.height - INPUT_LABEL_HEIGHT },
+    };
   }
 
   /**
@@ -274,7 +348,7 @@ export class SVGRenderer {
 
     return `<g opacity="${opacity}">
       ${rect}
-      <text x="${x + width / 2}" y="${y + height / 2 + 5}" text-anchor="middle" class="wire-text" fill="${textColor}">${this.escapeXml(node.text || 'Button')}</text>
+      <text x="${x + width / 2}" y="${y + height / 2 + 5}" text-anchor="middle" class="wire-text" fill="${textColor}">${this.escapeXml(controlText(node) || 'Button')}</text>
     </g>`;
   }
 
@@ -308,7 +382,8 @@ export class SVGRenderer {
   /**
    * Render a text input
    */
-  private renderInput(node: ControlNode, bounds: BoundingBox): string {
+  private renderInput(node: ControlNode, outer: BoundingBox): string {
+    const { label, box: bounds } = this.renderInputLabel(node, outer);
     const { x, y, width, height } = bounds;
     const placeholder = node.placeholder || '';
 
@@ -328,7 +403,7 @@ export class SVGRenderer {
       strokeWidth: this.theme.borders.width,
     });
 
-    return `<g>
+    return `<g>${label}
       ${rect}
       <text x="${x + 12}" y="${y + height / 2 + 5}" class="wire-text wire-text-secondary">${this.escapeXml(typeIndicator || placeholder)}</text>
       ${node.modifiers.required ? `<text x="${x + width - 12}" y="${y + height / 2 + 5}" text-anchor="end" fill="${this.theme.colors.error}">*</text>` : ''}
@@ -338,11 +413,12 @@ export class SVGRenderer {
   /**
    * Render a text area
    */
-  private renderTextArea(node: ControlNode, bounds: BoundingBox): string {
+  private renderTextArea(node: ControlNode, outer: BoundingBox): string {
+    const { label, box: bounds } = this.renderInputLabel(node, outer);
     const { x, y, width, height } = bounds;
     const placeholder = node.placeholder || '';
 
-    return `<g>
+    return `<g>${label}
       <rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${this.theme.borders.radius}" fill="${this.theme.colors.inputBackground}" stroke="${this.theme.colors.border}" stroke-width="${this.theme.borders.width}" />
       <text x="${x + 12}" y="${y + 20}" class="wire-text wire-text-secondary">${this.escapeXml(placeholder)}</text>
       <line x1="${x + width - 20}" y1="${y + height - 8}" x2="${x + width - 8}" y2="${y + height - 8}" stroke="${this.theme.colors.border}" stroke-width="2" />
@@ -355,21 +431,22 @@ export class SVGRenderer {
    */
   private renderLabel(node: ControlNode, bounds: BoundingBox): string {
     const { x, y, height } = bounds;
-    const text = node.text || '';
+    const text = controlText(node) || '';
 
     // Check for markdown-style formatting
     let textClass = 'wire-text';
+    let fontStyle = '';
     let displayText = text;
 
-    if (text.startsWith('**') && text.endsWith('**')) {
+    if (text.length >= 4 && text.startsWith('**') && text.endsWith('**')) {
       textClass += ' wire-text-bold';
       displayText = text.slice(2, -2);
-    } else if (text.startsWith('*') && text.endsWith('*')) {
-      textClass += '" font-style="italic';
+    } else if (text.length >= 2 && text.startsWith('*') && text.endsWith('*')) {
+      fontStyle = ' font-style="italic"';
       displayText = text.slice(1, -1);
     }
 
-    return `<text x="${x}" y="${y + height / 2 + 5}" class="${textClass}">${this.escapeXml(displayText)}</text>`;
+    return `<text x="${x}" y="${y + height / 2 + 5}" class="${textClass}"${fontStyle}>${this.escapeXml(displayText)}</text>`;
   }
 
   /**
@@ -418,7 +495,8 @@ export class SVGRenderer {
   /**
    * Render a dropdown
    */
-  private renderDropdown(node: ControlNode, bounds: BoundingBox): string {
+  private renderDropdown(node: ControlNode, outer: BoundingBox): string {
+    const { label, box: bounds } = this.renderInputLabel(node, outer);
     const { x, y, width, height } = bounds;
 
     // Get first option as placeholder or use placeholder
@@ -427,7 +505,7 @@ export class SVGRenderer {
       displayText = (node.children[0] as ControlNode).text || displayText;
     }
 
-    return `<g>
+    return `<g>${label}
       <rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${this.theme.borders.radius}" fill="${this.theme.colors.inputBackground}" stroke="${this.theme.colors.border}" stroke-width="${this.theme.borders.width}" />
       <text x="${x + 12}" y="${y + height / 2 + 5}" class="wire-text">${this.escapeXml(displayText)}</text>
       <path d="M${x + width - 20} ${y + height / 2 - 2} L${x + width - 14} ${y + height / 2 + 4} L${x + width - 8} ${y + height / 2 - 2}" stroke="${this.theme.colors.text}" stroke-width="2" fill="none" />
@@ -526,7 +604,7 @@ export class SVGRenderer {
 
     return `<g>
       <circle cx="${cx}" cy="${cy}" r="${size / 2}" fill="${this.theme.colors.primary}" />
-      <text x="${cx}" y="${cy + fontSize / 3}" text-anchor="middle" class="wire-text" style="font-size: ${fontSize}px" fill="${this.theme.colors.primaryText}">${initials || '?'}</text>
+      <text x="${cx}" y="${cy + fontSize / 3}" text-anchor="middle" class="wire-text" style="font-size: ${fontSize}px" fill="${this.theme.colors.primaryText}">${this.escapeXml(initials || '?')}</text>
     </g>`;
   }
 
@@ -1119,7 +1197,7 @@ export class SVGRenderer {
     const fontSizes: Record<number, number> = { 1: 24, 2: 20, 3: 18, 4: 16, 5: 14, 6: 12 };
     const fontSize = fontSizes[level] || 18;
     
-    return `<text x="${x}" y="${y + height / 2 + fontSize / 3}" class="wire-text wire-text-bold" style="font-size: ${fontSize}px">${this.escapeXml(node.text || 'Heading')}</text>`;
+    return `<text x="${x}" y="${y + height / 2 + fontSize / 3}" class="wire-text wire-text-bold" style="font-size: ${fontSize}px">${this.escapeXml(controlText(node) || 'Heading')}</text>`;
   }
 
   /**
@@ -1129,7 +1207,7 @@ export class SVGRenderer {
     const { x, y, height } = bounds;
     
     return `<g>
-      <text x="${x}" y="${y + height / 2 + 5}" class="wire-text" fill="${this.theme.colors.primary}" style="text-decoration: underline">${this.escapeXml(node.text || 'Link')}</text>
+      <text x="${x}" y="${y + height / 2 + 5}" class="wire-text" fill="${this.theme.colors.primary}" style="text-decoration: underline">${this.escapeXml(controlText(node) || 'Link')}</text>
     </g>`;
   }
 
@@ -1226,7 +1304,7 @@ export class SVGRenderer {
 
     return `<g>
       <rect x="${x}" y="${y}" width="${width}" height="${height}" fill="${this.theme.colors.surface}" stroke="${this.theme.colors.border}" stroke-width="${this.theme.borders.width}" stroke-dasharray="4,2" />
-      <text x="${x + width / 2}" y="${y + height / 2 + 5}" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">${node.controlType}</text>
+      <text x="${x + width / 2}" y="${y + height / 2 + 5}" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">${this.escapeXml(String(node.controlType))}</text>
     </g>`;
   }
 
@@ -1368,12 +1446,7 @@ export class SVGRenderer {
    * Escape XML special characters
    */
   private escapeXml(str: string): string {
-    return str
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&apos;');
+    return escapeXml(str);
   }
 }
 
@@ -1381,7 +1454,7 @@ export class SVGRenderer {
  * Convenience function to render a document
  */
 export function render(document: DocumentNode, options: RenderOptions = {}): string {
-  const theme = getTheme(options.theme || document.style || 'clean');
+  const theme = resolveTheme(options.theme || document.style || 'clean');
   const renderer = new SVGRenderer(theme);
   return renderer.render(document, options);
 }

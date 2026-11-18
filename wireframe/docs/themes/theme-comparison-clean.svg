@@ -9,66 +9,66 @@
   </style>
   
   <rect width="100%" height="100%" fill="#ffffff" />
-  <text x="16" y="31" class="wire-text wire-text-bold">Component Showcase</text><text x="16" y="71" class="wire-text">Standard components that demonstrate theme differences.</text><line x1="16" y1="96" x2="216" y2="96" stroke="#dee2e6" stroke-width="1" /><rect x="16" y="117" width="768" height="667" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><text x="32" y="148" class="wire-text wire-text-bold">Buttons</text><g opacity="1">
+  <g role="group" aria-label="**Component Showcase**"><text x="16" y="31" class="wire-text wire-text-bold">Component Showcase</text></g><g role="group" aria-label="Standard components that demonstrate theme differences."><text x="16" y="71" class="wire-text">Standard components that demonstrate theme differences.</text></g><g role="group"><line x1="16" y1="96" x2="216" y2="96" stroke="#dee2e6" stroke-width="1" /></g><rect x="16" y="117" width="768" height="667" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group" aria-label="**Buttons**"><text x="32" y="148" class="wire-text wire-text-bold">Buttons</text></g><g role="button" aria-label="Primary"><g opacity="1">
       <rect x="32" y="161" width="100" height="36" rx="4" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
       <text x="82" y="184" text-anchor="middle" class="wire-text" fill="#ffffff">Primary</text>
-    </g><g opacity="1">
+    </g></g><g role="button" aria-label="Secondary"><g opacity="1">
       <rect x="140" y="161" width="104" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
       <text x="192" y="184" text-anchor="middle" class="wire-text" fill="#212529">Secondary</text>
-    </g><g opacity="1">
+    </g></g><g role="button" aria-label="Default"><g opacity="1">
       <rect x="252" y="161" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
       <text x="302" y="184" text-anchor="middle" class="wire-text" fill="#212529">Default</text>
-    </g><g opacity="0.5">
+    </g></g><g role="button" aria-label="Disabled" aria-disabled="true"><g opacity="0.5">
       <rect x="360" y="161" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
       <text x="410" y="184" text-anchor="middle" class="wire-text" fill="#212529">Disabled</text>
-    </g><rect x="16" y="804" width="768" height="200" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><text x="32" y="835" class="wire-text wire-text-bold">Form Controls</text><g>
+    </g></g><rect x="16" y="804" width="768" height="200" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group" aria-label="**Form Controls**"><text x="32" y="835" class="wire-text wire-text-bold">Form Controls</text></g><g role="textbox" aria-label="Text input" aria-placeholder="Text input"><g>
       <rect x="32" y="848" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
       <text x="44" y="871" class="wire-text wire-text-secondary">Text input</text>
       
-    </g><g>
+    </g></g><g role="textbox" aria-label="Multi-line text" aria-placeholder="Multi-line text"><g>
       <rect x="32" y="888" width="300" height="100" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
       <text x="44" y="908" class="wire-text wire-text-secondary">Multi-line text</text>
       <line x1="312" y1="980" x2="324" y2="980" stroke="#dee2e6" stroke-width="2" />
       <line x1="318" y1="974" x2="324" y2="980" stroke="#dee2e6" stroke-width="2" />
-    </g><g><rect x="784" y="851" width="18" height="18" rx="2" fill="#ffffff" stroke="#dee2e6" stroke-width="1" /><text x="810" y="865" class="wire-text">Unchecked option</text></g><g><rect x="784" y="879" width="18" height="18" rx="2" fill="#ffffff" stroke="#dee2e6" stroke-width="1" /><path d="M788 888 L792 892 L798 884" stroke="#0d6efd" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" /><text x="810" y="893" class="wire-text">Checked option</text></g><g><circle cx="793" cy="916" r="9" fill="#ffffff" stroke="#dee2e6" stroke-width="1" /><circle cx="793" cy="916" r="4.5" fill="#0d6efd" /><text x="810" y="921" class="wire-text">Radio option A</text></g><g><circle cx="793" cy="944" r="9" fill="#ffffff" stroke="#dee2e6" stroke-width="1" /><text x="810" y="949" class="wire-text">Radio option B</text></g><g><rect x="950" y="848" width="44" height="24" rx="12" fill="#dee2e6" /><circle cx="962" cy="860" r="10" fill="#ffffff" /><text x="1002" y="865" class="wire-text">Toggle off</text></g><g><rect x="950" y="876" width="44" height="24" rx="12" fill="#0d6efd" /><circle cx="982" cy="888" r="10" fill="#ffffff" /><text x="1002" y="893" class="wire-text">Toggle on</text></g><g>
-      <line x1="950" y1="916" x2="1150" y2="916" stroke="#dee2e6" stroke-width="4" stroke-linecap="round" />
-      <line x1="950" y1="916" x2="1050" y2="916" stroke="#0d6efd" stroke-width="4" stroke-linecap="round" />
-      <circle cx="1050" cy="916" r="8" fill="#0d6efd" stroke="#ffffff" stroke-width="2" />
-    </g><rect x="16" y="1024" width="768" height="128" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><text x="32" y="1055" class="wire-text wire-text-bold">Progress &amp; Status</text><text x="32" y="1083" class="wire-text">Progress Bars</text><g>
+    </g></g><g role="checkbox" aria-label="Unchecked option" aria-checked="false"><g><rect x="348" y="851" width="18" height="18" rx="2" fill="#ffffff" stroke="#dee2e6" stroke-width="1" /><text x="374" y="865" class="wire-text">Unchecked option</text></g></g><g role="checkbox" aria-label="Checked option" aria-checked="true"><g><rect x="348" y="879" width="18" height="18" rx="2" fill="#ffffff" stroke="#dee2e6" stroke-width="1" /><path d="M352 888 L356 892 L362 884" stroke="#0d6efd" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" /><text x="374" y="893" class="wire-text">Checked option</text></g></g><g role="radio" aria-label="Radio option A" aria-checked="true"><g><circle cx="357" cy="916" r="9" fill="#ffffff" stroke="#dee2e6" stroke-width="1" /><circle cx="357" cy="916" r="4.5" fill="#0d6efd" /><text x="374" y="921" class="wire-text">Radio option A</text></g></g><g role="radio" aria-label="Radio option B" aria-checked="false"><g><circle cx="357" cy="944" r="9" fill="#ffffff" stroke="#dee2e6" stroke-width="1" /><text x="374" y="949" class="wire-text">Radio option B</text></g></g><g role="switch" aria-label="Toggle off" aria-checked="false"><g><rect x="598.67" y="848" width="44" height="24" rx="12" fill="#dee2e6" /><circle cx="610.67" cy="860" r="10" fill="#ffffff" /><text x="650.67" y="865" class="wire-text">Toggle off</text></g></g><g role="switch" aria-label="Toggle on" aria-checked="true"><g><rect x="598.67" y="876" width="44" height="24" rx="12" fill="#0d6efd" /><circle cx="630.67" cy="888" r="10" fill="#ffffff" /><text x="650.67" y="893" class="wire-text">Toggle on</text></g></g><g role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><g>
+      <line x1="598.67" y1="916" x2="798.67" y2="916" stroke="#dee2e6" stroke-width="4" stroke-linecap="round" />
+      <line x1="598.67" y1="916" x2="698.67" y2="916" stroke="#0d6efd" stroke-width="4" stroke-linecap="round" />
+      <circle cx="698.67" cy="916" r="8" fill="#0d6efd" stroke="#ffffff" stroke-width="2" />
+    </g></g><rect x="16" y="1024" width="768" height="128" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group" aria-label="**Progress &amp; Status**"><text x="32" y="1055" class="wire-text wire-text-bold">Progress &amp; Status</text></g><g role="group" aria-label="Progress Bars"><text x="32" y="1083" class="wire-text">Progress Bars</text></g><g role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><g>
       <rect x="32" y="1092" width="200" height="8" rx="4" fill="#f8f9fa" />
       <rect x="32" y="1092" width="50" height="8" rx="4" fill="#0d6efd" />
-    </g><g>
+    </g></g><g role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><g>
       <rect x="32" y="1104" width="200" height="8" rx="4" fill="#f8f9fa" />
       <rect x="32" y="1104" width="100" height="8" rx="4" fill="#0d6efd" />
-    </g><g>
+    </g></g><g role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><g>
       <rect x="32" y="1116" width="200" height="8" rx="4" fill="#f8f9fa" />
       <rect x="32" y="1116" width="150" height="8" rx="4" fill="#0d6efd" />
-    </g><g>
+    </g></g><g role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><g>
       <rect x="32" y="1128" width="200" height="8" rx="4" fill="#f8f9fa" />
       <rect x="32" y="1128" width="200" height="8" rx="4" fill="#0d6efd" />
-    </g><text x="784" y="1083" class="wire-text">Badges</text><g>
-      <rect x="784" y="1092" width="24" height="24" rx="12" fill="#6c757d" />
-      <text x="796" y="1108" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
-    </g><g>
-      <rect x="812" y="1092" width="24" height="24" rx="12" fill="#6c757d" />
-      <text x="824" y="1108" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
-    </g><g>
-      <rect x="840" y="1092" width="24" height="24" rx="12" fill="#6c757d" />
-      <text x="852" y="1108" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
-    </g><g>
-      <rect x="868" y="1092" width="24" height="24" rx="12" fill="#6c757d" />
-      <text x="880" y="1108" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff"></text>
-    </g><rect x="16" y="1172" width="768" height="388" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><text x="32" y="1203" class="wire-text wire-text-bold">Navigation</text><rect x="32" y="1216" width="736" height="184" fill="none" stroke="#dee2e6" stroke-width="1" /><g>
-      <text x="48" y="1439" class="wire-text" fill="#0d6efd" style="text-decoration: underline">Link</text>
-    </g><g>
-      <text x="48" y="1467" class="wire-text" fill="#0d6efd" style="text-decoration: underline">Link</text>
-    </g><g>
-      <text x="48" y="1495" class="wire-text" fill="#0d6efd" style="text-decoration: underline">Link</text>
-    </g><text x="48" y="1523" class="wire-text">Current Page</text><rect x="16" y="1580" width="768" height="180" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><text x="32" y="1611" class="wire-text wire-text-bold">Cards</text><rect x="32" y="1624" width="736" height="116" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><text x="48" y="1655" class="wire-text wire-text-bold">Card Title</text><text x="48" y="1679" class="wire-text">Card content goes here with some description text.</text><g opacity="1">
+    </g></g><g role="group" aria-label="Badges"><text x="408" y="1083" class="wire-text">Badges</text></g><g role="group" aria-label="Info"><g>
+      <rect x="408" y="1092" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="420" y="1108" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">Info</text>
+    </g></g><g role="group" aria-label="Success"><g>
+      <rect x="436" y="1092" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="448" y="1108" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">Success</text>
+    </g></g><g role="group" aria-label="Warning"><g>
+      <rect x="464" y="1092" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="476" y="1108" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">Warning</text>
+    </g></g><g role="group" aria-label="Error"><g>
+      <rect x="492" y="1092" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="504" y="1108" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">Error</text>
+    </g></g><rect x="16" y="1172" width="768" height="388" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group" aria-label="**Navigation**"><text x="32" y="1203" class="wire-text wire-text-bold">Navigation</text></g><rect x="32" y="1216" width="736" height="184" fill="none" stroke="#dee2e6" stroke-width="1" /><g role="link" aria-label="Home"><g>
+      <text x="48" y="1439" class="wire-text" fill="#0d6efd" style="text-decoration: underline">Home</text>
+    </g></g><g role="link" aria-label="Products"><g>
+      <text x="48" y="1467" class="wire-text" fill="#0d6efd" style="text-decoration: underline">Products</text>
+    </g></g><g role="link" aria-label="Category"><g>
+      <text x="48" y="1495" class="wire-text" fill="#0d6efd" style="text-decoration: underline">Category</text>
+    </g></g><g role="group" aria-label="Current Page"><text x="48" y="1523" class="wire-text">Current Page</text></g><rect x="16" y="1580" width="768" height="180" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group" aria-label="**Cards**"><text x="32" y="1611" class="wire-text wire-text-bold">Cards</text></g><rect x="32" y="1624" width="362" height="116" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="**Card Title**"><text x="48" y="1655" class="wire-text wire-text-bold">Card Title</text></g><g role="group" aria-label="Card content goes here with some description text."><text x="48" y="1679" class="wire-text">Card content goes here with some description text.</text></g><g role="button" aria-label="Action"><g opacity="1">
       <rect x="48" y="1688" width="100" height="36" rx="4" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
       <text x="98" y="1711" text-anchor="middle" class="wire-text" fill="#ffffff">Action</text>
-    </g><rect x="780" y="1624" width="-12" height="120" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g>
-      <circle cx="816" cy="1660" r="20" fill="#0d6efd" />
-      <text x="816" y="1664.4444444444443" text-anchor="middle" class="wire-text" style="font-size: 13.333333333333334px" fill="#ffffff">J</text>
-    </g><text x="796" y="1699" class="wire-text wire-text-bold">John Doe</text><text x="796" y="1723" class="wire-text">Developer</text>
+    </g></g><rect x="406" y="1624" width="362" height="120" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="JD"><g>
+      <circle cx="442" cy="1660" r="20" fill="#0d6efd" />
+      <text x="442" y="1664.44" text-anchor="middle" class="wire-text" style="font-size: 13.33px" fill="#ffffff">J</text>
+    </g></g><g role="group" aria-label="**John Doe**"><text x="422" y="1699" class="wire-text wire-text-bold">John Doe</text></g><g role="group" aria-label="Developer"><text x="422" y="1723" class="wire-text">Developer</text></g>
 </svg>

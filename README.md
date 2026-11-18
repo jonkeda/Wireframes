@@ -126,13 +126,16 @@ wireframe clean
 npm install -g @jonkeda/wireframe-cli
 
 # Render to SVG
-wire render input.wire -o output.svg
+wire input.wire -o output.svg
 
-# Validate syntax
-wire validate input.wire
+# Validate syntax (exit code 1 on errors, printed as file:line:column)
+wire --validate input.wire
+
+# The parse tree as JSON, for other tools
+wire parse input.wire
 
 # Watch mode
-wire render input.wire --watch
+wire input.wire --watch
 ```
 
 ---

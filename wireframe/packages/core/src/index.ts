@@ -11,6 +11,7 @@ export * from './accessibility.js';
 import { Lexer } from './lexer/index.js';
 import { Parser, parse } from './parser/index.js';
 import { render, SVGRenderer, getTheme } from './renderer/index.js';
+import type { Theme } from './renderer/index.js';
 import {
   renderCache,
   generateCacheKey,
@@ -38,7 +39,8 @@ import {
 export interface CompileOptions {
   width?: number;
   height?: number;
-  theme?: string;
+  /** A theme object, or the name of a registered or built-in theme */
+  theme?: string | Theme;
   /** Use cache for repeated compilations (default: true) */
   useCache?: boolean;
 }
@@ -66,7 +68,9 @@ export function compile(
   const useCache = options.useCache !== false;
 
   // Check render cache first
-  if (useCache) {
+  // A theme object is not a stable cache key: compile it without the cache
+  const cacheable = useCache && typeof options.theme !== 'object';
+  if (cacheable) {
     const cacheKey = generateCacheKey(source, options as Record<string, unknown>);
     const cached = renderCache.get(cacheKey);
     if (cached) {
@@ -100,8 +104,9 @@ export function compile(
     theme: options.theme || document.style,
   });
 
-  // Store in cache
-  if (useCache) {
+  // Store in cache. Only a result without errors is cached: a cache hit returns no errors,
+  // so caching a result with errors would make a second compile of the same source look clean
+  if (cacheable && errors.length === 0) {
     const cacheKey = generateCacheKey(source, options as Record<string, unknown>);
     renderCache.set(cacheKey, svg, svg.length);
   }

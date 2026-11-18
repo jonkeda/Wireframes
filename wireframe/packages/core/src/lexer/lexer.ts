@@ -275,9 +275,8 @@ export class Lexer {
       return;
     }
 
-    // Tree branch (+) or leaf (-)
-    if (char === '+' || char === '-') {
-      // Check if it's at the start of content (tree syntax)
+    // Tree branch (+) or leaf (-): only as the first token of a line
+    if ((char === '+' || char === '-') && this.isFirstTokenOnLine()) {
       const nextChar = this.peek(1);
       if (nextChar === ' ' || nextChar === '\t') {
         this.scanTreeItem(char);
@@ -352,6 +351,38 @@ export class Lexer {
       if (this.indentStack[this.indentStack.length - 1] !== indent) {
         this.addError('Inconsistent indentation');
       }
+    }
+  }
+
+  /**
+   * True when no token has been emitted on the current line yet
+   */
+  private isFirstTokenOnLine(): boolean {
+    const last = this.tokens[this.tokens.length - 1];
+    return (
+      !last ||
+      last.type === TokenType.NEWLINE ||
+      last.type === TokenType.INDENT ||
+      last.type === TokenType.DEDENT
+    );
+  }
+
+  /**
+   * Read one escape sequence; the backslash is already consumed.
+   * Strings and quoted attribute values share it.
+   */
+  private readEscape(): string {
+    const escaped = this.advance();
+    switch (escaped) {
+      case 'n':
+        return '\n';
+      case 't':
+        return '\t';
+      case 'r':
+        return '\r';
+      default:
+        // \\, \", \' and any other character stand for themselves
+        return escaped;
     }
   }
 
@@ -559,29 +590,7 @@ export class Lexer {
     while (!this.isAtEnd() && this.peek() !== quote) {
       if (this.peek() === '\\') {
         this.advance();
-        const escaped = this.advance();
-        switch (escaped) {
-          case 'n':
-            value += '\n';
-            break;
-          case 't':
-            value += '\t';
-            break;
-          case 'r':
-            value += '\r';
-            break;
-          case '\\':
-            value += '\\';
-            break;
-          case '"':
-            value += '"';
-            break;
-          case "'":
-            value += "'";
-            break;
-          default:
-            value += escaped;
-        }
+        value += this.readEscape();
       } else if (this.peek() === '\n') {
         this.addError('Unterminated string literal');
         break;
@@ -706,7 +715,7 @@ export class Lexer {
         while (!this.isAtEnd() && this.peek() !== quote && this.peek() !== '\n') {
           if (this.peek() === '\\') {
             this.advance();
-            attrValue += this.advance();
+            attrValue += this.readEscape();
           } else {
             attrValue += this.advance();
           }
@@ -739,6 +748,24 @@ export class Lexer {
 
     // Check if it's a keyword
     const tokenType = KEYWORDS[value];
+
+    // `if <condition>`: the rest of the line is the condition, kept as written
+    if (tokenType === TokenType.IF) {
+      this.skipWhitespace();
+      let condition = '';
+      while (!this.isAtEnd() && this.peek() !== '\n' && this.peek() !== '\r') {
+        condition += this.advance();
+      }
+      this.tokens.push({
+        type: TokenType.IF,
+        value,
+        start,
+        end: this.getLocation(),
+        attributeValue: condition.trim(),
+      });
+      return;
+    }
+
     if (tokenType) {
       this.tokens.push({
         type: tokenType,
@@ -763,11 +790,12 @@ export class Lexer {
   }
 
   private isAlpha(char: string): boolean {
-    return (char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z') || char === '_';
+    return char === '_' || /^\p{L}$/u.test(char);
   }
 
   private isAlphaNumeric(char: string): boolean {
-    return this.isAlpha(char) || this.isDigit(char);
+    // Letters, digits, and combining marks (a decomposed "ë" is "e" and a mark)
+    return this.isAlpha(char) || this.isDigit(char) || /^\p{M}$/u.test(char);
   }
 
   private isWhitespace(char: string): boolean {

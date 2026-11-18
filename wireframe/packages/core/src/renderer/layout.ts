@@ -6,13 +6,16 @@ import {
   ControlNode,
   ComponentNode,
   RepeatNode,
+  ConditionalNode,
   isLayoutNode,
   isSectionNode,
   isControlNode,
   isComponentNode,
   isRepeatNode,
+  isConditionalNode,
 } from '../parser/ast.js';
 import { Theme } from './theme.js';
+import { controlText, hasInputLabel, INPUT_LABEL_HEIGHT } from './control-helpers.js';
 
 /**
  * Represents a bounding box for layout calculations
@@ -94,6 +97,7 @@ const DEFAULT_SIZES = {
  */
 export class LayoutEngine {
   private theme: Theme;
+  private documentShow: string | undefined;
 
   constructor(theme: Theme) {
     this.theme = theme;
@@ -110,6 +114,9 @@ export class LayoutEngine {
       availableHeight: height,
       theme: this.theme,
     };
+
+    const show = document.attributes?.['show'];
+    this.documentShow = show === undefined ? undefined : String(show);
 
     const children = this.layoutChildren(document.children, context, 'Vertical');
 
@@ -152,6 +159,9 @@ export class LayoutEngine {
     }
     if (isRepeatNode(node)) {
       return this.layoutRepeat(node, context);
+    }
+    if (isConditionalNode(node)) {
+      return this.layoutConditional(node, context);
     }
 
     // Default fallback
@@ -232,7 +242,8 @@ export class LayoutEngine {
   private layoutControl(node: ControlNode, context: LayoutContext): LayoutInfo {
     const size = this.getControlSize(node);
     const width = this.getSizeAttribute(node, 'w') || size.width;
-    const height = this.getSizeAttribute(node, 'h') || size.height;
+    const labelHeight = hasInputLabel(node) ? INPUT_LABEL_HEIGHT : 0;
+    const height = (this.getSizeAttribute(node, 'h') || size.height) + labelHeight;
 
     // Handle children (e.g., Dropdown options)
     let children: LayoutInfo[] = [];
@@ -334,6 +345,29 @@ export class LayoutEngine {
   }
 
   /**
+   * Layout a conditional: a transparent vertical container showing one branch.
+   * The then-branch is shown unless `show="else"` is set on the node or the document.
+   */
+  private layoutConditional(node: ConditionalNode, context: LayoutContext): LayoutInfo {
+    const nodeShow = node.attributes?.['show'];
+    const show = nodeShow !== undefined ? String(nodeShow) : this.documentShow;
+    const branch = show === 'else' ? (node.elseChildren ?? []) : (node.thenChildren ?? []);
+
+    const children = this.layoutVertical(branch, context, this.theme.spacing.gap);
+
+    return {
+      bounds: {
+        x: context.x,
+        y: context.y,
+        width: context.availableWidth,
+        height: this.calculateContentHeight(children),
+      },
+      children,
+      node,
+    };
+  }
+
+  /**
    * Layout children according to layout type
    */
   private layoutChildren(
@@ -402,11 +436,20 @@ export class LayoutEngine {
     const layouts: LayoutInfo[] = [];
     let x = context.x;
 
-    for (const child of children) {
+    // Children with a known width keep it; the others share what is left evenly
+    const intrinsic = children.map((child) => this.getIntrinsicWidth(child));
+    const fixedTotal = intrinsic.reduce<number>((sum, w) => sum + (w ?? 0), 0);
+    const flexCount = intrinsic.filter((w) => w === undefined).length;
+    const gaps = gap * Math.max(0, children.length - 1);
+    const flexWidth = flexCount > 0
+      ? Math.max(0, (context.availableWidth - gaps - fixedTotal) / flexCount)
+      : 0;
+
+    children.forEach((child, i) => {
       const childContext: LayoutContext = {
         x,
         y: context.y,
-        availableWidth: context.availableWidth - (x - context.x),
+        availableWidth: intrinsic[i] ?? flexWidth,
         availableHeight: context.availableHeight,
         theme: this.theme,
       };
@@ -414,7 +457,7 @@ export class LayoutEngine {
       const layout = this.layoutElement(child, childContext);
       layouts.push(layout);
       x = layout.bounds.x + layout.bounds.width + gap;
-    }
+    });
 
     return layouts;
   }
@@ -424,15 +467,14 @@ export class LayoutEngine {
    */
   private layoutGrid(children: ElementNode[], context: LayoutContext, gap: number, parentNode?: ElementNode): LayoutInfo[] {
     const layouts: LayoutInfo[] = [];
-    
-    // Get cols from parent attributes or default to 2
-    const cols = parentNode && (isLayoutNode(parentNode) || isSectionNode(parentNode))
-      ? ((parentNode.attributes['cols'] as number) || 2)
-      : 2;
-    const rows = parentNode && (isLayoutNode(parentNode) || isSectionNode(parentNode))
-      ? ((parentNode.attributes['rows'] as number) || undefined)
+
+    // Get cols/rows from parent attributes; cols defaults to 2
+    const parentAttrs = parentNode && (isLayoutNode(parentNode) || isSectionNode(parentNode))
+      ? parentNode.attributes
       : undefined;
-    
+    const cols = this.toPositiveInt(parentAttrs?.['cols']) ?? 2;
+    const rows = this.toPositiveInt(parentAttrs?.['rows']);
+
     // Calculate cell dimensions
     const cellWidth = (context.availableWidth - gap * (cols - 1)) / cols;
     const cellHeight = rows ? (context.availableHeight - gap * (rows - 1)) / rows : undefined;
@@ -446,22 +488,14 @@ export class LayoutEngine {
     let autoCol = 0;
     
     for (const child of children) {
-      const gridAttr = (isControlNode(child) || isComponentNode(child)) 
-        ? child.attributes['grid'] as string
-        : undefined;
-      
-      if (gridAttr) {
-        // Parse grid=row,col,rowSpan,colSpan (0-indexed)
-        const parts = gridAttr.split(',').map(p => parseInt(p.trim(), 10));
-        const row = parts[0] || 0;
-        const col = parts[1] || 0;
-        const rowSpan = parts[2] || 1;
-        const colSpan = parts[3] || 1;
-        positioned.set(child, { row, col, rowSpan, colSpan });
-        
+      // grid=row,col,rowSpan,colSpan (0-indexed); unreadable values fall back to auto placement
+      const pos = this.parseGridPosition(child.attributes?.['grid'], cols);
+      if (pos) {
+        positioned.set(child, pos);
+
         // Mark cells as occupied
-        for (let r = row; r < row + rowSpan; r++) {
-          for (let c = col; c < col + colSpan; c++) {
+        for (let r = pos.row; r < pos.row + pos.rowSpan; r++) {
+          for (let c = pos.col; c < pos.col + pos.colSpan; c++) {
             occupied.add(`${r},${c}`);
           }
         }
@@ -489,29 +523,57 @@ export class LayoutEngine {
       }
     }
     
-    // Layout each child at its grid position
-    for (const child of children) {
+    // Lay each child out in its column at the grid's top, then size the rows to fit
+    const measured = children.map((child) => {
       const pos = positioned.get(child)!;
       const x = context.x + pos.col * (cellWidth + gap);
-      const y = context.y + pos.row * ((cellHeight || 40) + gap);
       const spanWidth = cellWidth * pos.colSpan + gap * (pos.colSpan - 1);
       const spanHeight = cellHeight ? cellHeight * pos.rowSpan + gap * (pos.rowSpan - 1) : undefined;
-      
-      const childContext: LayoutContext = {
-        x,
-        y,
-        availableWidth: spanWidth,
-        availableHeight: spanHeight || context.availableHeight - (y - context.y),
-        theme: this.theme,
-      };
 
-      const layout = this.layoutElement(child, childContext);
-      
+      const layout = this.layoutElement(child, {
+        x,
+        y: context.y,
+        availableWidth: spanWidth,
+        availableHeight: spanHeight || context.availableHeight,
+        theme: this.theme,
+      });
+
       // Adjust width to fit cell if needed
       if (layout.bounds.width > spanWidth) {
         layout.bounds.width = spanWidth;
       }
-      
+      return { layout, pos };
+    });
+
+    // Each row is as tall as its tallest child (and at least the fixed cell height, if rows= is set)
+    const rowCount = measured.reduce((max, m) => Math.max(max, m.pos.row + m.pos.rowSpan), rows ?? 0);
+    const rowHeights: number[] = new Array<number>(rowCount).fill(cellHeight ?? 0);
+    for (const { layout, pos } of measured) {
+      if (pos.rowSpan === 1) {
+        rowHeights[pos.row] = Math.max(rowHeights[pos.row], layout.bounds.height);
+      }
+    }
+    // A spanning child taller than the rows it spans grows the last of them
+    for (const { layout, pos } of measured) {
+      if (pos.rowSpan > 1) {
+        const last = pos.row + pos.rowSpan - 1;
+        let spanned = gap * (pos.rowSpan - 1);
+        for (let r = pos.row; r <= last; r++) spanned += rowHeights[r];
+        if (layout.bounds.height > spanned) {
+          rowHeights[last] += layout.bounds.height - spanned;
+        }
+      }
+    }
+
+    const rowTops: number[] = [];
+    let top = context.y;
+    for (let r = 0; r < rowCount; r++) {
+      rowTops.push(top);
+      top += rowHeights[r] + gap;
+    }
+
+    for (const { layout, pos } of measured) {
+      this.translate(layout, 0, rowTops[pos.row] - context.y);
       layouts.push(layout);
     }
 
@@ -530,9 +592,9 @@ export class LayoutEngine {
       
       if (isControlNode(child) || isComponentNode(child)) {
         // Check for canvas=x,y attribute first
-        const canvasAttr = child.attributes['canvas'] as string;
-        if (canvasAttr) {
-          const parts = canvasAttr.split(',').map(p => parseFloat(p.trim()));
+        const canvasAttr = child.attributes['canvas'];
+        if (canvasAttr !== undefined && canvasAttr !== '' && typeof canvasAttr !== 'boolean') {
+          const parts = String(canvasAttr).split(',').map(p => parseFloat(p.trim()));
           childX = parts[0] || 0;
           childY = parts[1] || 0;
         } else {
@@ -742,10 +804,10 @@ export class LayoutEngine {
       case 'ColumnButton':
         return { width: 120, height: 40 };
       case 'Heading':
-        const headingWidth = (node.text?.length || 10) * 12;
+        const headingWidth = (controlText(node)?.length || 10) * 12;
         return { width: Math.max(100, headingWidth), height: sizes.heading.height };
       case 'Link':
-        const linkWidth = (node.text?.length || 6) * 8;
+        const linkWidth = (controlText(node)?.length || 6) * 8;
         return { width: Math.max(40, linkWidth), height: sizes.link.height };
       case 'Toast':
         return sizes.toast;
@@ -755,6 +817,59 @@ export class LayoutEngine {
         return sizes.stepper;
       default:
         return { width: 100, height: 30 };
+    }
+  }
+
+  /**
+   * The width a Horizontal child takes when it has one of its own:
+   * an explicit `w`, or a control's intrinsic size. Undefined means it shares the rest.
+   */
+  private getIntrinsicWidth(child: ElementNode): number | undefined {
+    const explicit = this.getSizeAttribute(child, 'w');
+    if (explicit) return explicit;
+    if (isControlNode(child)) return this.getControlSize(child).width;
+    return undefined;
+  }
+
+  /**
+   * Parse grid=row,col,rowSpan,colSpan. Numbers and strings are accepted; missing parts
+   * default (col 0, spans 1). Anything unreadable returns undefined so the child is auto-placed.
+   */
+  private parseGridPosition(
+    value: unknown,
+    cols: number
+  ): { row: number; col: number; rowSpan: number; colSpan: number } | undefined {
+    if (value === undefined || value === null || value === '' || typeof value === 'boolean') {
+      return undefined;
+    }
+    const nums = String(value).split(',').map((p) => (p.trim() === '' ? undefined : Number(p.trim())));
+    if (nums.some((n) => n !== undefined && (!Number.isFinite(n) || n < 0))) {
+      return undefined;
+    }
+    const row = Math.floor(nums[0] ?? 0);
+    const col = Math.floor(nums[1] ?? 0);
+    if (col >= cols) {
+      return undefined;
+    }
+    const rowSpan = Math.max(1, Math.floor(nums[2] || 1));
+    const colSpan = Math.min(cols - col, Math.max(1, Math.floor(nums[3] || 1)));
+    return { row, col, rowSpan, colSpan };
+  }
+
+  private toPositiveInt(value: unknown): number | undefined {
+    const num = typeof value === 'number' ? value : typeof value === 'string' ? parseInt(value, 10) : NaN;
+    return Number.isFinite(num) && num >= 1 ? Math.floor(num) : undefined;
+  }
+
+  /**
+   * Move a laid-out subtree
+   */
+  private translate(layout: LayoutInfo, dx: number, dy: number): void {
+    if (dx === 0 && dy === 0) return;
+    layout.bounds.x += dx;
+    layout.bounds.y += dy;
+    for (const child of layout.children) {
+      this.translate(child, dx, dy);
     }
   }
 

@@ -219,6 +219,8 @@ export interface ControlNode extends ElementBase {
   icon?: string;
   placeholder?: string;
   tooltip?: string;
+  /** The field's label, from `label="..."`: the name a person sees beside an input */
+  label?: string;
   children?: ElementNode[]; // For Dropdown options
 }
 
@@ -333,7 +335,12 @@ export type DataSectionType =
 export interface DataSectionNode extends ASTNode {
   type: 'DataSection';
   sectionType: DataSectionType;
+  /** Every row as written, the header and separator included */
   rows: TableRowData[];
+  /** The header's cells, when the first row is followed by a separator row */
+  columns?: string[];
+  /** The rows below the header, as column name to cell; empty cells are kept as '' */
+  records?: Array<Record<string, string>>;
   /** For component definitions */
   componentName?: string;
   componentParams?: string;

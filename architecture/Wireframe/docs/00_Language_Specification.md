@@ -145,6 +145,11 @@ Vertical gap=16
 // Next element at same or lower indent level closes the block
 ```
 
+A closing keyword must close a block that is open. A misspelt one (`/Vertcal`) or one for a
+block that is not open (`/Card` with no `Card` above it) is an error at its own line, and the
+lines after it are still read. A closing keyword for an outer block also closes the blocks
+inside it.
+
 ---
 
 ## 5. Layouts
@@ -320,7 +325,14 @@ TextInput "Placeholder text"
 TextInput "Username" :txtUser
 TextInput "Email" :txtEmail required
 TextInput "Name" :txtName ?user.name
+TextInput :txtName label="Name" placeholder="e.g. Jane" required
 ```
+
+For an input (`TextInput`, `NumberInput`, `DateInput`, `PasswordInput`, `TextArea`, `Dropdown`)
+the quoted string is the **placeholder**: the hint inside the empty field. `label="…"` gives the
+field its **label**, drawn above the box; `placeholder="…"` sets the placeholder explicitly. For
+every other control (`Button`, `Label`, `Heading`, `Link`, `Badge`, …) the quoted string is its
+text.
 
 ### 7.4 NumberInput
 
@@ -671,6 +683,10 @@ Attributes are key-value pairs that configure elements.
 
 ### 11.1 Syntax
 
+Any `name=value` pair is kept on the element, also names this table does not list. A quoted
+value may contain spaces and the same escapes as a string (`
+`, `	`, `\"`, `\`).
+
 ```wireframe
 Element attribute=value attribute2="string value"
 ```
@@ -689,6 +705,9 @@ Element attribute=value attribute2="string value"
 | `rows=` | Number of rows | `rows=4` |
 | `cols=` | Number of columns | `cols=3` |
 | `tooltip=` | Tooltip text | `tooltip="Click to save"` |
+| `label=` | The label of an input, drawn above it | `label="Name"` |
+| `placeholder=` | The placeholder of an input | `placeholder="e.g. Jane"` |
+| `show=` | On a conditional: `show="else"` draws the else branch | `show=else` |
 | `dock=` | Dock position | `dock=top` |
 | `align=` | Alignment | `align=center` |
 | `justify=` | Justification | `justify=end` |
@@ -712,9 +731,35 @@ Repeat 5 Label "Item"
 
 ---
 
+## 12a. Conditionals
+
+Show one of two states of a screen:
+
+```wireframe
+if signedIn
+    Button "Log out"
+else if guest
+    Button "Sign up"
+else
+    Button "Log in"
+/if
+```
+
+The condition is the rest of the `if` line, kept as written; it is not evaluated. A wireframe
+shows one state: the **then** branch, unless `show="else"` is set on the conditional or on the
+document. `else` and `/if` outside an `if` are errors.
+
+---
+
 ## 13. Data Sections
 
-Data sections define metadata at the end of the document.
+Data sections hold metadata about the screen, usually at the end of the document but allowed
+anywhere after its first element. When a table's first row is followed by a separator row, the
+first row names the columns, and each row below becomes a record of column name to cell. An
+empty cell stays an empty cell; a row with more cells than the header is an error.
+
+A `component Name params` section holds a reusable piece of screen: its body is elements, like
+the screen itself.
 
 ### 13.1 Data Sources
 
