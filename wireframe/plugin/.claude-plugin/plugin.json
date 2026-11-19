@@ -2,5 +2,8 @@
   "name": "wireframe",
   "version": "0.0.9",
   "description": "Create, update and render UI wireframes written in the Wireframe text language, with the wire tool.",
-  "license": "MIT"
+  "license": "MIT",
+  "author": {
+    "name": "jonkeda"
+  }
 }

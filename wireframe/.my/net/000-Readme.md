@@ -97,7 +97,7 @@ Estimates, from the size of the TypeScript code and its tests.
 
 ## Where it stands (2026-11-19)
 
-Every step is built. What is ticked and what is not is in [600-Tasklist.md](600-Tasklist.md): 108 of 123 boxes.
+Every step is built. What is ticked and what is not is in [600-Tasklist.md](600-Tasklist.md): 109 of 123 boxes.
 
 | Step | Stands |
 | --- | --- |
@@ -119,7 +119,8 @@ Learned and not planned:
 - **An SVG is not an image a model takes.** The server gives it as text; as an image only when asked. PNG, the
   owner's "later", is what would put the picture in the conversation.
 
-Still open: the MCP server with a real client; the plugin installed as a plugin; the single file compiled ahead
+Still open: a model using the installed plugin's MCP tools and hooks in a new session (the plugin is installed and a
+real client connects its server: 650); the single file compiled ahead
 of time (no C++ build tools on this machine); the VS Code preview's change tried in VS Code; diagnostic codes;
 more cases for the set (every modifier on every control, layouts whose children do not fit); the new .NET job of
 the workflow, which has not run on GitHub. Nothing is committed.

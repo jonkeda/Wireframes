@@ -1,0 +1,14 @@
+{
+  "name": "wireframes",
+  "description": "The Wireframe language: skills, hooks and an MCP server for Claude Code.",
+  "owner": {
+    "name": "jonkeda"
+  },
+  "plugins": [
+    {
+      "name": "wireframe",
+      "source": "./wireframe/plugin",
+      "description": "Create, update and render UI wireframes written in the Wireframe text language, with the wire tool."
+    }
+  ]
+}

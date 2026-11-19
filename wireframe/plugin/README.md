@@ -3,6 +3,18 @@
 Skills for working with wireframes written in the Wireframe language. They call the tool `wire` (the .NET tool
 `wireframe.cli`, or the single file), which must be on the path, for the skills and for the hooks.
 
+Install it from this repository (Claude Code 2.1.275 or later):
+
+```
+/plugin install wireframe --marketplace jonkeda/Wireframes
+```
+
+or from a checkout: `claude plugin marketplace add <the repository's folder>`, then
+`claude plugin install wireframe@wireframes`. The tool comes separately: `dotnet tool install --global wireframe.cli`.
+
+It also brings the MCP server (`wire mcp`, `.mcp.json`): the tools `wireframe_validate`, `wireframe_render`,
+`wireframe_render_document`, `wireframe_check`, `wireframe_components` and `wireframe_examples`.
+
 | Skill | For |
 | --- | --- |
 | `wireframe-create` | A new wireframe: written, validated, rendered, shown |

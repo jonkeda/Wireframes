@@ -72,3 +72,19 @@ Resources: `wireframe://reference` and `wireframe://components/{name}`.
 `wire` now takes a folder (every `.wire`, `.md` and `.markdown` file under it) and a wildcard in a file's name, read
 by the tool itself. Found while writing the skills: `wire docs/*.md` works in Bash, whose shell expands it, and
 failed in PowerShell. Four tests; 2,455 pass.
+
+## Installed, and connected by a real client (2026-11-19, later)
+
+| What | Seen |
+| --- | --- |
+| `wire` on the path | Packed and installed as the global .NET tool `wireframe.cli` 0.0.9 |
+| The plugin's MCP server | `plugin/.mcp.json`: `wire mcp`, with the session's folder as its root |
+| A marketplace | `.claude-plugin/marketplace.json` at the repository's root, the plugin at `./wireframe/plugin`. `claude plugin validate` passes both (it asks for an icon and nothing else) |
+| Installing | `claude plugin marketplace add <the repository's folder>`, then `claude plugin install wireframe@wireframes`: user scope, read in place from the folder. `claude plugin details`: 3 skills, hooks on `PostToolUse` and `Stop`, 1 MCP server, about 460 tokens added to every session |
+| A real client starts it | Claude Code 2.1.326 (the desktop app's own program, run headless) loaded the plugin, connected the server over stdio in 406 ms, listed its six tools as `mcp__plugin_wireframe_wireframe__wireframe_…` and the three skills as `wireframe:wireframe-create` and so on, and closed the server cleanly. So the protocol the server speaks is one this client takes |
+
+**Not seen yet: a model using the tools.** The headless client could not reach a model (its own sign-in has expired;
+the app's sessions sign in another way), and a plugin loads only when a session starts, so the session that
+installed it cannot try it. A trial for a new session is written out (seven steps: the tools without a shell, the
+hook after a write, the picture as an image, the resources, a skill, the hook before stopping); its findings go to
+`670-ClientTrial.md`. Until it has run, the gate stays open and the picture as an image is untried.

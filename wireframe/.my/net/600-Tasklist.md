@@ -136,7 +136,7 @@ in a real session, kept beside the findings.
 - [x] 6. What a hook costs, timed over a hundred edits (2026-11-19: the command timed over a hundred runs, not a hundred edits in a session)
 - [x] 7. What happens when a hook fails, hangs, or names a missing command (2026-11-19: tried: exit 1, a hook cut off at its time limit, and a command that does not exist each said nothing to the agent and blocked nothing)
 - [x] 8. Whether a hook runs for a subagent's writes, and in the desktop app and an SDK session (2026-11-19: a subagent's Write came with `agent_id` and `agent_type`; all tries ran in the desktop app. An SDK session: not tried)
-- [ ] 9. How a plugin installs and removes hooks, and whether a project can switch one off (2026-11-19: by the documentation; the plugin's entries ran from a settings file, the plugin was not installed)
+- [x] 9. How a plugin installs and removes hooks, and whether a project can switch one off (2026-11-19: installed with `claude plugin marketplace add` and `claude plugin install`; a headless client loaded its skills, hooks and server. One hook cannot be switched off, by the documentation. Removing it: not tried)
 - [x] 10. Whether a file a hook writes sets the hook off again (2026-11-19: it does not: the hook wrote SVGs and no event came; `FileChanged` never came at all)
 - [x] `510-HooksFindings.md`: an answer per question, with what was seen (2026-11-19: the reading, and the tries A to H)
 - [x] `500-Hooks.md` written again on the findings: each of the three hooks kept, changed or dropped (2026-11-19)
@@ -190,7 +190,7 @@ in a real session, kept beside the findings.
 - [x] Tests: each tool through a test client; a path outside the root refused; every conformance case rendered (2026-11-19: ten cases rendered, not every one)
 - [x] Started and stopped a hundred times, it leaves no process and no file (2026-11-19: no file; the threads within a margin, not counted exactly)
 - [x] The skills say when to use the server and when the command (2026-11-19)
-- [ ] **Gate:** a client that has no shell writes a wireframe that validates and renders, and shows the picture (2026-11-19: not met: no real client was connected; `dotnet test` 2,455 passed and the server answers a piped session)
+- [ ] **Gate:** a client that has no shell writes a wireframe that validates and renders, and shows the picture (2026-11-19: half met: a real client connected the installed server and listed its tools; no model has used them yet. The trial is written for a new session: `670-ClientTrial.md`)
 
 ## Closing
 
