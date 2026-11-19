@@ -25,6 +25,36 @@ refused.
 { "mcpServers": { "wireframe": { "command": "wire", "args": ["mcp"] } } }
 ```
 
+### Updating the tool while sessions are open: `wire mcp-host`
+
+A session's `wire mcp` runs from the tool's installed files and holds them, so `dotnet tool update` is refused
+while any session is open (seen in [the client trial](670-ClientTrial.md)). `wire mcp-host` is the server a session
+starts instead, after Bruinet's `bruinet mcp-host`:
+
+- It copies a **build folder** (`--build`, default `wire/mcp` under the user's local application data) to a snapshot
+  under `--runs` (default its sibling `run`) and runs `dotnet exec <snapshot>/wire.dll mcp --root <folder>` as a child.
+- Each line of the client goes to the child, each of its lines back. The answer to `initialize` is passed on with
+  `capabilities.tools.listChanged` set to true.
+- Every two seconds it reads `mcp.stamp` in the build folder (without one: `wire.dll`'s write time). On a new value it
+  waits for the requests in flight (two minutes at most), starts a new child from a new snapshot, replays the
+  session's `initialize` to it (the answer kept back), sends `notifications/tools/list_changed`, and ends the old one.
+- The first time, the build folder is filled from the tool's own files; a tool newer than the build folder replaces
+  it. A single-file tool with an empty build folder has nothing to start a child from and serves as `wire mcp`.
+
+Nothing holds the build folder, so `dotnet/update-mcp.ps1` (publish, copy, then the stamp) always goes through.
+
+```json
+{ "mcpServers": { "wireframe": { "command": "wire", "args": ["mcp-host"] } } }
+```
+
+What it does not cover:
+
+- The host is still the installed `wire`. Updating the global tool itself (a change to the host, or to the hooks'
+  `wire hook`, which run the installed tool) still needs every session closed.
+- So after `update-mcp.ps1` the server may render with a newer renderer than the hooks and a shell's `wire` until the
+  global tool is updated too; a picture one wrote can look stale to the other when the renderer changed between them.
+- A child that ends by itself is not started again; the host says so on standard error.
+
 ## The tools
 
 Six, each doing one thing.

@@ -2,7 +2,7 @@
   "mcpServers": {
     "wireframe": {
       "command": "wire",
-      "args": ["mcp"]
+      "args": ["mcp-host"]
     }
   }
 }

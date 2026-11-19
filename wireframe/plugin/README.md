@@ -12,8 +12,11 @@ Install it from this repository (Claude Code 2.1.275 or later):
 or from a checkout: `claude plugin marketplace add <the repository's folder>`, then
 `claude plugin install wireframe@wireframes`. The tool comes separately: `dotnet tool install --global wireframe.cli`.
 
-It also brings the MCP server (`wire mcp`, `.mcp.json`): the tools `wireframe_validate`, `wireframe_render`,
-`wireframe_render_document`, `wireframe_check`, `wireframe_components` and `wireframe_examples`.
+It also brings the MCP server (`wire mcp-host`, `.mcp.json`): the tools `wireframe_validate`, `wireframe_render`,
+`wireframe_render_document`, `wireframe_check`, `wireframe_components` and `wireframe_examples`. The host runs
+`wire mcp` from a copy of a build folder (`wire/mcp` under the user's local application data, first filled from the
+tool's own files) and starts it again on a new build there, so the server can be updated while sessions are open:
+`pwsh dotnet/update-mcp.ps1` from a checkout. It needs a `wire` that knows `mcp-host` (0.1.0 or later).
 
 | Skill | For |
 | --- | --- |

@@ -28,7 +28,9 @@ test names `:btnSave`, a picture is linked from a document. What you did not mea
 
    An error that is there already is not yours: say it, and do not fix it in passing unless asked. Keep the
    picture as it is now, so you can show before and after: it is beside the document, named
-   `<document>.<block id>.svg` (`spec.login.svg` for the block `id=login` of `spec.md`). Copy it aside.
+   `<document>.<block id>.svg` (`spec.login.svg` for the block `id=login` of `spec.md`). Copy it aside. Without a
+   shell (only the MCP tools and Read/Write), call `wireframe_render` for the block with no `write` and keep the
+   SVG text it returns, or give the block's own text as the "before" and describe the change in words.
 3. **Change the fewest lines.** Only the lines the request is about. Keep the order, the spacing, the indentation,
    the style line, and the names of everything that did not change. Do not reformat the block.
 4. **Keep what points at it.**

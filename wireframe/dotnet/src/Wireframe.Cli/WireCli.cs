@@ -33,6 +33,7 @@ Usage:
   wire parse <input-file> [input-file2 ...]
   wire components [<name>] [--json]
   wire mcp [--root <folder>]
+  wire mcp-host [--build <folder>] [--runs <folder>] [--root <folder>]
   wire hook after-write | before-stop
   wire --help
   wire --version
@@ -49,7 +50,13 @@ Commands:
   mcp                   Serve the tools as an MCP server over standard input and
                         output (JSON-RPC, one message per line). It reads and
                         writes only under the current folder, or --root <folder>
-  hook                  For Claude Code's hooks; the hook's event is read as JSON
+  mcp-host              The same server for a session that stays open while the
+                        tool is updated: it runs "wire mcp" from a copy of a build
+                        folder (--build, default wire/mcp under the user's local
+                        application data, first filled from the tool's own files)
+                        and starts it again when a new mcp.stamp appears there.
+                        Nothing holds the build folder. --runs: where the copies go
+  hook                For Claude Code's hooks; the hook's event is read as JSON
                         from standard input. after-write (PostToolUse of Write
                         and Edit) renders the wireframes of the file written and
                         hands their errors to the agent (exit 2). before-stop
@@ -153,6 +160,11 @@ Config file format (wireframe.config.json):
             if (args.Length > 0 && args[0] == "mcp")
             {
                 return RunMcp(args, stdin, stdout, stderr, workingDirectory, cancel);
+            }
+
+            if (args.Length > 0 && args[0] == "mcp-host")
+            {
+                return RunMcpHost(args, stdin, stdout, stderr, workingDirectory, cancel);
             }
 
             if (args.Length > 0 && args[0] == "hook")
@@ -315,6 +327,69 @@ Config file format (wireframe.config.json):
 
         var server = new McpServer(new RootFolder(folder), Run, Version);
         return server.Run(stdin, stdout, stderr, cancel);
+    }
+
+    /// <summary>
+    /// <c>wire mcp-host [--build &lt;folder&gt;] [--runs &lt;folder&gt;] [--root &lt;folder&gt;]</c>: the MCP server run from a
+    /// snapshot of the build folder and started again on each new build there.
+    /// </summary>
+    private static int RunMcpHost(string[] args, TextReader stdin, TextWriter stdout, TextWriter stderr, string workingDirectory, CancellationToken cancel)
+    {
+        string? build = null;
+        string? runs = null;
+        string? root = null;
+        for (var i = 1; i < args.Length; i++)
+        {
+            var arg = args[i];
+            if (arg == "--help")
+            {
+                Line(stdout, Help);
+                return 0;
+            }
+
+            var at = arg.IndexOf('=', StringComparison.Ordinal);
+            var name = at < 0 ? arg : arg.Substring(0, at);
+            if (name is not ("--build" or "--runs" or "--root"))
+            {
+                throw new UsageError(arg.StartsWith('-')
+                    ? $"Unknown option \"{arg}\" for mcp-host: it takes --build, --runs and --root <folder>"
+                    : $"mcp-host takes no input files (\"{arg}\")");
+            }
+
+            var value = at >= 0 ? arg.Substring(at + 1) : i + 1 < args.Length ? args[++i] : "";
+            if (value.Length == 0)
+            {
+                throw new UsageError($"{name} expects a value");
+            }
+
+            switch (name)
+            {
+                case "--build": build = value; break;
+                case "--runs": runs = value; break;
+                default: root = value; break;
+            }
+        }
+
+        var folder = Path.GetFullPath(root ?? ".", workingDirectory);
+        if (!Directory.Exists(folder))
+        {
+            throw new UsageError($"--root \"{root}\" is not a folder");
+        }
+
+        var buildFolder = build is null ? McpHost.DefaultBuildFolder() : Path.GetFullPath(build, workingDirectory);
+        var runsFolder = runs is null ? Path.Combine(Path.GetDirectoryName(buildFolder) ?? buildFolder, "run") : Path.GetFullPath(runs, workingDirectory);
+
+        // The tool's own files are the first build, and a newer tool than the build folder's replaces it
+        if (!McpHost.Seed(AppContext.BaseDirectory, buildFolder))
+        {
+            // A single-file tool and an empty build folder: nothing to start a child from, so this process serves
+            Line(stderr, $"wire mcp-host: no {McpHost.ServerFile} in \"{buildFolder}\"; serving as wire mcp.");
+            return new McpServer(new RootFolder(folder), Run, Version).Run(stdin, stdout, stderr, cancel);
+        }
+
+        using var host = new McpHost(buildFolder, runsFolder, new[] { "mcp", "--root", folder }, folder, stderr);
+        host.RunAsync(stdin, stdout, cancel).GetAwaiter().GetResult();
+        return 0;
     }
 
     private static int RunComponents(CliOptions options, TextWriter stdout)
