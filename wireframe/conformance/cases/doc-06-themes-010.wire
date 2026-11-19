@@ -1,0 +1,23 @@
+wireframe blueprint
+    Vertical w=500 gap=16
+        Heading "Component Specification" level=1
+        
+        Card padding=16
+            Vertical gap=8
+                Label "**LoginForm Component**"
+                Label "Props: onSubmit, onForgotPassword"
+                Label "State: username, password, loading"
+            /Vertical
+        /Card
+        
+        Card padding=16
+            Vertical gap=8
+                Label "Username"
+                TextInput placeholder="string, required"
+                Label "Password"
+                PasswordInput placeholder="string, min 8 chars"
+                Button "Submit" primary
+            /Vertical
+        /Card
+    /Vertical
+/wireframe

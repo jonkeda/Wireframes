@@ -1,0 +1,55 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "height": 48
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 31,
+            "line": 3,
+            "offset": 67
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 45
+          },
+          "text": "© 2025 Company",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 12,
+        "line": 4,
+        "offset": 79
+      },
+      "modifiers": {},
+      "sectionType": "Footer",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 90
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

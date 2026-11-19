@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="664" height="600" viewBox="0 0 664 600" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <path d="M16.0 15.1 Q116.0 18.9 216.0 16.7 M215.4 16.0 Q222.6 300.0 216.5 584.0 M216.0 584.8 Q116.0 582.0 16.0 584.3 M16.8 584.0 Q10.8 300.0 14.8 16.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Total Users"><text x="32" y="47" class="wire-text">Total Users</text></g><g role="group" aria-label="**12,345**"><text x="32" y="75" class="wire-text wire-text-bold">12,345</text></g><g role="group" aria-label="↑ 12%"><g>
+      <rect x="32" y="88" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="44" y="104" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">↑ 12%</text>
+    </g></g><path d="M232.0 16.4 Q332.0 18.5 432.0 14.5 M433.0 16.0 Q438.4 300.0 431.0 584.0 M432.0 583.5 Q332.0 582.4 232.0 583.5 M231.1 584.0 Q228.7 300.0 231.9 16.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Revenue"><text x="248" y="47" class="wire-text">Revenue</text></g><g role="group" aria-label="**$45,678**"><text x="248" y="75" class="wire-text wire-text-bold">$45,678</text></g><g role="group" aria-label="↑ 8%"><g>
+      <rect x="248" y="88" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="260" y="104" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">↑ 8%</text>
+    </g></g><path d="M448.0 14.8 Q548.0 17.2 648.0 15.3 M647.7 16.0 Q651.6 300.0 648.9 584.0 M648.0 585.1 Q548.0 580.8 448.0 584.4 M448.4 584.0 Q441.8 300.0 449.4 16.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Orders"><text x="464" y="47" class="wire-text">Orders</text></g><g role="group" aria-label="**1,234**"><text x="464" y="75" class="wire-text wire-text-bold">1,234</text></g><g role="group" aria-label="↓ 3%"><g>
+      <rect x="464" y="88" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="476" y="104" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">↓ 3%</text>
+    </g></g>
+</svg>

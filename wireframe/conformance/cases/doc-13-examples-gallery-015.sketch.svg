@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1184" viewBox="0 0 800 1184" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <path d="M16.0 16.9 Q204.0 10.9 392.0 15.7 M392.5 16.0 Q390.3 300.0 392.5 584.0 M392.0 582.9 Q204.0 587.7 16.0 585.0 M15.6 584.0 Q20.8 300.0 17.5 16.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="img"><g>
+      <rect x="32" y="32" width="150" height="100" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
+      <line x1="32" y1="32" x2="182" y2="132" stroke="#888888" stroke-width="1" />
+      <line x1="182" y1="32" x2="32" y2="132" stroke="#888888" stroke-width="1" />
+      <text x="107" y="87" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Image</text>
+    </g></g><g role="group" aria-label="Product 1"><text x="32" y="162" class="wire-text wire-text-bold" style="font-size: 18px">Product 1</text></g><g role="group" aria-label="Description of product 1"><text x="32" y="195" class="wire-text">Description of product 1</text></g><g role="group" aria-label="$99.99"><g>
+      <rect x="32" y="208" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="44" y="224" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">$99.99</text>
+    </g></g><g role="group" aria-label="In Stock"><g>
+      <rect x="64" y="208" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="76" y="224" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">In Stock</text>
+    </g></g><g role="button" aria-label="Add to Cart"><g opacity="1">
+      <path d="M32.0 239.9 Q92.0 231.7 152.0 238.6 M150.5 240.0 Q150.5 258.0 151.6 276.0 M152.0 276.0 Q92.0 282.0 32.0 276.8 M30.6 276.0 Q33.3 258.0 31.4 240.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="92" y="263" text-anchor="middle" class="wire-text" fill="#ffffff">Add to Cart</text>
+    </g></g><path d="M408.0 17.2 Q596.0 18.9 784.0 14.6 M784.3 16.0 Q791.0 300.0 783.6 584.0 M784.0 582.7 Q596.0 581.9 408.0 583.5 M407.8 584.0 Q402.4 300.0 407.7 16.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="img"><g>
+      <rect x="424" y="32" width="150" height="100" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
+      <line x1="424" y1="32" x2="574" y2="132" stroke="#888888" stroke-width="1" />
+      <line x1="574" y1="32" x2="424" y2="132" stroke="#888888" stroke-width="1" />
+      <text x="499" y="87" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Image</text>
+    </g></g><g role="group" aria-label="Product 2"><text x="424" y="162" class="wire-text wire-text-bold" style="font-size: 18px">Product 2</text></g><g role="group" aria-label="Description of product 2"><text x="424" y="195" class="wire-text">Description of product 2</text></g><g role="group" aria-label="$149.99"><g>
+      <rect x="424" y="208" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="436" y="224" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">$149.99</text>
+    </g></g><g role="group" aria-label="Low Stock"><g>
+      <rect x="456" y="208" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="468" y="224" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">Low Stock</text>
+    </g></g><g role="button" aria-label="Add to Cart"><g opacity="1">
+      <path d="M424.0 240.1 Q484.0 238.8 544.0 238.8 M545.3 240.0 Q541.6 258.0 542.7 276.0 M544.0 275.8 Q484.0 275.7 424.0 274.6 M422.8 276.0 Q420.5 258.0 425.2 240.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="484" y="263" text-anchor="middle" class="wire-text" fill="#ffffff">Add to Cart</text>
+    </g></g><path d="M16.0 600.8 Q204.0 606.8 392.0 599.5 M392.6 600.0 Q392.2 884.0 392.4 1168.0 M392.0 1167.1 Q204.0 1162.1 16.0 1166.6 M15.5 1168.0 Q14.9 884.0 14.6 600.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="img"><g>
+      <rect x="32" y="616" width="150" height="100" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
+      <line x1="32" y1="616" x2="182" y2="716" stroke="#888888" stroke-width="1" />
+      <line x1="182" y1="616" x2="32" y2="716" stroke="#888888" stroke-width="1" />
+      <text x="107" y="671" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Image</text>
+    </g></g><g role="group" aria-label="Product 3"><text x="32" y="746" class="wire-text wire-text-bold" style="font-size: 18px">Product 3</text></g><g role="group" aria-label="Description of product 3"><text x="32" y="779" class="wire-text">Description of product 3</text></g><g role="group" aria-label="$199.99"><g>
+      <rect x="32" y="792" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="44" y="808" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">$199.99</text>
+    </g></g><g role="group" aria-label="Out of Stock"><g>
+      <rect x="64" y="792" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="76" y="808" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">Out of Stock</text>
+    </g></g><g role="button" aria-label="Add to Cart" aria-disabled="true"><g opacity="0.5">
+      <path d="M32.0 823.8 Q92.0 829.0 152.0 824.4 M150.7 824.0 Q153.0 842.0 152.2 860.0 M152.0 860.1 Q92.0 855.9 32.0 860.7 M33.5 860.0 Q32.0 842.0 30.8 824.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="92" y="847" text-anchor="middle" class="wire-text" fill="#333333">Add to Cart</text>
+    </g></g>
+</svg>

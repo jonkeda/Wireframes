@@ -1,0 +1,752 @@
+{
+  "attributes": {
+    "title": "Header and Footer Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 27,
+            "line": 6,
+            "offset": 150
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 132
+          },
+          "text": "**Header**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "padding": 16
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 16
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 34,
+                    "line": 10,
+                    "offset": 241
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 10,
+                    "offset": 224
+                  },
+                  "text": "**MyApp**",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Spacer",
+                  "end": {
+                    "column": 23,
+                    "line": 11,
+                    "offset": 264
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 11,
+                    "offset": 258
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Link",
+                  "end": {
+                    "column": 28,
+                    "line": 12,
+                    "offset": 292
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 12,
+                    "offset": 281
+                  },
+                  "text": "Home",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Link",
+                  "end": {
+                    "column": 29,
+                    "line": 13,
+                    "offset": 321
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 13,
+                    "offset": 309
+                  },
+                  "text": "About",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Link",
+                  "end": {
+                    "column": 31,
+                    "line": 14,
+                    "offset": 352
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 14,
+                    "offset": 338
+                  },
+                  "text": "Contact",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Spacer",
+                  "end": {
+                    "column": 23,
+                    "line": 15,
+                    "offset": 375
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 15,
+                    "offset": 369
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 33,
+                    "line": 16,
+                    "offset": 408
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 16,
+                    "offset": 392
+                  },
+                  "text": "Sign In",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 17,
+                "offset": 432
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 190
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 16,
+            "line": 18,
+            "offset": 448
+          },
+          "modifiers": {},
+          "sectionType": "Header",
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 160
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 20,
+            "offset": 467
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 20,
+            "offset": 458
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 27,
+            "line": 22,
+            "offset": 495
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 22,
+            "offset": 477
+          },
+          "text": "**Footer**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "padding": 16
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 16
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 37,
+                    "line": 26,
+                    "offset": 589
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 26,
+                    "offset": 569
+                  },
+                  "text": "© 2025 MyApp",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Spacer",
+                  "end": {
+                    "column": 23,
+                    "line": 27,
+                    "offset": 612
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 27,
+                    "offset": 606
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Link",
+                  "end": {
+                    "column": 31,
+                    "line": 28,
+                    "offset": 643
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 28,
+                    "offset": 629
+                  },
+                  "text": "Privacy",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Link",
+                  "end": {
+                    "column": 29,
+                    "line": 29,
+                    "offset": 672
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 29,
+                    "offset": 660
+                  },
+                  "text": "Terms",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Link",
+                  "end": {
+                    "column": 31,
+                    "line": 30,
+                    "offset": 703
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 30,
+                    "offset": 689
+                  },
+                  "text": "Contact",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 31,
+                "offset": 727
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 25,
+                "offset": 535
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 16,
+            "line": 32,
+            "offset": 743
+          },
+          "modifiers": {},
+          "sectionType": "Footer",
+          "start": {
+            "column": 9,
+            "line": 24,
+            "offset": 505
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 34,
+            "offset": 762
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 34,
+            "offset": 753
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 28,
+            "line": 36,
+            "offset": 791
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 36,
+            "offset": 772
+          },
+          "text": "**Toolbar**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "padding": 8
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "IconButton",
+                  "end": {
+                    "column": 38,
+                    "line": 40,
+                    "offset": 885
+                  },
+                  "icon": "icon:menu",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 40,
+                    "offset": 864
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Separator",
+                  "end": {
+                    "column": 26,
+                    "line": 41,
+                    "offset": 911
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 41,
+                    "offset": 902
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "IconButton",
+                  "end": {
+                    "column": 38,
+                    "line": 42,
+                    "offset": 949
+                  },
+                  "icon": "icon:bold",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 42,
+                    "offset": 928
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "IconButton",
+                  "end": {
+                    "column": 40,
+                    "line": 43,
+                    "offset": 989
+                  },
+                  "icon": "icon:italic",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 43,
+                    "offset": 966
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "IconButton",
+                  "end": {
+                    "column": 43,
+                    "line": 44,
+                    "offset": 1032
+                  },
+                  "icon": "icon:underline",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 44,
+                    "offset": 1006
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Separator",
+                  "end": {
+                    "column": 26,
+                    "line": 45,
+                    "offset": 1058
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 45,
+                    "offset": 1049
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "IconButton",
+                  "end": {
+                    "column": 43,
+                    "line": 46,
+                    "offset": 1101
+                  },
+                  "icon": "icon:alignLeft",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 46,
+                    "offset": 1075
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "IconButton",
+                  "end": {
+                    "column": 45,
+                    "line": 47,
+                    "offset": 1146
+                  },
+                  "icon": "icon:alignCenter",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 47,
+                    "offset": 1118
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "IconButton",
+                  "end": {
+                    "column": 44,
+                    "line": 48,
+                    "offset": 1190
+                  },
+                  "icon": "icon:alignRight",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 48,
+                    "offset": 1163
+                  },
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 49,
+                "offset": 1214
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 39,
+                "offset": 831
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 17,
+            "line": 50,
+            "offset": 1231
+          },
+          "modifiers": {},
+          "sectionType": "Toolbar",
+          "start": {
+            "column": 9,
+            "line": 38,
+            "offset": 801
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 52,
+            "offset": 1250
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 52,
+            "offset": 1241
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 30,
+            "line": 54,
+            "offset": 1281
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 54,
+            "offset": 1260
+          },
+          "text": "**StatusBar**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "padding": 8
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 16
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 30,
+                    "line": 58,
+                    "offset": 1370
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 58,
+                    "offset": 1357
+                  },
+                  "text": "Ready",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Spacer",
+                  "end": {
+                    "column": 23,
+                    "line": 59,
+                    "offset": 1393
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 59,
+                    "offset": 1387
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 38,
+                    "line": 60,
+                    "offset": 1431
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 60,
+                    "offset": 1410
+                  },
+                  "text": "Ln 42, Col 18",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 30,
+                    "line": 61,
+                    "offset": 1461
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 61,
+                    "offset": 1448
+                  },
+                  "text": "UTF-8",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 35,
+                    "line": 62,
+                    "offset": 1496
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 62,
+                    "offset": 1478
+                  },
+                  "text": "TypeScript",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 63,
+                "offset": 1520
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 57,
+                "offset": 1323
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 19,
+            "line": 64,
+            "offset": 1539
+          },
+          "modifiers": {},
+          "sectionType": "StatusBar",
+          "start": {
+            "column": 9,
+            "line": 56,
+            "offset": 1291
+          },
+          "type": "Section"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 65,
+        "offset": 1553
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 108
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 66,
+    "offset": 1564
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 48
+  },
+  "style": "clean",
+  "type": "Document"
+}

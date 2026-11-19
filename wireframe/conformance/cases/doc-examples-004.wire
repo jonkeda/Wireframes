@@ -1,0 +1,27 @@
+wireframe clean
+    %title: Registration
+    
+    Card w=400
+        Vertical gap=12
+            Label "**Create Account**"
+            
+            Horizontal gap=8
+                TextInput "First Name" :txtFirst
+                TextInput "Last Name" :txtLast
+            /Horizontal
+            
+            TextInput "Email" :txtEmail required pattern=email
+            PasswordInput "Password" :txtPass required min=8
+            PasswordInput "Confirm Password" :txtConfirm required
+            
+            Checkbox "I agree to the Terms of Service" :chkTerms required
+            
+            Button "Create Account" :btnCreate primary
+            
+            Separator
+            
+            Label "Already have an account?"
+            Label "Sign in instead" @Login
+        /Vertical
+    /Card
+/wireframe

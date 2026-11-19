@@ -1,0 +1,5 @@
+wireframe clean
+    if user.role == "admin"
+        Button "Settings"
+    /if
+/wireframe

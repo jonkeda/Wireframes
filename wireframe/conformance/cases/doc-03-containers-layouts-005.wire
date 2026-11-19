@@ -1,0 +1,7 @@
+wireframe clean
+    Canvas w=400 h=200
+        Button "Top Left" canvas=10,10
+        Button "Center" canvas=160,80
+        Button "Bottom Right" canvas=290,160
+    /Canvas
+/wireframe

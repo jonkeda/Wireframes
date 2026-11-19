@@ -1,0 +1,6 @@
+wireframe clean
+    Column "Header" ?binding
+    Column "With Content"
+        // Column content template
+    /Column
+/wireframe

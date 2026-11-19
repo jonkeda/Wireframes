@@ -1,0 +1,58 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "h": 300,
+        "w": 400
+      },
+      "children": [
+        {
+          "attributes": {
+            "canvas": "50,100"
+          },
+          "controlType": "Button",
+          "end": {
+            "column": 42,
+            "line": 3,
+            "offset": 80
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 47
+          },
+          "text": "Positioned",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 12,
+        "line": 4,
+        "offset": 92
+      },
+      "layoutType": "Canvas",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 103
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

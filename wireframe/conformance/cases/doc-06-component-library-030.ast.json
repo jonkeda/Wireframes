@@ -1,0 +1,74 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "binding": "selection",
+      "controlType": "Radio",
+      "end": {
+        "column": 32,
+        "line": 2,
+        "offset": 47
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Option A",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "binding": "selection",
+      "controlType": "Radio",
+      "end": {
+        "column": 41,
+        "line": 3,
+        "offset": 88
+      },
+      "modifiers": {
+        "selected": true
+      },
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 52
+      },
+      "text": "Option B",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "binding": "selection",
+      "controlType": "Radio",
+      "end": {
+        "column": 32,
+        "line": 4,
+        "offset": 120
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 93
+      },
+      "text": "Option C",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 131
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

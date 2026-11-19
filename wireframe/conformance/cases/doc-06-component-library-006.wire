@@ -1,0 +1,5 @@
+wireframe clean
+    Canvas w=400 h=300
+        Button "Positioned" canvas=50,100
+    /Canvas
+/wireframe

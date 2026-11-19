@@ -1,0 +1,9 @@
+wireframe clean
+    Vertical
+        Horizontal
+            Button "A"
+        /Horizontal
+        Button "B"
+    /Vertical
+    Button "C"
+/wireframe

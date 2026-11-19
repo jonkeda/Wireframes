@@ -1,0 +1,11 @@
+wireframe clean
+    Dropdown :ddlCountry
+        Option "Select..."
+        Option "USA"
+        Option "Canada"
+        Option "UK"
+    /Dropdown
+
+    // Inline syntax
+    Dropdown "USA" "Canada" "UK" :ddlCountry
+/wireframe

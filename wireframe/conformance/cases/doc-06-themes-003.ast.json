@@ -1,0 +1,133 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "padding": 16,
+        "w": 300
+      },
+      "children": [
+        {
+          "attributes": {
+            "gap": 12
+          },
+          "children": [
+            {
+              "attributes": {
+                "level": 2
+              },
+              "controlType": "Heading",
+              "end": {
+                "column": 46,
+                "line": 4,
+                "offset": 115
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 82
+              },
+              "text": "Blueprint Theme",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 44,
+                "line": 5,
+                "offset": 159
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 128
+              },
+              "text": "Technical drawing style",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 44,
+                "line": 6,
+                "offset": 203
+              },
+              "modifiers": {
+                "primary": true
+              },
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 172
+              },
+              "text": "Primary Action",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "placeholder": "Enter text"
+              },
+              "controlType": "TextInput",
+              "end": {
+                "column": 47,
+                "line": 7,
+                "offset": 250
+              },
+              "modifiers": {},
+              "placeholder": "Enter text",
+              "start": {
+                "column": 13,
+                "line": 7,
+                "offset": 216
+              },
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 8,
+            "offset": 268
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 54
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 9,
+        "offset": 278
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 24
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 10,
+    "offset": 289
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "blueprint",
+  "type": "Document"
+}

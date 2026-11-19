@@ -1,0 +1,4 @@
+wireframe clean
+    Link "Click here" @target
+    Link "External" href="https://example.com"
+/wireframe

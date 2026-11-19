@@ -1,0 +1,142 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {
+            "gap": 16,
+            "justify": "between"
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 34,
+                "line": 4,
+                "offset": 102
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 81
+              },
+              "text": "**Dashboard**",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Spacer",
+              "end": {
+                "column": 19,
+                "line": 5,
+                "offset": 121
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 115
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Icon",
+              "end": {
+                "column": 25,
+                "line": 6,
+                "offset": 146
+              },
+              "icon": "search",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 134
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Icon",
+              "end": {
+                "column": 32,
+                "line": 7,
+                "offset": 178
+              },
+              "icon": "notifications",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 7,
+                "offset": 159
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Avatar",
+              "end": {
+                "column": 32,
+                "line": 8,
+                "offset": 210
+              },
+              "id": "avUser",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 8,
+                "offset": 191
+              },
+              "text": "JD",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 20,
+            "line": 9,
+            "offset": 230
+          },
+          "layoutType": "Horizontal",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 35
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 12,
+        "line": 10,
+        "offset": 242
+      },
+      "modifiers": {},
+      "sectionType": "Header",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 11,
+    "offset": 253
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

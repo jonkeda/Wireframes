@@ -1,0 +1,44 @@
+// Login Screen Wireframe
+// Demonstrates: Card, Form inputs, Buttons, Layouts
+
+wireframe clean
+    %title: Login Form
+
+    Vertical align=center gap=24 padding=40
+        
+        // Logo
+        Image "logo" w=120 h=120
+        
+        // Login form
+        Card
+            Vertical gap=16
+                Label "**Welcome Back**"
+                
+                Vertical gap=8
+                    Label "Email Address"
+                    TextInput "Enter your email" :txtEmail required
+                /Vertical
+                
+                Vertical gap=8
+                    Label "Password"
+                    PasswordInput "Enter your password" :txtPass required
+                /Vertical
+                
+                Checkbox "Remember me" :chkRemember
+                
+                Button "Sign In" :btnLogin primary
+            /Vertical
+        /Card
+        
+        Separator
+        
+        // Social login
+        Horizontal gap=12
+            Button "Google" :btnGoogle secondary
+            Button "GitHub" :btnGithub secondary
+        /Horizontal
+        
+        Label "Don't have an account? Sign up" @Register
+        
+    /Vertical
+/wireframe

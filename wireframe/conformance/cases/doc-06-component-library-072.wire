@@ -1,0 +1,7 @@
+wireframe clean
+    TreeItem "Label"
+    TreeItem "Expanded" expanded
+        TreeItem "Child 1"
+        TreeItem "Child 2"
+    /TreeItem
+/wireframe

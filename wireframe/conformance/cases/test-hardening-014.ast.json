@@ -1,0 +1,42 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "label": "Name",
+        "placeholder": "e.g. Office"
+      },
+      "controlType": "TextInput",
+      "end": {
+        "column": 68,
+        "line": 2,
+        "offset": 83
+      },
+      "id": "Name",
+      "label": "Name",
+      "modifiers": {
+        "required": true
+      },
+      "placeholder": "e.g. Office",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 3,
+    "offset": 94
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

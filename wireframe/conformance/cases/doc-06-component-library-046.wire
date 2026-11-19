@@ -1,0 +1,5 @@
+wireframe clean
+    Skeleton width=200 height=20
+    Skeleton type=avatar
+    Skeleton type=text lines=3
+/wireframe

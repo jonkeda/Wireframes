@@ -1,0 +1,52 @@
+[
+  {
+    "column": 9,
+    "line": 3,
+    "message": "Unexpected token: ColumnText"
+  },
+  {
+    "column": 20,
+    "line": 3,
+    "message": "Unexpected token: Product"
+  },
+  {
+    "column": 9,
+    "line": 4,
+    "message": "Unexpected token: ColumnNumber"
+  },
+  {
+    "column": 22,
+    "line": 4,
+    "message": "Unexpected token: Qty"
+  },
+  {
+    "column": 9,
+    "line": 5,
+    "message": "Unexpected token: ColumnDate"
+  },
+  {
+    "column": 20,
+    "line": 5,
+    "message": "Unexpected token: Date"
+  },
+  {
+    "column": 9,
+    "line": 6,
+    "message": "Unexpected token: ColumnCheckbox"
+  },
+  {
+    "column": 24,
+    "line": 6,
+    "message": "Unexpected token: Shipped"
+  },
+  {
+    "column": 9,
+    "line": 7,
+    "message": "Unexpected token: ColumnButton"
+  },
+  {
+    "column": 22,
+    "line": 7,
+    "message": "Unexpected token: Actions"
+  }
+]

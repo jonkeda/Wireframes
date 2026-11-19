@@ -1,0 +1,7 @@
+wireframe minimal
+    Card width=300
+        Heading "Minimal Style" level=2
+        Label "Clean minimal design"
+        Button "Action" primary
+    /Card
+/wireframe

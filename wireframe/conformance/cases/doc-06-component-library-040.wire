@@ -1,0 +1,8 @@
+wireframe clean
+    Badge "3"
+    Badge "New" primary
+    Badge "Success" variant=success
+    Badge "Warning" variant=warning
+    Badge "Error" variant=error
+    Badge "Info" variant=info
+/wireframe

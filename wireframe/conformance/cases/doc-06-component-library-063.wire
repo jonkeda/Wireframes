@@ -1,0 +1,7 @@
+wireframe clean
+    Row
+        Cell "Column 1"
+        Cell "Column 2"
+        Cell "Column 3"
+    /Row
+/wireframe

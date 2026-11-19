@@ -1,0 +1,74 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 4
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Link",
+          "end": {
+            "column": 35,
+            "line": 3,
+            "offset": 69
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 43
+          },
+          "text": "Click here for more",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "href": "https://example.com"
+          },
+          "controlType": "Link",
+          "end": {
+            "column": 56,
+            "line": 4,
+            "offset": 125
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 78
+          },
+          "text": "External link",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 5,
+        "offset": 126
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 136
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

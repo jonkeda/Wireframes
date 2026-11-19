@@ -1,0 +1,37 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Button",
+      "end": {
+        "column": 30,
+        "line": 2,
+        "offset": 45
+      },
+      "modifiers": {
+        "primary": true
+      },
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Click Me",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 3,
+    "offset": 56
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

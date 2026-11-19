@@ -1,0 +1,93 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Button",
+      "end": {
+        "column": 29,
+        "line": 2,
+        "offset": 44
+      },
+      "modifiers": {
+        "primary": true
+      },
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Primary",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Button",
+      "end": {
+        "column": 31,
+        "line": 3,
+        "offset": 75
+      },
+      "modifiers": {
+        "disabled": true
+      },
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 49
+      },
+      "text": "Disabled",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "TextInput",
+      "end": {
+        "column": 41,
+        "line": 4,
+        "offset": 116
+      },
+      "id": "txtEmail",
+      "modifiers": {
+        "required": true
+      },
+      "placeholder": "Email",
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 80
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Label",
+      "end": {
+        "column": 26,
+        "line": 5,
+        "offset": 142
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 121
+      },
+      "text": "Error message",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 6,
+    "offset": 154
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="232" height="145" viewBox="0 0 232 145" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <g role="group" aria-label="Above separator"><text x="16" y="31" class="wire-text">Above separator</text></g><g role="group"><line x1="16" y1="44" x2="216" y2="44" stroke="#dee2e6" stroke-width="1" /></g><g role="group" aria-label="Below separator"><text x="16" y="68" class="wire-text">Below separator</text></g><g role="group" aria-label="After spacer"><text x="16" y="124" class="wire-text">After spacer</text></g>
+</svg>

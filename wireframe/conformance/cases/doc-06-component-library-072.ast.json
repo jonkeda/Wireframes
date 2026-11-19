@@ -1,0 +1,93 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "TreeItem",
+      "end": {
+        "column": 1,
+        "line": 3,
+        "offset": 37
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Label",
+      "type": "Component"
+    },
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "TreeItem",
+          "end": {
+            "column": 1,
+            "line": 5,
+            "offset": 97
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 78
+          },
+          "text": "Child 1",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "TreeItem",
+          "end": {
+            "column": 1,
+            "line": 6,
+            "offset": 124
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 105
+          },
+          "text": "Child 2",
+          "type": "Component"
+        }
+      ],
+      "componentType": "TreeItem",
+      "end": {
+        "column": 14,
+        "line": 6,
+        "offset": 137
+      },
+      "modifiers": {
+        "expanded": true
+      },
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 41
+      },
+      "text": "Expanded",
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 7,
+    "offset": 148
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

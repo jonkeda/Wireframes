@@ -1,0 +1,28 @@
+wireframe clean
+    %title: Contact Us
+    
+    Card w=400
+        Vertical gap=12
+            Label "**Contact Us**"
+            
+            Label "Name:"
+            TextInput "Your name" :txtName required
+            
+            Label "Email:"
+            TextInput "Your email" :txtEmail required
+            
+            Label "Subject:"
+            Dropdown :ddlSubject
+                Option "General Inquiry"
+                Option "Technical Support"
+                Option "Sales"
+                Option "Other"
+            /Dropdown
+            
+            Label "Message:"
+            TextArea "How can we help you?" :txtMessage rows=4
+            
+            Button "Send Message" :btnSend primary
+        /Vertical
+    /Card
+/wireframe

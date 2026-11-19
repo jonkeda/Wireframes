@@ -1,0 +1,8 @@
+wireframe clean
+    TextInput "Name" :Name required
+validations
+    | Field | Rule | Message |
+    |---|---|---|
+    | Name | | Name is required |
+/validations
+/wireframe

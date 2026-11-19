@@ -1,0 +1,4 @@
+wireframe clean
+    Label "Static text"
+    Label "Bound value" ?userName
+/wireframe

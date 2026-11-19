@@ -1,0 +1,72 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Button",
+      "end": {
+        "column": 27,
+        "line": 2,
+        "offset": 42
+      },
+      "id": "btnSave",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Save",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "TextInput",
+      "end": {
+        "column": 30,
+        "line": 3,
+        "offset": 72
+      },
+      "id": "txtName",
+      "modifiers": {},
+      "placeholder": "Name",
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 47
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "children": [],
+      "end": {
+        "column": 1,
+        "line": 5,
+        "offset": 95
+      },
+      "id": "pnlDetails",
+      "modifiers": {},
+      "sectionType": "Panel",
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 77
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 105
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

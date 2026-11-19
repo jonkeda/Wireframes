@@ -1,0 +1,55 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "DateInput",
+      "end": {
+        "column": 28,
+        "line": 2,
+        "offset": 43
+      },
+      "modifiers": {},
+      "placeholder": "Select date",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "binding": "birthDate",
+      "controlType": "DateInput",
+      "end": {
+        "column": 47,
+        "line": 3,
+        "offset": 90
+      },
+      "modifiers": {
+        "required": true
+      },
+      "placeholder": "Birth Date",
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 48
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 4,
+    "offset": 101
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

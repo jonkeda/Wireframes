@@ -1,0 +1,41 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "cols": 3,
+        "rows": 5,
+        "w": 400
+      },
+      "children": [],
+      "componentType": "DataGrid",
+      "end": {
+        "column": 1,
+        "line": 3,
+        "offset": 58
+      },
+      "modifiers": {
+        "selected": true
+      },
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 3,
+    "offset": 68
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

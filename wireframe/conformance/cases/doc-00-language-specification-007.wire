@@ -1,0 +1,6 @@
+wireframe clean
+    Vertical gap=16
+        Button "One"
+        Button "Two"
+    /Vertical
+/wireframe

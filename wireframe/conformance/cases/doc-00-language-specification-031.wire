@@ -1,0 +1,10 @@
+wireframe clean
+    Accordion
+        AccordionSection "Question 1?" expanded
+            Label "Answer to question 1"
+        /AccordionSection
+        AccordionSection "Question 2?"
+            Label "Answer to question 2"
+        /AccordionSection
+    /Accordion
+/wireframe

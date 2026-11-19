@@ -1,0 +1,87 @@
+[
+  {
+    "column": 9,
+    "line": 3,
+    "message": "Unexpected token: ListItem"
+  },
+  {
+    "column": 18,
+    "line": 3,
+    "message": "Unexpected token: removable"
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected token:             "
+  },
+  {
+    "column": 9,
+    "line": 5,
+    "message": "Unknown closing keyword /ListItem"
+  },
+  {
+    "column": 9,
+    "line": 6,
+    "message": "Unexpected token: ListItem"
+  },
+  {
+    "column": 18,
+    "line": 6,
+    "message": "Unexpected token: removable"
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Unexpected token:             "
+  },
+  {
+    "column": 9,
+    "line": 8,
+    "message": "Unknown closing keyword /ListItem"
+  },
+  {
+    "column": 9,
+    "line": 9,
+    "message": "Unexpected token: ListItem"
+  },
+  {
+    "column": 18,
+    "line": 9,
+    "message": "Unexpected token: removable"
+  },
+  {
+    "column": 1,
+    "line": 10,
+    "message": "Unexpected token:             "
+  },
+  {
+    "column": 9,
+    "line": 11,
+    "message": "Unknown closing keyword /ListItem"
+  },
+  {
+    "column": 9,
+    "line": 12,
+    "message": "Unexpected token: ListItem"
+  },
+  {
+    "column": 18,
+    "line": 12,
+    "message": "Unexpected token: removable"
+  },
+  {
+    "column": 1,
+    "line": 13,
+    "message": "Unexpected token:             "
+  },
+  {
+    "column": 9,
+    "line": 14,
+    "message": "Unknown closing keyword /ListItem"
+  },
+  {
+    "column": 5,
+    "line": 15,
+    "message": "Unexpected /List: no List is open here"
+  }
+]

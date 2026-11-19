@@ -1,0 +1,7 @@
+wireframe clean
+    Menu w=200
+        MenuItem "Dashboard" icon=home selected
+        MenuItem "Projects" icon=folder
+        MenuItem "Tasks" icon=check
+    /Menu
+/wireframe

@@ -1,0 +1,55 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "rows": 4
+      },
+      "controlType": "TextArea",
+      "end": {
+        "column": 40,
+        "line": 2,
+        "offset": 55
+      },
+      "modifiers": {},
+      "placeholder": "Enter description",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "binding": "comments",
+      "controlType": "TextArea",
+      "end": {
+        "column": 34,
+        "line": 3,
+        "offset": 89
+      },
+      "modifiers": {},
+      "placeholder": "Comments",
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 60
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 4,
+    "offset": 100
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

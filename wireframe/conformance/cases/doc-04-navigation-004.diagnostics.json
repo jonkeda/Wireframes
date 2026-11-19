@@ -1,0 +1,22 @@
+[
+  {
+    "column": 9,
+    "line": 3,
+    "message": "Unexpected token: Home"
+  },
+  {
+    "column": 9,
+    "line": 4,
+    "message": "Unexpected token: Products"
+  },
+  {
+    "column": 9,
+    "line": 5,
+    "message": "Unexpected token: Electronics"
+  },
+  {
+    "column": 9,
+    "line": 6,
+    "message": "Unexpected token: Laptops"
+  }
+]

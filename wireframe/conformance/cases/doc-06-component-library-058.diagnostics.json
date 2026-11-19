@@ -1,0 +1,42 @@
+[
+  {
+    "column": 9,
+    "line": 3,
+    "message": "Unexpected token: BreadcrumbItem"
+  },
+  {
+    "column": 24,
+    "line": 3,
+    "message": "Unexpected token: Home"
+  },
+  {
+    "column": 31,
+    "line": 3,
+    "message": "Unexpected token: @home"
+  },
+  {
+    "column": 9,
+    "line": 4,
+    "message": "Unexpected token: BreadcrumbItem"
+  },
+  {
+    "column": 24,
+    "line": 4,
+    "message": "Unexpected token: Products"
+  },
+  {
+    "column": 35,
+    "line": 4,
+    "message": "Unexpected token: @products"
+  },
+  {
+    "column": 9,
+    "line": 5,
+    "message": "Unexpected token: BreadcrumbItem"
+  },
+  {
+    "column": 24,
+    "line": 5,
+    "message": "Unexpected token: Details"
+  }
+]

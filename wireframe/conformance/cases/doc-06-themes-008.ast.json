@@ -1,0 +1,153 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 20
+      },
+      "children": [
+        {
+          "attributes": {
+            "padding": 12,
+            "w": 200
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 38,
+                    "line": 5,
+                    "offset": 136
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 5,
+                    "offset": 115
+                  },
+                  "text": "**Realistic**",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 40,
+                    "line": 6,
+                    "offset": 176
+                  },
+                  "modifiers": {
+                    "primary": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 6,
+                    "offset": 153
+                  },
+                  "text": "Button",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "placeholder": "Input"
+                  },
+                  "controlType": "TextInput",
+                  "end": {
+                    "column": 46,
+                    "line": 7,
+                    "offset": 222
+                  },
+                  "modifiers": {},
+                  "placeholder": "Input",
+                  "start": {
+                    "column": 17,
+                    "line": 7,
+                    "offset": 193
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Checkbox",
+                  "end": {
+                    "column": 42,
+                    "line": 8,
+                    "offset": 264
+                  },
+                  "modifiers": {
+                    "checked": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 8,
+                    "offset": 239
+                  },
+                  "text": "Option",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 9,
+                "offset": 286
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 84
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 14,
+            "line": 10,
+            "offset": 300
+          },
+          "modifiers": {},
+          "sectionType": "Card",
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 50
+          },
+          "type": "Section"
+        }
+      ],
+      "end": {
+        "column": 16,
+        "line": 11,
+        "offset": 316
+      },
+      "layoutType": "Horizontal",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 24
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 12,
+    "offset": 327
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "realistic",
+  "type": "Document"
+}

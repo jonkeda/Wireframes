@@ -1,0 +1,6 @@
+wireframe clean
+    %title: Hello World
+    
+    Label "**Hello World**"
+    Button "Click Me" primary
+/wireframe

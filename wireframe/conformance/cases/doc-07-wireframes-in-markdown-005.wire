@@ -1,0 +1,18 @@
+wireframe sketch
+    Vertical gap=16 w=300
+        Heading "Quick Sketch" level=2
+        
+        TextInput placeholder="Search..."
+        
+        List
+            "First item"
+            "Second item"
+            "Third item"
+        /List
+        
+        Horizontal gap=8
+            Button "Add" primary
+            Button "Remove"
+        /Horizontal
+    /Vertical
+/wireframe

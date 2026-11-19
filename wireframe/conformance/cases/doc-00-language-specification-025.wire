@@ -1,0 +1,5 @@
+wireframe clean
+    Link "Click here"
+    Link "Go to page" @TargetPage
+    Link "External" url="https://example.com"
+/wireframe

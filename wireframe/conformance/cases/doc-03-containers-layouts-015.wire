@@ -1,0 +1,12 @@
+wireframe clean
+    Dialog "Confirm Action" w=350 h=180 padding=20
+        Vertical gap=16
+            Label "Are you sure you want to delete this item?"
+            Horizontal gap=8
+                Spacer
+                Button "Cancel"
+                Button "Delete" primary
+            /Horizontal
+        /Vertical
+    /Dialog
+/wireframe

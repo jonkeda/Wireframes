@@ -1,0 +1,15 @@
+wireframe clean
+    Vertical gap=8 w=400
+        Alert type=info
+            Label "This is an informational message"
+        /Alert
+        Alert type=success
+            Label "Operation completed successfully"
+        /Alert
+        Alert type=warning
+            Label "Please review your settings"
+        /Alert
+        Alert type=error
+            Label "An error occurred"
+        /Alert
+/wireframe

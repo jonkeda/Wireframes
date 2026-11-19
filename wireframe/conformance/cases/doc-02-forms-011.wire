@@ -1,0 +1,5 @@
+wireframe clean
+    Horizontal gap=8 w=400
+        TextInput placeholder="Search..." w=300
+        IconButton icon=search primary
+/wireframe

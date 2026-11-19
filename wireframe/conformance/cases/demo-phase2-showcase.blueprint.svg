@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1337" viewBox="0 0 800 1337" role="img">
+  <style>
+    .wire-text { font-family: "Courier New", monospace; font-size: 14px; fill: #ffffff; }
+    .wire-text-secondary { fill: #a0c4e8; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#1e3a5f" />
+  <rect x="16" y="16" width="768" height="568" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><g role="group" aria-label="Admin Portal"><text x="32" y="56" class="wire-text wire-text-bold" style="font-size: 24px">Admin Portal</text></g><g role="group" aria-label="John Doe"><g>
+      <circle cx="748" cy="52" r="20" fill="#ffffff" />
+      <text x="748" y="56.44" text-anchor="middle" class="wire-text" style="font-size: 13.33px" fill="#1e3a5f">JD</text>
+    </g></g><g role="group"><line x1="16" y1="632" x2="216" y2="632" stroke="#4a7ab0" stroke-width="1" /></g><g role="group"><line x1="32" y1="777" x2="232" y2="777" stroke="#4a7ab0" stroke-width="1" /></g><g role="group" aria-label="**File Explorer**"><text x="16" y="881" class="wire-text wire-text-bold">File Explorer</text></g><rect x="404" y="641" width="121.33" height="124" rx="8" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Total Users"><text x="420" y="672" class="wire-text">Total Users</text></g><g role="group" aria-label="1,234"><text x="420" y="707.67" class="wire-text wire-text-bold" style="font-size: 20px">1,234</text></g><g role="group" aria-label="↑ 12%"><g>
+      <rect x="420" y="725" width="24" height="24" rx="12" fill="#198754" />
+      <text x="432" y="741" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">↑ 12%</text>
+    </g></g><rect x="533.33" y="641" width="121.33" height="124" rx="8" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Revenue"><text x="549.33" y="672" class="wire-text">Revenue</text></g><g role="group" aria-label="$45.2K"><text x="549.33" y="707.67" class="wire-text wire-text-bold" style="font-size: 20px">$45.2K</text></g><g role="group" aria-label="↑ 8%"><g>
+      <rect x="549.33" y="725" width="24" height="24" rx="12" fill="#198754" />
+      <text x="561.33" y="741" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">↑ 8%</text>
+    </g></g><rect x="662.67" y="641" width="121.33" height="124" rx="8" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Issues"><text x="678.67" y="672" class="wire-text">Issues</text></g><g role="group" aria-label="23"><text x="678.67" y="707.67" class="wire-text wire-text-bold" style="font-size: 20px">23</text></g><g role="group" aria-label="↓ 5%"><g>
+      <rect x="678.67" y="725" width="24" height="24" rx="12" fill="#ffc107" />
+      <text x="690.67" y="741" text-anchor="middle" class="wire-text wire-text-small" fill="#000000">↓ 5%</text>
+    </g></g><g role="group" aria-label="**Recent Activity**"><text x="404" y="812" class="wire-text wire-text-bold">Recent Activity</text></g><g role="navigation"><g><rect x="404" y="865" width="32" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><path d="M417 879 L413 883 L417 887" stroke="#ffffff" stroke-width="2" fill="none" /><rect x="440" y="865" width="32" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="456" y="888" text-anchor="middle" class="wire-text" fill="#ffffff">1</text><rect x="476" y="865" width="32" height="36" rx="4" fill="#ffffff" stroke="#4a7ab0" stroke-width="1" /><text x="492" y="888" text-anchor="middle" class="wire-text" fill="#1e3a5f">2</text><rect x="512" y="865" width="32" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="528" y="888" text-anchor="middle" class="wire-text" fill="#ffffff">3</text><rect x="548" y="865" width="32" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="564" y="888" text-anchor="middle" class="wire-text" fill="#ffffff">4</text><rect x="584" y="865" width="32" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="600" y="888" text-anchor="middle" class="wire-text" fill="#ffffff">5</text><rect x="620" y="865" width="32" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><path d="M631 879 L635 883 L631 887" stroke="#ffffff" stroke-width="2" fill="none" /></g></g><g role="group" aria-label="**Task Progress**"><text x="404" y="948" class="wire-text wire-text-bold">Task Progress</text></g><g role="group" aria-label="**FAQ**"><text x="404" y="1040" class="wire-text wire-text-bold">FAQ</text></g><rect x="16" y="1205" width="768" height="52" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><g role="link" aria-label="Documentation"><g>
+      <text x="32" y="1236" class="wire-text" fill="#ffffff" style="text-decoration: underline">Documentation</text>
+    </g></g><g role="link" aria-label="Support"><g>
+      <text x="144" y="1236" class="wire-text" fill="#ffffff" style="text-decoration: underline">Support</text>
+    </g></g><g role="link" aria-label="Privacy Policy"><g>
+      <text x="208" y="1236" class="wire-text" fill="#ffffff" style="text-decoration: underline">Privacy Policy</text>
+    </g></g><g role="group" aria-label="v2.0.0"><text x="352" y="1236" class="wire-text">v2.0.0</text></g><g role="alert" aria-label="Changes saved successfully!"><g>
+      <rect x="16" y="1265" width="320" height="56" rx="4" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1" filter="url(#shadow)" />
+      <rect x="16" y="1265" width="4" height="56" rx="4 0 0 4" fill="#198754" />
+      <text x="32" y="1298" class="wire-text">Changes saved successfully!</text>
+      <path d="M311 1288 L321 1298 M321 1288 L311 1298" stroke="#a0c4e8" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    </g></g>
+</svg>

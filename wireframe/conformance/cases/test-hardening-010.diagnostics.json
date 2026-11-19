@@ -1,0 +1,12 @@
+[
+  {
+    "column": 5,
+    "line": 2,
+    "message": "Unexpected else: no if is open here"
+  },
+  {
+    "column": 5,
+    "line": 4,
+    "message": "Unexpected /if: no if is open here"
+  }
+]

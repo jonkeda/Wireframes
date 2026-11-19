@@ -1,0 +1,21 @@
+wireframe sketch
+    Card w=350 padding=20
+        Vertical gap=16
+            Heading "Early Concept" level=2
+            Label "This is a rough idea - feedback welcome!"
+            
+            TextInput placeholder="Search..."
+            
+            Vertical gap=8
+                Checkbox "Feature A"
+                Checkbox "Feature B"
+                Checkbox "Feature C"
+            /Vertical
+            
+            Horizontal gap=8
+                Button "Approve"
+                Button "Revise"
+            /Horizontal
+        /Vertical
+    /Card
+/wireframe

@@ -1,0 +1,93 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "width": 300
+      },
+      "children": [
+        {
+          "attributes": {
+            "level": 2
+          },
+          "controlType": "Heading",
+          "end": {
+            "column": 42,
+            "line": 3,
+            "offset": 80
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 47
+          },
+          "text": "Blueprint Style",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 46,
+            "line": 4,
+            "offset": 126
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 89
+          },
+          "text": "Technical blueprint aesthetic",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 32,
+            "line": 5,
+            "offset": 158
+          },
+          "modifiers": {
+            "primary": true
+          },
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 135
+          },
+          "text": "Action",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 6,
+        "offset": 168
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 24
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 7,
+    "offset": 179
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "blueprint",
+  "type": "Document"
+}

@@ -1,0 +1,16 @@
+wireframe clean
+    Tabs :tabMain
+        Tab "Overview"
+            Label "Overview content"
+        /Tab
+        Tab "Analytics"
+            Label "Analytics content"
+        /Tab
+        Tab "Reports"
+            Label "Reports content"
+        /Tab
+        Tab "Settings"
+            Label "Settings content"
+        /Tab
+    /Tabs
+/wireframe

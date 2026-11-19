@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="232" height="393" viewBox="0 0 232 393" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <g role="group" aria-label="**Label Variants**"><text x="16" y="31" class="wire-text wire-text-bold">Label Variants</text></g><g role="group" aria-label="Regular label text"><text x="16" y="67" class="wire-text">Regular label text</text></g><g role="group" aria-label="**Bold label text**"><text x="16" y="95" class="wire-text wire-text-bold">Bold label text</text></g><g role="group" aria-label="*Italic label text*"><text x="16" y="123" class="wire-text" font-style="italic">Italic label text</text></g><g role="group" aria-label="Label with `code` inline"><text x="16" y="151" class="wire-text">Label with `code` inline</text></g><g role="group"><line x1="16" y1="172" x2="216" y2="172" stroke="#dee2e6" stroke-width="1" /></g><g role="group" aria-label="**Heading Levels**"><text x="16" y="204" class="wire-text wire-text-bold">Heading Levels</text></g><g role="group" aria-label="Heading Level 1"><text x="16" y="249" class="wire-text wire-text-bold" style="font-size: 24px">Heading Level 1</text></g><g role="group" aria-label="Heading Level 2"><text x="16" y="287.67" class="wire-text wire-text-bold" style="font-size: 20px">Heading Level 2</text></g><g role="group" aria-label="Heading Level 3"><text x="16" y="327" class="wire-text wire-text-bold" style="font-size: 18px">Heading Level 3</text></g><g role="group" aria-label="Heading Level 4"><text x="16" y="366.33" class="wire-text wire-text-bold" style="font-size: 16px">Heading Level 4</text></g>
+</svg>

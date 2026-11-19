@@ -1,0 +1,36 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "AccordionSection",
+      "end": {
+        "column": 22,
+        "line": 4,
+        "offset": 93
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Section Title",
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 104
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

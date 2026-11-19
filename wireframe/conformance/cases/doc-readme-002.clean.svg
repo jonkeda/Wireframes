@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="623" viewBox="0 0 800 623" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <rect x="16" y="16" width="768" height="591" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="img"><g>
+      <rect x="32" y="32" width="200" height="50" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+      <line x1="32" y1="32" x2="232" y2="82" stroke="#dee2e6" stroke-width="1" />
+      <line x1="232" y1="32" x2="32" y2="82" stroke="#dee2e6" stroke-width="1" />
+      <text x="132" y="62" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Image</text>
+    </g></g><g role="group" aria-label="Welcome Back"><text x="32" y="124.67" class="wire-text wire-text-bold" style="font-size: 20px">Welcome Back</text></g><g role="group" aria-label="Sign in to your account"><text x="32" y="169" class="wire-text">Sign in to your account</text></g><g role="group" aria-label="Email"><text x="32" y="209" class="wire-text">Email</text></g><g role="textbox" aria-label="you@example.com" aria-required="true" aria-placeholder="you@example.com"><g>
+      <rect x="32" y="218" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="241" class="wire-text wire-text-secondary">you@example.com</text>
+      <text x="220" y="241" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="group" aria-label="Password"><text x="32" y="289" class="wire-text">Password</text></g><g role="textbox" aria-label="••••••••" aria-required="true" aria-placeholder="••••••••"><g>
+      <rect x="32" y="298" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="321" class="wire-text wire-text-secondary">••••</text>
+      <text x="220" y="321" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="checkbox" aria-label="Remember me" aria-checked="false"><g><rect x="32" y="357" width="18" height="18" rx="2" fill="#ffffff" stroke="#dee2e6" stroke-width="1" /><text x="58" y="371" class="wire-text">Remember me</text></g></g><g role="link" aria-label="Forgot password?"><g>
+      <text x="214" y="369" class="wire-text" fill="#0d6efd" style="text-decoration: underline">Forgot password?</text>
+    </g></g><g role="button" aria-label="Sign In"><g opacity="1">
+      <rect x="32" y="398" width="100" height="36" rx="4" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="82" y="421" text-anchor="middle" class="wire-text" fill="#ffffff">Sign In</text>
+    </g></g><g role="group"><line x1="32" y1="454" x2="232" y2="454" stroke="#dee2e6" stroke-width="1" /></g><g role="group" aria-label="Or continue with"><text x="32" y="490" class="wire-text">Or continue with</text></g><g role="button" aria-label="Google"><g opacity="1">
+      <rect x="32" y="515" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="82" y="538" text-anchor="middle" class="wire-text" fill="#212529">Google</text>
+    </g></g><g role="button" aria-label="GitHub"><g opacity="1">
+      <rect x="140" y="515" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="190" y="538" text-anchor="middle" class="wire-text" fill="#212529">GitHub</text>
+    </g></g><g role="group" aria-label="Don&apos;t have an account?"><text x="32" y="586" class="wire-text">Don&apos;t have an account?</text></g><g role="link" aria-label="Sign up"><g>
+      <text x="212" y="586" class="wire-text" fill="#0d6efd" style="text-decoration: underline">Sign up</text>
+    </g></g>
+</svg>

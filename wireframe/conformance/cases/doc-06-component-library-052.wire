@@ -1,0 +1,9 @@
+wireframe clean
+    Dialog "Dialog Title"
+        Label "Dialog content"
+        Horizontal gap=8
+            Button "Cancel" secondary
+            Button "OK" primary
+        /Horizontal
+    /Dialog
+/wireframe

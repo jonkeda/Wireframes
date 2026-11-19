@@ -1,0 +1,10 @@
+wireframe clean
+    Tree
+        TreeItem "Documents" expanded
+            TreeItem "Projects" expanded
+                TreeItem "Project A"
+                TreeItem "Project B"
+            /TreeItem
+        /TreeItem
+    /Tree
+/wireframe

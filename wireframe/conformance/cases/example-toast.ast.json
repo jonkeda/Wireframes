@@ -1,0 +1,261 @@
+{
+  "attributes": {
+    "title": "Toast Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 40,
+            "line": 6,
+            "offset": 129
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 98
+          },
+          "text": "**Toast Notifications**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "attributes": {
+                "type": "info"
+              },
+              "controlType": "Toast",
+              "end": {
+                "column": 54,
+                "line": 9,
+                "offset": 207
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 166
+              },
+              "text": "This is an info message",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "type": "success"
+              },
+              "controlType": "Toast",
+              "end": {
+                "column": 67,
+                "line": 10,
+                "offset": 274
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 220
+              },
+              "text": "Operation completed successfully!",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "type": "warning"
+              },
+              "controlType": "Toast",
+              "end": {
+                "column": 57,
+                "line": 11,
+                "offset": 331
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 11,
+                "offset": 287
+              },
+              "text": "Please check your input",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "type": "error"
+              },
+              "controlType": "Toast",
+              "end": {
+                "column": 49,
+                "line": 12,
+                "offset": 380
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 12,
+                "offset": 344
+              },
+              "text": "An error occurred",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 13,
+            "offset": 398
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 139
+          },
+          "type": "Layout"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 15,
+            "offset": 417
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 15,
+            "offset": 408
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 39,
+            "line": 17,
+            "offset": 457
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 17,
+            "offset": 427
+          },
+          "text": "**Toast with Actions**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "attributes": {
+                "type": "info"
+              },
+              "controlType": "Toast",
+              "end": {
+                "column": 51,
+                "line": 21,
+                "offset": 577
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 21,
+                "offset": 539
+              },
+              "text": "New update available",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 40,
+                "line": 22,
+                "offset": 617
+              },
+              "modifiers": {
+                "primary": true
+              },
+              "start": {
+                "column": 13,
+                "line": 22,
+                "offset": 590
+              },
+              "text": "Update Now",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 27,
+                "line": 23,
+                "offset": 644
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 23,
+                "offset": 630
+              },
+              "text": "Later",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 20,
+            "line": 24,
+            "offset": 664
+          },
+          "layoutType": "Horizontal",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 20,
+            "offset": 510
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 25,
+        "offset": 678
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 74
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 26,
+    "offset": 689
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 26
+  },
+  "style": "clean",
+  "type": "Document"
+}

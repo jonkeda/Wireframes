@@ -1,0 +1,7 @@
+wireframe clean
+    Vertical gap=8
+        Toast "File saved successfully" variant=success
+        Toast "New message received" variant=info
+        Toast "Network connection slow" variant=warning
+        Toast "Failed to upload file" variant=error
+/wireframe

@@ -1,0 +1,7 @@
+wireframe clean
+    Checkbox "Accept terms"
+    Checkbox "Remember me" checked
+    Checkbox "Required option" required
+    Checkbox "Disabled" disabled
+    Checkbox "Subscribe" :chkNews ?user.newsletter
+/wireframe

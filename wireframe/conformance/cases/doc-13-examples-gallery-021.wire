@@ -1,0 +1,35 @@
+wireframe clean
+    %title: Chat
+    
+    Dock width=400 height=600
+        Header dock=top height=56
+            Horizontal gap=12
+                Avatar ?userAvatar
+                Vertical
+                    Label "John Doe"
+                    Label "Online" color=green
+                /Vertical
+                IconButton $icon:more
+            /Horizontal
+        /Header
+        
+        Content dock=fill
+            Vertical gap=12 padding=16
+                Bubble "Hey, how are you?" align=left
+                Bubble "I'm doing great! Just finished the wireframe." align=right
+                Bubble "That's awesome! Can you share it?" align=left
+                Bubble "Sure, I'll send it right now." align=right
+                Bubble "Here's the file:" align=right
+                Attachment "wireframe.pdf" $icon:file
+            /Vertical
+        /Content
+        
+        Footer dock=bottom height=64
+            Horizontal gap=8 padding=16
+                TextInput "Type a message..." ?message
+                IconButton $icon:attach
+                IconButton $icon:send primary
+            /Horizontal
+        /Footer
+    /Dock
+/wireframe

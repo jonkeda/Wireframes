@@ -1,0 +1,76 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Radio",
+      "end": {
+        "column": 27,
+        "line": 2,
+        "offset": 42
+      },
+      "id": "radA",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Option A",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Radio",
+      "end": {
+        "column": 36,
+        "line": 3,
+        "offset": 78
+      },
+      "id": "radB",
+      "modifiers": {
+        "selected": true
+      },
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 47
+      },
+      "text": "Option B",
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "group": "options"
+      },
+      "controlType": "Radio",
+      "end": {
+        "column": 40,
+        "line": 4,
+        "offset": 118
+      },
+      "id": "radC",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 83
+      },
+      "text": "Grouped",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 129
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

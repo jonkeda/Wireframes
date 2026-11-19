@@ -1,0 +1,52 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Spacer",
+      "end": {
+        "column": 11,
+        "line": 2,
+        "offset": 26
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "height": 32
+      },
+      "controlType": "Spacer",
+      "end": {
+        "column": 21,
+        "line": 3,
+        "offset": 47
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 31
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 4,
+    "offset": 58
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

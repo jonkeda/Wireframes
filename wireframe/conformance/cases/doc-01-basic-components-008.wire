@@ -1,0 +1,8 @@
+wireframe clean
+    Horizontal gap=8
+        Badge "New"
+        Badge "3" variant=info
+        Badge "Done" variant=success
+        Badge "Warning" variant=warning
+        Badge "Error" variant=error
+/wireframe

@@ -1,0 +1,75 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Avatar",
+      "end": {
+        "column": 16,
+        "line": 2,
+        "offset": 31
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "JD",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Avatar",
+      "end": {
+        "column": 29,
+        "line": 3,
+        "offset": 60
+      },
+      "modifiers": {
+        "circle": true
+      },
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 36
+      },
+      "text": "John Doe",
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "size": "lg"
+      },
+      "controlType": "Avatar",
+      "end": {
+        "column": 37,
+        "line": 4,
+        "offset": 97
+      },
+      "icon": "user",
+      "modifiers": {
+        "circle": true
+      },
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 65
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 108
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

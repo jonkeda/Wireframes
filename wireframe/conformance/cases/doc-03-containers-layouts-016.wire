@@ -1,0 +1,13 @@
+wireframe clean
+    Modal w=400 h=250 padding=20
+        Vertical gap=16
+            Heading "Modal Title" level=2
+            Label "Modal content goes here."
+            Spacer
+            Horizontal gap=8
+                Spacer
+                Button "Close" primary
+            /Horizontal
+        /Vertical
+    /Modal
+/wireframe

@@ -1,0 +1,6 @@
+wireframe clean
+    Vertical gap=16 w=300
+        Slider value=50
+        Slider value=75
+        Slider value=25 disabled
+/wireframe

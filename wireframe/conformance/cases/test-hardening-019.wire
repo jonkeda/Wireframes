@@ -1,0 +1,4 @@
+wireframe clean
+    Button "A" :Same
+    Button "B" :Same primary
+/wireframe

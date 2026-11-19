@@ -1,0 +1,33 @@
+wireframe clean
+    Card w=500 padding=24
+        Vertical gap=24
+            Stepper steps=4 current=2
+            
+            Heading "Step 2: Personal Information" level=2
+            
+            Vertical gap=12
+                Horizontal gap=12
+                    Vertical gap=4
+                        Label "First Name"
+                        TextInput placeholder="John"
+                    /Vertical
+                    Vertical gap=4
+                        Label "Last Name"
+                        TextInput placeholder="Doe"
+                    /Vertical
+                /Horizontal
+                
+                Vertical gap=4
+                    Label "Email Address"
+                    TextInput placeholder="john@example.com"
+                /Vertical
+            /Vertical
+            
+            Horizontal gap=8
+                Button "Back"
+                Spacer
+                Button "Continue" primary
+            /Horizontal
+        /Vertical
+    /Card
+/wireframe

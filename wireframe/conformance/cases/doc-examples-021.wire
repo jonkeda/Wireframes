@@ -1,0 +1,10 @@
+wireframe blueprint
+    Card w=300
+        Vertical gap=12
+            Label "**Blueprint Theme**"
+            Label "Technical, grid-based design"
+            Button "Primary" primary
+            Button "Default"
+        /Vertical
+    /Card
+/wireframe

@@ -1,0 +1,17 @@
+[
+  {
+    "column": 5,
+    "line": 2,
+    "message": "Unexpected token: BreadcrumbItem"
+  },
+  {
+    "column": 20,
+    "line": 2,
+    "message": "Unexpected token: Label"
+  },
+  {
+    "column": 28,
+    "line": 2,
+    "message": "Unexpected token: @navigation"
+  }
+]

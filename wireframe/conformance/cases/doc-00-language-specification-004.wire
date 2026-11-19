@@ -1,0 +1,4 @@
+wireframe clean
+    // This is a single-line comment
+    Button "Click me"  // Inline comment
+/wireframe

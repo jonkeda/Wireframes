@@ -1,0 +1,110 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "binding": "customer.firstName",
+      "controlType": "TextInput",
+      "end": {
+        "column": 57,
+        "line": 2,
+        "offset": 72
+      },
+      "id": "txtFirst",
+      "modifiers": {},
+      "placeholder": "First Name",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "binding": "customer.lastName",
+      "controlType": "TextInput",
+      "end": {
+        "column": 54,
+        "line": 3,
+        "offset": 126
+      },
+      "id": "txtLast",
+      "modifiers": {},
+      "placeholder": "Last Name",
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 77
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "binding": "customer.status",
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Option",
+          "end": {
+            "column": 24,
+            "line": 5,
+            "offset": 191
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 176
+          },
+          "text": "Active",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Option",
+          "end": {
+            "column": 26,
+            "line": 6,
+            "offset": 217
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 200
+          },
+          "text": "Inactive",
+          "type": "Control"
+        }
+      ],
+      "controlType": "Dropdown",
+      "end": {
+        "column": 14,
+        "line": 7,
+        "offset": 231
+      },
+      "id": "ddlStatus",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 131
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 242
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="889" viewBox="0 0 800 889" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g role="group" aria-label="**Horizontal Layout**"><text x="16" y="31" class="wire-text wire-text-bold">Horizontal Layout</text></g><path d="M16.0 51.4 Q400.0 45.1 784.0 51.4 M783.1 52.0 Q779.4 318.0 785.1 584.0 M784.0 584.5 Q400.0 588.6 16.0 585.3 M17.0 584.0 Q18.7 318.0 15.2 52.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="button" aria-label="Item 1"><g opacity="1">
+      <path d="M32.0 66.6 Q82.0 61.8 132.0 68.9 M131.8 68.0 Q129.8 86.0 131.0 104.0 M132.0 105.2 Q82.0 108.4 32.0 103.8 M32.3 104.0 Q33.1 86.0 32.0 68.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="82" y="91" text-anchor="middle" class="wire-text" fill="#333333">Item 1</text>
+    </g></g><g role="button" aria-label="Item 2"><g opacity="1">
+      <path d="M140.0 67.3 Q190.0 71.3 240.0 67.0 M239.1 68.0 Q240.9 86.0 238.9 104.0 M240.0 104.6 Q190.0 101.6 140.0 103.1 M141.0 104.0 Q136.2 86.0 140.4 68.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="190" y="91" text-anchor="middle" class="wire-text" fill="#333333">Item 2</text>
+    </g></g><g role="button" aria-label="Item 3"><g opacity="1">
+      <path d="M248.0 68.0 Q298.0 59.7 348.0 68.7 M349.5 68.0 Q347.5 86.0 349.2 104.0 M348.0 103.9 Q298.0 110.9 248.0 102.7 M246.7 104.0 Q247.9 86.0 248.8 68.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="298" y="91" text-anchor="middle" class="wire-text" fill="#333333">Item 3</text>
+    </g></g><g role="group"><line x1="16" y1="600" x2="216" y2="600" stroke="#888888" stroke-width="1" /></g><g role="group" aria-label="**Horizontal with Alignment**"><text x="16" y="632" class="wire-text wire-text-bold">Horizontal with Alignment</text></g><path d="M16.0 653.5 Q400.0 647.3 784.0 652.5 M784.9 653.0 Q781.7 687.0 784.3 721.0 M784.0 720.4 Q400.0 725.2 16.0 721.9 M15.2 721.0 Q21.4 687.0 14.6 653.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Top"><text x="32" y="684" class="wire-text">Top</text></g><g role="button" aria-label="Tall
+Button"><g opacity="1">
+      <path d="M90.0 669.3 Q150.0 672.4 210.0 669.3 M211.2 669.0 Q213.8 687.0 209.9 705.0 M210.0 704.6 Q150.0 702.5 90.0 705.7 M89.0 705.0 Q89.1 687.0 89.1 669.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="150" y="692" text-anchor="middle" class="wire-text" fill="#333333">Tall
+Button</text>
+    </g></g><g role="textbox" aria-label="Input" aria-placeholder="Input"><g>
+      <path d="M218.0 670.1 Q318.0 671.1 418.0 668.4 M418.3 669.0 Q419.5 687.0 417.1 705.0 M418.0 703.8 Q318.0 703.8 218.0 703.7 M217.8 705.0 Q214.5 687.0 218.8 669.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="230" y="692" class="wire-text wire-text-secondary">Input</text>
+      
+    </g></g><path d="M16.0 728.4 Q400.0 735.2 784.0 728.7 M783.0 729.0 Q784.6 763.0 784.1 797.0 M784.0 797.5 Q400.0 788.7 16.0 797.0 M17.1 797.0 Q14.5 763.0 14.8 729.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Center"><text x="32" y="760" class="wire-text">Center</text></g><g role="button" aria-label="Tall
+Button"><g opacity="1">
+      <path d="M90.0 744.2 Q150.0 741.3 210.0 746.2 M209.3 745.0 Q208.8 763.0 209.3 781.0 M210.0 781.7 Q150.0 785.1 90.0 780.9 M90.9 781.0 Q94.1 763.0 89.6 745.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="150" y="768" text-anchor="middle" class="wire-text" fill="#333333">Tall
+Button</text>
+    </g></g><g role="textbox" aria-label="Input" aria-placeholder="Input"><g>
+      <path d="M218.0 745.0 Q318.0 740.8 418.0 744.3 M419.4 745.0 Q417.9 763.0 418.3 781.0 M418.0 780.9 Q318.0 783.3 218.0 781.8 M216.7 781.0 Q221.4 763.0 216.7 745.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="230" y="768" class="wire-text wire-text-secondary">Input</text>
+      
+    </g></g><path d="M16.0 806.3 Q400.0 807.2 784.0 805.0 M784.1 805.0 Q791.0 839.0 782.6 873.0 M784.0 871.6 Q400.0 872.8 16.0 872.8 M16.0 873.0 Q11.2 839.0 15.0 805.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Bottom"><text x="32" y="836" class="wire-text">Bottom</text></g><g role="button" aria-label="Tall
+Button"><g opacity="1">
+      <path d="M90.0 822.1 Q150.0 811.7 210.0 821.1 M210.4 821.0 Q210.1 839.0 209.1 857.0 M210.0 855.8 Q150.0 864.3 90.0 856.6 M89.8 857.0 Q88.8 839.0 89.8 821.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="150" y="844" text-anchor="middle" class="wire-text" fill="#333333">Tall
+Button</text>
+    </g></g><g role="textbox" aria-label="Input" aria-placeholder="Input"><g>
+      <path d="M218.0 819.9 Q318.0 826.5 418.0 820.8 M417.5 821.0 Q418.3 839.0 418.0 857.0 M418.0 858.0 Q318.0 848.4 218.0 858.3 M218.6 857.0 Q216.5 839.0 216.9 821.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="230" y="844" class="wire-text wire-text-secondary">Input</text>
+      
+    </g></g>
+</svg>

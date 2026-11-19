@@ -1,0 +1,75 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 16,
+        "justify": "end"
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 24,
+            "line": 3,
+            "offset": 73
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 58
+          },
+          "text": "Cancel",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 30,
+            "line": 4,
+            "offset": 103
+          },
+          "modifiers": {
+            "primary": true
+          },
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 82
+          },
+          "text": "Save",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 16,
+        "line": 5,
+        "offset": 119
+      },
+      "layoutType": "Horizontal",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 6,
+    "offset": 130
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

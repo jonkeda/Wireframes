@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <rect x="16" y="16" width="768" height="568" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="**Settings**"><text x="32" y="47" class="wire-text wire-text-bold">Settings</text></g><g role="group" aria-label="**Notifications**"><text x="32" y="83" class="wire-text wire-text-bold">Notifications</text></g><g role="switch" aria-label="Email notifications" aria-checked="false"><g><rect x="32" y="104" width="44" height="24" rx="12" fill="#dee2e6" /><circle cx="44" cy="116" r="10" fill="#ffffff" /><text x="84" y="121" class="wire-text">Email notifications</text></g></g><g role="switch" aria-label="Push notifications" aria-checked="false"><g><rect x="32" y="144" width="44" height="24" rx="12" fill="#dee2e6" /><circle cx="44" cy="156" r="10" fill="#ffffff" /><text x="84" y="161" class="wire-text">Push notifications</text></g></g><g role="group"><line x1="32" y1="184" x2="232" y2="184" stroke="#dee2e6" stroke-width="1" /></g><g role="group" aria-label="**Privacy**"><text x="32" y="216" class="wire-text wire-text-bold">Privacy</text></g><g role="switch" aria-label="Public profile" aria-checked="false"><g><rect x="32" y="237" width="44" height="24" rx="12" fill="#dee2e6" /><circle cx="44" cy="249" r="10" fill="#ffffff" /><text x="84" y="254" class="wire-text">Public profile</text></g></g><g role="switch" aria-label="Show online status" aria-checked="false"><g><rect x="32" y="277" width="44" height="24" rx="12" fill="#dee2e6" /><circle cx="44" cy="289" r="10" fill="#ffffff" /><text x="84" y="294" class="wire-text">Show online status</text></g></g><g role="group"><line x1="32" y1="317" x2="232" y2="317" stroke="#dee2e6" stroke-width="1" /></g><g role="button" aria-label="Cancel"><g opacity="1">
+      <rect x="32" y="334" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="82" y="357" text-anchor="middle" class="wire-text" fill="#212529">Cancel</text>
+    </g></g><g role="button" aria-label="Save Changes"><g opacity="1">
+      <rect x="140" y="334" width="128" height="36" rx="6" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="204" y="357" text-anchor="middle" class="wire-text" fill="#ffffff">Save Changes</text>
+    </g></g>
+</svg>

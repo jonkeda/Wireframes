@@ -1,0 +1,8 @@
+wireframe clean
+    Stepper
+        Step "Cart" completed
+        Step "Shipping" active
+        Step "Payment"
+        Step "Confirm"
+    /Stepper
+/wireframe

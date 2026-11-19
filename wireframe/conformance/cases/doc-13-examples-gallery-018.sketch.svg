@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="236" viewBox="0 0 800 236" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g>
+          <path d="M16.0 15.7 Q400.0 16.9 784.0 16.6 M782.8 16.0 Q790.7 118.0 785.0 220.0 M784.0 220.2 Q400.0 220.0 16.0 220.5 M17.4 220.0 Q10.7 118.0 15.0 16.0" fill="#fefefe" stroke="#888888" stroke-width="2" />
+          
+        </g><g role="group" aria-label="Edit Profile"><text x="32" y="54.67" class="wire-text wire-text-bold" style="font-size: 20px">Edit Profile</text></g><g role="textbox" aria-label="Name" aria-placeholder="Name"><g>
+      <path d="M32.0 71.9 Q132.0 79.3 232.0 71.3 M230.6 72.0 Q230.3 90.0 230.9 108.0 M232.0 108.0 Q132.0 101.6 32.0 106.8 M30.5 108.0 Q31.7 90.0 32.0 72.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="95" class="wire-text wire-text-secondary">Name</text>
+      
+    </g></g><g role="textbox" aria-label="Email" aria-placeholder="Email"><g>
+      <path d="M32.0 125.5 Q132.0 132.1 232.0 125.2 M232.0 124.0 Q234.1 142.0 230.7 160.0 M232.0 161.4 Q132.0 154.4 32.0 158.5 M32.2 160.0 Q32.8 142.0 32.3 124.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="147" class="wire-text wire-text-secondary">Email</text>
+      
+    </g></g><g role="button" aria-label="Cancel"><g opacity="1">
+      <path d="M32.0 168.8 Q82.0 169.3 132.0 167.4 M132.6 168.0 Q136.7 186.0 133.2 204.0 M132.0 203.1 Q82.0 203.6 32.0 202.7 M31.5 204.0 Q29.4 186.0 30.8 168.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="82" y="191" text-anchor="middle" class="wire-text" fill="#333333">Cancel</text>
+    </g></g><g role="button" aria-label="Save"><g opacity="1">
+      <path d="M148.0 167.0 Q198.0 163.6 248.0 166.9 M247.5 168.0 Q245.6 186.0 248.6 204.0 M248.0 204.9 Q198.0 210.6 148.0 202.8 M148.7 204.0 Q149.3 186.0 149.3 168.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="198" y="191" text-anchor="middle" class="wire-text" fill="#ffffff">Save</text>
+    </g></g>
+</svg>

@@ -1,0 +1,36 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "Stepper",
+      "end": {
+        "column": 13,
+        "line": 7,
+        "offset": 171
+      },
+      "id": "stpCheckout",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 182
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,19 @@
+wireframe clean
+    %title: User Management
+    
+    Card
+        Vertical gap=16
+            Label "**Users**"
+            
+            Table :tblUsers
+                | Name | Email | Role | Status |
+                |------|-------|------|--------|
+                | John Doe | john@example.com | Admin | Active |
+                | Jane Smith | jane@example.com | Editor | Active |
+                | Bob Wilson | bob@example.com | Viewer | Inactive |
+            /Table
+            
+            Pagination pages=5 current=1 :pgUsers
+        /Vertical
+    /Card
+/wireframe

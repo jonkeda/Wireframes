@@ -1,0 +1,1014 @@
+{
+  "attributes": {
+    "title": "Blueprint Theme Demo"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 36,
+            "line": 6,
+            "offset": 166
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 139
+          },
+          "text": "**Blueprint Theme**",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 88,
+            "line": 7,
+            "offset": 254
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 7,
+            "offset": 175
+          },
+          "text": "A technical style reminiscent of engineering blueprints and schematics.",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 9,
+            "offset": 273
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 9,
+            "offset": 264
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "padding": 8
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 16
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 43,
+                    "line": 13,
+                    "offset": 372
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 13,
+                    "offset": 346
+                  },
+                  "text": "**ACME Dashboard**",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Spacer",
+                  "end": {
+                    "column": 23,
+                    "line": 14,
+                    "offset": 395
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 14,
+                    "offset": 389
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "TextInput",
+                  "end": {
+                    "column": 38,
+                    "line": 15,
+                    "offset": 433
+                  },
+                  "modifiers": {},
+                  "placeholder": "Search...",
+                  "start": {
+                    "column": 17,
+                    "line": 15,
+                    "offset": 412
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Avatar",
+                  "end": {
+                    "column": 28,
+                    "line": 16,
+                    "offset": 462
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 16,
+                    "offset": 451
+                  },
+                  "text": "JD",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 17,
+                "offset": 486
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 12,
+                "offset": 312
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 16,
+            "line": 18,
+            "offset": 502
+          },
+          "modifiers": {},
+          "sectionType": "Header",
+          "start": {
+            "column": 9,
+            "line": 11,
+            "offset": 283
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {
+                "padding": 12
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "gap": 4
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 43,
+                        "line": 23,
+                        "offset": 634
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 23,
+                        "offset": 612
+                      },
+                      "text": "**Navigation**",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "children": [
+                        {
+                          "attributes": {},
+                          "children": [],
+                          "componentType": "MenuItem",
+                          "end": {
+                            "column": 1,
+                            "line": 26,
+                            "offset": 722
+                          },
+                          "icon": "home",
+                          "modifiers": {
+                            "active": true
+                          },
+                          "start": {
+                            "column": 25,
+                            "line": 25,
+                            "offset": 684
+                          },
+                          "text": "Overview",
+                          "type": "Component"
+                        },
+                        {
+                          "attributes": {},
+                          "children": [],
+                          "componentType": "MenuItem",
+                          "end": {
+                            "column": 1,
+                            "line": 27,
+                            "offset": 779
+                          },
+                          "icon": "chart",
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 26,
+                            "offset": 746
+                          },
+                          "text": "Analytics",
+                          "type": "Component"
+                        },
+                        {
+                          "attributes": {},
+                          "children": [],
+                          "componentType": "MenuItem",
+                          "end": {
+                            "column": 1,
+                            "line": 28,
+                            "offset": 833
+                          },
+                          "icon": "file",
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 27,
+                            "offset": 803
+                          },
+                          "text": "Reports",
+                          "type": "Component"
+                        },
+                        {
+                          "attributes": {},
+                          "children": [],
+                          "componentType": "MenuItem",
+                          "end": {
+                            "column": 1,
+                            "line": 29,
+                            "offset": 892
+                          },
+                          "icon": "settings",
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 28,
+                            "offset": 857
+                          },
+                          "text": "Settings",
+                          "type": "Component"
+                        }
+                      ],
+                      "componentType": "Menu",
+                      "end": {
+                        "column": 26,
+                        "line": 29,
+                        "offset": 917
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 24,
+                        "offset": 655
+                      },
+                      "type": "Component"
+                    }
+                  ],
+                  "end": {
+                    "column": 26,
+                    "line": 30,
+                    "offset": 943
+                  },
+                  "layoutType": "Vertical",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 22,
+                    "offset": 577
+                  },
+                  "type": "Layout"
+                }
+              ],
+              "end": {
+                "column": 21,
+                "line": 31,
+                "offset": 964
+              },
+              "modifiers": {},
+              "sectionType": "Sidebar",
+              "start": {
+                "column": 13,
+                "line": 21,
+                "offset": 542
+              },
+              "type": "Section"
+            },
+            {
+              "attributes": {
+                "gap": 16
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "padding": 16
+                  },
+                  "children": [
+                    {
+                      "attributes": {
+                        "gap": 8
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 50,
+                            "line": 36,
+                            "offset": 1110
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 36,
+                            "offset": 1085
+                          },
+                          "text": "**System Status**",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {
+                            "gap": 16
+                          },
+                          "children": [
+                            {
+                              "attributes": {
+                                "gap": 4
+                              },
+                              "children": [
+                                {
+                                  "attributes": {},
+                                  "controlType": "Label",
+                                  "end": {
+                                    "column": 50,
+                                    "line": 39,
+                                    "offset": 1245
+                                  },
+                                  "modifiers": {},
+                                  "start": {
+                                    "column": 33,
+                                    "line": 39,
+                                    "offset": 1228
+                                  },
+                                  "text": "CPU Usage",
+                                  "type": "Control"
+                                },
+                                {
+                                  "attributes": {
+                                    "value": 45
+                                  },
+                                  "controlType": "Progress",
+                                  "end": {
+                                    "column": 50,
+                                    "line": 40,
+                                    "offset": 1295
+                                  },
+                                  "modifiers": {},
+                                  "start": {
+                                    "column": 33,
+                                    "line": 40,
+                                    "offset": 1278
+                                  },
+                                  "type": "Control"
+                                }
+                              ],
+                              "end": {
+                                "column": 38,
+                                "line": 41,
+                                "offset": 1333
+                              },
+                              "layoutType": "Vertical",
+                              "modifiers": {},
+                              "start": {
+                                "column": 29,
+                                "line": 38,
+                                "offset": 1181
+                              },
+                              "type": "Layout"
+                            },
+                            {
+                              "attributes": {
+                                "gap": 4
+                              },
+                              "children": [
+                                {
+                                  "attributes": {},
+                                  "controlType": "Label",
+                                  "end": {
+                                    "column": 47,
+                                    "line": 43,
+                                    "offset": 1423
+                                  },
+                                  "modifiers": {},
+                                  "start": {
+                                    "column": 33,
+                                    "line": 43,
+                                    "offset": 1409
+                                  },
+                                  "text": "Memory",
+                                  "type": "Control"
+                                },
+                                {
+                                  "attributes": {
+                                    "value": 72
+                                  },
+                                  "controlType": "Progress",
+                                  "end": {
+                                    "column": 50,
+                                    "line": 44,
+                                    "offset": 1473
+                                  },
+                                  "modifiers": {},
+                                  "start": {
+                                    "column": 33,
+                                    "line": 44,
+                                    "offset": 1456
+                                  },
+                                  "type": "Control"
+                                }
+                              ],
+                              "end": {
+                                "column": 38,
+                                "line": 45,
+                                "offset": 1511
+                              },
+                              "layoutType": "Vertical",
+                              "modifiers": {},
+                              "start": {
+                                "column": 29,
+                                "line": 42,
+                                "offset": 1362
+                              },
+                              "type": "Layout"
+                            },
+                            {
+                              "attributes": {
+                                "gap": 4
+                              },
+                              "children": [
+                                {
+                                  "attributes": {},
+                                  "controlType": "Label",
+                                  "end": {
+                                    "column": 48,
+                                    "line": 47,
+                                    "offset": 1602
+                                  },
+                                  "modifiers": {},
+                                  "start": {
+                                    "column": 33,
+                                    "line": 47,
+                                    "offset": 1587
+                                  },
+                                  "text": "Storage",
+                                  "type": "Control"
+                                },
+                                {
+                                  "attributes": {
+                                    "value": 38
+                                  },
+                                  "controlType": "Progress",
+                                  "end": {
+                                    "column": 50,
+                                    "line": 48,
+                                    "offset": 1652
+                                  },
+                                  "modifiers": {},
+                                  "start": {
+                                    "column": 33,
+                                    "line": 48,
+                                    "offset": 1635
+                                  },
+                                  "type": "Control"
+                                }
+                              ],
+                              "end": {
+                                "column": 38,
+                                "line": 49,
+                                "offset": 1690
+                              },
+                              "layoutType": "Vertical",
+                              "modifiers": {},
+                              "start": {
+                                "column": 29,
+                                "line": 46,
+                                "offset": 1540
+                              },
+                              "type": "Layout"
+                            }
+                          ],
+                          "end": {
+                            "column": 36,
+                            "line": 50,
+                            "offset": 1726
+                          },
+                          "layoutType": "Horizontal",
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 37,
+                            "offset": 1135
+                          },
+                          "type": "Layout"
+                        }
+                      ],
+                      "end": {
+                        "column": 30,
+                        "line": 51,
+                        "offset": 1756
+                      },
+                      "layoutType": "Vertical",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 35,
+                        "offset": 1046
+                      },
+                      "type": "Layout"
+                    }
+                  ],
+                  "end": {
+                    "column": 22,
+                    "line": 52,
+                    "offset": 1778
+                  },
+                  "modifiers": {},
+                  "sectionType": "Card",
+                  "start": {
+                    "column": 17,
+                    "line": 34,
+                    "offset": 1010
+                  },
+                  "type": "Section"
+                },
+                {
+                  "attributes": {
+                    "padding": 16
+                  },
+                  "children": [
+                    {
+                      "attributes": {
+                        "gap": 8
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 50,
+                            "line": 56,
+                            "offset": 1896
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 56,
+                            "offset": 1871
+                          },
+                          "text": "**Configuration**",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {
+                            "gap": 16
+                          },
+                          "children": [
+                            {
+                              "attributes": {},
+                              "children": [
+                                {
+                                  "attributes": {},
+                                  "controlType": "Option",
+                                  "end": {
+                                    "column": 1,
+                                    "line": 1,
+                                    "offset": 0
+                                  },
+                                  "modifiers": {},
+                                  "start": {
+                                    "column": 1,
+                                    "line": 1,
+                                    "offset": 0
+                                  },
+                                  "text": "US-East",
+                                  "type": "Control"
+                                },
+                                {
+                                  "attributes": {},
+                                  "controlType": "Option",
+                                  "end": {
+                                    "column": 1,
+                                    "line": 1,
+                                    "offset": 0
+                                  },
+                                  "modifiers": {},
+                                  "start": {
+                                    "column": 1,
+                                    "line": 1,
+                                    "offset": 0
+                                  },
+                                  "text": "US-West",
+                                  "type": "Control"
+                                },
+                                {
+                                  "attributes": {},
+                                  "controlType": "Option",
+                                  "end": {
+                                    "column": 1,
+                                    "line": 1,
+                                    "offset": 0
+                                  },
+                                  "modifiers": {},
+                                  "start": {
+                                    "column": 1,
+                                    "line": 1,
+                                    "offset": 0
+                                  },
+                                  "text": "EU-Central",
+                                  "type": "Control"
+                                },
+                                {
+                                  "attributes": {},
+                                  "controlType": "Option",
+                                  "end": {
+                                    "column": 1,
+                                    "line": 1,
+                                    "offset": 0
+                                  },
+                                  "modifiers": {},
+                                  "start": {
+                                    "column": 1,
+                                    "line": 1,
+                                    "offset": 0
+                                  },
+                                  "text": "Asia-Pacific",
+                                  "type": "Control"
+                                }
+                              ],
+                              "controlType": "Dropdown",
+                              "end": {
+                                "column": 1,
+                                "line": 59,
+                                "offset": 2040
+                              },
+                              "modifiers": {},
+                              "placeholder": "Select Region",
+                              "start": {
+                                "column": 29,
+                                "line": 58,
+                                "offset": 1967
+                              },
+                              "type": "Control"
+                            },
+                            {
+                              "attributes": {},
+                              "children": [
+                                {
+                                  "attributes": {},
+                                  "controlType": "Option",
+                                  "end": {
+                                    "column": 1,
+                                    "line": 1,
+                                    "offset": 0
+                                  },
+                                  "modifiers": {},
+                                  "start": {
+                                    "column": 1,
+                                    "line": 1,
+                                    "offset": 0
+                                  },
+                                  "text": "Production",
+                                  "type": "Control"
+                                },
+                                {
+                                  "attributes": {},
+                                  "controlType": "Option",
+                                  "end": {
+                                    "column": 1,
+                                    "line": 1,
+                                    "offset": 0
+                                  },
+                                  "modifiers": {},
+                                  "start": {
+                                    "column": 1,
+                                    "line": 1,
+                                    "offset": 0
+                                  },
+                                  "text": "Staging",
+                                  "type": "Control"
+                                },
+                                {
+                                  "attributes": {},
+                                  "controlType": "Option",
+                                  "end": {
+                                    "column": 1,
+                                    "line": 1,
+                                    "offset": 0
+                                  },
+                                  "modifiers": {},
+                                  "start": {
+                                    "column": 1,
+                                    "line": 1,
+                                    "offset": 0
+                                  },
+                                  "text": "Development",
+                                  "type": "Control"
+                                }
+                              ],
+                              "controlType": "Dropdown",
+                              "end": {
+                                "column": 1,
+                                "line": 60,
+                                "offset": 2128
+                              },
+                              "modifiers": {},
+                              "placeholder": "Environment",
+                              "start": {
+                                "column": 29,
+                                "line": 59,
+                                "offset": 2068
+                              },
+                              "type": "Control"
+                            }
+                          ],
+                          "end": {
+                            "column": 36,
+                            "line": 60,
+                            "offset": 2163
+                          },
+                          "layoutType": "Horizontal",
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 57,
+                            "offset": 1921
+                          },
+                          "type": "Layout"
+                        },
+                        {
+                          "attributes": {
+                            "gap": 8
+                          },
+                          "children": [
+                            {
+                              "attributes": {},
+                              "controlType": "Button",
+                              "end": {
+                                "column": 51,
+                                "line": 62,
+                                "offset": 2255
+                              },
+                              "modifiers": {
+                                "primary": true
+                              },
+                              "start": {
+                                "column": 29,
+                                "line": 62,
+                                "offset": 2233
+                              },
+                              "text": "Apply",
+                              "type": "Control"
+                            },
+                            {
+                              "attributes": {},
+                              "controlType": "Button",
+                              "end": {
+                                "column": 53,
+                                "line": 63,
+                                "offset": 2308
+                              },
+                              "modifiers": {
+                                "secondary": true
+                              },
+                              "start": {
+                                "column": 29,
+                                "line": 63,
+                                "offset": 2284
+                              },
+                              "text": "Reset",
+                              "type": "Control"
+                            }
+                          ],
+                          "end": {
+                            "column": 36,
+                            "line": 64,
+                            "offset": 2344
+                          },
+                          "layoutType": "Horizontal",
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 61,
+                            "offset": 2188
+                          },
+                          "type": "Layout"
+                        }
+                      ],
+                      "end": {
+                        "column": 30,
+                        "line": 65,
+                        "offset": 2374
+                      },
+                      "layoutType": "Vertical",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 55,
+                        "offset": 1832
+                      },
+                      "type": "Layout"
+                    }
+                  ],
+                  "end": {
+                    "column": 22,
+                    "line": 66,
+                    "offset": 2396
+                  },
+                  "modifiers": {},
+                  "sectionType": "Card",
+                  "start": {
+                    "column": 17,
+                    "line": 54,
+                    "offset": 1796
+                  },
+                  "type": "Section"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 67,
+                "offset": 2418
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 33,
+                "offset": 978
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 20,
+            "line": 68,
+            "offset": 2438
+          },
+          "layoutType": "Horizontal",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 20,
+            "offset": 512
+          },
+          "type": "Layout"
+        },
+        {
+          "attributes": {
+            "padding": 8
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 16
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 38,
+                    "line": 72,
+                    "offset": 2532
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 72,
+                    "offset": 2511
+                  },
+                  "text": "System v2.1.0",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Spacer",
+                  "end": {
+                    "column": 23,
+                    "line": 73,
+                    "offset": 2555
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 73,
+                    "offset": 2549
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 49,
+                    "line": 74,
+                    "offset": 2604
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 74,
+                    "offset": 2572
+                  },
+                  "text": "Last updated: 2025-12-27",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 75,
+                "offset": 2628
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 71,
+                "offset": 2477
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 16,
+            "line": 76,
+            "offset": 2644
+          },
+          "modifiers": {},
+          "sectionType": "Footer",
+          "start": {
+            "column": 9,
+            "line": 70,
+            "offset": 2448
+          },
+          "type": "Section"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 77,
+        "offset": 2658
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 115
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 78,
+    "offset": 2669
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 57
+  },
+  "style": "blueprint",
+  "type": "Document"
+}

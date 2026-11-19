@@ -1,0 +1,7 @@
+wireframe clean
+validations
+    | Field | Rule |
+    |---|---|
+    | Name | required | extra |
+/validations
+/wireframe

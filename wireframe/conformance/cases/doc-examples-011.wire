@@ -1,0 +1,27 @@
+wireframe clean
+    Horizontal gap=16
+        Card w=200
+            Vertical gap=8
+                Label "Total Users"
+                Label "**12,345**"
+                Badge "↑ 12%" type=success
+            /Vertical
+        /Card
+        
+        Card w=200
+            Vertical gap=8
+                Label "Revenue"
+                Label "**$45,678**"
+                Badge "↑ 8%" type=success
+            /Vertical
+        /Card
+        
+        Card w=200
+            Vertical gap=8
+                Label "Orders"
+                Label "**1,234**"
+                Badge "↓ 3%" type=error
+            /Vertical
+        /Card
+    /Horizontal
+/wireframe

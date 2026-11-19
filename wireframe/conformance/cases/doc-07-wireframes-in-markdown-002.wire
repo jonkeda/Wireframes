@@ -1,0 +1,24 @@
+wireframe clean
+    Card w=350 padding=24
+        Vertical gap=16
+            Heading "Sign In" level=2
+            
+            Vertical gap=4
+                Label "Email"
+                TextInput placeholder="you@example.com"
+            /Vertical
+            
+            Vertical gap=4
+                Label "Password"
+                PasswordInput placeholder="Enter password"
+            /Vertical
+            
+            Checkbox "Remember me"
+            Button "Sign In" primary w=100%
+            
+            Separator
+            
+            Link "Forgot password?"
+        /Vertical
+    /Card
+/wireframe

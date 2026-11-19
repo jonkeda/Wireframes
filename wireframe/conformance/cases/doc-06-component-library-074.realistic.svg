@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="972" viewBox="0 0 800 972" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <rect x="16" y="16" width="768" height="568" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Card content"><text x="32" y="47" class="wire-text">Card content</text></g><rect x="16" y="592" width="768" height="52" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Card content"><text x="32" y="623" class="wire-text">Card content</text></g><rect x="16" y="652" width="768" height="52" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Card content"><text x="32" y="683" class="wire-text">Card content</text></g><rect x="16" y="712" width="768" height="52" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Card content"><text x="32" y="743" class="wire-text">Card content</text></g><rect x="16" y="772" width="768" height="52" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Card content"><text x="32" y="803" class="wire-text">Card content</text></g><g role="button" aria-label="Click"><g opacity="1">
+      <rect x="16" y="832" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="66" y="855" text-anchor="middle" class="wire-text" fill="#212529">Click</text>
+    </g></g><g role="button" aria-label="Click"><g opacity="1">
+      <rect x="16" y="876" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="66" y="899" text-anchor="middle" class="wire-text" fill="#212529">Click</text>
+    </g></g><g role="button" aria-label="Click"><g opacity="1">
+      <rect x="16" y="920" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="66" y="943" text-anchor="middle" class="wire-text" fill="#212529">Click</text>
+    </g></g>
+</svg>

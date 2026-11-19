@@ -1,0 +1,16 @@
+wireframe clean
+    Dock w=400 h=300
+        Header dock=top h=50
+            Label "Top Header"
+        /Header
+        Footer dock=bottom h=40
+            Label "Bottom Footer"
+        /Footer
+        Sidebar dock=left w=100
+            Label "Left"
+        /Sidebar
+        Content dock=fill
+            Label "Main Content"
+        /Content
+    /Dock
+/wireframe

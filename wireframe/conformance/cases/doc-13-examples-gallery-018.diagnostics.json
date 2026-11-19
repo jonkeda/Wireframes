@@ -1,0 +1,22 @@
+[
+  {
+    "column": 13,
+    "line": 7,
+    "message": "Unexpected token: Textarea"
+  },
+  {
+    "column": 22,
+    "line": 7,
+    "message": "Unexpected token: Bio"
+  },
+  {
+    "column": 28,
+    "line": 7,
+    "message": "Unexpected token: ?bio"
+  },
+  {
+    "column": 33,
+    "line": 7,
+    "message": "Unexpected token: rows=3"
+  }
+]

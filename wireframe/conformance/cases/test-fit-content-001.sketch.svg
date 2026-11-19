@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="236" height="172" viewBox="0 0 236 172" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g role="group" aria-label="Create department"><text x="16" y="40" class="wire-text wire-text-bold" style="font-size: 24px">Create department</text></g><g role="textbox" aria-label="Name" aria-required="true"><g><text x="16" y="70" class="wire-text wire-text-small">Name</text>
+      <path d="M16.0 75.9 Q116.0 71.2 216.0 77.4 M214.5 76.0 Q215.8 94.0 214.7 112.0 M216.0 112.0 Q116.0 117.6 16.0 111.3 M14.6 112.0 Q18.6 94.0 16.2 76.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="99" class="wire-text wire-text-secondary"></text>
+      <text x="204" y="99" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="button" aria-label="Create"><g opacity="1">
+      <path d="M16.0 119.3 Q66.0 126.2 116.0 119.3 M115.2 120.0 Q118.3 138.0 114.9 156.0 M116.0 156.6 Q66.0 150.7 16.0 154.7 M17.0 156.0 Q14.9 138.0 16.7 120.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="66" y="143" text-anchor="middle" class="wire-text" fill="#ffffff">Create</text>
+    </g></g>
+</svg>

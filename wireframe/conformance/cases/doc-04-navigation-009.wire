@@ -1,0 +1,16 @@
+wireframe clean
+    Tree w=250
+        TreeItem "Documents" expanded
+            TreeItem "Work"
+                TreeItem "Project A"
+                TreeItem "Project B"
+            /TreeItem
+            TreeItem "Personal"
+        /TreeItem
+        TreeItem "Downloads"
+        TreeItem "Pictures" expanded
+            TreeItem "Vacation 2024"
+            TreeItem "Screenshots"
+        /TreeItem
+    /Tree
+/wireframe

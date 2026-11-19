@@ -1,0 +1,10 @@
+wireframe blueprint
+    Card w=300 padding=16
+        Vertical gap=12
+            Heading "Blueprint Theme" level=2
+            Label "Technical drawing style"
+            Button "Primary Action" primary
+            TextInput placeholder="Enter text"
+        /Vertical
+    /Card
+/wireframe

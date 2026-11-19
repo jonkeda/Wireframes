@@ -1,0 +1,70 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Heading",
+      "end": {
+        "column": 32,
+        "line": 2,
+        "offset": 47
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Create department",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Link",
+      "end": {
+        "column": 29,
+        "line": 3,
+        "offset": 76
+      },
+      "modifiers": {},
+      "navigation": "Departments",
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 52
+      },
+      "text": "Back",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Badge",
+      "end": {
+        "column": 16,
+        "line": 4,
+        "offset": 92
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 81
+      },
+      "text": "New",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 103
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

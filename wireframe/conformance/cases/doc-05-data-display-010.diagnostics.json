@@ -1,0 +1,62 @@
+[
+  {
+    "column": 21,
+    "line": 51,
+    "message": "Unexpected token: ColumnText"
+  },
+  {
+    "column": 32,
+    "line": 51,
+    "message": "Unexpected token: Order ID"
+  },
+  {
+    "column": 21,
+    "line": 52,
+    "message": "Unexpected token: ColumnText"
+  },
+  {
+    "column": 32,
+    "line": 52,
+    "message": "Unexpected token: Customer"
+  },
+  {
+    "column": 21,
+    "line": 53,
+    "message": "Unexpected token: ColumnDate"
+  },
+  {
+    "column": 32,
+    "line": 53,
+    "message": "Unexpected token: Date"
+  },
+  {
+    "column": 21,
+    "line": 54,
+    "message": "Unexpected token: ColumnNumber"
+  },
+  {
+    "column": 34,
+    "line": 54,
+    "message": "Unexpected token: Amount"
+  },
+  {
+    "column": 21,
+    "line": 55,
+    "message": "Unexpected token: ColumnCheckbox"
+  },
+  {
+    "column": 36,
+    "line": 55,
+    "message": "Unexpected token: Paid"
+  },
+  {
+    "column": 21,
+    "line": 56,
+    "message": "Unexpected token: ColumnButton"
+  },
+  {
+    "column": 34,
+    "line": 56,
+    "message": "Unexpected token: View"
+  }
+]

@@ -1,0 +1,566 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "padding": 16,
+        "w": 400
+      },
+      "children": [
+        {
+          "attributes": {
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {
+                "level": 3
+              },
+              "controlType": "Heading",
+              "end": {
+                "column": 43,
+                "line": 4,
+                "offset": 108
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 78
+              },
+              "text": "Team Members",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "gap": 12
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "gap": 12
+                  },
+                  "children": [
+                    {
+                      "attributes": {
+                        "size": "lg"
+                      },
+                      "controlType": "Avatar",
+                      "end": {
+                        "column": 40,
+                        "line": 8,
+                        "offset": 223
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 8,
+                        "offset": 204
+                      },
+                      "text": "JD",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {
+                        "gap": 2
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 45,
+                            "line": 10,
+                            "offset": 303
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 10,
+                            "offset": 283
+                          },
+                          "text": "**John Doe**",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 49,
+                            "line": 11,
+                            "offset": 352
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 11,
+                            "offset": 328
+                          },
+                          "text": "john@example.com",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {
+                            "variant": "info"
+                          },
+                          "controlType": "Badge",
+                          "end": {
+                            "column": 51,
+                            "line": 12,
+                            "offset": 404
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 12,
+                            "offset": 378
+                          },
+                          "text": "Admin",
+                          "type": "Control"
+                        }
+                      ],
+                      "end": {
+                        "column": 30,
+                        "line": 13,
+                        "offset": 434
+                      },
+                      "layoutType": "Vertical",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 9,
+                        "offset": 244
+                      },
+                      "type": "Layout"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Spacer",
+                      "end": {
+                        "column": 27,
+                        "line": 14,
+                        "offset": 461
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 14,
+                        "offset": 455
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {
+                        "icon": "more"
+                      },
+                      "controlType": "IconButton",
+                      "end": {
+                        "column": 41,
+                        "line": 15,
+                        "offset": 502
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 15,
+                        "offset": 482
+                      },
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 16,
+                    "offset": 530
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 7,
+                    "offset": 166
+                  },
+                  "type": "Layout"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Separator",
+                  "end": {
+                    "column": 26,
+                    "line": 18,
+                    "offset": 573
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 18,
+                    "offset": 564
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "gap": 12
+                  },
+                  "children": [
+                    {
+                      "attributes": {
+                        "size": "lg"
+                      },
+                      "controlType": "Avatar",
+                      "end": {
+                        "column": 40,
+                        "line": 21,
+                        "offset": 664
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 21,
+                        "offset": 645
+                      },
+                      "text": "JS",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {
+                        "gap": 2
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 47,
+                            "line": 23,
+                            "offset": 746
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 23,
+                            "offset": 724
+                          },
+                          "text": "**Jane Smith**",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 49,
+                            "line": 24,
+                            "offset": 795
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 24,
+                            "offset": 771
+                          },
+                          "text": "jane@example.com",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {},
+                          "controlType": "Badge",
+                          "end": {
+                            "column": 39,
+                            "line": 25,
+                            "offset": 834
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 25,
+                            "offset": 820
+                          },
+                          "text": "Member",
+                          "type": "Control"
+                        }
+                      ],
+                      "end": {
+                        "column": 30,
+                        "line": 26,
+                        "offset": 864
+                      },
+                      "layoutType": "Vertical",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 22,
+                        "offset": 685
+                      },
+                      "type": "Layout"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Spacer",
+                      "end": {
+                        "column": 27,
+                        "line": 27,
+                        "offset": 891
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 27,
+                        "offset": 885
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {
+                        "icon": "more"
+                      },
+                      "controlType": "IconButton",
+                      "end": {
+                        "column": 41,
+                        "line": 28,
+                        "offset": 932
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 28,
+                        "offset": 912
+                      },
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 29,
+                    "offset": 960
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 20,
+                    "offset": 607
+                  },
+                  "type": "Layout"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Separator",
+                  "end": {
+                    "column": 26,
+                    "line": 31,
+                    "offset": 1003
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 31,
+                    "offset": 994
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "gap": 12
+                  },
+                  "children": [
+                    {
+                      "attributes": {
+                        "size": "lg"
+                      },
+                      "controlType": "Avatar",
+                      "end": {
+                        "column": 40,
+                        "line": 34,
+                        "offset": 1094
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 34,
+                        "offset": 1075
+                      },
+                      "text": "BW",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {
+                        "gap": 2
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 47,
+                            "line": 36,
+                            "offset": 1176
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 36,
+                            "offset": 1154
+                          },
+                          "text": "**Bob Wilson**",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 48,
+                            "line": 37,
+                            "offset": 1224
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 37,
+                            "offset": 1201
+                          },
+                          "text": "bob@example.com",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {
+                            "variant": "warning"
+                          },
+                          "controlType": "Badge",
+                          "end": {
+                            "column": 54,
+                            "line": 38,
+                            "offset": 1278
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 38,
+                            "offset": 1249
+                          },
+                          "text": "Guest",
+                          "type": "Control"
+                        }
+                      ],
+                      "end": {
+                        "column": 30,
+                        "line": 39,
+                        "offset": 1308
+                      },
+                      "layoutType": "Vertical",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 35,
+                        "offset": 1115
+                      },
+                      "type": "Layout"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Spacer",
+                      "end": {
+                        "column": 27,
+                        "line": 40,
+                        "offset": 1335
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 40,
+                        "offset": 1329
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {
+                        "icon": "more"
+                      },
+                      "controlType": "IconButton",
+                      "end": {
+                        "column": 41,
+                        "line": 41,
+                        "offset": 1376
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 41,
+                        "offset": 1356
+                      },
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 42,
+                    "offset": 1404
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 33,
+                    "offset": 1037
+                  },
+                  "type": "Layout"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 43,
+                "offset": 1426
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 134
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 44,
+            "offset": 1444
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 50
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 45,
+        "offset": 1454
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 46,
+    "offset": 1465
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

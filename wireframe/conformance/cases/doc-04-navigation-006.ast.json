@@ -1,0 +1,38 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "current": 2,
+        "steps": 4
+      },
+      "children": [],
+      "componentType": "Stepper",
+      "end": {
+        "column": 1,
+        "line": 3,
+        "offset": 46
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 3,
+    "offset": 56
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

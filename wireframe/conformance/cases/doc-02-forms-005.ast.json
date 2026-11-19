@@ -1,0 +1,110 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 8
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Radio",
+          "end": {
+            "column": 25,
+            "line": 3,
+            "offset": 59
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 43
+          },
+          "text": "Option A",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Radio",
+          "end": {
+            "column": 34,
+            "line": 4,
+            "offset": 93
+          },
+          "modifiers": {
+            "selected": true
+          },
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 68
+          },
+          "text": "Option B",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Radio",
+          "end": {
+            "column": 25,
+            "line": 5,
+            "offset": 118
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 102
+          },
+          "text": "Option C",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Radio",
+          "end": {
+            "column": 34,
+            "line": 6,
+            "offset": 152
+          },
+          "modifiers": {
+            "disabled": true
+          },
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 127
+          },
+          "text": "Disabled",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 7,
+        "offset": 153
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 7,
+    "offset": 163
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

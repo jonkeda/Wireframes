@@ -1,0 +1,5 @@
+wireframe clean
+    Progress value=75
+    Progress value=50 max=100
+    Progress indeterminate
+/wireframe

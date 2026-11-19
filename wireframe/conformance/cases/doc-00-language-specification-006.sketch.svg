@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="104" viewBox="0 0 132 104" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g role="group" aria-label="Title"><text x="16" y="31" class="wire-text">Title</text></g><g role="button" aria-label="Submit"><g opacity="1">
+      <path d="M16.0 51.5 Q66.0 43.1 116.0 52.2 M115.0 52.0 Q116.5 70.0 115.7 88.0 M116.0 88.4 Q66.0 95.6 16.0 88.5 M17.2 88.0 Q18.4 70.0 15.3 52.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="66" y="75" text-anchor="middle" class="wire-text" fill="#333333">Submit</text>
+    </g></g>
+</svg>

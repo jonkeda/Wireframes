@@ -1,0 +1,52 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Label",
+      "end": {
+        "column": 18,
+        "line": 2,
+        "offset": 33
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "No end",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Button",
+      "end": {
+        "column": 18,
+        "line": 3,
+        "offset": 51
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 38
+      },
+      "text": "Next",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 4,
+    "offset": 62
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

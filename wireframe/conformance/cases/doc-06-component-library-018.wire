@@ -1,0 +1,6 @@
+wireframe clean
+    Drawer position=right width=320
+        Heading "Settings" level=2
+        // Drawer content
+    /Drawer
+/wireframe

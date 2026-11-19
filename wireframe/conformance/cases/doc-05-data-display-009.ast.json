@@ -1,0 +1,187 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 8,
+        "w": 400
+      },
+      "children": [
+        {
+          "attributes": {
+            "type": "info"
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 53,
+                "line": 4,
+                "offset": 117
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 77
+              },
+              "text": "This is an informational message",
+              "type": "Control"
+            }
+          ],
+          "componentType": "Alert",
+          "end": {
+            "column": 15,
+            "line": 5,
+            "offset": 132
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 49
+          },
+          "type": "Component"
+        },
+        {
+          "attributes": {
+            "type": "success"
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 53,
+                "line": 7,
+                "offset": 212
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 7,
+                "offset": 172
+              },
+              "text": "Operation completed successfully",
+              "type": "Control"
+            }
+          ],
+          "componentType": "Alert",
+          "end": {
+            "column": 15,
+            "line": 8,
+            "offset": 227
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 141
+          },
+          "type": "Component"
+        },
+        {
+          "attributes": {
+            "type": "warning"
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 48,
+                "line": 10,
+                "offset": 302
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 267
+              },
+              "text": "Please review your settings",
+              "type": "Control"
+            }
+          ],
+          "componentType": "Alert",
+          "end": {
+            "column": 15,
+            "line": 11,
+            "offset": 317
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 9,
+            "offset": 236
+          },
+          "type": "Component"
+        },
+        {
+          "attributes": {
+            "type": "error"
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 38,
+                "line": 13,
+                "offset": 380
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 13,
+                "offset": 355
+              },
+              "text": "An error occurred",
+              "type": "Control"
+            }
+          ],
+          "componentType": "Alert",
+          "end": {
+            "column": 15,
+            "line": 14,
+            "offset": 395
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 12,
+            "offset": 326
+          },
+          "type": "Component"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 15,
+        "offset": 396
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 15,
+    "offset": 406
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

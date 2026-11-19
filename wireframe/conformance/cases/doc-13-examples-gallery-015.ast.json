@@ -1,0 +1,486 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "columns": 3,
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {
+                "height": 150,
+                "width": 200
+              },
+              "binding": "product1",
+              "controlType": "Image",
+              "end": {
+                "column": 49,
+                "line": 4,
+                "offset": 103
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 67
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "level": 3
+              },
+              "controlType": "Heading",
+              "end": {
+                "column": 40,
+                "line": 5,
+                "offset": 143
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 116
+              },
+              "text": "Product 1",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 45,
+                "line": 6,
+                "offset": 188
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 156
+              },
+              "text": "Description of product 1",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Badge",
+                  "end": {
+                    "column": 31,
+                    "line": 8,
+                    "offset": 248
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 8,
+                    "offset": 234
+                  },
+                  "text": "$99.99",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "color": "green"
+                  },
+                  "controlType": "Badge",
+                  "end": {
+                    "column": 45,
+                    "line": 9,
+                    "offset": 293
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 9,
+                    "offset": 265
+                  },
+                  "text": "In Stock",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 10,
+                "offset": 317
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 7,
+                "offset": 201
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 41,
+                "line": 11,
+                "offset": 358
+              },
+              "modifiers": {
+                "primary": true
+              },
+              "start": {
+                "column": 13,
+                "line": 11,
+                "offset": 330
+              },
+              "text": "Add to Cart",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 14,
+            "line": 12,
+            "offset": 372
+          },
+          "modifiers": {},
+          "sectionType": "Card",
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 50
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {
+                "height": 150,
+                "width": 200
+              },
+              "binding": "product2",
+              "controlType": "Image",
+              "end": {
+                "column": 49,
+                "line": 14,
+                "offset": 434
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 14,
+                "offset": 398
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "level": 3
+              },
+              "controlType": "Heading",
+              "end": {
+                "column": 40,
+                "line": 15,
+                "offset": 474
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 15,
+                "offset": 447
+              },
+              "text": "Product 2",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 45,
+                "line": 16,
+                "offset": 519
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 16,
+                "offset": 487
+              },
+              "text": "Description of product 2",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Badge",
+                  "end": {
+                    "column": 32,
+                    "line": 18,
+                    "offset": 580
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 18,
+                    "offset": 565
+                  },
+                  "text": "$149.99",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "color": "yellow"
+                  },
+                  "controlType": "Badge",
+                  "end": {
+                    "column": 47,
+                    "line": 19,
+                    "offset": 627
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 19,
+                    "offset": 597
+                  },
+                  "text": "Low Stock",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 20,
+                "offset": 651
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 17,
+                "offset": 532
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 41,
+                "line": 21,
+                "offset": 692
+              },
+              "modifiers": {
+                "primary": true
+              },
+              "start": {
+                "column": 13,
+                "line": 21,
+                "offset": 664
+              },
+              "text": "Add to Cart",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 14,
+            "line": 22,
+            "offset": 706
+          },
+          "modifiers": {},
+          "sectionType": "Card",
+          "start": {
+            "column": 9,
+            "line": 13,
+            "offset": 381
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {
+                "height": 150,
+                "width": 200
+              },
+              "binding": "product3",
+              "controlType": "Image",
+              "end": {
+                "column": 49,
+                "line": 24,
+                "offset": 768
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 24,
+                "offset": 732
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "level": 3
+              },
+              "controlType": "Heading",
+              "end": {
+                "column": 40,
+                "line": 25,
+                "offset": 808
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 25,
+                "offset": 781
+              },
+              "text": "Product 3",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 45,
+                "line": 26,
+                "offset": 853
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 26,
+                "offset": 821
+              },
+              "text": "Description of product 3",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Badge",
+                  "end": {
+                    "column": 32,
+                    "line": 28,
+                    "offset": 914
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 28,
+                    "offset": 899
+                  },
+                  "text": "$199.99",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "color": "red"
+                  },
+                  "controlType": "Badge",
+                  "end": {
+                    "column": 47,
+                    "line": 29,
+                    "offset": 961
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 29,
+                    "offset": 931
+                  },
+                  "text": "Out of Stock",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 30,
+                "offset": 985
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 27,
+                "offset": 866
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 42,
+                "line": 31,
+                "offset": 1027
+              },
+              "modifiers": {
+                "disabled": true
+              },
+              "start": {
+                "column": 13,
+                "line": 31,
+                "offset": 998
+              },
+              "text": "Add to Cart",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 14,
+            "line": 32,
+            "offset": 1041
+          },
+          "modifiers": {},
+          "sectionType": "Card",
+          "start": {
+            "column": 9,
+            "line": 23,
+            "offset": 715
+          },
+          "type": "Section"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 33,
+        "offset": 1051
+      },
+      "layoutType": "Grid",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 34,
+    "offset": 1062
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

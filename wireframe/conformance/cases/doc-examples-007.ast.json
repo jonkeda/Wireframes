@@ -1,0 +1,250 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "w": 200
+      },
+      "children": [
+        {
+          "attributes": {
+            "gap": 4
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 25,
+                "line": 4,
+                "offset": 81
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 69
+              },
+              "text": "MENU",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "icon": "$home"
+              },
+              "children": [],
+              "componentType": "MenuItem",
+              "end": {
+                "column": 1,
+                "line": 6,
+                "offset": 135
+              },
+              "modifiers": {
+                "selected": true
+              },
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 94
+              },
+              "text": "Dashboard",
+              "type": "Component"
+            },
+            {
+              "attributes": {
+                "icon": "$folder"
+              },
+              "children": [],
+              "componentType": "MenuItem",
+              "end": {
+                "column": 1,
+                "line": 7,
+                "offset": 180
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 147
+              },
+              "text": "Projects",
+              "type": "Component"
+            },
+            {
+              "attributes": {
+                "icon": "$check"
+              },
+              "children": [],
+              "componentType": "MenuItem",
+              "end": {
+                "column": 1,
+                "line": 8,
+                "offset": 221
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 7,
+                "offset": 192
+              },
+              "text": "Tasks",
+              "type": "Component"
+            },
+            {
+              "attributes": {
+                "icon": "$calendar"
+              },
+              "children": [],
+              "componentType": "MenuItem",
+              "end": {
+                "column": 1,
+                "line": 10,
+                "offset": 281
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 8,
+                "offset": 233
+              },
+              "text": "Calendar",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "controlType": "Separator",
+              "end": {
+                "column": 22,
+                "line": 10,
+                "offset": 302
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 293
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 29,
+                "line": 12,
+                "offset": 344
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 12,
+                "offset": 328
+              },
+              "text": "SETTINGS",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "icon": "$user"
+              },
+              "children": [],
+              "componentType": "MenuItem",
+              "end": {
+                "column": 1,
+                "line": 14,
+                "offset": 387
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 13,
+                "offset": 357
+              },
+              "text": "Profile",
+              "type": "Component"
+            },
+            {
+              "attributes": {
+                "icon": "$settings"
+              },
+              "children": [],
+              "componentType": "MenuItem",
+              "end": {
+                "column": 1,
+                "line": 15,
+                "offset": 437
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 14,
+                "offset": 399
+              },
+              "text": "Preferences",
+              "type": "Component"
+            },
+            {
+              "attributes": {
+                "icon": "$info"
+              },
+              "children": [],
+              "componentType": "MenuItem",
+              "end": {
+                "column": 1,
+                "line": 16,
+                "offset": 476
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 15,
+                "offset": 449
+              },
+              "text": "Help",
+              "type": "Component"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 16,
+            "offset": 493
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 42
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 13,
+        "line": 17,
+        "offset": 506
+      },
+      "modifiers": {},
+      "sectionType": "Sidebar",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 18,
+    "offset": 517
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

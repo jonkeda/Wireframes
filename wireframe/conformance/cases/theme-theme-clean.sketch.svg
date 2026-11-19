@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="833" viewBox="0 0 800 833" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g role="group" aria-label="**Clean Theme**"><text x="16" y="31" class="wire-text wire-text-bold">Clean Theme</text></g><g role="group" aria-label="A modern, minimal design with clean lines and subtle shadows."><text x="16" y="67" class="wire-text">A modern, minimal design with clean lines and subtle shadows.</text></g><g role="group"><line x1="16" y1="88" x2="216" y2="88" stroke="#888888" stroke-width="1" /></g><path d="M16.0 105.7 Q204.0 100.3 392.0 105.1 M392.7 105.0 Q387.7 344.5 391.7 584.0 M392.0 583.1 Q204.0 587.2 16.0 584.3 M15.4 584.0 Q23.4 344.5 15.2 105.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="**Form Example**"><text x="32" y="136" class="wire-text wire-text-bold">Form Example</text></g><g role="textbox" aria-label="Enter your name" aria-required="true" aria-placeholder="Enter your name"><g>
+      <path d="M32.0 149.5 Q132.0 149.0 232.0 149.3 M232.9 149.0 Q235.7 167.0 231.9 185.0 M232.0 184.4 Q132.0 185.9 32.0 185.7 M31.2 185.0 Q28.4 167.0 32.4 149.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="172" class="wire-text wire-text-secondary">Enter your name</text>
+      <text x="220" y="172" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="textbox" aria-label="Enter your email" aria-placeholder="Enter your email"><g>
+      <path d="M32.0 193.0 Q132.0 193.0 232.0 194.2 M233.4 193.0 Q234.3 211.0 232.0 229.0 M232.0 228.8 Q132.0 229.9 32.0 228.9 M30.7 229.0 Q29.9 211.0 32.6 193.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="216" class="wire-text wire-text-secondary">Enter your email</text>
+      
+    </g></g><g role="button" aria-label="Submit"><g opacity="1">
+      <path d="M32.0 236.4 Q82.0 229.9 132.0 237.3 M131.1 237.0 Q129.2 255.0 132.2 273.0 M132.0 273.5 Q82.0 277.8 32.0 273.4 M33.1 273.0 Q32.6 255.0 32.1 237.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="82" y="260" text-anchor="middle" class="wire-text" fill="#ffffff">Submit</text>
+    </g></g><g role="button" aria-label="Cancel"><g opacity="1">
+      <path d="M140.0 237.0 Q190.0 241.5 240.0 237.7 M241.4 237.0 Q242.9 255.0 239.4 273.0 M240.0 272.8 Q190.0 270.5 140.0 272.0 M138.7 273.0 Q138.7 255.0 139.8 237.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="190" y="260" text-anchor="middle" class="wire-text" fill="#333333">Cancel</text>
+    </g></g><path d="M408.0 106.0 Q596.0 107.7 784.0 106.0 M784.5 105.0 Q788.3 344.5 782.9 584.0 M784.0 582.9 Q596.0 578.2 408.0 584.1 M407.6 584.0 Q406.8 344.5 408.0 105.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="**Controls**"><text x="424" y="136" class="wire-text wire-text-bold">Controls</text></g><g role="checkbox" aria-label="Remember me" aria-checked="true"><g><rect x="424" y="152" width="18" height="18" rx="2" fill="#ffffff" stroke="#888888" stroke-width="2" /><path d="M428 161 L432 165 L438 157" stroke="#4a90d9" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" /><text x="450" y="166" class="wire-text">Remember me</text></g></g><g role="checkbox" aria-label="Send notifications" aria-checked="false"><g><rect x="424" y="184" width="18" height="18" rx="2" fill="#ffffff" stroke="#888888" stroke-width="2" /><text x="450" y="198" class="wire-text">Send notifications</text></g></g><g role="switch" aria-label="Dark mode" aria-checked="false"><g><rect x="424" y="213" width="44" height="24" rx="12" fill="#888888" /><circle cx="436" cy="225" r="10" fill="#fefefe" /><text x="476" y="230" class="wire-text">Dark mode</text></g></g><g role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><g>
+      <rect x="424" y="245" width="200" height="8" rx="4" fill="#f5f5f5" />
+      <rect x="424" y="245" width="130" height="8" rx="4" fill="#4a90d9" />
+    </g></g><g role="group"><line x1="16" y1="600" x2="216" y2="600" stroke="#888888" stroke-width="1" /></g><path d="M16.0 617.6 Q204.0 621.2 392.0 618.3 M392.8 617.0 Q392.7 657.0 391.3 697.0 M392.0 696.3 Q204.0 689.7 16.0 696.8 M15.3 697.0 Q14.9 657.0 15.7 617.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="**Status Badges**"><text x="32" y="648" class="wire-text wire-text-bold">Status Badges</text></g><g role="group" aria-label="Active"><g>
+      <rect x="32" y="657" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="44" y="673" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">Active</text>
+    </g></g><g role="group" aria-label="Pending"><g>
+      <rect x="64" y="657" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="76" y="673" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">Pending</text>
+    </g></g><g role="group" aria-label="Error"><g>
+      <rect x="96" y="657" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="108" y="673" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">Error</text>
+    </g></g><path d="M408.0 616.2 Q596.0 623.2 784.0 618.1 M783.2 617.0 Q785.4 717.0 783.4 817.0 M784.0 817.6 Q596.0 807.7 408.0 816.9 M408.9 817.0 Q407.9 717.0 407.5 617.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="**Navigation**"><text x="424" y="648" class="wire-text wire-text-bold">Navigation</text></g><path d="M424.0 656.3 Q596.0 658.5 768.0 655.8 M767.2 657.0 Q774.1 729.0 768.4 801.0 M768.0 801.6 Q596.0 800.4 424.0 800.3 M425.0 801.0 Q417.0 729.0 424.2 657.0" fill="none" stroke="#888888" stroke-width="2" />
+</svg>

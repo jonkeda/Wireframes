@@ -1,0 +1,4 @@
+wireframe clean
+    DateInput "Select date" :txtDate
+    DateInput "Birthday" :txtBirth required
+/wireframe

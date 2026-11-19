@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="232" height="260" viewBox="0 0 232 260" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g role="textbox" aria-label="Enter your name" aria-placeholder="Enter your name"><g>
+      <path d="M16.0 15.2 Q116.0 12.0 216.0 15.8 M215.2 16.0 Q212.4 34.0 217.5 52.0 M216.0 52.7 Q116.0 52.5 16.0 53.3 M16.9 52.0 Q17.3 34.0 14.8 16.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="39" class="wire-text wire-text-secondary">Enter your name</text>
+      
+    </g></g><g role="textbox" aria-label="Email" aria-required="true" aria-placeholder="Email"><g>
+      <path d="M16.0 63.8 Q116.0 68.8 216.0 63.6 M214.7 64.0 Q216.6 82.0 216.2 100.0 M216.0 100.1 Q116.0 93.1 16.0 100.1 M17.5 100.0 Q16.5 82.0 14.7 64.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="87" class="wire-text wire-text-secondary">Email</text>
+      <text x="204" y="87" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="textbox" aria-label="John Doe" aria-placeholder="John Doe"><g>
+      <path d="M16.0 112.3 Q116.0 108.2 216.0 112.9 M217.1 112.0 Q212.9 130.0 216.3 148.0 M216.0 147.5 Q116.0 152.7 16.0 148.2 M15.0 148.0 Q16.9 130.0 15.9 112.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="135" class="wire-text wire-text-secondary">John Doe</text>
+      
+    </g></g><g role="textbox" aria-label="Disabled" aria-disabled="true" aria-placeholder="Disabled"><g>
+      <path d="M16.0 160.9 Q116.0 164.6 216.0 160.7 M216.5 160.0 Q216.6 178.0 215.1 196.0 M216.0 195.0 Q116.0 189.4 16.0 195.0 M15.6 196.0 Q14.2 178.0 15.8 160.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="183" class="wire-text wire-text-secondary">Disabled</text>
+      
+    </g></g><g role="textbox" aria-label="Read only" aria-placeholder="Read only"><g>
+      <path d="M16.0 209.5 Q116.0 203.9 216.0 207.0 M216.0 208.0 Q212.5 226.0 215.2 244.0 M216.0 245.4 Q116.0 245.4 16.0 243.1 M16.2 244.0 Q17.3 226.0 17.1 208.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="231" class="wire-text wire-text-secondary">Read only</text>
+      
+    </g></g>
+</svg>

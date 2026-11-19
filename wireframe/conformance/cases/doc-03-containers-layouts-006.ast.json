@@ -1,0 +1,194 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "h": 300,
+        "w": 400
+      },
+      "children": [
+        {
+          "attributes": {
+            "dock": "top",
+            "h": 50
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 31,
+                "line": 4,
+                "offset": 96
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 78
+              },
+              "text": "Top Header",
+              "type": "Control"
+            }
+          ],
+          "dock": "top",
+          "end": {
+            "column": 16,
+            "line": 5,
+            "offset": 112
+          },
+          "modifiers": {},
+          "sectionType": "Header",
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 45
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {
+            "dock": "bottom",
+            "h": 40
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 34,
+                "line": 7,
+                "offset": 178
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 7,
+                "offset": 157
+              },
+              "text": "Bottom Footer",
+              "type": "Control"
+            }
+          ],
+          "dock": "bottom",
+          "end": {
+            "column": 16,
+            "line": 8,
+            "offset": 194
+          },
+          "modifiers": {},
+          "sectionType": "Footer",
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 121
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {
+            "dock": "left",
+            "w": 100
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 25,
+                "line": 10,
+                "offset": 251
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 239
+              },
+              "text": "Left",
+              "type": "Control"
+            }
+          ],
+          "dock": "left",
+          "end": {
+            "column": 17,
+            "line": 11,
+            "offset": 268
+          },
+          "modifiers": {},
+          "sectionType": "Sidebar",
+          "start": {
+            "column": 9,
+            "line": 9,
+            "offset": 203
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {
+            "dock": "fill"
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 33,
+                "line": 13,
+                "offset": 327
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 13,
+                "offset": 307
+              },
+              "text": "Main Content",
+              "type": "Control"
+            }
+          ],
+          "dock": "fill",
+          "end": {
+            "column": 17,
+            "line": 14,
+            "offset": 344
+          },
+          "modifiers": {},
+          "sectionType": "Content",
+          "start": {
+            "column": 9,
+            "line": 12,
+            "offset": 277
+          },
+          "type": "Section"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 15,
+        "offset": 354
+      },
+      "layoutType": "Dock",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 16,
+    "offset": 365
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

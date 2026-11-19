@@ -1,0 +1,11 @@
+wireframe clean
+    Modal
+        Dialog "Confirm Action"
+            Label "Are you sure?"
+            Horizontal gap=8
+                Button "Cancel" secondary
+                Button "Confirm" primary
+            /Horizontal
+        /Dialog
+    /Modal
+/wireframe

@@ -1,0 +1,3 @@
+wireframe clean
+    TextInput :Name label="Name" placeholder="e.g. Office" required
+/wireframe

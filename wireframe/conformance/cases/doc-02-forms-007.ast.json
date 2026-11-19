@@ -1,0 +1,95 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 16,
+        "w": 300
+      },
+      "children": [
+        {
+          "attributes": {
+            "value": 50
+          },
+          "controlType": "Slider",
+          "end": {
+            "column": 24,
+            "line": 3,
+            "offset": 65
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 50
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "value": 75
+          },
+          "controlType": "Slider",
+          "end": {
+            "column": 24,
+            "line": 4,
+            "offset": 89
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 74
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "value": 25
+          },
+          "controlType": "Slider",
+          "end": {
+            "column": 33,
+            "line": 5,
+            "offset": 122
+          },
+          "modifiers": {
+            "disabled": true
+          },
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 98
+          },
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 6,
+        "offset": 123
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 6,
+    "offset": 133
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

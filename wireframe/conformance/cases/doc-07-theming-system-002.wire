@@ -1,0 +1,15 @@
+wireframe clean
+    // Uses clean theme
+/wireframe
+
+wireframe sketch
+    // Uses sketch theme
+/wireframe
+
+wireframe blueprint
+    // Uses blueprint theme
+/wireframe
+
+wireframe realistic
+    // Uses realistic theme
+/wireframe

@@ -1,0 +1,10 @@
+wireframe clean
+    Accordion
+        AccordionSection "Section 1" expanded
+            Label "Content 1"
+        /AccordionSection
+        AccordionSection "Section 2"
+            Label "Content 2"
+        /AccordionSection
+    /Accordion
+/wireframe

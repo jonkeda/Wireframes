@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: "Courier New", monospace; font-size: 14px; fill: #ffffff; }
+    .wire-text-secondary { fill: #a0c4e8; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#1e3a5f" />
+  <rect x="16" y="16" width="768" height="568" rx="8" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Clean Theme"><text x="32" y="54.67" class="wire-text wire-text-bold" style="font-size: 20px">Clean Theme</text></g><g role="group" aria-label="Modern and polished"><text x="32" y="91" class="wire-text">Modern and polished</text></g><g role="button" aria-label="Primary Action"><g opacity="1">
+      <rect x="32" y="108" width="144" height="36" rx="4" fill="#ffffff" stroke="#4a7ab0" stroke-width="1" />
+      <text x="104" y="131" text-anchor="middle" class="wire-text" fill="#1e3a5f">Primary Action</text>
+    </g></g><g role="textbox" aria-label="Enter text" aria-placeholder="Enter text"><g>
+      <rect x="32" y="156" width="200" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
+      <text x="44" y="179" class="wire-text wire-text-secondary">Enter text</text>
+      
+    </g></g>
+</svg>

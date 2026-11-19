@@ -1,0 +1,128 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "w": 300
+      },
+      "children": [
+        {
+          "attributes": {
+            "gap": 12
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 40,
+                "line": 4,
+                "offset": 98
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 71
+              },
+              "text": "**Blueprint Theme**",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 49,
+                "line": 5,
+                "offset": 147
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 111
+              },
+              "text": "Technical, grid-based design",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 37,
+                "line": 6,
+                "offset": 184
+              },
+              "modifiers": {
+                "primary": true
+              },
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 160
+              },
+              "text": "Primary",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 29,
+                "line": 7,
+                "offset": 213
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 7,
+                "offset": 197
+              },
+              "text": "Default",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 8,
+            "offset": 231
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 43
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 9,
+        "offset": 241
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 24
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 10,
+    "offset": 252
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "blueprint",
+  "type": "Document"
+}

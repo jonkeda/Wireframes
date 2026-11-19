@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: "Courier New", monospace; font-size: 14px; fill: #ffffff; }
+    .wire-text-secondary { fill: #a0c4e8; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#1e3a5f" />
+  <rect x="16" y="16" width="768" height="568" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><g role="group" aria-label="**Dashboard**"><text x="32" y="47" class="wire-text wire-text-bold">Dashboard</text></g><g role="img"><path d="M194 42 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0 M197 45 L204 52" stroke="#ffffff" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" /></g><g role="img"><rect x="224" y="32" width="24" height="24" rx="2" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2,2" /></g><g role="group" aria-label="JD"><g>
+      <circle cx="284" cy="52" r="20" fill="#ffffff" />
+      <text x="284" y="56.44" text-anchor="middle" class="wire-text" style="font-size: 13.33px" fill="#1e3a5f">J</text>
+    </g></g>
+</svg>

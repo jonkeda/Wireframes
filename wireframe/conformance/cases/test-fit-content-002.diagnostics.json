@@ -1,0 +1,47 @@
+[
+  {
+    "column": 10,
+    "line": 1,
+    "message": "Unexpected character: \\"
+  },
+  {
+    "column": 20,
+    "line": 1,
+    "message": "Unexpected character: \\"
+  },
+  {
+    "column": 47,
+    "line": 1,
+    "message": "Unexpected character: \\"
+  },
+  {
+    "column": 58,
+    "line": 1,
+    "message": "Unexpected character: \\"
+  },
+  {
+    "column": 16,
+    "line": 1,
+    "message": "Unknown wireframe style: n"
+  },
+  {
+    "column": 21,
+    "line": 1,
+    "message": "Unexpected token: n"
+  },
+  {
+    "column": 48,
+    "line": 1,
+    "message": "Unexpected token: n"
+  },
+  {
+    "column": 53,
+    "line": 1,
+    "message": "Unexpected /Card: no Card is open here"
+  },
+  {
+    "column": 59,
+    "line": 1,
+    "message": "Unexpected token: n"
+  }
+]

@@ -1,0 +1,188 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "width": 240
+      },
+      "children": [
+        {
+          "attributes": {
+            "level": 3
+          },
+          "controlType": "Heading",
+          "end": {
+            "column": 37,
+            "line": 3,
+            "offset": 71
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 43
+          },
+          "text": "Navigation",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "MenuItem",
+              "end": {
+                "column": 1,
+                "line": 6,
+                "offset": 131
+              },
+              "icon": "home",
+              "modifiers": {
+                "active": true
+              },
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 97
+              },
+              "text": "Home",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "MenuItem",
+              "end": {
+                "column": 1,
+                "line": 7,
+                "offset": 175
+              },
+              "icon": "file",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 143
+              },
+              "text": "Documents",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "MenuItem",
+              "end": {
+                "column": 1,
+                "line": 8,
+                "offset": 217
+              },
+              "icon": "image",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 7,
+                "offset": 187
+              },
+              "text": "Images",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "controlType": "Separator",
+              "end": {
+                "column": 22,
+                "line": 8,
+                "offset": 238
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 8,
+                "offset": 229
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "MenuItem",
+              "end": {
+                "column": 1,
+                "line": 10,
+                "offset": 286
+              },
+              "icon": "settings",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 251
+              },
+              "text": "Settings",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "MenuItem",
+              "end": {
+                "column": 1,
+                "line": 11,
+                "offset": 325
+              },
+              "icon": "help",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 298
+              },
+              "text": "Help",
+              "type": "Component"
+            }
+          ],
+          "componentType": "Menu",
+          "end": {
+            "column": 14,
+            "line": 11,
+            "offset": 338
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 80
+          },
+          "type": "Component"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 12,
+        "offset": 348
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 13,
+    "offset": 359
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

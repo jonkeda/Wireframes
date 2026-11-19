@@ -1,0 +1,114 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 12
+      },
+      "children": [
+        {
+          "attributes": {},
+          "binding": "username",
+          "controlType": "TextInput",
+          "end": {
+            "column": 48,
+            "line": 3,
+            "offset": 83
+          },
+          "modifiers": {
+            "required": true
+          },
+          "placeholder": "Username",
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 44
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "binding": "email",
+          "controlType": "TextInput",
+          "end": {
+            "column": 33,
+            "line": 4,
+            "offset": 116
+          },
+          "modifiers": {},
+          "placeholder": "Email",
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 92
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "binding": "password",
+          "controlType": "TextInput",
+          "end": {
+            "column": 39,
+            "line": 5,
+            "offset": 155
+          },
+          "modifiers": {},
+          "placeholder": "Password",
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 125
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "binding": "disabled",
+          "controlType": "TextInput",
+          "end": {
+            "column": 48,
+            "line": 6,
+            "offset": 203
+          },
+          "modifiers": {
+            "disabled": true
+          },
+          "placeholder": "Disabled",
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 164
+          },
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 7,
+        "offset": 217
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 228
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,655 @@
+{
+  "attributes": {
+    "title": "Skeleton Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 38,
+            "line": 6,
+            "offset": 133
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 104
+          },
+          "text": "**Loading Skeletons**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "attributes": {
+                "height": 24,
+                "width": 200
+              },
+              "controlType": "Skeleton",
+              "end": {
+                "column": 41,
+                "line": 9,
+                "offset": 198
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 170
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "height": 16,
+                "width": 300
+              },
+              "controlType": "Skeleton",
+              "end": {
+                "column": 41,
+                "line": 10,
+                "offset": 239
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 211
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "height": 16,
+                "width": 250
+              },
+              "controlType": "Skeleton",
+              "end": {
+                "column": 41,
+                "line": 11,
+                "offset": 280
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 11,
+                "offset": 252
+              },
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 12,
+            "offset": 298
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 143
+          },
+          "type": "Layout"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 14,
+            "offset": 317
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 14,
+            "offset": 308
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 34,
+            "line": 16,
+            "offset": 352
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 16,
+            "offset": 327
+          },
+          "text": "**Card Skeleton**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "padding": 16
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 16
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "height": 64,
+                    "width": 64
+                  },
+                  "controlType": "Skeleton",
+                  "end": {
+                    "column": 51,
+                    "line": 20,
+                    "offset": 458
+                  },
+                  "modifiers": {
+                    "circle": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 20,
+                    "offset": 424
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "gap": 8
+                  },
+                  "children": [
+                    {
+                      "attributes": {
+                        "height": 20,
+                        "width": 150
+                      },
+                      "controlType": "Skeleton",
+                      "end": {
+                        "column": 49,
+                        "line": 22,
+                        "offset": 538
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 22,
+                        "offset": 510
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {
+                        "height": 14,
+                        "width": 200
+                      },
+                      "controlType": "Skeleton",
+                      "end": {
+                        "column": 49,
+                        "line": 23,
+                        "offset": 587
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 23,
+                        "offset": 559
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {
+                        "height": 14,
+                        "width": 180
+                      },
+                      "controlType": "Skeleton",
+                      "end": {
+                        "column": 49,
+                        "line": 24,
+                        "offset": 636
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 24,
+                        "offset": 608
+                      },
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 26,
+                    "line": 25,
+                    "offset": 662
+                  },
+                  "layoutType": "Vertical",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 21,
+                    "offset": 475
+                  },
+                  "type": "Layout"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 26,
+                "offset": 686
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 19,
+                "offset": 390
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 14,
+            "line": 27,
+            "offset": 700
+          },
+          "modifiers": {},
+          "sectionType": "Card",
+          "start": {
+            "column": 9,
+            "line": 18,
+            "offset": 362
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 29,
+            "offset": 719
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 29,
+            "offset": 710
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 34,
+            "line": 31,
+            "offset": 754
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 31,
+            "offset": 729
+          },
+          "text": "**List Skeleton**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 12
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 12
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "height": 40,
+                    "width": 40
+                  },
+                  "controlType": "Skeleton",
+                  "end": {
+                    "column": 51,
+                    "line": 35,
+                    "offset": 860
+                  },
+                  "modifiers": {
+                    "circle": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 35,
+                    "offset": 826
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "gap": 4
+                  },
+                  "children": [
+                    {
+                      "attributes": {
+                        "height": 16,
+                        "width": 120
+                      },
+                      "controlType": "Skeleton",
+                      "end": {
+                        "column": 49,
+                        "line": 37,
+                        "offset": 940
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 37,
+                        "offset": 912
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {
+                        "height": 12,
+                        "width": 180
+                      },
+                      "controlType": "Skeleton",
+                      "end": {
+                        "column": 49,
+                        "line": 38,
+                        "offset": 989
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 38,
+                        "offset": 961
+                      },
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 26,
+                    "line": 39,
+                    "offset": 1015
+                  },
+                  "layoutType": "Vertical",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 36,
+                    "offset": 877
+                  },
+                  "type": "Layout"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 40,
+                "offset": 1039
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 34,
+                "offset": 792
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "gap": 12
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "height": 40,
+                    "width": 40
+                  },
+                  "controlType": "Skeleton",
+                  "end": {
+                    "column": 51,
+                    "line": 42,
+                    "offset": 1120
+                  },
+                  "modifiers": {
+                    "circle": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 42,
+                    "offset": 1086
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "gap": 4
+                  },
+                  "children": [
+                    {
+                      "attributes": {
+                        "height": 16,
+                        "width": 140
+                      },
+                      "controlType": "Skeleton",
+                      "end": {
+                        "column": 49,
+                        "line": 44,
+                        "offset": 1200
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 44,
+                        "offset": 1172
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {
+                        "height": 12,
+                        "width": 160
+                      },
+                      "controlType": "Skeleton",
+                      "end": {
+                        "column": 49,
+                        "line": 45,
+                        "offset": 1249
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 45,
+                        "offset": 1221
+                      },
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 26,
+                    "line": 46,
+                    "offset": 1275
+                  },
+                  "layoutType": "Vertical",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 43,
+                    "offset": 1137
+                  },
+                  "type": "Layout"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 47,
+                "offset": 1299
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 41,
+                "offset": 1052
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "gap": 12
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "height": 40,
+                    "width": 40
+                  },
+                  "controlType": "Skeleton",
+                  "end": {
+                    "column": 51,
+                    "line": 49,
+                    "offset": 1380
+                  },
+                  "modifiers": {
+                    "circle": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 49,
+                    "offset": 1346
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "gap": 4
+                  },
+                  "children": [
+                    {
+                      "attributes": {
+                        "height": 16,
+                        "width": 100
+                      },
+                      "controlType": "Skeleton",
+                      "end": {
+                        "column": 49,
+                        "line": 51,
+                        "offset": 1460
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 51,
+                        "offset": 1432
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {
+                        "height": 12,
+                        "width": 200
+                      },
+                      "controlType": "Skeleton",
+                      "end": {
+                        "column": 49,
+                        "line": 52,
+                        "offset": 1509
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 52,
+                        "offset": 1481
+                      },
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 26,
+                    "line": 53,
+                    "offset": 1535
+                  },
+                  "layoutType": "Vertical",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 50,
+                    "offset": 1397
+                  },
+                  "type": "Layout"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 54,
+                "offset": 1559
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 48,
+                "offset": 1312
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 55,
+            "offset": 1577
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 33,
+            "offset": 764
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 56,
+        "offset": 1591
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 80
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 57,
+    "offset": 1602
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 29
+  },
+  "style": "clean",
+  "type": "Document"
+}

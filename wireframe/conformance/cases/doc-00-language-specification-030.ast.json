@@ -1,0 +1,95 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "MenuItem",
+          "end": {
+            "column": 1,
+            "line": 4,
+            "offset": 67
+          },
+          "icon": "home",
+          "modifiers": {
+            "active": true
+          },
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 33
+          },
+          "text": "Home",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "MenuItem",
+          "end": {
+            "column": 1,
+            "line": 5,
+            "offset": 110
+          },
+          "icon": "settings",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 75
+          },
+          "text": "Settings",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "MenuItem",
+          "end": {
+            "column": 1,
+            "line": 6,
+            "offset": 149
+          },
+          "icon": "logout",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 118
+          },
+          "text": "Logout",
+          "type": "Component"
+        }
+      ],
+      "componentType": "Menu",
+      "end": {
+        "column": 10,
+        "line": 6,
+        "offset": 158
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 7,
+    "offset": 169
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

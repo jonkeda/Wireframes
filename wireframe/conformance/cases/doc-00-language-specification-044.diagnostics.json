@@ -1,0 +1,17 @@
+[
+  {
+    "column": 5,
+    "line": 2,
+    "message": "Unexpected token: Element"
+  },
+  {
+    "column": 13,
+    "line": 2,
+    "message": "Unexpected token: attribute=value"
+  },
+  {
+    "column": 29,
+    "line": 2,
+    "message": "Unexpected token: attribute2=string value"
+  }
+]

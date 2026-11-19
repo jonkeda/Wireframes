@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1254" viewBox="0 0 800 1254" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g role="group" aria-label="**Basic Card**"><text x="16" y="31" class="wire-text wire-text-bold">Basic Card</text></g><path d="M16.0 51.4 Q400.0 45.1 784.0 51.4 M783.1 52.0 Q779.4 318.0 785.1 584.0 M784.0 584.5 Q400.0 588.6 16.0 585.3 M17.0 584.0 Q18.7 318.0 15.2 52.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="This is a simple card with padding."><text x="32" y="83" class="wire-text">This is a simple card with padding.</text></g><g role="group"><line x1="16" y1="600" x2="216" y2="600" stroke="#888888" stroke-width="1" /></g><g role="group" aria-label="**Card with Header**"><text x="16" y="632" class="wire-text wire-text-bold">Card with Header</text></g><path d="M16.0 653.9 Q400.0 648.4 784.0 653.6 M784.5 653.0 Q778.5 763.0 784.6 873.0 M784.0 872.0 Q400.0 874.5 16.0 873.4 M15.6 873.0 Q23.5 763.0 15.7 653.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><path d="M32.0 668.7 Q400.0 672.2 768.0 668.4 M766.7 669.0 Q770.3 695.0 766.5 721.0 M768.0 721.1 Q400.0 718.7 32.0 719.7 M33.4 721.0 Q28.8 695.0 32.8 669.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="**Card Title**"><text x="48" y="700" class="wire-text wire-text-bold">Card Title</text></g><path d="M32.0 729.4 Q400.0 727.1 768.0 730.4 M769.0 729.0 Q763.5 755.0 768.8 781.0 M768.0 780.4 Q400.0 779.2 32.0 780.0 M31.1 781.0 Q26.7 755.0 31.3 729.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="Card content goes here."><text x="48" y="760" class="wire-text">Card content goes here.</text></g><path d="M32.0 788.1 Q400.0 790.4 768.0 789.6 M767.3 789.0 Q775.0 823.0 767.3 857.0 M768.0 857.7 Q400.0 856.0 32.0 857.5 M32.8 857.0 Q28.1 823.0 32.0 789.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="button" aria-label="Cancel"><g opacity="1">
+      <path d="M48.0 804.0 Q98.0 802.9 148.0 803.8 M147.4 805.0 Q145.2 823.0 146.8 841.0 M148.0 841.8 Q98.0 844.0 48.0 840.3 M48.7 841.0 Q49.7 823.0 48.2 805.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="98" y="828" text-anchor="middle" class="wire-text" fill="#333333">Cancel</text>
+    </g></g><g role="button" aria-label="Save"><g opacity="1">
+      <path d="M156.0 804.7 Q206.0 810.9 256.0 804.2 M254.7 805.0 Q255.7 823.0 256.7 841.0 M256.0 841.2 Q206.0 836.0 156.0 839.9 M157.4 841.0 Q155.1 823.0 157.3 805.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="206" y="828" text-anchor="middle" class="wire-text" fill="#ffffff">Save</text>
+    </g></g><g role="group"><line x1="16" y1="889" x2="216" y2="889" stroke="#888888" stroke-width="1" /></g><g role="group" aria-label="**Product Card**"><text x="16" y="921" class="wire-text wire-text-bold">Product Card</text></g><path d="M16.0 940.8 Q400.0 935.4 784.0 941.8 M783.7 942.0 Q779.9 1090.0 784.4 1238.0 M784.0 1239.1 Q400.0 1242.8 16.0 1238.9 M16.4 1238.0 Q19.2 1090.0 14.6 942.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="img" aria-label="Product Image" aria-placeholder="Product Image"><g>
+      <rect x="32" y="958" width="150" height="100" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
+      <line x1="32" y1="958" x2="182" y2="1058" stroke="#888888" stroke-width="1" />
+      <line x1="182" y1="958" x2="32" y2="1058" stroke="#888888" stroke-width="1" />
+      <text x="107" y="1013" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Image</text>
+    </g></g><g role="group" aria-label="**Product Name**"><text x="48" y="1097" class="wire-text wire-text-bold">Product Name</text></g><g role="group" aria-label="A great product description"><text x="48" y="1125" class="wire-text">A great product description</text></g><g role="group" aria-label="**$29.99**"><text x="48" y="1153" class="wire-text wire-text-bold">$29.99</text></g><g role="group" aria-label="Sale"><g>
+      <rect x="136" y="1138" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="148" y="1154" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">Sale</text>
+    </g></g><g role="button" aria-label="Add to Cart"><g opacity="1">
+      <path d="M48.0 1171.3 Q108.0 1163.8 168.0 1170.6 M168.1 1170.0 Q166.2 1188.0 167.3 1206.0 M168.0 1204.5 Q108.0 1213.0 48.0 1206.2 M48.0 1206.0 Q48.7 1188.0 47.6 1170.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="108" y="1193" text-anchor="middle" class="wire-text" fill="#ffffff">Add to Cart</text>
+    </g></g>
+</svg>

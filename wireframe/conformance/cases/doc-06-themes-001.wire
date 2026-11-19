@@ -1,0 +1,10 @@
+wireframe clean
+    Card w=300 padding=16
+        Vertical gap=12
+            Heading "Clean Theme" level=2
+            Label "Modern and polished"
+            Button "Primary Action" primary
+            TextInput placeholder="Enter text"
+        /Vertical
+    /Card
+/wireframe

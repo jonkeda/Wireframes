@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <rect x="16" y="16" width="768" height="568" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Form States"><text x="32" y="54" class="wire-text wire-text-bold" style="font-size: 18px">Form States</text></g><g role="group" aria-label="Normal Input"><text x="32" y="95" class="wire-text">Normal Input</text></g><g role="textbox" aria-label="Enter text" aria-placeholder="Enter text"><g>
+      <rect x="32" y="104" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="127" class="wire-text wire-text-secondary">Enter text</text>
+      
+    </g></g><g role="group" aria-label="Required Field *"><text x="32" y="171" class="wire-text">Required Field *</text></g><g role="textbox" aria-label="Required" aria-required="true" aria-placeholder="Required"><g>
+      <rect x="32" y="180" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="203" class="wire-text wire-text-secondary">Required</text>
+      <text x="220" y="203" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="group" aria-label="Disabled Input"><text x="32" y="247" class="wire-text">Disabled Input</text></g><g role="textbox" aria-label="Cannot edit" aria-disabled="true" aria-placeholder="Cannot edit"><g>
+      <rect x="32" y="256" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="279" class="wire-text wire-text-secondary">Cannot edit</text>
+      
+    </g></g><g role="group" aria-label="Read Only"><text x="32" y="323" class="wire-text">Read Only</text></g><g role="textbox" aria-label="Fixed value" aria-placeholder="Fixed value"><g>
+      <rect x="32" y="332" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="355" class="wire-text wire-text-secondary">Fixed value</text>
+      
+    </g></g>
+</svg>

@@ -1,0 +1,604 @@
+{
+  "attributes": {
+    "title": "Modal and Dialog Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 26,
+            "line": 6,
+            "offset": 147
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 130
+          },
+          "text": "**Modal**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "title": "Confirm Action"
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 16
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 58,
+                    "line": 10,
+                    "offset": 271
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 10,
+                    "offset": 230
+                  },
+                  "text": "Are you sure you want to proceed?",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 54,
+                    "line": 11,
+                    "offset": 325
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 11,
+                    "offset": 288
+                  },
+                  "text": "This action cannot be undone.",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "gap": 8
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Button",
+                      "end": {
+                        "column": 36,
+                        "line": 14,
+                        "offset": 395
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 14,
+                        "offset": 380
+                      },
+                      "text": "Cancel",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Button",
+                      "end": {
+                        "column": 45,
+                        "line": 15,
+                        "offset": 440
+                      },
+                      "modifiers": {
+                        "primary": true
+                      },
+                      "start": {
+                        "column": 21,
+                        "line": 15,
+                        "offset": 416
+                      },
+                      "text": "Confirm",
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 16,
+                    "offset": 468
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 13,
+                    "offset": 343
+                  },
+                  "type": "Layout"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 17,
+                "offset": 490
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 198
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 15,
+            "line": 18,
+            "offset": 505
+          },
+          "modifiers": {},
+          "sectionType": "Modal",
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 157
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 20,
+            "offset": 524
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 20,
+            "offset": 515
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 27,
+            "line": 22,
+            "offset": 552
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 22,
+            "offset": 534
+          },
+          "text": "**Dialog**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "title": "Edit Profile"
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 16
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "gap": 4
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 34,
+                        "line": 27,
+                        "offset": 682
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 27,
+                        "offset": 669
+                      },
+                      "text": "Name:",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "TextInput",
+                      "end": {
+                        "column": 41,
+                        "line": 28,
+                        "offset": 723
+                      },
+                      "modifiers": {},
+                      "placeholder": "John Doe",
+                      "start": {
+                        "column": 21,
+                        "line": 28,
+                        "offset": 703
+                      },
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 26,
+                    "line": 29,
+                    "offset": 749
+                  },
+                  "layoutType": "Vertical",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 26,
+                    "offset": 634
+                  },
+                  "type": "Layout"
+                },
+                {
+                  "attributes": {
+                    "gap": 4
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 35,
+                        "line": 32,
+                        "offset": 816
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 32,
+                        "offset": 802
+                      },
+                      "text": "Email:",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "TextInput",
+                      "end": {
+                        "column": 49,
+                        "line": 33,
+                        "offset": 865
+                      },
+                      "modifiers": {},
+                      "placeholder": "john@example.com",
+                      "start": {
+                        "column": 21,
+                        "line": 33,
+                        "offset": 837
+                      },
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 26,
+                    "line": 34,
+                    "offset": 891
+                  },
+                  "layoutType": "Vertical",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 31,
+                    "offset": 767
+                  },
+                  "type": "Layout"
+                },
+                {
+                  "attributes": {
+                    "gap": 4
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 33,
+                        "line": 37,
+                        "offset": 956
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 37,
+                        "offset": 944
+                      },
+                      "text": "Bio:",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {
+                        "rows": 3
+                      },
+                      "controlType": "TextArea",
+                      "end": {
+                        "column": 53,
+                        "line": 38,
+                        "offset": 1009
+                      },
+                      "modifiers": {},
+                      "placeholder": "A short bio...",
+                      "start": {
+                        "column": 21,
+                        "line": 38,
+                        "offset": 977
+                      },
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 26,
+                    "line": 39,
+                    "offset": 1035
+                  },
+                  "layoutType": "Vertical",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 36,
+                    "offset": 909
+                  },
+                  "type": "Layout"
+                },
+                {
+                  "attributes": {
+                    "gap": 8
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Button",
+                      "end": {
+                        "column": 36,
+                        "line": 42,
+                        "offset": 1105
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 42,
+                        "offset": 1090
+                      },
+                      "text": "Cancel",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Button",
+                      "end": {
+                        "column": 50,
+                        "line": 43,
+                        "offset": 1155
+                      },
+                      "modifiers": {
+                        "primary": true
+                      },
+                      "start": {
+                        "column": 21,
+                        "line": 43,
+                        "offset": 1126
+                      },
+                      "text": "Save Changes",
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 44,
+                    "offset": 1183
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 41,
+                    "offset": 1053
+                  },
+                  "type": "Layout"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 45,
+                "offset": 1205
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 25,
+                "offset": 602
+              },
+              "type": "Layout"
+            }
+          ],
+          "componentType": "Dialog",
+          "end": {
+            "column": 16,
+            "line": 46,
+            "offset": 1221
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 24,
+            "offset": 562
+          },
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 48,
+            "offset": 1240
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 48,
+            "offset": 1231
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 26,
+            "line": 50,
+            "offset": 1267
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 50,
+            "offset": 1250
+          },
+          "text": "**Alert**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "type": "warning"
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 36,
+                    "line": 54,
+                    "offset": 1358
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 54,
+                    "offset": 1339
+                  },
+                  "text": "**Warning**",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 63,
+                    "line": 55,
+                    "offset": 1421
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 55,
+                    "offset": 1375
+                  },
+                  "text": "Your session will expire in 5 minutes.",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 40,
+                    "line": 56,
+                    "offset": 1461
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 56,
+                    "offset": 1438
+                  },
+                  "text": "Extend Session",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 57,
+                "offset": 1483
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 53,
+                "offset": 1308
+              },
+              "type": "Layout"
+            }
+          ],
+          "componentType": "Alert",
+          "end": {
+            "column": 15,
+            "line": 58,
+            "offset": 1498
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 52,
+            "offset": 1277
+          },
+          "type": "Component"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 59,
+        "offset": 1512
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 106
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 60,
+    "offset": 1523
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 47
+  },
+  "style": "clean",
+  "type": "Document"
+}

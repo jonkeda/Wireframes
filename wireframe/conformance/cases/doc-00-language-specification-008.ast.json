@@ -1,0 +1,72 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 21,
+            "line": 3,
+            "offset": 56
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 44
+          },
+          "text": "One",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 21,
+            "line": 4,
+            "offset": 77
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 65
+          },
+          "text": "Two",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 6,
+        "offset": 145
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 6,
+    "offset": 155
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

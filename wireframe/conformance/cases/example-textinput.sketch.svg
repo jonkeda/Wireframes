@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="232" height="625" viewBox="0 0 232 625" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g role="group" aria-label="**Text Input Variants**"><text x="16" y="31" class="wire-text wire-text-bold">Text Input Variants</text></g><g role="group" aria-label="Default:"><text x="16" y="67" class="wire-text">Default:</text></g><g role="textbox" aria-label="Enter text here..." aria-placeholder="Enter text here..."><g>
+      <path d="M16.0 81.0 Q116.0 80.3 216.0 81.5 M216.5 80.0 Q220.3 98.0 215.4 116.0 M216.0 114.9 Q116.0 112.6 16.0 115.6 M15.7 116.0 Q13.7 98.0 15.9 80.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="103" class="wire-text wire-text-secondary">Enter text here...</text>
+      
+    </g></g><g role="group" aria-label="Required:"><text x="16" y="139" class="wire-text">Required:</text></g><g role="textbox" aria-label="Required field" aria-required="true" aria-placeholder="Required field"><g>
+      <path d="M16.0 150.8 Q116.0 159.3 216.0 151.7 M215.6 152.0 Q217.1 170.0 214.5 188.0 M216.0 189.1 Q116.0 181.5 16.0 189.4 M16.5 188.0 Q16.1 170.0 17.1 152.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="175" class="wire-text wire-text-secondary">Required field</text>
+      <text x="204" y="175" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="group" aria-label="Disabled:"><text x="16" y="211" class="wire-text">Disabled:</text></g><g role="textbox" aria-label="Cannot edit" aria-disabled="true" aria-placeholder="Cannot edit"><g>
+      <path d="M16.0 223.7 Q116.0 219.6 216.0 225.2 M214.8 224.0 Q215.6 242.0 216.4 260.0 M216.0 260.2 Q116.0 266.2 16.0 261.2 M17.3 260.0 Q15.3 242.0 14.6 224.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="247" class="wire-text wire-text-secondary">Cannot edit</text>
+      
+    </g></g><g role="group" aria-label="Read-only:"><text x="16" y="283" class="wire-text">Read-only:</text></g><g role="textbox" aria-label="Read only value" aria-placeholder="Read only value"><g>
+      <path d="M16.0 296.5 Q116.0 291.9 216.0 296.7 M216.9 296.0 Q214.6 314.0 215.2 332.0 M216.0 331.4 Q116.0 334.6 16.0 331.7 M15.2 332.0 Q20.3 314.0 15.7 296.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="319" class="wire-text wire-text-secondary">Read only value</text>
+      
+    </g></g><g role="group"><line x1="16" y1="348" x2="216" y2="348" stroke="#888888" stroke-width="1" /></g><g role="group" aria-label="**Specialized Inputs**"><text x="16" y="380" class="wire-text wire-text-bold">Specialized Inputs</text></g><g role="group" aria-label="Number Input:"><text x="16" y="416" class="wire-text">Number Input:</text></g><g role="spinbutton" aria-label="42" aria-placeholder="42"><g>
+      <path d="M16.0 429.8 Q116.0 424.2 216.0 427.7 M216.6 429.0 Q212.9 447.0 214.8 465.0 M216.0 464.1 Q116.0 468.5 16.0 464.4 M15.5 465.0 Q18.0 447.0 16.1 429.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="452" class="wire-text wire-text-secondary">123</text>
+      
+    </g></g><g role="group" aria-label="Date Input:"><text x="16" y="488" class="wire-text">Date Input:</text></g><g role="textbox" aria-label="2025-12-27" aria-placeholder="2025-12-27"><g>
+      <path d="M16.0 499.7 Q116.0 500.9 216.0 500.2 M215.8 501.0 Q219.1 519.0 216.7 537.0 M216.0 538.2 Q116.0 538.0 16.0 535.9 M16.4 537.0 Q14.0 519.0 15.3 501.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="524" class="wire-text wire-text-secondary">📅</text>
+      
+    </g></g><g role="group" aria-label="Password Input:"><text x="16" y="560" class="wire-text">Password Input:</text></g><g role="textbox" aria-label="••••••••" aria-placeholder="••••••••"><g>
+      <path d="M16.0 572.5 Q116.0 576.9 216.0 573.4 M214.9 573.0 Q219.4 591.0 216.2 609.0 M216.0 609.4 Q116.0 606.0 16.0 609.7 M17.2 609.0 Q13.2 591.0 14.8 573.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="596" class="wire-text wire-text-secondary">••••</text>
+      
+    </g></g>
+</svg>

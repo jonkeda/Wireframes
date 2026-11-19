@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <rect x="16" y="16" width="768" height="568" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="**Contact Us**"><text x="32" y="47" class="wire-text wire-text-bold">Contact Us</text></g><g role="group" aria-label="Name:"><text x="32" y="79" class="wire-text">Name:</text></g><g role="textbox" aria-label="Your name" aria-required="true" aria-placeholder="Your name"><g>
+      <rect x="32" y="96" width="200" height="36" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="119" class="wire-text wire-text-secondary">Your name</text>
+      <text x="220" y="119" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="group" aria-label="Email:"><text x="32" y="159" class="wire-text">Email:</text></g><g role="textbox" aria-label="Your email" aria-required="true" aria-placeholder="Your email"><g>
+      <rect x="32" y="176" width="200" height="36" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="199" class="wire-text wire-text-secondary">Your email</text>
+      <text x="220" y="199" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="group" aria-label="Subject:"><text x="32" y="239" class="wire-text">Subject:</text></g><g role="combobox" aria-expanded="false" aria-haspopup="listbox"><g>
+      <rect x="32" y="256" width="200" height="36" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="279" class="wire-text">General Inquiry</text>
+      <path d="M212 272 L218 278 L224 272" stroke="#212529" stroke-width="2" fill="none" />
+    </g></g><g role="group" aria-label="General Inquiry"><g>
+      <rect x="32" y="292" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="82" y="312" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Technical Support"><g>
+      <rect x="32" y="330" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="82" y="350" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Sales"><g>
+      <rect x="32" y="368" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="82" y="388" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Other"><g>
+      <rect x="32" y="406" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="82" y="426" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Message:"><text x="32" y="319" class="wire-text">Message:</text></g><g role="textbox" aria-label="How can we help you?" aria-placeholder="How can we help you?"><g>
+      <rect x="32" y="336" width="300" height="100" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="356" class="wire-text wire-text-secondary">How can we help you?</text>
+      <line x1="312" y1="428" x2="324" y2="428" stroke="#dee2e6" stroke-width="2" />
+      <line x1="318" y1="422" x2="324" y2="428" stroke="#dee2e6" stroke-width="2" />
+    </g></g><g role="button" aria-label="Send Message"><g opacity="1">
+      <rect x="32" y="448" width="128" height="36" rx="6" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="96" y="471" text-anchor="middle" class="wire-text" fill="#ffffff">Send Message</text>
+    </g></g>
+</svg>

@@ -1,0 +1,130 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 34,
+                "line": 4,
+                "offset": 91
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 70
+              },
+              "text": "Are you sure?",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 42,
+                    "line": 6,
+                    "offset": 162
+                  },
+                  "modifiers": {
+                    "secondary": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 6,
+                    "offset": 137
+                  },
+                  "text": "Cancel",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 41,
+                    "line": 7,
+                    "offset": 203
+                  },
+                  "modifiers": {
+                    "primary": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 7,
+                    "offset": 179
+                  },
+                  "text": "Confirm",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 8,
+                "offset": 227
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 104
+              },
+              "type": "Layout"
+            }
+          ],
+          "componentType": "Dialog",
+          "end": {
+            "column": 16,
+            "line": 9,
+            "offset": 243
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 34
+          },
+          "text": "Confirm Action",
+          "type": "Component"
+        }
+      ],
+      "end": {
+        "column": 11,
+        "line": 10,
+        "offset": 254
+      },
+      "modifiers": {},
+      "sectionType": "Modal",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 11,
+    "offset": 265
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

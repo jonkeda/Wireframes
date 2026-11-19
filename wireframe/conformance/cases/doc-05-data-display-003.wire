@@ -1,0 +1,9 @@
+wireframe clean
+    Table w=400
+        Row selected
+            Cell "Left"
+            Cell "Center" align=center
+            Cell "Right" align=right
+        /Row
+    /Table
+/wireframe

@@ -1,0 +1,7 @@
+wireframe clean
+    Horizontal gap=8
+        IconButton icon=search
+        IconButton icon=settings
+        IconButton icon=menu
+        IconButton "Edit" icon=edit
+/wireframe

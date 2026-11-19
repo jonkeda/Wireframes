@@ -1,0 +1,52 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Label",
+      "end": {
+        "column": 45,
+        "line": 2,
+        "offset": 60
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Escapes: <b> & \"quoted\" > done",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Button",
+      "end": {
+        "column": 28,
+        "line": 3,
+        "offset": 88
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 65
+      },
+      "text": "Ünïcödé — ✓ 日本",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 4,
+    "offset": 99
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,12 @@
+wireframe clean
+    Vertical
+        Row selected
+            Cell "Name" align=left
+            Cell "Email" align=center
+        /Row
+        Row
+            Cell "John Doe"
+            Cell "john@example.com"
+        /Row
+    /Vertical
+/wireframe

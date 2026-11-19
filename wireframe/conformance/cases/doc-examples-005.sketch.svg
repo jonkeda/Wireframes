@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <path d="M16.0 17.2 Q400.0 18.9 784.0 14.6 M784.3 16.0 Q791.0 300.0 783.6 584.0 M784.0 582.7 Q400.0 581.9 16.0 583.5 M15.8 584.0 Q10.4 300.0 15.7 16.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="**Contact Us**"><text x="32" y="47" class="wire-text wire-text-bold">Contact Us</text></g><g role="group" aria-label="Name:"><text x="32" y="79" class="wire-text">Name:</text></g><g role="textbox" aria-label="Your name" aria-required="true" aria-placeholder="Your name"><g>
+      <path d="M32.0 96.1 Q132.0 99.5 232.0 95.2 M233.3 96.0 Q233.6 114.0 230.7 132.0 M232.0 131.7 Q132.0 129.4 32.0 130.9 M30.8 132.0 Q29.3 114.0 32.3 96.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="119" class="wire-text wire-text-secondary">Your name</text>
+      <text x="220" y="119" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="group" aria-label="Email:"><text x="32" y="159" class="wire-text">Email:</text></g><g role="textbox" aria-label="Your email" aria-required="true" aria-placeholder="Your email"><g>
+      <path d="M32.0 176.1 Q132.0 179.8 232.0 177.5 M233.4 176.0 Q234.3 194.0 233.4 212.0 M232.0 211.8 Q132.0 205.1 32.0 211.6 M30.8 212.0 Q32.5 194.0 32.5 176.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="199" class="wire-text wire-text-secondary">Your email</text>
+      <text x="220" y="199" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="group" aria-label="Subject:"><text x="32" y="239" class="wire-text">Subject:</text></g><g role="combobox" aria-expanded="false" aria-haspopup="listbox"><g>
+      <rect x="32" y="256" width="200" height="36" rx="0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="279" class="wire-text">General Inquiry</text>
+      <path d="M212 272 L218 278 L224 272" stroke="#333333" stroke-width="2" fill="none" />
+    </g></g><g role="group" aria-label="General Inquiry"><g>
+      <rect x="32" y="292" width="100" height="30" fill="#f5f5f5" stroke="#888888" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="82" y="312" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Technical Support"><g>
+      <rect x="32" y="330" width="100" height="30" fill="#f5f5f5" stroke="#888888" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="82" y="350" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Sales"><g>
+      <rect x="32" y="368" width="100" height="30" fill="#f5f5f5" stroke="#888888" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="82" y="388" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Other"><g>
+      <rect x="32" y="406" width="100" height="30" fill="#f5f5f5" stroke="#888888" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="82" y="426" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Message:"><text x="32" y="319" class="wire-text">Message:</text></g><g role="textbox" aria-label="How can we help you?" aria-placeholder="How can we help you?"><g>
+      <rect x="32" y="336" width="300" height="100" rx="0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="356" class="wire-text wire-text-secondary">How can we help you?</text>
+      <line x1="312" y1="428" x2="324" y2="428" stroke="#888888" stroke-width="2" />
+      <line x1="318" y1="422" x2="324" y2="428" stroke="#888888" stroke-width="2" />
+    </g></g><g role="button" aria-label="Send Message"><g opacity="1">
+      <path d="M32.0 448.8 Q96.0 454.2 160.0 448.1 M160.6 448.0 Q160.4 466.0 159.7 484.0 M160.0 483.0 Q96.0 475.8 32.0 483.6 M31.5 484.0 Q30.5 466.0 31.2 448.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="96" y="471" text-anchor="middle" class="wire-text" fill="#ffffff">Send Message</text>
+    </g></g>
+</svg>

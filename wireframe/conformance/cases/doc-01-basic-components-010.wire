@@ -1,0 +1,6 @@
+wireframe clean
+    Vertical gap=16 w=300
+        Progress value=75
+        Progress value=50
+        Progress value=25
+/wireframe

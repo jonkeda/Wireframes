@@ -1,0 +1,5 @@
+wireframe clean
+    Content dock=fill
+        // Main content here
+    /Content
+/wireframe

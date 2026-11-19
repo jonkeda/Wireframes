@@ -1,0 +1,52 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Toast",
+      "end": {
+        "column": 33,
+        "line": 2,
+        "offset": 48
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Operation successful",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Toast",
+      "end": {
+        "column": 27,
+        "line": 3,
+        "offset": 75
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 53
+      },
+      "text": "Error occurred",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 4,
+    "offset": 92
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

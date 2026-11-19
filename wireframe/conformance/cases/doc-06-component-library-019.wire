@@ -1,0 +1,9 @@
+wireframe clean
+    Button "Click Me"
+    Button "Primary" primary
+    Button "Secondary" secondary
+    Button "Disabled" disabled
+    Button "With ID" :submitBtn
+    Button "Navigate" @login
+    Button "Bound" ?action
+/wireframe

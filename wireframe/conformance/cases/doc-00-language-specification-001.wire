@@ -1,0 +1,13 @@
+wireframe clean
+    // Optional comment
+    wireframe <style>
+        %title: Document Title
+        %version: 1.0
+        %author: Author Name
+    
+        // Content here (indented)
+        Vertical gap=16
+            Label "Hello World"
+        /Vertical
+    /wireframe
+/wireframe

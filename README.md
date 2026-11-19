@@ -140,6 +140,14 @@ wire input.wire --watch
 
 ---
 
+## 🧩 Two implementations, one language
+
+The language is read and drawn by the TypeScript packages above, and by a .NET library and tool that are being
+built in `wireframe/dotnet` (the plan: `wireframe/.my/net`). Neither is the definition of the language. That is
+the conformance set in `wireframe/conformance/cases`: for each case a source, its syntax tree, its diagnostics
+and its SVG in every theme. Both implementations are tested against those files, and a change to the language is
+a change to them (`pnpm conformance:write`, in a commit that says so).
+
 ## 📖 Syntax Overview
 
 ### Document Structure

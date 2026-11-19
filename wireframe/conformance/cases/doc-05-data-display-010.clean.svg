@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="796" viewBox="0 0 800 796" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <g role="group" aria-label="Orders Dashboard"><text x="36" y="60" class="wire-text wire-text-bold" style="font-size: 24px">Orders Dashboard</text></g><rect x="36" y="88" width="180" height="476" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Total Orders"><text x="52" y="119" class="wire-text">Total Orders</text></g><g role="group" aria-label="1,234"><text x="52" y="150.67" class="wire-text wire-text-bold" style="font-size: 20px">1,234</text></g><g role="group" aria-label="12%"><g>
+      <rect x="52" y="164" width="24" height="24" rx="12" fill="#198754" />
+      <text x="64" y="180" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">12%</text>
+    </g></g><rect x="232" y="88" width="180" height="476" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Revenue"><text x="248" y="119" class="wire-text">Revenue</text></g><g role="group" aria-label="$45,678"><text x="248" y="150.67" class="wire-text wire-text-bold" style="font-size: 20px">$45,678</text></g><g role="group" aria-label="5%"><g>
+      <rect x="248" y="164" width="24" height="24" rx="12" fill="#198754" />
+      <text x="260" y="180" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">5%</text>
+    </g></g><rect x="428" y="88" width="180" height="476" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Pending"><text x="444" y="119" class="wire-text">Pending</text></g><g role="group" aria-label="23"><text x="444" y="150.67" class="wire-text wire-text-bold" style="font-size: 20px">23</text></g><g role="group" aria-label="Warning"><g>
+      <rect x="444" y="164" width="24" height="24" rx="12" fill="#ffc107" />
+      <text x="456" y="180" text-anchor="middle" class="wire-text wire-text-small" fill="#000000">Warning</text>
+    </g></g><rect x="624" y="88" width="180" height="476" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Cancelled"><text x="640" y="119" class="wire-text">Cancelled</text></g><g role="group" aria-label="5"><text x="640" y="150.67" class="wire-text wire-text-bold" style="font-size: 20px">5</text></g><g role="group" aria-label="2"><g>
+      <rect x="640" y="164" width="24" height="24" rx="12" fill="#dc3545" />
+      <text x="652" y="180" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">2</text>
+    </g></g><rect x="36" y="584" width="728" height="168" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Recent Orders"><text x="52" y="622" class="wire-text wire-text-bold" style="font-size: 18px">Recent Orders</text></g><g role="textbox" aria-label="Search orders..." aria-placeholder="Search orders..."><g>
+      <rect x="240" y="600" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="252" y="623" class="wire-text wire-text-secondary">Search orders...</text>
+      
+    </g></g><g role="combobox" aria-label="Status" aria-placeholder="Status" aria-expanded="false" aria-haspopup="listbox"><g>
+      <rect x="448" y="600" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="460" y="623" class="wire-text">All</text>
+      <path d="M628 616 L634 622 L640 616" stroke="#212529" stroke-width="2" fill="none" />
+    </g></g><g role="group" aria-label="All"><g>
+      <rect x="448" y="636" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="498" y="656" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Pending"><g>
+      <rect x="448" y="674" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="498" y="694" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Shipped"><g>
+      <rect x="448" y="712" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="498" y="732" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Delivered"><g>
+      <rect x="448" y="750" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="498" y="770" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Showing 1-10 of 234"><text x="52" y="715" class="wire-text">Showing 1-10 of 234</text></g><g role="navigation"><g><rect x="236" y="700" width="32" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><path d="M249 714 L245 718 L249 722" stroke="#212529" stroke-width="2" fill="none" /><rect x="272" y="700" width="32" height="36" rx="4" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" /><text x="288" y="723" text-anchor="middle" class="wire-text" fill="#ffffff">1</text><rect x="308" y="700" width="32" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><text x="324" y="723" text-anchor="middle" class="wire-text" fill="#212529">2</text><rect x="344" y="700" width="32" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><text x="360" y="723" text-anchor="middle" class="wire-text" fill="#212529">3</text><rect x="380" y="700" width="32" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><text x="396" y="723" text-anchor="middle" class="wire-text" fill="#212529">4</text><rect x="416" y="700" width="32" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><text x="432" y="723" text-anchor="middle" class="wire-text" fill="#212529">5</text><rect x="452" y="700" width="32" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><path d="M463 714 L467 718 L463 722" stroke="#212529" stroke-width="2" fill="none" /></g></g>
+</svg>

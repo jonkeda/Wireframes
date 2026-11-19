@@ -1,0 +1,261 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "padding": 24,
+        "w": 350
+      },
+      "children": [
+        {
+          "attributes": {
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {
+                "level": 2
+              },
+              "controlType": "Heading",
+              "end": {
+                "column": 38,
+                "line": 4,
+                "offset": 103
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 78
+              },
+              "text": "Sign In",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 30,
+                    "line": 7,
+                    "offset": 173
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 7,
+                    "offset": 160
+                  },
+                  "text": "Email",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "placeholder": "you@example.com"
+                  },
+                  "controlType": "TextInput",
+                  "end": {
+                    "column": 56,
+                    "line": 8,
+                    "offset": 229
+                  },
+                  "modifiers": {},
+                  "placeholder": "you@example.com",
+                  "start": {
+                    "column": 17,
+                    "line": 8,
+                    "offset": 190
+                  },
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 9,
+                "offset": 251
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 129
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 33,
+                    "line": 12,
+                    "offset": 324
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 12,
+                    "offset": 308
+                  },
+                  "text": "Password",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "placeholder": "Enter password"
+                  },
+                  "controlType": "PasswordInput",
+                  "end": {
+                    "column": 59,
+                    "line": 13,
+                    "offset": 383
+                  },
+                  "modifiers": {},
+                  "placeholder": "Enter password",
+                  "start": {
+                    "column": 17,
+                    "line": 13,
+                    "offset": 341
+                  },
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 14,
+                "offset": 405
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 11,
+                "offset": 277
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {},
+              "controlType": "Checkbox",
+              "end": {
+                "column": 35,
+                "line": 16,
+                "offset": 453
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 16,
+                "offset": 431
+              },
+              "text": "Remember me",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "w": "100%"
+              },
+              "controlType": "Button",
+              "end": {
+                "column": 44,
+                "line": 17,
+                "offset": 497
+              },
+              "modifiers": {
+                "primary": true
+              },
+              "start": {
+                "column": 13,
+                "line": 17,
+                "offset": 466
+              },
+              "text": "Sign In",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Separator",
+              "end": {
+                "column": 22,
+                "line": 19,
+                "offset": 532
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 19,
+                "offset": 523
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Link",
+              "end": {
+                "column": 36,
+                "line": 21,
+                "offset": 581
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 21,
+                "offset": 558
+              },
+              "text": "Forgot password?",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 22,
+            "offset": 599
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 50
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 23,
+        "offset": 609
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 24,
+    "offset": 620
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

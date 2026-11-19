@@ -1,0 +1,561 @@
+{
+  "attributes": {
+    "title": "Analytics Dashboard"
+  },
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {
+            "dock": "top",
+            "h": 60
+          },
+          "children": [
+            {
+              "attributes": {
+                "justify": "between",
+                "padding": 16
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 48,
+                    "line": 7,
+                    "offset": 188
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 7,
+                    "offset": 157
+                  },
+                  "text": "**Analytics Dashboard**",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Option",
+                      "end": {
+                        "column": 41,
+                        "line": 9,
+                        "offset": 265
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 9,
+                        "offset": 245
+                      },
+                      "text": "Last 7 days",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Option",
+                      "end": {
+                        "column": 42,
+                        "line": 10,
+                        "offset": 307
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 10,
+                        "offset": 286
+                      },
+                      "text": "Last 30 days",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Option",
+                      "end": {
+                        "column": 42,
+                        "line": 11,
+                        "offset": 349
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 11,
+                        "offset": 328
+                      },
+                      "text": "Last 90 days",
+                      "type": "Control"
+                    }
+                  ],
+                  "controlType": "Dropdown",
+                  "end": {
+                    "column": 26,
+                    "line": 12,
+                    "offset": 375
+                  },
+                  "id": "ddlPeriod",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 8,
+                    "offset": 205
+                  },
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 13,
+                "offset": 399
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 103
+              },
+              "type": "Layout"
+            }
+          ],
+          "dock": "top",
+          "end": {
+            "column": 16,
+            "line": 14,
+            "offset": 415
+          },
+          "modifiers": {},
+          "sectionType": "Header",
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 70
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {
+            "dock": "fill",
+            "padding": 16
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 16
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "gap": 16
+                  },
+                  "children": [
+                    {
+                      "attributes": {
+                        "w": 200
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 43,
+                            "line": 20,
+                            "offset": 597
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 20,
+                            "offset": 579
+                          },
+                          "text": "Page Views",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 42,
+                            "line": 21,
+                            "offset": 639
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 21,
+                            "offset": 622
+                          },
+                          "text": "**45.2K**",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {
+                            "value": 72
+                          },
+                          "controlType": "Progress",
+                          "end": {
+                            "column": 42,
+                            "line": 22,
+                            "offset": 681
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 22,
+                            "offset": 664
+                          },
+                          "type": "Control"
+                        }
+                      ],
+                      "end": {
+                        "column": 26,
+                        "line": 23,
+                        "offset": 707
+                      },
+                      "modifiers": {},
+                      "sectionType": "Card",
+                      "start": {
+                        "column": 21,
+                        "line": 19,
+                        "offset": 544
+                      },
+                      "type": "Section"
+                    },
+                    {
+                      "attributes": {
+                        "w": 200
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 41,
+                            "line": 26,
+                            "offset": 800
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 26,
+                            "offset": 784
+                          },
+                          "text": "Visitors",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 42,
+                            "line": 27,
+                            "offset": 842
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 27,
+                            "offset": 825
+                          },
+                          "text": "**12.8K**",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {
+                            "value": 58
+                          },
+                          "controlType": "Progress",
+                          "end": {
+                            "column": 42,
+                            "line": 28,
+                            "offset": 884
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 28,
+                            "offset": 867
+                          },
+                          "type": "Control"
+                        }
+                      ],
+                      "end": {
+                        "column": 26,
+                        "line": 29,
+                        "offset": 910
+                      },
+                      "modifiers": {},
+                      "sectionType": "Card",
+                      "start": {
+                        "column": 21,
+                        "line": 25,
+                        "offset": 749
+                      },
+                      "type": "Section"
+                    },
+                    {
+                      "attributes": {
+                        "w": 200
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 44,
+                            "line": 32,
+                            "offset": 1006
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 32,
+                            "offset": 987
+                          },
+                          "text": "Bounce Rate",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 40,
+                            "line": 33,
+                            "offset": 1046
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 33,
+                            "offset": 1031
+                          },
+                          "text": "**32%**",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {
+                            "value": 32
+                          },
+                          "controlType": "Progress",
+                          "end": {
+                            "column": 42,
+                            "line": 34,
+                            "offset": 1088
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 34,
+                            "offset": 1071
+                          },
+                          "type": "Control"
+                        }
+                      ],
+                      "end": {
+                        "column": 26,
+                        "line": 35,
+                        "offset": 1114
+                      },
+                      "modifiers": {},
+                      "sectionType": "Card",
+                      "start": {
+                        "column": 21,
+                        "line": 31,
+                        "offset": 952
+                      },
+                      "type": "Section"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 36,
+                    "offset": 1142
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 18,
+                    "offset": 506
+                  },
+                  "type": "Layout"
+                },
+                {
+                  "attributes": {},
+                  "children": [
+                    {
+                      "attributes": {
+                        "gap": 12
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 52,
+                            "line": 40,
+                            "offset": 1268
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 40,
+                            "offset": 1241
+                          },
+                          "text": "**Recent Activity**",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {},
+                          "children": [],
+                          "componentType": "Table",
+                          "end": {
+                            "column": 31,
+                            "line": 48,
+                            "offset": 1687
+                          },
+                          "id": "tblActivity",
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 42,
+                            "offset": 1318
+                          },
+                          "tableRows": [
+                            {
+                              "cells": [
+                                "Event",
+                                "User",
+                                "Time"
+                              ],
+                              "isSeparator": false
+                            },
+                            {
+                              "cells": [
+                                "-------",
+                                "------",
+                                "------"
+                              ],
+                              "isSeparator": true
+                            },
+                            {
+                              "cells": [
+                                "Page view",
+                                "john@example.com",
+                                "2 min ago"
+                              ],
+                              "isSeparator": false
+                            },
+                            {
+                              "cells": [
+                                "Sign up",
+                                "jane@example.com",
+                                "5 min ago"
+                              ],
+                              "isSeparator": false
+                            },
+                            {
+                              "cells": [
+                                "Purchase",
+                                "bob@example.com",
+                                "12 min ago"
+                              ],
+                              "isSeparator": false
+                            }
+                          ],
+                          "type": "Component"
+                        }
+                      ],
+                      "end": {
+                        "column": 30,
+                        "line": 49,
+                        "offset": 1717
+                      },
+                      "layoutType": "Vertical",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 39,
+                        "offset": 1201
+                      },
+                      "type": "Layout"
+                    }
+                  ],
+                  "end": {
+                    "column": 22,
+                    "line": 50,
+                    "offset": 1739
+                  },
+                  "modifiers": {},
+                  "sectionType": "Card",
+                  "start": {
+                    "column": 17,
+                    "line": 38,
+                    "offset": 1176
+                  },
+                  "type": "Section"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 51,
+                "offset": 1761
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 17,
+                "offset": 474
+              },
+              "type": "Layout"
+            }
+          ],
+          "dock": "fill",
+          "end": {
+            "column": 17,
+            "line": 52,
+            "offset": 1778
+          },
+          "modifiers": {},
+          "sectionType": "Content",
+          "start": {
+            "column": 9,
+            "line": 16,
+            "offset": 433
+          },
+          "type": "Section"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 53,
+        "offset": 1788
+      },
+      "layoutType": "Dock",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 57
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 54,
+    "offset": 1799
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

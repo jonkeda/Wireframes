@@ -1,0 +1,8 @@
+wireframe clean
+    Stepper steps=4 current=2
+        "Account"
+        "Personal"
+        "Payment"
+        "Confirm"
+    /Stepper
+/wireframe

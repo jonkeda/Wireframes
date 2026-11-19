@@ -1,0 +1,14 @@
+wireframe clean
+    Card w=400 padding=32
+        Vertical gap=16
+            Alert type=error
+                Label "Invalid email or password"
+            /Alert
+            
+            TextInput placeholder="Email" required
+            PasswordInput placeholder="Password" required
+            
+            Button "Sign In" primary w=100%
+        /Vertical
+    /Card
+/wireframe

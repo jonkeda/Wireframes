@@ -1,0 +1,11 @@
+wireframe clean
+    Drawer w=300 h=400 padding=16
+        Vertical gap=16
+            Heading "Settings" level=3
+            Separator
+            Switch "Dark Mode"
+            Switch "Notifications"
+            Switch "Auto-save"
+        /Vertical
+    /Drawer
+/wireframe

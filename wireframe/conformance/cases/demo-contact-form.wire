@@ -1,0 +1,68 @@
+// Contact Form Wireframe
+// Demonstrates: Form elements, validation, Dropdown
+
+wireframe clean
+    %title: Contact Us
+
+    Card padding=32
+        Vertical gap=24
+            
+            // Header
+            Vertical gap=8 align=center
+                Label "**Get in Touch**"
+                Label "We'd love to hear from you. Send us a message!"
+            /Vertical
+            
+            // Form fields
+            Vertical gap=20
+                
+                // Name row
+                Horizontal gap=16
+                    Vertical gap=4
+                        Label "First Name:"
+                        TextInput "John" :txtFirst required
+                    /Vertical
+                    Vertical gap=4
+                        Label "Last Name:"
+                        TextInput "Doe" :txtLast required
+                    /Vertical
+                /Horizontal
+                
+                // Email
+                Vertical gap=4
+                    Label "Email Address:"
+                    TextInput "john@example.com" :txtEmail required
+                /Vertical
+                
+                // Phone
+                Vertical gap=4
+                    Label "Phone Number:"
+                    TextInput "+1 (555) 123-4567" :txtPhone
+                /Vertical
+                
+                // Subject
+                Vertical gap=4
+                    Label "Subject:"
+                    Dropdown :ddlSubject required
+                        Option "Select a subject"
+                        Option "General Inquiry"
+                        Option "Support Request"
+                        Option "Feature Request"
+                        Option "Bug Report"
+                    /Dropdown
+                /Vertical
+                
+                // Message
+                Vertical gap=4
+                    Label "Message:"
+                    TextArea "Tell us what's on your mind..." :txtMessage rows=5 required
+                /Vertical
+                
+                Checkbox "I agree to the Terms of Service" :chkTerms required
+                
+                Button "Send Message" :btnSubmit primary
+                
+            /Vertical
+        /Vertical
+    /Card
+/wireframe

@@ -1,0 +1,4 @@
+wireframe clean
+    NumberInput "0" :txtAge
+    NumberInput "Amount" :txtAmount min=0 max=100
+/wireframe

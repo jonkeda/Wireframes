@@ -1,0 +1,8 @@
+wireframe clean
+    Table
+        | Name | Email | Role |
+        |------|-------|------|
+        | John | john@example.com | Admin |
+        | Jane | jane@example.com | User |
+    /Table
+/wireframe

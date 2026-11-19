@@ -1,0 +1,73 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Chip",
+      "end": {
+        "column": 15,
+        "line": 2,
+        "offset": 30
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Tag",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Chip",
+      "end": {
+        "column": 31,
+        "line": 3,
+        "offset": 61
+      },
+      "modifiers": {
+        "removable": true
+      },
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 35
+      },
+      "text": "Removable",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Chip",
+      "end": {
+        "column": 27,
+        "line": 4,
+        "offset": 88
+      },
+      "modifiers": {
+        "primary": true
+      },
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 66
+      },
+      "text": "Primary",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 99
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

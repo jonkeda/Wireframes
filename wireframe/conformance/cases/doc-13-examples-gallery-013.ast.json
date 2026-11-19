@@ -1,0 +1,193 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "width": 600
+      },
+      "children": [
+        {
+          "attributes": {},
+          "binding": "step",
+          "children": [],
+          "componentType": "Stepper",
+          "end": {
+            "column": 17,
+            "line": 8,
+            "offset": 198
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 43
+          },
+          "type": "Component"
+        },
+        {
+          "attributes": {
+            "gap": 24
+          },
+          "children": [
+            {
+              "attributes": {
+                "level": 2
+              },
+              "controlType": "Heading",
+              "end": {
+                "column": 50,
+                "line": 11,
+                "offset": 281
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 11,
+                "offset": 244
+              },
+              "text": "Profile Information",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "binding": "firstName",
+              "controlType": "TextInput",
+              "end": {
+                "column": 55,
+                "line": 12,
+                "offset": 336
+              },
+              "modifiers": {
+                "required": true
+              },
+              "placeholder": "First Name",
+              "start": {
+                "column": 13,
+                "line": 12,
+                "offset": 294
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "binding": "lastName",
+              "controlType": "TextInput",
+              "end": {
+                "column": 53,
+                "line": 13,
+                "offset": 389
+              },
+              "modifiers": {
+                "required": true
+              },
+              "placeholder": "Last Name",
+              "start": {
+                "column": 13,
+                "line": 13,
+                "offset": 349
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "gap": 16
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 40,
+                    "line": 17,
+                    "offset": 508
+                  },
+                  "modifiers": {
+                    "secondary": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 17,
+                    "offset": 485
+                  },
+                  "text": "Back",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 42,
+                    "line": 18,
+                    "offset": 550
+                  },
+                  "modifiers": {
+                    "primary": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 18,
+                    "offset": 525
+                  },
+                  "text": "Continue",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 19,
+                "offset": 574
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 16,
+                "offset": 451
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 20,
+            "offset": 592
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 10,
+            "offset": 216
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 21,
+        "offset": 602
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 22,
+    "offset": 613
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

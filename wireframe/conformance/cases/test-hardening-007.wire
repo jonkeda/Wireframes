@@ -1,0 +1,8 @@
+wireframe clean
+    if loggedIn
+        Button "Log out"
+    else
+        Button "Log in"
+    /if
+    Button "After"
+/wireframe

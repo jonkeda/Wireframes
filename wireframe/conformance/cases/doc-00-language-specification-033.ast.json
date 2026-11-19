@@ -1,0 +1,64 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "Tree",
+      "end": {
+        "column": 10,
+        "line": 8,
+        "offset": 156
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "treeItems": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [],
+                  "isBranch": false,
+                  "text": "Leaf 1"
+                },
+                {
+                  "children": [],
+                  "isBranch": false,
+                  "text": "Leaf 2"
+                }
+              ],
+              "isBranch": true,
+              "text": "Child Branch"
+            },
+            {
+              "children": [],
+              "isBranch": false,
+              "text": "Child Leaf"
+            }
+          ],
+          "isBranch": true,
+          "text": "Root Node"
+        }
+      ],
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 9,
+    "offset": 167
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

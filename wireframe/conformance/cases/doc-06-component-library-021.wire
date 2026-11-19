@@ -1,0 +1,5 @@
+wireframe clean
+    TextInput "Placeholder text"
+    TextInput "Email" ?email required
+    TextInput "Read only" readonly
+/wireframe

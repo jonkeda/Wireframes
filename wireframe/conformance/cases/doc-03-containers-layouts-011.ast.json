@@ -1,0 +1,57 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "h": 50,
+        "padding": 12,
+        "w": 400
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 36,
+            "line": 3,
+            "offset": 84
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 57
+          },
+          "text": "© 2024 Company Name",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 12,
+        "line": 4,
+        "offset": 96
+      },
+      "modifiers": {},
+      "sectionType": "Footer",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 107
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

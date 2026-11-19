@@ -1,0 +1,133 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 8
+      },
+      "children": [
+        {
+          "attributes": {
+            "size": "xs"
+          },
+          "controlType": "Avatar",
+          "end": {
+            "column": 28,
+            "line": 3,
+            "offset": 64
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 45
+          },
+          "text": "JD",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "size": "sm"
+          },
+          "controlType": "Avatar",
+          "end": {
+            "column": 28,
+            "line": 4,
+            "offset": 92
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 73
+          },
+          "text": "JD",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "size": "md"
+          },
+          "controlType": "Avatar",
+          "end": {
+            "column": 28,
+            "line": 5,
+            "offset": 120
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 101
+          },
+          "text": "JD",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "size": "lg"
+          },
+          "controlType": "Avatar",
+          "end": {
+            "column": 28,
+            "line": 6,
+            "offset": 148
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 129
+          },
+          "text": "JD",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "size": "xl"
+          },
+          "controlType": "Avatar",
+          "end": {
+            "column": 28,
+            "line": 7,
+            "offset": 176
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 7,
+            "offset": 157
+          },
+          "text": "JD",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 8,
+        "offset": 177
+      },
+      "layoutType": "Horizontal",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 187
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

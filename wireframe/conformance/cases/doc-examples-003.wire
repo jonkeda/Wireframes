@@ -1,0 +1,11 @@
+wireframe clean
+    Header
+        Horizontal gap=16 justify=between
+            Label "**Dashboard**"
+            Spacer
+            Icon $search
+            Icon $notifications
+            Avatar "JD" :avUser
+        /Horizontal
+    /Header
+/wireframe

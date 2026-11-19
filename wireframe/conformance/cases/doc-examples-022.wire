@@ -1,0 +1,10 @@
+wireframe realistic
+    Card w=300
+        Vertical gap=12
+            Label "**Realistic Theme**"
+            Label "Polished, production-like"
+            Button "Primary" primary
+            Button "Default"
+        /Vertical
+    /Card
+/wireframe

@@ -1,0 +1,22 @@
+wireframe clean
+    %title: Clean Theme Demo
+    
+    Vertical gap=16
+        Heading "Clean Theme" level=1
+        
+        Horizontal gap=8
+            Button "Primary" primary
+            Button "Secondary" secondary
+            Button "Default"
+            Button "Disabled" disabled
+        /Horizontal
+        
+        Card
+            Heading "Form Example" level=2
+            TextInput "Name" required
+            TextInput "Email"
+            Checkbox "Subscribe" checked
+            Button "Submit" primary
+        /Card
+    /Vertical
+/wireframe

@@ -1,0 +1,110 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 8
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Chip",
+          "end": {
+            "column": 26,
+            "line": 3,
+            "offset": 62
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 45
+          },
+          "text": "Technology",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Chip",
+          "end": {
+            "column": 22,
+            "line": 4,
+            "offset": 84
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 71
+          },
+          "text": "Design",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Chip",
+          "end": {
+            "column": 31,
+            "line": 5,
+            "offset": 115
+          },
+          "modifiers": {
+            "removable": true
+          },
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 93
+          },
+          "text": "React",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Chip",
+          "end": {
+            "column": 29,
+            "line": 6,
+            "offset": 144
+          },
+          "modifiers": {
+            "removable": true
+          },
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 124
+          },
+          "text": "Vue",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 7,
+        "offset": 145
+      },
+      "layoutType": "Horizontal",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 7,
+    "offset": 155
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

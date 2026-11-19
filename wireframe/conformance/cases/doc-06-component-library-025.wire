@@ -1,0 +1,4 @@
+wireframe clean
+    TextArea "Enter description" rows=4
+    TextArea "Comments" ?comments
+/wireframe

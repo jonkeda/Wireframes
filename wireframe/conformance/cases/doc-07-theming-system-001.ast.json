@@ -1,0 +1,264 @@
+{
+  "attributes": {
+    "title": "Clean Theme Demo"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {
+            "level": 1
+          },
+          "controlType": "Heading",
+          "end": {
+            "column": 38,
+            "line": 5,
+            "offset": 107
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 78
+          },
+          "text": "Clean Theme",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 37,
+                "line": 8,
+                "offset": 178
+              },
+              "modifiers": {
+                "primary": true
+              },
+              "start": {
+                "column": 13,
+                "line": 8,
+                "offset": 154
+              },
+              "text": "Primary",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 41,
+                "line": 9,
+                "offset": 219
+              },
+              "modifiers": {
+                "secondary": true
+              },
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 191
+              },
+              "text": "Secondary",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 29,
+                "line": 10,
+                "offset": 248
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 232
+              },
+              "text": "Default",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 39,
+                "line": 11,
+                "offset": 287
+              },
+              "modifiers": {
+                "disabled": true
+              },
+              "start": {
+                "column": 13,
+                "line": 11,
+                "offset": 261
+              },
+              "text": "Disabled",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 20,
+            "line": 12,
+            "offset": 307
+          },
+          "layoutType": "Horizontal",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 7,
+            "offset": 125
+          },
+          "type": "Layout"
+        },
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {
+                "level": 2
+              },
+              "controlType": "Heading",
+              "end": {
+                "column": 43,
+                "line": 15,
+                "offset": 372
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 15,
+                "offset": 342
+              },
+              "text": "Form Example",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "TextInput",
+              "end": {
+                "column": 38,
+                "line": 16,
+                "offset": 410
+              },
+              "modifiers": {
+                "required": true
+              },
+              "placeholder": "Name",
+              "start": {
+                "column": 13,
+                "line": 16,
+                "offset": 385
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "TextInput",
+              "end": {
+                "column": 30,
+                "line": 17,
+                "offset": 440
+              },
+              "modifiers": {},
+              "placeholder": "Email",
+              "start": {
+                "column": 13,
+                "line": 17,
+                "offset": 423
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Checkbox",
+              "end": {
+                "column": 41,
+                "line": 18,
+                "offset": 481
+              },
+              "modifiers": {
+                "checked": true
+              },
+              "start": {
+                "column": 13,
+                "line": 18,
+                "offset": 453
+              },
+              "text": "Subscribe",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 36,
+                "line": 19,
+                "offset": 517
+              },
+              "modifiers": {
+                "primary": true
+              },
+              "start": {
+                "column": 13,
+                "line": 19,
+                "offset": 494
+              },
+              "text": "Submit",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 14,
+            "line": 20,
+            "offset": 531
+          },
+          "modifiers": {},
+          "sectionType": "Card",
+          "start": {
+            "column": 9,
+            "line": 14,
+            "offset": 325
+          },
+          "type": "Section"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 21,
+        "offset": 545
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 54
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 22,
+    "offset": 556
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

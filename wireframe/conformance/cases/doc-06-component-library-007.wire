@@ -1,0 +1,7 @@
+wireframe clean
+    Canvas w=400 h=300
+        Button "At 10,20" canvas=10,20
+        Button "At 200,150" canvas=200,150
+        Icon $star canvas=350,250
+    /Canvas
+/wireframe

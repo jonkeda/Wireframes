@@ -1,0 +1,5 @@
+wireframe clean
+    AccordionSection "Section Title"
+        // Content
+    /AccordionSection
+/wireframe

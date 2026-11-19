@@ -1,0 +1,72 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Icon",
+      "end": {
+        "column": 19,
+        "line": 2,
+        "offset": 34
+      },
+      "icon": "settings",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "IconButton",
+      "end": {
+        "column": 28,
+        "line": 3,
+        "offset": 62
+      },
+      "icon": "save",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 39
+      },
+      "text": "Save",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "MenuItem",
+      "end": {
+        "column": 1,
+        "line": 5,
+        "offset": 94
+      },
+      "icon": "home",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 67
+      },
+      "text": "Home",
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 104
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

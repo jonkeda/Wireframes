@@ -1,0 +1,10 @@
+wireframe clean
+    MenuItem "Label"
+    MenuItem "With Icon" $icon:home
+    MenuItem "With Navigation" @target
+    MenuItem "Selected" selected
+    MenuItem "With Submenu"
+        MenuItem "Submenu Item 1"
+        MenuItem "Submenu Item 2"
+    /MenuItem
+/wireframe

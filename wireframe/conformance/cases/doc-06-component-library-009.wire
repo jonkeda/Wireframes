@@ -1,0 +1,9 @@
+wireframe clean
+    Header height=64
+        Horizontal
+            Label "App Name"
+            Spacer
+            Avatar "JD" circle
+        /Horizontal
+    /Header
+/wireframe

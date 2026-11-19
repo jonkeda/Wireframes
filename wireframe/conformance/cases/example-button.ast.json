@@ -1,0 +1,272 @@
+{
+  "attributes": {
+    "title": "Button Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 36,
+            "line": 6,
+            "offset": 127
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 100
+          },
+          "text": "**Button Variants**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 29,
+                "line": 9,
+                "offset": 182
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 166
+              },
+              "text": "Default",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 37,
+                "line": 10,
+                "offset": 219
+              },
+              "modifiers": {
+                "primary": true
+              },
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 195
+              },
+              "text": "Primary",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 41,
+                "line": 11,
+                "offset": 260
+              },
+              "modifiers": {
+                "secondary": true
+              },
+              "start": {
+                "column": 13,
+                "line": 11,
+                "offset": 232
+              },
+              "text": "Secondary",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 39,
+                "line": 12,
+                "offset": 299
+              },
+              "modifiers": {
+                "disabled": true
+              },
+              "start": {
+                "column": 13,
+                "line": 12,
+                "offset": 273
+              },
+              "text": "Disabled",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 20,
+            "line": 13,
+            "offset": 319
+          },
+          "layoutType": "Horizontal",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 137
+          },
+          "type": "Layout"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 15,
+            "offset": 338
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 15,
+            "offset": 329
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 33,
+            "line": 17,
+            "offset": 372
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 17,
+            "offset": 348
+          },
+          "text": "**Icon Buttons**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "IconButton",
+              "end": {
+                "column": 34,
+                "line": 19,
+                "offset": 431
+              },
+              "icon": "icon:home",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 19,
+                "offset": 410
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "IconButton",
+              "end": {
+                "column": 38,
+                "line": 20,
+                "offset": 469
+              },
+              "icon": "icon:settings",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 20,
+                "offset": 444
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "IconButton",
+              "end": {
+                "column": 36,
+                "line": 21,
+                "offset": 505
+              },
+              "icon": "icon:search",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 21,
+                "offset": 482
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "IconButton",
+              "end": {
+                "column": 34,
+                "line": 22,
+                "offset": 539
+              },
+              "icon": "icon:menu",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 22,
+                "offset": 518
+              },
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 20,
+            "line": 23,
+            "offset": 559
+          },
+          "layoutType": "Horizontal",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 18,
+            "offset": 381
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 24,
+        "offset": 573
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 76
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 25,
+    "offset": 584
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 27
+  },
+  "style": "clean",
+  "type": "Document"
+}

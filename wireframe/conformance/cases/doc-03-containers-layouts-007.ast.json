@@ -1,0 +1,161 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "h": 150,
+        "w": 200
+      },
+      "children": [
+        {
+          "attributes": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 28,
+                "line": 4,
+                "offset": 89
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 74
+              },
+              "text": "Item 1",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 28,
+                "line": 5,
+                "offset": 117
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 102
+              },
+              "text": "Item 2",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 28,
+                "line": 6,
+                "offset": 145
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 130
+              },
+              "text": "Item 3",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 28,
+                "line": 7,
+                "offset": 173
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 7,
+                "offset": 158
+              },
+              "text": "Item 4",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 28,
+                "line": 8,
+                "offset": 201
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 8,
+                "offset": 186
+              },
+              "text": "Item 5",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 28,
+                "line": 9,
+                "offset": 229
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 214
+              },
+              "text": "Item 6",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 10,
+            "offset": 247
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 47
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 12,
+        "line": 11,
+        "offset": 259
+      },
+      "layoutType": "Scroll",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 12,
+    "offset": 270
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

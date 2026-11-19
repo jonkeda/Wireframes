@@ -1,0 +1,8 @@
+wireframe clean
+    Label "Test"
+/wireframe
+data
+    | Source | Type |
+    |--------|------|
+    | user | object |
+/data

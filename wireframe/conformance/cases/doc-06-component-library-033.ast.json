@@ -1,0 +1,54 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Option",
+      "end": {
+        "column": 25,
+        "line": 2,
+        "offset": 40
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Option text",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Option",
+      "end": {
+        "column": 38,
+        "line": 3,
+        "offset": 78
+      },
+      "modifiers": {
+        "selected": true
+      },
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 45
+      },
+      "text": "Selected option",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 4,
+    "offset": 89
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

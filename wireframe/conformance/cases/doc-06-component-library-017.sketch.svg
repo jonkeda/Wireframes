@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <path d="M16.0 17.2 Q400.0 18.9 784.0 14.6 M784.3 16.0 Q791.0 300.0 783.6 584.0 M784.0 582.7 Q400.0 581.9 16.0 583.5 M15.8 584.0 Q10.4 300.0 15.7 16.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g>
+          <path d="M32.0 31.2 Q400.0 36.1 768.0 33.1 M767.2 32.0 Q772.7 80.0 767.0 128.0 M768.0 128.7 Q400.0 125.4 32.0 126.6 M32.9 128.0 Q26.4 80.0 31.9 32.0" fill="#fefefe" stroke="#888888" stroke-width="2" />
+          <text x="48" y="56" class="wire-text wire-text-bold">Confirm Action</text>
+        </g><g role="group" aria-label="Are you sure?"><text x="48" y="63" class="wire-text">Are you sure?</text></g><g role="button" aria-label="Cancel"><g opacity="1">
+      <path d="M48.0 74.7 Q98.0 72.0 148.0 75.5 M147.7 76.0 Q147.5 94.0 148.7 112.0 M148.0 113.2 Q98.0 114.1 48.0 113.2 M48.4 112.0 Q51.4 94.0 49.2 76.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="98" y="99" text-anchor="middle" class="wire-text" fill="#333333">Cancel</text>
+    </g></g><g role="button" aria-label="Confirm"><g opacity="1">
+      <path d="M156.0 75.4 Q206.0 78.8 256.0 76.2 M255.0 76.0 Q258.6 94.0 256.3 112.0 M256.0 112.5 Q206.0 106.1 156.0 112.8 M157.1 112.0 Q152.9 94.0 155.3 76.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="206" y="99" text-anchor="middle" class="wire-text" fill="#ffffff">Confirm</text>
+    </g></g>
+</svg>

@@ -1,0 +1,54 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "TextInput",
+      "end": {
+        "column": 39,
+        "line": 2,
+        "offset": 54
+      },
+      "id": "Categorieën",
+      "modifiers": {},
+      "placeholder": "Categorie",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Button",
+      "end": {
+        "column": 46,
+        "line": 3,
+        "offset": 100
+      },
+      "modifiers": {},
+      "navigation": "Overzicht_Categorieën",
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 59
+      },
+      "text": "Overzicht",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 4,
+    "offset": 111
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

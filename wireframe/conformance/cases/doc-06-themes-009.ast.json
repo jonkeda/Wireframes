@@ -1,0 +1,239 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "padding": 20,
+        "w": 350
+      },
+      "children": [
+        {
+          "attributes": {
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {
+                "level": 2
+              },
+              "controlType": "Heading",
+              "end": {
+                "column": 44,
+                "line": 4,
+                "offset": 110
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 79
+              },
+              "text": "Early Concept",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 61,
+                "line": 5,
+                "offset": 171
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 123
+              },
+              "text": "This is a rough idea - feedback welcome!",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "placeholder": "Search..."
+              },
+              "controlType": "TextInput",
+              "end": {
+                "column": 46,
+                "line": 7,
+                "offset": 230
+              },
+              "modifiers": {},
+              "placeholder": "Search...",
+              "start": {
+                "column": 13,
+                "line": 7,
+                "offset": 197
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Checkbox",
+                  "end": {
+                    "column": 37,
+                    "line": 10,
+                    "offset": 307
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 10,
+                    "offset": 287
+                  },
+                  "text": "Feature A",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Checkbox",
+                  "end": {
+                    "column": 37,
+                    "line": 11,
+                    "offset": 344
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 11,
+                    "offset": 324
+                  },
+                  "text": "Feature B",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Checkbox",
+                  "end": {
+                    "column": 37,
+                    "line": 12,
+                    "offset": 381
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 12,
+                    "offset": 361
+                  },
+                  "text": "Feature C",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 13,
+                "offset": 403
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 256
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 33,
+                    "line": 16,
+                    "offset": 478
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 16,
+                    "offset": 462
+                  },
+                  "text": "Approve",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 32,
+                    "line": 17,
+                    "offset": 510
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 17,
+                    "offset": 495
+                  },
+                  "text": "Revise",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 18,
+                "offset": 534
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 15,
+                "offset": 429
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 19,
+            "offset": 552
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 51
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 20,
+        "offset": 562
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 21
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 21,
+    "offset": 573
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "sketch",
+  "type": "Document"
+}

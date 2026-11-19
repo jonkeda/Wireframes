@@ -1,0 +1,423 @@
+{
+  "attributes": {
+    "title": "Tabs Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 31,
+            "line": 6,
+            "offset": 118
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 96
+          },
+          "text": "**Basic Tabs**",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Tab",
+              "end": {
+                "column": 1,
+                "line": 10,
+                "offset": 167
+              },
+              "modifiers": {
+                "active": true
+              },
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 145
+              },
+              "text": "Overview",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Tab",
+              "end": {
+                "column": 1,
+                "line": 11,
+                "offset": 193
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 179
+              },
+              "text": "Details",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Tab",
+              "end": {
+                "column": 1,
+                "line": 12,
+                "offset": 220
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 11,
+                "offset": 205
+              },
+              "text": "Settings",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Tab",
+              "end": {
+                "column": 1,
+                "line": 13,
+                "offset": 243
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 12,
+                "offset": 232
+              },
+              "text": "Help",
+              "type": "Component"
+            }
+          ],
+          "componentType": "Tabs",
+          "end": {
+            "column": 14,
+            "line": 13,
+            "offset": 256
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 128
+          },
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 15,
+            "offset": 275
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 15,
+            "offset": 266
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 38,
+            "line": 17,
+            "offset": 314
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 17,
+            "offset": 285
+          },
+          "text": "**Tabs with Content**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "padding": 0
+          },
+          "children": [
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "Tab",
+                  "end": {
+                    "column": 1,
+                    "line": 22,
+                    "offset": 393
+                  },
+                  "modifiers": {
+                    "active": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 21,
+                    "offset": 372
+                  },
+                  "text": "Profile",
+                  "type": "Component"
+                },
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "Tab",
+                  "end": {
+                    "column": 1,
+                    "line": 23,
+                    "offset": 423
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 22,
+                    "offset": 409
+                  },
+                  "text": "Account",
+                  "type": "Component"
+                },
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "Tab",
+                  "end": {
+                    "column": 1,
+                    "line": 24,
+                    "offset": 459
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 23,
+                    "offset": 439
+                  },
+                  "text": "Notifications",
+                  "type": "Component"
+                }
+              ],
+              "componentType": "Tabs",
+              "end": {
+                "column": 18,
+                "line": 24,
+                "offset": 476
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 20,
+                "offset": 351
+              },
+              "type": "Component"
+            },
+            {
+              "attributes": {
+                "padding": 16
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "gap": 8
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 49,
+                        "line": 28,
+                        "offset": 586
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 28,
+                        "offset": 558
+                      },
+                      "text": "**Profile Settings**",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 60,
+                        "line": 29,
+                        "offset": 646
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 29,
+                        "offset": 607
+                      },
+                      "text": "Manage your profile information",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {
+                        "gap": 4
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 46,
+                            "line": 32,
+                            "offset": 728
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 32,
+                            "offset": 707
+                          },
+                          "text": "Display Name:",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {},
+                          "controlType": "TextInput",
+                          "end": {
+                            "column": 45,
+                            "line": 33,
+                            "offset": 773
+                          },
+                          "modifiers": {},
+                          "placeholder": "John Doe",
+                          "start": {
+                            "column": 25,
+                            "line": 33,
+                            "offset": 753
+                          },
+                          "type": "Control"
+                        }
+                      ],
+                      "end": {
+                        "column": 30,
+                        "line": 34,
+                        "offset": 803
+                      },
+                      "layoutType": "Vertical",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 31,
+                        "offset": 668
+                      },
+                      "type": "Layout"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Button",
+                      "end": {
+                        "column": 50,
+                        "line": 36,
+                        "offset": 854
+                      },
+                      "modifiers": {
+                        "primary": true
+                      },
+                      "start": {
+                        "column": 21,
+                        "line": 36,
+                        "offset": 825
+                      },
+                      "text": "Save Changes",
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 26,
+                    "line": 37,
+                    "offset": 880
+                  },
+                  "layoutType": "Vertical",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 27,
+                    "offset": 523
+                  },
+                  "type": "Layout"
+                }
+              ],
+              "end": {
+                "column": 19,
+                "line": 38,
+                "offset": 899
+              },
+              "modifiers": {},
+              "sectionType": "Panel",
+              "start": {
+                "column": 13,
+                "line": 26,
+                "offset": 490
+              },
+              "type": "Section"
+            }
+          ],
+          "end": {
+            "column": 14,
+            "line": 39,
+            "offset": 913
+          },
+          "modifiers": {},
+          "sectionType": "Card",
+          "start": {
+            "column": 9,
+            "line": 19,
+            "offset": 324
+          },
+          "type": "Section"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 40,
+        "offset": 927
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 72
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 41,
+    "offset": 938
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 25
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="712" viewBox="0 0 800 712" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <path d="M16.0 15.3 Q400.0 8.4 784.0 15.4 M783.2 16.0 Q780.9 66.0 783.5 116.0 M784.0 116.6 Q400.0 122.2 16.0 117.4 M16.9 116.0 Q18.2 66.0 15.4 16.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="**Analytics Dashboard**"><text x="48" y="63" class="wire-text wire-text-bold">Analytics Dashboard</text></g><g role="combobox" aria-expanded="false" aria-haspopup="listbox"><g>
+      <rect x="240" y="48" width="200" height="36" rx="0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="252" y="71" class="wire-text">Last 7 days</text>
+      <path d="M420 64 L426 70 L432 64" stroke="#333333" stroke-width="2" fill="none" />
+    </g></g><g role="group" aria-label="Last 7 days"><g>
+      <rect x="240" y="84" width="100" height="30" fill="#f5f5f5" stroke="#888888" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="290" y="104" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Last 30 days"><g>
+      <rect x="240" y="122" width="100" height="30" fill="#f5f5f5" stroke="#888888" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="290" y="142" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Last 90 days"><g>
+      <rect x="240" y="160" width="100" height="30" fill="#f5f5f5" stroke="#888888" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="290" y="180" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><path d="M16.0 117.1 Q400.0 112.6 784.0 115.7 M784.4 116.0 Q782.3 406.0 784.1 696.0 M784.0 694.8 Q400.0 700.2 16.0 697.4 M15.8 696.0 Q20.8 406.0 14.8 116.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><path d="M32.0 133.3 Q132.0 130.5 232.0 130.6 M232.2 132.0 Q224.5 350.0 233.3 568.0 M232.0 566.6 Q132.0 569.8 32.0 566.8 M32.0 568.0 Q38.6 350.0 32.6 132.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Page Views"><text x="48" y="163" class="wire-text">Page Views</text></g><g role="group" aria-label="**45.2K**"><text x="48" y="191" class="wire-text wire-text-bold">45.2K</text></g><g role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"><g>
+      <rect x="48" y="204" width="200" height="8" rx="4" fill="#f5f5f5" />
+      <rect x="48" y="204" width="144" height="8" rx="4" fill="#4a90d9" />
+    </g></g><path d="M248.0 131.6 Q348.0 131.1 448.0 132.0 M446.8 132.0 Q441.3 350.0 448.5 568.0 M448.0 568.3 Q348.0 569.8 248.0 569.0 M249.3 568.0 Q253.8 350.0 249.4 132.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Visitors"><text x="264" y="163" class="wire-text">Visitors</text></g><g role="group" aria-label="**12.8K**"><text x="264" y="191" class="wire-text wire-text-bold">12.8K</text></g><g role="progressbar" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"><g>
+      <rect x="264" y="204" width="200" height="8" rx="4" fill="#f5f5f5" />
+      <rect x="264" y="204" width="116" height="8" rx="4" fill="#4a90d9" />
+    </g></g><path d="M464.0 133.0 Q564.0 127.7 664.0 130.5 M664.5 132.0 Q659.3 350.0 665.3 568.0 M664.0 566.9 Q564.0 569.2 464.0 567.5 M463.6 568.0 Q471.8 350.0 464.6 132.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Bounce Rate"><text x="480" y="163" class="wire-text">Bounce Rate</text></g><g role="group" aria-label="**32%**"><text x="480" y="191" class="wire-text wire-text-bold">32%</text></g><g role="progressbar" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"><g>
+      <rect x="480" y="204" width="200" height="8" rx="4" fill="#f5f5f5" />
+      <rect x="480" y="204" width="64" height="8" rx="4" fill="#4a90d9" />
+    </g></g><path d="M32.0 583.7 Q400.0 586.8 768.0 582.9 M766.7 584.0 Q772.7 632.0 766.7 680.0 M768.0 680.2 Q400.0 674.1 32.0 679.2 M33.4 680.0 Q27.0 632.0 33.0 584.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="**Recent Activity**"><text x="48" y="615" class="wire-text wire-text-bold">Recent Activity</text></g>
+</svg>

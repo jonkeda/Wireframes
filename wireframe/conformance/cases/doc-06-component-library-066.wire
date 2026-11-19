@@ -1,0 +1,9 @@
+wireframe clean
+    DataGrid rows=5 selected
+        ColumnText "Name"
+        ColumnDate "Created"
+        ColumnNumber "Count"
+        ColumnCheckbox "Active"
+        ColumnButton "Actions"
+    /DataGrid
+/wireframe

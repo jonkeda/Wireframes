@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="655" height="360" viewBox="0 0 655 360" role="img">
+  <style>
+    .wire-text { font-family: "Courier New", monospace; font-size: 14px; fill: #ffffff; }
+    .wire-text-secondary { fill: #a0c4e8; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#1e3a5f" />
+  <g role="button" aria-label="Cell 1"><g opacity="1">
+      <rect x="16" y="16" width="100" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
+      <text x="66" y="39" text-anchor="middle" class="wire-text" fill="#ffffff">Cell 1</text>
+    </g></g><g role="button" aria-label="Cell 2"><g opacity="1">
+      <rect x="277.33" y="16" width="100" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
+      <text x="327.33" y="39" text-anchor="middle" class="wire-text" fill="#ffffff">Cell 2</text>
+    </g></g><g role="button" aria-label="Cell 3"><g opacity="1">
+      <rect x="538.67" y="16" width="100" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
+      <text x="588.67" y="39" text-anchor="middle" class="wire-text" fill="#ffffff">Cell 3</text>
+    </g></g><g role="button" aria-label="Cell 4"><g opacity="1">
+      <rect x="16" y="308" width="100" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
+      <text x="66" y="331" text-anchor="middle" class="wire-text" fill="#ffffff">Cell 4</text>
+    </g></g><g role="button" aria-label="Cell 5"><g opacity="1">
+      <rect x="277.33" y="308" width="100" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
+      <text x="327.33" y="331" text-anchor="middle" class="wire-text" fill="#ffffff">Cell 5</text>
+    </g></g><g role="button" aria-label="Cell 6"><g opacity="1">
+      <rect x="538.67" y="308" width="100" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
+      <text x="588.67" y="331" text-anchor="middle" class="wire-text" fill="#ffffff">Cell 6</text>
+    </g></g>
+</svg>

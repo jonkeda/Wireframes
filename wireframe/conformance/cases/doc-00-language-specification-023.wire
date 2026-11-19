@@ -1,0 +1,6 @@
+wireframe clean
+    Label "Plain text"
+    Label "**Bold text**"
+    Label "*Italic text*"
+    Label "`Code style`"
+/wireframe

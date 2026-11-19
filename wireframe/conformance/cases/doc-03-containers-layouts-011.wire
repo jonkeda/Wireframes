@@ -1,0 +1,5 @@
+wireframe clean
+    Footer w=400 h=50 padding=12
+        Label "© 2024 Company Name"
+    /Footer
+/wireframe

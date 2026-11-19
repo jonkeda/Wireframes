@@ -1,0 +1,4 @@
+wireframe clean
+    PasswordInput "Password" :txtPass
+    PasswordInput "Confirm" :txtConfirm required
+/wireframe

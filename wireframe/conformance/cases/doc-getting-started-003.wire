@@ -1,0 +1,9 @@
+wireframe clean
+    Vertical gap=16
+        Label "**Title**"
+        Horizontal gap=8
+            Button "Cancel"
+            Button "Submit" primary
+        /Horizontal
+    /Vertical
+/wireframe

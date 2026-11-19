@@ -1,0 +1,6 @@
+wireframe clean
+    Hover
+        Button "Hover me"
+        // Hover content appears here
+    /Hover
+/wireframe

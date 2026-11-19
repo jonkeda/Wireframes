@@ -1,0 +1,58 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "position": "right",
+        "width": 320
+      },
+      "children": [
+        {
+          "attributes": {
+            "level": 2
+          },
+          "controlType": "Heading",
+          "end": {
+            "column": 35,
+            "line": 3,
+            "offset": 86
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 60
+          },
+          "text": "Settings",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 12,
+        "line": 5,
+        "offset": 124
+      },
+      "modifiers": {},
+      "sectionType": "Drawer",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 6,
+    "offset": 135
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

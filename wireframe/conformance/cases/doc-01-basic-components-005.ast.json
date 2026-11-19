@@ -1,0 +1,128 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 12
+      },
+      "children": [
+        {
+          "attributes": {
+            "icon": "home"
+          },
+          "controlType": "Icon",
+          "end": {
+            "column": 23,
+            "line": 3,
+            "offset": 60
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 46
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "icon": "settings"
+          },
+          "controlType": "Icon",
+          "end": {
+            "column": 27,
+            "line": 4,
+            "offset": 87
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 69
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "icon": "user"
+          },
+          "controlType": "Icon",
+          "end": {
+            "column": 23,
+            "line": 5,
+            "offset": 110
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 96
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "icon": "search"
+          },
+          "controlType": "Icon",
+          "end": {
+            "column": 25,
+            "line": 6,
+            "offset": 135
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 119
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "icon": "menu"
+          },
+          "controlType": "Icon",
+          "end": {
+            "column": 23,
+            "line": 7,
+            "offset": 158
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 7,
+            "offset": 144
+          },
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 8,
+        "offset": 159
+      },
+      "layoutType": "Horizontal",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 169
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

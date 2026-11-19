@@ -1,0 +1,232 @@
+{
+  "attributes": {
+    "title": "Pagination Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 37,
+            "line": 6,
+            "offset": 136
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 108
+          },
+          "text": "**Basic Pagination**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "page": 1,
+            "total": 10
+          },
+          "controlType": "Pagination",
+          "end": {
+            "column": 35,
+            "line": 8,
+            "offset": 172
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 146
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 10,
+            "offset": 191
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 10,
+            "offset": 182
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 32,
+            "line": 12,
+            "offset": 224
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 12,
+            "offset": 201
+          },
+          "text": "**Middle Page**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "page": 5,
+            "total": 10
+          },
+          "controlType": "Pagination",
+          "end": {
+            "column": 35,
+            "line": 14,
+            "offset": 260
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 14,
+            "offset": 234
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 16,
+            "offset": 279
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 16,
+            "offset": 270
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 30,
+            "line": 18,
+            "offset": 310
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 18,
+            "offset": 289
+          },
+          "text": "**Last Page**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "page": 10,
+            "total": 10
+          },
+          "controlType": "Pagination",
+          "end": {
+            "column": 36,
+            "line": 20,
+            "offset": 347
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 20,
+            "offset": 320
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 22,
+            "offset": 366
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 22,
+            "offset": 357
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 31,
+            "line": 24,
+            "offset": 398
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 24,
+            "offset": 376
+          },
+          "text": "**Many Pages**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "page": 15,
+            "total": 50
+          },
+          "controlType": "Pagination",
+          "end": {
+            "column": 36,
+            "line": 26,
+            "offset": 435
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 26,
+            "offset": 408
+          },
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 27,
+        "offset": 449
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 84
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 28,
+    "offset": 460
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 31
+  },
+  "style": "clean",
+  "type": "Document"
+}

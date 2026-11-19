@@ -1,0 +1,23 @@
+{
+  "description": "Keeps each wireframe's picture in step with its text: renders after a write, checks before the agent stops.",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          { "type": "command", "command": "wire", "args": ["hook", "after-write"], "if": "Edit(*.md)", "timeout": 20 },
+          { "type": "command", "command": "wire", "args": ["hook", "after-write"], "if": "Write(*.md)", "timeout": 20 },
+          { "type": "command", "command": "wire", "args": ["hook", "after-write"], "if": "Edit(*.wire)", "timeout": 20 },
+          { "type": "command", "command": "wire", "args": ["hook", "after-write"], "if": "Write(*.wire)", "timeout": 20 }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          { "type": "command", "command": "wire", "args": ["hook", "before-stop"], "timeout": 30 }
+        ]
+      }
+    ]
+  }
+}

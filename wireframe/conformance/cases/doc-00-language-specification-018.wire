@@ -1,0 +1,7 @@
+wireframe clean
+    TextInput "Placeholder text"
+    TextInput "Username" :txtUser
+    TextInput "Email" :txtEmail required
+    TextInput "Name" :txtName ?user.name
+    TextInput :txtName label="Name" placeholder="e.g. Jane" required
+/wireframe

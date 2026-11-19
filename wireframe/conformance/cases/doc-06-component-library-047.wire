@@ -1,0 +1,13 @@
+wireframe clean
+    Tabs
+        Tab "General" active
+            // Tab content
+        /Tab
+        Tab "Settings"
+            // Tab content
+        /Tab
+        Tab "Advanced"
+            // Tab content
+        /Tab
+    /Tabs
+/wireframe

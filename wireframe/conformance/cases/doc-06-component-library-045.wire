@@ -1,0 +1,4 @@
+wireframe clean
+    Toast "Operation successful"
+    Toast "Error occurred" error
+/wireframe

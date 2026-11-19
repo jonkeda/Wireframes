@@ -1,0 +1,7 @@
+wireframe clean
+    Menu
+        MenuItem "Home" $icon:home active
+        MenuItem "Settings" $icon:settings
+        MenuItem "Logout" $icon:logout
+    /Menu
+/wireframe

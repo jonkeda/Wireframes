@@ -1,0 +1,10 @@
+wireframe clean
+    DataGrid rows=6 w=700 selected
+        ColumnText "Product Name"
+        ColumnNumber "Price"
+        ColumnNumber "Stock"
+        ColumnDate "Added"
+        ColumnCheckbox "Featured"
+        ColumnButton "Actions"
+    /DataGrid
+/wireframe

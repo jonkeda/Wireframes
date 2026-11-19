@@ -1,0 +1,10 @@
+wireframe clean
+    Card w=300
+        Vertical gap=12
+            Label "**Clean Theme**"
+            Label "Modern and minimal design"
+            Button "Primary" primary
+            Button "Default"
+        /Vertical
+    /Card
+/wireframe

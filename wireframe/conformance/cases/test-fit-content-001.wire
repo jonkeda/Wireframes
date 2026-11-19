@@ -1,0 +1,7 @@
+wireframe
+    Vertical
+        Heading "Create department"
+        TextInput :Name label="Name" required
+        Button "Create" primary
+    /Vertical
+/wireframe

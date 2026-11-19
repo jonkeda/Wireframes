@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1098" viewBox="0 0 800 1098" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <path d="M16.0 17.2 Q400.0 18.9 784.0 14.6 M784.3 16.0 Q791.0 300.0 783.6 584.0 M784.0 582.7 Q400.0 581.9 16.0 583.5 M15.8 584.0 Q10.4 300.0 15.7 16.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="button"><g><rect x="40" y="40" width="36" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="50" y="50" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g></g><g role="group" aria-label="Profile"><text x="84" y="61.33" class="wire-text wire-text-bold" style="font-size: 16px">Profile</text></g><g role="button"><g><rect x="216" y="40" width="36" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="226" y="50" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g></g><path d="M16.0 593.4 Q400.0 589.2 784.0 591.2 M784.0 592.0 Q780.7 799.0 783.0 1006.0 M784.0 1007.5 Q400.0 1010.6 16.0 1004.8 M16.1 1006.0 Q21.3 799.0 17.3 592.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="JD"><g>
+      <circle cx="88" cy="664" r="40" fill="#4a90d9" />
+      <text x="88" y="672.89" text-anchor="middle" class="wire-text" style="font-size: 26.67px" fill="#ffffff">J</text>
+    </g></g><g role="group" aria-label="John Doe"><text x="144" y="646" class="wire-text wire-text-bold" style="font-size: 18px">John Doe</text></g><g role="group" aria-label="john@example.com"><text x="144" y="675" class="wire-text">john@example.com</text></g><g role="group" aria-label="Premium"><g>
+      <rect x="144" y="684" width="24" height="24" rx="12" fill="#0dcaf0" />
+      <text x="156" y="700" text-anchor="middle" class="wire-text wire-text-small" fill="#000000">Premium</text>
+    </g></g><g role="group"><line x1="48" y1="724" x2="248" y2="724" stroke="#888888" stroke-width="1" /></g><g role="group"><line x1="64" y1="917" x2="264" y2="917" stroke="#888888" stroke-width="1" /></g><path d="M16.0 1014.5 Q400.0 1011.3 784.0 1015.2 M784.9 1014.0 Q781.1 1048.0 783.3 1082.0 M784.0 1081.4 Q400.0 1085.0 16.0 1081.2 M15.2 1082.0 Q20.9 1048.0 17.0 1014.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="button"><g><rect x="32" y="1030" width="36" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="42" y="1040" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g></g><g role="button"><g><rect x="76" y="1030" width="36" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="86" y="1040" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g></g><g role="button"><g><rect x="120" y="1030" width="36" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="130" y="1040" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g></g><g role="button"><g><rect x="164" y="1030" width="36" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="174" y="1040" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g></g><g role="button"><g><rect x="208" y="1030" width="36" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="218" y="1040" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g></g>
+</svg>

@@ -1,0 +1,6 @@
+wireframe clean
+    Vertical gap=12 w=300
+        PasswordInput placeholder="Password"
+        DateInput placeholder="Select date"
+        NumberInput placeholder="Enter number"
+/wireframe

@@ -1,0 +1,55 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Link",
+      "end": {
+        "column": 30,
+        "line": 2,
+        "offset": 45
+      },
+      "modifiers": {},
+      "navigation": "target",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Click here",
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "href": "https://example.com"
+      },
+      "controlType": "Link",
+      "end": {
+        "column": 47,
+        "line": 3,
+        "offset": 92
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 50
+      },
+      "text": "External",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 4,
+    "offset": 103
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

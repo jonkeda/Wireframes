@@ -1,0 +1,16 @@
+wireframe clean
+    Dock
+        Header dock=top
+            Label "Header"
+        /Header
+        Footer dock=bottom
+            Label "Footer"
+        /Footer
+        Sidebar dock=left
+            Label "Sidebar"
+        /Sidebar
+        Content dock=fill
+            Label "Content"
+        /Content
+    /Dock
+/wireframe

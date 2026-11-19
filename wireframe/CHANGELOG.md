@@ -7,6 +7,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+**A second implementation, in .NET** (`dotnet/`, see `docs/DOTNET_TOOL.md`)
+- `Wireframe`: the parser and the SVG renderer in .NET (`net10.0` and `netstandard2.0`, no dependencies). The same
+  source gives the same SVG as the TypeScript renderer, byte for byte, in all four themes.
+- `wire`, a command-line tool: `.wire` files and the `wireframe` blocks of Markdown documents to SVG, `--check`
+  for a build, `--link`, `--json`, `--stdin`, folders and patterns as inputs, `parse`, `components`.
+- `wire mcp`: an MCP server over standard input and output with six tools, bound to a root folder.
+- `wire hook after-write` and `wire hook before-stop`: the hooks of Claude Code that keep a picture in step with
+  its text.
+
+**A plugin for Claude Code** (`plugin/`): the skills `wireframe-create`, `wireframe-update` and
+`wireframe-render`, and the two hooks. `scripts/skill-trials.mjs` tries the skills.
+
+**The conformance set** (`conformance/cases`, 371 cases): source, parse tree, diagnostics and the SVG in each
+theme. Both implementations are tested against it; `pnpm conformance:check` and `dotnet test`.
+
+### Changed
+
+- The VS Code Markdown preview takes a fence with more than the language on it (` ```wireframe id=login `).
+
+### Known
+
+Found while the second implementation was written, the same in both, and not changed:
+- A `Table` validates and draws nothing, with `rows=`/`cols=` or with rows of its own.
+- An attribute the renderer does not read (`width=`, `justify=`) is accepted without a word and does nothing.
+- A `title="…"` on a card, a modal or a dialog is not drawn.
+- `Step`, `BreadcrumbItem`, `Row`, `Cell` and the `Column…` words are keywords that do not parse.
+
 Fixes from a review of the language as a source for specifications (2026-11-18).
 
 ### Fixed

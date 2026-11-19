@@ -1,0 +1,403 @@
+{
+  "attributes": {
+    "title": "Progress Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 42,
+            "line": 6,
+            "offset": 137
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 104
+          },
+          "text": "**Progress Bar Variants**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 12
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 36,
+                    "line": 10,
+                    "offset": 225
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 10,
+                    "offset": 206
+                  },
+                  "text": "0% Complete",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "value": 0
+                  },
+                  "controlType": "Progress",
+                  "end": {
+                    "column": 33,
+                    "line": 11,
+                    "offset": 258
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 11,
+                    "offset": 242
+                  },
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 12,
+                "offset": 280
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 175
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 37,
+                    "line": 15,
+                    "offset": 345
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 15,
+                    "offset": 325
+                  },
+                  "text": "25% Complete",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "value": 25
+                  },
+                  "controlType": "Progress",
+                  "end": {
+                    "column": 34,
+                    "line": 16,
+                    "offset": 379
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 16,
+                    "offset": 362
+                  },
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 17,
+                "offset": 401
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 14,
+                "offset": 294
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 37,
+                    "line": 20,
+                    "offset": 466
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 20,
+                    "offset": 446
+                  },
+                  "text": "50% Complete",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "value": 50
+                  },
+                  "controlType": "Progress",
+                  "end": {
+                    "column": 34,
+                    "line": 21,
+                    "offset": 500
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 21,
+                    "offset": 483
+                  },
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 22,
+                "offset": 522
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 19,
+                "offset": 415
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 37,
+                    "line": 25,
+                    "offset": 587
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 25,
+                    "offset": 567
+                  },
+                  "text": "75% Complete",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "value": 75
+                  },
+                  "controlType": "Progress",
+                  "end": {
+                    "column": 34,
+                    "line": 26,
+                    "offset": 621
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 26,
+                    "offset": 604
+                  },
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 27,
+                "offset": 643
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 24,
+                "offset": 536
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 38,
+                    "line": 30,
+                    "offset": 709
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 30,
+                    "offset": 688
+                  },
+                  "text": "100% Complete",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "value": 100
+                  },
+                  "controlType": "Progress",
+                  "end": {
+                    "column": 35,
+                    "line": 31,
+                    "offset": 744
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 31,
+                    "offset": 726
+                  },
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 32,
+                "offset": 766
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 29,
+                "offset": 657
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 33,
+            "offset": 784
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 147
+          },
+          "type": "Layout"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 35,
+            "offset": 803
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 35,
+            "offset": 794
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 34,
+            "line": 37,
+            "offset": 838
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 37,
+            "offset": 813
+          },
+          "text": "**Loading State**",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Progress",
+          "end": {
+            "column": 31,
+            "line": 38,
+            "offset": 869
+          },
+          "modifiers": {
+            "indeterminate": true
+          },
+          "start": {
+            "column": 9,
+            "line": 38,
+            "offset": 847
+          },
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 39,
+        "offset": 883
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 80
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 40,
+    "offset": 894
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 29
+  },
+  "style": "clean",
+  "type": "Document"
+}

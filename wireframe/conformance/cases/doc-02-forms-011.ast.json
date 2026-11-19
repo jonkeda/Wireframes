@@ -1,0 +1,79 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 8,
+        "w": 400
+      },
+      "children": [
+        {
+          "attributes": {
+            "placeholder": "Search...",
+            "w": 300
+          },
+          "controlType": "TextInput",
+          "end": {
+            "column": 48,
+            "line": 3,
+            "offset": 90
+          },
+          "modifiers": {},
+          "placeholder": "Search...",
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 51
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "icon": "search"
+          },
+          "controlType": "IconButton",
+          "end": {
+            "column": 39,
+            "line": 4,
+            "offset": 129
+          },
+          "modifiers": {
+            "primary": true
+          },
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 99
+          },
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 5,
+        "offset": 130
+      },
+      "layoutType": "Horizontal",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 140
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

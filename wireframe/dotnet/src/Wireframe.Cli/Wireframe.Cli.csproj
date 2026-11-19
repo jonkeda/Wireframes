@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Wireframe\Wireframe.csproj" />
+    <ProjectReference Include="..\Wireframe.Mcp\Wireframe.Mcp.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Wireframe.Cli</RootNamespace>
+    <AssemblyName>wire</AssemblyName>
+    <Version>0.0.9</Version>
+
+    <!-- A .NET tool: dotnet tool install wireframe.cli, run as `wire` -->
+    <IsPackable>true</IsPackable>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>wire</ToolCommandName>
+    <PackageId>wireframe.cli</PackageId>
+    <Description>wire: Wireframe diagrams to SVG, from .wire files and the wireframe blocks of Markdown documents.</Description>
+    <PackageTags>wireframe;svg;mockup;markdown</PackageTags>
+
+    <!-- A single file per platform, self-contained:
+           dotnet publish -c Release -r win-x64 (self-contained) -p:PublishSingleFile=true
+         or compiled ahead of time (Native AOT, needs the C++ build tools):
+           dotnet publish -c Release -r win-x64 -p:Aot=true
+         Not -p:PublishAot=true: as a global property it reaches the library's netstandard2.0 build too, which has
+         no AOT (NETSDK1207). The tool keeps AOT possible: no reflection-based JSON, no dependencies. -->
+    <IsAotCompatible>true</IsAotCompatible>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Aot)' == 'true'">
+    <PublishAot>true</PublishAot>
+  </PropertyGroup>
+
+</Project>

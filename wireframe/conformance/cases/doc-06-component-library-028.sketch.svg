@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="80" viewBox="0 0 112 80" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g role="link" aria-label="Click here"><g>
+      <text x="16" y="31" class="wire-text" fill="#4a90d9" style="text-decoration: underline">Click here</text>
+    </g></g><g role="link" aria-label="External"><g>
+      <text x="16" y="59" class="wire-text" fill="#4a90d9" style="text-decoration: underline">External</text>
+    </g></g>
+</svg>

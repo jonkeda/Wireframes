@@ -1,0 +1,9 @@
+wireframe clean
+    Sidebar w=200 h=300 padding=12
+        Vertical gap=4
+            Button "Dashboard" w=100%
+            Button "Settings" w=100%
+            Button "Profile" w=100%
+        /Vertical
+    /Sidebar
+/wireframe

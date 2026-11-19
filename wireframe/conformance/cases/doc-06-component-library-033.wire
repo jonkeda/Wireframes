@@ -1,0 +1,4 @@
+wireframe clean
+    Option "Option text"
+    Option "Selected option" selected
+/wireframe

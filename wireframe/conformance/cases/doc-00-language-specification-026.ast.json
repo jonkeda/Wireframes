@@ -1,0 +1,111 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Checkbox",
+      "end": {
+        "column": 28,
+        "line": 2,
+        "offset": 43
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Accept terms",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Checkbox",
+      "end": {
+        "column": 35,
+        "line": 3,
+        "offset": 78
+      },
+      "modifiers": {
+        "checked": true
+      },
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 48
+      },
+      "text": "Remember me",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Checkbox",
+      "end": {
+        "column": 40,
+        "line": 4,
+        "offset": 118
+      },
+      "modifiers": {
+        "required": true
+      },
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 83
+      },
+      "text": "Required option",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Checkbox",
+      "end": {
+        "column": 33,
+        "line": 5,
+        "offset": 151
+      },
+      "modifiers": {
+        "disabled": true
+      },
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 123
+      },
+      "text": "Disabled",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "binding": "user.newsletter",
+      "controlType": "Checkbox",
+      "end": {
+        "column": 51,
+        "line": 6,
+        "offset": 202
+      },
+      "id": "chkNews",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 6,
+        "offset": 156
+      },
+      "text": "Subscribe",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 7,
+    "offset": 213
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

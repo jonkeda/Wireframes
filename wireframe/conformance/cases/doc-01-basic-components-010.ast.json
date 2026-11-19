@@ -1,0 +1,93 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 16,
+        "w": 300
+      },
+      "children": [
+        {
+          "attributes": {
+            "value": 75
+          },
+          "controlType": "Progress",
+          "end": {
+            "column": 26,
+            "line": 3,
+            "offset": 67
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 50
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "value": 50
+          },
+          "controlType": "Progress",
+          "end": {
+            "column": 26,
+            "line": 4,
+            "offset": 93
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 76
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "value": 25
+          },
+          "controlType": "Progress",
+          "end": {
+            "column": 26,
+            "line": 5,
+            "offset": 119
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 102
+          },
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 6,
+        "offset": 120
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 6,
+    "offset": 130
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

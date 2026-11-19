@@ -1,0 +1,1 @@
+wireframe\n    if loggedIn\n        Button "Log out"\n    /if\n/wireframe

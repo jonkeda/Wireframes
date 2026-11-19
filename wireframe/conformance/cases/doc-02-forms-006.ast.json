@@ -1,0 +1,93 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 8
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Switch",
+          "end": {
+            "column": 38,
+            "line": 3,
+            "offset": 72
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 43
+          },
+          "text": "Enable notifications",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Switch",
+          "end": {
+            "column": 35,
+            "line": 4,
+            "offset": 107
+          },
+          "modifiers": {
+            "checked": true
+          },
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 81
+          },
+          "text": "Dark mode",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Switch",
+          "end": {
+            "column": 35,
+            "line": 5,
+            "offset": 142
+          },
+          "modifiers": {
+            "disabled": true
+          },
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 116
+          },
+          "text": "Disabled",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 6,
+        "offset": 143
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 6,
+    "offset": 153
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

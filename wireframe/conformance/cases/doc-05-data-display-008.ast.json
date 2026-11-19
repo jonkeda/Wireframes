@@ -1,0 +1,114 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 8
+      },
+      "children": [
+        {
+          "attributes": {
+            "variant": "success"
+          },
+          "controlType": "Toast",
+          "end": {
+            "column": 56,
+            "line": 3,
+            "offset": 90
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 43
+          },
+          "text": "File saved successfully",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "variant": "info"
+          },
+          "controlType": "Toast",
+          "end": {
+            "column": 50,
+            "line": 4,
+            "offset": 140
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 99
+          },
+          "text": "New message received",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "variant": "warning"
+          },
+          "controlType": "Toast",
+          "end": {
+            "column": 56,
+            "line": 5,
+            "offset": 196
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 149
+          },
+          "text": "Network connection slow",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "variant": "error"
+          },
+          "controlType": "Toast",
+          "end": {
+            "column": 52,
+            "line": 6,
+            "offset": 248
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 205
+          },
+          "text": "Failed to upload file",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 7,
+        "offset": 249
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 7,
+    "offset": 259
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

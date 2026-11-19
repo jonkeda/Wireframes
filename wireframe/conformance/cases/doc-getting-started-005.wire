@@ -1,0 +1,6 @@
+wireframe clean
+    Button "Primary" primary
+    Button "Disabled" disabled
+    TextInput "Email" :txtEmail required
+    Label "Error message" 
+/wireframe

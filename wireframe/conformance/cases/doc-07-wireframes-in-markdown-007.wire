@@ -1,0 +1,27 @@
+wireframe clean
+    Card w=400 padding=20
+        Vertical gap=16
+            Heading "Form States" level=3
+            
+            Vertical gap=4
+                Label "Normal Input"
+                TextInput placeholder="Enter text"
+            /Vertical
+            
+            Vertical gap=4
+                Label "Required Field *"
+                TextInput placeholder="Required" required
+            /Vertical
+            
+            Vertical gap=4
+                Label "Disabled Input"
+                TextInput placeholder="Cannot edit" disabled
+            /Vertical
+            
+            Vertical gap=4
+                Label "Read Only"
+                TextInput "Fixed value" readonly
+            /Vertical
+        /Vertical
+    /Card
+/wireframe

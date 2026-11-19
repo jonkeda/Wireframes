@@ -1,0 +1,107 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Button",
+      "end": {
+        "column": 15,
+        "line": 2,
+        "offset": 30
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "A",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [
+    {
+      "componentBody": [
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "TextInput",
+              "end": {
+                "column": 27,
+                "line": 5,
+                "offset": 104
+              },
+              "modifiers": {},
+              "placeholder": "Search",
+              "start": {
+                "column": 9,
+                "line": 5,
+                "offset": 86
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 20,
+                "line": 6,
+                "offset": 124
+              },
+              "modifiers": {},
+              "start": {
+                "column": 9,
+                "line": 6,
+                "offset": 113
+              },
+              "text": "Go",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 1,
+            "line": 7,
+            "offset": 125
+          },
+          "layoutType": "Horizontal",
+          "modifiers": {},
+          "start": {
+            "column": 5,
+            "line": 4,
+            "offset": 67
+          },
+          "type": "Layout"
+        }
+      ],
+      "componentName": "SearchBox",
+      "componentParams": "placeholder",
+      "end": {
+        "column": 11,
+        "line": 7,
+        "offset": 135
+      },
+      "rows": [],
+      "sectionType": "component",
+      "start": {
+        "column": 1,
+        "line": 3,
+        "offset": 31
+      },
+      "type": "DataSection"
+    }
+  ],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 146
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,200 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 12,
+        "w": 200
+      },
+      "children": [
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Option",
+              "end": {
+                "column": 35,
+                "line": 4,
+                "offset": 110
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 88
+              },
+              "text": "United States",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Option",
+              "end": {
+                "column": 28,
+                "line": 5,
+                "offset": 138
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 123
+              },
+              "text": "Canada",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Option",
+              "end": {
+                "column": 36,
+                "line": 6,
+                "offset": 174
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 151
+              },
+              "text": "United Kingdom",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Option",
+              "end": {
+                "column": 29,
+                "line": 7,
+                "offset": 203
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 7,
+                "offset": 187
+              },
+              "text": "Germany",
+              "type": "Control"
+            }
+          ],
+          "controlType": "Dropdown",
+          "end": {
+            "column": 18,
+            "line": 8,
+            "offset": 221
+          },
+          "modifiers": {},
+          "placeholder": "Select country",
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 50
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Option",
+              "end": {
+                "column": 34,
+                "line": 11,
+                "offset": 298
+              },
+              "modifiers": {
+                "selected": true
+              },
+              "start": {
+                "column": 13,
+                "line": 11,
+                "offset": 277
+              },
+              "text": "Red",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Option",
+              "end": {
+                "column": 27,
+                "line": 12,
+                "offset": 325
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 12,
+                "offset": 311
+              },
+              "text": "Green",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Option",
+              "end": {
+                "column": 26,
+                "line": 13,
+                "offset": 351
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 13,
+                "offset": 338
+              },
+              "text": "Blue",
+              "type": "Control"
+            }
+          ],
+          "controlType": "Dropdown",
+          "end": {
+            "column": 18,
+            "line": 14,
+            "offset": 369
+          },
+          "modifiers": {
+            "expanded": true
+          },
+          "placeholder": "Color",
+          "start": {
+            "column": 9,
+            "line": 10,
+            "offset": 239
+          },
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 15,
+        "offset": 370
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 15,
+    "offset": 380
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,17 @@
+wireframe clean
+    Card
+        Vertical gap=12
+            Label "**File Browser**"
+            
+            Tree :treeFiles
+                + Documents
+                    + Work
+                        - Report.pdf
+                        - Presentation.pptx
+                    + Personal
+                + Images
+                + Downloads
+            /Tree
+        /Vertical
+    /Card
+/wireframe

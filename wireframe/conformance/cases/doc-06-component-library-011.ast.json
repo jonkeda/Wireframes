@@ -1,0 +1,96 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "dock": "left",
+        "width": 240
+      },
+      "children": [
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "MenuItem",
+              "end": {
+                "column": 1,
+                "line": 5,
+                "offset": 105
+              },
+              "icon": "home",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 73
+              },
+              "text": "Dashboard",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "MenuItem",
+              "end": {
+                "column": 1,
+                "line": 6,
+                "offset": 152
+              },
+              "icon": "settings",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 117
+              },
+              "text": "Settings",
+              "type": "Component"
+            }
+          ],
+          "componentType": "Menu",
+          "end": {
+            "column": 14,
+            "line": 6,
+            "offset": 165
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 56
+          },
+          "type": "Component"
+        }
+      ],
+      "dock": "left",
+      "end": {
+        "column": 13,
+        "line": 7,
+        "offset": 178
+      },
+      "modifiers": {},
+      "sectionType": "Sidebar",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 189
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

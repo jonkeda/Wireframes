@@ -1,0 +1,582 @@
+{
+  "attributes": {
+    "title": "Avatar Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 33,
+            "line": 6,
+            "offset": 124
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 100
+          },
+          "text": "**Avatar Sizes**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "align": "center",
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {
+                "align": "center",
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "size": 24
+                  },
+                  "controlType": "Avatar",
+                  "end": {
+                    "column": 31,
+                    "line": 10,
+                    "offset": 235
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 10,
+                    "offset": 221
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 27,
+                    "line": 11,
+                    "offset": 262
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 11,
+                    "offset": 252
+                  },
+                  "text": "XS",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 12,
+                "offset": 284
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 177
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "align": "center",
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "size": 32
+                  },
+                  "controlType": "Avatar",
+                  "end": {
+                    "column": 31,
+                    "line": 14,
+                    "offset": 355
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 14,
+                    "offset": 341
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 27,
+                    "line": 15,
+                    "offset": 382
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 15,
+                    "offset": 372
+                  },
+                  "text": "SM",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 16,
+                "offset": 404
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 13,
+                "offset": 297
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "align": "center",
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "size": 48
+                  },
+                  "controlType": "Avatar",
+                  "end": {
+                    "column": 31,
+                    "line": 18,
+                    "offset": 475
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 18,
+                    "offset": 461
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 27,
+                    "line": 19,
+                    "offset": 502
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 19,
+                    "offset": 492
+                  },
+                  "text": "MD",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 20,
+                "offset": 524
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 17,
+                "offset": 417
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "align": "center",
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "size": 64
+                  },
+                  "controlType": "Avatar",
+                  "end": {
+                    "column": 31,
+                    "line": 22,
+                    "offset": 595
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 22,
+                    "offset": 581
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 27,
+                    "line": 23,
+                    "offset": 622
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 23,
+                    "offset": 612
+                  },
+                  "text": "LG",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 24,
+                "offset": 644
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 21,
+                "offset": 537
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "align": "center",
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "size": 96
+                  },
+                  "controlType": "Avatar",
+                  "end": {
+                    "column": 31,
+                    "line": 26,
+                    "offset": 715
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 26,
+                    "offset": 701
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 27,
+                    "line": 27,
+                    "offset": 742
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 27,
+                    "offset": 732
+                  },
+                  "text": "XL",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 28,
+                "offset": 764
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 25,
+                "offset": 657
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 20,
+            "line": 29,
+            "offset": 784
+          },
+          "layoutType": "Horizontal",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 134
+          },
+          "type": "Layout"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 31,
+            "offset": 803
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 31,
+            "offset": 794
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 38,
+            "line": 33,
+            "offset": 842
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 33,
+            "offset": 813
+          },
+          "text": "**Avatar with Names**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "attributes": {
+                "align": "center",
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "initials": "JD",
+                    "size": 40
+                  },
+                  "controlType": "Avatar",
+                  "end": {
+                    "column": 45,
+                    "line": 37,
+                    "offset": 953
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 37,
+                    "offset": 925
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 33,
+                    "line": 38,
+                    "offset": 986
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 38,
+                    "offset": 970
+                  },
+                  "text": "John Doe",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 39,
+                "offset": 1010
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 36,
+                "offset": 879
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "align": "center",
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "initials": "AS",
+                    "size": 40
+                  },
+                  "controlType": "Avatar",
+                  "end": {
+                    "column": 45,
+                    "line": 41,
+                    "offset": 1097
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 41,
+                    "offset": 1069
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 36,
+                    "line": 42,
+                    "offset": 1133
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 42,
+                    "offset": 1114
+                  },
+                  "text": "Alice Smith",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 43,
+                "offset": 1157
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 40,
+                "offset": 1023
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "align": "center",
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "initials": "BJ",
+                    "size": 40
+                  },
+                  "controlType": "Avatar",
+                  "end": {
+                    "column": 45,
+                    "line": 45,
+                    "offset": 1244
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 45,
+                    "offset": 1216
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 36,
+                    "line": 46,
+                    "offset": 1280
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 46,
+                    "offset": 1261
+                  },
+                  "text": "Bob Johnson",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 47,
+                "offset": 1304
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 44,
+                "offset": 1170
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 48,
+            "offset": 1322
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 35,
+            "offset": 852
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 49,
+        "offset": 1336
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 76
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 50,
+    "offset": 1347
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 27
+  },
+  "style": "clean",
+  "type": "Document"
+}

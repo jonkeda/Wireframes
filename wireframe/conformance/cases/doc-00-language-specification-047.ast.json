@@ -1,0 +1,83 @@
+{
+  "attributes": {},
+  "children": [],
+  "dataSections": [
+    {
+      "columns": [
+        "Source",
+        "Type",
+        "Fields"
+      ],
+      "end": {
+        "column": 10,
+        "line": 7,
+        "offset": 226
+      },
+      "records": [
+        {
+          "Fields": "firstName, lastName, email",
+          "Source": "customer",
+          "Type": "object"
+        },
+        {
+          "Fields": "product, quantity, price",
+          "Source": "orderItems",
+          "Type": "collection"
+        }
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Source",
+            "Type",
+            "Fields"
+          ],
+          "isSeparator": false
+        },
+        {
+          "cells": [
+            "--------",
+            "------",
+            "--------"
+          ],
+          "isSeparator": true
+        },
+        {
+          "cells": [
+            "customer",
+            "object",
+            "firstName, lastName, email"
+          ],
+          "isSeparator": false
+        },
+        {
+          "cells": [
+            "orderItems",
+            "collection",
+            "product, quantity, price"
+          ],
+          "isSeparator": false
+        }
+      ],
+      "sectionType": "data",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "DataSection"
+    }
+  ],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 237
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

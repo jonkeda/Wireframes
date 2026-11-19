@@ -1,0 +1,94 @@
+{
+  "attributes": {
+    "title": "Row and Cell Table"
+  },
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 51,
+                "line": 6,
+                "offset": 135
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 97
+              },
+              "text": "**Custom Table with Row/Cell**",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "gap": 0
+              },
+              "children": [],
+              "end": {
+                "column": 17,
+                "line": 14,
+                "offset": 400
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 8,
+                "offset": 161
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 17,
+            "line": 20,
+            "offset": 588
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 69
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 17,
+        "line": 26,
+        "offset": 779
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 56
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 36,
+    "offset": 1036
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

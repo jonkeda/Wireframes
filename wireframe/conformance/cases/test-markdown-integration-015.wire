@@ -1,0 +1,18 @@
+wireframe clean
+    Dock w=600 h=400
+        Header dock=top h=60
+            Label "My Dashboard"
+        /Header
+        Sidebar dock=left w=150
+            Menu
+                MenuItem "Home" icon=home
+                MenuItem "Settings" icon=settings
+            /Menu
+        /Sidebar
+        Content dock=fill
+            Card
+                Label "Main content"
+            /Card
+        /Content
+    /Dock
+/wireframe

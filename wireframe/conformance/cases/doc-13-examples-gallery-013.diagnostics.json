@@ -1,0 +1,67 @@
+[
+  {
+    "column": 13,
+    "line": 4,
+    "message": "Unexpected token: Step"
+  },
+  {
+    "column": 18,
+    "line": 4,
+    "message": "Unexpected token: Account"
+  },
+  {
+    "column": 28,
+    "line": 4,
+    "message": "Unexpected token: completed"
+  },
+  {
+    "column": 13,
+    "line": 5,
+    "message": "Unexpected token: Step"
+  },
+  {
+    "column": 18,
+    "line": 5,
+    "message": "Unexpected token: Profile"
+  },
+  {
+    "column": 28,
+    "line": 5,
+    "message": "Unexpected token: active"
+  },
+  {
+    "column": 13,
+    "line": 6,
+    "message": "Unexpected token: Step"
+  },
+  {
+    "column": 18,
+    "line": 6,
+    "message": "Unexpected token: Review"
+  },
+  {
+    "column": 13,
+    "line": 7,
+    "message": "Unexpected token: Step"
+  },
+  {
+    "column": 18,
+    "line": 7,
+    "message": "Unexpected token: Complete"
+  },
+  {
+    "column": 13,
+    "line": 14,
+    "message": "Unexpected token: Textarea"
+  },
+  {
+    "column": 22,
+    "line": 14,
+    "message": "Unexpected token: About"
+  },
+  {
+    "column": 30,
+    "line": 14,
+    "message": "Unexpected token: ?about"
+  }
+]

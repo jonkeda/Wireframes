@@ -1,0 +1,72 @@
+[
+  {
+    "column": 25,
+    "line": 55,
+    "message": "Unexpected token: ListItem"
+  },
+  {
+    "column": 1,
+    "line": 56,
+    "message": "Unexpected token:                             "
+  },
+  {
+    "column": 25,
+    "line": 64,
+    "message": "Unknown closing keyword /ListItem"
+  },
+  {
+    "column": 25,
+    "line": 65,
+    "message": "Unexpected token: ListItem"
+  },
+  {
+    "column": 1,
+    "line": 66,
+    "message": "Unexpected token:                             "
+  },
+  {
+    "column": 25,
+    "line": 74,
+    "message": "Unknown closing keyword /ListItem"
+  },
+  {
+    "column": 21,
+    "line": 75,
+    "message": "Unexpected /List: no List is open here"
+  },
+  {
+    "column": 17,
+    "line": 76,
+    "message": "Unexpected /Card: no Card is open here"
+  },
+  {
+    "column": 21,
+    "line": 79,
+    "message": "Unexpected token: Chart"
+  },
+  {
+    "column": 27,
+    "line": 79,
+    "message": "Unexpected token: ?revenueChart"
+  },
+  {
+    "column": 41,
+    "line": 79,
+    "message": "Unexpected token: type=bar"
+  },
+  {
+    "column": 13,
+    "line": 81,
+    "message": "Unexpected /Horizontal: no Horizontal is open here"
+  },
+  {
+    "column": 9,
+    "line": 82,
+    "message": "Unexpected /Content: no Content is open here"
+  },
+  {
+    "column": 5,
+    "line": 83,
+    "message": "Unexpected /Dock: no Dock is open here"
+  }
+]

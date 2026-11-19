@@ -1,0 +1,278 @@
+{
+  "attributes": {
+    "title": "Settings"
+  },
+  "children": [
+    {
+      "attributes": {
+        "w": 400
+      },
+      "children": [
+        {
+          "attributes": {
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 33,
+                "line": 6,
+                "offset": 113
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 93
+              },
+              "text": "**Settings**",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 38,
+                "line": 8,
+                "offset": 164
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 8,
+                "offset": 139
+              },
+              "text": "**Notifications**",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Switch",
+              "end": {
+                "column": 50,
+                "line": 9,
+                "offset": 214
+              },
+              "id": "swEmail",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 177
+              },
+              "text": "Email notifications",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "checked": true
+              },
+              "controlType": "Switch",
+              "end": {
+                "column": 61,
+                "line": 10,
+                "offset": 275
+              },
+              "id": "swPush",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 227
+              },
+              "text": "Push notifications",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Separator",
+              "end": {
+                "column": 22,
+                "line": 12,
+                "offset": 310
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 12,
+                "offset": 301
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 32,
+                "line": 14,
+                "offset": 355
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 14,
+                "offset": 336
+              },
+              "text": "**Privacy**",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Switch",
+              "end": {
+                "column": 46,
+                "line": 15,
+                "offset": 401
+              },
+              "id": "swPublic",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 15,
+                "offset": 368
+              },
+              "text": "Public profile",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "checked": true
+              },
+              "controlType": "Switch",
+              "end": {
+                "column": 63,
+                "line": 16,
+                "offset": 464
+              },
+              "id": "swOnline",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 16,
+                "offset": 414
+              },
+              "text": "Show online status",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Separator",
+              "end": {
+                "column": 22,
+                "line": 18,
+                "offset": 499
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 18,
+                "offset": 490
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "gap": 8,
+                "justify": "end"
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 39,
+                    "line": 21,
+                    "offset": 592
+                  },
+                  "modifiers": {},
+                  "navigation": ":back",
+                  "start": {
+                    "column": 17,
+                    "line": 21,
+                    "offset": 570
+                  },
+                  "text": "Cancel",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 55,
+                    "line": 22,
+                    "offset": 647
+                  },
+                  "id": "btnSave",
+                  "modifiers": {
+                    "primary": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 22,
+                    "offset": 609
+                  },
+                  "text": "Save Changes",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 23,
+                "offset": 671
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 20,
+                "offset": 525
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 24,
+            "offset": 689
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 65
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 25,
+        "offset": 699
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 46
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 26,
+    "offset": 710
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

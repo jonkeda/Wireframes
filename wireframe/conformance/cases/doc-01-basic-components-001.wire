@@ -1,0 +1,7 @@
+wireframe clean
+    Horizontal gap=8
+        Button "Click Me"
+        Button "Primary" primary
+        Button "Secondary" secondary
+        Button "Disabled" disabled
+/wireframe

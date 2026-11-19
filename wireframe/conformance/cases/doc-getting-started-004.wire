@@ -1,0 +1,15 @@
+wireframe clean
+    Header
+        Label "**My App**"
+    /Header
+    
+    Content
+        Card
+            Label "Main content here"
+        /Card
+    /Content
+    
+    Footer
+        Label "Footer text"
+    /Footer
+/wireframe

@@ -1,0 +1,9 @@
+wireframe clean
+    Scroll height=200
+        Vertical gap=8
+            Repeat 20
+                Label "Item"
+            /Repeat
+        /Vertical
+    /Scroll
+/wireframe

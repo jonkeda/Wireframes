@@ -1,0 +1,52 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [],
+      "end": {
+        "column": 20,
+        "line": 1,
+        "offset": 19
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 16,
+        "line": 1,
+        "offset": 15
+      },
+      "type": "Section"
+    },
+    {
+      "attributes": {},
+      "controlType": "Label",
+      "end": {
+        "column": 47,
+        "line": 1,
+        "offset": 46
+      },
+      "modifiers": {},
+      "start": {
+        "column": 30,
+        "line": 1,
+        "offset": 29
+      },
+      "text": "In a card",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 70,
+    "line": 1,
+    "offset": 69
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

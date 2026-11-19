@@ -1,0 +1,83 @@
+{
+  "attributes": {},
+  "children": [],
+  "dataSections": [
+    {
+      "columns": [
+        "Field",
+        "Rule",
+        "Message"
+      ],
+      "end": {
+        "column": 17,
+        "line": 7,
+        "offset": 234
+      },
+      "records": [
+        {
+          "Field": "txtUsername",
+          "Message": "\"Username is required\"",
+          "Rule": "required"
+        },
+        {
+          "Field": "txtEmail",
+          "Message": "\"Invalid email\"",
+          "Rule": "pattern(email)"
+        }
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Field",
+            "Rule",
+            "Message"
+          ],
+          "isSeparator": false
+        },
+        {
+          "cells": [
+            "-------",
+            "------",
+            "---------"
+          ],
+          "isSeparator": true
+        },
+        {
+          "cells": [
+            "txtUsername",
+            "required",
+            "\"Username is required\""
+          ],
+          "isSeparator": false
+        },
+        {
+          "cells": [
+            "txtEmail",
+            "pattern(email)",
+            "\"Invalid email\""
+          ],
+          "isSeparator": false
+        }
+      ],
+      "sectionType": "validations",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "DataSection"
+    }
+  ],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 245
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

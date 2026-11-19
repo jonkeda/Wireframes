@@ -1,0 +1,403 @@
+{
+  "attributes": {
+    "title": "Table Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 32,
+            "line": 6,
+            "offset": 121
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 98
+          },
+          "text": "**Basic Table**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "cols": 3,
+            "rows": 4
+          },
+          "children": [],
+          "componentType": "Table",
+          "end": {
+            "column": 15,
+            "line": 9,
+            "offset": 165
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 131
+          },
+          "tableRows": [],
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 11,
+            "offset": 184
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 11,
+            "offset": 175
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 30,
+            "line": 13,
+            "offset": 215
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 13,
+            "offset": 194
+          },
+          "text": "**Data Grid**",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 29,
+                "line": 17,
+                "offset": 288
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 17,
+                "offset": 272
+              },
+              "text": "**Name**",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 30,
+                "line": 18,
+                "offset": 318
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 18,
+                "offset": 301
+              },
+              "text": "**Email**",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 29,
+                "line": 19,
+                "offset": 347
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 19,
+                "offset": 331
+              },
+              "text": "**Role**",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 31,
+                "line": 20,
+                "offset": 378
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 20,
+                "offset": 360
+              },
+              "text": "**Status**",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 29,
+                "line": 23,
+                "offset": 433
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 23,
+                "offset": 417
+              },
+              "text": "John Doe",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 37,
+                "line": 24,
+                "offset": 470
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 24,
+                "offset": 446
+              },
+              "text": "john@example.com",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 26,
+                "line": 25,
+                "offset": 496
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 25,
+                "offset": 483
+              },
+              "text": "Admin",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Badge",
+              "end": {
+                "column": 27,
+                "line": 26,
+                "offset": 523
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 26,
+                "offset": 509
+              },
+              "text": "Active",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 31,
+                "line": 28,
+                "offset": 555
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 28,
+                "offset": 537
+              },
+              "text": "Jane Smith",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 37,
+                "line": 29,
+                "offset": 592
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 29,
+                "offset": 568
+              },
+              "text": "jane@example.com",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 27,
+                "line": 30,
+                "offset": 619
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 30,
+                "offset": 605
+              },
+              "text": "Editor",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Badge",
+              "end": {
+                "column": 27,
+                "line": 31,
+                "offset": 646
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 31,
+                "offset": 632
+              },
+              "text": "Active",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 32,
+                "line": 33,
+                "offset": 679
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 33,
+                "offset": 660
+              },
+              "text": "Bob Johnson",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 36,
+                "line": 34,
+                "offset": 715
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 34,
+                "offset": 692
+              },
+              "text": "bob@example.com",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 27,
+                "line": 35,
+                "offset": 742
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 35,
+                "offset": 728
+              },
+              "text": "Viewer",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Badge",
+              "end": {
+                "column": 39,
+                "line": 36,
+                "offset": 781
+              },
+              "modifiers": {
+                "secondary": true
+              },
+              "start": {
+                "column": 13,
+                "line": 36,
+                "offset": 755
+              },
+              "text": "Inactive",
+              "type": "Control"
+            }
+          ],
+          "componentType": "DataGrid",
+          "end": {
+            "column": 18,
+            "line": 37,
+            "offset": 799
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 15,
+            "offset": 225
+          },
+          "type": "Component"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 38,
+        "offset": 813
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 74
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 39,
+    "offset": 824
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 26
+  },
+  "style": "clean",
+  "type": "Document"
+}

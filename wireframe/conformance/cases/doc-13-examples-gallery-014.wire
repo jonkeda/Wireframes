@@ -1,0 +1,38 @@
+wireframe clean
+    Table
+        Column "Name" sortable
+        Column "Email" sortable
+        Column "Role"
+        Column "Status"
+        Column "Actions"
+        
+        Row
+            Cell "John Doe"
+            Cell "john@example.com"
+            Cell "Admin"
+            Cell
+                Badge "Active" color=green
+            /Cell
+            Cell
+                Horizontal gap=8
+                    IconButton $icon:edit
+                    IconButton $icon:trash
+                /Horizontal
+            /Cell
+        /Row
+        Row
+            Cell "Jane Smith"
+            Cell "jane@example.com"
+            Cell "User"
+            Cell
+                Badge "Pending" color=yellow
+            /Cell
+            Cell
+                Horizontal gap=8
+                    IconButton $icon:edit
+                    IconButton $icon:trash
+                /Horizontal
+            /Cell
+        /Row
+    /Table
+/wireframe

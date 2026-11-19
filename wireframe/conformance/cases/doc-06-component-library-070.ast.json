@@ -1,0 +1,80 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "Tree",
+      "end": {
+        "column": 10,
+        "line": 11,
+        "offset": 224
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "treeItems": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [],
+                  "isBranch": false,
+                  "text": "Project A"
+                },
+                {
+                  "children": [],
+                  "isBranch": false,
+                  "text": "Project B"
+                }
+              ],
+              "isBranch": true,
+              "text": "Projects"
+            },
+            {
+              "children": [],
+              "isBranch": false,
+              "text": "Notes.txt"
+            }
+          ],
+          "isBranch": true,
+          "text": "Documents"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "isBranch": false,
+              "text": "Photo1.jpg"
+            },
+            {
+              "children": [],
+              "isBranch": false,
+              "text": "Photo2.jpg"
+            }
+          ],
+          "isBranch": true,
+          "text": "Images"
+        }
+      ],
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 12,
+    "offset": 235
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

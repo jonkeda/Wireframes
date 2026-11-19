@@ -1,0 +1,91 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Checkbox",
+      "end": {
+        "column": 28,
+        "line": 2,
+        "offset": 43
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Accept terms",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Checkbox",
+      "end": {
+        "column": 35,
+        "line": 3,
+        "offset": 78
+      },
+      "modifiers": {
+        "checked": true
+      },
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 48
+      },
+      "text": "Remember me",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Checkbox",
+      "end": {
+        "column": 37,
+        "line": 4,
+        "offset": 115
+      },
+      "modifiers": {
+        "indeterminate": true
+      },
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 83
+      },
+      "text": "Partial",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "binding": "isEnabled",
+      "controlType": "Checkbox",
+      "end": {
+        "column": 32,
+        "line": 5,
+        "offset": 147
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 120
+      },
+      "text": "Bound",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 6,
+    "offset": 158
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

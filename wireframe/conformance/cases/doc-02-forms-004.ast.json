@@ -1,0 +1,112 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 8
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Checkbox",
+          "end": {
+            "column": 47,
+            "line": 3,
+            "offset": 81
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 43
+          },
+          "text": "Accept terms and conditions",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Checkbox",
+          "end": {
+            "column": 51,
+            "line": 4,
+            "offset": 132
+          },
+          "modifiers": {
+            "checked": true
+          },
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 90
+          },
+          "text": "Subscribe to newsletter",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Checkbox",
+          "end": {
+            "column": 44,
+            "line": 5,
+            "offset": 176
+          },
+          "modifiers": {
+            "disabled": true
+          },
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 141
+          },
+          "text": "Disabled option",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Checkbox",
+          "end": {
+            "column": 47,
+            "line": 6,
+            "offset": 223
+          },
+          "modifiers": {
+            "indeterminate": true
+          },
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 185
+          },
+          "text": "Indeterminate",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 7,
+        "offset": 224
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 7,
+    "offset": 234
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

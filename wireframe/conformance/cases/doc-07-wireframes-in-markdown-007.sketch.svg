@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <path d="M16.0 17.2 Q400.0 18.9 784.0 14.6 M784.3 16.0 Q791.0 300.0 783.6 584.0 M784.0 582.7 Q400.0 581.9 16.0 583.5 M15.8 584.0 Q10.4 300.0 15.7 16.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Form States"><text x="32" y="54" class="wire-text wire-text-bold" style="font-size: 18px">Form States</text></g><g role="group" aria-label="Normal Input"><text x="32" y="95" class="wire-text">Normal Input</text></g><g role="textbox" aria-label="Enter text" aria-placeholder="Enter text"><g>
+      <path d="M32.0 103.2 Q132.0 107.2 232.0 102.6 M231.2 104.0 Q235.4 122.0 233.2 140.0 M232.0 140.6 Q132.0 137.7 32.0 139.4 M32.9 140.0 Q27.5 122.0 31.4 104.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="127" class="wire-text wire-text-secondary">Enter text</text>
+      
+    </g></g><g role="group" aria-label="Required Field *"><text x="32" y="171" class="wire-text">Required Field *</text></g><g role="textbox" aria-label="Required" aria-required="true" aria-placeholder="Required"><g>
+      <path d="M32.0 181.1 Q132.0 178.5 232.0 181.2 M232.3 180.0 Q229.5 198.0 231.4 216.0 M232.0 214.7 Q132.0 217.8 32.0 215.2 M31.8 216.0 Q33.3 198.0 31.6 180.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="203" class="wire-text wire-text-secondary">Required</text>
+      <text x="220" y="203" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="group" aria-label="Disabled Input"><text x="32" y="247" class="wire-text">Disabled Input</text></g><g role="textbox" aria-label="Cannot edit" aria-disabled="true" aria-placeholder="Cannot edit"><g>
+      <path d="M32.0 256.0 Q132.0 263.0 232.0 255.1 M233.4 256.0 Q231.8 274.0 231.2 292.0 M232.0 291.8 Q132.0 298.5 32.0 291.5 M30.7 292.0 Q30.5 274.0 33.1 256.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="279" class="wire-text wire-text-secondary">Cannot edit</text>
+      
+    </g></g><g role="group" aria-label="Read Only"><text x="32" y="323" class="wire-text">Read Only</text></g><g role="textbox" aria-label="Fixed value" aria-placeholder="Fixed value"><g>
+      <path d="M32.0 330.9 Q132.0 334.5 232.0 331.3 M231.5 332.0 Q233.9 350.0 230.6 368.0 M232.0 369.0 Q132.0 366.4 32.0 366.8 M32.6 368.0 Q31.2 350.0 32.7 332.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="355" class="wire-text wire-text-secondary">Fixed value</text>
+      
+    </g></g>
+</svg>

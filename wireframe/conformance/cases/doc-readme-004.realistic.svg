@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <rect x="16" y="16" width="768" height="568" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="textbox" aria-label="user@example.com" aria-disabled="true" aria-placeholder="user@example.com"><g>
+      <rect x="32" y="32" width="200" height="36" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="55" class="wire-text wire-text-secondary">user@example.com</text>
+      
+    </g></g><g role="textbox" aria-label="••••••••" aria-disabled="true" aria-placeholder="••••••••"><g>
+      <rect x="32" y="84" width="200" height="36" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="44" y="107" class="wire-text wire-text-secondary">••••</text>
+      
+    </g></g><g role="button" aria-label="Signing in..." aria-disabled="true"><g opacity="0.5">
+      <rect x="32" y="136" width="100" height="36" rx="6" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="82" y="159" text-anchor="middle" class="wire-text" fill="#ffffff">Signing in...</text>
+    </g></g><g role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><g>
+      <rect x="32" y="188" width="200" height="8" rx="4" fill="#f8f9fa" />
+      <rect x="32" y="188" width="100" height="8" rx="4" fill="#0d6efd" />
+    </g></g>
+</svg>

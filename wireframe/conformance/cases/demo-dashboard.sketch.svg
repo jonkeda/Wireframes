@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="724" viewBox="0 0 800 724" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <path d="M16.0 15.0 Q400.0 9.6 784.0 17.0 M783.5 16.0 Q782.4 124.5 783.5 233.0 M784.0 233.9 Q400.0 236.3 16.0 233.1 M16.7 233.0 Q20.7 124.5 15.4 16.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="img"><rect x="48" y="48" width="24" height="24" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g><g role="group" aria-label="**Analytics Pro**"><text x="88" y="63" class="wire-text wire-text-bold">Analytics Pro</text></g><g role="textbox" aria-label="Search..." aria-placeholder="Search..."><g>
+      <path d="M272.0 47.5 Q397.0 42.7 522.0 46.9 M520.9 48.0 Q520.4 66.0 523.0 84.0 M522.0 84.4 Q397.0 88.7 272.0 85.5 M273.2 84.0 Q272.5 66.0 273.0 48.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="284" y="71" class="wire-text wire-text-secondary">Search...</text>
+      
+    </g></g><g role="group" aria-label="JD"><g>
+      <circle cx="558" cy="68" r="20" fill="#4a90d9" />
+      <text x="558" y="72.44" text-anchor="middle" class="wire-text" style="font-size: 13.33px" fill="#ffffff">J</text>
+    </g></g><g role="group"><line x1="610" y1="144" x2="810" y2="144" stroke="#888888" stroke-width="1" /></g><path d="M16.0 232.9 Q136.0 229.1 256.0 234.2 M257.5 233.0 Q251.2 408.5 255.3 584.0 M256.0 583.9 Q136.0 587.9 16.0 583.8 M14.6 584.0 Q22.3 408.5 15.6 233.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><path d="M256.0 234.2 Q520.0 229.1 784.0 233.6 M784.2 233.0 Q778.9 470.5 783.3 708.0 M784.0 706.7 Q520.0 708.8 256.0 708.5 M255.9 708.0 Q260.2 470.5 255.6 233.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="**Dashboard Overview**"><text x="296" y="288" class="wire-text wire-text-bold">Dashboard Overview</text></g><g role="button" aria-label="Export"><g opacity="1">
+      <path d="M504.0 272.0 Q554.0 278.3 604.0 271.5 M603.5 273.0 Q606.8 291.0 603.7 309.0 M604.0 309.9 Q554.0 304.6 504.0 308.5 M504.6 309.0 Q502.4 291.0 503.9 273.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="554" y="296" text-anchor="middle" class="wire-text" fill="#333333">Export</text>
+    </g></g><g role="button" aria-label="Refresh"><g opacity="1">
+      <path d="M612.0 272.6 Q662.0 270.3 712.0 271.9 M710.8 273.0 Q710.2 291.0 710.6 309.0 M712.0 309.3 Q662.0 312.6 612.0 308.1 M613.3 309.0 Q616.7 291.0 612.3 273.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="662" y="296" text-anchor="middle" class="wire-text" fill="#ffffff">Refresh</text>
+    </g></g><path d="M296.0 332.1 Q346.0 338.2 396.0 332.1 M395.3 333.0 Q399.7 438.5 397.5 544.0 M396.0 544.8 Q346.0 539.2 296.0 543.0 M296.8 544.0 Q293.2 438.5 296.5 333.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Total Users"><text x="312" y="364" class="wire-text">Total Users</text></g><g role="group" aria-label="**24,521**"><text x="312" y="392" class="wire-text wire-text-bold">24,521</text></g><path d="M412.0 333.3 Q462.0 332.1 512.0 331.9 M513.2 333.0 Q504.3 438.5 513.0 544.0 M512.0 543.6 Q462.0 545.2 412.0 542.5 M411.0 544.0 Q418.8 438.5 413.0 333.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Revenue"><text x="428" y="364" class="wire-text">Revenue</text></g><g role="group" aria-label="**$84,230**"><text x="428" y="392" class="wire-text wire-text-bold">$84,230</text></g><path d="M528.0 334.5 Q578.0 340.5 628.0 333.1 M628.0 333.0 Q630.4 438.5 629.1 544.0 M628.0 545.4 Q578.0 537.2 528.0 543.4 M528.1 544.0 Q528.7 438.5 528.8 333.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Orders"><text x="544" y="364" class="wire-text">Orders</text></g><g role="group" aria-label="**1,429**"><text x="544" y="392" class="wire-text wire-text-bold">1,429</text></g><path d="M644.0 332.6 Q694.0 334.0 744.0 332.9 M742.8 333.0 Q750.6 438.5 743.3 544.0 M744.0 544.3 Q694.0 543.9 644.0 545.2 M645.3 544.0 Q638.7 438.5 645.3 333.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Conversion"><text x="660" y="364" class="wire-text">Conversion</text></g><g role="group" aria-label="**3.24%**"><text x="660" y="392" class="wire-text wire-text-bold">3.24%</text></g><path d="M296.0 568.3 Q520.0 569.4 744.0 568.3 M745.2 568.0 Q750.2 618.0 744.6 668.0 M744.0 667.6 Q520.0 663.5 296.0 668.8 M295.0 668.0 Q292.9 618.0 297.4 568.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="**Recent Activity**"><text x="312" y="599" class="wire-text wire-text-bold">Recent Activity</text></g><g role="group" aria-label="View All"><text x="496" y="599" class="wire-text">View All</text></g>
+</svg>

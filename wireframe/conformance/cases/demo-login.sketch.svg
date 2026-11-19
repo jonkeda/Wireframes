@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="729" viewBox="0 0 760 729" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g role="img" aria-label="logo"><g>
+      <rect x="56" y="56" width="120" height="120" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
+      <line x1="56" y1="56" x2="176" y2="176" stroke="#888888" stroke-width="1" />
+      <line x1="176" y1="56" x2="56" y2="176" stroke="#888888" stroke-width="1" />
+      <text x="116" y="121" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Image</text>
+    </g></g><path d="M56.0 200.0 Q400.0 206.4 744.0 201.3 M745.4 200.0 Q745.5 372.0 742.5 544.0 M744.0 543.9 Q400.0 535.6 56.0 545.4 M54.7 544.0 Q54.0 372.0 56.4 200.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="**Welcome Back**"><text x="72" y="231" class="wire-text wire-text-bold">Welcome Back</text></g><g role="group" aria-label="Email Address"><text x="72" y="267" class="wire-text">Email Address</text></g><g role="textbox" aria-label="Enter your email" aria-required="true" aria-placeholder="Enter your email"><g>
+      <path d="M72.0 279.8 Q172.0 275.6 272.0 280.5 M270.7 280.0 Q271.4 298.0 272.1 316.0 M272.0 316.1 Q172.0 319.8 72.0 315.9 M73.5 316.0 Q75.4 298.0 70.9 280.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="84" y="303" class="wire-text wire-text-secondary">Enter your email</text>
+      <text x="260" y="303" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="group" aria-label="Password"><text x="72" y="347" class="wire-text">Password</text></g><g role="textbox" aria-label="Enter your password" aria-required="true" aria-placeholder="Enter your password"><g>
+      <path d="M72.0 359.7 Q172.0 357.4 272.0 360.4 M270.7 360.0 Q269.5 378.0 271.5 396.0 M272.0 396.2 Q172.0 398.0 72.0 396.0 M73.4 396.0 Q77.4 378.0 71.5 360.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="84" y="383" class="wire-text wire-text-secondary">••••</text>
+      <text x="260" y="383" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="checkbox" aria-label="Remember me" aria-checked="false"><g><rect x="72" y="415" width="18" height="18" rx="2" fill="#ffffff" stroke="#888888" stroke-width="2" /><text x="98" y="429" class="wire-text">Remember me</text></g></g><g role="button" aria-label="Sign In"><g opacity="1">
+      <path d="M72.0 451.6 Q122.0 451.1 172.0 453.5 M170.8 452.0 Q175.1 470.0 173.1 488.0 M172.0 488.2 Q122.0 485.8 72.0 487.6 M73.3 488.0 Q70.0 470.0 71.5 452.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="122" y="475" text-anchor="middle" class="wire-text" fill="#ffffff">Sign In</text>
+    </g></g><g role="group"><line x1="56" y1="568" x2="256" y2="568" stroke="#888888" stroke-width="1" /></g><g role="button" aria-label="Google"><g opacity="1">
+      <path d="M56.0 594.0 Q106.0 589.9 156.0 594.1 M156.4 593.0 Q156.0 611.0 154.8 629.0 M156.0 627.8 Q106.0 634.7 56.0 628.7 M55.7 629.0 Q58.9 611.0 56.2 593.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="106" y="616" text-anchor="middle" class="wire-text" fill="#333333">Google</text>
+    </g></g><g role="button" aria-label="GitHub"><g opacity="1">
+      <path d="M168.0 592.0 Q218.0 596.7 268.0 593.0 M267.5 593.0 Q268.8 611.0 267.8 629.0 M268.0 629.9 Q218.0 623.2 168.0 628.7 M168.7 629.0 Q166.0 611.0 167.1 593.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="218" y="616" text-anchor="middle" class="wire-text" fill="#333333">GitHub</text>
+    </g></g><g role="group" aria-label="Don&apos;t have an account? Sign up"><text x="56" y="668" class="wire-text">Don&apos;t have an account? Sign up</text></g>
+</svg>

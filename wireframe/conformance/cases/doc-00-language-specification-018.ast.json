@@ -1,0 +1,116 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "TextInput",
+      "end": {
+        "column": 33,
+        "line": 2,
+        "offset": 48
+      },
+      "modifiers": {},
+      "placeholder": "Placeholder text",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "TextInput",
+      "end": {
+        "column": 34,
+        "line": 3,
+        "offset": 82
+      },
+      "id": "txtUser",
+      "modifiers": {},
+      "placeholder": "Username",
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 53
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "TextInput",
+      "end": {
+        "column": 41,
+        "line": 4,
+        "offset": 123
+      },
+      "id": "txtEmail",
+      "modifiers": {
+        "required": true
+      },
+      "placeholder": "Email",
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 87
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "binding": "user.name",
+      "controlType": "TextInput",
+      "end": {
+        "column": 41,
+        "line": 5,
+        "offset": 164
+      },
+      "id": "txtName",
+      "modifiers": {},
+      "placeholder": "Name",
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 128
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "label": "Name",
+        "placeholder": "e.g. Jane"
+      },
+      "controlType": "TextInput",
+      "end": {
+        "column": 69,
+        "line": 6,
+        "offset": 233
+      },
+      "id": "txtName",
+      "label": "Name",
+      "modifiers": {
+        "required": true
+      },
+      "placeholder": "e.g. Jane",
+      "start": {
+        "column": 5,
+        "line": 6,
+        "offset": 169
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 7,
+    "offset": 244
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

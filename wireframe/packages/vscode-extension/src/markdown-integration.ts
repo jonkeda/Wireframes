@@ -52,7 +52,8 @@ export function extendMarkdownIt<T extends MarkdownItInstance>(md: T, outputChan
 
     md.renderer.rules.fence = (tokens, idx, options, env, self): string => {
       const token = tokens[idx];
-      const info = token.info.trim().toLowerCase();
+      // The fence's first word: ```wireframe id=login is a wireframe too (the id names its picture for `wire`).
+      const info = token.info.trim().split(/\s+/)[0].toLowerCase();
 
       // Check if this is a wireframe code block
       if (info === 'wireframe' || info === 'wire') {

@@ -1,0 +1,12 @@
+wireframe clean
+    Card width=320
+        Heading "Login" level=2
+        Vertical gap=16
+            TextInput "Email" ?email required
+            TextInput "Password" ?password required
+            Checkbox "Remember me" ?remember
+            Button "Sign In" primary
+            Link "Forgot password?" @forgot
+        /Vertical
+    /Card
+/wireframe

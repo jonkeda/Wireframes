@@ -1,0 +1,37 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 4
+      },
+      "children": [],
+      "end": {
+        "column": 1,
+        "line": 3,
+        "offset": 35
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

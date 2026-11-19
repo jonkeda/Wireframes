@@ -1,0 +1,21 @@
+{
+  "attributes": {
+    "author": "Test",
+    "title": "My Wireframe",
+    "version": "1.0"
+  },
+  "children": [],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 87
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

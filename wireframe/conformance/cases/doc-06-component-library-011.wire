@@ -1,0 +1,8 @@
+wireframe clean
+    Sidebar width=240 dock=left
+        Menu
+            MenuItem "Dashboard" $icon:home
+            MenuItem "Settings" $icon:settings
+        /Menu
+    /Sidebar
+/wireframe

@@ -1,0 +1,92 @@
+[
+  {
+    "column": 17,
+    "line": 18,
+    "message": "Unexpected token: Bubble"
+  },
+  {
+    "column": 24,
+    "line": 18,
+    "message": "Unexpected token: Hey, how are you?"
+  },
+  {
+    "column": 44,
+    "line": 18,
+    "message": "Unexpected token: align=left"
+  },
+  {
+    "column": 17,
+    "line": 19,
+    "message": "Unexpected token: Bubble"
+  },
+  {
+    "column": 24,
+    "line": 19,
+    "message": "Unexpected token: I'm doing great! Just finished the wireframe."
+  },
+  {
+    "column": 72,
+    "line": 19,
+    "message": "Unexpected token: align=right"
+  },
+  {
+    "column": 17,
+    "line": 20,
+    "message": "Unexpected token: Bubble"
+  },
+  {
+    "column": 24,
+    "line": 20,
+    "message": "Unexpected token: That's awesome! Can you share it?"
+  },
+  {
+    "column": 60,
+    "line": 20,
+    "message": "Unexpected token: align=left"
+  },
+  {
+    "column": 17,
+    "line": 21,
+    "message": "Unexpected token: Bubble"
+  },
+  {
+    "column": 24,
+    "line": 21,
+    "message": "Unexpected token: Sure, I'll send it right now."
+  },
+  {
+    "column": 56,
+    "line": 21,
+    "message": "Unexpected token: align=right"
+  },
+  {
+    "column": 17,
+    "line": 22,
+    "message": "Unexpected token: Bubble"
+  },
+  {
+    "column": 24,
+    "line": 22,
+    "message": "Unexpected token: Here's the file:"
+  },
+  {
+    "column": 43,
+    "line": 22,
+    "message": "Unexpected token: align=right"
+  },
+  {
+    "column": 17,
+    "line": 23,
+    "message": "Unexpected token: Attachment"
+  },
+  {
+    "column": 28,
+    "line": 23,
+    "message": "Unexpected token: wireframe.pdf"
+  },
+  {
+    "column": 44,
+    "line": 23,
+    "message": "Unexpected token: $icon:file"
+  }
+]

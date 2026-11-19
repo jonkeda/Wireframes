@@ -1,0 +1,8 @@
+wireframe clean
+    Stepper
+        Step "Account" completed
+        Step "Details" active
+        Step "Review"
+        Step "Confirm"
+    /Stepper
+/wireframe

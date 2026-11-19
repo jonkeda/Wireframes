@@ -1,0 +1,5 @@
+wireframe clean
+    Alert "Important message"
+        Label "Additional details..."
+    /Alert
+/wireframe

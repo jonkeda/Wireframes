@@ -1,0 +1,112 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 8
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 26,
+            "line": 3,
+            "offset": 62
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 45
+          },
+          "text": "Click Me",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 33,
+            "line": 4,
+            "offset": 95
+          },
+          "modifiers": {
+            "primary": true
+          },
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 71
+          },
+          "text": "Primary",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 37,
+            "line": 5,
+            "offset": 132
+          },
+          "modifiers": {
+            "secondary": true
+          },
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 104
+          },
+          "text": "Secondary",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 35,
+            "line": 6,
+            "offset": 167
+          },
+          "modifiers": {
+            "disabled": true
+          },
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 141
+          },
+          "text": "Disabled",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 7,
+        "offset": 168
+      },
+      "layoutType": "Horizontal",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 7,
+    "offset": 178
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

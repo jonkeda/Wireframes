@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Wireframe.Cli/Wireframe.Cli.csproj" />
+    <Project Path="src/Wireframe.Mcp/Wireframe.Mcp.csproj" />
+    <Project Path="src/Wireframe/Wireframe.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Wireframe.Tests/Wireframe.Tests.csproj" />
+  </Folder>
+</Solution>

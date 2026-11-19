@@ -1,0 +1,9 @@
+wireframe clean
+    Header w=400 h=60 padding=16
+        Horizontal gap=8
+            Label "**App Name**"
+            Spacer
+            Button "Login"
+        /Horizontal
+    /Header
+/wireframe

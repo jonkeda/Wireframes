@@ -1,0 +1,13 @@
+wireframe clean
+    Card width=240
+        Heading "Navigation" level=3
+        Menu
+            MenuItem "Home" $icon:home active
+            MenuItem "Documents" $icon:file
+            MenuItem "Images" $icon:image
+            Separator
+            MenuItem "Settings" $icon:settings
+            MenuItem "Help" $icon:help
+        /Menu
+    /Card
+/wireframe

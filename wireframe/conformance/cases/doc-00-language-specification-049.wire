@@ -1,0 +1,7 @@
+wireframe clean
+    calculations
+        | Field | Formula | Description |
+        |-------|---------|-------------|
+        | txtTotal | sum(items.price) | Sum of prices |
+    /calculations
+/wireframe

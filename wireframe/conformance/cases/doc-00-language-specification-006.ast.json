@@ -1,0 +1,72 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 22,
+            "line": 3,
+            "offset": 57
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 44
+          },
+          "text": "Title",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 24,
+            "line": 4,
+            "offset": 81
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 66
+          },
+          "text": "Submit",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 5,
+        "offset": 95
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 6,
+    "offset": 106
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

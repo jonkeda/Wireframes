@@ -1,0 +1,10 @@
+wireframe clean
+    Grid cols=3 rows=3 gap=8
+        Button "Span 2 cols" grid=0,0,1,2
+        Button "Normal" grid=0,2,1,1
+        Button "Tall" grid=1,0,2,1
+        Button "Center" grid=1,1,1,1
+        Button "Bottom" grid=1,2,1,1
+        Button "Wide" grid=2,1,1,2
+    /Grid
+/wireframe

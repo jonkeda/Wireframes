@@ -1,0 +1,61 @@
+wireframe realistic
+    %title: Product Page
+    
+    Dock
+        Header dock=top h=60
+            Horizontal padding=16 justify=between
+                Label "**STORE**"
+                TextInput "Search products..." :txtSearch
+                IconButton $cart "Cart"
+            /Horizontal
+        /Header
+        
+        Content dock=fill padding=24
+            Horizontal gap=24
+                Card w=400
+                    Image "product-image" h=300
+                    Horizontal gap=8
+                        Image "thumb-1" w=80 h=80
+                        Image "thumb-2" w=80 h=80
+                        Image "thumb-3" w=80 h=80
+                    /Horizontal
+                /Card
+                
+                Vertical gap=16 w=400
+                    Breadcrumb
+                        BreadcrumbItem "Home" @Home
+                        BreadcrumbItem "Electronics" @Electronics
+                        BreadcrumbItem "Headphones"
+                    /Breadcrumb
+                    
+                    Label "**Premium Wireless Headphones**"
+                    
+                    Horizontal gap=8
+                        Label "**$299**"
+                        Label "~~$399~~"
+                        Badge "25% OFF" type=success
+                    /Horizontal
+                    
+                    Label "★★★★☆ (128 reviews)"
+                    
+                    Separator
+                    
+                    Label "**Color**"
+                    Horizontal gap=8
+                        Chip "Black" selected=true
+                        Chip "White"
+                        Chip "Navy"
+                    /Horizontal
+                    
+                    Separator
+                    
+                    Horizontal gap=8
+                        NumberInput "1" :txtQty w=80
+                        Button "Add to Cart" :btnAdd primary
+                        IconButton $star "Favorite"
+                    /Horizontal
+                /Vertical
+            /Horizontal
+        /Content
+    /Dock
+/wireframe

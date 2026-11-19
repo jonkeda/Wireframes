@@ -1,0 +1,7 @@
+wireframe clean
+    StatusBar
+        Label "Ready"
+        Spacer
+        Label "Line 42, Column 8"
+    /StatusBar
+/wireframe

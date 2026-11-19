@@ -1,0 +1,110 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "List",
+      "end": {
+        "column": 9,
+        "line": 3,
+        "offset": 33
+      },
+      "listItems": [],
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Component"
+    },
+    {
+      "attributes": {},
+      "binding": "todo1",
+      "controlType": "Checkbox",
+      "end": {
+        "column": 44,
+        "line": 4,
+        "offset": 95
+      },
+      "modifiers": {},
+      "start": {
+        "column": 13,
+        "line": 4,
+        "offset": 64
+      },
+      "text": "Buy groceries",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "binding": "todo2",
+      "controlType": "Checkbox",
+      "end": {
+        "column": 58,
+        "line": 7,
+        "offset": 198
+      },
+      "modifiers": {
+        "checked": true
+      },
+      "start": {
+        "column": 13,
+        "line": 7,
+        "offset": 153
+      },
+      "text": "Review pull request",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "binding": "todo3",
+      "controlType": "Checkbox",
+      "end": {
+        "column": 51,
+        "line": 10,
+        "offset": 294
+      },
+      "modifiers": {},
+      "start": {
+        "column": 13,
+        "line": 10,
+        "offset": 256
+      },
+      "text": "Update documentation",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "binding": "todo4",
+      "controlType": "Checkbox",
+      "end": {
+        "column": 51,
+        "line": 13,
+        "offset": 390
+      },
+      "modifiers": {},
+      "start": {
+        "column": 13,
+        "line": 13,
+        "offset": 352
+      },
+      "text": "Deploy to production",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 16,
+    "offset": 429
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

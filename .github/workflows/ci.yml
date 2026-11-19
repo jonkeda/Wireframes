@@ -75,6 +75,25 @@ jobs:
           name: vscode-extension
           path: wireframe/packages/vscode-extension/*.vsix
 
+  # The .NET implementation: the same conformance set (wireframe/conformance/cases) the TypeScript tests check,
+  # so a change to the language that only one side follows fails here or in the job above.
+  dotnet:
+    name: .NET build and conformance
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Test
+        working-directory: wireframe/dotnet
+        run: dotnet test Wireframe.slnx
+
   publish-npm:
     name: Publish to npm
     needs: build

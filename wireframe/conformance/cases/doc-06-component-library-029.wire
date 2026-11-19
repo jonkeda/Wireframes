@@ -1,0 +1,6 @@
+wireframe clean
+    Checkbox "Accept terms"
+    Checkbox "Remember me" checked
+    Checkbox "Partial" indeterminate
+    Checkbox "Bound" ?isEnabled
+/wireframe

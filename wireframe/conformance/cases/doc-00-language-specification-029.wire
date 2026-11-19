@@ -1,0 +1,10 @@
+wireframe clean
+    Tabs :tabMain
+        Tab "General" active
+            Label "General content"
+        /Tab
+        Tab "Settings"
+            Label "Settings content"
+        /Tab
+    /Tabs
+/wireframe

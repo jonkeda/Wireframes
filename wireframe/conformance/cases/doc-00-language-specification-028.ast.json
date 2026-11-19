@@ -1,0 +1,159 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Option",
+          "end": {
+            "column": 27,
+            "line": 3,
+            "offset": 67
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 49
+          },
+          "text": "Select...",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Option",
+          "end": {
+            "column": 21,
+            "line": 4,
+            "offset": 88
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 76
+          },
+          "text": "USA",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Option",
+          "end": {
+            "column": 24,
+            "line": 5,
+            "offset": 112
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 97
+          },
+          "text": "Canada",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Option",
+          "end": {
+            "column": 20,
+            "line": 6,
+            "offset": 132
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 121
+          },
+          "text": "UK",
+          "type": "Control"
+        }
+      ],
+      "controlType": "Dropdown",
+      "end": {
+        "column": 14,
+        "line": 7,
+        "offset": 146
+      },
+      "id": "ddlCountry",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Option",
+          "end": {
+            "column": 1,
+            "line": 1,
+            "offset": 0
+          },
+          "modifiers": {},
+          "start": {
+            "column": 1,
+            "line": 1,
+            "offset": 0
+          },
+          "text": "Canada",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Option",
+          "end": {
+            "column": 1,
+            "line": 1,
+            "offset": 0
+          },
+          "modifiers": {},
+          "start": {
+            "column": 1,
+            "line": 1,
+            "offset": 0
+          },
+          "text": "UK",
+          "type": "Control"
+        }
+      ],
+      "controlType": "Dropdown",
+      "end": {
+        "column": 1,
+        "line": 11,
+        "offset": 214
+      },
+      "id": "ddlCountry",
+      "modifiers": {},
+      "placeholder": "USA",
+      "start": {
+        "column": 5,
+        "line": 10,
+        "offset": 173
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 11,
+    "offset": 224
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

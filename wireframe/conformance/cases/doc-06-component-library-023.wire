@@ -1,0 +1,4 @@
+wireframe clean
+    DateInput "Select date"
+    DateInput "Birth Date" ?birthDate required
+/wireframe

@@ -1,0 +1,75 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "level": 1
+      },
+      "controlType": "Heading",
+      "end": {
+        "column": 33,
+        "line": 2,
+        "offset": 48
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Page Title",
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "level": 2
+      },
+      "controlType": "Heading",
+      "end": {
+        "column": 30,
+        "line": 3,
+        "offset": 78
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 53
+      },
+      "text": "Section",
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "level": 3
+      },
+      "controlType": "Heading",
+      "end": {
+        "column": 33,
+        "line": 4,
+        "offset": 111
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 83
+      },
+      "text": "Subsection",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 122
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

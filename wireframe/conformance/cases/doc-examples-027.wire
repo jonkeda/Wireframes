@@ -1,0 +1,37 @@
+wireframe clean
+    %title: Badge Color Variants
+    
+    Card
+        Vertical gap=16
+            Label "**Badge Variants**"
+            
+            Horizontal gap=8
+                Badge "Info" variant=info
+                Badge "Success" variant=success
+                Badge "Warning" variant=warning
+                Badge "Error" variant=error
+            /Horizontal
+            
+            Separator
+            
+            Vertical gap=8
+                Horizontal gap=8 align=center
+                    Icon $info
+                    Label "Info badge uses blue background"
+                /Horizontal
+                Horizontal gap=8 align=center
+                    Icon $check
+                    Label "Success badge uses green background"
+                /Horizontal
+                Horizontal gap=8 align=center
+                    Icon $warning
+                    Label "Warning badge uses yellow (black text)"
+                /Horizontal
+                Horizontal gap=8 align=center
+                    Icon $error
+                    Label "Error badge uses red background"
+                /Horizontal
+            /Vertical
+        /Vertical
+    /Card
+/wireframe

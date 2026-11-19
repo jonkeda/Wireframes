@@ -1,0 +1,8 @@
+wireframe clean
+    Horizontal gap=12
+        Icon icon=home
+        Icon icon=settings
+        Icon icon=user
+        Icon icon=search
+        Icon icon=menu
+/wireframe

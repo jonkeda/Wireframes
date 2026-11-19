@@ -1,0 +1,9 @@
+wireframe clean
+    Tree
+        + Root Node
+            + Child Branch
+                - Leaf 1
+                - Leaf 2
+            - Child Leaf
+    /Tree
+/wireframe

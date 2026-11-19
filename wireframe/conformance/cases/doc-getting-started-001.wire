@@ -1,0 +1,17 @@
+wireframe clean
+    %title: My First Wireframe
+    
+    // My first wireframe
+    Header
+        Label "My Application"
+    /Header
+    
+    Card
+        Label "Welcome!"
+        Button "Get Started" primary
+    /Card
+    
+    Footer
+        Label "© 2025 My Company"
+    /Footer
+/wireframe

@@ -1,0 +1,151 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 16,
+        "w": 300
+      },
+      "children": [
+        {
+          "attributes": {
+            "level": 2
+          },
+          "controlType": "Heading",
+          "end": {
+            "column": 39,
+            "line": 3,
+            "offset": 81
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 51
+          },
+          "text": "Quick Sketch",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "placeholder": "Search..."
+          },
+          "controlType": "TextInput",
+          "end": {
+            "column": 42,
+            "line": 5,
+            "offset": 132
+          },
+          "modifiers": {},
+          "placeholder": "Search...",
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 99
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "List",
+          "end": {
+            "column": 13,
+            "line": 8,
+            "offset": 167
+          },
+          "listItems": [],
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 7,
+            "offset": 150
+          },
+          "type": "Component"
+        }
+      ],
+      "end": {
+        "column": 9,
+        "line": 11,
+        "offset": 239
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 21
+      },
+      "type": "Layout"
+    },
+    {
+      "attributes": {
+        "gap": 8
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 33,
+            "line": 14,
+            "offset": 311
+          },
+          "modifiers": {
+            "primary": true
+          },
+          "start": {
+            "column": 13,
+            "line": 14,
+            "offset": 291
+          },
+          "text": "Add",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 28,
+            "line": 15,
+            "offset": 339
+          },
+          "modifiers": {},
+          "start": {
+            "column": 13,
+            "line": 15,
+            "offset": 324
+          },
+          "text": "Remove",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 20,
+        "line": 16,
+        "offset": 359
+      },
+      "layoutType": "Horizontal",
+      "modifiers": {},
+      "start": {
+        "column": 9,
+        "line": 13,
+        "offset": 262
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 18,
+    "offset": 384
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "sketch",
+  "type": "Document"
+}

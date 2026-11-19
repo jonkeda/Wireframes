@@ -1,0 +1,8 @@
+wireframe clean
+    Breadcrumb
+        Breadcrumb "Home" @home
+        Breadcrumb "Products" @products
+        Breadcrumb "Electronics" @electronics
+        Breadcrumb "Laptops" active
+    /Breadcrumb
+/wireframe

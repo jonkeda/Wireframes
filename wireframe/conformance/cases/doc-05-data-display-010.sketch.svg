@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="796" viewBox="0 0 800 796" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g role="group" aria-label="Orders Dashboard"><text x="36" y="60" class="wire-text wire-text-bold" style="font-size: 24px">Orders Dashboard</text></g><path d="M36.0 88.2 Q126.0 89.6 216.0 87.7 M217.2 88.0 Q223.3 326.0 216.9 564.0 M216.0 563.6 Q126.0 559.3 36.0 565.4 M34.9 564.0 Q30.6 326.0 37.4 88.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Total Orders"><text x="52" y="119" class="wire-text">Total Orders</text></g><g role="group" aria-label="1,234"><text x="52" y="150.67" class="wire-text wire-text-bold" style="font-size: 20px">1,234</text></g><g role="group" aria-label="12%"><g>
+      <rect x="52" y="164" width="24" height="24" rx="12" fill="#198754" />
+      <text x="64" y="180" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">12%</text>
+    </g></g><path d="M232.0 88.3 Q322.0 86.8 412.0 88.7 M413.1 88.0 Q407.6 326.0 412.5 564.0 M412.0 563.5 Q322.0 566.1 232.0 564.3 M231.0 564.0 Q238.4 326.0 231.8 88.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Revenue"><text x="248" y="119" class="wire-text">Revenue</text></g><g role="group" aria-label="$45,678"><text x="248" y="150.67" class="wire-text wire-text-bold" style="font-size: 20px">$45,678</text></g><g role="group" aria-label="5%"><g>
+      <rect x="248" y="164" width="24" height="24" rx="12" fill="#198754" />
+      <text x="260" y="180" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">5%</text>
+    </g></g><path d="M428.0 88.5 Q518.0 81.0 608.0 87.2 M609.0 88.0 Q606.4 326.0 607.4 564.0 M608.0 563.4 Q518.0 569.6 428.0 564.2 M427.1 564.0 Q428.7 326.0 427.6 88.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Pending"><text x="444" y="119" class="wire-text">Pending</text></g><g role="group" aria-label="23"><text x="444" y="150.67" class="wire-text wire-text-bold" style="font-size: 20px">23</text></g><g role="group" aria-label="Warning"><g>
+      <rect x="444" y="164" width="24" height="24" rx="12" fill="#ffc107" />
+      <text x="456" y="180" text-anchor="middle" class="wire-text wire-text-small" fill="#000000">Warning</text>
+    </g></g><path d="M624.0 88.6 Q714.0 94.2 804.0 86.6 M804.9 88.0 Q806.7 326.0 802.9 564.0 M804.0 563.3 Q714.0 558.7 624.0 563.5 M623.2 564.0 Q622.3 326.0 624.7 88.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Cancelled"><text x="640" y="119" class="wire-text">Cancelled</text></g><g role="group" aria-label="5"><text x="640" y="150.67" class="wire-text wire-text-bold" style="font-size: 20px">5</text></g><g role="group" aria-label="2"><g>
+      <rect x="640" y="164" width="24" height="24" rx="12" fill="#dc3545" />
+      <text x="652" y="180" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">2</text>
+    </g></g><path d="M36.0 584.9 Q400.0 586.0 764.0 584.8 M764.5 584.0 Q770.4 668.0 763.7 752.0 M764.0 751.0 Q400.0 746.9 36.0 752.2 M35.6 752.0 Q31.9 668.0 35.6 584.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Recent Orders"><text x="52" y="622" class="wire-text wire-text-bold" style="font-size: 18px">Recent Orders</text></g><g role="textbox" aria-label="Search orders..." aria-placeholder="Search orders..."><g>
+      <path d="M240.0 600.9 Q340.0 594.7 440.0 600.1 M440.5 600.0 Q438.7 618.0 440.4 636.0 M440.0 635.0 Q340.0 642.1 240.0 636.6 M239.6 636.0 Q243.1 618.0 239.8 600.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="252" y="623" class="wire-text wire-text-secondary">Search orders...</text>
+      
+    </g></g><g role="combobox" aria-label="Status" aria-placeholder="Status" aria-expanded="false" aria-haspopup="listbox"><g>
+      <rect x="448" y="600" width="200" height="36" rx="0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="460" y="623" class="wire-text">All</text>
+      <path d="M628 616 L634 622 L640 616" stroke="#333333" stroke-width="2" fill="none" />
+    </g></g><g role="group" aria-label="All"><g>
+      <rect x="448" y="636" width="100" height="30" fill="#f5f5f5" stroke="#888888" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="498" y="656" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Pending"><g>
+      <rect x="448" y="674" width="100" height="30" fill="#f5f5f5" stroke="#888888" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="498" y="694" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Shipped"><g>
+      <rect x="448" y="712" width="100" height="30" fill="#f5f5f5" stroke="#888888" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="498" y="732" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Delivered"><g>
+      <rect x="448" y="750" width="100" height="30" fill="#f5f5f5" stroke="#888888" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="498" y="770" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Showing 1-10 of 234"><text x="52" y="715" class="wire-text">Showing 1-10 of 234</text></g><g role="navigation"><g><rect x="236" y="700" width="32" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><path d="M249 714 L245 718 L249 722" stroke="#333333" stroke-width="2" fill="none" /><rect x="272" y="700" width="32" height="36" rx="0" fill="#4a90d9" stroke="#888888" stroke-width="2" /><text x="288" y="723" text-anchor="middle" class="wire-text" fill="#ffffff">1</text><rect x="308" y="700" width="32" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><text x="324" y="723" text-anchor="middle" class="wire-text" fill="#333333">2</text><rect x="344" y="700" width="32" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><text x="360" y="723" text-anchor="middle" class="wire-text" fill="#333333">3</text><rect x="380" y="700" width="32" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><text x="396" y="723" text-anchor="middle" class="wire-text" fill="#333333">4</text><rect x="416" y="700" width="32" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><text x="432" y="723" text-anchor="middle" class="wire-text" fill="#333333">5</text><rect x="452" y="700" width="32" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><path d="M463 714 L467 718 L463 722" stroke="#333333" stroke-width="2" fill="none" /></g></g>
+</svg>

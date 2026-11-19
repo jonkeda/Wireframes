@@ -1,0 +1,7 @@
+wireframe clean
+    Horizontal gap=8
+        Chip "Technology"
+        Chip "Design"
+        Chip "React" removable
+        Chip "Vue" removable
+/wireframe

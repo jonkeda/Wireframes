@@ -1,0 +1,5 @@
+wireframe clean
+    Panel
+        Label "Panel content"
+    /Panel
+/wireframe

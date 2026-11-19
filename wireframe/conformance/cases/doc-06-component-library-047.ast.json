@@ -1,0 +1,92 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Tab",
+          "end": {
+            "column": 13,
+            "line": 5,
+            "offset": 93
+          },
+          "modifiers": {
+            "active": true
+          },
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 33
+          },
+          "text": "General",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Tab",
+          "end": {
+            "column": 13,
+            "line": 8,
+            "offset": 156
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 102
+          },
+          "text": "Settings",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Tab",
+          "end": {
+            "column": 13,
+            "line": 11,
+            "offset": 219
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 9,
+            "offset": 165
+          },
+          "text": "Advanced",
+          "type": "Component"
+        }
+      ],
+      "componentType": "Tabs",
+      "end": {
+        "column": 10,
+        "line": 12,
+        "offset": 229
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 13,
+    "offset": 240
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

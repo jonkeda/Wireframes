@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="244" height="68" viewBox="0 0 244 68" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g role="button"><g><rect x="16" y="16" width="36" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="26" y="26" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g></g><g role="button"><g><rect x="60" y="16" width="36" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="70" y="26" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g></g><g role="button"><g><rect x="104" y="16" width="36" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="114" y="26" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g></g><g role="button" aria-label="Edit"><g><rect x="148" y="16" width="80" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="160" y="26" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /><text x="184" y="39" class="wire-text" fill="#333333">Edit</text></g></g>
+</svg>

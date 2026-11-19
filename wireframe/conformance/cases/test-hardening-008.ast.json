@@ -1,0 +1,53 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "condition": "user.role == \"admin\"",
+      "end": {
+        "column": 8,
+        "line": 4,
+        "offset": 77
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "thenChildren": [
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 26,
+            "line": 3,
+            "offset": 69
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 52
+          },
+          "text": "Settings",
+          "type": "Control"
+        }
+      ],
+      "type": "Conditional"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 88
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

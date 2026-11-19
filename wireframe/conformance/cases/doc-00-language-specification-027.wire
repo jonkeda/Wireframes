@@ -1,0 +1,5 @@
+wireframe clean
+    Radio "Option A" :radA
+    Radio "Option B" :radB selected
+    Radio "Grouped" :radC group=options
+/wireframe

@@ -1,0 +1,7 @@
+wireframe clean
+    Card
+        Heading "Card Title" level=2
+        Label "Card content goes here"
+        Button "Action" primary
+    /Card
+/wireframe

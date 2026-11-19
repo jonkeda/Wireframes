@@ -1,0 +1,8 @@
+wireframe clean
+    TextInput "First Name" :txtFirst ?customer.firstName
+    TextInput "Last Name" :txtLast ?customer.lastName
+    Dropdown :ddlStatus ?customer.status
+        Option "Active"
+        Option "Inactive"
+    /Dropdown
+/wireframe

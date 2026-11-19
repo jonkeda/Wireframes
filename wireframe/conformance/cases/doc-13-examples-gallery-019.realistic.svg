@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1320" viewBox="0 0 800 1320" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <rect x="16" y="16" width="768" height="72" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group" aria-label="Dashboard"><text x="32" y="56" class="wire-text wire-text-bold" style="font-size: 24px">Dashboard</text></g><g role="button" aria-label="Notifications"><g opacity="1">
+      <rect x="156" y="32" width="136" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="224" y="55" text-anchor="middle" class="wire-text" fill="#212529">Notifications</text>
+    </g></g><g role="group"><g>
+      <circle cx="320" cy="52" r="20" fill="#0d6efd" />
+      <text x="320" y="56.44" text-anchor="middle" class="wire-text" style="font-size: 13.33px" fill="#ffffff">?</text>
+    </g></g><rect x="16" y="88" width="240" height="496" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group"><line x1="48" y1="320" x2="248" y2="320" stroke="#dee2e6" stroke-width="1" /></g><rect x="256" y="88" width="528" height="1144" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><rect x="272" y="104" width="240" height="464" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Total Revenue"><text x="288" y="135" class="wire-text">Total Revenue</text></g><g role="group" aria-label="$45,231"><text x="288" y="170.67" class="wire-text wire-text-bold" style="font-size: 20px">$45,231</text></g><g role="group" aria-label="+20.1%"><g>
+      <rect x="288" y="188" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="300" y="204" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">+20.1%</text>
+    </g></g><rect x="528" y="104" width="240" height="464" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Subscriptions"><text x="544" y="135" class="wire-text">Subscriptions</text></g><g role="group" aria-label="2,350"><text x="544" y="170.67" class="wire-text wire-text-bold" style="font-size: 20px">2,350</text></g><g role="group" aria-label="+180.1%"><g>
+      <rect x="544" y="188" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="556" y="204" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">+180.1%</text>
+    </g></g><rect x="272" y="584" width="240" height="464" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Sales"><text x="288" y="615" class="wire-text">Sales</text></g><g role="group" aria-label="12,234"><text x="288" y="650.67" class="wire-text wire-text-bold" style="font-size: 20px">12,234</text></g><g role="group" aria-label="+19%"><g>
+      <rect x="288" y="668" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="300" y="684" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">+19%</text>
+    </g></g><rect x="528" y="584" width="240" height="464" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Active Now"><text x="544" y="615" class="wire-text">Active Now</text></g><g role="group" aria-label="573"><text x="544" y="650.67" class="wire-text wire-text-bold" style="font-size: 20px">573</text></g><g role="group" aria-label="+201"><g>
+      <rect x="544" y="668" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="556" y="684" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">+201</text>
+    </g></g><rect x="272" y="1056" width="236" height="160" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Recent Sales"><text x="288" y="1094" class="wire-text wire-text-bold" style="font-size: 18px">Recent Sales</text></g><g role="group"><g>
+      <circle cx="308" cy="1172" r="20" fill="#0d6efd" />
+      <text x="308" y="1176.44" text-anchor="middle" class="wire-text" style="font-size: 13.33px" fill="#ffffff">?</text>
+    </g></g><g role="group" aria-label="Olivia Martin"><text x="344" y="1167" class="wire-text">Olivia Martin</text></g><g role="group" aria-label="olivia.martin@email.com"><text x="344" y="1195" class="wire-text">olivia.martin@email.com</text></g><g role="group" aria-label="+$1,999.00"><text x="544" y="1167" class="wire-text">+$1,999.00</text></g><g role="group"><g>
+      <circle cx="552" cy="1076" r="20" fill="#0d6efd" />
+      <text x="552" y="1080.44" text-anchor="middle" class="wire-text" style="font-size: 13.33px" fill="#ffffff">?</text>
+    </g></g><g role="group" aria-label="Jackson Lee"><text x="588" y="1071" class="wire-text">Jackson Lee</text></g><g role="group" aria-label="jackson.lee@email.com"><text x="588" y="1099" class="wire-text">jackson.lee@email.com</text></g><g role="group" aria-label="+$39.00"><text x="772" y="1071" class="wire-text">+$39.00</text></g><rect x="16" y="1240" width="768" height="64" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Overview"><text x="32" y="1278" class="wire-text wire-text-bold" style="font-size: 18px">Overview</text></g>
+</svg>

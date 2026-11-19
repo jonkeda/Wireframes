@@ -1,0 +1,497 @@
+{
+  "attributes": {
+    "title": "Card Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 31,
+            "line": 6,
+            "offset": 128
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 106
+          },
+          "text": "**Basic Card**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "padding": 16
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 56,
+                "line": 9,
+                "offset": 209
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 166
+              },
+              "text": "This is a simple card with padding.",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 14,
+            "line": 10,
+            "offset": 223
+          },
+          "modifiers": {},
+          "sectionType": "Card",
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 138
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 12,
+            "offset": 242
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 12,
+            "offset": 233
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 37,
+            "line": 14,
+            "offset": 280
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 14,
+            "offset": 252
+          },
+          "text": "**Card with Header**",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {
+                "padding": 16
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 39,
+                    "line": 18,
+                    "offset": 363
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 18,
+                    "offset": 341
+                  },
+                  "text": "**Card Title**",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 20,
+                "line": 19,
+                "offset": 383
+              },
+              "modifiers": {},
+              "sectionType": "Header",
+              "start": {
+                "column": 13,
+                "line": 17,
+                "offset": 307
+              },
+              "type": "Section"
+            },
+            {
+              "attributes": {
+                "padding": 16
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 48,
+                    "line": 21,
+                    "offset": 462
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 21,
+                    "offset": 431
+                  },
+                  "text": "Card content goes here.",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 21,
+                "line": 22,
+                "offset": 483
+              },
+              "modifiers": {},
+              "sectionType": "Content",
+              "start": {
+                "column": 13,
+                "line": 20,
+                "offset": 396
+              },
+              "type": "Section"
+            },
+            {
+              "attributes": {
+                "padding": 16
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "gap": 8
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Button",
+                      "end": {
+                        "column": 36,
+                        "line": 25,
+                        "offset": 582
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 25,
+                        "offset": 567
+                      },
+                      "text": "Cancel",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Button",
+                      "end": {
+                        "column": 42,
+                        "line": 26,
+                        "offset": 624
+                      },
+                      "modifiers": {
+                        "primary": true
+                      },
+                      "start": {
+                        "column": 21,
+                        "line": 26,
+                        "offset": 603
+                      },
+                      "text": "Save",
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 27,
+                    "offset": 652
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 24,
+                    "offset": 530
+                  },
+                  "type": "Layout"
+                }
+              ],
+              "end": {
+                "column": 20,
+                "line": 28,
+                "offset": 672
+              },
+              "modifiers": {},
+              "sectionType": "Footer",
+              "start": {
+                "column": 13,
+                "line": 23,
+                "offset": 496
+              },
+              "type": "Section"
+            }
+          ],
+          "end": {
+            "column": 14,
+            "line": 29,
+            "offset": 686
+          },
+          "modifiers": {},
+          "sectionType": "Card",
+          "start": {
+            "column": 9,
+            "line": 16,
+            "offset": 290
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 31,
+            "offset": 705
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 31,
+            "offset": 696
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 33,
+            "line": 33,
+            "offset": 739
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 33,
+            "offset": 715
+          },
+          "text": "**Product Card**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "padding": 0
+          },
+          "children": [
+            {
+              "attributes": {
+                "height": 150,
+                "placeholder": "Product Image",
+                "width": 200
+              },
+              "controlType": "Image",
+              "end": {
+                "column": 67,
+                "line": 36,
+                "offset": 830
+              },
+              "modifiers": {},
+              "placeholder": "Product Image",
+              "start": {
+                "column": 13,
+                "line": 36,
+                "offset": 776
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "gap": 8,
+                "padding": 16
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 41,
+                    "line": 38,
+                    "offset": 909
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 38,
+                    "offset": 885
+                  },
+                  "text": "**Product Name**",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 52,
+                    "line": 39,
+                    "offset": 961
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 39,
+                    "offset": 926
+                  },
+                  "text": "A great product description",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "gap": 8
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 39,
+                        "line": 41,
+                        "offset": 1033
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 41,
+                        "offset": 1015
+                      },
+                      "text": "**$29.99**",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Badge",
+                      "end": {
+                        "column": 33,
+                        "line": 42,
+                        "offset": 1066
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 42,
+                        "offset": 1054
+                      },
+                      "text": "Sale",
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 43,
+                    "offset": 1094
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 40,
+                    "offset": 978
+                  },
+                  "type": "Layout"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 45,
+                    "line": 44,
+                    "offset": 1139
+                  },
+                  "modifiers": {
+                    "primary": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 44,
+                    "offset": 1111
+                  },
+                  "text": "Add to Cart",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 45,
+                "offset": 1161
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 37,
+                "offset": 843
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 14,
+            "line": 46,
+            "offset": 1175
+          },
+          "modifiers": {},
+          "sectionType": "Card",
+          "start": {
+            "column": 9,
+            "line": 35,
+            "offset": 749
+          },
+          "type": "Section"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 47,
+        "offset": 1189
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 82
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 48,
+    "offset": 1200
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 35
+  },
+  "style": "clean",
+  "type": "Document"
+}

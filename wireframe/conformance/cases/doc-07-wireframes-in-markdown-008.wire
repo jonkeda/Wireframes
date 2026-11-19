@@ -1,0 +1,46 @@
+wireframe clean
+    Vertical gap=24 w=500
+        Heading "Button Variants" level=2
+        
+        Horizontal gap=8
+            Button "Default"
+            Button "Primary" primary
+            Button "Secondary" secondary
+            Button "Disabled" disabled
+        /Horizontal
+        
+        Separator
+        
+        Heading "Icon Buttons" level=2
+        
+        Horizontal gap=8
+            IconButton icon=home
+            IconButton icon=settings
+            IconButton icon=search
+            IconButton icon=menu
+        /Horizontal
+        
+        Separator
+        
+        Heading "Badges" level=2
+        
+        Horizontal gap=8
+            Badge "Default"
+            Badge "Info" variant=info
+            Badge "Success" variant=success
+            Badge "Warning" variant=warning
+            Badge "Error" variant=error
+        /Horizontal
+        
+        Separator
+        
+        Heading "Progress" level=2
+        
+        Vertical gap=8 w=300
+            Progress value=25
+            Progress value=50
+            Progress value=75
+            Progress value=100
+        /Vertical
+    /Vertical
+/wireframe

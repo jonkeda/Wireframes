@@ -1,0 +1,56 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "TextArea",
+      "end": {
+        "column": 42,
+        "line": 2,
+        "offset": 57
+      },
+      "id": "txtDesc",
+      "modifiers": {},
+      "placeholder": "Enter description",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "rows": 4
+      },
+      "controlType": "TextArea",
+      "end": {
+        "column": 38,
+        "line": 3,
+        "offset": 95
+      },
+      "id": "txtNotes",
+      "modifiers": {},
+      "placeholder": "Notes",
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 62
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 4,
+    "offset": 106
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

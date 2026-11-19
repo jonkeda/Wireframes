@@ -1,0 +1,332 @@
+[
+  {
+    "column": 21,
+    "line": 19,
+    "message": "Unexpected token: Rating"
+  },
+  {
+    "column": 28,
+    "line": 19,
+    "message": "Unexpected token: ?rating"
+  },
+  {
+    "column": 36,
+    "line": 19,
+    "message": "Unexpected token: value=4.5"
+  },
+  {
+    "column": 46,
+    "line": 19,
+    "message": "Unexpected token: readonly"
+  },
+  {
+    "column": 17,
+    "line": 27,
+    "message": "Unexpected token: Group"
+  },
+  {
+    "column": 23,
+    "line": 27,
+    "message": "Unexpected token: Color"
+  },
+  {
+    "column": 1,
+    "line": 28,
+    "message": "Unexpected token:                     "
+  },
+  {
+    "column": 21,
+    "line": 28,
+    "message": "Unexpected token: RadioGroup"
+  },
+  {
+    "column": 32,
+    "line": 28,
+    "message": "Unexpected token: ?color"
+  },
+  {
+    "column": 1,
+    "line": 29,
+    "message": "Unexpected token:                         "
+  },
+  {
+    "column": 25,
+    "line": 29,
+    "message": "Unexpected token: RadioButton"
+  },
+  {
+    "column": 37,
+    "line": 29,
+    "message": "Unexpected token: Space Gray"
+  },
+  {
+    "column": 50,
+    "line": 29,
+    "message": "Unexpected token: value=gray"
+  },
+  {
+    "column": 63,
+    "line": 29,
+    "message": "Unexpected token: checked"
+  },
+  {
+    "column": 25,
+    "line": 30,
+    "message": "Unexpected token: RadioButton"
+  },
+  {
+    "column": 37,
+    "line": 30,
+    "message": "Unexpected token: Silver"
+  },
+  {
+    "column": 46,
+    "line": 30,
+    "message": "Unexpected token: value=silver"
+  },
+  {
+    "column": 21,
+    "line": 31,
+    "message": "Unknown closing keyword /RadioGroup"
+  },
+  {
+    "column": 17,
+    "line": 32,
+    "message": "Unknown closing keyword /Group"
+  },
+  {
+    "column": 17,
+    "line": 34,
+    "message": "Unexpected token: Group"
+  },
+  {
+    "column": 23,
+    "line": 34,
+    "message": "Unexpected token: Memory"
+  },
+  {
+    "column": 1,
+    "line": 35,
+    "message": "Unexpected token:                     "
+  },
+  {
+    "column": 21,
+    "line": 35,
+    "message": "Unexpected token: RadioGroup"
+  },
+  {
+    "column": 32,
+    "line": 35,
+    "message": "Unexpected token: ?memory"
+  },
+  {
+    "column": 1,
+    "line": 36,
+    "message": "Unexpected token:                         "
+  },
+  {
+    "column": 25,
+    "line": 36,
+    "message": "Unexpected token: RadioButton"
+  },
+  {
+    "column": 37,
+    "line": 36,
+    "message": "Unexpected token: 16GB"
+  },
+  {
+    "column": 44,
+    "line": 36,
+    "message": "Unexpected token: value=16"
+  },
+  {
+    "column": 25,
+    "line": 37,
+    "message": "Unexpected token: RadioButton"
+  },
+  {
+    "column": 37,
+    "line": 37,
+    "message": "Unexpected token: 32GB"
+  },
+  {
+    "column": 44,
+    "line": 37,
+    "message": "Unexpected token: value=32"
+  },
+  {
+    "column": 55,
+    "line": 37,
+    "message": "Unexpected token: checked"
+  },
+  {
+    "column": 25,
+    "line": 38,
+    "message": "Unexpected token: RadioButton"
+  },
+  {
+    "column": 37,
+    "line": 38,
+    "message": "Unexpected token: 64GB"
+  },
+  {
+    "column": 44,
+    "line": 38,
+    "message": "Unexpected token: value=64"
+  },
+  {
+    "column": 21,
+    "line": 39,
+    "message": "Unknown closing keyword /RadioGroup"
+  },
+  {
+    "column": 17,
+    "line": 40,
+    "message": "Unknown closing keyword /Group"
+  },
+  {
+    "column": 13,
+    "line": 47,
+    "message": "Unexpected /Vertical: no Vertical is open here"
+  },
+  {
+    "column": 9,
+    "line": 48,
+    "message": "Unexpected /Horizontal: no Horizontal is open here"
+  },
+  {
+    "column": 9,
+    "line": 50,
+    "message": "Unexpected token: TabGroup"
+  },
+  {
+    "column": 1,
+    "line": 51,
+    "message": "Unexpected token:             "
+  },
+  {
+    "column": 21,
+    "line": 56,
+    "message": "Unexpected token: Row"
+  },
+  {
+    "column": 1,
+    "line": 57,
+    "message": "Unexpected token:                         "
+  },
+  {
+    "column": 25,
+    "line": 57,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 30,
+    "line": 57,
+    "message": "Unexpected token: Processor"
+  },
+  {
+    "column": 25,
+    "line": 58,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 30,
+    "line": 58,
+    "message": "Unexpected token: Apple M3 Pro"
+  },
+  {
+    "column": 21,
+    "line": 59,
+    "message": "Unknown closing keyword /Row"
+  },
+  {
+    "column": 21,
+    "line": 60,
+    "message": "Unexpected token: Row"
+  },
+  {
+    "column": 1,
+    "line": 61,
+    "message": "Unexpected token:                         "
+  },
+  {
+    "column": 25,
+    "line": 61,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 30,
+    "line": 61,
+    "message": "Unexpected token: Display"
+  },
+  {
+    "column": 25,
+    "line": 62,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 30,
+    "line": 62,
+    "message": "Unexpected token: 14.2-inch Liquid Retina XDR"
+  },
+  {
+    "column": 21,
+    "line": 63,
+    "message": "Unknown closing keyword /Row"
+  },
+  {
+    "column": 21,
+    "line": 64,
+    "message": "Unexpected token: Row"
+  },
+  {
+    "column": 1,
+    "line": 65,
+    "message": "Unexpected token:                         "
+  },
+  {
+    "column": 25,
+    "line": 65,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 30,
+    "line": 65,
+    "message": "Unexpected token: Battery"
+  },
+  {
+    "column": 25,
+    "line": 66,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 30,
+    "line": 66,
+    "message": "Unexpected token: Up to 17 hours"
+  },
+  {
+    "column": 21,
+    "line": 67,
+    "message": "Unknown closing keyword /Row"
+  },
+  {
+    "column": 17,
+    "line": 68,
+    "message": "Unexpected /Table: no Table is open here"
+  },
+  {
+    "column": 13,
+    "line": 69,
+    "message": "Unexpected /Tab: no Tab is open here"
+  },
+  {
+    "column": 9,
+    "line": 73,
+    "message": "Unknown closing keyword /TabGroup"
+  },
+  {
+    "column": 5,
+    "line": 74,
+    "message": "Unexpected /Vertical: no Vertical is open here"
+  }
+]

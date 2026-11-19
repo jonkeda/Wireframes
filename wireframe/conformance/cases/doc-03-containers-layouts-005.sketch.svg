@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="228" viewBox="0 0 450 228" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g role="button" aria-label="Top Left"><g opacity="1">
+      <path d="M26.0 25.3 Q76.0 29.7 126.0 26.6 M125.2 26.0 Q129.3 44.0 126.0 62.0 M126.0 62.6 Q76.0 59.2 26.0 62.5 M27.0 62.0 Q23.9 44.0 25.7 26.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="76" y="49" text-anchor="middle" class="wire-text" fill="#333333">Top Left</text>
+    </g></g><g role="button" aria-label="Center"><g opacity="1">
+      <path d="M176.0 95.9 Q226.0 91.5 276.0 95.2 M274.6 96.0 Q273.2 114.0 275.0 132.0 M276.0 132.0 Q226.0 133.4 176.0 130.9 M174.5 132.0 Q179.7 114.0 177.3 96.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="226" y="119" text-anchor="middle" class="wire-text" fill="#333333">Center</text>
+    </g></g><g role="button" aria-label="Bottom Right"><g opacity="1">
+      <path d="M306.0 176.6 Q370.0 178.3 434.0 175.4 M434.9 176.0 Q434.8 194.0 434.8 212.0 M434.0 211.3 Q370.0 207.7 306.0 212.4 M305.2 212.0 Q303.2 194.0 307.4 176.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="370" y="199" text-anchor="middle" class="wire-text" fill="#333333">Bottom Right</text>
+    </g></g>
+</svg>

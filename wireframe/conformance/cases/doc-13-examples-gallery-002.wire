@@ -1,0 +1,8 @@
+wireframe clean
+    Vertical gap=16
+        Button "Primary" primary
+        Button "Secondary" secondary
+        Button "Default"
+        Button "Disabled" disabled
+    /Vertical
+/wireframe

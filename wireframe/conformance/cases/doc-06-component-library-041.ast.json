@@ -1,0 +1,73 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "value": 75
+      },
+      "controlType": "Progress",
+      "end": {
+        "column": 22,
+        "line": 2,
+        "offset": 37
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "max": 100,
+        "value": 50
+      },
+      "controlType": "Progress",
+      "end": {
+        "column": 30,
+        "line": 3,
+        "offset": 67
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 42
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Progress",
+      "end": {
+        "column": 27,
+        "line": 4,
+        "offset": 94
+      },
+      "modifiers": {
+        "indeterminate": true
+      },
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 72
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 105
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

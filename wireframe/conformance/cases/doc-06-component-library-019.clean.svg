@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="136" height="332" viewBox="0 0 136 332" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <g role="button" aria-label="Click Me"><g opacity="1">
+      <rect x="16" y="16" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="66" y="39" text-anchor="middle" class="wire-text" fill="#212529">Click Me</text>
+    </g></g><g role="button" aria-label="Primary"><g opacity="1">
+      <rect x="16" y="60" width="100" height="36" rx="4" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="66" y="83" text-anchor="middle" class="wire-text" fill="#ffffff">Primary</text>
+    </g></g><g role="button" aria-label="Secondary"><g opacity="1">
+      <rect x="16" y="104" width="104" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="68" y="127" text-anchor="middle" class="wire-text" fill="#212529">Secondary</text>
+    </g></g><g role="button" aria-label="Disabled" aria-disabled="true"><g opacity="0.5">
+      <rect x="16" y="148" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="66" y="171" text-anchor="middle" class="wire-text" fill="#212529">Disabled</text>
+    </g></g><g role="button" aria-label="With ID"><g opacity="1">
+      <rect x="16" y="192" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="66" y="215" text-anchor="middle" class="wire-text" fill="#212529">With ID</text>
+    </g></g><g role="button" aria-label="Navigate"><g opacity="1">
+      <rect x="16" y="236" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="66" y="259" text-anchor="middle" class="wire-text" fill="#212529">Navigate</text>
+    </g></g><g role="button" aria-label="Bound"><g opacity="1">
+      <rect x="16" y="280" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="66" y="303" text-anchor="middle" class="wire-text" fill="#212529">Bound</text>
+    </g></g>
+</svg>

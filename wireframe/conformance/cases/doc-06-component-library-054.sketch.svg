@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="100" viewBox="0 0 800 100" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g role="button" aria-label="Hover me"><g opacity="1">
+      <path d="M32.0 33.2 Q82.0 38.0 132.0 31.5 M132.2 32.0 Q132.0 50.0 130.7 68.0 M132.0 66.7 Q82.0 76.1 32.0 67.3 M31.9 68.0 Q33.8 50.0 30.6 32.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="82" y="55" text-anchor="middle" class="wire-text" fill="#333333">Hover me</text>
+    </g></g>
+</svg>

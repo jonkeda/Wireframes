@@ -1,0 +1,6 @@
+wireframe clean
+    Vertical
+        Label "One"
+      Label "Dedent to nowhere"
+    /Vertical
+/wireframe

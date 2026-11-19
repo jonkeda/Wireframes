@@ -1,0 +1,589 @@
+{
+  "attributes": {
+    "title": "Stepper Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 34,
+            "line": 6,
+            "offset": 127
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 102
+          },
+          "text": "**Basic Stepper**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "current": 2,
+            "steps": 4
+          },
+          "children": [],
+          "componentType": "Stepper",
+          "end": {
+            "column": 1,
+            "line": 10,
+            "offset": 164
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 137
+          },
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 10,
+            "offset": 181
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 10,
+            "offset": 172
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 37,
+            "line": 12,
+            "offset": 219
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 12,
+            "offset": 191
+          },
+          "text": "**Checkout Stepper**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "padding": 24
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 24
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "current": 2,
+                    "steps": 4
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 33,
+                        "line": 17,
+                        "offset": 347
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 17,
+                        "offset": 335
+                      },
+                      "text": "Cart",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 37,
+                        "line": 18,
+                        "offset": 384
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 18,
+                        "offset": 368
+                      },
+                      "text": "Shipping",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 36,
+                        "line": 19,
+                        "offset": 420
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 19,
+                        "offset": 405
+                      },
+                      "text": "Payment",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 36,
+                        "line": 20,
+                        "offset": 456
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 20,
+                        "offset": 441
+                      },
+                      "text": "Confirm",
+                      "type": "Control"
+                    }
+                  ],
+                  "componentType": "Stepper",
+                  "end": {
+                    "column": 25,
+                    "line": 21,
+                    "offset": 481
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 16,
+                    "offset": 289
+                  },
+                  "type": "Component"
+                },
+                {
+                  "attributes": {
+                    "padding": 16
+                  },
+                  "children": [
+                    {
+                      "attributes": {
+                        "gap": 16
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 57,
+                            "line": 25,
+                            "offset": 608
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 25,
+                            "offset": 576
+                          },
+                          "text": "**Shipping Information**",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {
+                            "gap": 8
+                          },
+                          "children": [
+                            {
+                              "attributes": {},
+                              "controlType": "Label",
+                              "end": {
+                                "column": 45,
+                                "line": 28,
+                                "offset": 693
+                              },
+                              "modifiers": {},
+                              "start": {
+                                "column": 29,
+                                "line": 28,
+                                "offset": 677
+                              },
+                              "text": "Address:",
+                              "type": "Control"
+                            },
+                            {
+                              "attributes": {},
+                              "controlType": "TextInput",
+                              "end": {
+                                "column": 52,
+                                "line": 29,
+                                "offset": 745
+                              },
+                              "modifiers": {},
+                              "placeholder": "123 Main St",
+                              "start": {
+                                "column": 29,
+                                "line": 29,
+                                "offset": 722
+                              },
+                              "type": "Control"
+                            },
+                            {
+                              "attributes": {
+                                "gap": 8
+                              },
+                              "children": [
+                                {
+                                  "attributes": {
+                                    "gap": 4
+                                  },
+                                  "children": [
+                                    {
+                                      "attributes": {},
+                                      "controlType": "Label",
+                                      "end": {
+                                        "column": 50,
+                                        "line": 33,
+                                        "offset": 888
+                                      },
+                                      "modifiers": {},
+                                      "start": {
+                                        "column": 37,
+                                        "line": 33,
+                                        "offset": 875
+                                      },
+                                      "text": "City:",
+                                      "type": "Control"
+                                    },
+                                    {
+                                      "attributes": {},
+                                      "controlType": "TextInput",
+                                      "end": {
+                                        "column": 57,
+                                        "line": 34,
+                                        "offset": 945
+                                      },
+                                      "modifiers": {},
+                                      "placeholder": "New York",
+                                      "start": {
+                                        "column": 37,
+                                        "line": 34,
+                                        "offset": 925
+                                      },
+                                      "type": "Control"
+                                    }
+                                  ],
+                                  "end": {
+                                    "column": 42,
+                                    "line": 35,
+                                    "offset": 987
+                                  },
+                                  "layoutType": "Vertical",
+                                  "modifiers": {},
+                                  "start": {
+                                    "column": 33,
+                                    "line": 32,
+                                    "offset": 824
+                                  },
+                                  "type": "Layout"
+                                },
+                                {
+                                  "attributes": {
+                                    "gap": 4
+                                  },
+                                  "children": [
+                                    {
+                                      "attributes": {},
+                                      "controlType": "Label",
+                                      "end": {
+                                        "column": 49,
+                                        "line": 37,
+                                        "offset": 1083
+                                      },
+                                      "modifiers": {},
+                                      "start": {
+                                        "column": 37,
+                                        "line": 37,
+                                        "offset": 1071
+                                      },
+                                      "text": "ZIP:",
+                                      "type": "Control"
+                                    },
+                                    {
+                                      "attributes": {},
+                                      "controlType": "TextInput",
+                                      "end": {
+                                        "column": 54,
+                                        "line": 38,
+                                        "offset": 1137
+                                      },
+                                      "modifiers": {},
+                                      "placeholder": "10001",
+                                      "start": {
+                                        "column": 37,
+                                        "line": 38,
+                                        "offset": 1120
+                                      },
+                                      "type": "Control"
+                                    }
+                                  ],
+                                  "end": {
+                                    "column": 42,
+                                    "line": 39,
+                                    "offset": 1179
+                                  },
+                                  "layoutType": "Vertical",
+                                  "modifiers": {},
+                                  "start": {
+                                    "column": 33,
+                                    "line": 36,
+                                    "offset": 1020
+                                  },
+                                  "type": "Layout"
+                                }
+                              ],
+                              "end": {
+                                "column": 40,
+                                "line": 40,
+                                "offset": 1219
+                              },
+                              "layoutType": "Horizontal",
+                              "modifiers": {},
+                              "start": {
+                                "column": 29,
+                                "line": 31,
+                                "offset": 775
+                              },
+                              "type": "Layout"
+                            }
+                          ],
+                          "end": {
+                            "column": 34,
+                            "line": 41,
+                            "offset": 1253
+                          },
+                          "layoutType": "Vertical",
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 27,
+                            "offset": 634
+                          },
+                          "type": "Layout"
+                        },
+                        {
+                          "attributes": {
+                            "gap": 8
+                          },
+                          "children": [
+                            {
+                              "attributes": {},
+                              "controlType": "Button",
+                              "end": {
+                                "column": 42,
+                                "line": 44,
+                                "offset": 1337
+                              },
+                              "modifiers": {},
+                              "start": {
+                                "column": 29,
+                                "line": 44,
+                                "offset": 1324
+                              },
+                              "text": "Back",
+                              "type": "Control"
+                            },
+                            {
+                              "attributes": {},
+                              "controlType": "Button",
+                              "end": {
+                                "column": 54,
+                                "line": 45,
+                                "offset": 1391
+                              },
+                              "modifiers": {
+                                "primary": true
+                              },
+                              "start": {
+                                "column": 29,
+                                "line": 45,
+                                "offset": 1366
+                              },
+                              "text": "Continue",
+                              "type": "Control"
+                            }
+                          ],
+                          "end": {
+                            "column": 36,
+                            "line": 46,
+                            "offset": 1427
+                          },
+                          "layoutType": "Horizontal",
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 43,
+                            "offset": 1279
+                          },
+                          "type": "Layout"
+                        }
+                      ],
+                      "end": {
+                        "column": 30,
+                        "line": 47,
+                        "offset": 1457
+                      },
+                      "layoutType": "Vertical",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 24,
+                        "offset": 536
+                      },
+                      "type": "Layout"
+                    }
+                  ],
+                  "end": {
+                    "column": 23,
+                    "line": 48,
+                    "offset": 1480
+                  },
+                  "modifiers": {},
+                  "sectionType": "Panel",
+                  "start": {
+                    "column": 17,
+                    "line": 23,
+                    "offset": 499
+                  },
+                  "type": "Section"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 49,
+                "offset": 1502
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 15,
+                "offset": 257
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 14,
+            "line": 50,
+            "offset": 1516
+          },
+          "modifiers": {},
+          "sectionType": "Card",
+          "start": {
+            "column": 9,
+            "line": 14,
+            "offset": 229
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 52,
+            "offset": 1535
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 52,
+            "offset": 1526
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 38,
+            "line": 54,
+            "offset": 1574
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 54,
+            "offset": 1545
+          },
+          "text": "**Completed Stepper**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "current": 3,
+            "steps": 3
+          },
+          "children": [],
+          "componentType": "Stepper",
+          "end": {
+            "column": 1,
+            "line": 57,
+            "offset": 1620
+          },
+          "modifiers": {
+            "completed": true
+          },
+          "start": {
+            "column": 9,
+            "line": 56,
+            "offset": 1584
+          },
+          "type": "Component"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 57,
+        "offset": 1633
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 78
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 58,
+    "offset": 1644
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 28
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,9 @@
+wireframe clean
+    if a
+        Label "A"
+    else if b
+        Label "B"
+    else
+        Label "C"
+    /if
+/wireframe

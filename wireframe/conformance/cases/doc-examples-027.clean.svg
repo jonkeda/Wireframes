@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <rect x="16" y="16" width="768" height="568" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="**Badge Variants**"><text x="32" y="47" class="wire-text wire-text-bold">Badge Variants</text></g><g role="group" aria-label="Info"><g>
+      <rect x="32" y="68" width="24" height="24" rx="12" fill="#0dcaf0" />
+      <text x="44" y="84" text-anchor="middle" class="wire-text wire-text-small" fill="#000000">Info</text>
+    </g></g><g role="group" aria-label="Success"><g>
+      <rect x="64" y="68" width="24" height="24" rx="12" fill="#198754" />
+      <text x="76" y="84" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">Success</text>
+    </g></g><g role="group" aria-label="Warning"><g>
+      <rect x="96" y="68" width="24" height="24" rx="12" fill="#ffc107" />
+      <text x="108" y="84" text-anchor="middle" class="wire-text wire-text-small" fill="#000000">Warning</text>
+    </g></g><g role="group" aria-label="Error"><g>
+      <rect x="128" y="68" width="24" height="24" rx="12" fill="#dc3545" />
+      <text x="140" y="84" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">Error</text>
+    </g></g><g role="group"><line x1="32" y1="108" x2="232" y2="108" stroke="#dee2e6" stroke-width="1" /></g><g role="img"><rect x="32" y="125" width="24" height="24" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /></g><g role="group" aria-label="Info badge uses blue background"><text x="64" y="140" class="wire-text">Info badge uses blue background</text></g><g role="img"><path d="M35 169 L43 177 L53 161" stroke="#212529" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" /></g><g role="group" aria-label="Success badge uses green background"><text x="64" y="172" class="wire-text">Success badge uses green background</text></g><g role="img"><rect x="32" y="189" width="24" height="24" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /></g><g role="group" aria-label="Warning badge uses yellow (black text)"><text x="64" y="204" class="wire-text">Warning badge uses yellow (black text)</text></g><g role="img"><rect x="32" y="221" width="24" height="24" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /></g><g role="group" aria-label="Error badge uses red background"><text x="64" y="236" class="wire-text">Error badge uses red background</text></g>
+</svg>

@@ -1,0 +1,15 @@
+wireframe clean
+    Card w=400
+        Vertical gap=12
+            Label "**Upload Progress**"
+            
+            Progress value=75 :prgUpload
+            Label "Uploading file... 75%"
+            
+            Horizontal gap=8 justify=between
+                Button "Cancel" @:back
+                Label "3 of 4 files"
+            /Horizontal
+        /Vertical
+    /Card
+/wireframe

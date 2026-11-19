@@ -1,0 +1,8 @@
+wireframe clean
+    Stepper :stpCheckout
+        Step "Cart" completed=true
+        Step "Shipping" current=true
+        Step "Payment"
+        Step "Confirm"
+    /Stepper
+/wireframe

@@ -1,0 +1,5 @@
+wireframe clean
+    IconButton $save
+    IconButton $save "Save"
+    IconButton $icon:settings primary
+/wireframe

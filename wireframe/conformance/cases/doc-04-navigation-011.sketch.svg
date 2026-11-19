@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <path d="M16.0 17.2 Q400.0 18.9 784.0 14.6 M784.3 16.0 Q791.0 300.0 783.6 584.0 M784.0 582.7 Q400.0 581.9 16.0 583.5 M15.8 584.0 Q10.4 300.0 15.7 16.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Step 2: Personal Information"><text x="32" y="110.67" class="wire-text wire-text-bold" style="font-size: 20px">Step 2: Personal Information</text></g><g role="group" aria-label="First Name"><text x="32" y="159" class="wire-text">First Name</text></g><g role="textbox" aria-label="John" aria-placeholder="John"><g>
+      <path d="M32.0 169.0 Q132.0 175.0 232.0 168.4 M232.4 168.0 Q234.4 186.0 232.8 204.0 M232.0 202.9 Q132.0 197.9 32.0 204.7 M31.7 204.0 Q30.0 186.0 30.8 168.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="191" class="wire-text wire-text-secondary">John</text>
+      
+    </g></g><g role="group" aria-label="Last Name"><text x="406" y="159" class="wire-text">Last Name</text></g><g role="textbox" aria-label="Doe" aria-placeholder="Doe"><g>
+      <path d="M406.0 168.1 Q506.0 160.5 606.0 168.4 M607.3 168.0 Q605.9 186.0 606.8 204.0 M606.0 203.8 Q506.0 208.3 406.0 203.0 M404.8 204.0 Q408.9 186.0 407.2 168.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="418" y="191" class="wire-text wire-text-secondary">Doe</text>
+      
+    </g></g><g role="group" aria-label="Email Address"><text x="32" y="231" class="wire-text">Email Address</text></g><g role="textbox" aria-label="john@example.com" aria-placeholder="john@example.com"><g>
+      <path d="M32.0 238.8 Q132.0 235.2 232.0 240.2 M231.6 240.0 Q228.9 258.0 231.7 276.0 M232.0 277.0 Q132.0 283.0 32.0 276.5 M32.5 276.0 Q34.0 258.0 31.3 240.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="263" class="wire-text wire-text-secondary">john@example.com</text>
+      
+    </g></g><g role="button" aria-label="Back"><g opacity="1">
+      <path d="M32.0 299.4 Q82.0 301.4 132.0 298.9 M131.1 300.0 Q135.1 318.0 131.0 336.0 M132.0 336.5 Q82.0 331.5 32.0 335.2 M33.1 336.0 Q30.0 318.0 32.3 300.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="82" y="323" text-anchor="middle" class="wire-text" fill="#333333">Back</text>
+    </g></g><g role="button" aria-label="Continue"><g opacity="1">
+      <path d="M164.0 298.5 Q214.0 300.6 264.0 298.9 M263.9 300.0 Q260.5 318.0 263.3 336.0 M264.0 337.4 Q214.0 335.8 164.0 335.1 M164.2 336.0 Q166.3 318.0 163.7 300.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="214" y="323" text-anchor="middle" class="wire-text" fill="#ffffff">Continue</text>
+    </g></g>
+</svg>

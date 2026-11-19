@@ -1,0 +1,60 @@
+wireframe clean
+    Dock w=700 h=500
+        Header dock=top h=60
+            Horizontal padding=16
+                Heading "Analytics Dashboard" level=2
+                Spacer
+                IconButton icon=bell
+                Avatar "JD"
+            /Horizontal
+        /Header
+        
+        Sidebar dock=left w=180
+            Vertical padding=8 gap=4
+                Menu
+                    MenuItem "Dashboard" icon=home selected
+                    MenuItem "Analytics" icon=chart
+                    MenuItem "Reports" icon=document
+                    MenuItem "Settings" icon=settings
+                /Menu
+            /Vertical
+        /Sidebar
+        
+        Content dock=fill
+            Vertical padding=16 gap=16
+                Grid cols=3 gap=16
+                    Card padding=16
+                        Vertical gap=8
+                            Label "Total Users"
+                            Heading "12,345" level=3
+                            Badge "↑ 12%" variant=success
+                        /Vertical
+                    /Card
+                    
+                    Card padding=16
+                        Vertical gap=8
+                            Label "Revenue"
+                            Heading "$45,678" level=3
+                            Badge "↑ 8%" variant=success
+                        /Vertical
+                    /Card
+                    
+                    Card padding=16
+                        Vertical gap=8
+                            Label "Conversion"
+                            Heading "3.2%" level=3
+                            Badge "↓ 2%" variant=warning
+                        /Vertical
+                    /Card
+                /Grid
+                
+                Card padding=16 h=200
+                    Vertical gap=8
+                        Heading "Activity Chart" level=4
+                        Skeleton variant=rectangular h=150
+                    /Vertical
+                /Card
+            /Vertical
+        /Content
+    /Dock
+/wireframe

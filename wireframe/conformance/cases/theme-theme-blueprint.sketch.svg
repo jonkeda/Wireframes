@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="948" viewBox="0 0 800 948" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g role="group" aria-label="**Blueprint Theme**"><text x="16" y="31" class="wire-text wire-text-bold">Blueprint Theme</text></g><g role="group" aria-label="A technical style reminiscent of engineering blueprints and schematics."><text x="16" y="67" class="wire-text">A technical style reminiscent of engineering blueprints and schematics.</text></g><g role="group"><line x1="16" y1="88" x2="216" y2="88" stroke="#888888" stroke-width="1" /></g><path d="M16.0 106.0 Q400.0 107.7 784.0 106.0 M784.5 105.0 Q788.3 344.5 782.9 584.0 M784.0 582.9 Q400.0 578.2 16.0 584.1 M15.6 584.0 Q14.8 344.5 16.0 105.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="**ACME Dashboard**"><text x="32" y="136" class="wire-text wire-text-bold">ACME Dashboard</text></g><g role="textbox" aria-label="Search..." aria-placeholder="Search..."><g>
+      <path d="M224.0 120.0 Q324.0 129.1 424.0 119.9 M423.4 121.0 Q422.8 139.0 422.7 157.0 M424.0 157.8 Q324.0 150.9 224.0 157.8 M224.7 157.0 Q224.6 139.0 224.9 121.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="236" y="144" class="wire-text wire-text-secondary">Search...</text>
+      
+    </g></g><g role="group" aria-label="JD"><g>
+      <circle cx="460" cy="141" r="20" fill="#4a90d9" />
+      <text x="460" y="145.44" text-anchor="middle" class="wire-text" style="font-size: 13.33px" fill="#ffffff">J</text>
+    </g></g><path d="M16.0 598.6 Q204.0 599.5 392.0 599.7 M391.9 600.0 Q385.5 720.0 393.5 840.0 M392.0 841.3 Q204.0 841.0 16.0 841.3 M16.2 840.0 Q20.5 720.0 14.8 600.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="**Navigation**"><text x="32" y="631" class="wire-text wire-text-bold">Navigation</text></g><path d="M408.0 598.6 Q596.0 603.4 784.0 598.7 M783.8 600.0 Q789.5 646.0 782.8 692.0 M784.0 693.2 Q596.0 689.5 408.0 691.4 M408.3 692.0 Q403.4 646.0 408.1 600.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="**System Status**"><text x="424" y="631" class="wire-text wire-text-bold">System Status</text></g><g role="group" aria-label="CPU Usage"><text x="424" y="659" class="wire-text">CPU Usage</text></g><g role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"><g>
+      <rect x="424" y="668" width="200" height="8" rx="4" fill="#f5f5f5" />
+      <rect x="424" y="668" width="90" height="8" rx="4" fill="#4a90d9" />
+    </g></g><g role="group" aria-label="Memory"><text x="640" y="659" class="wire-text">Memory</text></g><g role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"><g>
+      <rect x="640" y="668" width="200" height="8" rx="4" fill="#f5f5f5" />
+      <rect x="640" y="668" width="144" height="8" rx="4" fill="#4a90d9" />
+    </g></g><g role="group" aria-label="Storage"><text x="856" y="659" class="wire-text">Storage</text></g><g role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"><g>
+      <rect x="856" y="668" width="200" height="8" rx="4" fill="#f5f5f5" />
+      <rect x="856" y="668" width="76" height="8" rx="4" fill="#4a90d9" />
+    </g></g><path d="M408.0 707.9 Q596.0 713.9 784.0 707.2 M782.6 708.0 Q789.6 778.0 785.4 848.0 M784.0 848.0 Q596.0 843.0 408.0 846.9 M406.5 848.0 Q405.2 778.0 409.2 708.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="**Configuration**"><text x="424" y="739" class="wire-text wire-text-bold">Configuration</text></g><g role="combobox" aria-label="Select Region" aria-placeholder="Select Region" aria-expanded="false" aria-haspopup="listbox"><g>
+      <rect x="424" y="752" width="200" height="36" rx="0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="436" y="775" class="wire-text">US-East</text>
+      <path d="M604 768 L610 774 L616 768" stroke="#333333" stroke-width="2" fill="none" />
+    </g></g><g role="group" aria-label="US-East"><g>
+      <rect x="424" y="788" width="100" height="30" fill="#f5f5f5" stroke="#888888" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="474" y="808" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="US-West"><g>
+      <rect x="424" y="826" width="100" height="30" fill="#f5f5f5" stroke="#888888" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="474" y="846" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="EU-Central"><g>
+      <rect x="424" y="864" width="100" height="30" fill="#f5f5f5" stroke="#888888" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="474" y="884" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Asia-Pacific"><g>
+      <rect x="424" y="902" width="100" height="30" fill="#f5f5f5" stroke="#888888" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="474" y="922" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="combobox" aria-label="Environment" aria-placeholder="Environment" aria-expanded="false" aria-haspopup="listbox"><g>
+      <rect x="640" y="752" width="200" height="36" rx="0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="652" y="775" class="wire-text">Production</text>
+      <path d="M820 768 L826 774 L832 768" stroke="#333333" stroke-width="2" fill="none" />
+    </g></g><g role="group" aria-label="Production"><g>
+      <rect x="640" y="788" width="100" height="30" fill="#f5f5f5" stroke="#888888" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="690" y="808" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Staging"><g>
+      <rect x="640" y="826" width="100" height="30" fill="#f5f5f5" stroke="#888888" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="690" y="846" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Development"><g>
+      <rect x="640" y="864" width="100" height="30" fill="#f5f5f5" stroke="#888888" stroke-width="2" stroke-dasharray="4,2" />
+      <text x="690" y="884" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="button" aria-label="Apply"><g opacity="1">
+      <path d="M424.0 796.4 Q474.0 798.9 524.0 797.2 M525.0 796.0 Q524.1 814.0 523.4 832.0 M524.0 831.5 Q474.0 826.0 424.0 831.9 M423.1 832.0 Q422.7 814.0 423.6 796.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="474" y="819" text-anchor="middle" class="wire-text" fill="#ffffff">Apply</text>
+    </g></g><g role="button" aria-label="Reset"><g opacity="1">
+      <path d="M532.0 797.1 Q582.0 791.3 632.0 794.6 M632.4 796.0 Q628.5 814.0 631.0 832.0 M632.0 830.8 Q582.0 835.4 532.0 831.5 M531.8 832.0 Q534.4 814.0 532.0 796.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="582" y="819" text-anchor="middle" class="wire-text" fill="#333333">Reset</text>
+    </g></g><path d="M16.0 863.3 Q400.0 861.0 784.0 864.0 M783.2 864.0 Q779.1 890.0 785.2 916.0 M784.0 916.6 Q400.0 915.9 16.0 917.1 M16.9 916.0 Q18.8 890.0 15.0 864.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="System v2.1.0"><text x="32" y="895" class="wire-text">System v2.1.0</text></g><g role="group" aria-label="Last updated: 2025-12-27"><text x="184" y="895" class="wire-text">Last updated: 2025-12-27</text></g>
+</svg>

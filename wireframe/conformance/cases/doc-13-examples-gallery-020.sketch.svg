@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="636" viewBox="0 0 800 636" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g role="img"><g>
+      <rect x="16" y="232" width="150" height="100" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
+      <line x1="16" y1="232" x2="166" y2="332" stroke="#888888" stroke-width="1" />
+      <line x1="166" y1="232" x2="16" y2="332" stroke="#888888" stroke-width="1" />
+      <text x="91" y="287" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Image</text>
+    </g></g><g role="group" aria-label="MacBook Pro 14-inch"><text x="214" y="256" class="wire-text wire-text-bold" style="font-size: 24px">MacBook Pro 14-inch</text></g><g role="link" aria-label="142 reviews"><g>
+      <text x="214" y="295" class="wire-text" fill="#4a90d9" style="text-decoration: underline">142 reviews</text>
+    </g></g><g role="group" aria-label="$1,999.00"><text x="214" y="338.67" class="wire-text wire-text-bold" style="font-size: 20px">$1,999.00</text></g><g role="group" aria-label="The most powerful MacBook Pro ever is here."><text x="214" y="379" class="wire-text">The most powerful MacBook Pro ever is here.</text></g><g role="spinbutton"><g>
+      <path d="M16.0 390.6 Q116.0 387.2 216.0 390.8 M215.8 392.0 Q214.2 410.0 217.1 428.0 M216.0 429.2 Q116.0 432.2 16.0 426.6 M16.3 428.0 Q16.7 410.0 16.9 392.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="415" class="wire-text wire-text-secondary">123</text>
+      
+    </g></g><g role="button" aria-label="Add to Cart"><g opacity="1">
+      <path d="M232.0 393.0 Q292.0 386.1 352.0 391.7 M352.4 392.0 Q350.8 410.0 352.2 428.0 M352.0 426.8 Q292.0 432.5 232.0 429.1 M231.7 428.0 Q232.1 410.0 230.7 392.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="292" y="415" text-anchor="middle" class="wire-text" fill="#ffffff">Add to Cart</text>
+    </g></g><g role="button"><g><rect x="368" y="392" width="36" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="378" y="402" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g></g><g role="group" aria-label="Full product description..."><text x="32" y="467" class="wire-text">Full product description...</text></g><g role="group" aria-label="Customer reviews..."><text x="32" y="599" class="wire-text">Customer reviews...</text></g>
+</svg>

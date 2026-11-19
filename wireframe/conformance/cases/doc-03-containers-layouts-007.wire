@@ -1,0 +1,12 @@
+wireframe clean
+    Scroll w=200 h=150
+        Vertical gap=8
+            Button "Item 1"
+            Button "Item 2"
+            Button "Item 3"
+            Button "Item 4"
+            Button "Item 5"
+            Button "Item 6"
+        /Vertical
+    /Scroll
+/wireframe

@@ -1,0 +1,3 @@
+wireframe clean
+    TextInput "x" message="Line\nTwo" note="say \"hi\""
+/wireframe

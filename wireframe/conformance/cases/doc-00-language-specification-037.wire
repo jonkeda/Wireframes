@@ -1,0 +1,9 @@
+wireframe clean
+    DataGrid :dgOrders rows=5 selected
+        ColumnText "Product"
+        ColumnNumber "Qty"
+        ColumnDate "Date"
+        ColumnCheckbox "Shipped"
+        ColumnButton "Actions"
+    /DataGrid
+/wireframe

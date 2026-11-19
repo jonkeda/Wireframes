@@ -1,0 +1,55 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 32,
+            "line": 10,
+            "offset": 239
+          },
+          "modifiers": {},
+          "start": {
+            "column": 13,
+            "line": 10,
+            "offset": 220
+          },
+          "text": "Hello World",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 18,
+        "line": 11,
+        "offset": 257
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 9,
+        "line": 9,
+        "offset": 192
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 15,
+    "line": 12,
+    "offset": 272
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

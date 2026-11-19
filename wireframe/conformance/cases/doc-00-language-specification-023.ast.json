@@ -1,0 +1,86 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Label",
+      "end": {
+        "column": 23,
+        "line": 2,
+        "offset": 38
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Plain text",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Label",
+      "end": {
+        "column": 26,
+        "line": 3,
+        "offset": 64
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 43
+      },
+      "text": "**Bold text**",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Label",
+      "end": {
+        "column": 26,
+        "line": 4,
+        "offset": 90
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 69
+      },
+      "text": "*Italic text*",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Label",
+      "end": {
+        "column": 25,
+        "line": 5,
+        "offset": 115
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 95
+      },
+      "text": "`Code style`",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 6,
+    "offset": 126
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

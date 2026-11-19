@@ -1,0 +1,17 @@
+[
+  {
+    "column": 21,
+    "line": 17,
+    "message": "Unexpected token: Home"
+  },
+  {
+    "column": 21,
+    "line": 18,
+    "message": "Unexpected token: Products"
+  },
+  {
+    "column": 21,
+    "line": 19,
+    "message": "Unexpected token: Category"
+  }
+]

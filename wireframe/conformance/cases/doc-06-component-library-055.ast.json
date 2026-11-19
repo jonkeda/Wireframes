@@ -1,0 +1,112 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "MenuItem",
+          "end": {
+            "column": 1,
+            "line": 4,
+            "offset": 66
+          },
+          "icon": "home",
+          "modifiers": {},
+          "navigation": "home",
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 33
+          },
+          "text": "Home",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "MenuItem",
+          "end": {
+            "column": 1,
+            "line": 5,
+            "offset": 122
+          },
+          "icon": "dashboard",
+          "modifiers": {},
+          "navigation": "dashboard",
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 74
+          },
+          "text": "Dashboard",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 5,
+            "offset": 139
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 130
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "MenuItem",
+          "end": {
+            "column": 1,
+            "line": 7,
+            "offset": 193
+          },
+          "icon": "settings",
+          "modifiers": {},
+          "navigation": "settings",
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 148
+          },
+          "text": "Settings",
+          "type": "Component"
+        }
+      ],
+      "componentType": "Menu",
+      "end": {
+        "column": 10,
+        "line": 7,
+        "offset": 202
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 213
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

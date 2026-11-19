@@ -1,0 +1,4 @@
+wireframe clean
+    TextInput "Categorie" :Categorieën
+    Button "Overzicht" @Overzicht_Categorieën
+/wireframe

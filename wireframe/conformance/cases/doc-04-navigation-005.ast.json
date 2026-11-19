@@ -1,0 +1,37 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "page": 3,
+        "total": 10
+      },
+      "controlType": "Pagination",
+      "end": {
+        "column": 31,
+        "line": 2,
+        "offset": 46
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 3,
+    "offset": 57
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

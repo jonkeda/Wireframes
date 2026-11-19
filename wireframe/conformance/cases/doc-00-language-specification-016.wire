@@ -1,0 +1,8 @@
+wireframe clean
+    Button "Click Me"
+    Button "Primary" primary
+    Button "Secondary" secondary
+    Button "Disabled" disabled
+    Button "With ID" :btnSubmit
+    Button "Navigate" @NextPage
+/wireframe

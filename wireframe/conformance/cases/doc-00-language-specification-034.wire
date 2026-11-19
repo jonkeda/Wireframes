@@ -1,0 +1,8 @@
+wireframe clean
+    Breadcrumb
+        Link "Home"
+        Link "Products"
+        Link "Category"
+        Label "Current Item"
+    /Breadcrumb
+/wireframe

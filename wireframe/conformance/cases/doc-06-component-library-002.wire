@@ -1,0 +1,7 @@
+wireframe clean
+    Grid cols=3 rows=2
+        Button "Span 2 columns" grid=0,0,1,2
+        Button "Normal cell" grid=0,2
+        Button "Span 2 rows" grid=1,0,2,1
+    /Grid
+/wireframe

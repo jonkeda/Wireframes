@@ -1,0 +1,8 @@
+wireframe clean
+    validations
+        | Field | Rule | Message |
+        |-------|------|---------|
+        | txtUsername | required | "Username is required" |
+        | txtEmail | pattern(email) | "Invalid email" |
+    /validations
+/wireframe

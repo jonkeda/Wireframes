@@ -1,0 +1,55 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "binding": "binding",
+      "children": [],
+      "componentType": "Column",
+      "end": {
+        "column": 1,
+        "line": 3,
+        "offset": 45
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Header",
+      "type": "Component"
+    },
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "Column",
+      "end": {
+        "column": 12,
+        "line": 5,
+        "offset": 117
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 49
+      },
+      "text": "With Content",
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 6,
+    "offset": 128
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

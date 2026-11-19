@@ -1,0 +1,4 @@
+wireframe clean
+    PasswordInput "Enter password"
+    PasswordInput "Password" ?password required
+/wireframe

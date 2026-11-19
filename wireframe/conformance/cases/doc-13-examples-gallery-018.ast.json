@@ -1,0 +1,171 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "width": 480
+      },
+      "children": [
+        {
+          "attributes": {
+            "level": 2
+          },
+          "controlType": "Heading",
+          "end": {
+            "column": 39,
+            "line": 3,
+            "offset": 75
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 45
+          },
+          "text": "Edit Profile",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {},
+              "binding": "name",
+              "controlType": "TextInput",
+              "end": {
+                "column": 35,
+                "line": 5,
+                "offset": 134
+              },
+              "modifiers": {},
+              "placeholder": "Name",
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 112
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "binding": "email",
+              "controlType": "TextInput",
+              "end": {
+                "column": 37,
+                "line": 6,
+                "offset": 171
+              },
+              "modifiers": {},
+              "placeholder": "Email",
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 147
+              },
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 8,
+            "offset": 228
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 84
+          },
+          "type": "Layout"
+        },
+        {
+          "attributes": {
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 38,
+                "line": 10,
+                "offset": 292
+              },
+              "modifiers": {
+                "secondary": true
+              },
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 267
+              },
+              "text": "Cancel",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 34,
+                "line": 11,
+                "offset": 326
+              },
+              "modifiers": {
+                "primary": true
+              },
+              "start": {
+                "column": 13,
+                "line": 11,
+                "offset": 305
+              },
+              "text": "Save",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 20,
+            "line": 12,
+            "offset": 346
+          },
+          "layoutType": "Horizontal",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 9,
+            "offset": 237
+          },
+          "type": "Layout"
+        }
+      ],
+      "componentType": "Dialog",
+      "end": {
+        "column": 12,
+        "line": 13,
+        "offset": 358
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 14,
+    "offset": 369
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

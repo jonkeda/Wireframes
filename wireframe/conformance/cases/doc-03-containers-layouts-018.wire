@@ -1,0 +1,56 @@
+wireframe clean
+    Vertical w=800 h=600
+        Header h=60 padding=16
+            Horizontal gap=16
+                Label "**MyApp**"
+                Spacer
+                Link "Home"
+                Link "About"
+                Link "Contact"
+                Button "Sign In" primary
+            /Horizontal
+        /Header
+        
+        Horizontal h=480
+            Sidebar w=200 padding=12
+                Vertical gap=8
+                    Button "Dashboard" w=100%
+                    Button "Projects" w=100%
+                    Button "Tasks" w=100%
+                    Button "Reports" w=100%
+                /Vertical
+            /Sidebar
+            
+            Content padding=20
+                Vertical gap=16
+                    Heading "Dashboard" level=1
+                    
+                    Grid cols=3 gap=16
+                        Card padding=16
+                            Vertical gap=4
+                                Label "Total Users"
+                                Heading "1,234" level=2
+                            /Vertical
+                        /Card
+                        Card padding=16
+                            Vertical gap=4
+                                Label "Revenue"
+                                Heading "$5,678" level=2
+                            /Vertical
+                        /Card
+                        Card padding=16
+                            Vertical gap=4
+                                Label "Active Projects"
+                                Heading "42" level=2
+                            /Vertical
+                        /Card
+                    /Grid
+                /Vertical
+            /Content
+        /Horizontal
+        
+        Footer h=40 padding=12
+            Label "© 2024 MyApp Inc."
+        /Footer
+    /Vertical
+/wireframe

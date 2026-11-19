@@ -1,0 +1,91 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "TextInput",
+      "end": {
+        "column": 36,
+        "line": 2,
+        "offset": 51
+      },
+      "id": "Name",
+      "modifiers": {
+        "required": true
+      },
+      "placeholder": "Name",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [
+    {
+      "columns": [
+        "Field",
+        "Rule",
+        "Message"
+      ],
+      "end": {
+        "column": 13,
+        "line": 7,
+        "offset": 159
+      },
+      "records": [
+        {
+          "Field": "Name",
+          "Message": "Name is required",
+          "Rule": ""
+        }
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Field",
+            "Rule",
+            "Message"
+          ],
+          "isSeparator": false
+        },
+        {
+          "cells": [
+            "---",
+            "---",
+            "---"
+          ],
+          "isSeparator": true
+        },
+        {
+          "cells": [
+            "Name",
+            "",
+            "Name is required"
+          ],
+          "isSeparator": false
+        }
+      ],
+      "sectionType": "validations",
+      "start": {
+        "column": 1,
+        "line": 3,
+        "offset": 52
+      },
+      "type": "DataSection"
+    }
+  ],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 170
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

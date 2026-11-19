@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="612" viewBox="0 0 800 612" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <path d="M16.0 15.3 Q400.0 13.3 784.0 16.1 M783.2 16.0 Q777.6 42.0 784.4 68.0 M784.0 68.6 Q400.0 67.6 16.0 68.9 M17.0 68.0 Q21.4 42.0 14.6 16.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="Top Header"><text x="32" y="47" class="wire-text">Top Header</text></g><path d="M16.0 543.5 Q400.0 549.9 784.0 544.3 M782.9 544.0 Q784.6 570.0 784.3 596.0 M784.0 596.4 Q400.0 591.0 16.0 596.8 M17.2 596.0 Q12.6 570.0 14.7 544.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="Bottom Footer"><text x="32" y="575" class="wire-text">Bottom Footer</text></g><path d="M16.0 68.1 Q66.0 74.6 116.0 67.8 M117.4 68.0 Q116.9 300.0 116.1 532.0 M116.0 531.8 Q66.0 526.3 16.0 533.3 M14.8 532.0 Q14.2 300.0 14.9 68.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="Left"><text x="32" y="99" class="wire-text">Left</text></g><path d="M116.0 67.3 Q450.0 59.9 784.0 66.7 M783.1 68.0 Q783.1 300.0 785.2 532.0 M784.0 532.5 Q450.0 537.9 116.0 532.7 M117.0 532.0 Q116.0 300.0 116.7 68.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="Main Content"><text x="132" y="99" class="wire-text">Main Content</text></g>
+</svg>

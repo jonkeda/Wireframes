@@ -1,0 +1,128 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "w": 300
+      },
+      "children": [
+        {
+          "attributes": {
+            "gap": 12
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 36,
+                "line": 4,
+                "offset": 90
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 67
+              },
+              "text": "**Clean Theme**",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 46,
+                "line": 5,
+                "offset": 136
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 103
+              },
+              "text": "Modern and minimal design",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 37,
+                "line": 6,
+                "offset": 173
+              },
+              "modifiers": {
+                "primary": true
+              },
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 149
+              },
+              "text": "Primary",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 29,
+                "line": 7,
+                "offset": 202
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 7,
+                "offset": 186
+              },
+              "text": "Default",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 8,
+            "offset": 220
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 39
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 9,
+        "offset": 230
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 10,
+    "offset": 241
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

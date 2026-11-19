@@ -1,0 +1,7 @@
+wireframe clean
+    Vertical
+        Button "A"
+    /Vertcal
+    Button "B"
+    Button "C"
+/wireframe

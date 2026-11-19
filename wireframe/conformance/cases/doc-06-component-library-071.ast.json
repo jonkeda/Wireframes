@@ -1,0 +1,114 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "TreeItem",
+                  "end": {
+                    "column": 1,
+                    "line": 6,
+                    "offset": 141
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 5,
+                    "offset": 120
+                  },
+                  "text": "Project A",
+                  "type": "Component"
+                },
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "TreeItem",
+                  "end": {
+                    "column": 1,
+                    "line": 7,
+                    "offset": 178
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 6,
+                    "offset": 157
+                  },
+                  "text": "Project B",
+                  "type": "Component"
+                }
+              ],
+              "componentType": "TreeItem",
+              "end": {
+                "column": 22,
+                "line": 7,
+                "offset": 199
+              },
+              "modifiers": {
+                "expanded": true
+              },
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 75
+              },
+              "text": "Projects",
+              "type": "Component"
+            }
+          ],
+          "componentType": "TreeItem",
+          "end": {
+            "column": 18,
+            "line": 8,
+            "offset": 217
+          },
+          "modifiers": {
+            "expanded": true
+          },
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 33
+          },
+          "text": "Documents",
+          "type": "Component"
+        }
+      ],
+      "componentType": "Tree",
+      "end": {
+        "column": 10,
+        "line": 9,
+        "offset": 227
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 10,
+    "offset": 238
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

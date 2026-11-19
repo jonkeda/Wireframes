@@ -1,0 +1,5 @@
+wireframe clean
+    Horizontal gap=16
+        Image w=100 h=100
+        Image "Product Photo" w=150 h=100
+/wireframe

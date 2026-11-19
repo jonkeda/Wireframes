@@ -1,0 +1,46 @@
+wireframe clean
+    Card w=400 padding=16
+        Vertical gap=16
+            Heading "Team Members" level=3
+            
+            Vertical gap=12
+                Horizontal gap=12
+                    Avatar "JD" size=lg
+                    Vertical gap=2
+                        Label "**John Doe**"
+                        Label "john@example.com" 
+                        Badge "Admin" variant=info
+                    /Vertical
+                    Spacer
+                    IconButton icon=more
+                /Horizontal
+                
+                Separator
+                
+                Horizontal gap=12
+                    Avatar "JS" size=lg
+                    Vertical gap=2
+                        Label "**Jane Smith**"
+                        Label "jane@example.com"
+                        Badge "Member"
+                    /Vertical
+                    Spacer
+                    IconButton icon=more
+                /Horizontal
+                
+                Separator
+                
+                Horizontal gap=12
+                    Avatar "BW" size=lg
+                    Vertical gap=2
+                        Label "**Bob Wilson**"
+                        Label "bob@example.com"
+                        Badge "Guest" variant=warning
+                    /Vertical
+                    Spacer
+                    IconButton icon=more
+                /Horizontal
+            /Vertical
+        /Vertical
+    /Card
+/wireframe

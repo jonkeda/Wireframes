@@ -1,0 +1,16 @@
+wireframe clean
+    Card width=400
+        Heading "Create Account" level=2
+        Vertical gap=16
+            Horizontal gap=16
+                TextInput "First Name" ?firstName required
+                TextInput "Last Name" ?lastName required
+            /Horizontal
+            TextInput "Email Address" ?email required
+            TextInput "Password" ?password required
+            TextInput "Confirm Password" ?confirmPassword required
+            Checkbox "I agree to Terms of Service" ?terms required
+            Button "Create Account" primary
+        /Vertical
+    /Card
+/wireframe

@@ -1,0 +1,46 @@
+wireframe clean
+    Vertical w=375 h=667
+        Header h=44
+            Horizontal padding=8
+                IconButton icon=back
+                Heading "Profile" level=4
+                Spacer
+                IconButton icon=more
+            /Horizontal
+        /Header
+        
+        Content
+            Vertical padding=16 gap=16
+                Horizontal gap=16
+                    Avatar "JD" size=xl
+                    Vertical gap=4
+                        Heading "John Doe" level=3
+                        Label "john@example.com"
+                        Badge "Premium" variant=info
+                    /Vertical
+                /Horizontal
+                
+                Separator
+                
+                Menu
+                    MenuItem "Edit Profile" icon=edit
+                    MenuItem "Notifications" icon=bell
+                    MenuItem "Privacy" icon=lock
+                    MenuItem "Help" icon=help
+                    Separator
+                    MenuItem "Sign Out" icon=logout
+                /Menu
+            /Vertical
+        /Content
+        
+        Footer h=50
+            Horizontal
+                IconButton icon=home
+                IconButton icon=search
+                IconButton icon=add
+                IconButton icon=heart
+                IconButton icon=user selected
+            /Horizontal
+        /Footer
+    /Vertical
+/wireframe

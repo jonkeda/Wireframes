@@ -1,0 +1,211 @@
+{
+  "attributes": {
+    "title": "Grid Positioning Example"
+  },
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 46,
+                "line": 6,
+                "offset": 136
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 103
+              },
+              "text": "**Grid with Positioning**",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "cols": 3,
+                "gap": 8,
+                "rows": 3
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "grid": "0,0,1,2"
+                  },
+                  "controlType": "Button",
+                  "end": {
+                    "column": 50,
+                    "line": 9,
+                    "offset": 236
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 9,
+                    "offset": 203
+                  },
+                  "text": "Span 2 cols",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "grid": "0,2"
+                  },
+                  "controlType": "Button",
+                  "end": {
+                    "column": 44,
+                    "line": 10,
+                    "offset": 280
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 10,
+                    "offset": 253
+                  },
+                  "text": "Top right",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "grid": "1,0,2,1"
+                  },
+                  "controlType": "Button",
+                  "end": {
+                    "column": 50,
+                    "line": 11,
+                    "offset": 330
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 11,
+                    "offset": 297
+                  },
+                  "text": "Span 2 rows",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "grid": "1,1"
+                  },
+                  "controlType": "Button",
+                  "end": {
+                    "column": 41,
+                    "line": 12,
+                    "offset": 371
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 12,
+                    "offset": 347
+                  },
+                  "text": "Center",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "grid": "1,2"
+                  },
+                  "controlType": "Button",
+                  "end": {
+                    "column": 40,
+                    "line": 13,
+                    "offset": 411
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 13,
+                    "offset": 388
+                  },
+                  "text": "Right",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "grid": "2,1,1,2"
+                  },
+                  "controlType": "Button",
+                  "end": {
+                    "column": 50,
+                    "line": 14,
+                    "offset": 461
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 14,
+                    "offset": 428
+                  },
+                  "text": "Bottom span",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 18,
+                "line": 15,
+                "offset": 479
+              },
+              "layoutType": "Grid",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 8,
+                "offset": 162
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 16,
+            "offset": 497
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 75
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 17,
+        "offset": 507
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 62
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 18,
+    "offset": 518
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,7 @@
+wireframe clean
+    Vertical gap=8
+        Checkbox "Accept terms and conditions"
+        Checkbox "Subscribe to newsletter" checked
+        Checkbox "Disabled option" disabled
+        Checkbox "Indeterminate" indeterminate
+/wireframe

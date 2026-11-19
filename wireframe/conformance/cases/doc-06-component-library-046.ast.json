@@ -1,0 +1,74 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "height": 20,
+        "width": 200
+      },
+      "controlType": "Skeleton",
+      "end": {
+        "column": 33,
+        "line": 2,
+        "offset": 48
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "type": "avatar"
+      },
+      "controlType": "Skeleton",
+      "end": {
+        "column": 25,
+        "line": 3,
+        "offset": 73
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 53
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "lines": 3,
+        "type": "text"
+      },
+      "controlType": "Skeleton",
+      "end": {
+        "column": 31,
+        "line": 4,
+        "offset": 104
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 78
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 115
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

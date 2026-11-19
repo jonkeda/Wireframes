@@ -1,0 +1,9 @@
+wireframe clean
+    Expander "Click to expand"
+        // Expanded content
+    /Expander
+
+    Expander "Pre-expanded" expanded
+        // Content
+    /Expander
+/wireframe

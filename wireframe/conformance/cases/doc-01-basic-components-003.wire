@@ -1,0 +1,9 @@
+wireframe clean
+    Vertical gap=8
+        Label "Plain text label"
+        Label "**Bold label**"
+        Label "*Italic label*"
+        Heading "Large Heading" level=1
+        Heading "Medium Heading" level=2
+        Heading "Small Heading" level=3
+/wireframe

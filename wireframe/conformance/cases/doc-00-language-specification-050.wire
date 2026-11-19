@@ -1,0 +1,7 @@
+wireframe clean
+    rules
+        | ID | Condition | Action | Controls |
+        |----|-----------|--------|----------|
+        | R001 | chkTerms checked | enable | btnSubmit |
+    /rules
+/wireframe

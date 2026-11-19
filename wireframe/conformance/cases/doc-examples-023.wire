@@ -1,0 +1,20 @@
+wireframe clean
+    %title: DataGrid with Typed Columns
+    
+    Card
+        Vertical gap=16
+            Label "**User Management**"
+            
+            DataGrid rows=5 selected
+                ColumnText "Name"
+                ColumnText "Email"
+                ColumnDate "Created"
+                ColumnNumber "Score"
+                ColumnCheckbox "Active"
+                ColumnButton "Actions"
+            /DataGrid
+            
+            Pagination pages=5 current=1
+        /Vertical
+    /Card
+/wireframe

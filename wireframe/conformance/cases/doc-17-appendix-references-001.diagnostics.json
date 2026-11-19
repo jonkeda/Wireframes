@@ -1,0 +1,52 @@
+[
+  {
+    "column": 11,
+    "line": 1,
+    "message": "Unexpected character: <"
+  },
+  {
+    "column": 17,
+    "line": 1,
+    "message": "Unexpected character: >"
+  },
+  {
+    "column": 23,
+    "line": 2,
+    "message": "Unexpected character: ("
+  },
+  {
+    "column": 41,
+    "line": 2,
+    "message": "Unexpected character: )"
+  },
+  {
+    "column": 0,
+    "line": 2,
+    "message": "Unknown wireframe style: style"
+  },
+  {
+    "column": 13,
+    "line": 2,
+    "message": "Unexpected token: goes"
+  },
+  {
+    "column": 18,
+    "line": 2,
+    "message": "Unexpected token: here"
+  },
+  {
+    "column": 24,
+    "line": 2,
+    "message": "Unexpected token: indented"
+  },
+  {
+    "column": 33,
+    "line": 2,
+    "message": "Unexpected token: 4"
+  },
+  {
+    "column": 35,
+    "line": 2,
+    "message": "Unexpected token: spaces"
+  }
+]

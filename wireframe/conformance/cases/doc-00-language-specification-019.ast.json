@@ -1,0 +1,57 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "NumberInput",
+      "end": {
+        "column": 28,
+        "line": 2,
+        "offset": 43
+      },
+      "id": "txtAge",
+      "modifiers": {},
+      "placeholder": "0",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "max": 100,
+        "min": 0
+      },
+      "controlType": "NumberInput",
+      "end": {
+        "column": 50,
+        "line": 3,
+        "offset": 93
+      },
+      "id": "txtAmount",
+      "modifiers": {},
+      "placeholder": "Amount",
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 48
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 4,
+    "offset": 104
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

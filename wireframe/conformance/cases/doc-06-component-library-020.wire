@@ -1,0 +1,5 @@
+wireframe clean
+    IconButton $icon:save
+    IconButton $icon:add "Add Item"
+    IconButton $icon:delete primary
+/wireframe

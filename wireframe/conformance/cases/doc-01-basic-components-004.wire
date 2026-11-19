@@ -1,0 +1,5 @@
+wireframe clean
+    Vertical gap=4
+        Link "Click here for more"
+        Link "External link" href="https://example.com"
+/wireframe

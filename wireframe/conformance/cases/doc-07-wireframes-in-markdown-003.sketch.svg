@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="838" viewBox="0 0 800 838" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <path d="M16.0 15.5 Q400.0 9.0 784.0 15.2 M782.9 16.0 Q779.7 68.0 784.3 120.0 M784.0 120.4 Q400.0 125.7 16.0 121.5 M17.2 120.0 Q19.4 68.0 14.7 16.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="Analytics Dashboard"><text x="48" y="70.67" class="wire-text wire-text-bold" style="font-size: 20px">Analytics Dashboard</text></g><g role="button"><g><rect x="308" y="48" width="36" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="318" y="58" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g></g><g role="group" aria-label="JD"><g>
+      <circle cx="372" cy="68" r="20" fill="#4a90d9" />
+      <text x="372" y="72.44" text-anchor="middle" class="wire-text" style="font-size: 13.33px" fill="#ffffff">J</text>
+    </g></g><path d="M16.0 120.6 Q106.0 127.0 196.0 120.0 M196.8 120.0 Q196.4 352.0 195.9 584.0 M196.0 583.2 Q106.0 577.8 16.0 585.1 M15.3 584.0 Q15.2 352.0 15.1 120.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><path d="M196.0 120.7 Q490.0 117.1 784.0 120.4 M784.8 120.0 Q776.7 471.0 784.1 822.0 M784.0 821.2 Q490.0 823.6 196.0 822.6 M195.3 822.0 Q202.9 471.0 194.8 120.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><path d="M228.0 151.2 Q310.0 150.7 392.0 151.4 M391.3 152.0 Q387.9 352.0 392.5 552.0 M392.0 552.7 Q310.0 552.3 228.0 553.0 M228.9 552.0 Q235.3 352.0 229.5 152.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Total Users"><text x="244" y="183" class="wire-text">Total Users</text></g><g role="group" aria-label="12,345"><text x="244" y="218" class="wire-text wire-text-bold" style="font-size: 18px">12,345</text></g><g role="group" aria-label="↑ 12%"><g>
+      <rect x="244" y="236" width="24" height="24" rx="12" fill="#198754" />
+      <text x="256" y="252" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">↑ 12%</text>
+    </g></g><path d="M408.0 153.3 Q490.0 157.6 572.0 152.3 M572.2 152.0 Q573.4 352.0 571.6 552.0 M572.0 550.6 Q490.0 547.3 408.0 552.8 M408.0 552.0 Q405.7 352.0 407.4 152.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Revenue"><text x="424" y="183" class="wire-text">Revenue</text></g><g role="group" aria-label="$45,678"><text x="424" y="218" class="wire-text wire-text-bold" style="font-size: 18px">$45,678</text></g><g role="group" aria-label="↑ 8%"><g>
+      <rect x="424" y="236" width="24" height="24" rx="12" fill="#198754" />
+      <text x="436" y="252" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">↑ 8%</text>
+    </g></g><path d="M588.0 152.4 Q670.0 150.4 752.0 150.9 M753.0 152.0 Q747.4 352.0 750.7 552.0 M752.0 551.5 Q670.0 552.3 588.0 551.2 M587.1 552.0 Q595.7 352.0 588.3 152.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Conversion"><text x="604" y="183" class="wire-text">Conversion</text></g><g role="group" aria-label="3.2%"><text x="604" y="218" class="wire-text wire-text-bold" style="font-size: 18px">3.2%</text></g><g role="group" aria-label="↓ 2%"><g>
+      <rect x="604" y="236" width="24" height="24" rx="12" fill="#ffc107" />
+      <text x="616" y="252" text-anchor="middle" class="wire-text wire-text-small" fill="#000000">↓ 2%</text>
+    </g></g><path d="M228.0 567.3 Q490.0 569.0 752.0 568.7 M751.1 568.0 Q743.4 679.0 751.8 790.0 M752.0 790.6 Q490.0 789.9 228.0 790.4 M229.0 790.0 Q235.7 679.0 227.1 568.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Activity Chart"><text x="244" y="605.33" class="wire-text wire-text-bold" style="font-size: 16px">Activity Chart</text></g><g role="group"><rect x="244" y="624" width="200" height="150" rx="0" fill="#f5f5f5">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite" />
+    </rect></g>
+</svg>

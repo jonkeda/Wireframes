@@ -1,0 +1,19 @@
+wireframe blueprint
+    Card w=400 padding=20
+        Vertical gap=12
+            Heading "API Response" level=3
+            
+            Table
+                | Field | Type | Required |
+                | name | string | Yes |
+                | email | string | Yes |
+                | age | number | No |
+            /Table
+            
+            Horizontal gap=8
+                Button "Validate" primary
+                Button "Clear"
+            /Horizontal
+        /Vertical
+    /Card
+/wireframe

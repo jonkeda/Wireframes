@@ -1,0 +1,105 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Button",
+      "end": {
+        "column": 15,
+        "line": 2,
+        "offset": 30
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "A",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Button",
+      "end": {
+        "column": 15,
+        "line": 8,
+        "offset": 156
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 8,
+        "offset": 146
+      },
+      "text": "B",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [
+    {
+      "columns": [
+        "Field",
+        "Rule",
+        "Message"
+      ],
+      "end": {
+        "column": 13,
+        "line": 7,
+        "offset": 141
+      },
+      "records": [
+        {
+          "Field": "A",
+          "Message": "A is required",
+          "Rule": "required"
+        }
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Field",
+            "Rule",
+            "Message"
+          ],
+          "isSeparator": false
+        },
+        {
+          "cells": [
+            "---",
+            "---",
+            "---"
+          ],
+          "isSeparator": true
+        },
+        {
+          "cells": [
+            "A",
+            "required",
+            "A is required"
+          ],
+          "isSeparator": false
+        }
+      ],
+      "sectionType": "validations",
+      "start": {
+        "column": 1,
+        "line": 3,
+        "offset": 31
+      },
+      "type": "DataSection"
+    }
+  ],
+  "end": {
+    "column": 11,
+    "line": 9,
+    "offset": 167
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,38 @@
+wireframe clean
+    Card w=400 padding=20
+        Vertical gap=16
+            Heading "Contact Form" level=2
+            
+            Vertical gap=4
+                Label "Full Name"
+                TextInput placeholder="John Doe" required
+            /Vertical
+            
+            Vertical gap=4
+                Label "Email Address"
+                TextInput placeholder="john@example.com" required
+            /Vertical
+            
+            Vertical gap=4
+                Label "Subject"
+                Dropdown "Select a topic"
+                    Option "General Inquiry"
+                    Option "Technical Support"
+                    Option "Billing Question"
+                /Dropdown
+            /Vertical
+            
+            Vertical gap=4
+                Label "Message"
+                TextArea placeholder="Your message here..." h=100
+            /Vertical
+            
+            Checkbox "Send me a copy of this message"
+            
+            Horizontal gap=8
+                Button "Submit" primary
+                Button "Cancel"
+            /Horizontal
+        /Vertical
+    /Card
+/wireframe

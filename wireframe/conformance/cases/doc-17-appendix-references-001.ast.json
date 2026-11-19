@@ -1,0 +1,35 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [],
+      "end": {
+        "column": 12,
+        "line": 2,
+        "offset": 29
+      },
+      "modifiers": {},
+      "sectionType": "Content",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 22
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 3,
+    "offset": 70
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

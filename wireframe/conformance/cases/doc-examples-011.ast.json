@@ -1,0 +1,317 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {
+            "w": 200
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 36,
+                    "line": 5,
+                    "offset": 119
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 5,
+                    "offset": 100
+                  },
+                  "text": "Total Users",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 35,
+                    "line": 6,
+                    "offset": 154
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 6,
+                    "offset": 136
+                  },
+                  "text": "**12,345**",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "type": "success"
+                  },
+                  "controlType": "Badge",
+                  "end": {
+                    "column": 43,
+                    "line": 7,
+                    "offset": 197
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 7,
+                    "offset": 171
+                  },
+                  "text": "↑ 12%",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 8,
+                "offset": 219
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 69
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 14,
+            "line": 9,
+            "offset": 233
+          },
+          "modifiers": {},
+          "sectionType": "Card",
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 46
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {
+            "w": 200
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 32,
+                    "line": 13,
+                    "offset": 320
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 13,
+                    "offset": 305
+                  },
+                  "text": "Revenue",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 36,
+                    "line": 14,
+                    "offset": 356
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 14,
+                    "offset": 337
+                  },
+                  "text": "**$45,678**",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "type": "success"
+                  },
+                  "controlType": "Badge",
+                  "end": {
+                    "column": 42,
+                    "line": 15,
+                    "offset": 398
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 15,
+                    "offset": 373
+                  },
+                  "text": "↑ 8%",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 16,
+                "offset": 420
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 12,
+                "offset": 274
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 14,
+            "line": 17,
+            "offset": 434
+          },
+          "modifiers": {},
+          "sectionType": "Card",
+          "start": {
+            "column": 9,
+            "line": 11,
+            "offset": 251
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {
+            "w": 200
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 31,
+                    "line": 21,
+                    "offset": 520
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 21,
+                    "offset": 506
+                  },
+                  "text": "Orders",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 34,
+                    "line": 22,
+                    "offset": 554
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 22,
+                    "offset": 537
+                  },
+                  "text": "**1,234**",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "type": "error"
+                  },
+                  "controlType": "Badge",
+                  "end": {
+                    "column": 40,
+                    "line": 23,
+                    "offset": 594
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 23,
+                    "offset": 571
+                  },
+                  "text": "↓ 3%",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 24,
+                "offset": 616
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 20,
+                "offset": 475
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 14,
+            "line": 25,
+            "offset": 630
+          },
+          "modifiers": {},
+          "sectionType": "Card",
+          "start": {
+            "column": 9,
+            "line": 19,
+            "offset": 452
+          },
+          "type": "Section"
+        }
+      ],
+      "end": {
+        "column": 16,
+        "line": 26,
+        "offset": 646
+      },
+      "layoutType": "Horizontal",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 27,
+    "offset": 657
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

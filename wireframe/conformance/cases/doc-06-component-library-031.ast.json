@@ -1,0 +1,72 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Switch",
+      "end": {
+        "column": 28,
+        "line": 2,
+        "offset": 43
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Enable feature",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Switch",
+      "end": {
+        "column": 31,
+        "line": 3,
+        "offset": 74
+      },
+      "modifiers": {
+        "checked": true
+      },
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 48
+      },
+      "text": "Dark mode",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "binding": "notifications",
+      "controlType": "Switch",
+      "end": {
+        "column": 42,
+        "line": 4,
+        "offset": 116
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 79
+      },
+      "text": "Notifications",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 127
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

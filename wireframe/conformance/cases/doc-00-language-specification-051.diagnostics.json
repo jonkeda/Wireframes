@@ -1,0 +1,27 @@
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Unexpected token: wireframe"
+  },
+  {
+    "column": 15,
+    "line": 3,
+    "message": "Unexpected token: clean"
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected token:         "
+  },
+  {
+    "column": 9,
+    "line": 4,
+    "message": "Unexpected token: %title: User Profile"
+  },
+  {
+    "column": 9,
+    "line": 5,
+    "message": "Unexpected token: %version: 1.0"
+  }
+]

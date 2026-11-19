@@ -1,0 +1,8 @@
+wireframe clean
+    Vertical gap=8
+        Toast "Success! Your changes have been saved." type=success
+        Toast "Warning: Your session will expire soon." type=warning
+        Toast "Error: Failed to load data." type=error
+        Toast "Info: New updates available." type=info
+    /Vertical
+/wireframe

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="670" height="356" viewBox="0 0 670 356" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g role="button" aria-label="Span 2 columns"><g opacity="1">
+      <path d="M16.0 14.8 Q88.0 18.4 160.0 14.8 M159.7 16.0 Q165.0 34.0 161.4 52.0 M160.0 53.1 Q88.0 50.5 16.0 51.3 M16.4 52.0 Q14.0 34.0 14.5 16.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="88" y="39" text-anchor="middle" class="wire-text" fill="#333333">Span 2 columns</text>
+    </g></g><g role="button" aria-label="Normal cell"><g opacity="1">
+      <path d="M533.3 16.7 Q593.3 20.9 653.3 16.8 M654.1 16.0 Q653.4 34.0 653.8 52.0 M653.3 51.2 Q593.3 44.0 533.3 52.3 M532.7 52.0 Q533.6 34.0 532.5 16.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="593.33" y="39" text-anchor="middle" class="wire-text" fill="#333333">Normal cell</text>
+    </g></g><g role="button" aria-label="Span 2 rows"><g opacity="1">
+      <path d="M16.0 304.7 Q76.0 298.3 136.0 303.5 M136.8 304.0 Q136.8 322.0 137.0 340.0 M136.0 339.2 Q76.0 344.4 16.0 338.6 M15.4 340.0 Q18.5 322.0 16.9 304.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="76" y="327" text-anchor="middle" class="wire-text" fill="#333333">Span 2 rows</text>
+    </g></g>
+</svg>

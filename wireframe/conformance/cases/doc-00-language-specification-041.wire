@@ -1,0 +1,6 @@
+wireframe clean
+    Button "Login" @Dashboard
+    Button "Cancel" @:back
+    Button "Help" @:modal:HelpDialog
+    Link "Terms" @TermsPage
+/wireframe

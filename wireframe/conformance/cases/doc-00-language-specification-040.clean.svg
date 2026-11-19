@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="232" height="224" viewBox="0 0 232 224" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <g role="textbox" aria-label="First Name" aria-placeholder="First Name"><g>
+      <rect x="16" y="16" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="28" y="39" class="wire-text wire-text-secondary">First Name</text>
+      
+    </g></g><g role="textbox" aria-label="Last Name" aria-placeholder="Last Name"><g>
+      <rect x="16" y="60" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="28" y="83" class="wire-text wire-text-secondary">Last Name</text>
+      
+    </g></g><g role="combobox" aria-expanded="false" aria-haspopup="listbox"><g>
+      <rect x="16" y="104" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="28" y="127" class="wire-text">Active</text>
+      <path d="M196 120 L202 126 L208 120" stroke="#212529" stroke-width="2" fill="none" />
+    </g></g><g role="group" aria-label="Active"><g>
+      <rect x="16" y="140" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="66" y="160" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g><g role="group" aria-label="Inactive"><g>
+      <rect x="16" y="178" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="66" y="198" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+    </g></g>
+</svg>

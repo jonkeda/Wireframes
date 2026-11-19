@@ -1,0 +1,427 @@
+{
+  "attributes": {
+    "title": "Badge Color Variants"
+  },
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 39,
+                "line": 6,
+                "offset": 125
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 99
+              },
+              "text": "**Badge Variants**",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "variant": "info"
+                  },
+                  "controlType": "Badge",
+                  "end": {
+                    "column": 42,
+                    "line": 9,
+                    "offset": 209
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 9,
+                    "offset": 184
+                  },
+                  "text": "Info",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "variant": "success"
+                  },
+                  "controlType": "Badge",
+                  "end": {
+                    "column": 48,
+                    "line": 10,
+                    "offset": 257
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 10,
+                    "offset": 226
+                  },
+                  "text": "Success",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "variant": "warning"
+                  },
+                  "controlType": "Badge",
+                  "end": {
+                    "column": 48,
+                    "line": 11,
+                    "offset": 305
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 11,
+                    "offset": 274
+                  },
+                  "text": "Warning",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "variant": "error"
+                  },
+                  "controlType": "Badge",
+                  "end": {
+                    "column": 44,
+                    "line": 12,
+                    "offset": 349
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 12,
+                    "offset": 322
+                  },
+                  "text": "Error",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 13,
+                "offset": 373
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 8,
+                "offset": 151
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {},
+              "controlType": "Separator",
+              "end": {
+                "column": 22,
+                "line": 15,
+                "offset": 408
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 15,
+                "offset": 399
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "align": "center",
+                    "gap": 8
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Icon",
+                      "end": {
+                        "column": 31,
+                        "line": 19,
+                        "offset": 525
+                      },
+                      "icon": "info",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 19,
+                        "offset": 515
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 60,
+                        "line": 20,
+                        "offset": 585
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 20,
+                        "offset": 546
+                      },
+                      "text": "Info badge uses blue background",
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 21,
+                    "offset": 613
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 18,
+                    "offset": 465
+                  },
+                  "type": "Layout"
+                },
+                {
+                  "attributes": {
+                    "align": "center",
+                    "gap": 8
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Icon",
+                      "end": {
+                        "column": 32,
+                        "line": 23,
+                        "offset": 691
+                      },
+                      "icon": "check",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 23,
+                        "offset": 680
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 64,
+                        "line": 24,
+                        "offset": 755
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 24,
+                        "offset": 712
+                      },
+                      "text": "Success badge uses green background",
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 25,
+                    "offset": 783
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 22,
+                    "offset": 630
+                  },
+                  "type": "Layout"
+                },
+                {
+                  "attributes": {
+                    "align": "center",
+                    "gap": 8
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Icon",
+                      "end": {
+                        "column": 34,
+                        "line": 27,
+                        "offset": 863
+                      },
+                      "icon": "warning",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 27,
+                        "offset": 850
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 67,
+                        "line": 28,
+                        "offset": 930
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 28,
+                        "offset": 884
+                      },
+                      "text": "Warning badge uses yellow (black text)",
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 29,
+                    "offset": 958
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 26,
+                    "offset": 800
+                  },
+                  "type": "Layout"
+                },
+                {
+                  "attributes": {
+                    "align": "center",
+                    "gap": 8
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Icon",
+                      "end": {
+                        "column": 32,
+                        "line": 31,
+                        "offset": 1036
+                      },
+                      "icon": "error",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 31,
+                        "offset": 1025
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 60,
+                        "line": 32,
+                        "offset": 1096
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 32,
+                        "offset": 1057
+                      },
+                      "text": "Error badge uses red background",
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 33,
+                    "offset": 1124
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 30,
+                    "offset": 975
+                  },
+                  "type": "Layout"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 34,
+                "offset": 1146
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 17,
+                "offset": 434
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 35,
+            "offset": 1164
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 71
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 36,
+        "offset": 1174
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 58
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 37,
+    "offset": 1185
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

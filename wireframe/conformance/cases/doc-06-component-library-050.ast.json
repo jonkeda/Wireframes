@@ -1,0 +1,110 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 30,
+                "line": 4,
+                "offset": 105
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 88
+              },
+              "text": "Content 1",
+              "type": "Control"
+            }
+          ],
+          "componentType": "AccordionSection",
+          "end": {
+            "column": 26,
+            "line": 5,
+            "offset": 131
+          },
+          "modifiers": {
+            "expanded": true
+          },
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 38
+          },
+          "text": "Section 1",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 30,
+                "line": 7,
+                "offset": 198
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 7,
+                "offset": 181
+              },
+              "text": "Content 2",
+              "type": "Control"
+            }
+          ],
+          "componentType": "AccordionSection",
+          "end": {
+            "column": 26,
+            "line": 8,
+            "offset": 224
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 140
+          },
+          "text": "Section 2",
+          "type": "Component"
+        }
+      ],
+      "componentType": "Accordion",
+      "end": {
+        "column": 15,
+        "line": 9,
+        "offset": 239
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 10,
+    "offset": 250
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

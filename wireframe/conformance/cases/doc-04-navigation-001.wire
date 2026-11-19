@@ -1,0 +1,8 @@
+wireframe clean
+    Tabs w=400
+        Tab "Overview" active
+        Tab "Details"
+        Tab "Settings"
+        Tab "History"
+    /Tabs
+/wireframe

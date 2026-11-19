@@ -1,0 +1,233 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "width": 480
+      },
+      "children": [
+        {
+          "attributes": {
+            "level": 2
+          },
+          "controlType": "Heading",
+          "end": {
+            "column": 35,
+            "line": 3,
+            "offset": 69
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 43
+          },
+          "text": "Settings",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 24
+          },
+          "children": [
+            {
+              "attributes": {},
+              "binding": "displayName",
+              "controlType": "TextInput",
+              "end": {
+                "column": 54,
+                "line": 6,
+                "offset": 175
+              },
+              "modifiers": {},
+              "placeholder": "Display Name",
+              "start": {
+                "column": 17,
+                "line": 6,
+                "offset": 138
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "height": 80,
+                "width": 80
+              },
+              "binding": "avatar",
+              "controlType": "Image",
+              "end": {
+                "column": 56,
+                "line": 8,
+                "offset": 274
+              },
+              "modifiers": {
+                "circle": true
+              },
+              "start": {
+                "column": 17,
+                "line": 8,
+                "offset": 235
+              },
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 13,
+            "line": 9,
+            "offset": 287
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 78
+          },
+          "type": "Layout"
+        },
+        {
+          "attributes": {},
+          "binding": "emailNotif",
+          "controlType": "Switch",
+          "end": {
+            "column": 65,
+            "line": 12,
+            "offset": 405
+          },
+          "modifiers": {
+            "checked": true
+          },
+          "start": {
+            "column": 17,
+            "line": 12,
+            "offset": 357
+          },
+          "text": "Email notifications",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "binding": "pushNotif",
+          "controlType": "Switch",
+          "end": {
+            "column": 55,
+            "line": 13,
+            "offset": 460
+          },
+          "modifiers": {},
+          "start": {
+            "column": 17,
+            "line": 13,
+            "offset": 422
+          },
+          "text": "Push notifications",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "binding": "weeklyDigest",
+          "controlType": "Switch",
+          "end": {
+            "column": 61,
+            "line": 14,
+            "offset": 521
+          },
+          "modifiers": {
+            "checked": true
+          },
+          "start": {
+            "column": 17,
+            "line": 14,
+            "offset": 477
+          },
+          "text": "Weekly digest",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 13,
+        "line": 15,
+        "offset": 534
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Section"
+    },
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 42,
+            "line": 26,
+            "offset": 929
+          },
+          "modifiers": {
+            "secondary": true
+          },
+          "start": {
+            "column": 17,
+            "line": 26,
+            "offset": 904
+          },
+          "text": "Cancel",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 46,
+            "line": 27,
+            "offset": 975
+          },
+          "modifiers": {
+            "primary": true
+          },
+          "start": {
+            "column": 17,
+            "line": 27,
+            "offset": 946
+          },
+          "text": "Save Changes",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 24,
+        "line": 28,
+        "offset": 999
+      },
+      "layoutType": "Horizontal",
+      "modifiers": {},
+      "start": {
+        "column": 13,
+        "line": 25,
+        "offset": 870
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 31,
+    "offset": 1038
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

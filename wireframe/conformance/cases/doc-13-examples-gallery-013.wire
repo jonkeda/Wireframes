@@ -1,0 +1,22 @@
+wireframe clean
+    Card width=600
+        Stepper ?step
+            Step "Account" completed
+            Step "Profile" active
+            Step "Review"
+            Step "Complete"
+        /Stepper
+        
+        Vertical gap=24
+            Heading "Profile Information" level=2
+            TextInput "First Name" ?firstName required
+            TextInput "Last Name" ?lastName required
+            Textarea "About" ?about
+            
+            Horizontal gap=16
+                Button "Back" secondary
+                Button "Continue" primary
+            /Horizontal
+        /Vertical
+    /Card
+/wireframe

@@ -1,0 +1,96 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "h": 200,
+        "w": 400
+      },
+      "children": [
+        {
+          "attributes": {
+            "canvas": "10,10"
+          },
+          "controlType": "Button",
+          "end": {
+            "column": 39,
+            "line": 3,
+            "offset": 77
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 47
+          },
+          "text": "Top Left",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "canvas": "160,80"
+          },
+          "controlType": "Button",
+          "end": {
+            "column": 38,
+            "line": 4,
+            "offset": 115
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 86
+          },
+          "text": "Center",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "canvas": "290,160"
+          },
+          "controlType": "Button",
+          "end": {
+            "column": 45,
+            "line": 5,
+            "offset": 160
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 124
+          },
+          "text": "Bottom Right",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 12,
+        "line": 6,
+        "offset": 172
+      },
+      "layoutType": "Canvas",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 7,
+    "offset": 183
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,12 @@
+wireframe clean
+    Horizontal gap=24
+        Card width=200
+            Heading "Left Column" level=3
+            Label "Sidebar content"
+        /Card
+        Card width=400
+            Heading "Main Content" level=3
+            Label "Primary content area"
+        /Card
+    /Horizontal
+/wireframe

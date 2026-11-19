@@ -1,0 +1,5 @@
+wireframe clean
+    Avatar "JD"
+    Avatar "John Doe" circle
+    Avatar $icon:user circle size=lg
+/wireframe

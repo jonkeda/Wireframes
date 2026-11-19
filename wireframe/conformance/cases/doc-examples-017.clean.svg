@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <rect x="16" y="16" width="768" height="100" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group" aria-label="**STORE**"><text x="48" y="63" class="wire-text wire-text-bold">STORE</text></g><g role="textbox" aria-label="Search products..." aria-placeholder="Search products..."><g>
+      <rect x="128" y="48" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="140" y="71" class="wire-text wire-text-secondary">Search products...</text>
+      
+    </g></g><g role="button" aria-label="Cart"><g><rect x="336" y="48" width="80" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><path d="M351 62 H353 L355 68 H359 L361 62 M356 71 a1,1 0 1,0 0,0.1 M357 71 a1,1 0 1,0 0,0.1" stroke="#212529" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" /><text x="372" y="71" class="wire-text" fill="#212529">Cart</text></g></g><rect x="16" y="116" width="768" height="468" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><rect x="32" y="132" width="400" height="436" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="img" aria-label="product-image"><g>
+      <rect x="48" y="148" width="150" height="300" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+      <line x1="48" y1="148" x2="198" y2="448" stroke="#dee2e6" stroke-width="1" />
+      <line x1="198" y1="148" x2="48" y2="448" stroke="#dee2e6" stroke-width="1" />
+      <text x="123" y="303" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Image</text>
+    </g></g><g role="img" aria-label="thumb-1"><g>
+      <rect x="48" y="456" width="80" height="80" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+      <line x1="48" y1="456" x2="128" y2="536" stroke="#dee2e6" stroke-width="1" />
+      <line x1="128" y1="456" x2="48" y2="536" stroke="#dee2e6" stroke-width="1" />
+      <text x="88" y="501" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Image</text>
+    </g></g><g role="img" aria-label="thumb-2"><g>
+      <rect x="136" y="456" width="80" height="80" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+      <line x1="136" y1="456" x2="216" y2="536" stroke="#dee2e6" stroke-width="1" />
+      <line x1="216" y1="456" x2="136" y2="536" stroke="#dee2e6" stroke-width="1" />
+      <text x="176" y="501" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Image</text>
+    </g></g><g role="img" aria-label="thumb-3"><g>
+      <rect x="224" y="456" width="80" height="80" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+      <line x1="224" y1="456" x2="304" y2="536" stroke="#dee2e6" stroke-width="1" />
+      <line x1="304" y1="456" x2="224" y2="536" stroke="#dee2e6" stroke-width="1" />
+      <text x="264" y="501" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Image</text>
+    </g></g><g role="group" aria-label="**Premium Wireless Headphones**"><text x="456" y="195" class="wire-text wire-text-bold">Premium Wireless Headphones</text></g><g role="group" aria-label="**$299**"><text x="456" y="231" class="wire-text wire-text-bold">$299</text></g><g role="group" aria-label="~~$399~~"><text x="528" y="231" class="wire-text">~~$399~~</text></g><g role="group" aria-label="25% OFF"><g>
+      <rect x="600" y="216" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="612" y="232" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">25% OFF</text>
+    </g></g><g role="group" aria-label="★★★★☆ (128 reviews)"><text x="456" y="271" class="wire-text">★★★★☆ (128 reviews)</text></g><g role="group"><line x1="456" y1="292" x2="656" y2="292" stroke="#dee2e6" stroke-width="1" /></g><g role="group" aria-label="**Color**"><text x="456" y="324" class="wire-text wire-text-bold">Color</text></g><g role="group" aria-label="Black"><g>
+      <rect x="456" y="345" width="80" height="28" rx="14" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+      <text x="496" y="363" text-anchor="middle" class="wire-text wire-text-small" fill="#212529">Black</text>
+    </g></g><g role="group" aria-label="White"><g>
+      <rect x="544" y="345" width="80" height="28" rx="14" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+      <text x="584" y="363" text-anchor="middle" class="wire-text wire-text-small" fill="#212529">White</text>
+    </g></g><g role="group" aria-label="Navy"><g>
+      <rect x="632" y="345" width="80" height="28" rx="14" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" />
+      <text x="672" y="363" text-anchor="middle" class="wire-text wire-text-small" fill="#212529">Navy</text>
+    </g></g><g role="group"><line x1="456" y1="389" x2="656" y2="389" stroke="#dee2e6" stroke-width="1" /></g><g role="spinbutton" aria-label="1" aria-placeholder="1"><g>
+      <rect x="456" y="406" width="80" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="468" y="429" class="wire-text wire-text-secondary">123</text>
+      
+    </g></g><g role="button" aria-label="Add to Cart"><g opacity="1">
+      <rect x="544" y="406" width="120" height="36" rx="4" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="604" y="429" text-anchor="middle" class="wire-text" fill="#ffffff">Add to Cart</text>
+    </g></g><g role="button" aria-label="Favorite"><g><rect x="672" y="406" width="112" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><rect x="684" y="416" width="16" height="16" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /><text x="708" y="429" class="wire-text" fill="#212529">Favorite</text></g></g>
+</svg>

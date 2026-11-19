@@ -1,0 +1,75 @@
+{
+  "attributes": {},
+  "children": [],
+  "dataSections": [
+    {
+      "columns": [
+        "ID",
+        "Condition",
+        "Action",
+        "Controls"
+      ],
+      "end": {
+        "column": 11,
+        "line": 6,
+        "offset": 187
+      },
+      "records": [
+        {
+          "Action": "enable",
+          "Condition": "chkTerms checked",
+          "Controls": "btnSubmit",
+          "ID": "R001"
+        }
+      ],
+      "rows": [
+        {
+          "cells": [
+            "ID",
+            "Condition",
+            "Action",
+            "Controls"
+          ],
+          "isSeparator": false
+        },
+        {
+          "cells": [
+            "----",
+            "-----------",
+            "--------",
+            "----------"
+          ],
+          "isSeparator": true
+        },
+        {
+          "cells": [
+            "R001",
+            "chkTerms checked",
+            "enable",
+            "btnSubmit"
+          ],
+          "isSeparator": false
+        }
+      ],
+      "sectionType": "rules",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "DataSection"
+    }
+  ],
+  "end": {
+    "column": 11,
+    "line": 7,
+    "offset": 198
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

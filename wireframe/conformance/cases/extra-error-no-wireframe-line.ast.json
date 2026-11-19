@@ -1,0 +1,35 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Label",
+      "end": {
+        "column": 26,
+        "line": 1,
+        "offset": 25
+      },
+      "modifiers": {},
+      "start": {
+        "column": 1,
+        "line": 1,
+        "offset": 0
+      },
+      "text": "No wireframe line",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

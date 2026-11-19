@@ -1,0 +1,39 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "h": 100,
+        "placeholder": "Enter description...",
+        "w": 300
+      },
+      "controlType": "TextArea",
+      "end": {
+        "column": 60,
+        "line": 2,
+        "offset": 75
+      },
+      "modifiers": {},
+      "placeholder": "Enter description...",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 3,
+    "offset": 86
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

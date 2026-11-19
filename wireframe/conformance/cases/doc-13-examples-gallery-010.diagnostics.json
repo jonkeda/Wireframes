@@ -1,0 +1,27 @@
+[
+  {
+    "column": 9,
+    "line": 3,
+    "message": "Unexpected token: TabGroup"
+  },
+  {
+    "column": 18,
+    "line": 3,
+    "message": "Unexpected token: ?activeTab"
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected token:             "
+  },
+  {
+    "column": 9,
+    "line": 16,
+    "message": "Unknown closing keyword /TabGroup"
+  },
+  {
+    "column": 5,
+    "line": 17,
+    "message": "Unexpected /Card: no Card is open here"
+  }
+]

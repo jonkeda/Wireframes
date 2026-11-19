@@ -1,0 +1,274 @@
+{
+  "attributes": {
+    "title": "Label and Heading Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 35,
+            "line": 6,
+            "offset": 148
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 122
+          },
+          "text": "**Label Variants**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 39,
+                "line": 9,
+                "offset": 211
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 185
+              },
+              "text": "Regular label text",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 40,
+                "line": 10,
+                "offset": 251
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 224
+              },
+              "text": "**Bold label text**",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 40,
+                "line": 11,
+                "offset": 291
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 11,
+                "offset": 264
+              },
+              "text": "*Italic label text*",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 45,
+                "line": 12,
+                "offset": 336
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 12,
+                "offset": 304
+              },
+              "text": "Label with `code` inline",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 13,
+            "offset": 354
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 158
+          },
+          "type": "Layout"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 15,
+            "offset": 373
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 15,
+            "offset": 364
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 35,
+            "line": 17,
+            "offset": 409
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 17,
+            "offset": 383
+          },
+          "text": "**Heading Levels**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "attributes": {
+                "level": 1
+              },
+              "controlType": "Heading",
+              "end": {
+                "column": 46,
+                "line": 20,
+                "offset": 479
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 20,
+                "offset": 446
+              },
+              "text": "Heading Level 1",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "level": 2
+              },
+              "controlType": "Heading",
+              "end": {
+                "column": 46,
+                "line": 21,
+                "offset": 525
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 21,
+                "offset": 492
+              },
+              "text": "Heading Level 2",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "level": 3
+              },
+              "controlType": "Heading",
+              "end": {
+                "column": 46,
+                "line": 22,
+                "offset": 571
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 22,
+                "offset": 538
+              },
+              "text": "Heading Level 3",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "level": 4
+              },
+              "controlType": "Heading",
+              "end": {
+                "column": 46,
+                "line": 23,
+                "offset": 617
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 23,
+                "offset": 584
+              },
+              "text": "Heading Level 4",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 24,
+            "offset": 635
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 19,
+            "offset": 419
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 25,
+        "offset": 649
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 98
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 26,
+    "offset": 660
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 38
+  },
+  "style": "clean",
+  "type": "Document"
+}

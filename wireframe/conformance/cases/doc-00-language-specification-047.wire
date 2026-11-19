@@ -1,0 +1,8 @@
+wireframe clean
+    data
+        | Source | Type | Fields |
+        |--------|------|--------|
+        | customer | object | firstName, lastName, email |
+        | orderItems | collection | product, quantity, price |
+    /data
+/wireframe

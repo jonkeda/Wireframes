@@ -1,0 +1,10 @@
+wireframe realistic
+    Card w=300 padding=16
+        Vertical gap=12
+            Heading "Realistic Theme" level=2
+            Label "Near-production look"
+            Button "Primary Action" primary
+            TextInput placeholder="Enter text"
+        /Vertical
+    /Card
+/wireframe

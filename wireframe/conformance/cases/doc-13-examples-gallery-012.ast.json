@@ -1,0 +1,113 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Breadcrumb",
+          "end": {
+            "column": 1,
+            "line": 4,
+            "offset": 63
+          },
+          "modifiers": {},
+          "navigation": "home",
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 39
+          },
+          "text": "Home",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Breadcrumb",
+          "end": {
+            "column": 1,
+            "line": 5,
+            "offset": 103
+          },
+          "modifiers": {},
+          "navigation": "products",
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 71
+          },
+          "text": "Products",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Breadcrumb",
+          "end": {
+            "column": 1,
+            "line": 6,
+            "offset": 149
+          },
+          "modifiers": {},
+          "navigation": "electronics",
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 111
+          },
+          "text": "Electronics",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Breadcrumb",
+          "end": {
+            "column": 1,
+            "line": 7,
+            "offset": 185
+          },
+          "modifiers": {
+            "active": true
+          },
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 157
+          },
+          "text": "Laptops",
+          "type": "Component"
+        }
+      ],
+      "componentType": "Breadcrumb",
+      "end": {
+        "column": 16,
+        "line": 7,
+        "offset": 200
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 211
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

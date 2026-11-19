@@ -1,0 +1,14 @@
+wireframe clean
+    // Inline options
+    Dropdown "Select..." "Option 1" "Option 2" "Option 3"
+
+    // With binding
+    Dropdown ?selectedValue "One" "Two" "Three"
+
+    // With child Options
+    Dropdown "Choose..."
+        Option "First"
+        Option "Second" selected
+        Option "Third"
+    /Dropdown
+/wireframe

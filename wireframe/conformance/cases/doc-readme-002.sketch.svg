@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="623" viewBox="0 0 800 623" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <path d="M16.0 17.1 Q400.0 15.4 784.0 17.1 M784.4 16.0 Q777.9 311.5 783.5 607.0 M784.0 605.8 Q400.0 610.3 16.0 607.0 M15.8 607.0 Q21.2 311.5 15.5 16.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="img"><g>
+      <rect x="32" y="32" width="200" height="50" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
+      <line x1="32" y1="32" x2="232" y2="82" stroke="#888888" stroke-width="1" />
+      <line x1="232" y1="32" x2="32" y2="82" stroke="#888888" stroke-width="1" />
+      <text x="132" y="62" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Image</text>
+    </g></g><g role="group" aria-label="Welcome Back"><text x="32" y="124.67" class="wire-text wire-text-bold" style="font-size: 20px">Welcome Back</text></g><g role="group" aria-label="Sign in to your account"><text x="32" y="169" class="wire-text">Sign in to your account</text></g><g role="group" aria-label="Email"><text x="32" y="209" class="wire-text">Email</text></g><g role="textbox" aria-label="you@example.com" aria-required="true" aria-placeholder="you@example.com"><g>
+      <path d="M32.0 217.1 Q132.0 213.2 232.0 219.3 M231.4 218.0 Q230.2 236.0 231.3 254.0 M232.0 254.8 Q132.0 261.0 32.0 253.5 M32.8 254.0 Q31.6 236.0 33.0 218.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="241" class="wire-text wire-text-secondary">you@example.com</text>
+      <text x="220" y="241" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="group" aria-label="Password"><text x="32" y="289" class="wire-text">Password</text></g><g role="textbox" aria-label="••••••••" aria-required="true" aria-placeholder="••••••••"><g>
+      <path d="M32.0 297.0 Q132.0 294.9 232.0 299.2 M231.4 298.0 Q228.2 316.0 230.7 334.0 M232.0 334.9 Q132.0 336.5 32.0 333.2 M32.7 334.0 Q34.6 316.0 32.3 298.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="321" class="wire-text wire-text-secondary">••••</text>
+      <text x="220" y="321" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="checkbox" aria-label="Remember me" aria-checked="false"><g><rect x="32" y="357" width="18" height="18" rx="2" fill="#ffffff" stroke="#888888" stroke-width="2" /><text x="58" y="371" class="wire-text">Remember me</text></g></g><g role="link" aria-label="Forgot password?"><g>
+      <text x="214" y="369" class="wire-text" fill="#4a90d9" style="text-decoration: underline">Forgot password?</text>
+    </g></g><g role="button" aria-label="Sign In"><g opacity="1">
+      <path d="M32.0 399.0 Q82.0 394.4 132.0 399.0 M132.4 398.0 Q130.2 416.0 131.5 434.0 M132.0 432.9 Q82.0 436.1 32.0 433.3 M31.7 434.0 Q36.7 416.0 31.4 398.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="82" y="421" text-anchor="middle" class="wire-text" fill="#ffffff">Sign In</text>
+    </g></g><g role="group"><line x1="32" y1="454" x2="232" y2="454" stroke="#888888" stroke-width="1" /></g><g role="group" aria-label="Or continue with"><text x="32" y="490" class="wire-text">Or continue with</text></g><g role="button" aria-label="Google"><g opacity="1">
+      <path d="M32.0 515.2 Q82.0 515.8 132.0 515.9 M133.3 515.0 Q127.4 533.0 131.6 551.0 M132.0 550.7 Q82.0 552.8 32.0 550.5 M30.8 551.0 Q30.1 533.0 30.8 515.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="82" y="538" text-anchor="middle" class="wire-text" fill="#333333">Google</text>
+    </g></g><g role="button" aria-label="GitHub"><g opacity="1">
+      <path d="M140.0 515.8 Q190.0 524.3 240.0 516.3 M240.6 515.0 Q238.9 533.0 239.2 551.0 M240.0 550.1 Q190.0 543.7 140.0 552.4 M139.5 551.0 Q141.4 533.0 140.4 515.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="190" y="538" text-anchor="middle" class="wire-text" fill="#333333">GitHub</text>
+    </g></g><g role="group" aria-label="Don&apos;t have an account?"><text x="32" y="586" class="wire-text">Don&apos;t have an account?</text></g><g role="link" aria-label="Sign up"><g>
+      <text x="212" y="586" class="wire-text" fill="#4a90d9" style="text-decoration: underline">Sign up</text>
+    </g></g>
+</svg>

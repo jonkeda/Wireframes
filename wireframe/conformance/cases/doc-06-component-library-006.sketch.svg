@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="194" height="168" viewBox="0 0 194 168" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g role="button" aria-label="Positioned"><g opacity="1">
+      <path d="M66.0 115.0 Q122.0 110.8 178.0 116.4 M177.4 116.0 Q177.3 134.0 178.1 152.0 M178.0 152.8 Q122.0 156.6 66.0 152.0 M66.7 152.0 Q68.5 134.0 66.1 116.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="122" y="139" text-anchor="middle" class="wire-text" fill="#333333">Positioned</text>
+    </g></g>
+</svg>

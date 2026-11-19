@@ -1,0 +1,10 @@
+wireframe clean
+    Repeat 3
+        Card
+            Label "Repeated card"
+        /Card
+    /Repeat
+
+    // Inline syntax
+    Repeat 5 Label "Item"
+/wireframe

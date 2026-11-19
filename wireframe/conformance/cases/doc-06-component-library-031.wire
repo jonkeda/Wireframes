@@ -1,0 +1,5 @@
+wireframe clean
+    Switch "Enable feature"
+    Switch "Dark mode" checked
+    Switch "Notifications" ?notifications
+/wireframe

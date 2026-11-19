@@ -1,0 +1,110 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 8
+      },
+      "children": [
+        {
+          "attributes": {
+            "placeholder": "Enter email"
+          },
+          "controlType": "TextInput",
+          "end": {
+            "column": 52,
+            "line": 3,
+            "offset": 86
+          },
+          "modifiers": {},
+          "placeholder": "Enter email",
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 43
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "PasswordInput",
+          "end": {
+            "column": 33,
+            "line": 4,
+            "offset": 119
+          },
+          "modifiers": {},
+          "placeholder": "Password",
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 95
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Checkbox",
+          "end": {
+            "column": 31,
+            "line": 5,
+            "offset": 150
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 128
+          },
+          "text": "Remember me",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 32,
+            "line": 6,
+            "offset": 182
+          },
+          "modifiers": {
+            "primary": true
+          },
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 159
+          },
+          "text": "Submit",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 7,
+        "offset": 196
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 207
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

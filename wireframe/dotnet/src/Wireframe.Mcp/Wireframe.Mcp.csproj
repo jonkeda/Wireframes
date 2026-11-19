@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Wireframe\Wireframe.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Wireframe.Mcp</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- The MCP server `wire mcp` (.my/net/300-McpServer.md): hosted by the tool, so it stays AOT-friendly too:
+         no reflection-based JSON, no dependencies. -->
+    <IsAotCompatible>true</IsAotCompatible>
+  </PropertyGroup>
+
+  <!-- What the server offers without the repository: the one-page reference, and the documentation's examples
+       (read at build time, embedded; the examples that do not parse are left out when they are loaded). -->
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\reference.md" LogicalName="Wireframe.Mcp.reference.md" />
+    <EmbeddedResource Include="..\..\..\docs\EXAMPLES.md" Link="Docs\EXAMPLES.md" LogicalName="Wireframe.Mcp.docs.EXAMPLES.md" />
+    <EmbeddedResource Include="..\..\..\docs\examples\*.wire" Link="Docs\examples\%(Filename)%(Extension)" LogicalName="Wireframe.Mcp.docs.examples.%(Filename)%(Extension)" />
+  </ItemGroup>
+
+</Project>

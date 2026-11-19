@@ -1,0 +1,130 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Badge",
+      "end": {
+        "column": 14,
+        "line": 2,
+        "offset": 29
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "3",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Badge",
+      "end": {
+        "column": 24,
+        "line": 3,
+        "offset": 53
+      },
+      "modifiers": {
+        "primary": true
+      },
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 34
+      },
+      "text": "New",
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "variant": "success"
+      },
+      "controlType": "Badge",
+      "end": {
+        "column": 36,
+        "line": 4,
+        "offset": 89
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 58
+      },
+      "text": "Success",
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "variant": "warning"
+      },
+      "controlType": "Badge",
+      "end": {
+        "column": 36,
+        "line": 5,
+        "offset": 125
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 94
+      },
+      "text": "Warning",
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "variant": "error"
+      },
+      "controlType": "Badge",
+      "end": {
+        "column": 32,
+        "line": 6,
+        "offset": 157
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 6,
+        "offset": 130
+      },
+      "text": "Error",
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "variant": "info"
+      },
+      "controlType": "Badge",
+      "end": {
+        "column": 30,
+        "line": 7,
+        "offset": 187
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 7,
+        "offset": 162
+      },
+      "text": "Info",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 198
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,90 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Button",
+      "end": {
+        "column": 30,
+        "line": 2,
+        "offset": 45
+      },
+      "modifiers": {},
+      "navigation": "Dashboard",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Login",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Button",
+      "end": {
+        "column": 27,
+        "line": 3,
+        "offset": 72
+      },
+      "modifiers": {},
+      "navigation": ":back",
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 50
+      },
+      "text": "Cancel",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Button",
+      "end": {
+        "column": 37,
+        "line": 4,
+        "offset": 109
+      },
+      "modifiers": {},
+      "navigation": ":modal:HelpDialog",
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 77
+      },
+      "text": "Help",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Link",
+      "end": {
+        "column": 28,
+        "line": 5,
+        "offset": 137
+      },
+      "modifiers": {},
+      "navigation": "TermsPage",
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 114
+      },
+      "text": "Terms",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 6,
+    "offset": 148
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

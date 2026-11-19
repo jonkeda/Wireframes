@@ -1,0 +1,8 @@
+wireframe clean
+    Vertical gap=12 w=300
+        TextInput placeholder="Enter your name"
+        TextInput placeholder="Email" required
+        TextInput "John Doe"
+        TextInput placeholder="Disabled" disabled
+        TextInput placeholder="Read only" readonly
+/wireframe

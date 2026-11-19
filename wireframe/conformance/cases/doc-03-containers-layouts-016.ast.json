@@ -1,0 +1,167 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "h": 250,
+        "padding": 20,
+        "w": 400
+      },
+      "children": [
+        {
+          "attributes": {
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {
+                "level": 2
+              },
+              "controlType": "Heading",
+              "end": {
+                "column": 42,
+                "line": 4,
+                "offset": 114
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 85
+              },
+              "text": "Modal Title",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 45,
+                "line": 5,
+                "offset": 159
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 127
+              },
+              "text": "Modal content goes here.",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Spacer",
+              "end": {
+                "column": 19,
+                "line": 6,
+                "offset": 178
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 172
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Spacer",
+                  "end": {
+                    "column": 23,
+                    "line": 8,
+                    "offset": 230
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 8,
+                    "offset": 224
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 39,
+                    "line": 9,
+                    "offset": 269
+                  },
+                  "modifiers": {
+                    "primary": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 9,
+                    "offset": 247
+                  },
+                  "text": "Close",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 10,
+                "offset": 293
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 7,
+                "offset": 191
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 11,
+            "offset": 311
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 57
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 11,
+        "line": 12,
+        "offset": 322
+      },
+      "modifiers": {},
+      "sectionType": "Modal",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 13,
+    "offset": 333
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,8 @@
+wireframe clean
+    Content w=400 padding=20
+        Vertical gap=16
+            Heading "Welcome" level=1
+            Label "Main content area"
+        /Vertical
+    /Content
+/wireframe

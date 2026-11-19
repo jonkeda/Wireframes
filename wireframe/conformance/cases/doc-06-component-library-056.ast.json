@@ -1,0 +1,149 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "MenuItem",
+      "end": {
+        "column": 1,
+        "line": 3,
+        "offset": 37
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Label",
+      "type": "Component"
+    },
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "MenuItem",
+      "end": {
+        "column": 1,
+        "line": 4,
+        "offset": 73
+      },
+      "icon": "home",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 41
+      },
+      "text": "With Icon",
+      "type": "Component"
+    },
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "MenuItem",
+      "end": {
+        "column": 1,
+        "line": 5,
+        "offset": 112
+      },
+      "modifiers": {},
+      "navigation": "target",
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 77
+      },
+      "text": "With Navigation",
+      "type": "Component"
+    },
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "MenuItem",
+      "end": {
+        "column": 1,
+        "line": 6,
+        "offset": 145
+      },
+      "modifiers": {
+        "selected": true
+      },
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 116
+      },
+      "text": "Selected",
+      "type": "Component"
+    },
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "MenuItem",
+          "end": {
+            "column": 1,
+            "line": 8,
+            "offset": 207
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 7,
+            "offset": 181
+          },
+          "text": "Submenu Item 1",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "MenuItem",
+          "end": {
+            "column": 1,
+            "line": 9,
+            "offset": 241
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 215
+          },
+          "text": "Submenu Item 2",
+          "type": "Component"
+        }
+      ],
+      "componentType": "MenuItem",
+      "end": {
+        "column": 14,
+        "line": 9,
+        "offset": 254
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 6,
+        "offset": 149
+      },
+      "text": "With Submenu",
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 10,
+    "offset": 265
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

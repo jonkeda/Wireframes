@@ -1,0 +1,9 @@
+wireframe clean
+    Button "Submit" primary
+    Checkbox "Remember" checked
+    Tab "Dashboard" active
+    AccordionSection "Details" expanded
+    Step "Shipping" completed
+    Avatar "JD" circle
+    Chip "Removable" removable
+/wireframe

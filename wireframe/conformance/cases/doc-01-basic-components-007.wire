@@ -1,0 +1,8 @@
+wireframe clean
+    Horizontal gap=8
+        Avatar "JD" size=xs
+        Avatar "JD" size=sm
+        Avatar "JD" size=md
+        Avatar "JD" size=lg
+        Avatar "JD" size=xl
+/wireframe

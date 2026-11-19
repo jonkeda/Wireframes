@@ -1,0 +1,16 @@
+wireframe clean
+    List
+        ListItem removable
+            Checkbox "Buy groceries" ?todo1
+        /ListItem
+        ListItem removable
+            Checkbox "Review pull request" ?todo2 checked
+        /ListItem
+        ListItem removable
+            Checkbox "Update documentation" ?todo3
+        /ListItem
+        ListItem removable
+            Checkbox "Deploy to production" ?todo4
+        /ListItem
+    /List
+/wireframe

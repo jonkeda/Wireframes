@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="384" height="212" viewBox="0 0 384 212" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g>
+          <path d="M16.0 15.4 Q191.0 14.7 366.0 15.2 M365.1 16.0 Q359.7 106.0 367.3 196.0 M366.0 196.5 Q191.0 198.2 16.0 194.8 M17.1 196.0 Q21.4 106.0 16.6 16.0" fill="#fefefe" stroke="#888888" stroke-width="2" />
+          <text x="32" y="40" class="wire-text wire-text-bold">Confirm Action</text>
+        </g><g role="group" aria-label="Are you sure you want to delete this item?"><text x="32" y="47" class="wire-text">Are you sure you want to delete this item?</text></g><g role="button" aria-label="Cancel"><g opacity="1">
+      <path d="M56.0 68.1 Q106.0 66.0 156.0 68.5 M157.3 68.0 Q154.0 86.0 156.0 104.0 M156.0 103.8 Q106.0 105.1 56.0 104.6 M54.8 104.0 Q59.8 86.0 56.3 68.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="106" y="91" text-anchor="middle" class="wire-text" fill="#333333">Cancel</text>
+    </g></g><g role="button" aria-label="Delete"><g opacity="1">
+      <path d="M164.0 68.8 Q214.0 74.4 264.0 68.9 M264.6 68.0 Q265.6 86.0 263.6 104.0 M264.0 103.1 Q214.0 98.5 164.0 104.2 M163.5 104.0 Q162.8 86.0 164.0 68.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="214" y="91" text-anchor="middle" class="wire-text" fill="#ffffff">Delete</text>
+    </g></g>
+</svg>

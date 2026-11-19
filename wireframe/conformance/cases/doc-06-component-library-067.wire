@@ -1,0 +1,9 @@
+wireframe clean
+    ColumnText "Header"
+    ColumnDate "Date Column"
+    ColumnNumber "Amount"
+    ColumnCheckbox "Active"
+    ColumnImage "Photo"
+    ColumnLink "Website"
+    ColumnButton "Actions"
+/wireframe

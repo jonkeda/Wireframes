@@ -1,0 +1,3 @@
+wireframe clean
+    DataGrid rows=5 cols=3 w=400 selected
+/wireframe

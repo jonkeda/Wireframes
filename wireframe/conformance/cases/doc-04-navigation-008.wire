@@ -1,0 +1,13 @@
+wireframe clean
+    Accordion w=400
+        AccordionSection "Section 1" expanded
+            Label "Content for section 1"
+        /AccordionSection
+        AccordionSection "Section 2"
+            Label "Content for section 2"
+        /AccordionSection
+        AccordionSection "Section 3"
+            Label "Content for section 3"
+        /AccordionSection
+    /Accordion
+/wireframe

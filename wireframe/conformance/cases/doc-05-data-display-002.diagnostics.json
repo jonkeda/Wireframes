@@ -1,0 +1,147 @@
+[
+  {
+    "column": 9,
+    "line": 3,
+    "message": "Unexpected token: Row"
+  },
+  {
+    "column": 13,
+    "line": 3,
+    "message": "Unexpected token: selected"
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected token:             "
+  },
+  {
+    "column": 13,
+    "line": 4,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 18,
+    "line": 4,
+    "message": "Unexpected token: Name"
+  },
+  {
+    "column": 13,
+    "line": 5,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 18,
+    "line": 5,
+    "message": "Unexpected token: Email"
+  },
+  {
+    "column": 13,
+    "line": 6,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 18,
+    "line": 6,
+    "message": "Unexpected token: Status"
+  },
+  {
+    "column": 9,
+    "line": 7,
+    "message": "Unknown closing keyword /Row"
+  },
+  {
+    "column": 9,
+    "line": 8,
+    "message": "Unexpected token: Row"
+  },
+  {
+    "column": 1,
+    "line": 9,
+    "message": "Unexpected token:             "
+  },
+  {
+    "column": 13,
+    "line": 9,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 18,
+    "line": 9,
+    "message": "Unexpected token: John Doe"
+  },
+  {
+    "column": 13,
+    "line": 10,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 18,
+    "line": 10,
+    "message": "Unexpected token: john@example.com"
+  },
+  {
+    "column": 13,
+    "line": 11,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 18,
+    "line": 11,
+    "message": "Unexpected token: Active"
+  },
+  {
+    "column": 9,
+    "line": 12,
+    "message": "Unknown closing keyword /Row"
+  },
+  {
+    "column": 9,
+    "line": 13,
+    "message": "Unexpected token: Row"
+  },
+  {
+    "column": 1,
+    "line": 14,
+    "message": "Unexpected token:             "
+  },
+  {
+    "column": 13,
+    "line": 14,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 18,
+    "line": 14,
+    "message": "Unexpected token: Jane Smith"
+  },
+  {
+    "column": 13,
+    "line": 15,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 18,
+    "line": 15,
+    "message": "Unexpected token: jane@example.com"
+  },
+  {
+    "column": 13,
+    "line": 16,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 18,
+    "line": 16,
+    "message": "Unexpected token: Pending"
+  },
+  {
+    "column": 9,
+    "line": 17,
+    "message": "Unknown closing keyword /Row"
+  },
+  {
+    "column": 5,
+    "line": 18,
+    "message": "Unexpected /Table: no Table is open here"
+  }
+]

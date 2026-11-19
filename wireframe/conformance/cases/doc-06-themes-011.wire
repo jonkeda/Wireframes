@@ -1,0 +1,8 @@
+wireframe sketch
+    %title: My Wireframe
+    %theme: sketch
+    
+    Card w=300 padding=16
+        Label "Uses sketch theme"
+    /Card
+/wireframe

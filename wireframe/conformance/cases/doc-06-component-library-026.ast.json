@@ -1,0 +1,53 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Label",
+      "end": {
+        "column": 24,
+        "line": 2,
+        "offset": 39
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Static text",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "binding": "userName",
+      "controlType": "Label",
+      "end": {
+        "column": 34,
+        "line": 3,
+        "offset": 73
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 44
+      },
+      "text": "Bound value",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 4,
+    "offset": 84
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

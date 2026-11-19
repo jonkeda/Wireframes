@@ -1,0 +1,12 @@
+wireframe clean
+    Card w=400 padding=32
+        Vertical gap=16
+            TextInput "user@example.com" disabled
+            PasswordInput "••••••••" disabled
+            
+            Button "Signing in..." primary w=100% disabled
+            
+            Progress value=50
+        /Vertical
+    /Card
+/wireframe

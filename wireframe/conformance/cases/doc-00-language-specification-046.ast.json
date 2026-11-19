@@ -1,0 +1,109 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "condition": "signedIn",
+      "elseChildren": [
+        {
+          "attributes": {},
+          "condition": "guest",
+          "elseChildren": [
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 24,
+                "line": 7,
+                "offset": 132
+              },
+              "modifiers": {},
+              "start": {
+                "column": 9,
+                "line": 7,
+                "offset": 117
+              },
+              "text": "Log in",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 8,
+            "line": 8,
+            "offset": 140
+          },
+          "modifiers": {},
+          "start": {
+            "column": 10,
+            "line": 4,
+            "offset": 66
+          },
+          "thenChildren": [
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 25,
+                "line": 5,
+                "offset": 99
+              },
+              "modifiers": {},
+              "start": {
+                "column": 9,
+                "line": 5,
+                "offset": 83
+              },
+              "text": "Sign up",
+              "type": "Control"
+            }
+          ],
+          "type": "Conditional"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 9,
+        "offset": 141
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "thenChildren": [
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 25,
+            "line": 3,
+            "offset": 56
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 40
+          },
+          "text": "Log out",
+          "type": "Control"
+        }
+      ],
+      "type": "Conditional"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 9,
+    "offset": 151
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,114 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 8
+      },
+      "children": [
+        {
+          "attributes": {
+            "type": "success"
+          },
+          "controlType": "Toast",
+          "end": {
+            "column": 68,
+            "line": 3,
+            "offset": 102
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 43
+          },
+          "text": "Success! Your changes have been saved.",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "type": "warning"
+          },
+          "controlType": "Toast",
+          "end": {
+            "column": 69,
+            "line": 4,
+            "offset": 171
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 111
+          },
+          "text": "Warning: Your session will expire soon.",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "type": "error"
+          },
+          "controlType": "Toast",
+          "end": {
+            "column": 55,
+            "line": 5,
+            "offset": 226
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 180
+          },
+          "text": "Error: Failed to load data.",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "type": "info"
+          },
+          "controlType": "Toast",
+          "end": {
+            "column": 55,
+            "line": 6,
+            "offset": 281
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 235
+          },
+          "text": "Info: New updates available.",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 7,
+        "offset": 295
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 306
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,303 @@
+{
+  "attributes": {
+    "title": "Separator and Spacer Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 30,
+            "line": 6,
+            "offset": 149
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 128
+          },
+          "text": "**Separator**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 44,
+                "line": 9,
+                "offset": 217
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 186
+              },
+              "text": "Content above separator",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Separator",
+              "end": {
+                "column": 22,
+                "line": 10,
+                "offset": 239
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 230
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 44,
+                "line": 11,
+                "offset": 283
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 11,
+                "offset": 252
+              },
+              "text": "Content below separator",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 12,
+            "offset": 301
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 159
+          },
+          "type": "Layout"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 27,
+            "line": 14,
+            "offset": 329
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 14,
+            "offset": 311
+          },
+          "text": "**Spacer**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 41,
+                "line": 17,
+                "offset": 394
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 17,
+                "offset": 366
+              },
+              "text": "Content above spacer",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "height": 32
+              },
+              "controlType": "Spacer",
+              "end": {
+                "column": 29,
+                "line": 18,
+                "offset": 423
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 18,
+                "offset": 407
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 52,
+                "line": 19,
+                "offset": 475
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 19,
+                "offset": 436
+              },
+              "text": "Content below spacer (32px gap)",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 20,
+            "offset": 493
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 16,
+            "offset": 339
+          },
+          "type": "Layout"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 41,
+            "line": 22,
+            "offset": 535
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 22,
+            "offset": 503
+          },
+          "text": "**In Horizontal Layout**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 26,
+                "line": 25,
+                "offset": 587
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 25,
+                "offset": 574
+              },
+              "text": "Left",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Spacer",
+              "end": {
+                "column": 19,
+                "line": 26,
+                "offset": 606
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 26,
+                "offset": 600
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 46,
+                "line": 27,
+                "offset": 652
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 27,
+                "offset": 619
+              },
+              "text": "Right (pushed by spacer)",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 20,
+            "line": 28,
+            "offset": 672
+          },
+          "layoutType": "Horizontal",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 24,
+            "offset": 545
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 29,
+        "offset": 686
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 104
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 30,
+    "offset": 697
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 41
+  },
+  "style": "clean",
+  "type": "Document"
+}

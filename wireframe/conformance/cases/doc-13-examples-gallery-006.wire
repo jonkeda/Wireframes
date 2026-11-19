@@ -1,0 +1,31 @@
+wireframe clean
+    Card width=480
+        Heading "Settings" level=2
+        Vertical gap=24
+            Group "Profile"
+                TextInput "Display Name" ?displayName
+                Textarea "Bio" ?bio rows=3
+                Image ?avatar width=80 height=80 circle
+            /Group
+            
+            Group "Notifications"
+                Switch "Email notifications" ?emailNotif checked
+                Switch "Push notifications" ?pushNotif
+                Switch "Weekly digest" ?weeklyDigest checked
+            /Group
+            
+            Group "Privacy"
+                RadioGroup ?visibility
+                    RadioButton "Public" value="public"
+                    RadioButton "Private" value="private"
+                    RadioButton "Friends only" value="friends"
+                /RadioGroup
+            /Group
+            
+            Horizontal gap=16
+                Button "Cancel" secondary
+                Button "Save Changes" primary
+            /Horizontal
+        /Vertical
+    /Card
+/wireframe

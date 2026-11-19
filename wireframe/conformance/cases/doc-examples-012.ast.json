@@ -1,0 +1,130 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {
+            "gap": 12
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 37,
+                "line": 4,
+                "offset": 85
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 61
+              },
+              "text": "**File Browser**",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Tree",
+              "end": {
+                "column": 18,
+                "line": 14,
+                "offset": 364
+              },
+              "id": "treeFiles",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 111
+              },
+              "treeItems": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "isBranch": false,
+                          "text": "Report.pdf"
+                        },
+                        {
+                          "children": [],
+                          "isBranch": false,
+                          "text": "Presentation.pptx"
+                        }
+                      ],
+                      "isBranch": true,
+                      "text": "Work"
+                    },
+                    {
+                      "children": [],
+                      "isBranch": true,
+                      "text": "Personal"
+                    }
+                  ],
+                  "isBranch": true,
+                  "text": "Documents"
+                },
+                {
+                  "children": [],
+                  "isBranch": true,
+                  "text": "Images"
+                },
+                {
+                  "children": [],
+                  "isBranch": true,
+                  "text": "Downloads"
+                }
+              ],
+              "type": "Component"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 15,
+            "offset": 382
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 33
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 16,
+        "offset": 392
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 17,
+    "offset": 403
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

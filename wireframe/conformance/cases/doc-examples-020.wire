@@ -1,0 +1,10 @@
+wireframe sketch
+    Card w=300
+        Vertical gap=12
+            Label "**Sketch Theme**"
+            Label "Hand-drawn, informal style"
+            Button "Primary" primary
+            Button "Default"
+        /Vertical
+    /Card
+/wireframe

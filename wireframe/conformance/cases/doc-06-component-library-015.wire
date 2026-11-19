@@ -1,0 +1,9 @@
+wireframe clean
+    Toolbar
+        IconButton $icon:save
+        IconButton $icon:undo
+        IconButton $icon:redo
+        Separator
+        Dropdown "Font" "Arial" "Helvetica" "Times"
+    /Toolbar
+/wireframe

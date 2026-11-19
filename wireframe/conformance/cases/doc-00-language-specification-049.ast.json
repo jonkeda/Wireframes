@@ -1,0 +1,70 @@
+{
+  "attributes": {},
+  "children": [],
+  "dataSections": [
+    {
+      "columns": [
+        "Field",
+        "Formula",
+        "Description"
+      ],
+      "end": {
+        "column": 18,
+        "line": 6,
+        "offset": 190
+      },
+      "records": [
+        {
+          "Description": "Sum of prices",
+          "Field": "txtTotal",
+          "Formula": "sum(items.price)"
+        }
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Field",
+            "Formula",
+            "Description"
+          ],
+          "isSeparator": false
+        },
+        {
+          "cells": [
+            "-------",
+            "---------",
+            "-------------"
+          ],
+          "isSeparator": true
+        },
+        {
+          "cells": [
+            "txtTotal",
+            "sum(items.price)",
+            "Sum of prices"
+          ],
+          "isSeparator": false
+        }
+      ],
+      "sectionType": "calculations",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "DataSection"
+    }
+  ],
+  "end": {
+    "column": 11,
+    "line": 7,
+    "offset": 201
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

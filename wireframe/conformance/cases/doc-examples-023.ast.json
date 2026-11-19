@@ -1,0 +1,115 @@
+{
+  "attributes": {
+    "title": "DataGrid with Typed Columns"
+  },
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 40,
+                "line": 6,
+                "offset": 133
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 106
+              },
+              "text": "**User Management**",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "rows": 5
+              },
+              "children": [],
+              "componentType": "DataGrid",
+              "end": {
+                "column": 22,
+                "line": 15,
+                "offset": 427
+              },
+              "modifiers": {
+                "selected": true
+              },
+              "start": {
+                "column": 13,
+                "line": 8,
+                "offset": 159
+              },
+              "type": "Component"
+            },
+            {
+              "attributes": {
+                "current": 1,
+                "pages": 5
+              },
+              "controlType": "Pagination",
+              "end": {
+                "column": 41,
+                "line": 17,
+                "offset": 481
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 17,
+                "offset": 453
+              },
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 18,
+            "offset": 499
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 78
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 19,
+        "offset": 509
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 65
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 20,
+    "offset": 520
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

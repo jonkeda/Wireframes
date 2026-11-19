@@ -1,0 +1,10 @@
+wireframe clean
+    Grid cols=3 gap=8
+        Button "1"
+        Button "2"
+        Button "3"
+        Button "4"
+        Button "5"
+        Button "6"
+    /Grid
+/wireframe

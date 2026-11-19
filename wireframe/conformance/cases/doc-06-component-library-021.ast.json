@@ -1,0 +1,74 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "TextInput",
+      "end": {
+        "column": 33,
+        "line": 2,
+        "offset": 48
+      },
+      "modifiers": {},
+      "placeholder": "Placeholder text",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "binding": "email",
+      "controlType": "TextInput",
+      "end": {
+        "column": 38,
+        "line": 3,
+        "offset": 86
+      },
+      "modifiers": {
+        "required": true
+      },
+      "placeholder": "Email",
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 53
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "TextInput",
+      "end": {
+        "column": 35,
+        "line": 4,
+        "offset": 121
+      },
+      "modifiers": {
+        "readonly": true
+      },
+      "placeholder": "Read only",
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 91
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 132
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

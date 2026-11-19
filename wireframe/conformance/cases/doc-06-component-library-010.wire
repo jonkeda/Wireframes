@@ -1,0 +1,5 @@
+wireframe clean
+    Footer height=48
+        Label "© 2025 Company"
+    /Footer
+/wireframe

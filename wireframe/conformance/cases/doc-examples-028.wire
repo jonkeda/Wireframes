@@ -1,0 +1,36 @@
+wireframe clean
+    %title: Row and Cell Table
+    
+    Card
+        Vertical gap=16
+            Label "**Custom Table with Row/Cell**"
+            
+            Vertical gap=0
+                Row selected
+                    Cell "Name" align=left
+                    Cell "Email" align=left
+                    Cell "Role" align=center
+                    Cell "Status" align=center
+                /Row
+                Row
+                    Cell "John Doe"
+                    Cell "john@example.com"
+                    Cell "Admin"
+                    Cell "Active"
+                /Row
+                Row
+                    Cell "Jane Smith"
+                    Cell "jane@example.com"
+                    Cell "Editor"
+                    Cell "Active"
+                /Row
+                Row
+                    Cell "Bob Wilson"
+                    Cell "bob@example.com"
+                    Cell "Viewer"
+                    Cell "Inactive"
+                /Row
+            /Vertical
+        /Vertical
+    /Card
+/wireframe

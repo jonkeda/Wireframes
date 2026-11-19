@@ -1,0 +1,117 @@
+[
+  {
+    "column": 9,
+    "line": 3,
+    "message": "Unexpected token: Row"
+  },
+  {
+    "column": 13,
+    "line": 3,
+    "message": "Unexpected token: selected"
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected token:             "
+  },
+  {
+    "column": 13,
+    "line": 4,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 18,
+    "line": 4,
+    "message": "Unexpected token: Name"
+  },
+  {
+    "column": 25,
+    "line": 4,
+    "message": "Unexpected token: align=left"
+  },
+  {
+    "column": 13,
+    "line": 5,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 18,
+    "line": 5,
+    "message": "Unexpected token: Email"
+  },
+  {
+    "column": 26,
+    "line": 5,
+    "message": "Unexpected token: align=left"
+  },
+  {
+    "column": 13,
+    "line": 6,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 18,
+    "line": 6,
+    "message": "Unexpected token: Role"
+  },
+  {
+    "column": 25,
+    "line": 6,
+    "message": "Unexpected token: align=center"
+  },
+  {
+    "column": 9,
+    "line": 7,
+    "message": "Unknown closing keyword /Row"
+  },
+  {
+    "column": 9,
+    "line": 8,
+    "message": "Unexpected token: Row"
+  },
+  {
+    "column": 1,
+    "line": 9,
+    "message": "Unexpected token:             "
+  },
+  {
+    "column": 13,
+    "line": 9,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 18,
+    "line": 9,
+    "message": "Unexpected token: John Doe"
+  },
+  {
+    "column": 13,
+    "line": 10,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 18,
+    "line": 10,
+    "message": "Unexpected token: john@example.com"
+  },
+  {
+    "column": 13,
+    "line": 11,
+    "message": "Unexpected token: Cell"
+  },
+  {
+    "column": 18,
+    "line": 11,
+    "message": "Unexpected token: Admin"
+  },
+  {
+    "column": 9,
+    "line": 12,
+    "message": "Unknown closing keyword /Row"
+  },
+  {
+    "column": 5,
+    "line": 13,
+    "message": "Unexpected /Vertical: no Vertical is open here"
+  }
+]

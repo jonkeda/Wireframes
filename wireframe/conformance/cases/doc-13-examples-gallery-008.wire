@@ -1,0 +1,22 @@
+wireframe clean
+    Grid columns=3 gap=16
+        Card
+            Label "Item 1"
+        /Card
+        Card
+            Label "Item 2"
+        /Card
+        Card
+            Label "Item 3"
+        /Card
+        Card
+            Label "Item 4"
+        /Card
+        Card
+            Label "Item 5"
+        /Card
+        Card
+            Label "Item 6"
+        /Card
+    /Grid
+/wireframe

@@ -1,0 +1,5 @@
+wireframe clean
+    Chip "Tag"
+    Chip "Removable" removable
+    Chip "Primary" primary
+/wireframe

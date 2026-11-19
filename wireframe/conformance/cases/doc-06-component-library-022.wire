@@ -1,0 +1,4 @@
+wireframe clean
+    NumberInput "Amount" min=0 max=100
+    NumberInput "Quantity" ?quantity
+/wireframe

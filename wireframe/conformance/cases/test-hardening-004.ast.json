@@ -1,0 +1,87 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 19,
+            "line": 3,
+            "offset": 47
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 37
+          },
+          "text": "A",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 5,
+        "line": 4,
+        "offset": 52
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    },
+    {
+      "attributes": {},
+      "controlType": "Button",
+      "end": {
+        "column": 15,
+        "line": 5,
+        "offset": 75
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 65
+      },
+      "text": "B",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Button",
+      "end": {
+        "column": 15,
+        "line": 6,
+        "offset": 90
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 6,
+        "offset": 80
+      },
+      "text": "C",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 7,
+    "offset": 101
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

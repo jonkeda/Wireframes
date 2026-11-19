@@ -1,0 +1,75 @@
+wireframe clean
+    %title: Product Page
+    
+    Vertical gap=32
+        Breadcrumb
+            Breadcrumb "Home" @home
+            Breadcrumb "Electronics" @electronics
+            Breadcrumb "Laptops" @laptops
+            Breadcrumb "MacBook Pro" active
+        /Breadcrumb
+        
+        Horizontal gap=48
+            Image ?productImage width=500 height=400
+            
+            Vertical gap=16 width=400
+                Heading "MacBook Pro 14-inch" level=1
+                
+                Horizontal gap=8
+                    Rating ?rating value=4.5 readonly
+                    Link "142 reviews" @reviews
+                /Horizontal
+                
+                Heading "$1,999.00" level=2
+                
+                Label "The most powerful MacBook Pro ever is here."
+                
+                Group "Color"
+                    RadioGroup ?color
+                        RadioButton "Space Gray" value="gray" checked
+                        RadioButton "Silver" value="silver"
+                    /RadioGroup
+                /Group
+                
+                Group "Memory"
+                    RadioGroup ?memory
+                        RadioButton "16GB" value="16"
+                        RadioButton "32GB" value="32" checked
+                        RadioButton "64GB" value="64"
+                    /RadioGroup
+                /Group
+                
+                Horizontal gap=16
+                    NumberInput ?quantity value=1 min=1 max=10
+                    Button "Add to Cart" primary
+                    IconButton $icon:heart
+                /Horizontal
+            /Vertical
+        /Horizontal
+        
+        TabGroup
+            Tab "Description"
+                Label "Full product description..."
+            /Tab
+            Tab "Specifications"
+                Table
+                    Row
+                        Cell "Processor"
+                        Cell "Apple M3 Pro"
+                    /Row
+                    Row
+                        Cell "Display"
+                        Cell "14.2-inch Liquid Retina XDR"
+                    /Row
+                    Row
+                        Cell "Battery"
+                        Cell "Up to 17 hours"
+                    /Row
+                /Table
+            /Tab
+            Tab "Reviews"
+                Label "Customer reviews..."
+            /Tab
+        /TabGroup
+    /Vertical
+/wireframe

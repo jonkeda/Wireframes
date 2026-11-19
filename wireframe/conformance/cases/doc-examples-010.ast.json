@@ -1,0 +1,160 @@
+{
+  "attributes": {
+    "title": "User Management"
+  },
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 30,
+                "line": 6,
+                "offset": 111
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 94
+              },
+              "text": "**Users**",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Table",
+              "end": {
+                "column": 19,
+                "line": 14,
+                "offset": 471
+              },
+              "id": "tblUsers",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 8,
+                "offset": 137
+              },
+              "tableRows": [
+                {
+                  "cells": [
+                    "Name",
+                    "Email",
+                    "Role",
+                    "Status"
+                  ],
+                  "isSeparator": false
+                },
+                {
+                  "cells": [
+                    "------",
+                    "-------",
+                    "------",
+                    "--------"
+                  ],
+                  "isSeparator": true
+                },
+                {
+                  "cells": [
+                    "John Doe",
+                    "john@example.com",
+                    "Admin",
+                    "Active"
+                  ],
+                  "isSeparator": false
+                },
+                {
+                  "cells": [
+                    "Jane Smith",
+                    "jane@example.com",
+                    "Editor",
+                    "Active"
+                  ],
+                  "isSeparator": false
+                },
+                {
+                  "cells": [
+                    "Bob Wilson",
+                    "bob@example.com",
+                    "Viewer",
+                    "Inactive"
+                  ],
+                  "isSeparator": false
+                }
+              ],
+              "type": "Component"
+            },
+            {
+              "attributes": {
+                "current": 1,
+                "pages": 5
+              },
+              "controlType": "Pagination",
+              "end": {
+                "column": 50,
+                "line": 16,
+                "offset": 534
+              },
+              "id": "pgUsers",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 16,
+                "offset": 497
+              },
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 17,
+            "offset": 552
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 66
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 18,
+        "offset": 562
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 53
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 19,
+    "offset": 573
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

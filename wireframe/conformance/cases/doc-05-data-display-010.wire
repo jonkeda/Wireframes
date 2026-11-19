@@ -1,0 +1,67 @@
+wireframe clean
+    Vertical w=800 gap=20 padding=20
+        Heading "Orders Dashboard" level=1
+        
+        Horizontal gap=16
+            Card w=180 padding=16
+                Vertical gap=4
+                    Label "Total Orders"
+                    Heading "1,234" level=2
+                    Badge "12%" variant=success
+                /Vertical
+            /Card
+            Card w=180 padding=16
+                Vertical gap=4
+                    Label "Revenue"
+                    Heading "$45,678" level=2
+                    Badge "5%" variant=success
+                /Vertical
+            /Card
+            Card w=180 padding=16
+                Vertical gap=4
+                    Label "Pending"
+                    Heading "23" level=2
+                    Badge "Warning" variant=warning
+                /Vertical
+            /Card
+            Card w=180 padding=16
+                Vertical gap=4
+                    Label "Cancelled"
+                    Heading "5" level=2
+                    Badge "2" variant=error
+                /Vertical
+            /Card
+        /Horizontal
+        
+        Card padding=16
+            Vertical gap=16
+                Horizontal gap=8
+                    Heading "Recent Orders" level=3
+                    Spacer
+                    TextInput placeholder="Search orders..." w=200
+                    Dropdown "Status"
+                        Option "All"
+                        Option "Pending"
+                        Option "Shipped"
+                        Option "Delivered"
+                    /Dropdown
+                /Horizontal
+                
+                DataGrid rows=6 w=100% selected
+                    ColumnText "Order ID"
+                    ColumnText "Customer"
+                    ColumnDate "Date"
+                    ColumnNumber "Amount"
+                    ColumnCheckbox "Paid"
+                    ColumnButton "View"
+                /DataGrid
+                
+                Horizontal gap=8
+                    Label "Showing 1-10 of 234"
+                    Spacer
+                    Pagination page=1 total=24
+                /Horizontal
+            /Vertical
+        /Card
+    /Vertical
+/wireframe

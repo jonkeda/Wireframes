@@ -1,0 +1,7 @@
+wireframe clean
+    Horizontal
+        Button "A"
+    /Horizontal
+    /Card
+    Button "B"
+/wireframe

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <path d="M16.0 17.2 Q400.0 18.9 784.0 14.6 M784.3 16.0 Q791.0 300.0 783.6 584.0 M784.0 582.7 Q400.0 581.9 16.0 583.5 M15.8 584.0 Q10.4 300.0 15.7 16.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Blueprint Style"><text x="32" y="54.67" class="wire-text wire-text-bold" style="font-size: 20px">Blueprint Style</text></g><g role="group" aria-label="Technical blueprint aesthetic"><text x="32" y="87" class="wire-text">Technical blueprint aesthetic</text></g><g role="button" aria-label="Action"><g opacity="1">
+      <path d="M32.0 101.0 Q82.0 106.2 132.0 100.3 M132.4 100.0 Q134.8 118.0 131.6 136.0 M132.0 134.9 Q82.0 130.7 32.0 136.8 M31.7 136.0 Q32.0 118.0 31.3 100.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="82" y="123" text-anchor="middle" class="wire-text" fill="#ffffff">Action</text>
+    </g></g>
+</svg>

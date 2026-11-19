@@ -1,0 +1,35 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "condition": "loggedIn\\n        Button \"Log out\"\\n    /if\\n/wireframe",
+      "end": {
+        "column": 1,
+        "line": 2,
+        "offset": 74
+      },
+      "modifiers": {},
+      "start": {
+        "column": 16,
+        "line": 1,
+        "offset": 15
+      },
+      "thenChildren": [],
+      "type": "Conditional"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

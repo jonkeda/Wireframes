@@ -1,0 +1,4 @@
+wireframe clean
+    TextArea "Enter description" :txtDesc
+    TextArea "Notes" :txtNotes rows=4
+/wireframe

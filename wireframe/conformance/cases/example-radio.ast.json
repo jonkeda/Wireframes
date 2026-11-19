@@ -1,0 +1,292 @@
+{
+  "attributes": {
+    "title": "Radio Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 42,
+            "line": 6,
+            "offset": 131
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 98
+          },
+          "text": "**Radio Button Variants**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Radio",
+              "end": {
+                "column": 38,
+                "line": 9,
+                "offset": 193
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 168
+              },
+              "text": "Unselected option",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Radio",
+              "end": {
+                "column": 45,
+                "line": 10,
+                "offset": 238
+              },
+              "modifiers": {
+                "selected": true
+              },
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 206
+              },
+              "text": "Selected option",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Radio",
+              "end": {
+                "column": 49,
+                "line": 11,
+                "offset": 287
+              },
+              "modifiers": {
+                "disabled": true
+              },
+              "start": {
+                "column": 13,
+                "line": 11,
+                "offset": 251
+              },
+              "text": "Disabled unselected",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Radio",
+              "end": {
+                "column": 56,
+                "line": 12,
+                "offset": 343
+              },
+              "modifiers": {
+                "disabled": true,
+                "selected": true
+              },
+              "start": {
+                "column": 13,
+                "line": 12,
+                "offset": 300
+              },
+              "text": "Disabled selected",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 13,
+            "offset": 361
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 141
+          },
+          "type": "Layout"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 15,
+            "offset": 380
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 15,
+            "offset": 371
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 32,
+            "line": 17,
+            "offset": 413
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 17,
+            "offset": 390
+          },
+          "text": "**Radio Group**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 4
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 35,
+                "line": 20,
+                "offset": 472
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 20,
+                "offset": 450
+              },
+              "text": "Choose a plan:",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Radio",
+              "end": {
+                "column": 36,
+                "line": 21,
+                "offset": 508
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 21,
+                "offset": 485
+              },
+              "text": "Free - $0/month",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Radio",
+              "end": {
+                "column": 46,
+                "line": 22,
+                "offset": 554
+              },
+              "modifiers": {
+                "selected": true
+              },
+              "start": {
+                "column": 13,
+                "line": 22,
+                "offset": 521
+              },
+              "text": "Basic - $9/month",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Radio",
+              "end": {
+                "column": 36,
+                "line": 23,
+                "offset": 590
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 23,
+                "offset": 567
+              },
+              "text": "Pro - $29/month",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Radio",
+              "end": {
+                "column": 44,
+                "line": 24,
+                "offset": 634
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 24,
+                "offset": 603
+              },
+              "text": "Enterprise - Contact us",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 25,
+            "offset": 652
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 19,
+            "offset": 423
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 26,
+        "offset": 666
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 74
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 27,
+    "offset": 677
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 26
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,6 @@
+wireframe clean
+    else
+    Button "A"
+    /if
+    Button "B"
+/wireframe

@@ -1,0 +1,373 @@
+{
+  "attributes": {
+    "title": "Panel Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 32,
+            "line": 6,
+            "offset": 131
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 108
+          },
+          "text": "**Basic Panel**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "padding": 16
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 77,
+                "line": 9,
+                "offset": 234
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 170
+              },
+              "text": "This is a panel - a simple container without decoration.",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 15,
+            "line": 10,
+            "offset": 249
+          },
+          "modifiers": {},
+          "sectionType": "Panel",
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 141
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 12,
+            "offset": 268
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 12,
+            "offset": 259
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 38,
+            "line": 14,
+            "offset": 307
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 14,
+            "offset": 278
+          },
+          "text": "**Panel with Border**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "padding": 16
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 40,
+                    "line": 18,
+                    "offset": 407
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 18,
+                    "offset": 384
+                  },
+                  "text": "**Panel Title**",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 55,
+                    "line": 19,
+                    "offset": 462
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 19,
+                    "offset": 424
+                  },
+                  "text": "Panel with a border around it.",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 20,
+                "offset": 484
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 17,
+                "offset": 353
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 15,
+            "line": 21,
+            "offset": 499
+          },
+          "modifiers": {
+            "border": true
+          },
+          "sectionType": "Panel",
+          "start": {
+            "column": 9,
+            "line": 16,
+            "offset": 317
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 23,
+            "offset": 518
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 23,
+            "offset": 509
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 34,
+            "line": 25,
+            "offset": 553
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 25,
+            "offset": 528
+          },
+          "text": "**Nested Panels**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "padding": 16
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 40,
+                    "line": 29,
+                    "offset": 653
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 29,
+                    "offset": 630
+                  },
+                  "text": "**Outer Panel**",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {
+                    "padding": 12
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 42,
+                        "line": 31,
+                        "offset": 735
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 31,
+                        "offset": 714
+                      },
+                      "text": "Inner panel 1",
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 23,
+                    "line": 32,
+                    "offset": 758
+                  },
+                  "modifiers": {
+                    "border": true
+                  },
+                  "sectionType": "Panel",
+                  "start": {
+                    "column": 17,
+                    "line": 30,
+                    "offset": 670
+                  },
+                  "type": "Section"
+                },
+                {
+                  "attributes": {
+                    "padding": 12
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 42,
+                        "line": 34,
+                        "offset": 840
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 34,
+                        "offset": 819
+                      },
+                      "text": "Inner panel 2",
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 23,
+                    "line": 35,
+                    "offset": 863
+                  },
+                  "modifiers": {
+                    "border": true
+                  },
+                  "sectionType": "Panel",
+                  "start": {
+                    "column": 17,
+                    "line": 33,
+                    "offset": 775
+                  },
+                  "type": "Section"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 36,
+                "offset": 885
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 28,
+                "offset": 599
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 15,
+            "line": 37,
+            "offset": 900
+          },
+          "modifiers": {
+            "border": true
+          },
+          "sectionType": "Panel",
+          "start": {
+            "column": 9,
+            "line": 27,
+            "offset": 563
+          },
+          "type": "Section"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 38,
+        "offset": 914
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 84
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 39,
+    "offset": 925
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 36
+  },
+  "style": "clean",
+  "type": "Document"
+}

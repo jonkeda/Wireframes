@@ -1,0 +1,8 @@
+wireframe clean
+    Menu
+        MenuItem "Home" $icon:home @home
+        MenuItem "Dashboard" $icon:dashboard @dashboard
+        Separator
+        MenuItem "Settings" $icon:settings @settings
+    /Menu
+/wireframe

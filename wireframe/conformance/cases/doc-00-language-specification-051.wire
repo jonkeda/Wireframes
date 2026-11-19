@@ -1,0 +1,65 @@
+wireframe clean
+    // User Profile Form
+    wireframe clean
+        %title: User Profile
+        %version: 1.0
+    
+        Dock
+            Header dock=top padding=16
+                Horizontal justify=between
+                    Label "**User Profile**"
+                    IconButton $icon:close @:back
+                /Horizontal
+            /Header
+        
+            Content dock=fill padding=24
+                Vertical gap=16
+                    Card padding=16
+                        Vertical gap=12
+                            Label "**Personal Information**"
+                        
+                            Horizontal gap=16
+                                Vertical
+                                    Label "First Name"
+                                    TextInput "John" :txtFirst ?user.firstName
+                                /Vertical
+                                Vertical
+                                    Label "Last Name"
+                                    TextInput "Doe" :txtLast ?user.lastName
+                                /Vertical
+                            /Horizontal
+                        
+                            Label "Email"
+                            TextInput "john@example.com" :txtEmail required ?user.email
+                        
+                            Checkbox "Subscribe to newsletter" :chkNews ?user.newsletter
+                        /Vertical
+                    /Card
+                
+                    Card padding=16
+                        Vertical gap=12
+                            Label "**Preferences**"
+                        
+                            Switch "Dark Mode" :swDark ?user.darkMode
+                            Switch "Notifications" :swNotify ?user.notifications checked
+                        
+                            Label "Theme"
+                            Dropdown :ddlTheme ?user.theme
+                                Option "Light"
+                                Option "Dark"
+                                Option "System"
+                            /Dropdown
+                        /Vertical
+                    /Card
+                /Vertical
+            /Content
+        
+            Footer dock=bottom padding=16
+                Horizontal justify=end gap=8
+                    Button "Cancel" @:back
+                    Button "Save" primary :btnSave
+                /Horizontal
+            /Footer
+        /Dock
+    /wireframe
+/wireframe

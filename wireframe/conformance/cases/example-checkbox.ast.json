@@ -1,0 +1,313 @@
+{
+  "attributes": {
+    "title": "Checkbox Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 38,
+            "line": 6,
+            "offset": 133
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 104
+          },
+          "text": "**Checkbox Variants**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Checkbox",
+              "end": {
+                "column": 40,
+                "line": 9,
+                "offset": 197
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 170
+              },
+              "text": "Unchecked option",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Checkbox",
+              "end": {
+                "column": 46,
+                "line": 10,
+                "offset": 243
+              },
+              "modifiers": {
+                "checked": true
+              },
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 210
+              },
+              "text": "Checked option",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Checkbox",
+              "end": {
+                "column": 51,
+                "line": 11,
+                "offset": 294
+              },
+              "modifiers": {
+                "disabled": true
+              },
+              "start": {
+                "column": 13,
+                "line": 11,
+                "offset": 256
+              },
+              "text": "Disabled unchecked",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Checkbox",
+              "end": {
+                "column": 57,
+                "line": 12,
+                "offset": 351
+              },
+              "modifiers": {
+                "checked": true,
+                "disabled": true
+              },
+              "start": {
+                "column": 13,
+                "line": 12,
+                "offset": 307
+              },
+              "text": "Disabled checked",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Checkbox",
+              "end": {
+                "column": 48,
+                "line": 13,
+                "offset": 399
+              },
+              "modifiers": {
+                "required": true
+              },
+              "start": {
+                "column": 13,
+                "line": 13,
+                "offset": 364
+              },
+              "text": "Required option",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 14,
+            "offset": 417
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 143
+          },
+          "type": "Layout"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 16,
+            "offset": 436
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 16,
+            "offset": 427
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 35,
+            "line": 18,
+            "offset": 472
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 18,
+            "offset": 446
+          },
+          "text": "**Checkbox Group**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 4
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 45,
+                "line": 21,
+                "offset": 541
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 21,
+                "offset": 509
+              },
+              "text": "Select your preferences:",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Checkbox",
+              "end": {
+                "column": 51,
+                "line": 22,
+                "offset": 592
+              },
+              "modifiers": {
+                "checked": true
+              },
+              "start": {
+                "column": 13,
+                "line": 22,
+                "offset": 554
+              },
+              "text": "Email notifications",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Checkbox",
+              "end": {
+                "column": 41,
+                "line": 23,
+                "offset": 633
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 23,
+                "offset": 605
+              },
+              "text": "SMS notifications",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Checkbox",
+              "end": {
+                "column": 50,
+                "line": 24,
+                "offset": 683
+              },
+              "modifiers": {
+                "checked": true
+              },
+              "start": {
+                "column": 13,
+                "line": 24,
+                "offset": 646
+              },
+              "text": "Push notifications",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Checkbox",
+              "end": {
+                "column": 37,
+                "line": 25,
+                "offset": 720
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 25,
+                "offset": 696
+              },
+              "text": "Weekly digest",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 26,
+            "offset": 738
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 20,
+            "offset": 482
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 27,
+        "offset": 752
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 80
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 28,
+    "offset": 763
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 29
+  },
+  "style": "clean",
+  "type": "Document"
+}

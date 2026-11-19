@@ -1,0 +1,97 @@
+// Dashboard Wireframe
+// Demonstrates: Dock layout, Sidebar, Cards, Tables, Menu
+
+wireframe clean
+    %title: Analytics Dashboard
+
+    Dock
+        Header dock=top h=60
+            Horizontal padding=16 gap=16
+                Icon $chart
+                Label "**Analytics Pro**"
+                Spacer
+                TextInput "Search..." :txtSearch w=250
+                Avatar "JD" :avUser
+                Hamburger :mnuUser
+                    MenuItem "Profile" @Profile
+                    MenuItem "Settings" @Settings
+                    Separator
+                    MenuItem "Logout" @Logout
+                /Hamburger
+            /Horizontal
+        /Header
+        
+        Sidebar dock=left w=240
+            Menu :mnuNav
+                MenuItem "Dashboard" icon=$home @Dashboard
+                MenuItem "Analytics" icon=$chart @Analytics
+                MenuItem "Reports" icon=$file @Reports
+                MenuItem "Users" icon=$users @Users
+                MenuItem "Settings" icon=$settings @Settings
+            /Menu
+        /Sidebar
+        
+        Content dock=fill
+            Scroll padding=24
+                Vertical gap=24
+                    
+                    // Header
+                    Horizontal
+                        Label "**Dashboard Overview**"
+                        Spacer
+                        Button "Export" secondary
+                        Button "Refresh" primary
+                    /Horizontal
+                    
+                    // Stats cards
+                    Grid cols=4 gap=16
+                        Card padding=20
+                            Vertical gap=8
+                                Label "Total Users"
+                                Label "**24,521**"
+                            /Vertical
+                        /Card
+                        Card padding=20
+                            Vertical gap=8
+                                Label "Revenue"
+                                Label "**$84,230**"
+                            /Vertical
+                        /Card
+                        Card padding=20
+                            Vertical gap=8
+                                Label "Orders"
+                                Label "**1,429**"
+                            /Vertical
+                        /Card
+                        Card padding=20
+                            Vertical gap=8
+                                Label "Conversion"
+                                Label "**3.24%**"
+                            /Vertical
+                        /Card
+                    /Grid
+                    
+                    // Activity table
+                    Card padding=20
+                        Vertical gap=16
+                            Horizontal
+                                Label "**Recent Activity**"
+                                Spacer
+                                Label "View All" @Activity
+                            /Horizontal
+                            
+                            Table :tblActivity
+                                | User | Action | Date | Status |
+                                |------|--------|------|--------|
+                                | John Doe | Purchased Plan | 2 hours ago | Completed |
+                                | Jane Smith | Signed Up | 4 hours ago | New |
+                                | Bob Wilson | Updated Profile | Yesterday | Completed |
+                            /Table
+                        /Vertical
+                    /Card
+                    
+                /Vertical
+            /Scroll
+        /Content
+    /Dock
+/wireframe

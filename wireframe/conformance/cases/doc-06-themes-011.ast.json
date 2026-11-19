@@ -1,0 +1,59 @@
+{
+  "attributes": {
+    "theme": "sketch",
+    "title": "My Wireframe"
+  },
+  "children": [
+    {
+      "attributes": {
+        "padding": 16,
+        "w": 300
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 34,
+            "line": 6,
+            "offset": 125
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 100
+          },
+          "text": "Uses sketch theme",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 7,
+        "offset": 135
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 70
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 146
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "sketch",
+  "type": "Document"
+}

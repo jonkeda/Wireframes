@@ -1,0 +1,144 @@
+{
+  "attributes": {
+    "title": "My First Wireframe"
+  },
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 31,
+            "line": 6,
+            "offset": 119
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 97
+          },
+          "text": "My Application",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 12,
+        "line": 7,
+        "offset": 131
+      },
+      "modifiers": {},
+      "sectionType": "Header",
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 82
+      },
+      "type": "Section"
+    },
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 25,
+            "line": 10,
+            "offset": 170
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 10,
+            "offset": 154
+          },
+          "text": "Welcome!",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 37,
+            "line": 11,
+            "offset": 207
+          },
+          "modifiers": {
+            "primary": true
+          },
+          "start": {
+            "column": 9,
+            "line": 11,
+            "offset": 179
+          },
+          "text": "Get Started",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 12,
+        "offset": 217
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 9,
+        "offset": 141
+      },
+      "type": "Section"
+    },
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 34,
+            "line": 15,
+            "offset": 267
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 15,
+            "offset": 242
+          },
+          "text": "© 2025 My Company",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 12,
+        "line": 16,
+        "offset": 279
+      },
+      "modifiers": {},
+      "sectionType": "Footer",
+      "start": {
+        "column": 5,
+        "line": 14,
+        "offset": 227
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 17,
+    "offset": 290
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

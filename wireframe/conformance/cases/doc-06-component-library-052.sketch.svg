@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="128" viewBox="0 0 800 128" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g>
+          <path d="M16.0 15.0 Q400.0 7.0 784.0 14.8 M783.4 16.0 Q783.1 64.0 784.4 112.0 M784.0 112.9 Q400.0 118.7 16.0 113.2 M16.7 112.0 Q16.0 64.0 14.6 16.0" fill="#fefefe" stroke="#888888" stroke-width="2" />
+          <text x="32" y="40" class="wire-text wire-text-bold">Dialog Title</text>
+        </g><g role="group" aria-label="Dialog content"><text x="32" y="47" class="wire-text">Dialog content</text></g><g role="button" aria-label="Cancel"><g opacity="1">
+      <path d="M32.0 59.5 Q82.0 56.8 132.0 58.8 M130.9 60.0 Q130.2 78.0 133.4 96.0 M132.0 96.3 Q82.0 100.9 32.0 94.9 M33.2 96.0 Q32.6 78.0 32.5 60.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="82" y="83" text-anchor="middle" class="wire-text" fill="#333333">Cancel</text>
+    </g></g><g role="button" aria-label="OK"><g opacity="1">
+      <path d="M140.0 60.2 Q190.0 63.6 240.0 59.5 M241.2 60.0 Q242.7 78.0 241.0 96.0 M240.0 95.7 Q190.0 93.3 140.0 94.5 M138.9 96.0 Q138.9 78.0 141.3 60.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="190" y="83" text-anchor="middle" class="wire-text" fill="#ffffff">OK</text>
+    </g></g>
+</svg>

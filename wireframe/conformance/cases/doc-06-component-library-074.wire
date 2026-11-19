@@ -1,0 +1,11 @@
+wireframe clean
+    // Block repeat
+    Repeat 5
+        Card
+            Label "Card content"
+        /Card
+    /Repeat
+
+    // Inline repeat
+    Repeat 3 Button "Click"
+/wireframe

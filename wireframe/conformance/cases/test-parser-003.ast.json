@@ -1,0 +1,266 @@
+{
+  "attributes": {
+    "title": "Login Form"
+  },
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 30,
+                "line": 6,
+                "offset": 116
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 99
+              },
+              "text": "**Login**",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 34,
+                    "line": 9,
+                    "offset": 190
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 9,
+                    "offset": 173
+                  },
+                  "text": "Username:",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "TextInput",
+                  "end": {
+                    "column": 61,
+                    "line": 10,
+                    "offset": 251
+                  },
+                  "id": "txtUser",
+                  "modifiers": {
+                    "required": true
+                  },
+                  "placeholder": "Enter username",
+                  "start": {
+                    "column": 17,
+                    "line": 10,
+                    "offset": 207
+                  },
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 11,
+                "offset": 273
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 8,
+                "offset": 142
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 34,
+                    "line": 14,
+                    "offset": 347
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 14,
+                    "offset": 330
+                  },
+                  "text": "Password:",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "PasswordInput",
+                  "end": {
+                    "column": 65,
+                    "line": 15,
+                    "offset": 412
+                  },
+                  "id": "txtPass",
+                  "modifiers": {
+                    "required": true
+                  },
+                  "placeholder": "Enter password",
+                  "start": {
+                    "column": 17,
+                    "line": 15,
+                    "offset": 364
+                  },
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 16,
+                "offset": 434
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 13,
+                "offset": 299
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {},
+              "controlType": "Checkbox",
+              "end": {
+                "column": 48,
+                "line": 18,
+                "offset": 495
+              },
+              "id": "chkRemember",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 18,
+                "offset": 460
+              },
+              "text": "Remember me",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "gap": 8,
+                "justify": "end"
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 32,
+                    "line": 21,
+                    "offset": 581
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 21,
+                    "offset": 566
+                  },
+                  "text": "Cancel",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 49,
+                    "line": 22,
+                    "offset": 630
+                  },
+                  "id": "btnLogin",
+                  "modifiers": {
+                    "primary": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 22,
+                    "offset": 598
+                  },
+                  "text": "Login",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 23,
+                "offset": 654
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 20,
+                "offset": 521
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 24,
+            "offset": 672
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 71
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 25,
+        "offset": 682
+      },
+      "id": "crdLogin",
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 48
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 26,
+    "offset": 693
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,7 @@
+wireframe clean
+    Horizontal gap=8
+        Button "Left"
+        Button "Center"
+        Button "Right"
+    /Horizontal
+/wireframe

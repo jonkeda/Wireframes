@@ -1,0 +1,7 @@
+wireframe clean
+    Panel w=300 padding=16
+        Vertical gap=8
+            Label "Panel content"
+        /Vertical
+    /Panel
+/wireframe

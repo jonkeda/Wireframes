@@ -1,0 +1,17 @@
+wireframe clean
+    %title: Accessible Form Example
+    
+    Card w=400
+        Vertical gap=12
+            Label "**Accessible Form Example**"
+            
+            Label "Email Address *"
+            TextInput "Enter a valid email address" :txtEmail required pattern=email
+            
+            Label "Password *"
+            PasswordInput "Minimum 8 characters" :txtPass required min=8
+            
+            Button "Submit" :btnSubmit primary
+        /Vertical
+    /Card
+/wireframe

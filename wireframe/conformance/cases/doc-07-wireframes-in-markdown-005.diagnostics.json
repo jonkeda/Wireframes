@@ -1,0 +1,27 @@
+[
+  {
+    "column": 13,
+    "line": 8,
+    "message": "Unexpected token: First item"
+  },
+  {
+    "column": 13,
+    "line": 9,
+    "message": "Unexpected token: Second item"
+  },
+  {
+    "column": 13,
+    "line": 10,
+    "message": "Unexpected token: Third item"
+  },
+  {
+    "column": 9,
+    "line": 11,
+    "message": "Unexpected /List: no List is open here"
+  },
+  {
+    "column": 5,
+    "line": 17,
+    "message": "Unexpected /Vertical: no Vertical is open here"
+  }
+]

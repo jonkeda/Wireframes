@@ -1,0 +1,8 @@
+wireframe clean
+    Vertical gap=12
+        TextInput "Username" ?username required
+        TextInput "Email" ?email
+        TextInput "Password" ?password
+        TextInput "Disabled" ?disabled disabled
+    /Vertical
+/wireframe

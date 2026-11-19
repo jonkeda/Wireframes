@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <path d="M16.0 17.2 Q400.0 18.9 784.0 14.6 M784.3 16.0 Q791.0 300.0 783.6 584.0 M784.0 582.7 Q400.0 581.9 16.0 583.5 M15.8 584.0 Q10.4 300.0 15.7 16.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="**Accessible Form Example**"><text x="32" y="47" class="wire-text wire-text-bold">Accessible Form Example</text></g><g role="group" aria-label="Email Address *"><text x="32" y="79" class="wire-text">Email Address *</text></g><g role="textbox" aria-label="Enter a valid email address" aria-required="true" aria-placeholder="Enter a valid email address"><g>
+      <path d="M32.0 96.1 Q132.0 99.5 232.0 95.2 M233.3 96.0 Q233.6 114.0 230.7 132.0 M232.0 131.7 Q132.0 129.4 32.0 130.9 M30.8 132.0 Q29.3 114.0 32.3 96.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="119" class="wire-text wire-text-secondary">Enter a valid email address</text>
+      <text x="220" y="119" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="group" aria-label="Password *"><text x="32" y="159" class="wire-text">Password *</text></g><g role="textbox" aria-label="Minimum 8 characters" aria-required="true" aria-placeholder="Minimum 8 characters"><g>
+      <path d="M32.0 176.1 Q132.0 179.8 232.0 177.5 M233.4 176.0 Q234.3 194.0 233.4 212.0 M232.0 211.8 Q132.0 205.1 32.0 211.6 M30.8 212.0 Q32.5 194.0 32.5 176.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="199" class="wire-text wire-text-secondary">••••</text>
+      <text x="220" y="199" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="button" aria-label="Submit"><g opacity="1">
+      <path d="M32.0 224.5 Q82.0 229.4 132.0 222.7 M133.0 224.0 Q131.1 242.0 130.8 260.0 M132.0 259.4 Q82.0 251.5 32.0 259.4 M31.2 260.0 Q31.8 242.0 32.1 224.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="82" y="247" text-anchor="middle" class="wire-text" fill="#ffffff">Submit</text>
+    </g></g>
+</svg>

@@ -1,0 +1,86 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 22,
+            "line": 3,
+            "offset": 51
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 38
+          },
+          "text": "Ready",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Spacer",
+          "end": {
+            "column": 15,
+            "line": 4,
+            "offset": 66
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 60
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 34,
+            "line": 5,
+            "offset": 100
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 75
+          },
+          "text": "Line 42, Column 8",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 15,
+        "line": 6,
+        "offset": 115
+      },
+      "modifiers": {},
+      "sectionType": "StatusBar",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 7,
+    "offset": 126
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

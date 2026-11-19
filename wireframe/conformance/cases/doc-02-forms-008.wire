@@ -1,0 +1,15 @@
+wireframe clean
+    Vertical gap=12 w=200
+        Dropdown "Select country"
+            Option "United States"
+            Option "Canada"
+            Option "United Kingdom"
+            Option "Germany"
+        /Dropdown
+        
+        Dropdown "Color" expanded
+            Option "Red" selected
+            Option "Green"
+            Option "Blue"
+        /Dropdown
+/wireframe

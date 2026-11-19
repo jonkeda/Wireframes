@@ -1,0 +1,10 @@
+wireframe clean
+    Grid rows=2 cols=3 gap=16
+        Label "Cell 1"
+        Label "Cell 2"
+        Label "Cell 3"
+        Label "Cell 4"
+        Label "Cell 5"
+        Label "Cell 6"
+    /Grid
+/wireframe

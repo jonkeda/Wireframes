@@ -1,0 +1,52 @@
+{
+  "attributes": {},
+  "children": [],
+  "dataSections": [
+    {
+      "componentBody": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 24,
+            "line": 3,
+            "offset": 53
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 38
+          },
+          "text": "No name",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 15,
+        "line": 4,
+        "offset": 68
+      },
+      "rows": [],
+      "sectionType": "component",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "DataSection"
+    }
+  ],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 79
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

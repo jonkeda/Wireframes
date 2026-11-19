@@ -1,0 +1,154 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "cols": 3,
+        "gap": 8,
+        "rows": 3
+      },
+      "children": [
+        {
+          "attributes": {
+            "grid": "0,0,1,2"
+          },
+          "controlType": "Button",
+          "end": {
+            "column": 42,
+            "line": 3,
+            "offset": 86
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 53
+          },
+          "text": "Span 2 cols",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "grid": "0,2,1,1"
+          },
+          "controlType": "Button",
+          "end": {
+            "column": 37,
+            "line": 4,
+            "offset": 123
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 95
+          },
+          "text": "Normal",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "grid": "1,0,2,1"
+          },
+          "controlType": "Button",
+          "end": {
+            "column": 35,
+            "line": 5,
+            "offset": 158
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 132
+          },
+          "text": "Tall",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "grid": "1,1,1,1"
+          },
+          "controlType": "Button",
+          "end": {
+            "column": 37,
+            "line": 6,
+            "offset": 195
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 167
+          },
+          "text": "Center",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "grid": "1,2,1,1"
+          },
+          "controlType": "Button",
+          "end": {
+            "column": 37,
+            "line": 7,
+            "offset": 232
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 7,
+            "offset": 204
+          },
+          "text": "Bottom",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "grid": "2,1,1,2"
+          },
+          "controlType": "Button",
+          "end": {
+            "column": 35,
+            "line": 8,
+            "offset": 267
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 241
+          },
+          "text": "Wide",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 9,
+        "offset": 277
+      },
+      "layoutType": "Grid",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 10,
+    "offset": 288
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

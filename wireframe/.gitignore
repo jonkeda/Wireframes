@@ -10,3 +10,9 @@ coverage/
 # Build artifacts
 *.vsix
 test-output.*
+
+# .NET
+bin/
+obj/
+*.user
+TestResults/

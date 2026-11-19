@@ -1,0 +1,54 @@
+wireframe clean
+    %title: Analytics Dashboard
+    
+    Dock
+        Header dock=top h=60
+            Horizontal justify=between padding=16
+                Label "**Analytics Dashboard**"
+                Dropdown :ddlPeriod
+                    Option "Last 7 days"
+                    Option "Last 30 days"
+                    Option "Last 90 days"
+                /Dropdown
+            /Horizontal
+        /Header
+        
+        Content dock=fill padding=16
+            Vertical gap=16
+                Horizontal gap=16
+                    Card w=200
+                        Label "Page Views"
+                        Label "**45.2K**"
+                        Progress value=72
+                    /Card
+                    
+                    Card w=200
+                        Label "Visitors"
+                        Label "**12.8K**"
+                        Progress value=58
+                    /Card
+                    
+                    Card w=200
+                        Label "Bounce Rate"
+                        Label "**32%**"
+                        Progress value=32
+                    /Card
+                /Horizontal
+                
+                Card
+                    Vertical gap=12
+                        Label "**Recent Activity**"
+                        
+                        Table :tblActivity
+                            | Event | User | Time |
+                            |-------|------|------|
+                            | Page view | john@example.com | 2 min ago |
+                            | Sign up | jane@example.com | 5 min ago |
+                            | Purchase | bob@example.com | 12 min ago |
+                        /Table
+                    /Vertical
+                /Card
+            /Vertical
+        /Content
+    /Dock
+/wireframe

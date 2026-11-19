@@ -1,0 +1,34 @@
+wireframe clean
+    Dock width=800 height=600
+        Header dock=top height=64
+            Horizontal gap=16
+                Heading "MyApp" level=1
+                Horizontal gap=8
+                    Link "Home" @home
+                    Link "About" @about
+                    Link "Contact" @contact
+                /Horizontal
+                Button "Sign In" primary
+            /Horizontal
+        /Header
+        
+        Sidebar dock=left width=200
+            Menu
+                MenuItem "Dashboard" $icon:home active
+                MenuItem "Projects" $icon:folder
+                MenuItem "Tasks" $icon:check
+                MenuItem "Reports" $icon:chart
+                MenuItem "Settings" $icon:settings
+            /Menu
+        /Sidebar
+        
+        Content dock=fill
+            Heading "Dashboard" level=2
+            Label "Welcome to your dashboard"
+        /Content
+        
+        Footer dock=bottom height=40
+            Label "© 2025 MyApp"
+        /Footer
+    /Dock
+/wireframe

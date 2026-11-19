@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="120" viewBox="0 0 80 120" role="img">
+  <style>
+    .wire-text { font-family: "Courier New", monospace; font-size: 14px; fill: #ffffff; }
+    .wire-text-secondary { fill: #a0c4e8; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#1e3a5f" />
+  <g role="switch" aria-label="Enable feature" aria-checked="false"><g><rect x="16" y="16" width="44" height="24" rx="12" fill="#4a7ab0" /><circle cx="28" cy="28" r="10" fill="#1e3a5f" /><text x="68" y="33" class="wire-text">Enable feature</text></g></g><g role="switch" aria-label="Dark mode" aria-checked="true"><g><rect x="16" y="48" width="44" height="24" rx="12" fill="#ffffff" /><circle cx="48" cy="60" r="10" fill="#1e3a5f" /><text x="68" y="65" class="wire-text">Dark mode</text></g></g><g role="switch" aria-label="Notifications" aria-checked="false"><g><rect x="16" y="80" width="44" height="24" rx="12" fill="#4a7ab0" /><circle cx="28" cy="92" r="10" fill="#1e3a5f" /><text x="68" y="97" class="wire-text">Notifications</text></g></g>
+</svg>

@@ -1,0 +1,185 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "padding": 20,
+        "w": 400
+      },
+      "children": [
+        {
+          "attributes": {
+            "gap": 12
+          },
+          "children": [
+            {
+              "attributes": {
+                "level": 3
+              },
+              "controlType": "Heading",
+              "end": {
+                "column": 43,
+                "line": 4,
+                "offset": 112
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 82
+              },
+              "text": "API Response",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Table",
+              "end": {
+                "column": 19,
+                "line": 11,
+                "offset": 325
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 138
+              },
+              "tableRows": [
+                {
+                  "cells": [
+                    "Field",
+                    "Type",
+                    "Required"
+                  ],
+                  "isSeparator": false
+                },
+                {
+                  "cells": [
+                    "name",
+                    "string",
+                    "Yes"
+                  ],
+                  "isSeparator": false
+                },
+                {
+                  "cells": [
+                    "email",
+                    "string",
+                    "Yes"
+                  ],
+                  "isSeparator": false
+                },
+                {
+                  "cells": [
+                    "age",
+                    "number",
+                    "No"
+                  ],
+                  "isSeparator": false
+                }
+              ],
+              "type": "Component"
+            },
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 42,
+                    "line": 14,
+                    "offset": 409
+                  },
+                  "modifiers": {
+                    "primary": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 14,
+                    "offset": 384
+                  },
+                  "text": "Validate",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 31,
+                    "line": 15,
+                    "offset": 440
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 15,
+                    "offset": 426
+                  },
+                  "text": "Clear",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 16,
+                "offset": 464
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 13,
+                "offset": 351
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 17,
+            "offset": 482
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 54
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 18,
+        "offset": 492
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 24
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 19,
+    "offset": 503
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "blueprint",
+  "type": "Document"
+}

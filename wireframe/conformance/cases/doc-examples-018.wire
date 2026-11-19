@@ -1,0 +1,15 @@
+wireframe clean
+    Dialog "Confirm Delete" :dlgConfirm
+        Vertical gap=16
+            Label "Are you sure you want to delete this item?"
+            Label "This action cannot be undone."
+            
+            Separator
+            
+            Horizontal gap=8 justify=end
+                Button "Cancel" @:close
+                Button "Delete" :btnDelete primary
+            /Horizontal
+        /Vertical
+    /Dialog
+/wireframe

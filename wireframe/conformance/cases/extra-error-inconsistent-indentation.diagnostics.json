@@ -1,0 +1,12 @@
+[
+  {
+    "column": 7,
+    "line": 4,
+    "message": "Inconsistent indentation"
+  },
+  {
+    "column": 5,
+    "line": 5,
+    "message": "Unexpected /Vertical: no Vertical is open here"
+  }
+]

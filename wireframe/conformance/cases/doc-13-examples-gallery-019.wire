@@ -1,0 +1,84 @@
+wireframe clean
+    %title: Admin Dashboard
+    
+    Dock width=1200 height=800
+        Header dock=top height=64
+            Horizontal gap=16
+                Heading "Dashboard" level=1
+                Horizontal gap=8
+                    Button "Notifications" $icon:bell
+                    Avatar ?user
+                /Horizontal
+            /Horizontal
+        /Header
+        
+        Sidebar dock=left width=220
+            Menu
+                MenuItem "Overview" $icon:home active
+                MenuItem "Analytics" $icon:chart
+                MenuItem "Customers" $icon:users
+                MenuItem "Products" $icon:box
+                MenuItem "Orders" $icon:cart
+                Separator
+                MenuItem "Settings" $icon:settings
+            /Menu
+        /Sidebar
+        
+        Content dock=fill padding=24
+            Grid columns=4 gap=16
+                Card
+                    Label "Total Revenue"
+                    Heading "$45,231" level=2
+                    Badge "+20.1%" color=green
+                /Card
+                Card
+                    Label "Subscriptions"
+                    Heading "2,350" level=2
+                    Badge "+180.1%" color=green
+                /Card
+                Card
+                    Label "Sales"
+                    Heading "12,234" level=2
+                    Badge "+19%" color=green
+                /Card
+                Card
+                    Label "Active Now"
+                    Heading "573" level=2
+                    Badge "+201" color=green
+                /Card
+            /Grid
+            
+            Horizontal gap=24
+                Card width=600
+                    Heading "Recent Sales" level=3
+                    List
+                        ListItem
+                            Horizontal gap=16
+                                Avatar ?avatar1
+                                Vertical
+                                    Label "Olivia Martin"
+                                    Label "olivia.martin@email.com"
+                                /Vertical
+                                Label "+$1,999.00"
+                            /Horizontal
+                        /ListItem
+                        ListItem
+                            Horizontal gap=16
+                                Avatar ?avatar2
+                                Vertical
+                                    Label "Jackson Lee"
+                                    Label "jackson.lee@email.com"
+                                /Vertical
+                                Label "+$39.00"
+                            /Horizontal
+                        /ListItem
+                    /List
+                /Card
+                Card
+                    Heading "Overview" level=3
+                    Chart ?revenueChart type=bar
+                /Card
+            /Horizontal
+        /Content
+    /Dock
+/wireframe

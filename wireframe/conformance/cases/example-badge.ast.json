@@ -1,0 +1,495 @@
+{
+  "attributes": {
+    "title": "Badge Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 35,
+            "line": 6,
+            "offset": 124
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 98
+          },
+          "text": "**Badge Variants**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Badge",
+              "end": {
+                "column": 24,
+                "line": 9,
+                "offset": 175
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 164
+              },
+              "text": "New",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Badge",
+              "end": {
+                "column": 22,
+                "line": 10,
+                "offset": 197
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 188
+              },
+              "text": "3",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Badge",
+              "end": {
+                "column": 24,
+                "line": 11,
+                "offset": 221
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 11,
+                "offset": 210
+              },
+              "text": "99+",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Badge",
+              "end": {
+                "column": 33,
+                "line": 12,
+                "offset": 254
+              },
+              "modifiers": {
+                "primary": true
+              },
+              "start": {
+                "column": 13,
+                "line": 12,
+                "offset": 234
+              },
+              "text": "Sale",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Badge",
+              "end": {
+                "column": 35,
+                "line": 13,
+                "offset": 289
+              },
+              "modifiers": {
+                "secondary": true
+              },
+              "start": {
+                "column": 13,
+                "line": 13,
+                "offset": 267
+              },
+              "text": "Beta",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 20,
+            "line": 14,
+            "offset": 309
+          },
+          "layoutType": "Horizontal",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 134
+          },
+          "type": "Layout"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 16,
+            "offset": 328
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 16,
+            "offset": 319
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 38,
+            "line": 18,
+            "offset": 367
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 18,
+            "offset": 338
+          },
+          "text": "**Badges with Icons**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 24
+          },
+          "children": [
+            {
+              "attributes": {
+                "align": "center",
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "gap": 4
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Icon",
+                      "end": {
+                        "column": 36,
+                        "line": 23,
+                        "offset": 503
+                      },
+                      "icon": "icon:mail",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 23,
+                        "offset": 488
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Badge",
+                      "end": {
+                        "column": 30,
+                        "line": 24,
+                        "offset": 533
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 24,
+                        "offset": 524
+                      },
+                      "text": "5",
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 25,
+                    "offset": 561
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 22,
+                    "offset": 451
+                  },
+                  "type": "Layout"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 33,
+                    "line": 26,
+                    "offset": 594
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 26,
+                    "offset": 578
+                  },
+                  "text": "Messages",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 27,
+                "offset": 616
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 21,
+                "offset": 407
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "align": "center",
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "gap": 4
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Icon",
+                      "end": {
+                        "column": 36,
+                        "line": 30,
+                        "offset": 725
+                      },
+                      "icon": "icon:bell",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 30,
+                        "offset": 710
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Badge",
+                      "end": {
+                        "column": 31,
+                        "line": 31,
+                        "offset": 756
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 31,
+                        "offset": 746
+                      },
+                      "text": "12",
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 32,
+                    "offset": 784
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 29,
+                    "offset": 673
+                  },
+                  "type": "Layout"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 38,
+                    "line": 33,
+                    "offset": 822
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 33,
+                    "offset": 801
+                  },
+                  "text": "Notifications",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 34,
+                "offset": 844
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 28,
+                "offset": 629
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "align": "center",
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "gap": 4
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Icon",
+                      "end": {
+                        "column": 36,
+                        "line": 37,
+                        "offset": 953
+                      },
+                      "icon": "icon:cart",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 37,
+                        "offset": 938
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Badge",
+                      "end": {
+                        "column": 30,
+                        "line": 38,
+                        "offset": 983
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 38,
+                        "offset": 974
+                      },
+                      "text": "3",
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 39,
+                    "offset": 1011
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 36,
+                    "offset": 901
+                  },
+                  "type": "Layout"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 29,
+                    "line": 40,
+                    "offset": 1040
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 40,
+                    "offset": 1028
+                  },
+                  "text": "Cart",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 41,
+                "offset": 1062
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 35,
+                "offset": 857
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 20,
+            "line": 42,
+            "offset": 1082
+          },
+          "layoutType": "Horizontal",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 20,
+            "offset": 377
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 43,
+        "offset": 1096
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 74
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 44,
+    "offset": 1107
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 26
+  },
+  "style": "clean",
+  "type": "Document"
+}

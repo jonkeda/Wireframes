@@ -1,0 +1,14 @@
+wireframe clean
+    Dialog width=480
+        Heading "Edit Profile" level=2
+        Vertical gap=16
+            TextInput "Name" ?name
+            TextInput "Email" ?email
+            Textarea "Bio" ?bio rows=3
+        /Vertical
+        Horizontal gap=16
+            Button "Cancel" secondary
+            Button "Save" primary
+        /Horizontal
+    /Dialog
+/wireframe

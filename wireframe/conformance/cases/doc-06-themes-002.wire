@@ -1,0 +1,10 @@
+wireframe sketch
+    Card w=300 padding=16
+        Vertical gap=12
+            Heading "Sketch Theme" level=2
+            Label "Hand-drawn look"
+            Button "Primary Action" primary
+            TextInput placeholder="Enter text"
+        /Vertical
+    /Card
+/wireframe

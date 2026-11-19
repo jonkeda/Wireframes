@@ -1,0 +1,9 @@
+wireframe clean
+    DataGrid rows=3
+        ColumnText "Name" editable
+        ColumnCheckbox "Active" editable=false
+        ColumnNumber "Score" editable=true
+    /DataGrid
+    Checkbox "Remember me" checked=false
+    Switch "Notify" checked=true
+/wireframe

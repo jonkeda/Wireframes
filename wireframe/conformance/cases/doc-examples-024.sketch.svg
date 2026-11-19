@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <path d="M16.0 17.2 Q400.0 18.9 784.0 14.6 M784.3 16.0 Q791.0 300.0 783.6 584.0 M784.0 582.7 Q400.0 581.9 16.0 583.5 M15.8 584.0 Q10.4 300.0 15.7 16.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="**Grid with Positioning**"><text x="32" y="47" class="wire-text wire-text-bold">Grid with Positioning</text></g><g role="button" aria-label="Span 2 cols"><g opacity="1">
+      <path d="M32.0 67.9 Q92.0 67.2 152.0 67.0 M150.6 68.0 Q147.3 86.0 152.9 104.0 M152.0 104.0 Q92.0 105.7 32.0 103.1 M30.6 104.0 Q34.7 86.0 33.0 68.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="92" y="91" text-anchor="middle" class="wire-text" fill="#333333">Span 2 cols</text>
+    </g></g><g role="button" aria-label="Top right"><g opacity="1">
+      <path d="M528.0 67.5 Q580.0 59.5 632.0 69.1 M630.9 68.0 Q632.7 86.0 632.0 104.0 M632.0 104.4 Q580.0 110.2 528.0 105.3 M529.2 104.0 Q530.1 86.0 526.9 68.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="580" y="91" text-anchor="middle" class="wire-text" fill="#333333">Top right</text>
+    </g></g><g role="button" aria-label="Span 2 rows"><g opacity="1">
+      <path d="M32.0 236.0 Q92.0 237.8 152.0 237.2 M151.8 237.3 Q155.0 255.3 151.3 273.3 M152.0 274.5 Q92.0 273.8 32.0 274.5 M32.4 273.3 Q27.9 255.3 33.3 237.3" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="92" y="260.33" text-anchor="middle" class="wire-text" fill="#333333">Span 2 rows</text>
+    </g></g><g role="button" aria-label="Center"><g opacity="1">
+      <path d="M280.0 238.1 Q330.0 243.0 380.0 236.0 M380.7 237.3 Q383.1 255.3 381.2 273.3 M380.0 272.4 Q330.0 269.7 280.0 274.4 M279.4 273.3 Q277.2 255.3 281.4 237.3" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="330" y="260.33" text-anchor="middle" class="wire-text" fill="#333333">Center</text>
+    </g></g><g role="button" aria-label="Right"><g opacity="1">
+      <path d="M528.0 238.4 Q578.0 231.0 628.0 236.5 M628.4 237.3 Q625.3 255.3 629.4 273.3 M628.0 272.1 Q578.0 278.3 528.0 271.9 M527.8 273.3 Q528.5 255.3 526.9 237.3" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="578" y="260.33" text-anchor="middle" class="wire-text" fill="#333333">Right</text>
+    </g></g><g role="button" aria-label="Bottom span"><g opacity="1">
+      <path d="M280.0 407.5 Q340.0 403.0 400.0 407.3 M400.6 406.7 Q396.5 424.7 399.2 442.7 M400.0 441.7 Q340.0 449.0 280.0 442.8 M279.5 442.7 Q282.3 424.7 279.7 406.7" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="340" y="429.67" text-anchor="middle" class="wire-text" fill="#333333">Bottom span</text>
+    </g></g>
+</svg>

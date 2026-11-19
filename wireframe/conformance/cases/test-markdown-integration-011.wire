@@ -1,0 +1,8 @@
+wireframe clean
+    Card w=300
+        Vertical gap=8
+            Heading "My Title" level=2
+            Label "My Description"
+        /Vertical
+    /Card
+/wireframe

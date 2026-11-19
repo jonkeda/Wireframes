@@ -1,0 +1,96 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 12,
+        "w": 300
+      },
+      "children": [
+        {
+          "attributes": {
+            "placeholder": "Password"
+          },
+          "controlType": "PasswordInput",
+          "end": {
+            "column": 45,
+            "line": 3,
+            "offset": 86
+          },
+          "modifiers": {},
+          "placeholder": "Password",
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 50
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "placeholder": "Select date"
+          },
+          "controlType": "DateInput",
+          "end": {
+            "column": 44,
+            "line": 4,
+            "offset": 130
+          },
+          "modifiers": {},
+          "placeholder": "Select date",
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 95
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "placeholder": "Enter number"
+          },
+          "controlType": "NumberInput",
+          "end": {
+            "column": 47,
+            "line": 5,
+            "offset": 177
+          },
+          "modifiers": {},
+          "placeholder": "Enter number",
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 139
+          },
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 6,
+        "offset": 178
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 6,
+    "offset": 188
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

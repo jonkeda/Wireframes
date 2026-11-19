@@ -1,0 +1,7 @@
+wireframe blueprint
+    Card width=300
+        Heading "Blueprint Style" level=2
+        Label "Technical blueprint aesthetic"
+        Button "Action" primary
+    /Card
+/wireframe

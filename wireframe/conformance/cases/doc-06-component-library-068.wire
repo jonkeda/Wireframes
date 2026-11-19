@@ -1,0 +1,10 @@
+wireframe clean
+    DataGrid rows=3 selected
+        ColumnText "Name"
+        ColumnText "Email"
+        ColumnDate "Created"
+        ColumnNumber "Score"
+        ColumnCheckbox "Active"
+        ColumnButton "Edit"
+    /DataGrid
+/wireframe

@@ -1,0 +1,5 @@
+wireframe clean
+    Step "Step Label"
+    Step "Completed" completed
+    Step "Active" active
+/wireframe

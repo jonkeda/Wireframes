@@ -1,0 +1,77 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {
+            "h": 100,
+            "w": 100
+          },
+          "controlType": "Image",
+          "end": {
+            "column": 26,
+            "line": 3,
+            "offset": 63
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 46
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "h": 100,
+            "w": 150
+          },
+          "controlType": "Image",
+          "end": {
+            "column": 42,
+            "line": 4,
+            "offset": 105
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 72
+          },
+          "text": "Product Photo",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 5,
+        "offset": 106
+      },
+      "layoutType": "Horizontal",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 116
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,66 @@
+{
+  "attributes": {},
+  "children": [],
+  "dataSections": [
+    {
+      "columns": [
+        "Field",
+        "Rule"
+      ],
+      "end": {
+        "column": 13,
+        "line": 6,
+        "offset": 107
+      },
+      "records": [
+        {
+          "Field": "Name",
+          "Rule": "required"
+        }
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Field",
+            "Rule"
+          ],
+          "isSeparator": false
+        },
+        {
+          "cells": [
+            "---",
+            "---"
+          ],
+          "isSeparator": true
+        },
+        {
+          "cells": [
+            "Name",
+            "required",
+            "extra"
+          ],
+          "isSeparator": false
+        }
+      ],
+      "sectionType": "validations",
+      "start": {
+        "column": 1,
+        "line": 2,
+        "offset": 16
+      },
+      "type": "DataSection"
+    }
+  ],
+  "end": {
+    "column": 11,
+    "line": 7,
+    "offset": 118
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

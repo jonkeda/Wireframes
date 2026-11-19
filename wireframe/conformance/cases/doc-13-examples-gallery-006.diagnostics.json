@@ -1,0 +1,157 @@
+[
+  {
+    "column": 13,
+    "line": 5,
+    "message": "Unexpected token: Group"
+  },
+  {
+    "column": 19,
+    "line": 5,
+    "message": "Unexpected token: Profile"
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Unexpected token:                 "
+  },
+  {
+    "column": 17,
+    "line": 7,
+    "message": "Unexpected token: Textarea"
+  },
+  {
+    "column": 26,
+    "line": 7,
+    "message": "Unexpected token: Bio"
+  },
+  {
+    "column": 32,
+    "line": 7,
+    "message": "Unexpected token: ?bio"
+  },
+  {
+    "column": 37,
+    "line": 7,
+    "message": "Unexpected token: rows=3"
+  },
+  {
+    "column": 13,
+    "line": 9,
+    "message": "Unknown closing keyword /Group"
+  },
+  {
+    "column": 13,
+    "line": 11,
+    "message": "Unexpected token: Group"
+  },
+  {
+    "column": 19,
+    "line": 11,
+    "message": "Unexpected token: Notifications"
+  },
+  {
+    "column": 1,
+    "line": 12,
+    "message": "Unexpected token:                 "
+  },
+  {
+    "column": 13,
+    "line": 15,
+    "message": "Unknown closing keyword /Group"
+  },
+  {
+    "column": 13,
+    "line": 17,
+    "message": "Unexpected token: Group"
+  },
+  {
+    "column": 19,
+    "line": 17,
+    "message": "Unexpected token: Privacy"
+  },
+  {
+    "column": 1,
+    "line": 18,
+    "message": "Unexpected token:                 "
+  },
+  {
+    "column": 17,
+    "line": 18,
+    "message": "Unexpected token: RadioGroup"
+  },
+  {
+    "column": 28,
+    "line": 18,
+    "message": "Unexpected token: ?visibility"
+  },
+  {
+    "column": 1,
+    "line": 19,
+    "message": "Unexpected token:                     "
+  },
+  {
+    "column": 21,
+    "line": 19,
+    "message": "Unexpected token: RadioButton"
+  },
+  {
+    "column": 33,
+    "line": 19,
+    "message": "Unexpected token: Public"
+  },
+  {
+    "column": 42,
+    "line": 19,
+    "message": "Unexpected token: value=public"
+  },
+  {
+    "column": 21,
+    "line": 20,
+    "message": "Unexpected token: RadioButton"
+  },
+  {
+    "column": 33,
+    "line": 20,
+    "message": "Unexpected token: Private"
+  },
+  {
+    "column": 43,
+    "line": 20,
+    "message": "Unexpected token: value=private"
+  },
+  {
+    "column": 21,
+    "line": 21,
+    "message": "Unexpected token: RadioButton"
+  },
+  {
+    "column": 33,
+    "line": 21,
+    "message": "Unexpected token: Friends only"
+  },
+  {
+    "column": 48,
+    "line": 21,
+    "message": "Unexpected token: value=friends"
+  },
+  {
+    "column": 17,
+    "line": 22,
+    "message": "Unknown closing keyword /RadioGroup"
+  },
+  {
+    "column": 13,
+    "line": 23,
+    "message": "Unknown closing keyword /Group"
+  },
+  {
+    "column": 9,
+    "line": 29,
+    "message": "Unexpected /Vertical: no Vertical is open here"
+  },
+  {
+    "column": 5,
+    "line": 30,
+    "message": "Unexpected /Card: no Card is open here"
+  }
+]

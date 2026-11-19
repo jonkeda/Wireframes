@@ -1,0 +1,26 @@
+wireframe clean
+    %title: Login Form
+    
+    Card :crdLogin
+        Vertical gap=16
+            Label "**Login**"
+            
+            Vertical gap=8
+                Label "Username:"
+                TextInput "Enter username" :txtUser required
+            /Vertical
+            
+            Vertical gap=8
+                Label "Password:"
+                PasswordInput "Enter password" :txtPass required
+            /Vertical
+            
+            Checkbox "Remember me" :chkRemember
+            
+            Horizontal justify=end gap=8
+                Button "Cancel"
+                Button "Login" primary :btnLogin
+            /Horizontal
+        /Vertical
+    /Card
+/wireframe

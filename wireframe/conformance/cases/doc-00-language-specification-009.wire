@@ -1,0 +1,7 @@
+wireframe clean
+    Vertical gap=8 padding=16
+        Label "Item 1"
+        Label "Item 2"
+        Label "Item 3"
+    /Vertical
+/wireframe

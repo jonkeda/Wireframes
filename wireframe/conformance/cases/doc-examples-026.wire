@@ -1,0 +1,32 @@
+wireframe clean
+    %title: Avatar Size Variants
+    
+    Card
+        Vertical gap=16
+            Label "**Avatar Sizes**"
+            
+            Horizontal gap=16 align=center
+                Vertical gap=4 align=center
+                    Avatar "XS" size=xs circle
+                    Label "xs (24px)"
+                /Vertical
+                Vertical gap=4 align=center
+                    Avatar "SM" size=sm circle
+                    Label "sm (32px)"
+                /Vertical
+                Vertical gap=4 align=center
+                    Avatar "MD" size=md circle
+                    Label "md (40px)"
+                /Vertical
+                Vertical gap=4 align=center
+                    Avatar "LG" size=lg circle
+                    Label "lg (56px)"
+                /Vertical
+                Vertical gap=4 align=center
+                    Avatar "XL" size=xl circle
+                    Label "xl (80px)"
+                /Vertical
+            /Horizontal
+        /Vertical
+    /Card
+/wireframe

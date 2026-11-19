@@ -1,0 +1,20 @@
+wireframe clean
+    %title: Login Form
+    
+    Card w=300
+        Vertical gap=16
+            Label "**Login**"
+            
+            Label "Email:"
+            TextInput "Enter your email" :txtEmail required
+            
+            Label "Password:"
+            PasswordInput "Enter password" :txtPass required
+            
+            Checkbox "Remember me" :chkRemember
+            
+            Button "Sign In" :btnLogin primary
+            Label "Forgot password?" @ForgotPassword
+        /Vertical
+    /Card
+/wireframe

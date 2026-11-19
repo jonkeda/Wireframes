@@ -1,0 +1,165 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "padding": 24,
+        "w": 350
+      },
+      "children": [
+        {
+          "attributes": {
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 35,
+                "line": 4,
+                "offset": 100
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 78
+              },
+              "text": "Welcome to App",
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "placeholder": "Enter email"
+              },
+              "controlType": "TextInput",
+              "end": {
+                "column": 56,
+                "line": 5,
+                "offset": 156
+              },
+              "modifiers": {},
+              "placeholder": "Enter email",
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 113
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "PasswordInput",
+              "end": {
+                "column": 37,
+                "line": 6,
+                "offset": 193
+              },
+              "modifiers": {},
+              "placeholder": "Password",
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 169
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Checkbox",
+              "end": {
+                "column": 35,
+                "line": 7,
+                "offset": 228
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 7,
+                "offset": 206
+              },
+              "text": "Remember me",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 37,
+                "line": 8,
+                "offset": 265
+              },
+              "modifiers": {
+                "primary": true
+              },
+              "start": {
+                "column": 13,
+                "line": 8,
+                "offset": 241
+              },
+              "text": "Sign In",
+              "type": "Control"
+            },
+            {
+              "attributes": {},
+              "controlType": "Link",
+              "end": {
+                "column": 36,
+                "line": 9,
+                "offset": 301
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 278
+              },
+              "text": "Forgot password?",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 10,
+            "offset": 319
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 50
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 11,
+        "offset": 329
+      },
+      "modifiers": {},
+      "sectionType": "Card",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Section"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 12,
+    "offset": 340
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

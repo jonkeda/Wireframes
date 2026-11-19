@@ -1,0 +1,9 @@
+wireframe clean
+    Tab "Tab Label"
+        // Tab content
+    /Tab
+
+    Tab "Active Tab" active
+        // Content
+    /Tab
+/wireframe

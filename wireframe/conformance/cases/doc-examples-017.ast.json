@@ -1,0 +1,640 @@
+{
+  "attributes": {
+    "title": "Product Page"
+  },
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {
+            "dock": "top",
+            "h": 60
+          },
+          "children": [
+            {
+              "attributes": {
+                "justify": "between",
+                "padding": 16
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 34,
+                    "line": 7,
+                    "offset": 171
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 7,
+                    "offset": 154
+                  },
+                  "text": "**STORE**",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "TextInput",
+                  "end": {
+                    "column": 58,
+                    "line": 8,
+                    "offset": 229
+                  },
+                  "id": "txtSearch",
+                  "modifiers": {},
+                  "placeholder": "Search products...",
+                  "start": {
+                    "column": 17,
+                    "line": 8,
+                    "offset": 188
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "IconButton",
+                  "end": {
+                    "column": 40,
+                    "line": 9,
+                    "offset": 269
+                  },
+                  "icon": "cart",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 9,
+                    "offset": 246
+                  },
+                  "text": "Cart",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 10,
+                "offset": 293
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 100
+              },
+              "type": "Layout"
+            }
+          ],
+          "dock": "top",
+          "end": {
+            "column": 16,
+            "line": 11,
+            "offset": 309
+          },
+          "modifiers": {},
+          "sectionType": "Header",
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 67
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {
+            "dock": "fill",
+            "padding": 24
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 24
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "w": 400
+                  },
+                  "children": [
+                    {
+                      "attributes": {
+                        "h": 300
+                      },
+                      "controlType": "Image",
+                      "end": {
+                        "column": 48,
+                        "line": 16,
+                        "offset": 460
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 16,
+                        "offset": 433
+                      },
+                      "text": "product-image",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {
+                        "gap": 8
+                      },
+                      "children": [
+                        {
+                          "attributes": {
+                            "h": 80,
+                            "w": 80
+                          },
+                          "controlType": "Image",
+                          "end": {
+                            "column": 50,
+                            "line": 18,
+                            "offset": 547
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 18,
+                            "offset": 522
+                          },
+                          "text": "thumb-1",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {
+                            "h": 80,
+                            "w": 80
+                          },
+                          "controlType": "Image",
+                          "end": {
+                            "column": 50,
+                            "line": 19,
+                            "offset": 597
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 19,
+                            "offset": 572
+                          },
+                          "text": "thumb-2",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {
+                            "h": 80,
+                            "w": 80
+                          },
+                          "controlType": "Image",
+                          "end": {
+                            "column": 50,
+                            "line": 20,
+                            "offset": 647
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 20,
+                            "offset": 622
+                          },
+                          "text": "thumb-3",
+                          "type": "Control"
+                        }
+                      ],
+                      "end": {
+                        "column": 32,
+                        "line": 21,
+                        "offset": 679
+                      },
+                      "layoutType": "Horizontal",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 17,
+                        "offset": 481
+                      },
+                      "type": "Layout"
+                    }
+                  ],
+                  "end": {
+                    "column": 22,
+                    "line": 22,
+                    "offset": 701
+                  },
+                  "modifiers": {},
+                  "sectionType": "Card",
+                  "start": {
+                    "column": 17,
+                    "line": 15,
+                    "offset": 402
+                  },
+                  "type": "Section"
+                },
+                {
+                  "attributes": {
+                    "gap": 16,
+                    "w": 400
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "Breadcrumb",
+                      "end": {
+                        "column": 32,
+                        "line": 29,
+                        "offset": 989
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 25,
+                        "offset": 777
+                      },
+                      "type": "Component"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 60,
+                        "line": 31,
+                        "offset": 1070
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 31,
+                        "offset": 1031
+                      },
+                      "text": "**Premium Wireless Headphones**",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {
+                        "gap": 8
+                      },
+                      "children": [
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 41,
+                            "line": 34,
+                            "offset": 1169
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 34,
+                            "offset": 1153
+                          },
+                          "text": "**$299**",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {},
+                          "controlType": "Label",
+                          "end": {
+                            "column": 41,
+                            "line": 35,
+                            "offset": 1210
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 35,
+                            "offset": 1194
+                          },
+                          "text": "~~$399~~",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {
+                            "type": "success"
+                          },
+                          "controlType": "Badge",
+                          "end": {
+                            "column": 53,
+                            "line": 36,
+                            "offset": 1263
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 36,
+                            "offset": 1235
+                          },
+                          "text": "25% OFF",
+                          "type": "Control"
+                        }
+                      ],
+                      "end": {
+                        "column": 32,
+                        "line": 37,
+                        "offset": 1295
+                      },
+                      "layoutType": "Horizontal",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 33,
+                        "offset": 1112
+                      },
+                      "type": "Layout"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 48,
+                        "line": 39,
+                        "offset": 1364
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 39,
+                        "offset": 1337
+                      },
+                      "text": "★★★★☆ (128 reviews)",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Separator",
+                      "end": {
+                        "column": 30,
+                        "line": 41,
+                        "offset": 1415
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 41,
+                        "offset": 1406
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 38,
+                        "line": 43,
+                        "offset": 1474
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 43,
+                        "offset": 1457
+                      },
+                      "text": "**Color**",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {
+                        "gap": 8
+                      },
+                      "children": [
+                        {
+                          "attributes": {
+                            "selected": true
+                          },
+                          "controlType": "Chip",
+                          "end": {
+                            "column": 51,
+                            "line": 45,
+                            "offset": 1562
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 45,
+                            "offset": 1536
+                          },
+                          "text": "Black",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {},
+                          "controlType": "Chip",
+                          "end": {
+                            "column": 37,
+                            "line": 46,
+                            "offset": 1599
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 46,
+                            "offset": 1587
+                          },
+                          "text": "White",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {},
+                          "controlType": "Chip",
+                          "end": {
+                            "column": 36,
+                            "line": 47,
+                            "offset": 1635
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 47,
+                            "offset": 1624
+                          },
+                          "text": "Navy",
+                          "type": "Control"
+                        }
+                      ],
+                      "end": {
+                        "column": 32,
+                        "line": 48,
+                        "offset": 1667
+                      },
+                      "layoutType": "Horizontal",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 44,
+                        "offset": 1495
+                      },
+                      "type": "Layout"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Separator",
+                      "end": {
+                        "column": 30,
+                        "line": 50,
+                        "offset": 1718
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 50,
+                        "offset": 1709
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {
+                        "gap": 8
+                      },
+                      "children": [
+                        {
+                          "attributes": {
+                            "w": 80
+                          },
+                          "controlType": "NumberInput",
+                          "end": {
+                            "column": 53,
+                            "line": 53,
+                            "offset": 1829
+                          },
+                          "id": "txtQty",
+                          "modifiers": {},
+                          "placeholder": "1",
+                          "start": {
+                            "column": 25,
+                            "line": 53,
+                            "offset": 1801
+                          },
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {},
+                          "controlType": "Button",
+                          "end": {
+                            "column": 61,
+                            "line": 54,
+                            "offset": 1890
+                          },
+                          "id": "btnAdd",
+                          "modifiers": {
+                            "primary": true
+                          },
+                          "start": {
+                            "column": 25,
+                            "line": 54,
+                            "offset": 1854
+                          },
+                          "text": "Add to Cart",
+                          "type": "Control"
+                        },
+                        {
+                          "attributes": {},
+                          "controlType": "IconButton",
+                          "end": {
+                            "column": 52,
+                            "line": 55,
+                            "offset": 1942
+                          },
+                          "icon": "star",
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 55,
+                            "offset": 1915
+                          },
+                          "text": "Favorite",
+                          "type": "Control"
+                        }
+                      ],
+                      "end": {
+                        "column": 32,
+                        "line": 56,
+                        "offset": 1974
+                      },
+                      "layoutType": "Horizontal",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 52,
+                        "offset": 1760
+                      },
+                      "type": "Layout"
+                    }
+                  ],
+                  "end": {
+                    "column": 26,
+                    "line": 57,
+                    "offset": 2000
+                  },
+                  "layoutType": "Vertical",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 24,
+                    "offset": 735
+                  },
+                  "type": "Layout"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 58,
+                "offset": 2024
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 14,
+                "offset": 368
+              },
+              "type": "Layout"
+            }
+          ],
+          "dock": "fill",
+          "end": {
+            "column": 17,
+            "line": 59,
+            "offset": 2041
+          },
+          "modifiers": {},
+          "sectionType": "Content",
+          "start": {
+            "column": 9,
+            "line": 13,
+            "offset": 327
+          },
+          "type": "Section"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 60,
+        "offset": 2051
+      },
+      "layoutType": "Dock",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 54
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 61,
+    "offset": 2062
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "realistic",
+  "type": "Document"
+}

@@ -1,0 +1,477 @@
+{
+  "attributes": {
+    "title": "Horizontal Layout Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 38,
+            "line": 6,
+            "offset": 153
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 124
+          },
+          "text": "**Horizontal Layout**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "padding": 16
+          },
+          "children": [
+            {
+              "attributes": {
+                "gap": 8
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 32,
+                    "line": 10,
+                    "offset": 239
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 10,
+                    "offset": 224
+                  },
+                  "text": "Item 1",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 32,
+                    "line": 11,
+                    "offset": 271
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 11,
+                    "offset": 256
+                  },
+                  "text": "Item 2",
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Button",
+                  "end": {
+                    "column": 32,
+                    "line": 12,
+                    "offset": 303
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 12,
+                    "offset": 288
+                  },
+                  "text": "Item 3",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 24,
+                "line": 13,
+                "offset": 327
+              },
+              "layoutType": "Horizontal",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 191
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 14,
+            "line": 14,
+            "offset": 341
+          },
+          "modifiers": {},
+          "sectionType": "Card",
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 163
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 16,
+            "offset": 360
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 16,
+            "offset": 351
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 46,
+            "line": 18,
+            "offset": 407
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 18,
+            "offset": 370
+          },
+          "text": "**Horizontal with Alignment**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 8
+          },
+          "children": [
+            {
+              "attributes": {
+                "padding": 16
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "align": "top",
+                    "gap": 8
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 32,
+                        "line": 23,
+                        "offset": 534
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 23,
+                        "offset": 523
+                      },
+                      "text": "Top",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Button",
+                      "end": {
+                        "column": 42,
+                        "line": 24,
+                        "offset": 576
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 24,
+                        "offset": 555
+                      },
+                      "text": "Tall\nButton",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "TextInput",
+                      "end": {
+                        "column": 38,
+                        "line": 25,
+                        "offset": 614
+                      },
+                      "modifiers": {},
+                      "placeholder": "Input",
+                      "start": {
+                        "column": 21,
+                        "line": 25,
+                        "offset": 597
+                      },
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 26,
+                    "offset": 642
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 22,
+                    "offset": 476
+                  },
+                  "type": "Layout"
+                }
+              ],
+              "end": {
+                "column": 18,
+                "line": 27,
+                "offset": 660
+              },
+              "modifiers": {},
+              "sectionType": "Card",
+              "start": {
+                "column": 13,
+                "line": 21,
+                "offset": 444
+              },
+              "type": "Section"
+            },
+            {
+              "attributes": {
+                "padding": 16
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "align": "center",
+                    "gap": 8
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 35,
+                        "line": 31,
+                        "offset": 770
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 31,
+                        "offset": 756
+                      },
+                      "text": "Center",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Button",
+                      "end": {
+                        "column": 42,
+                        "line": 32,
+                        "offset": 812
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 32,
+                        "offset": 791
+                      },
+                      "text": "Tall\nButton",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "TextInput",
+                      "end": {
+                        "column": 38,
+                        "line": 33,
+                        "offset": 850
+                      },
+                      "modifiers": {},
+                      "placeholder": "Input",
+                      "start": {
+                        "column": 21,
+                        "line": 33,
+                        "offset": 833
+                      },
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 34,
+                    "offset": 878
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 30,
+                    "offset": 706
+                  },
+                  "type": "Layout"
+                }
+              ],
+              "end": {
+                "column": 18,
+                "line": 35,
+                "offset": 896
+              },
+              "modifiers": {},
+              "sectionType": "Card",
+              "start": {
+                "column": 13,
+                "line": 29,
+                "offset": 674
+              },
+              "type": "Section"
+            },
+            {
+              "attributes": {
+                "padding": 16
+              },
+              "children": [
+                {
+                  "attributes": {
+                    "align": "bottom",
+                    "gap": 8
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "Label",
+                      "end": {
+                        "column": 35,
+                        "line": 39,
+                        "offset": 1006
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 39,
+                        "offset": 992
+                      },
+                      "text": "Bottom",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "Button",
+                      "end": {
+                        "column": 42,
+                        "line": 40,
+                        "offset": 1048
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 40,
+                        "offset": 1027
+                      },
+                      "text": "Tall\nButton",
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "TextInput",
+                      "end": {
+                        "column": 38,
+                        "line": 41,
+                        "offset": 1086
+                      },
+                      "modifiers": {},
+                      "placeholder": "Input",
+                      "start": {
+                        "column": 21,
+                        "line": 41,
+                        "offset": 1069
+                      },
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 42,
+                    "offset": 1114
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 38,
+                    "offset": 942
+                  },
+                  "type": "Layout"
+                }
+              ],
+              "end": {
+                "column": 18,
+                "line": 43,
+                "offset": 1132
+              },
+              "modifiers": {},
+              "sectionType": "Card",
+              "start": {
+                "column": 13,
+                "line": 37,
+                "offset": 910
+              },
+              "type": "Section"
+            }
+          ],
+          "end": {
+            "column": 18,
+            "line": 44,
+            "offset": 1150
+          },
+          "layoutType": "Vertical",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 20,
+            "offset": 417
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 45,
+        "offset": 1164
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 100
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 46,
+    "offset": 1175
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 40
+  },
+  "style": "clean",
+  "type": "Document"
+}

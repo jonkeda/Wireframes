@@ -1,0 +1,104 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Link",
+          "end": {
+            "column": 20,
+            "line": 3,
+            "offset": 50
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 39
+          },
+          "text": "Home",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Link",
+          "end": {
+            "column": 24,
+            "line": 4,
+            "offset": 74
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 59
+          },
+          "text": "Products",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Link",
+          "end": {
+            "column": 24,
+            "line": 5,
+            "offset": 98
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 83
+          },
+          "text": "Category",
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 29,
+            "line": 6,
+            "offset": 127
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 107
+          },
+          "text": "Current Item",
+          "type": "Control"
+        }
+      ],
+      "componentType": "Breadcrumb",
+      "end": {
+        "column": 16,
+        "line": 7,
+        "offset": 143
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 154
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

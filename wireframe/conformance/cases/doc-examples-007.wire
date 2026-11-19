@@ -1,0 +1,18 @@
+wireframe clean
+    Sidebar w=200
+        Vertical gap=4
+            Label "MENU"
+            MenuItem "Dashboard" icon=$home selected
+            MenuItem "Projects" icon=$folder
+            MenuItem "Tasks" icon=$check
+            MenuItem "Calendar" icon=$calendar
+            
+            Separator
+            
+            Label "SETTINGS"
+            MenuItem "Profile" icon=$user
+            MenuItem "Preferences" icon=$settings
+            MenuItem "Help" icon=$info
+        /Vertical
+    /Sidebar
+/wireframe

@@ -1,0 +1,2 @@
+# The conformance set is the same bytes on every machine: no line-end conversion, whatever a case holds.
+conformance/cases/* -text

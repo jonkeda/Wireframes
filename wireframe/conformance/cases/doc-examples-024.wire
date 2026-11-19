@@ -1,0 +1,18 @@
+wireframe clean
+    %title: Grid Positioning Example
+    
+    Card
+        Vertical gap=16
+            Label "**Grid with Positioning**"
+            
+            Grid cols=3 rows=3 gap=8
+                Button "Span 2 cols" grid=0,0,1,2
+                Button "Top right" grid=0,2
+                Button "Span 2 rows" grid=1,0,2,1
+                Button "Center" grid=1,1
+                Button "Right" grid=1,2
+                Button "Bottom span" grid=2,1,1,2
+            /Grid
+        /Vertical
+    /Card
+/wireframe

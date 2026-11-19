@@ -1,0 +1,12 @@
+wireframe clean
+    Tree
+        + Documents
+            + Projects
+                - Project A
+                - Project B
+            - Notes.txt
+        + Images
+            - Photo1.jpg
+            - Photo2.jpg
+    /Tree
+/wireframe

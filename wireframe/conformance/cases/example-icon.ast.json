@@ -1,0 +1,468 @@
+{
+  "attributes": {
+    "title": "Icon and Image Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 26,
+            "line": 6,
+            "offset": 133
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 116
+          },
+          "text": "**Icons**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {
+                "align": "center",
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Icon",
+                  "end": {
+                    "column": 32,
+                    "line": 10,
+                    "offset": 232
+                  },
+                  "icon": "icon:home",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 10,
+                    "offset": 217
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 29,
+                    "line": 11,
+                    "offset": 261
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 11,
+                    "offset": 249
+                  },
+                  "text": "Home",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 12,
+                "offset": 283
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 173
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "align": "center",
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Icon",
+                  "end": {
+                    "column": 36,
+                    "line": 14,
+                    "offset": 359
+                  },
+                  "icon": "icon:settings",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 14,
+                    "offset": 340
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 33,
+                    "line": 15,
+                    "offset": 392
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 15,
+                    "offset": 376
+                  },
+                  "text": "Settings",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 16,
+                "offset": 414
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 13,
+                "offset": 296
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "align": "center",
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Icon",
+                  "end": {
+                    "column": 32,
+                    "line": 18,
+                    "offset": 486
+                  },
+                  "icon": "icon:user",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 18,
+                    "offset": 471
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 29,
+                    "line": 19,
+                    "offset": 515
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 19,
+                    "offset": 503
+                  },
+                  "text": "User",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 20,
+                "offset": 537
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 17,
+                "offset": 427
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "align": "center",
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Icon",
+                  "end": {
+                    "column": 34,
+                    "line": 22,
+                    "offset": 611
+                  },
+                  "icon": "icon:search",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 22,
+                    "offset": 594
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 31,
+                    "line": 23,
+                    "offset": 642
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 23,
+                    "offset": 628
+                  },
+                  "text": "Search",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 24,
+                "offset": 664
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 21,
+                "offset": 550
+              },
+              "type": "Layout"
+            },
+            {
+              "attributes": {
+                "align": "center",
+                "gap": 4
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Icon",
+                  "end": {
+                    "column": 32,
+                    "line": 26,
+                    "offset": 736
+                  },
+                  "icon": "icon:menu",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 26,
+                    "offset": 721
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 29,
+                    "line": 27,
+                    "offset": 765
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 27,
+                    "offset": 753
+                  },
+                  "text": "Menu",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 22,
+                "line": 28,
+                "offset": 787
+              },
+              "layoutType": "Vertical",
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 25,
+                "offset": 677
+              },
+              "type": "Layout"
+            }
+          ],
+          "end": {
+            "column": 20,
+            "line": 29,
+            "offset": 807
+          },
+          "layoutType": "Horizontal",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 143
+          },
+          "type": "Layout"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 31,
+            "offset": 826
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 31,
+            "offset": 817
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 27,
+            "line": 33,
+            "offset": 854
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 33,
+            "offset": 836
+          },
+          "text": "**Images**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "gap": 16
+          },
+          "children": [
+            {
+              "attributes": {
+                "height": 100,
+                "placeholder": "Product",
+                "width": 100
+              },
+              "controlType": "Image",
+              "end": {
+                "column": 61,
+                "line": 36,
+                "offset": 942
+              },
+              "modifiers": {},
+              "placeholder": "Product",
+              "start": {
+                "column": 13,
+                "line": 36,
+                "offset": 894
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "height": 100,
+                "placeholder": "Banner",
+                "width": 150
+              },
+              "controlType": "Image",
+              "end": {
+                "column": 60,
+                "line": 37,
+                "offset": 1002
+              },
+              "modifiers": {},
+              "placeholder": "Banner",
+              "start": {
+                "column": 13,
+                "line": 37,
+                "offset": 955
+              },
+              "type": "Control"
+            },
+            {
+              "attributes": {
+                "height": 80,
+                "placeholder": "Thumbnail",
+                "width": 80
+              },
+              "controlType": "Image",
+              "end": {
+                "column": 61,
+                "line": 38,
+                "offset": 1063
+              },
+              "modifiers": {},
+              "placeholder": "Thumbnail",
+              "start": {
+                "column": 13,
+                "line": 38,
+                "offset": 1015
+              },
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 20,
+            "line": 39,
+            "offset": 1083
+          },
+          "layoutType": "Horizontal",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 35,
+            "offset": 864
+          },
+          "type": "Layout"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 40,
+        "offset": 1097
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 92
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 41,
+    "offset": 1108
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 35
+  },
+  "style": "clean",
+  "type": "Document"
+}

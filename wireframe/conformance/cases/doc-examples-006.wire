@@ -1,0 +1,26 @@
+wireframe clean
+    %title: Settings
+    
+    Card w=400
+        Vertical gap=16
+            Label "**Settings**"
+            
+            Label "**Notifications**"
+            Switch "Email notifications" :swEmail
+            Switch "Push notifications" :swPush checked=true
+            
+            Separator
+            
+            Label "**Privacy**"
+            Switch "Public profile" :swPublic
+            Switch "Show online status" :swOnline checked=true
+            
+            Separator
+            
+            Horizontal gap=8 justify=end
+                Button "Cancel" @:back
+                Button "Save Changes" :btnSave primary
+            /Horizontal
+        /Vertical
+    /Card
+/wireframe

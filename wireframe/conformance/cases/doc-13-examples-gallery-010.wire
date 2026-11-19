@@ -1,0 +1,18 @@
+wireframe clean
+    Card width=500
+        TabGroup ?activeTab
+            Tab "Overview"
+                Label "Overview content goes here"
+            /Tab
+            Tab "Details" active
+                Vertical gap=16
+                    TextInput "Name" ?name
+                    TextInput "Description" ?desc
+                /Vertical
+            /Tab
+            Tab "Settings"
+                Label "Settings content"
+            /Tab
+        /TabGroup
+    /Card
+/wireframe

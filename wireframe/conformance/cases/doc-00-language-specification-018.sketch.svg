@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="232" height="264" viewBox="0 0 232 264" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g role="textbox" aria-label="Placeholder text" aria-placeholder="Placeholder text"><g>
+      <path d="M16.0 15.2 Q116.0 12.0 216.0 15.8 M215.2 16.0 Q212.4 34.0 217.5 52.0 M216.0 52.7 Q116.0 52.5 16.0 53.3 M16.9 52.0 Q17.3 34.0 14.8 16.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="39" class="wire-text wire-text-secondary">Placeholder text</text>
+      
+    </g></g><g role="textbox" aria-label="Username" aria-placeholder="Username"><g>
+      <path d="M16.0 58.7 Q116.0 56.0 216.0 60.6 M215.7 60.0 Q213.8 78.0 215.3 96.0 M216.0 97.1 Q116.0 96.9 16.0 96.5 M16.4 96.0 Q17.1 78.0 15.7 60.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="83" class="wire-text wire-text-secondary">Username</text>
+      
+    </g></g><g role="textbox" aria-label="Email" aria-required="true" aria-placeholder="Email"><g>
+      <path d="M16.0 105.3 Q116.0 100.5 216.0 105.4 M216.2 104.0 Q214.0 122.0 217.4 140.0 M216.0 138.6 Q116.0 142.1 16.0 138.9 M15.9 140.0 Q20.8 122.0 16.5 104.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="127" class="wire-text wire-text-secondary">Email</text>
+      <text x="204" y="127" text-anchor="end" fill="#dc3545">*</text>
+    </g></g><g role="textbox" aria-label="Name" aria-placeholder="Name"><g>
+      <path d="M16.0 148.8 Q116.0 148.5 216.0 147.3 M216.7 148.0 Q214.3 166.0 216.6 184.0 M216.0 183.1 Q116.0 183.9 16.0 185.1 M15.5 184.0 Q20.6 166.0 17.4 148.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="171" class="wire-text wire-text-secondary">Name</text>
+      
+    </g></g><g role="textbox" aria-label="Name" aria-required="true" aria-placeholder="e.g. Jane"><g><text x="16" y="206" class="wire-text wire-text-small">Name</text>
+      <path d="M16.0 211.5 Q116.0 216.3 216.0 213.0 M214.9 212.0 Q216.4 230.0 214.8 248.0 M216.0 248.4 Q116.0 244.6 16.0 248.0 M17.2 248.0 Q14.4 230.0 16.1 212.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="28" y="235" class="wire-text wire-text-secondary">e.g. Jane</text>
+      <text x="204" y="235" text-anchor="end" fill="#dc3545">*</text>
+    </g></g>
+</svg>

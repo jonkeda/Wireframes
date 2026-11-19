@@ -1,0 +1,19 @@
+wireframe clean
+    Table w=400
+        Row selected
+            Cell "Name"
+            Cell "Email"
+            Cell "Status"
+        /Row
+        Row
+            Cell "John Doe"
+            Cell "john@example.com"
+            Cell "Active"
+        /Row
+        Row
+            Cell "Jane Smith"
+            Cell "jane@example.com"
+            Cell "Pending"
+        /Row
+    /Table
+/wireframe

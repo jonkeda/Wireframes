@@ -1,0 +1,8 @@
+wireframe clean
+    Vertical gap=8
+        Label "Above separator"
+        Separator
+        Label "Below separator"
+        Spacer h=20
+        Label "After spacer"
+/wireframe

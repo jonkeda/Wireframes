@@ -1,0 +1,8 @@
+wireframe clean
+    Hamburger
+        Menu
+            MenuItem "Item 1"
+            MenuItem "Item 2"
+        /Menu
+    /Hamburger
+/wireframe

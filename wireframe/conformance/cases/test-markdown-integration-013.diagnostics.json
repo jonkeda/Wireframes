@@ -1,0 +1,12 @@
+[
+  {
+    "column": 5,
+    "line": 2,
+    "message": "Unexpected token: NotARealElement"
+  },
+  {
+    "column": 21,
+    "line": 2,
+    "message": "Unexpected token: Test"
+  }
+]

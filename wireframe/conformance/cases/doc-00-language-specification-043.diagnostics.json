@@ -1,0 +1,17 @@
+[
+  {
+    "column": 5,
+    "line": 6,
+    "message": "Unexpected token: Step"
+  },
+  {
+    "column": 10,
+    "line": 6,
+    "message": "Unexpected token: Shipping"
+  },
+  {
+    "column": 21,
+    "line": 6,
+    "message": "Unexpected token: completed"
+  }
+]

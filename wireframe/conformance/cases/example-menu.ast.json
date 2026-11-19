@@ -1,0 +1,387 @@
+{
+  "attributes": {
+    "title": "Menu Examples"
+  },
+  "children": [
+    {
+      "attributes": {
+        "gap": 16
+      },
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 31,
+            "line": 6,
+            "offset": 118
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 96
+          },
+          "text": "**Menu Items**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "padding": 8
+          },
+          "children": [
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "MenuItem",
+                  "end": {
+                    "column": 1,
+                    "line": 11,
+                    "offset": 203
+                  },
+                  "icon": "home",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 10,
+                    "offset": 176
+                  },
+                  "text": "Home",
+                  "type": "Component"
+                },
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "MenuItem",
+                  "end": {
+                    "column": 1,
+                    "line": 12,
+                    "offset": 249
+                  },
+                  "icon": "user",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 11,
+                    "offset": 219
+                  },
+                  "text": "Profile",
+                  "type": "Component"
+                },
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "MenuItem",
+                  "end": {
+                    "column": 1,
+                    "line": 13,
+                    "offset": 300
+                  },
+                  "icon": "settings",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 12,
+                    "offset": 265
+                  },
+                  "text": "Settings",
+                  "type": "Component"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Separator",
+                  "end": {
+                    "column": 26,
+                    "line": 13,
+                    "offset": 325
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 13,
+                    "offset": 316
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "MenuItem",
+                  "end": {
+                    "column": 1,
+                    "line": 15,
+                    "offset": 369
+                  },
+                  "icon": "help",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 14,
+                    "offset": 342
+                  },
+                  "text": "Help",
+                  "type": "Component"
+                },
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "MenuItem",
+                  "end": {
+                    "column": 1,
+                    "line": 16,
+                    "offset": 416
+                  },
+                  "icon": "logout",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 15,
+                    "offset": 385
+                  },
+                  "text": "Logout",
+                  "type": "Component"
+                }
+              ],
+              "componentType": "Menu",
+              "end": {
+                "column": 18,
+                "line": 16,
+                "offset": 433
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 155
+              },
+              "type": "Component"
+            }
+          ],
+          "end": {
+            "column": 14,
+            "line": 17,
+            "offset": 447
+          },
+          "modifiers": {},
+          "sectionType": "Card",
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 128
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {},
+          "controlType": "Separator",
+          "end": {
+            "column": 18,
+            "line": 19,
+            "offset": 466
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 19,
+            "offset": 457
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "Label",
+          "end": {
+            "column": 37,
+            "line": 21,
+            "offset": 504
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 21,
+            "offset": 476
+          },
+          "text": "**Menu with States**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "padding": 8
+          },
+          "children": [
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "MenuItem",
+                  "end": {
+                    "column": 1,
+                    "line": 26,
+                    "offset": 590
+                  },
+                  "modifiers": {
+                    "active": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 25,
+                    "offset": 562
+                  },
+                  "text": "Dashboard",
+                  "type": "Component"
+                },
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "MenuItem",
+                  "end": {
+                    "column": 1,
+                    "line": 27,
+                    "offset": 626
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 26,
+                    "offset": 606
+                  },
+                  "text": "Projects",
+                  "type": "Component"
+                },
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "MenuItem",
+                  "end": {
+                    "column": 1,
+                    "line": 28,
+                    "offset": 658
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 27,
+                    "offset": 642
+                  },
+                  "text": "Team",
+                  "type": "Component"
+                },
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "MenuItem",
+                  "end": {
+                    "column": 1,
+                    "line": 29,
+                    "offset": 702
+                  },
+                  "modifiers": {
+                    "disabled": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 28,
+                    "offset": 674
+                  },
+                  "text": "Reports",
+                  "type": "Component"
+                },
+                {
+                  "attributes": {},
+                  "controlType": "Separator",
+                  "end": {
+                    "column": 26,
+                    "line": 29,
+                    "offset": 727
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 29,
+                    "offset": 718
+                  },
+                  "type": "Control"
+                },
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "MenuItem",
+                  "end": {
+                    "column": 1,
+                    "line": 31,
+                    "offset": 767
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 30,
+                    "offset": 744
+                  },
+                  "text": "Admin Panel",
+                  "type": "Component"
+                }
+              ],
+              "componentType": "Menu",
+              "end": {
+                "column": 18,
+                "line": 31,
+                "offset": 784
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 24,
+                "offset": 541
+              },
+              "type": "Component"
+            }
+          ],
+          "end": {
+            "column": 14,
+            "line": 32,
+            "offset": 798
+          },
+          "modifiers": {},
+          "sectionType": "Card",
+          "start": {
+            "column": 9,
+            "line": 23,
+            "offset": 514
+          },
+          "type": "Section"
+        }
+      ],
+      "end": {
+        "column": 14,
+        "line": 33,
+        "offset": 812
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 5,
+        "offset": 72
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 34,
+    "offset": 823
+  },
+  "start": {
+    "column": 1,
+    "line": 2,
+    "offset": 25
+  },
+  "style": "clean",
+  "type": "Document"
+}

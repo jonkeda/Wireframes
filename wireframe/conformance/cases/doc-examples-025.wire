@@ -1,0 +1,11 @@
+wireframe clean
+    %title: Canvas Positioning Example
+    
+    Canvas w=400 h=300
+        Label "**Absolute Positioning**" canvas=10,10
+        Button "Top Left" canvas=10,40
+        Button "Center" canvas=150,130
+        Button "Bottom Right" canvas=280,250
+        Icon $star canvas=350,10
+    /Canvas
+/wireframe

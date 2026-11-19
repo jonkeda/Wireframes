@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <path d="M16.0 17.2 Q400.0 18.9 784.0 14.6 M784.3 16.0 Q791.0 300.0 783.6 584.0 M784.0 582.7 Q400.0 581.9 16.0 583.5 M15.8 584.0 Q10.4 300.0 15.7 16.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Login"><text x="32" y="54.67" class="wire-text wire-text-bold" style="font-size: 20px">Login</text></g><g role="textbox" aria-label="Email" aria-placeholder="Email"><g>
+      <path d="M32.0 71.9 Q132.0 79.3 232.0 71.3 M230.6 72.0 Q230.3 90.0 230.9 108.0 M232.0 108.0 Q132.0 101.6 32.0 106.8 M30.5 108.0 Q31.7 90.0 32.0 72.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="95" class="wire-text wire-text-secondary">Email</text>
+      
+    </g></g><g role="textbox" aria-label="Password" aria-placeholder="Password"><g>
+      <path d="M32.0 115.4 Q132.0 123.3 232.0 116.1 M231.1 116.0 Q230.6 134.0 233.1 152.0 M232.0 152.5 Q132.0 160.5 32.0 152.1 M33.1 152.0 Q32.3 134.0 32.8 116.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="44" y="139" class="wire-text wire-text-secondary">••••</text>
+      
+    </g></g><g role="button" aria-label="Sign In"><g opacity="1">
+      <path d="M32.0 158.7 Q82.0 161.2 132.0 160.0 M131.7 160.0 Q134.8 178.0 132.9 196.0 M132.0 197.2 Q82.0 191.7 32.0 197.1 M32.4 196.0 Q28.0 178.0 33.0 160.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="82" y="183" text-anchor="middle" class="wire-text" fill="#ffffff">Sign In</text>
+    </g></g>
+</svg>

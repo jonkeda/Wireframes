@@ -1,0 +1,12 @@
+wireframe clean
+    Card w=350 padding=24
+        Vertical gap=16
+            Label "Welcome to App"
+            TextInput "Email" placeholder="Enter email"
+            PasswordInput "Password"
+            Checkbox "Remember me"
+            Button "Sign In" primary
+            Link "Forgot password?"
+        /Vertical
+    /Card
+/wireframe

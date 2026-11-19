@@ -1,0 +1,6 @@
+wireframe clean
+    Vertical gap=8
+        Skeleton variant=text w=200
+        Skeleton variant=rectangular w=300 h=100
+        Skeleton variant=circular w=50 h=50
+/wireframe

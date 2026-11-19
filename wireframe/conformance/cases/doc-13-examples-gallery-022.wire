@@ -1,0 +1,7 @@
+wireframe sketch
+    Card width=300
+        Heading "Sketch Style" level=2
+        Label "Hand-drawn wireframe look"
+        Button "Action" primary
+    /Card
+/wireframe

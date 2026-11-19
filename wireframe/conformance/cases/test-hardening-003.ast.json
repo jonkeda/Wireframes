@@ -1,0 +1,45 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "Table",
+      "end": {
+        "column": 11,
+        "line": 4,
+        "offset": 56
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "tableRows": [
+        {
+          "cells": [
+            "A",
+            "",
+            "C"
+          ],
+          "isSeparator": false
+        }
+      ],
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 67
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

@@ -1,0 +1,6 @@
+wireframe clean
+    Horizontal gap=16 justify=end
+        Button "Cancel"
+        Button "Save" primary
+    /Horizontal
+/wireframe

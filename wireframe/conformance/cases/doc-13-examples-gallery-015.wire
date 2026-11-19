@@ -1,0 +1,34 @@
+wireframe clean
+    Grid columns=3 gap=16
+        Card
+            Image ?product1 width=200 height=150
+            Heading "Product 1" level=3
+            Label "Description of product 1"
+            Horizontal gap=8
+                Badge "$99.99"
+                Badge "In Stock" color=green
+            /Horizontal
+            Button "Add to Cart" primary
+        /Card
+        Card
+            Image ?product2 width=200 height=150
+            Heading "Product 2" level=3
+            Label "Description of product 2"
+            Horizontal gap=8
+                Badge "$149.99"
+                Badge "Low Stock" color=yellow
+            /Horizontal
+            Button "Add to Cart" primary
+        /Card
+        Card
+            Image ?product3 width=200 height=150
+            Heading "Product 3" level=3
+            Label "Description of product 3"
+            Horizontal gap=8
+                Badge "$199.99"
+                Badge "Out of Stock" color=red
+            /Horizontal
+            Button "Add to Cart" disabled
+        /Card
+    /Grid
+/wireframe

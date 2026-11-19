@@ -1,0 +1,9 @@
+wireframe clean
+    Button "Click Me"
+    TextInput "Enter name..." :txtName
+    Checkbox "Remember me" :chkRemember checked
+    Dropdown :ddlOption
+        Option "Option 1"
+        Option "Option 2"
+    /Dropdown
+/wireframe

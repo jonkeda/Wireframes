@@ -1,0 +1,100 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "w": 200
+      },
+      "children": [
+        {
+          "attributes": {
+            "icon": "home"
+          },
+          "children": [],
+          "componentType": "MenuItem",
+          "end": {
+            "column": 1,
+            "line": 4,
+            "offset": 79
+          },
+          "modifiers": {
+            "selected": true
+          },
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 39
+          },
+          "text": "Dashboard",
+          "type": "Component"
+        },
+        {
+          "attributes": {
+            "icon": "folder"
+          },
+          "children": [],
+          "componentType": "MenuItem",
+          "end": {
+            "column": 1,
+            "line": 5,
+            "offset": 119
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 87
+          },
+          "text": "Projects",
+          "type": "Component"
+        },
+        {
+          "attributes": {
+            "icon": "check"
+          },
+          "children": [],
+          "componentType": "MenuItem",
+          "end": {
+            "column": 1,
+            "line": 6,
+            "offset": 155
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 127
+          },
+          "text": "Tasks",
+          "type": "Component"
+        }
+      ],
+      "componentType": "Menu",
+      "end": {
+        "column": 10,
+        "line": 6,
+        "offset": 164
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 7,
+    "offset": 175
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

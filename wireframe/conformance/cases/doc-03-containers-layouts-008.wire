@@ -1,0 +1,9 @@
+wireframe clean
+    Card w=300 padding=16
+        Vertical gap=8
+            Heading "Card Title" level=3
+            Label "Card content goes here"
+            Button "Action"
+        /Vertical
+    /Card
+/wireframe

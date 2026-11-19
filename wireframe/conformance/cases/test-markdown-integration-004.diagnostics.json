@@ -1,0 +1,12 @@
+[
+  {
+    "column": 5,
+    "line": 2,
+    "message": "Unexpected token: InvalidControl"
+  },
+  {
+    "column": 20,
+    "line": 2,
+    "message": "Unexpected token: Test"
+  }
+]

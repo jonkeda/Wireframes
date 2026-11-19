@@ -1,0 +1,9 @@
+wireframe clean
+    Horizontal gap=8 align=center
+        Avatar "XS" size=xs
+        Avatar "SM" size=sm
+        Avatar "MD" size=md
+        Avatar "LG" size=lg
+        Avatar "XL" size=xl
+    /Horizontal
+/wireframe

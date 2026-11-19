@@ -1,0 +1,136 @@
+{
+  "attributes": {
+    "title": "Canvas Positioning Example"
+  },
+  "children": [
+    {
+      "attributes": {
+        "h": 300,
+        "w": 400
+      },
+      "children": [
+        {
+          "attributes": {
+            "canvas": "10,10"
+          },
+          "controlType": "Label",
+          "end": {
+            "column": 54,
+            "line": 5,
+            "offset": 136
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 91
+          },
+          "text": "**Absolute Positioning**",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "canvas": "10,40"
+          },
+          "controlType": "Button",
+          "end": {
+            "column": 39,
+            "line": 6,
+            "offset": 175
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 145
+          },
+          "text": "Top Left",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "canvas": "150,130"
+          },
+          "controlType": "Button",
+          "end": {
+            "column": 39,
+            "line": 7,
+            "offset": 214
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 7,
+            "offset": 184
+          },
+          "text": "Center",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "canvas": "280,250"
+          },
+          "controlType": "Button",
+          "end": {
+            "column": 45,
+            "line": 8,
+            "offset": 259
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 223
+          },
+          "text": "Bottom Right",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "canvas": "350,10"
+          },
+          "controlType": "Icon",
+          "end": {
+            "column": 33,
+            "line": 9,
+            "offset": 292
+          },
+          "icon": "star",
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 9,
+            "offset": 268
+          },
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 12,
+        "line": 10,
+        "offset": 304
+      },
+      "layoutType": "Canvas",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 64
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 11,
+    "offset": 315
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

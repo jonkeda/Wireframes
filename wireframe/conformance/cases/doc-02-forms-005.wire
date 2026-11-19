@@ -1,0 +1,7 @@
+wireframe clean
+    Vertical gap=8
+        Radio "Option A"
+        Radio "Option B" selected
+        Radio "Option C"
+        Radio "Disabled" disabled
+/wireframe

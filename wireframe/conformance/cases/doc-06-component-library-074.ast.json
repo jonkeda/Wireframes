@@ -1,0 +1,106 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 33,
+                "line": 5,
+                "offset": 94
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 74
+              },
+              "text": "Card content",
+              "type": "Control"
+            }
+          ],
+          "end": {
+            "column": 14,
+            "line": 6,
+            "offset": 108
+          },
+          "modifiers": {},
+          "sectionType": "Card",
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 57
+          },
+          "type": "Section"
+        }
+      ],
+      "count": 5,
+      "end": {
+        "column": 12,
+        "line": 7,
+        "offset": 120
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 40
+      },
+      "type": "Repeat"
+    },
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "controlType": "Button",
+          "end": {
+            "column": 28,
+            "line": 10,
+            "offset": 170
+          },
+          "modifiers": {},
+          "start": {
+            "column": 14,
+            "line": 10,
+            "offset": 156
+          },
+          "text": "Click",
+          "type": "Control"
+        }
+      ],
+      "count": 3,
+      "end": {
+        "column": 1,
+        "line": 11,
+        "offset": 171
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 10,
+        "offset": 147
+      },
+      "type": "Repeat"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 11,
+    "offset": 181
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

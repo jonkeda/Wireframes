@@ -1,0 +1,12 @@
+wireframe realistic
+    Horizontal gap=20
+        Card w=200 padding=12
+            Vertical gap=8
+                Label "**Realistic**"
+                Button "Button" primary
+                TextInput placeholder="Input"
+                Checkbox "Option" checked
+            /Vertical
+        /Card
+    /Horizontal
+/wireframe

@@ -1,0 +1,47 @@
+wireframe clean
+    Card w=400 padding=32
+        Vertical gap=20
+            // Logo area
+            Image w=200 h=50
+            
+            Heading "Welcome Back" level=2
+            Label "Sign in to your account"
+            
+            // Form fields
+            Vertical gap=4
+                Label "Email"
+                TextInput placeholder="you@example.com" required
+            /Vertical
+            
+            Vertical gap=4
+                Label "Password"
+                PasswordInput placeholder="••••••••" required
+            /Vertical
+            
+            // Options
+            Horizontal
+                Checkbox "Remember me"
+                Spacer
+                Link "Forgot password?"
+            /Horizontal
+            
+            // Actions
+            Button "Sign In" primary w=100%
+            
+            Separator
+            
+            // Social login
+            Label "Or continue with"
+            Horizontal gap=8
+                Button "Google" secondary
+                Button "GitHub" secondary
+            /Horizontal
+            
+            // Sign up link
+            Horizontal gap=4
+                Label "Don't have an account?"
+                Link "Sign up"
+            /Horizontal
+        /Vertical
+    /Card
+/wireframe

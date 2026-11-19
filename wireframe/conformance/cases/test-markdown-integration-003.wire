@@ -1,0 +1,10 @@
+wireframe clean
+    Card w=300 padding=16
+        Vertical gap=8
+            Heading "Login" level=2
+            TextInput placeholder="Email"
+            PasswordInput placeholder="Password"
+            Button "Sign In" primary
+        /Vertical
+    /Card
+/wireframe

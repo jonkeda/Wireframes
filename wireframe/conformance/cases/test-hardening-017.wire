@@ -1,0 +1,9 @@
+wireframe clean
+    Button "A"
+validations
+    | Field | Rule | Message |
+    |---|---|---|
+    | A | required | A is required |
+/validations
+    Button "B"
+/wireframe

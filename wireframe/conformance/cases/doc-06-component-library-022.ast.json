@@ -1,0 +1,56 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "max": 100,
+        "min": 0
+      },
+      "controlType": "NumberInput",
+      "end": {
+        "column": 39,
+        "line": 2,
+        "offset": 54
+      },
+      "modifiers": {},
+      "placeholder": "Amount",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "binding": "quantity",
+      "controlType": "NumberInput",
+      "end": {
+        "column": 37,
+        "line": 3,
+        "offset": 91
+      },
+      "modifiers": {},
+      "placeholder": "Quantity",
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 59
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 4,
+    "offset": 102
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

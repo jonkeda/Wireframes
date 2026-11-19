@@ -1,0 +1,96 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "cols": 3,
+        "rows": 2
+      },
+      "children": [
+        {
+          "attributes": {
+            "grid": "0,0,1,2"
+          },
+          "controlType": "Button",
+          "end": {
+            "column": 45,
+            "line": 3,
+            "offset": 83
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 47
+          },
+          "text": "Span 2 columns",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "grid": "0,2"
+          },
+          "controlType": "Button",
+          "end": {
+            "column": 38,
+            "line": 4,
+            "offset": 121
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 92
+          },
+          "text": "Normal cell",
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "grid": "1,0,2,1"
+          },
+          "controlType": "Button",
+          "end": {
+            "column": 42,
+            "line": 5,
+            "offset": 163
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 130
+          },
+          "text": "Span 2 rows",
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 6,
+        "offset": 173
+      },
+      "layoutType": "Grid",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 7,
+    "offset": 184
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

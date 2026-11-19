@@ -1,0 +1,5 @@
+wireframe clean
+    Button "Save" $icon:save
+    MenuItem "Home" $icon:home
+    IconButton $icon:edit
+/wireframe

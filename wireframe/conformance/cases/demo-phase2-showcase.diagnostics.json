@@ -1,0 +1,62 @@
+[
+  {
+    "column": 20,
+    "line": 20,
+    "message": "Unexpected character: ["
+  },
+  {
+    "column": 27,
+    "line": 20,
+    "message": "Unexpected character: ]"
+  },
+  {
+    "column": 30,
+    "line": 46,
+    "message": "Unexpected character: ["
+  },
+  {
+    "column": 39,
+    "line": 46,
+    "message": "Unexpected character: ]"
+  },
+  {
+    "column": 50,
+    "line": 94,
+    "message": "Unexpected character: ["
+  },
+  {
+    "column": 59,
+    "line": 94,
+    "message": "Unexpected character: ]"
+  },
+  {
+    "column": 1,
+    "line": 1,
+    "message": "Unexpected token: %title: Phase 2 Features Showcase"
+  },
+  {
+    "column": 1,
+    "line": 2,
+    "message": "Unexpected token: %theme: clean"
+  },
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected token: %device: desktop"
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Unexpected token: wireframe"
+  },
+  {
+    "column": 11,
+    "line": 5,
+    "message": "Unexpected token: Admin Dashboard - Phase 2 Controls"
+  },
+  {
+    "column": 1,
+    "line": 8,
+    "message": "Unexpected token:   "
+  }
+]

@@ -1,0 +1,8 @@
+wireframe clean
+    Button "A"
+component SearchBox placeholder
+    Horizontal
+        TextInput "Search"
+        Button "Go"
+/component
+/wireframe

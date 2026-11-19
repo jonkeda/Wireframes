@@ -1,0 +1,138 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "gap": 12,
+        "w": 300
+      },
+      "children": [
+        {
+          "attributes": {
+            "placeholder": "Enter your name"
+          },
+          "controlType": "TextInput",
+          "end": {
+            "column": 48,
+            "line": 3,
+            "offset": 89
+          },
+          "modifiers": {},
+          "placeholder": "Enter your name",
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 50
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "placeholder": "Email"
+          },
+          "controlType": "TextInput",
+          "end": {
+            "column": 47,
+            "line": 4,
+            "offset": 136
+          },
+          "modifiers": {
+            "required": true
+          },
+          "placeholder": "Email",
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 98
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {},
+          "controlType": "TextInput",
+          "end": {
+            "column": 29,
+            "line": 5,
+            "offset": 165
+          },
+          "modifiers": {},
+          "placeholder": "John Doe",
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 145
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "placeholder": "Disabled"
+          },
+          "controlType": "TextInput",
+          "end": {
+            "column": 50,
+            "line": 6,
+            "offset": 215
+          },
+          "modifiers": {
+            "disabled": true
+          },
+          "placeholder": "Disabled",
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 174
+          },
+          "type": "Control"
+        },
+        {
+          "attributes": {
+            "placeholder": "Read only"
+          },
+          "controlType": "TextInput",
+          "end": {
+            "column": 51,
+            "line": 7,
+            "offset": 266
+          },
+          "modifiers": {
+            "readonly": true
+          },
+          "placeholder": "Read only",
+          "start": {
+            "column": 9,
+            "line": 7,
+            "offset": 224
+          },
+          "type": "Control"
+        }
+      ],
+      "end": {
+        "column": 1,
+        "line": 8,
+        "offset": 267
+      },
+      "layoutType": "Vertical",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 277
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}
