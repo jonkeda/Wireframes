@@ -97,14 +97,14 @@ Estimates, from the size of the TypeScript code and its tests.
 
 ## Where it stands (2026-11-19)
 
-Every step is built. What is ticked and what is not is in [600-Tasklist.md](600-Tasklist.md): 109 of 123 boxes.
+Every step is built. What is ticked and what is not is in [600-Tasklist.md](600-Tasklist.md): 112 of 123 boxes.
 
 | Step | Stands |
 | --- | --- |
 | 0 to 4 | Done. 371 cases; the .NET renderer gives the TypeScript renderer's bytes in all four themes; `wire` reads `.wire` files and Markdown documents |
-| 5 | The hooks were investigated in a real session and built. The plugin's entries ran from a settings file; the plugin itself was not installed |
+| 5 | The hooks were investigated in a real session, built, and seen to work from the installed plugin (670) |
 | 6 | Three skills; five trials kept as a command, five of five passed |
-| 7 | The MCP server is built and tested through a test client. **No real client was connected**, so its gate is not met |
+| 7 | The MCP server is built, installed with the plugin, and was used by a model in a new session of the desktop app: its gate is met (670) |
 
 Learned and not planned:
 
@@ -116,11 +116,11 @@ Learned and not planned:
   a fresh agent found what reading did not (the table).
 - **A hook costs about 90 ms and nothing in the conversation.** It cannot see a file a shell command changed, and
   it sends the agent back once per turn at most. See 500 and 510.
-- **An SVG is not an image a model takes.** The server gives it as text; as an image only when asked. PNG, the
+- **An SVG is not an image a model sees.** Tried: the client saves it as a file and the model gets its text. The
+  server gives it as text; as an image only when asked. PNG, the
   owner's "later", is what would put the picture in the conversation.
 
-Still open: a model using the installed plugin's MCP tools and hooks in a new session (the plugin is installed and a
-real client connects its server: 650); the single file compiled ahead
+Still open: the single file compiled ahead
 of time (no C++ build tools on this machine); the VS Code preview's change tried in VS Code; diagnostic codes;
 more cases for the set (every modifier on every control, layouts whose children do not fit); the new .NET job of
 the workflow, which has not run on GitHub. Nothing is committed.

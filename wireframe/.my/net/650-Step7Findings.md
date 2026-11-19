@@ -88,3 +88,22 @@ the app's sessions sign in another way), and a plugin loads only when a session 
 installed it cannot try it. A trial for a new session is written out (seven steps: the tools without a shell, the
 hook after a write, the picture as an image, the resources, a skill, the hook before stopping); its findings go to
 `670-ClientTrial.md`. Until it has run, the gate stays open and the picture as an image is untried.
+
+## A model used it (2026-11-19, the same evening)
+
+A new session of the desktop app ran the trial; what it saw is in [670-ClientTrial.md](670-ClientTrial.md), and
+its result was checked afterwards with `wire --check`. All seven steps passed, the skill's in part.
+
+| What | Seen |
+| --- | --- |
+| The tools without a shell | A sign-in form written, validated, rendered and checked with the MCP tools alone. The gate is met |
+| Paths | Relative to the session's folder (the server's root), not to the document's folder. The agent's first try, relative to its own trial folder, was refused with a clear message |
+| The picture as an image | **The model does not see it.** The client saves the SVG under the session's `tool-results` and tells the model "Binary content (image/svg+xml) saved to …". Nothing fails. The image stays off by default: it adds a file and no picture |
+| The resource | `wireframe://reference` was listed and read |
+| The hooks, from the installed plugin | After a Write the picture was there with no word said. An error came back as a "blocking error" with the tool's lines and "This hook comes from the wireframe@wireframes plugin". A change by a shell command sent the agent back at the stop |
+| The plugin in the session that installed it | Its tools and skills appeared there too, a turn later, without a new session |
+
+What the trial's agent noted and was confirmed here: `w=300` on a card that is the wireframe's only element is not
+applied (the card is drawn 768 wide). What it noted and is as designed or known: the shadow filter that is never
+defined (630), a password placeholder drawn as dots, and that the update skill's "copy the picture aside" has no
+way without a shell.

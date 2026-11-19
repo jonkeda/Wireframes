@@ -13,9 +13,9 @@ When a box is ticked, write the date behind it, and behind a gate what showed it
 | 3 | The other themes | 3 days | **done 2026-11-19** |
 | 4 | The command-line tool | 2 days | **done 2026-11-19**, with two boxes open: see [640-Step4Findings.md](640-Step4Findings.md) |
 | 5a | The hooks: investigate and experiment | 2 days | **done 2026-11-19**; installing the plugin and an SDK session left untried: see [510-HooksFindings.md](510-HooksFindings.md) |
-| 5b | The hooks | 1 day | **built and tried in a session 2026-11-19**; the plugin itself not installed: see [500-Hooks.md](500-Hooks.md) |
+| 5b | The hooks | 1 day | **built 2026-11-19; installed as a plugin and tried in a new session** ([670-ClientTrial.md](670-ClientTrial.md)): see [500-Hooks.md](500-Hooks.md) |
 | 6 | The skills | 2 days | **written and five of five trials passed, 2026-11-19**: see [660-Step6Findings.md](660-Step6Findings.md) |
-| 7 | The MCP server | 3 days | **built 2026-11-19; no real client connected yet**: see [650-Step7Findings.md](650-Step7Findings.md) |
+| 7 | The MCP server | 3 days | **built 2026-11-19; tried in a real client the same day** ([670-ClientTrial.md](670-ClientTrial.md)): see [650-Step7Findings.md](650-Step7Findings.md) |
 
 ## Before step 0
 
@@ -141,7 +141,7 @@ in a real session, kept beside the findings.
 - [x] `510-HooksFindings.md`: an answer per question, with what was seen (2026-11-19: the reading, and the tries A to H)
 - [x] `500-Hooks.md` written again on the findings: each of the three hooks kept, changed or dropped (2026-11-19)
 - [x] What the experiments could not answer is put to the owner (2026-11-19: listed under "Open" in 500)
-- [ ] **Gate:** a written answer to each open question of 500, each shown by a hook that was run (2026-11-19: seven of ten shown by a hook that was run; 3, 7, 8 and 9 rest on the documentation in part)
+- [x] **Gate:** a written answer to each open question of 500, each shown by a hook that was run (2026-11-19: all ten; removing the plugin and an SDK session were not tried)
 
 ## Step 5b. The hooks
 
@@ -177,7 +177,7 @@ in a real session, kept beside the findings.
 
 [300-McpServer.md](300-McpServer.md).
 
-- [ ] Whether Claude Code draws an SVG image from a tool result: tried first, and written down (2026-11-19: not tried; the image is now given only when asked for (`image: true`), so no request can fail by default)
+- [x] Whether Claude Code draws an SVG image from a tool result: tried first, and written down (2026-11-19: tried in a session of the desktop app: the model does not see it. The client saves the SVG as a file and tells the model so; nothing fails. See 670)
 - [x] `wire mcp`, over standard input and output, with a root it does not leave (2026-11-19)
 - [x] `wireframe_validate` (2026-11-19)
 - [x] `wireframe_render`, with the SVG as text and as an image (2026-11-19)
@@ -190,7 +190,7 @@ in a real session, kept beside the findings.
 - [x] Tests: each tool through a test client; a path outside the root refused; every conformance case rendered (2026-11-19: ten cases rendered, not every one)
 - [x] Started and stopped a hundred times, it leaves no process and no file (2026-11-19: no file; the threads within a margin, not counted exactly)
 - [x] The skills say when to use the server and when the command (2026-11-19)
-- [ ] **Gate:** a client that has no shell writes a wireframe that validates and renders, and shows the picture (2026-11-19: half met: a real client connected the installed server and listed its tools; no model has used them yet. The trial is written for a new session: `670-ClientTrial.md`)
+- [x] **Gate:** a client that has no shell writes a wireframe that validates and renders, and shows the picture (2026-11-19: met: a session of the desktop app wrote a sign-in form, validated, rendered and checked it with the MCP tools alone. "Shows the picture" is the SVG as text and a saved file, not an image the model sees. See 670)
 
 ## Closing
 
