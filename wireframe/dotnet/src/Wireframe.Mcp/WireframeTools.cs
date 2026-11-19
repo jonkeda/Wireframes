@@ -572,7 +572,7 @@ public sealed partial class WireframeTools
 
         var holds = c.Name switch
         {
-            "Table" => "Holds rows written as a Markdown table, indented under it: `| Name | Email |`, then `|---|---|`, then a line per row. Ends with /Table.",
+            "Table" => "Holds rows written as a Markdown table, indented under it: `| Name | Email |`, then `|---|---|`, then a line per row; the rows above the `|---|` line are the header. Or Row elements, each holding Cell \"text\" lines and ending with /Row (a Row marked `selected` is drawn as a header). With neither, `rows=` and `cols=` draw a placeholder. Ends with /Table.",
             "Tree" => "Holds tree lines indented under it: `+ Folder` for a branch (its children indented under it), `- File` for a leaf. Ends with /Tree.",
             "List" => "Holds `- item` lines indented under it. Ends with /List.",
             "Dropdown" => "Its options: strings after the placeholder (`Dropdown \"Choose\" \"Red\" \"Green\"`), or Option lines indented under it, ending with /Dropdown.",

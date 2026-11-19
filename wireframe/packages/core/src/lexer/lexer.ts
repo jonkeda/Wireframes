@@ -4,6 +4,7 @@ import {
   SourceLocation,
   KEYWORDS,
   CLOSING_KEYWORDS,
+  ownValue,
 } from './tokens.js';
 
 /**
@@ -372,6 +373,10 @@ export class Lexer {
    * Strings and quoted attribute values share it.
    */
   private readEscape(): string {
+    // A backslash as the last character of the source escapes nothing
+    if (this.isAtEnd()) {
+      return '';
+    }
     const escaped = this.advance();
     switch (escaped) {
       case 'n':
@@ -453,7 +458,7 @@ export class Lexer {
       keyword += this.advance();
     }
 
-    const tokenType = CLOSING_KEYWORDS[keyword];
+    const tokenType = ownValue(CLOSING_KEYWORDS, keyword);
     if (tokenType) {
       this.addToken(tokenType, keyword, {
         closingKeyword: keyword.substring(1),
@@ -592,7 +597,7 @@ export class Lexer {
         this.advance();
         value += this.readEscape();
       } else if (this.peek() === '\n') {
-        this.addError('Unterminated string literal');
+        // The string ends with its line; it is reported once, below
         break;
       } else {
         value += this.advance();
@@ -747,7 +752,7 @@ export class Lexer {
     }
 
     // Check if it's a keyword
-    const tokenType = KEYWORDS[value];
+    const tokenType = ownValue(KEYWORDS, value);
 
     // `if <condition>`: the rest of the line is the condition, kept as written
     if (tokenType === TokenType.IF) {

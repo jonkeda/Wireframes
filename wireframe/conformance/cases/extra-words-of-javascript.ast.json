@@ -1,0 +1,55 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Label",
+      "end": {
+        "column": 24,
+        "line": 2,
+        "offset": 39
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "constructor",
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "constructor": 1,
+        "valueOf": 2
+      },
+      "controlType": "Button",
+      "end": {
+        "column": 46,
+        "line": 3,
+        "offset": 85
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 44
+      },
+      "text": "toString",
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 4,
+    "offset": 96
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

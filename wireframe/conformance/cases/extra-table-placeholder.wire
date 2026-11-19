@@ -1,0 +1,6 @@
+wireframe clean
+    Table rows=3 cols=2
+    /Table
+    Table w=300 h=120
+    /Table
+/wireframe

@@ -6,7 +6,80 @@
         "rows": 5,
         "w": 600
       },
-      "children": [],
+      "children": [
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnText",
+          "end": {
+            "column": 1,
+            "line": 4,
+            "offset": 68
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 50
+          },
+          "text": "Name",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnDate",
+          "end": {
+            "column": 1,
+            "line": 5,
+            "offset": 97
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 76
+          },
+          "text": "Created",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnNumber",
+          "end": {
+            "column": 1,
+            "line": 6,
+            "offset": 126
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 105
+          },
+          "text": "Count",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnCheckbox",
+          "end": {
+            "column": 1,
+            "line": 7,
+            "offset": 158
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 134
+          },
+          "text": "Active",
+          "type": "Component"
+        }
+      ],
       "componentType": "DataGrid",
       "end": {
         "column": 14,

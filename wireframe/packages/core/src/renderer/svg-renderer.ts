@@ -5,6 +5,8 @@ import {
   SectionNode,
   LayoutNode,
   ComponentNode,
+  TableRowData,
+  TreeItemNode,
   isControlNode,
   isSectionNode,
   isLayoutNode,
@@ -19,6 +21,19 @@ import {
   INPUT_LABEL_HEIGHT,
   escapeXml,
   roundSvgNumbers,
+  BREADCRUMB_SEPARATOR_WIDTH,
+  HOVER_TIP_HEIGHT,
+  LIST_ITEM_HEIGHT,
+  STEPPER_CIRCLE_Y,
+  TAB_BAR_HEIGHT,
+  TABLE_ROW_HEIGHT,
+  TREE_ITEM_HEIGHT,
+  TREE_PADDING,
+  breadcrumbTexts,
+  componentTitle,
+  hoverTipWidth,
+  numberAttribute,
+  withoutBoldMarks,
 } from './control-helpers.js';
 import { getAriaRole, getAriaAttributes, formatAriaAttributes } from '../accessibility.js';
 
@@ -103,6 +118,13 @@ export class SVGRenderer {
 
     // Render SVG
     const content = this.renderLayout(layout, padding, padding);
+
+    // The shadow that cards, menus and toasts point at, when one of them is drawn
+    if (content.includes('url(#shadow)')) {
+      this.defs.push(
+        '<filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15" /></filter>'
+      );
+    }
 
     const defs = this.defs.length > 0 ? `<defs>${this.defs.join('\n')}</defs>` : '';
 
@@ -199,7 +221,7 @@ export class SVGRenderer {
     } else if (isLayoutNode(node as ElementNode)) {
       svg += this.renderLayoutNode(node as LayoutNode, { ...bounds, x, y });
     } else if (isComponentNode(node as ElementNode)) {
-      svg += this.renderComponent(node as ComponentNode, { ...bounds, x, y });
+      svg += this.renderComponent(node as ComponentNode, { ...bounds, x, y }, layout);
     }
 
     // Render children
@@ -218,8 +240,8 @@ export class SVGRenderer {
       return inner;
     }
     const attrs = getAriaAttributes(node.controlType, {
-      label: node.label ?? controlText(node),
-      placeholder: node.placeholder,
+      label: withoutBoldMarks(node.label ?? controlText(node)),
+      placeholder: withoutBoldMarks(node.placeholder),
       disabled: node.modifiers?.disabled,
       required: node.modifiers?.required,
       checked: node.modifiers?.checked,
@@ -372,7 +394,7 @@ export class SVGRenderer {
 
     return `<g opacity="${opacity}">
       ${rect}
-      <text x="${x + width / 2}" y="${y + height / 2 + 5}" text-anchor="middle" class="wire-text" fill="${textColor}">${this.escapeXml(controlText(node) || 'Button')}</text>
+      <text x="${x + width / 2}" y="${y + height / 2 + 5}" text-anchor="middle" class="wire-text" style="fill: ${textColor}">${this.escapeXml(controlText(node) || 'Button')}</text>
     </g>`;
   }
 
@@ -397,7 +419,7 @@ export class SVGRenderer {
     // Render text if present
     if (node.text) {
       const textX = iconX + iconSize + 8;
-      svg += `<text x="${textX}" y="${y + height / 2 + 5}" class="wire-text" fill="${iconColor}">${this.escapeXml(node.text)}</text>`;
+      svg += `<text x="${textX}" y="${y + height / 2 + 5}" class="wire-text" style="fill: ${iconColor}">${this.escapeXml(node.text)}</text>`;
     }
 
     return `<g>${svg}</g>`;
@@ -628,7 +650,7 @@ export class SVGRenderer {
 
     return `<g>
       <circle cx="${cx}" cy="${cy}" r="${size / 2}" fill="${this.theme.colors.primary}" />
-      <text x="${cx}" y="${cy + fontSize / 3}" text-anchor="middle" class="wire-text" style="font-size: ${fontSize}px" fill="${this.theme.colors.primaryText}">${this.escapeXml(initials || '?')}</text>
+      <text x="${cx}" y="${cy + fontSize / 3}" text-anchor="middle" class="wire-text" style="fill: ${this.theme.colors.primaryText}; font-size: ${fontSize}px">${this.escapeXml(initials || '?')}</text>
     </g>`;
   }
 
@@ -697,7 +719,7 @@ export class SVGRenderer {
 
     return `<g>
       <rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${height / 2}" fill="${bgColor}" stroke="${this.theme.colors.border}" stroke-width="${this.theme.borders.width}" />
-      <text x="${x + width / 2}" y="${y + height / 2 + 4}" text-anchor="middle" class="wire-text wire-text-small" fill="${textColor}">${this.escapeXml(node.text || '')}</text>
+      <text x="${x + width / 2}" y="${y + height / 2 + 4}" text-anchor="middle" class="wire-text wire-text-small" style="fill: ${textColor}">${this.escapeXml(node.text || '')}</text>
     </g>`;
   }
 
@@ -722,7 +744,7 @@ export class SVGRenderer {
 
     return `<g>
       <rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${height / 2}" fill="${colors.bg}" />
-      <text x="${x + width / 2}" y="${y + height / 2 + 4}" text-anchor="middle" class="wire-text wire-text-small" fill="${colors.text}">${this.escapeXml(node.text || '')}</text>
+      <text x="${x + width / 2}" y="${y + height / 2 + 4}" text-anchor="middle" class="wire-text wire-text-small" style="fill: ${colors.text}">${this.escapeXml(node.text || '')}</text>
     </g>`;
   }
 
@@ -752,7 +774,7 @@ export class SVGRenderer {
 
     return `<g>
       <rect x="${x}" y="${y}" width="${width}" height="${height}" fill="${bgColor}" />
-      <text x="${x + width / 2}" y="${y + height / 2 + 5}" text-anchor="middle" class="wire-text" fill="${textColor}">${this.escapeXml(node.text || 'Tab')}</text>
+      <text x="${x + width / 2}" y="${y + height / 2 + 5}" text-anchor="middle" class="wire-text" style="fill: ${textColor}">${this.escapeXml(node.text || 'Tab')}</text>
       ${borderBottom}
     </g>`;
   }
@@ -786,7 +808,7 @@ export class SVGRenderer {
       textX = x + 36;
     }
 
-    svg += `<text x="${textX}" y="${y + height / 2 + 5}" class="wire-text" fill="${textColor}">${this.escapeXml(node.text || 'Menu Item')}</text>`;
+    svg += `<text x="${textX}" y="${y + height / 2 + 5}" class="wire-text" style="fill: ${textColor}">${this.escapeXml(node.text || 'Menu Item')}</text>`;
 
     return `<g opacity="${isDisabled ? 0.5 : 1}">${svg}</g>`;
   }
@@ -806,11 +828,11 @@ export class SVGRenderer {
       const isLast = index === items.length - 1;
       const textColor = isLast ? this.theme.colors.text : this.theme.colors.primary;
       
-      svg += `<text x="${currentX}" y="${y + height / 2 + 5}" class="wire-text" fill="${textColor}">${this.escapeXml(item)}</text>`;
+      svg += `<text x="${currentX}" y="${y + height / 2 + 5}" class="wire-text" style="fill: ${textColor}">${this.escapeXml(item)}</text>`;
       currentX += item.length * 8 + 8;
       
       if (!isLast) {
-        svg += `<text x="${currentX}" y="${y + height / 2 + 5}" class="wire-text" fill="${this.theme.colors.textSecondary}">/</text>`;
+        svg += `<text x="${currentX}" y="${y + height / 2 + 5}" class="wire-text" style="fill: ${this.theme.colors.textSecondary}">/</text>`;
         currentX += 16;
       }
     });
@@ -823,8 +845,8 @@ export class SVGRenderer {
    */
   private renderPagination(node: ControlNode, bounds: BoundingBox): string {
     const { x, y, height } = bounds;
-    const currentPage = (node.attributes['page'] as number) || 1;
-    const totalPages = (node.attributes['total'] as number) || 5;
+    const currentPage = numberAttribute(node.attributes['page'], 1);
+    const totalPages = numberAttribute(node.attributes['total'], 5);
 
     let svg = '';
     let currentX = x;
@@ -846,7 +868,7 @@ export class SVGRenderer {
       const textColor = isActive ? this.theme.colors.primaryText : this.theme.colors.text;
 
       svg += `<rect x="${currentX}" y="${y}" width="${buttonWidth}" height="${buttonHeight}" rx="${this.theme.borders.radius}" fill="${bgColor}" stroke="${this.theme.colors.border}" stroke-width="${this.theme.borders.width}" />`;
-      svg += `<text x="${currentX + buttonWidth / 2}" y="${y + buttonHeight / 2 + 5}" text-anchor="middle" class="wire-text" fill="${textColor}">${i}</text>`;
+      svg += `<text x="${currentX + buttonWidth / 2}" y="${y + buttonHeight / 2 + 5}" text-anchor="middle" class="wire-text" style="fill: ${textColor}">${i}</text>`;
       currentX += buttonWidth + 4;
     }
 
@@ -982,9 +1004,15 @@ export class SVGRenderer {
     const showSelection = node.modifiers.selected; // Enable row selection checkboxes
     
     // Get column definitions from children or use defaults
-    const columnChildren = (node.children?.filter(
-      (c): c is ControlNode => isControlNode(c) && (c.controlType?.startsWith('Column') || c.controlType === 'Column')
-    ) || []) as ControlNode[];
+    const columnChildren = (node.children ?? [])
+      .filter(
+        (c) =>
+          (isControlNode(c) && c.controlType.startsWith('Column')) ||
+          (isComponentNode(c) && c.componentType.startsWith('Column'))
+      )
+      .map((c) =>
+        isComponentNode(c) ? ({ ...c, type: 'Control', controlType: c.componentType } as unknown as ControlNode) : c
+      ) as ControlNode[];
     const cols = columnChildren.length > 0 ? columnChildren.length : (node.attributes['cols'] as number) || 4;
     
     // Calculate column widths
@@ -1068,7 +1096,7 @@ export class SVGRenderer {
       case 'ColumnImage':
         return `<rect x="${x}" y="${y - 5}" width="10" height="10" rx="1" fill="none" stroke="${this.theme.colors.textSecondary}" stroke-width="1" /><line x1="${x + 2}" y1="${y + 3}" x2="${x + 8}" y2="${y - 3}" stroke="${this.theme.colors.textSecondary}" stroke-width="1" />`;
       case 'ColumnLink':
-        return `<text x="${x}" y="${y + 4}" class="wire-text wire-text-small" fill="${this.theme.colors.primary}">🔗</text>`;
+        return `<text x="${x}" y="${y + 4}" class="wire-text wire-text-small" style="fill: ${this.theme.colors.primary}">🔗</text>`;
       case 'ColumnButton':
         return `<rect x="${x}" y="${y - 4}" width="12" height="8" rx="2" fill="none" stroke="${this.theme.colors.textSecondary}" stroke-width="1" />`;
       default:
@@ -1110,7 +1138,7 @@ export class SVGRenderer {
         return `<rect x="${imgX}" y="${imgY}" width="${imgSize}" height="${imgSize}" rx="4" fill="${this.theme.colors.surface}" stroke="${this.theme.colors.border}" stroke-width="1" />`;
       
       case 'ColumnLink':
-        return `<text x="${textX}" y="${textY}" class="wire-text wire-text-small" fill="${this.theme.colors.primary}" style="text-decoration: underline">Link ${rowIndex}</text>`;
+        return `<text x="${textX}" y="${textY}" class="wire-text wire-text-small" style="fill: ${this.theme.colors.primary}; text-decoration: underline">Link ${rowIndex}</text>`;
       
       case 'ColumnButton':
         const btnWidth = width - 24;
@@ -1190,7 +1218,7 @@ export class SVGRenderer {
         typeIcon = `<rect x="${iconX}" y="${iconY - 6}" width="12" height="12" rx="1" fill="none" stroke="${this.theme.colors.textSecondary}" stroke-width="1" />`;
         break;
       case 'ColumnLink':
-        typeIcon = `<text x="${iconX}" y="${iconY + 4}" class="wire-text wire-text-small" fill="${this.theme.colors.primary}">🔗</text>`;
+        typeIcon = `<text x="${iconX}" y="${iconY + 4}" class="wire-text wire-text-small" style="fill: ${this.theme.colors.primary}">🔗</text>`;
         break;
       case 'ColumnButton':
         typeIcon = `<rect x="${iconX - 2}" y="${iconY - 5}" width="16" height="10" rx="2" fill="none" stroke="${this.theme.colors.textSecondary}" stroke-width="1" />`;
@@ -1231,7 +1259,7 @@ export class SVGRenderer {
     const { x, y, height } = bounds;
     
     return `<g>
-      <text x="${x}" y="${y + height / 2 + 5}" class="wire-text" fill="${this.theme.colors.primary}" style="text-decoration: underline">${this.escapeXml(controlText(node) || 'Link')}</text>
+      <text x="${x}" y="${y + height / 2 + 5}" class="wire-text" style="fill: ${this.theme.colors.primary}; text-decoration: underline">${this.escapeXml(controlText(node) || 'Link')}</text>
     </g>`;
   }
 
@@ -1283,8 +1311,8 @@ export class SVGRenderer {
    */
   private renderStepper(node: ControlNode, bounds: BoundingBox): string {
     const { x, y, width, height } = bounds;
-    const steps = (node.attributes['steps'] as number) || 4;
-    const current = (node.attributes['current'] as number) || 1;
+    const steps = numberAttribute(node.attributes['steps'], 4);
+    const current = numberAttribute(node.attributes['current'], 1);
     const stepWidth = width / steps;
     const circleRadius = 14;
 
@@ -1313,7 +1341,7 @@ export class SVGRenderer {
       if (isCompleted) {
         svg += `<path d="M${stepX - 5} ${stepY} L${stepX - 1} ${stepY + 4} L${stepX + 5} ${stepY - 4}" stroke="${textColor}" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />`;
       } else {
-        svg += `<text x="${stepX}" y="${stepY + 5}" text-anchor="middle" class="wire-text wire-text-small" fill="${textColor}">${i}</text>`;
+        svg += `<text x="${stepX}" y="${stepY + 5}" text-anchor="middle" class="wire-text wire-text-small" style="fill: ${textColor}">${i}</text>`;
       }
     }
 
@@ -1349,7 +1377,7 @@ export class SVGRenderer {
         stroke: strokeColor,
         strokeWidth: this.theme.borders.width,
       });
-      return cardRect.replace('/>', ' filter="url(#shadow)" />');
+      return cardRect.replace(' />', ' filter="url(#shadow)" />') + this.renderSectionTitle(node, bounds);
     }
 
     if (node.sectionType === 'Header' || node.sectionType === 'Footer') {
@@ -1360,7 +1388,15 @@ export class SVGRenderer {
       fill: bgColor,
       stroke: strokeColor,
       strokeWidth: this.theme.borders.width,
-    });
+    }) + this.renderSectionTitle(node, bounds);
+  }
+
+  /** The `title="…"` of a section, as its first line */
+  private renderSectionTitle(node: SectionNode, bounds: BoundingBox): string {
+    const title = componentTitle(node);
+    return title
+      ? `<text x="${bounds.x + 16}" y="${bounds.y + 24}" class="wire-text wire-text-bold">${this.escapeXml(title)}</text>`
+      : '';
   }
 
   /**
@@ -1372,10 +1408,13 @@ export class SVGRenderer {
   }
 
   /**
-   * Render a component
+   * Render a component. The layout gave it its shape (`LayoutEngine.layoutComponent`);
+   * `layout` is passed for the kinds that draw between their children or need their depth.
    */
-  private renderComponent(node: ComponentNode, bounds: BoundingBox): string {
+  private renderComponent(node: ComponentNode, bounds: BoundingBox, layout: LayoutInfo): string {
     const { x, y, width, height } = bounds;
+    // The drawing functions of the parts were written for controls: a component is handed to them as one
+    const part = { ...node, type: 'Control', controlType: node.componentType } as unknown as ControlNode;
 
     switch (node.componentType) {
       case 'Card':
@@ -1386,8 +1425,8 @@ export class SVGRenderer {
           strokeWidth: this.theme.borders.width,
         });
 
-      case 'Dialog':
-        // Add a darkened overlay effect
+      case 'Dialog': {
+        const title = componentTitle(node);
         const dialogRect = this.createRect(x, y, width, height, {
           rx: this.theme.borders.radiusLarge,
           fill: this.theme.colors.background,
@@ -1396,10 +1435,11 @@ export class SVGRenderer {
         });
         return `<g>
           ${dialogRect}
-          ${node.text ? `<text x="${x + 16}" y="${y + 24}" class="wire-text wire-text-bold">${this.escapeXml(node.text)}</text>` : ''}
+          ${title ? `<text x="${x + 16}" y="${y + 24}" class="wire-text wire-text-bold">${this.escapeXml(title)}</text>` : ''}
         </g>`;
+      }
 
-      case 'Alert':
+      case 'Alert': {
         const alertType = (node.attributes['type'] as string) || 'info';
         const alertColors: Record<string, string> = {
           info: this.theme.colors.info,
@@ -1414,22 +1454,302 @@ export class SVGRenderer {
           stroke: alertColor,
           strokeWidth: this.theme.borders.width,
         });
+        // Alone, the text stands in the middle; above content, it is the first line
+        const textY = node.children.length > 0 ? y + 24 : y + height / 2 + 5;
 
         return `<g>
           ${alertRect}
           <rect x="${x}" y="${y}" width="4" height="${height}" fill="${alertColor}" />
+          ${node.text ? `<text x="${x + 16}" y="${textY}" class="wire-text">${this.escapeXml(node.text)}</text>` : ''}
         </g>`;
+      }
 
       case 'Tabs':
         return this.createRect(x, y, width, height, {
           fill: 'none',
           stroke: this.theme.colors.border,
           strokeWidth: this.theme.borders.width,
-        });
+        }) + this.renderTabs(part, { x, y, width, height: Math.min(height, TAB_BAR_HEIGHT) });
+
+      case 'Tab':
+        return this.renderTab(part, bounds);
+
+      case 'Menu':
+        return this.renderMenu(part, bounds);
+
+      case 'MenuItem':
+        return this.renderMenuItem(part, bounds);
+
+      case 'Breadcrumb':
+        return this.renderBreadcrumbOf(node, bounds, layout);
+
+      case 'BreadcrumbItem':
+        return `<text x="${x}" y="${y + height / 2 + 5}" class="wire-text" style="fill: ${this.theme.colors.primary}">${this.escapeXml(node.text || 'Item')}</text>`;
+
+      case 'Stepper': {
+        const steps = node.children.filter(
+          (c): c is ComponentNode => isComponentNode(c) && c.componentType === 'Step'
+        );
+        return steps.length > 0 ? this.renderSteps(steps, bounds) : this.renderStepper(part, bounds);
+      }
+
+      case 'Step':
+        return `<text x="${x}" y="${y + height / 2 + 5}" class="wire-text">${this.escapeXml(node.text || 'Step')}</text>`;
+
+      case 'Table':
+        if (node.children.length > 0) {
+          return this.renderTableFrame(bounds);
+        }
+        if ((node.tableRows ?? []).some((row) => !row.isSeparator)) {
+          return this.renderTableRows(node.tableRows ?? [], bounds);
+        }
+        return this.renderTable(part, bounds);
+
+      case 'Row':
+        return this.renderRow(part, bounds);
+
+      case 'Cell':
+        return this.renderCell(part, bounds);
+
+      case 'Tree':
+        return this.renderTree(part, bounds) + this.renderTreeLines(node.treeItems ?? [], bounds);
+
+      case 'TreeItem':
+        return this.renderTreeItem(
+          { ...part, attributes: { ...node.attributes, level: layout.level ?? node.attributes['level'] } } as ControlNode,
+          bounds
+        );
+
+      case 'List':
+        return this.renderList(node.listItems ?? [], bounds);
+
+      case 'Accordion':
+        return this.renderAccordion(part, bounds);
+
+      case 'AccordionSection':
+      case 'Expander':
+        return this.renderAccordionSection(part, bounds);
+
+      case 'DataGrid':
+        return this.renderDataGrid(part, bounds);
+
+      case 'Column':
+      case 'ColumnText':
+      case 'ColumnDate':
+      case 'ColumnNumber':
+      case 'ColumnCheckbox':
+      case 'ColumnImage':
+      case 'ColumnLink':
+      case 'ColumnButton':
+        return this.renderColumn(part, bounds);
+
+      case 'Hamburger':
+        return this.renderHamburger(bounds);
+
+      case 'Hover':
+        return this.renderHoverTip(node, bounds);
 
       default:
         return '';
     }
+  }
+
+  /** The items of a breadcrumb: its BreadcrumbItems or its one text, else the "/" between its elements */
+  private renderBreadcrumbOf(node: ComponentNode, bounds: BoundingBox, layout: LayoutInfo): string {
+    const items = node.children.filter(
+      (c): c is ComponentNode => isComponentNode(c) && c.componentType === 'BreadcrumbItem'
+    );
+    if (items.length > 0) {
+      return this.renderBreadcrumbTexts(items.map((item) => item.text || ''), bounds);
+    }
+    if (node.children.length === 0) {
+      return this.renderBreadcrumbTexts(breadcrumbTexts(node.text), bounds);
+    }
+
+    // The children draw themselves; what is theirs to the layout is moved as this component was
+    const dx = bounds.x - layout.bounds.x;
+    let svg = '';
+    layout.children.slice(0, -1).forEach((child) => {
+      const separatorX = child.bounds.x + child.bounds.width + 8 + dx;
+      svg += `<text x="${separatorX}" y="${bounds.y + bounds.height / 2 + 5}" class="wire-text wire-text-secondary">/</text>`;
+    });
+    return `<g>${svg}</g>`;
+  }
+
+  private renderBreadcrumbTexts(items: string[], bounds: BoundingBox): string {
+    const { x, y, height } = bounds;
+    let currentX = x;
+    let svg = '';
+
+    items.forEach((item, index) => {
+      const isLast = index === items.length - 1;
+      const textColor = isLast ? this.theme.colors.text : this.theme.colors.primary;
+
+      svg += `<text x="${currentX}" y="${y + height / 2 + 5}" class="wire-text" style="fill: ${textColor}">${this.escapeXml(item)}</text>`;
+      currentX += item.length * 8 + 8;
+
+      if (!isLast) {
+        svg += `<text x="${currentX}" y="${y + height / 2 + 5}" class="wire-text wire-text-secondary">/</text>`;
+        currentX += BREADCRUMB_SEPARATOR_WIDTH;
+      }
+    });
+
+    return `<g>${svg}</g>`;
+  }
+
+  /**
+   * A stepper of Step elements. The step marked active (or selected) is the current one;
+   * with none marked, it is the one after the completed ones.
+   */
+  private renderSteps(steps: ComponentNode[], bounds: BoundingBox): string {
+    const { x, y, width } = bounds;
+    const stepWidth = width / steps.length;
+    const circleRadius = 14;
+    const stepY = y + STEPPER_CIRCLE_Y;
+    const marked = steps.findIndex((step) => step.modifiers.active || step.modifiers.selected);
+    const current = marked >= 0 ? marked + 1 : steps.filter((step) => step.modifiers.completed).length + 1;
+
+    let svg = '';
+
+    steps.forEach((step, index) => {
+      const i = index + 1;
+      const stepX = x + (i - 0.5) * stepWidth;
+      const isCurrent = i === current;
+      const isCompleted = !isCurrent && (!!step.modifiers.completed || i < current);
+
+      if (i > 1) {
+        const prevX = x + (i - 1.5) * stepWidth;
+        const lineColor = isCompleted || isCurrent ? this.theme.colors.primary : this.theme.colors.border;
+        svg += `<line x1="${prevX + circleRadius}" y1="${stepY}" x2="${stepX - circleRadius}" y2="${stepY}" stroke="${lineColor}" stroke-width="2" />`;
+      }
+
+      const bgColor = isCompleted ? this.theme.colors.primary : isCurrent ? this.theme.colors.background : this.theme.colors.surface;
+      const borderColor = isCompleted || isCurrent ? this.theme.colors.primary : this.theme.colors.border;
+      const textColor = isCompleted ? this.theme.colors.primaryText : isCurrent ? this.theme.colors.primary : this.theme.colors.textSecondary;
+
+      svg += `<circle cx="${stepX}" cy="${stepY}" r="${circleRadius}" fill="${bgColor}" stroke="${borderColor}" stroke-width="2" />`;
+
+      if (isCompleted) {
+        svg += `<path d="M${stepX - 5} ${stepY} L${stepX - 1} ${stepY + 4} L${stepX + 5} ${stepY - 4}" stroke="${textColor}" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />`;
+      } else {
+        svg += `<text x="${stepX}" y="${stepY + 5}" text-anchor="middle" class="wire-text wire-text-small" style="fill: ${textColor}">${i}</text>`;
+      }
+
+      if (step.text) {
+        const labelColor = isCurrent ? this.theme.colors.text : this.theme.colors.textSecondary;
+        svg += `<text x="${stepX}" y="${stepY + circleRadius + 18}" text-anchor="middle" class="wire-text wire-text-small" style="fill: ${labelColor}">${this.escapeXml(step.text)}</text>`;
+      }
+    });
+
+    return `<g>${svg}</g>`;
+  }
+
+  /** The border of a table whose rows draw themselves */
+  private renderTableFrame(bounds: BoundingBox): string {
+    const { x, y, width, height } = bounds;
+    return `<rect x="${x}" y="${y}" width="${width}" height="${height}" fill="${this.theme.colors.background}" stroke="${this.theme.colors.border}" stroke-width="${this.theme.borders.width}" />`;
+  }
+
+  /**
+   * A table written as `| a | b |` lines. The rows above the first separator line are the
+   * header; without a separator there is none.
+   */
+  private renderTableRows(tableRows: TableRowData[], bounds: BoundingBox): string {
+    const { x, y, width } = bounds;
+    const separator = tableRows.findIndex((row) => row.isSeparator);
+    const columns = Math.max(1, ...tableRows.filter((row) => !row.isSeparator).map((row) => row.cells.length));
+    const cellWidth = width / columns;
+
+    let svg = this.renderTableFrame(bounds);
+    let line = 0;
+
+    tableRows.forEach((row, index) => {
+      if (row.isSeparator) {
+        return;
+      }
+      const isHeader = index < separator;
+      const rowY = y + line * TABLE_ROW_HEIGHT;
+      line++;
+
+      svg += `<rect x="${x}" y="${rowY}" width="${width}" height="${TABLE_ROW_HEIGHT}" fill="${isHeader ? this.theme.colors.surface : 'transparent'}" />`;
+      svg += `<line x1="${x}" y1="${rowY + TABLE_ROW_HEIGHT}" x2="${x + width}" y2="${rowY + TABLE_ROW_HEIGHT}" stroke="${this.theme.colors.border}" stroke-width="1" />`;
+
+      row.cells.forEach((cell, c) => {
+        const cellX = x + c * cellWidth;
+        if (c > 0) {
+          svg += `<line x1="${cellX}" y1="${rowY}" x2="${cellX}" y2="${rowY + TABLE_ROW_HEIGHT}" stroke="${this.theme.colors.border}" stroke-width="1" />`;
+        }
+        svg += `<text x="${cellX + 8}" y="${rowY + TABLE_ROW_HEIGHT / 2 + 5}" class="wire-text wire-text-small${isHeader ? ' wire-text-bold' : ''}">${this.escapeXml(cell)}</text>`;
+      });
+    });
+
+    return `<g>${svg}</g>`;
+  }
+
+  /** A tree written as `+ branch` and `- leaf` lines: every line is shown, a branch as open */
+  private renderTreeLines(items: TreeItemNode[], bounds: BoundingBox): string {
+    const rowHeight = TREE_ITEM_HEIGHT;
+    let line = 0;
+    let svg = '';
+
+    const draw = (list: TreeItemNode[], level: number): void => {
+      for (const item of list) {
+        const row = { x: bounds.x, y: bounds.y + TREE_PADDING + line * rowHeight, width: bounds.width, height: rowHeight };
+        line++;
+        svg += this.renderTreeItem(
+          {
+            type: 'Control',
+            controlType: 'TreeItem',
+            text: item.text,
+            modifiers: { expanded: true },
+            attributes: { level },
+            children: item.children as unknown as ElementNode[],
+          } as unknown as ControlNode,
+          row
+        );
+        draw(item.children, level + 1);
+      }
+    };
+    draw(items, 0);
+
+    return svg;
+  }
+
+  /** A list: a dot and a line of text per item */
+  private renderList(items: string[], bounds: BoundingBox): string {
+    const { x, y } = bounds;
+    let svg = '';
+
+    items.forEach((item, index) => {
+      const rowY = y + index * LIST_ITEM_HEIGHT;
+      svg += `<circle cx="${x + 8}" cy="${rowY + LIST_ITEM_HEIGHT / 2}" r="2.5" fill="${this.theme.colors.textSecondary}" />`;
+      svg += `<text x="${x + 20}" y="${rowY + LIST_ITEM_HEIGHT / 2 + 5}" class="wire-text">${this.escapeXml(item)}</text>`;
+    });
+
+    return `<g>${svg}</g>`;
+  }
+
+  /** The three-line menu button */
+  private renderHamburger(bounds: BoundingBox): string {
+    const { x, y } = bounds;
+    let svg = '';
+
+    for (const lineY of [6, 12, 18]) {
+      svg += `<line x1="${x + 3}" y1="${y + lineY}" x2="${x + 21}" y2="${y + lineY}" stroke="${this.theme.colors.text}" stroke-width="2" stroke-linecap="round" />`;
+    }
+
+    return `<g>${svg}</g>`;
+  }
+
+  /** The tip of a Hover, under what it is shown for */
+  private renderHoverTip(node: ComponentNode, bounds: BoundingBox): string {
+    const { x, y, height } = bounds;
+    const tipY = y + height - HOVER_TIP_HEIGHT;
+
+    return `<g>
+      <rect x="${x}" y="${tipY}" width="${hoverTipWidth(node.text)}" height="${HOVER_TIP_HEIGHT}" rx="${this.theme.borders.radius}" fill="${this.theme.colors.text}" />
+      <text x="${x + 8}" y="${tipY + HOVER_TIP_HEIGHT / 2 + 4}" class="wire-text wire-text-small" style="fill: ${this.theme.colors.background}">${this.escapeXml(node.text || 'Tip')}</text>
+    </g>`;
   }
 
   /**

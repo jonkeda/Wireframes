@@ -11,18 +11,18 @@
   <rect width="100%" height="100%" fill="#1e3a5f" />
   <g role="group" aria-label="JD"><g>
       <circle cx="28" cy="28" r="12" fill="#ffffff" />
-      <text x="28" y="31.33" text-anchor="middle" class="wire-text" style="font-size: 10px" fill="#1e3a5f">J</text>
+      <text x="28" y="31.33" text-anchor="middle" class="wire-text" style="fill: #1e3a5f; font-size: 10px">J</text>
     </g></g><g role="group" aria-label="JD"><g>
       <circle cx="64" cy="32" r="16" fill="#ffffff" />
-      <text x="64" y="35.56" text-anchor="middle" class="wire-text" style="font-size: 10.67px" fill="#1e3a5f">J</text>
+      <text x="64" y="35.56" text-anchor="middle" class="wire-text" style="fill: #1e3a5f; font-size: 10.67px">J</text>
     </g></g><g role="group" aria-label="JD"><g>
       <circle cx="108" cy="36" r="20" fill="#ffffff" />
-      <text x="108" y="40.44" text-anchor="middle" class="wire-text" style="font-size: 13.33px" fill="#1e3a5f">J</text>
+      <text x="108" y="40.44" text-anchor="middle" class="wire-text" style="fill: #1e3a5f; font-size: 13.33px">J</text>
     </g></g><g role="group" aria-label="JD"><g>
       <circle cx="164" cy="44" r="28" fill="#ffffff" />
-      <text x="164" y="50.22" text-anchor="middle" class="wire-text" style="font-size: 18.67px" fill="#1e3a5f">J</text>
+      <text x="164" y="50.22" text-anchor="middle" class="wire-text" style="fill: #1e3a5f; font-size: 18.67px">J</text>
     </g></g><g role="group" aria-label="JD"><g>
       <circle cx="240" cy="56" r="40" fill="#ffffff" />
-      <text x="240" y="64.89" text-anchor="middle" class="wire-text" style="font-size: 26.67px" fill="#1e3a5f">J</text>
+      <text x="240" y="64.89" text-anchor="middle" class="wire-text" style="fill: #1e3a5f; font-size: 26.67px">J</text>
     </g></g>
 </svg>

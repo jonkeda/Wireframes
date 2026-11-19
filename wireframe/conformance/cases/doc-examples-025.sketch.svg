@@ -9,14 +9,14 @@
   </style>
   
   <rect width="100%" height="100%" fill="#fefefe" />
-  <g role="group" aria-label="**Absolute Positioning**"><text x="26" y="41" class="wire-text wire-text-bold">Absolute Positioning</text></g><g role="button" aria-label="Top Left"><g opacity="1">
+  <g role="group" aria-label="Absolute Positioning"><text x="26" y="41" class="wire-text wire-text-bold">Absolute Positioning</text></g><g role="button" aria-label="Top Left"><g opacity="1">
       <path d="M26.0 57.1 Q76.0 56.8 126.0 55.6 M126.3 56.0 Q130.4 74.0 124.9 92.0 M126.0 90.7 Q76.0 88.1 26.0 93.5 M25.8 92.0 Q22.8 74.0 26.3 56.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="76" y="79" text-anchor="middle" class="wire-text" fill="#333333">Top Left</text>
+      <text x="76" y="79" text-anchor="middle" class="wire-text" style="fill: #333333">Top Left</text>
     </g></g><g role="button" aria-label="Center"><g opacity="1">
       <path d="M166.0 146.3 Q216.0 145.1 266.0 144.8 M267.1 146.0 Q261.8 164.0 267.1 182.0 M266.0 181.5 Q216.0 183.8 166.0 181.3 M165.0 182.0 Q169.1 164.0 166.8 146.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="216" y="169" text-anchor="middle" class="wire-text" fill="#333333">Center</text>
+      <text x="216" y="169" text-anchor="middle" class="wire-text" style="fill: #333333">Center</text>
     </g></g><g role="button" aria-label="Bottom Right"><g opacity="1">
       <path d="M296.0 265.5 Q360.0 260.9 424.0 267.4 M422.9 266.0 Q420.2 284.0 423.2 302.0 M424.0 302.4 Q360.0 303.9 296.0 301.7 M297.2 302.0 Q298.7 284.0 295.8 266.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="360" y="289" text-anchor="middle" class="wire-text" fill="#333333">Bottom Right</text>
+      <text x="360" y="289" text-anchor="middle" class="wire-text" style="fill: #333333">Bottom Right</text>
     </g></g><g role="img"><rect x="366" y="26" width="24" height="24" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g>
 </svg>

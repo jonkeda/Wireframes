@@ -101,17 +101,17 @@ Every step is built. What is ticked and what is not is in [600-Tasklist.md](600-
 
 | Step | Stands |
 | --- | --- |
-| 0 to 4 | Done. 371 cases; the .NET renderer gives the TypeScript renderer's bytes in all four themes; `wire` reads `.wire` files and Markdown documents |
+| 0 to 4 | Done. 396 cases (371 before the language fixes); the .NET renderer gives the TypeScript renderer's bytes in all four themes; `wire` reads `.wire` files and Markdown documents |
 | 5 | The hooks were investigated in a real session, built, and seen to work from the installed plugin (670) |
 | 6 | Three skills; five trials kept as a command, five of five passed |
 | 7 | The MCP server is built, installed with the plugin, and was used by a model in a new session of the desktop app: its gate is met (670) |
 
 Learned and not planned:
 
-- **The language has faults the set now holds as they are**, the same in both implementations, for the owner to
-  decide: a `Table` draws nothing; an attribute nothing reads is accepted without a word; a `title=` on a card or
-  a dialog is not drawn; `Step`, `Row`, `Cell` and the `Column…` words are keywords that do not parse; the shadow
-  filter is never defined; an unterminated string is reported twice. See 620, 630 and 660.
+- **The language had faults, most of them from one cause**: the parser made component nodes the renderer drew as
+  an empty box, so a table, a tree, a stepper and most other components showed nothing. Fixed on the owner's word,
+  in both implementations and the set: see [680-LanguageFixes.md](680-LanguageFixes.md), which also lists what
+  was left.
 - **The skills had to be written against the tool, not the documentation**, because the two disagree. A trial by
   a fresh agent found what reading did not (the table).
 - **A hook costs about 90 ms and nothing in the conversation.** It cannot see a file a shell command changed, and

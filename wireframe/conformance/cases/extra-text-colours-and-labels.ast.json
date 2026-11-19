@@ -1,0 +1,108 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "controlType": "Label",
+      "end": {
+        "column": 27,
+        "line": 2,
+        "offset": 42
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "**Bold** label",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Link",
+      "end": {
+        "column": 18,
+        "line": 3,
+        "offset": 60
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 47
+      },
+      "text": "A link",
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Tab",
+          "end": {
+            "column": 1,
+            "line": 6,
+            "offset": 94
+          },
+          "modifiers": {
+            "active": true
+          },
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 78
+          },
+          "text": "On",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Tab",
+          "end": {
+            "column": 1,
+            "line": 7,
+            "offset": 112
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 102
+          },
+          "text": "Off",
+          "type": "Component"
+        }
+      ],
+      "componentType": "Tabs",
+      "end": {
+        "column": 10,
+        "line": 7,
+        "offset": 121
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 65
+      },
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 8,
+    "offset": 132
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

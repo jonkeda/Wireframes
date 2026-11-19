@@ -9,44 +9,44 @@
   </style>
   
   <rect width="100%" height="100%" fill="#fefefe" />
-  <g role="group" aria-label="**Chip Variants**"><text x="16" y="31" class="wire-text wire-text-bold">Chip Variants</text></g><g role="group" aria-label="Default"><g>
+  <g role="group" aria-label="Chip Variants"><text x="16" y="31" class="wire-text wire-text-bold">Chip Variants</text></g><g role="group" aria-label="Default"><g>
       <rect x="16" y="52" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
-      <text x="56" y="70" text-anchor="middle" class="wire-text wire-text-small" fill="#333333">Default</text>
+      <text x="56" y="70" text-anchor="middle" class="wire-text wire-text-small" style="fill: #333333">Default</text>
     </g></g><g role="group" aria-label="Selected"><g>
       <rect x="104" y="52" width="80" height="28" rx="14" fill="#4a90d9" stroke="#888888" stroke-width="2" />
-      <text x="144" y="70" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">Selected</text>
+      <text x="144" y="70" text-anchor="middle" class="wire-text wire-text-small" style="fill: #ffffff">Selected</text>
     </g></g><g role="group" aria-label="Disabled" aria-disabled="true"><g>
       <rect x="192" y="52" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
-      <text x="232" y="70" text-anchor="middle" class="wire-text wire-text-small" fill="#333333">Disabled</text>
+      <text x="232" y="70" text-anchor="middle" class="wire-text wire-text-small" style="fill: #333333">Disabled</text>
     </g></g><g role="group" aria-label="Removable"><g>
       <rect x="280" y="52" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
-      <text x="320" y="70" text-anchor="middle" class="wire-text wire-text-small" fill="#333333">Removable</text>
-    </g></g><g role="group"><line x1="16" y1="96" x2="216" y2="96" stroke="#888888" stroke-width="1" /></g><g role="group" aria-label="**Filter Chips**"><text x="16" y="128" class="wire-text wire-text-bold">Filter Chips</text></g><g role="group" aria-label="All"><g>
+      <text x="320" y="70" text-anchor="middle" class="wire-text wire-text-small" style="fill: #333333">Removable</text>
+    </g></g><g role="group"><line x1="16" y1="96" x2="216" y2="96" stroke="#888888" stroke-width="1" /></g><g role="group" aria-label="Filter Chips"><text x="16" y="128" class="wire-text wire-text-bold">Filter Chips</text></g><g role="group" aria-label="All"><g>
       <rect x="16" y="149" width="80" height="28" rx="14" fill="#4a90d9" stroke="#888888" stroke-width="2" />
-      <text x="56" y="167" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">All</text>
+      <text x="56" y="167" text-anchor="middle" class="wire-text wire-text-small" style="fill: #ffffff">All</text>
     </g></g><g role="group" aria-label="Active"><g>
       <rect x="104" y="149" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
-      <text x="144" y="167" text-anchor="middle" class="wire-text wire-text-small" fill="#333333">Active</text>
+      <text x="144" y="167" text-anchor="middle" class="wire-text wire-text-small" style="fill: #333333">Active</text>
     </g></g><g role="group" aria-label="Completed"><g>
       <rect x="192" y="149" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
-      <text x="232" y="167" text-anchor="middle" class="wire-text wire-text-small" fill="#333333">Completed</text>
+      <text x="232" y="167" text-anchor="middle" class="wire-text wire-text-small" style="fill: #333333">Completed</text>
     </g></g><g role="group" aria-label="Archived"><g>
       <rect x="280" y="149" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
-      <text x="320" y="167" text-anchor="middle" class="wire-text wire-text-small" fill="#333333">Archived</text>
-    </g></g><g role="group"><line x1="16" y1="193" x2="216" y2="193" stroke="#888888" stroke-width="1" /></g><g role="group" aria-label="**Tag Chips**"><text x="16" y="225" class="wire-text wire-text-bold">Tag Chips</text></g><g role="group" aria-label="JavaScript"><g>
+      <text x="320" y="167" text-anchor="middle" class="wire-text wire-text-small" style="fill: #333333">Archived</text>
+    </g></g><g role="group"><line x1="16" y1="193" x2="216" y2="193" stroke="#888888" stroke-width="1" /></g><g role="group" aria-label="Tag Chips"><text x="16" y="225" class="wire-text wire-text-bold">Tag Chips</text></g><g role="group" aria-label="JavaScript"><g>
       <rect x="16" y="246" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
-      <text x="56" y="264" text-anchor="middle" class="wire-text wire-text-small" fill="#333333">JavaScript</text>
+      <text x="56" y="264" text-anchor="middle" class="wire-text wire-text-small" style="fill: #333333">JavaScript</text>
     </g></g><g role="group" aria-label="TypeScript"><g>
       <rect x="104" y="246" width="80" height="28" rx="14" fill="#4a90d9" stroke="#888888" stroke-width="2" />
-      <text x="144" y="264" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">TypeScript</text>
+      <text x="144" y="264" text-anchor="middle" class="wire-text wire-text-small" style="fill: #ffffff">TypeScript</text>
     </g></g><g role="group" aria-label="React"><g>
       <rect x="192" y="246" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
-      <text x="232" y="264" text-anchor="middle" class="wire-text wire-text-small" fill="#333333">React</text>
+      <text x="232" y="264" text-anchor="middle" class="wire-text wire-text-small" style="fill: #333333">React</text>
     </g></g><g role="group" aria-label="Vue"><g>
       <rect x="280" y="246" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
-      <text x="320" y="264" text-anchor="middle" class="wire-text wire-text-small" fill="#333333">Vue</text>
+      <text x="320" y="264" text-anchor="middle" class="wire-text wire-text-small" style="fill: #333333">Vue</text>
     </g></g><g role="group" aria-label="Angular"><g>
       <rect x="368" y="246" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
-      <text x="408" y="264" text-anchor="middle" class="wire-text wire-text-small" fill="#333333">Angular</text>
+      <text x="408" y="264" text-anchor="middle" class="wire-text wire-text-small" style="fill: #333333">Angular</text>
     </g></g>
 </svg>

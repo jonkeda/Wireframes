@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="652" viewBox="0 0 800 652" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="636" viewBox="0 0 800 636" role="img">
   <style>
     .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
     .wire-text-secondary { fill: #6c757d; }
@@ -11,10 +11,10 @@
   <rect width="100%" height="100%" fill="#ffffff" />
   <rect x="16" y="16" width="768" height="80" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group"><g>
       <circle cx="52" cy="52" r="20" fill="#0d6efd" />
-      <text x="52" y="56.44" text-anchor="middle" class="wire-text" style="font-size: 13.33px" fill="#ffffff">?</text>
-    </g></g><g role="group" aria-label="John Doe"><text x="84" y="47" class="wire-text">John Doe</text></g><g role="group" aria-label="Online"><text x="84" y="75" class="wire-text">Online</text></g><g role="button"><g><rect x="732" y="32" width="36" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><rect x="742" y="42" width="16" height="16" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /></g></g><rect x="16" y="96" width="768" height="488" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><rect x="16" y="536" width="768" height="100" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="textbox" aria-label="Type a message..." aria-placeholder="Type a message..."><g>
-      <rect x="48" y="568" width="200" height="36" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
-      <text x="60" y="591" class="wire-text wire-text-secondary">Type a message...</text>
+      <text x="52" y="56.44" text-anchor="middle" class="wire-text" style="fill: #ffffff; font-size: 13.33px">?</text>
+    </g></g><g role="group" aria-label="John Doe"><text x="84" y="47" class="wire-text">John Doe</text></g><g role="group" aria-label="Online"><text x="84" y="75" class="wire-text">Online</text></g><g role="button"><g><rect x="732" y="32" width="36" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><rect x="742" y="42" width="16" height="16" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /></g></g><rect x="16" y="96" width="768" height="488" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><rect x="16" y="520" width="768" height="100" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="textbox" aria-label="Type a message..." aria-placeholder="Type a message..."><g>
+      <rect x="48" y="552" width="200" height="36" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="60" y="575" class="wire-text wire-text-secondary">Type a message...</text>
       
-    </g></g><g role="button"><g><rect x="256" y="568" width="36" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><rect x="266" y="578" width="16" height="16" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /></g></g><g role="button"><g><rect x="300" y="568" width="36" height="36" rx="6" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" /><rect x="310" y="578" width="16" height="16" rx="2" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2,2" /></g></g>
+    </g></g><g role="button"><g><rect x="256" y="552" width="36" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" /><rect x="266" y="562" width="16" height="16" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /></g></g><g role="button"><g><rect x="300" y="552" width="36" height="36" rx="6" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" /><rect x="310" y="562" width="16" height="16" rx="2" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2,2" /></g></g>
 </svg>

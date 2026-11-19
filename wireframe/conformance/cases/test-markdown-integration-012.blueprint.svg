@@ -19,6 +19,6 @@
       
     </g></g><g role="checkbox" aria-label="Remember me" aria-checked="false"><g><rect x="16" y="107" width="18" height="18" rx="2" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="42" y="121" class="wire-text">Remember me</text></g></g><g role="button" aria-label="Submit"><g opacity="1">
       <rect x="16" y="136" width="100" height="36" rx="4" fill="#ffffff" stroke="#4a7ab0" stroke-width="1" />
-      <text x="66" y="159" text-anchor="middle" class="wire-text" fill="#1e3a5f">Submit</text>
+      <text x="66" y="159" text-anchor="middle" class="wire-text" style="fill: #1e3a5f">Submit</text>
     </g></g>
 </svg>

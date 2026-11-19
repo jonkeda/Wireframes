@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="432" height="236" viewBox="0 0 432 236" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="204" viewBox="0 0 432 204" role="img">
   <style>
     .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
     .wire-text-secondary { fill: #6c757d; }
@@ -9,5 +9,7 @@
   </style>
   
   <rect width="100%" height="100%" fill="#ffffff" />
-  <g role="group" aria-label="Content for section 1"><text x="48" y="63" class="wire-text">Content for section 1</text></g><g role="group" aria-label="Content for section 2"><text x="48" y="123" class="wire-text">Content for section 2</text></g><g role="group" aria-label="Content for section 3"><text x="48" y="183" class="wire-text">Content for section 3</text></g>
+  <g>
+      <rect x="16" y="16" width="400" height="172" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+    </g><g><rect x="16" y="16" width="400" height="92" fill="#ffffff" stroke="#dee2e6" stroke-width="1" /><rect x="16" y="16" width="400" height="40" fill="#f8f9fa" /><text x="32" y="41" class="wire-text wire-text-bold">Section 1</text><path d="M388 34 L392 40 L396 34" stroke="#212529" stroke-width="2" fill="none" /></g><g role="group" aria-label="Content for section 1"><text x="32" y="87" class="wire-text">Content for section 1</text></g><g><rect x="16" y="108" width="400" height="40" fill="#ffffff" stroke="#dee2e6" stroke-width="1" /><rect x="16" y="108" width="400" height="40" fill="#f8f9fa" /><text x="32" y="133" class="wire-text wire-text-bold">Section 2</text><path d="M388 130 L392 124 L396 130" stroke="#212529" stroke-width="2" fill="none" /></g><g><rect x="16" y="148" width="400" height="40" fill="#ffffff" stroke="#dee2e6" stroke-width="1" /><rect x="16" y="148" width="400" height="40" fill="#f8f9fa" /><text x="32" y="173" class="wire-text wire-text-bold">Section 3</text><path d="M388 170 L392 164 L396 170" stroke="#212529" stroke-width="2" fill="none" /></g>
 </svg>

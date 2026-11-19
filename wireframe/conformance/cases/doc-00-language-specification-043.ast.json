@@ -81,6 +81,26 @@
     },
     {
       "attributes": {},
+      "children": [],
+      "componentType": "Step",
+      "end": {
+        "column": 1,
+        "line": 7,
+        "offset": 173
+      },
+      "modifiers": {
+        "completed": true
+      },
+      "start": {
+        "column": 5,
+        "line": 6,
+        "offset": 147
+      },
+      "text": "Shipping",
+      "type": "Component"
+    },
+    {
+      "attributes": {},
       "controlType": "Avatar",
       "end": {
         "column": 23,

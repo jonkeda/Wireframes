@@ -1,6 +1,79 @@
 {
   "attributes": {},
-  "children": [],
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Cell",
+          "end": {
+            "column": 1,
+            "line": 4,
+            "offset": 48
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 32
+          },
+          "text": "Column 1",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Cell",
+          "end": {
+            "column": 1,
+            "line": 5,
+            "offset": 72
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 56
+          },
+          "text": "Column 2",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Cell",
+          "end": {
+            "column": 1,
+            "line": 6,
+            "offset": 96
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 80
+          },
+          "text": "Column 3",
+          "type": "Component"
+        }
+      ],
+      "componentType": "Row",
+      "end": {
+        "column": 9,
+        "line": 6,
+        "offset": 104
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Component"
+    }
+  ],
   "dataSections": [],
   "end": {
     "column": 11,

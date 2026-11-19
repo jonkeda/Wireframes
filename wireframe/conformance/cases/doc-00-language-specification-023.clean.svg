@@ -9,5 +9,5 @@
   </style>
   
   <rect width="100%" height="100%" fill="#ffffff" />
-  <g role="group" aria-label="Plain text"><text x="16" y="31" class="wire-text">Plain text</text></g><g role="group" aria-label="**Bold text**"><text x="16" y="59" class="wire-text wire-text-bold">Bold text</text></g><g role="group" aria-label="*Italic text*"><text x="16" y="87" class="wire-text" font-style="italic">Italic text</text></g><g role="group" aria-label="`Code style`"><text x="16" y="115" class="wire-text">`Code style`</text></g>
+  <g role="group" aria-label="Plain text"><text x="16" y="31" class="wire-text">Plain text</text></g><g role="group" aria-label="Bold text"><text x="16" y="59" class="wire-text wire-text-bold">Bold text</text></g><g role="group" aria-label="*Italic text*"><text x="16" y="87" class="wire-text" font-style="italic">Italic text</text></g><g role="group" aria-label="`Code style`"><text x="16" y="115" class="wire-text">`Code style`</text></g>
 </svg>

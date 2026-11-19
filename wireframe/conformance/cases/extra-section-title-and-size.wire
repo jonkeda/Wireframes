@@ -1,0 +1,13 @@
+wireframe clean
+    Vertical
+        Card title="First" w=300
+            Label "one"
+        /Card
+        Card
+            Label "as high as its content"
+        /Card
+        Panel title="A panel" h=120 width=260
+            Label "three"
+        /Panel
+    /Vertical
+/wireframe

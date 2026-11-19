@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="956" viewBox="0 0 800 956" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="361" viewBox="0 0 800 361" role="img">
   <style>
     .wire-text { font-family: "Courier New", monospace; font-size: 14px; fill: #ffffff; }
     .wire-text-secondary { fill: #a0c4e8; }
@@ -7,15 +7,33 @@
     .wire-text-small { font-size: 12px; }
     .wire-text-large { font-size: 18px; }
   </style>
-  
+  <defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15" /></filter></defs>
   <rect width="100%" height="100%" fill="#1e3a5f" />
-  <rect x="16" y="16" width="768" height="568" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><g role="group" aria-label="**Logo**"><text x="32" y="47" class="wire-text wire-text-bold">Logo</text></g><g role="link" aria-label="Products"><g>
-      <text x="120" y="47" class="wire-text" fill="#ffffff" style="text-decoration: underline">Products</text>
+  <rect x="16" y="16" width="768" height="60" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><g role="group" aria-label="Logo"><text x="32" y="47" class="wire-text wire-text-bold">Logo</text></g><g role="link" aria-label="Products"><g>
+      <text x="120" y="47" class="wire-text" style="fill: #ffffff; text-decoration: underline">Products</text>
     </g></g><g role="link" aria-label="Solutions"><g>
-      <text x="200" y="47" class="wire-text" fill="#ffffff" style="text-decoration: underline">Solutions</text>
+      <text x="200" y="47" class="wire-text" style="fill: #ffffff; text-decoration: underline">Solutions</text>
     </g></g><g role="link" aria-label="Pricing"><g>
-      <text x="288" y="47" class="wire-text" fill="#ffffff" style="text-decoration: underline">Pricing</text>
+      <text x="288" y="47" class="wire-text" style="fill: #ffffff; text-decoration: underline">Pricing</text>
     </g></g><g role="link" aria-label="About"><g>
-      <text x="360" y="47" class="wire-text" fill="#ffffff" style="text-decoration: underline">About</text>
-    </g></g><rect x="16" y="592" width="200" height="225" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><g role="group"><line x1="48" y1="744" x2="248" y2="744" stroke="#4a7ab0" stroke-width="1" /></g><rect x="224" y="592" width="560" height="272" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><rect x="240" y="608" width="528" height="144" fill="none" stroke="#4a7ab0" stroke-width="1" /><rect x="240" y="768" width="528" height="80" rx="8" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Tab content area"><text x="256" y="799" class="wire-text">Tab content area</text></g><g role="group" aria-label="More content here..."><text x="256" y="827" class="wire-text">More content here...</text></g><rect x="16" y="872" width="768" height="68" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><g role="group" aria-label="© 2024 Company"><text x="32" y="903" class="wire-text">© 2024 Company</text></g><g role="navigation"><g><rect x="192" y="888" width="32" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><path d="M205 902 L201 906 L205 910" stroke="#ffffff" stroke-width="2" fill="none" /><rect x="228" y="888" width="32" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="244" y="911" text-anchor="middle" class="wire-text" fill="#ffffff">1</text><rect x="264" y="888" width="32" height="36" rx="4" fill="#ffffff" stroke="#4a7ab0" stroke-width="1" /><text x="280" y="911" text-anchor="middle" class="wire-text" fill="#1e3a5f">2</text><rect x="300" y="888" width="32" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="316" y="911" text-anchor="middle" class="wire-text" fill="#ffffff">3</text><rect x="336" y="888" width="32" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="352" y="911" text-anchor="middle" class="wire-text" fill="#ffffff">4</text><rect x="372" y="888" width="32" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="388" y="911" text-anchor="middle" class="wire-text" fill="#ffffff">5</text><rect x="408" y="888" width="32" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><path d="M419 902 L423 906 L419 910" stroke="#ffffff" stroke-width="2" fill="none" /></g></g>
+      <text x="360" y="47" class="wire-text" style="fill: #ffffff; text-decoration: underline">About</text>
+    </g></g><g><text x="476" y="49" class="wire-text" style="fill: #ffffff">Home</text><text x="516" y="49" class="wire-text wire-text-secondary">/</text><text x="532" y="49" class="wire-text" style="fill: #ffffff">Section</text><text x="596" y="49" class="wire-text wire-text-secondary">/</text><text x="612" y="49" class="wire-text" style="fill: #ffffff">Page</text></g><rect x="16" y="84" width="200" height="185" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><g>
+      <rect x="32" y="100" width="176" height="153" rx="4" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1" filter="url(#shadow)" />
+      
+    </g><g opacity="1"><rect x="32" y="104" width="176" height="36" fill="transparent" /><text x="44" y="127" class="wire-text" style="fill: #ffffff">Overview</text></g><g opacity="1"><rect x="32" y="140" width="176" height="36" fill="transparent" /><text x="44" y="163" class="wire-text" style="fill: #ffffff">Analytics</text></g><g opacity="1"><rect x="32" y="176" width="176" height="36" fill="transparent" /><text x="44" y="199" class="wire-text" style="fill: #ffffff">Reports</text></g><g role="group"><line x1="32" y1="212" x2="232" y2="212" stroke="#4a7ab0" stroke-width="1" /></g><g opacity="1"><rect x="32" y="213" width="176" height="36" fill="transparent" /><text x="44" y="236" class="wire-text" style="fill: #ffffff">Settings</text></g><rect x="224" y="84" width="560" height="168" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><rect x="240" y="100" width="528" height="40" fill="none" stroke="#4a7ab0" stroke-width="1" /><g>
+      <rect x="240" y="100" width="528" height="40" fill="#2a4a6f" />
+      <line x1="240" y1="140" x2="768" y2="140" stroke="#4a7ab0" stroke-width="1" />
+    </g><g>
+      <rect x="240" y="100" width="88" height="40" fill="#1e3a5f" />
+      <text x="284" y="125" text-anchor="middle" class="wire-text" style="fill: #ffffff">Summary</text>
+      <rect x="240" y="138" width="88" height="2" fill="#ffffff" />
+    </g><g>
+      <rect x="328" y="100" width="88" height="40" fill="transparent" />
+      <text x="372" y="125" text-anchor="middle" class="wire-text" style="fill: #a0c4e8">Details</text>
+      
+    </g><g>
+      <rect x="416" y="100" width="88" height="40" fill="transparent" />
+      <text x="460" y="125" text-anchor="middle" class="wire-text" style="fill: #a0c4e8">History</text>
+      
+    </g><rect x="240" y="156" width="528" height="80" rx="8" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1" filter="url(#shadow)" /><g role="group" aria-label="Tab content area"><text x="256" y="187" class="wire-text">Tab content area</text></g><g role="group" aria-label="More content here..."><text x="256" y="215" class="wire-text">More content here...</text></g><rect x="16" y="277" width="768" height="68" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><g role="group" aria-label="© 2024 Company"><text x="32" y="308" class="wire-text">© 2024 Company</text></g><g role="navigation"><g><rect x="192" y="293" width="32" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><path d="M205 307 L201 311 L205 315" stroke="#ffffff" stroke-width="2" fill="none" /><rect x="228" y="293" width="32" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="244" y="316" text-anchor="middle" class="wire-text" style="fill: #ffffff">1</text><rect x="264" y="293" width="32" height="36" rx="4" fill="#ffffff" stroke="#4a7ab0" stroke-width="1" /><text x="280" y="316" text-anchor="middle" class="wire-text" style="fill: #1e3a5f">2</text><rect x="300" y="293" width="32" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="316" y="316" text-anchor="middle" class="wire-text" style="fill: #ffffff">3</text><rect x="336" y="293" width="32" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="352" y="316" text-anchor="middle" class="wire-text" style="fill: #ffffff">4</text><rect x="372" y="293" width="32" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="388" y="316" text-anchor="middle" class="wire-text" style="fill: #ffffff">5</text><rect x="408" y="293" width="32" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><path d="M419 307 L423 311 L419 315" stroke="#ffffff" stroke-width="2" fill="none" /></g></g>
 </svg>

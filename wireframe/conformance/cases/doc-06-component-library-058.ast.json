@@ -3,7 +3,64 @@
   "children": [
     {
       "attributes": {},
-      "children": [],
+      "children": [
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "BreadcrumbItem",
+          "end": {
+            "column": 1,
+            "line": 4,
+            "offset": 67
+          },
+          "modifiers": {},
+          "navigation": "home",
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 39
+          },
+          "text": "Home",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "BreadcrumbItem",
+          "end": {
+            "column": 1,
+            "line": 5,
+            "offset": 111
+          },
+          "modifiers": {},
+          "navigation": "products",
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 75
+          },
+          "text": "Products",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "BreadcrumbItem",
+          "end": {
+            "column": 1,
+            "line": 6,
+            "offset": 144
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 119
+          },
+          "text": "Details",
+          "type": "Component"
+        }
+      ],
       "componentType": "Breadcrumb",
       "end": {
         "column": 16,

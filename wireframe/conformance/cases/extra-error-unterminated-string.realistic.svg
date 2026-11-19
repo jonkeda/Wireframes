@@ -11,6 +11,6 @@
   <rect width="100%" height="100%" fill="#ffffff" />
   <g role="group" aria-label="No end"><text x="16" y="31" class="wire-text">No end</text></g><g role="button" aria-label="Next"><g opacity="1">
       <rect x="16" y="44" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="66" y="67" text-anchor="middle" class="wire-text" fill="#212529">Next</text>
+      <text x="66" y="67" text-anchor="middle" class="wire-text" style="fill: #212529">Next</text>
     </g></g>
 </svg>

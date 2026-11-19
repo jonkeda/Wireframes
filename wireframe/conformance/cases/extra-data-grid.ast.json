@@ -1,0 +1,151 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "rows": 3
+      },
+      "children": [
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnText",
+          "end": {
+            "column": 1,
+            "line": 4,
+            "offset": 62
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 44
+          },
+          "text": "Name",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnDate",
+          "end": {
+            "column": 1,
+            "line": 5,
+            "offset": 88
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 70
+          },
+          "text": "Born",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnNumber",
+          "end": {
+            "column": 1,
+            "line": 6,
+            "offset": 115
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 96
+          },
+          "text": "Age",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnCheckbox",
+          "end": {
+            "column": 1,
+            "line": 7,
+            "offset": 147
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 123
+          },
+          "text": "Active",
+          "type": "Component"
+        }
+      ],
+      "componentType": "DataGrid",
+      "end": {
+        "column": 14,
+        "line": 7,
+        "offset": 160
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Component"
+    },
+    {
+      "attributes": {
+        "cols": 2,
+        "rows": 2,
+        "w": 300
+      },
+      "children": [],
+      "componentType": "DataGrid",
+      "end": {
+        "column": 14,
+        "line": 9,
+        "offset": 216
+      },
+      "modifiers": {
+        "selected": true
+      },
+      "start": {
+        "column": 5,
+        "line": 8,
+        "offset": 165
+      },
+      "type": "Component"
+    },
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "ColumnLink",
+      "end": {
+        "column": 1,
+        "line": 11,
+        "offset": 240
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 10,
+        "offset": 221
+      },
+      "text": "Alone",
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 11,
+    "offset": 250
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

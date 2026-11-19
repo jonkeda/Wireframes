@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="516" viewBox="0 0 432 516" role="img">
   <style>
     .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
     .wire-text-secondary { fill: #6c757d; }
@@ -7,9 +7,9 @@
     .wire-text-small { font-size: 12px; }
     .wire-text-large { font-size: 18px; }
   </style>
-  
+  <defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15" /></filter></defs>
   <rect width="100%" height="100%" fill="#fefefe" />
-  <path d="M16.0 17.2 Q400.0 18.9 784.0 14.6 M784.3 16.0 Q791.0 300.0 783.6 584.0 M784.0 582.7 Q400.0 581.9 16.0 583.5 M15.8 584.0 Q10.4 300.0 15.7 16.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="**Contact Us**"><text x="32" y="47" class="wire-text wire-text-bold">Contact Us</text></g><g role="group" aria-label="Name:"><text x="32" y="79" class="wire-text">Name:</text></g><g role="textbox" aria-label="Your name" aria-required="true" aria-placeholder="Your name"><g>
+  <path d="M16.0 16.2 Q216.0 12.8 416.0 16.5 M417.2 16.0 Q410.6 258.0 415.3 500.0 M416.0 499.6 Q216.0 501.7 16.0 499.8 M14.9 500.0 Q20.5 258.0 15.6 16.0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" /><g role="group" aria-label="Contact Us"><text x="32" y="47" class="wire-text wire-text-bold">Contact Us</text></g><g role="group" aria-label="Name:"><text x="32" y="79" class="wire-text">Name:</text></g><g role="textbox" aria-label="Your name" aria-required="true" aria-placeholder="Your name"><g>
       <path d="M32.0 96.1 Q132.0 99.5 232.0 95.2 M233.3 96.0 Q233.6 114.0 230.7 132.0 M232.0 131.7 Q132.0 129.4 32.0 130.9 M30.8 132.0 Q29.3 114.0 32.3 96.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
       <text x="44" y="119" class="wire-text wire-text-secondary">Your name</text>
       <text x="220" y="119" text-anchor="end" fill="#dc3545">*</text>
@@ -40,6 +40,6 @@
       <line x1="318" y1="422" x2="324" y2="428" stroke="#888888" stroke-width="2" />
     </g></g><g role="button" aria-label="Send Message"><g opacity="1">
       <path d="M32.0 448.8 Q96.0 454.2 160.0 448.1 M160.6 448.0 Q160.4 466.0 159.7 484.0 M160.0 483.0 Q96.0 475.8 32.0 483.6 M31.5 484.0 Q30.5 466.0 31.2 448.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
-      <text x="96" y="471" text-anchor="middle" class="wire-text" fill="#ffffff">Send Message</text>
+      <text x="96" y="471" text-anchor="middle" class="wire-text" style="fill: #ffffff">Send Message</text>
     </g></g>
 </svg>

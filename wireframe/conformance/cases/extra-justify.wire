@@ -1,0 +1,19 @@
+wireframe clean
+    Vertical
+        Horizontal justify=end
+            Button "Cancel"
+            Button "Save" primary
+        /Horizontal
+        Horizontal justify=center
+            Button "Middle"
+        /Horizontal
+        Horizontal justify=between
+            Label "Left"
+            Label "Centre"
+            Button "Right"
+        /Horizontal
+        Horizontal justify=nothing
+            Label "As before"
+        /Horizontal
+    /Vertical
+/wireframe

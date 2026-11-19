@@ -1,0 +1,18 @@
+wireframe clean
+    Dock
+        Header dock=top
+            Label "top"
+        /Header
+        Footer dock=bottom
+            Label "bottom"
+        /Footer
+        Sidebar dock=left
+            Label "left"
+        /Sidebar
+        Content
+            Card
+                Label "a card in the filled part"
+            /Card
+        /Content
+    /Dock
+/wireframe

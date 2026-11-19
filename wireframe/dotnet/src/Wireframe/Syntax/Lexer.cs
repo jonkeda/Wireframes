@@ -315,10 +315,8 @@ public sealed class Lexer
     {
         if (IsAtEnd())
         {
-            // A backslash at the very end: JavaScript reads past the end, gets undefined and adds it as text
-            pos++;
-            column++;
-            return "undefined";
+            // A backslash as the last character of the source escapes nothing
+            return string.Empty;
         }
 
         var escaped = Advance();
@@ -476,8 +474,7 @@ public sealed class Lexer
             }
             else if (Peek() == '\n')
             {
-                // Reported here and again below: the string is not closed on its line
-                AddError("Unterminated string literal");
+                // The string ends with its line; it is reported once, below
                 break;
             }
             else

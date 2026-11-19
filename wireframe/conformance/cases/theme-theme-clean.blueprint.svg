@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="833" viewBox="0 0 800 833" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="434" viewBox="0 0 800 434" role="img">
   <style>
     .wire-text { font-family: "Courier New", monospace; font-size: 14px; fill: #ffffff; }
     .wire-text-secondary { fill: #a0c4e8; }
@@ -7,9 +7,9 @@
     .wire-text-small { font-size: 12px; }
     .wire-text-large { font-size: 18px; }
   </style>
-  
+  <defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15" /></filter></defs>
   <rect width="100%" height="100%" fill="#1e3a5f" />
-  <g role="group" aria-label="**Clean Theme**"><text x="16" y="31" class="wire-text wire-text-bold">Clean Theme</text></g><g role="group" aria-label="A modern, minimal design with clean lines and subtle shadows."><text x="16" y="67" class="wire-text">A modern, minimal design with clean lines and subtle shadows.</text></g><g role="group"><line x1="16" y1="88" x2="216" y2="88" stroke="#4a7ab0" stroke-width="1" /></g><rect x="16" y="105" width="376" height="479" rx="8" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="**Form Example**"><text x="32" y="136" class="wire-text wire-text-bold">Form Example</text></g><g role="textbox" aria-label="Enter your name" aria-required="true" aria-placeholder="Enter your name"><g>
+  <g role="group" aria-label="Clean Theme"><text x="16" y="31" class="wire-text wire-text-bold">Clean Theme</text></g><g role="group" aria-label="A modern, minimal design with clean lines and subtle shadows."><text x="16" y="67" class="wire-text">A modern, minimal design with clean lines and subtle shadows.</text></g><g role="group"><line x1="16" y1="88" x2="216" y2="88" stroke="#4a7ab0" stroke-width="1" /></g><rect x="16" y="105" width="376" height="184" rx="8" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1" filter="url(#shadow)" /><g role="group" aria-label="Form Example"><text x="32" y="136" class="wire-text wire-text-bold">Form Example</text></g><g role="textbox" aria-label="Enter your name" aria-required="true" aria-placeholder="Enter your name"><g>
       <rect x="32" y="149" width="200" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
       <text x="44" y="172" class="wire-text wire-text-secondary">Enter your name</text>
       <text x="220" y="172" text-anchor="end" fill="#dc3545">*</text>
@@ -19,21 +19,36 @@
       
     </g></g><g role="button" aria-label="Submit"><g opacity="1">
       <rect x="32" y="237" width="100" height="36" rx="4" fill="#ffffff" stroke="#4a7ab0" stroke-width="1" />
-      <text x="82" y="260" text-anchor="middle" class="wire-text" fill="#1e3a5f">Submit</text>
+      <text x="82" y="260" text-anchor="middle" class="wire-text" style="fill: #1e3a5f">Submit</text>
     </g></g><g role="button" aria-label="Cancel"><g opacity="1">
       <rect x="140" y="237" width="100" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
-      <text x="190" y="260" text-anchor="middle" class="wire-text" fill="#ffffff">Cancel</text>
-    </g></g><rect x="408" y="105" width="376" height="479" rx="8" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="**Controls**"><text x="424" y="136" class="wire-text wire-text-bold">Controls</text></g><g role="checkbox" aria-label="Remember me" aria-checked="true"><g><rect x="424" y="152" width="18" height="18" rx="2" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><path d="M428 161 L432 165 L438 157" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" /><text x="450" y="166" class="wire-text">Remember me</text></g></g><g role="checkbox" aria-label="Send notifications" aria-checked="false"><g><rect x="424" y="184" width="18" height="18" rx="2" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="450" y="198" class="wire-text">Send notifications</text></g></g><g role="switch" aria-label="Dark mode" aria-checked="false"><g><rect x="424" y="213" width="44" height="24" rx="12" fill="#4a7ab0" /><circle cx="436" cy="225" r="10" fill="#1e3a5f" /><text x="476" y="230" class="wire-text">Dark mode</text></g></g><g role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><g>
+      <text x="190" y="260" text-anchor="middle" class="wire-text" style="fill: #ffffff">Cancel</text>
+    </g></g><rect x="408" y="105" width="376" height="164" rx="8" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1" filter="url(#shadow)" /><g role="group" aria-label="Controls"><text x="424" y="136" class="wire-text wire-text-bold">Controls</text></g><g role="checkbox" aria-label="Remember me" aria-checked="true"><g><rect x="424" y="152" width="18" height="18" rx="2" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><path d="M428 161 L432 165 L438 157" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" /><text x="450" y="166" class="wire-text">Remember me</text></g></g><g role="checkbox" aria-label="Send notifications" aria-checked="false"><g><rect x="424" y="184" width="18" height="18" rx="2" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><text x="450" y="198" class="wire-text">Send notifications</text></g></g><g role="switch" aria-label="Dark mode" aria-checked="false"><g><rect x="424" y="213" width="44" height="24" rx="12" fill="#4a7ab0" /><circle cx="436" cy="225" r="10" fill="#1e3a5f" /><text x="476" y="230" class="wire-text">Dark mode</text></g></g><g role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><g>
       <rect x="424" y="245" width="200" height="8" rx="4" fill="#2a4a6f" />
       <rect x="424" y="245" width="130" height="8" rx="4" fill="#ffffff" />
-    </g></g><g role="group"><line x1="16" y1="600" x2="216" y2="600" stroke="#4a7ab0" stroke-width="1" /></g><rect x="16" y="617" width="376" height="80" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><g role="group" aria-label="**Status Badges**"><text x="32" y="648" class="wire-text wire-text-bold">Status Badges</text></g><g role="group" aria-label="Active"><g>
-      <rect x="32" y="657" width="24" height="24" rx="12" fill="#6c757d" />
-      <text x="44" y="673" text-anchor="middle" class="wire-text wire-text-small" fill="#1e3a5f">Active</text>
+    </g></g><g role="group"><line x1="16" y1="305" x2="216" y2="305" stroke="#4a7ab0" stroke-width="1" /></g><rect x="16" y="322" width="376" height="80" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><g role="group" aria-label="Status Badges"><text x="32" y="353" class="wire-text wire-text-bold">Status Badges</text></g><g role="group" aria-label="Active"><g>
+      <rect x="32" y="362" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="44" y="378" text-anchor="middle" class="wire-text wire-text-small" style="fill: #1e3a5f">Active</text>
     </g></g><g role="group" aria-label="Pending"><g>
-      <rect x="64" y="657" width="24" height="24" rx="12" fill="#6c757d" />
-      <text x="76" y="673" text-anchor="middle" class="wire-text wire-text-small" fill="#1e3a5f">Pending</text>
+      <rect x="64" y="362" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="76" y="378" text-anchor="middle" class="wire-text wire-text-small" style="fill: #1e3a5f">Pending</text>
     </g></g><g role="group" aria-label="Error"><g>
-      <rect x="96" y="657" width="24" height="24" rx="12" fill="#6c757d" />
-      <text x="108" y="673" text-anchor="middle" class="wire-text wire-text-small" fill="#1e3a5f">Error</text>
-    </g></g><rect x="408" y="617" width="376" height="200" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><g role="group" aria-label="**Navigation**"><text x="424" y="648" class="wire-text wire-text-bold">Navigation</text></g><rect x="424" y="657" width="344" height="144" fill="none" stroke="#4a7ab0" stroke-width="1" />
+      <rect x="96" y="362" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="108" y="378" text-anchor="middle" class="wire-text wire-text-small" style="fill: #1e3a5f">Error</text>
+    </g></g><rect x="408" y="322" width="376" height="96" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" /><g role="group" aria-label="Navigation"><text x="424" y="353" class="wire-text wire-text-bold">Navigation</text></g><rect x="424" y="362" width="344" height="40" fill="none" stroke="#4a7ab0" stroke-width="1" /><g>
+      <rect x="424" y="362" width="344" height="40" fill="#2a4a6f" />
+      <line x1="424" y1="402" x2="768" y2="402" stroke="#4a7ab0" stroke-width="1" />
+    </g><g>
+      <rect x="424" y="362" width="104" height="40" fill="#1e3a5f" />
+      <text x="476" y="387" text-anchor="middle" class="wire-text" style="fill: #ffffff">Dashboard</text>
+      <rect x="424" y="400" width="104" height="2" fill="#ffffff" />
+    </g><g>
+      <rect x="528" y="362" width="96" height="40" fill="transparent" />
+      <text x="576" y="387" text-anchor="middle" class="wire-text" style="fill: #a0c4e8">Settings</text>
+      
+    </g><g>
+      <rect x="624" y="362" width="88" height="40" fill="transparent" />
+      <text x="668" y="387" text-anchor="middle" class="wire-text" style="fill: #a0c4e8">Profile</text>
+      
+    </g>
 </svg>

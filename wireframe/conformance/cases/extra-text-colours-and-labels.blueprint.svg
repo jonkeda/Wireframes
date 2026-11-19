@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="128" viewBox="0 0 800 128" role="img">
+  <style>
+    .wire-text { font-family: "Courier New", monospace; font-size: 14px; fill: #ffffff; }
+    .wire-text-secondary { fill: #a0c4e8; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#1e3a5f" />
+  <g role="group" aria-label="Bold label"><text x="16" y="31" class="wire-text">**Bold** label</text></g><g role="link" aria-label="A link"><g>
+      <text x="16" y="59" class="wire-text" style="fill: #ffffff; text-decoration: underline">A link</text>
+    </g></g><rect x="16" y="72" width="768" height="40" fill="none" stroke="#4a7ab0" stroke-width="1" /><g>
+      <rect x="16" y="72" width="768" height="40" fill="#2a4a6f" />
+      <line x1="16" y1="112" x2="784" y2="112" stroke="#4a7ab0" stroke-width="1" />
+    </g><g>
+      <rect x="16" y="72" width="80" height="40" fill="#1e3a5f" />
+      <text x="56" y="97" text-anchor="middle" class="wire-text" style="fill: #ffffff">On</text>
+      <rect x="16" y="110" width="80" height="2" fill="#ffffff" />
+    </g><g>
+      <rect x="96" y="72" width="80" height="40" fill="transparent" />
+      <text x="136" y="97" text-anchor="middle" class="wire-text" style="fill: #a0c4e8">Off</text>
+      
+    </g>
+</svg>

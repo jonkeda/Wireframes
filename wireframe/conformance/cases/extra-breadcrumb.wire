@@ -1,0 +1,15 @@
+wireframe clean
+    Breadcrumb
+        BreadcrumbItem "Home" @home
+        BreadcrumbItem "Orders, open"
+        BreadcrumbItem "1001"
+    /Breadcrumb
+    Breadcrumb
+        Link "Home"
+        Link "Products"
+        Label "Details"
+    /Breadcrumb
+    Breadcrumb "Start, Middle, End"
+    /Breadcrumb
+    BreadcrumbItem "Alone"
+/wireframe

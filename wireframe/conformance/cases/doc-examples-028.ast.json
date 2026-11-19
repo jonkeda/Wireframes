@@ -32,11 +32,382 @@
               "attributes": {
                 "gap": 0
               },
-              "children": [],
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [
+                    {
+                      "attributes": {
+                        "align": "left"
+                      },
+                      "children": [],
+                      "componentType": "Cell",
+                      "end": {
+                        "column": 1,
+                        "line": 11,
+                        "offset": 248
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 10,
+                        "offset": 225
+                      },
+                      "text": "Name",
+                      "type": "Component"
+                    },
+                    {
+                      "attributes": {
+                        "align": "left"
+                      },
+                      "children": [],
+                      "componentType": "Cell",
+                      "end": {
+                        "column": 1,
+                        "line": 12,
+                        "offset": 292
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 11,
+                        "offset": 268
+                      },
+                      "text": "Email",
+                      "type": "Component"
+                    },
+                    {
+                      "attributes": {
+                        "align": "center"
+                      },
+                      "children": [],
+                      "componentType": "Cell",
+                      "end": {
+                        "column": 1,
+                        "line": 13,
+                        "offset": 337
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 12,
+                        "offset": 312
+                      },
+                      "text": "Role",
+                      "type": "Component"
+                    },
+                    {
+                      "attributes": {
+                        "align": "center"
+                      },
+                      "children": [],
+                      "componentType": "Cell",
+                      "end": {
+                        "column": 1,
+                        "line": 14,
+                        "offset": 384
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 13,
+                        "offset": 357
+                      },
+                      "text": "Status",
+                      "type": "Component"
+                    }
+                  ],
+                  "componentType": "Row",
+                  "end": {
+                    "column": 21,
+                    "line": 14,
+                    "offset": 404
+                  },
+                  "modifiers": {
+                    "selected": true
+                  },
+                  "start": {
+                    "column": 17,
+                    "line": 9,
+                    "offset": 192
+                  },
+                  "type": "Component"
+                },
+                {
+                  "attributes": {},
+                  "children": [
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "Cell",
+                      "end": {
+                        "column": 1,
+                        "line": 17,
+                        "offset": 461
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 16,
+                        "offset": 445
+                      },
+                      "text": "John Doe",
+                      "type": "Component"
+                    },
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "Cell",
+                      "end": {
+                        "column": 1,
+                        "line": 18,
+                        "offset": 505
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 17,
+                        "offset": 481
+                      },
+                      "text": "john@example.com",
+                      "type": "Component"
+                    },
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "Cell",
+                      "end": {
+                        "column": 1,
+                        "line": 19,
+                        "offset": 538
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 18,
+                        "offset": 525
+                      },
+                      "text": "Admin",
+                      "type": "Component"
+                    },
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "Cell",
+                      "end": {
+                        "column": 1,
+                        "line": 20,
+                        "offset": 572
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 19,
+                        "offset": 558
+                      },
+                      "text": "Active",
+                      "type": "Component"
+                    }
+                  ],
+                  "componentType": "Row",
+                  "end": {
+                    "column": 21,
+                    "line": 20,
+                    "offset": 592
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 15,
+                    "offset": 421
+                  },
+                  "type": "Component"
+                },
+                {
+                  "attributes": {},
+                  "children": [
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "Cell",
+                      "end": {
+                        "column": 1,
+                        "line": 23,
+                        "offset": 651
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 22,
+                        "offset": 633
+                      },
+                      "text": "Jane Smith",
+                      "type": "Component"
+                    },
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "Cell",
+                      "end": {
+                        "column": 1,
+                        "line": 24,
+                        "offset": 695
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 23,
+                        "offset": 671
+                      },
+                      "text": "jane@example.com",
+                      "type": "Component"
+                    },
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "Cell",
+                      "end": {
+                        "column": 1,
+                        "line": 25,
+                        "offset": 729
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 24,
+                        "offset": 715
+                      },
+                      "text": "Editor",
+                      "type": "Component"
+                    },
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "Cell",
+                      "end": {
+                        "column": 1,
+                        "line": 26,
+                        "offset": 763
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 25,
+                        "offset": 749
+                      },
+                      "text": "Active",
+                      "type": "Component"
+                    }
+                  ],
+                  "componentType": "Row",
+                  "end": {
+                    "column": 21,
+                    "line": 26,
+                    "offset": 783
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 21,
+                    "offset": 609
+                  },
+                  "type": "Component"
+                },
+                {
+                  "attributes": {},
+                  "children": [
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "Cell",
+                      "end": {
+                        "column": 1,
+                        "line": 29,
+                        "offset": 842
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 28,
+                        "offset": 824
+                      },
+                      "text": "Bob Wilson",
+                      "type": "Component"
+                    },
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "Cell",
+                      "end": {
+                        "column": 1,
+                        "line": 30,
+                        "offset": 885
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 29,
+                        "offset": 862
+                      },
+                      "text": "bob@example.com",
+                      "type": "Component"
+                    },
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "Cell",
+                      "end": {
+                        "column": 1,
+                        "line": 31,
+                        "offset": 919
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 30,
+                        "offset": 905
+                      },
+                      "text": "Viewer",
+                      "type": "Component"
+                    },
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "Cell",
+                      "end": {
+                        "column": 1,
+                        "line": 32,
+                        "offset": 955
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 31,
+                        "offset": 939
+                      },
+                      "text": "Inactive",
+                      "type": "Component"
+                    }
+                  ],
+                  "componentType": "Row",
+                  "end": {
+                    "column": 21,
+                    "line": 32,
+                    "offset": 975
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 27,
+                    "offset": 800
+                  },
+                  "type": "Component"
+                }
+              ],
               "end": {
-                "column": 17,
-                "line": 14,
-                "offset": 400
+                "column": 22,
+                "line": 33,
+                "offset": 997
               },
               "layoutType": "Vertical",
               "modifiers": {},
@@ -49,9 +420,9 @@
             }
           ],
           "end": {
-            "column": 17,
-            "line": 20,
-            "offset": 588
+            "column": 18,
+            "line": 34,
+            "offset": 1015
           },
           "layoutType": "Vertical",
           "modifiers": {},
@@ -64,9 +435,9 @@
         }
       ],
       "end": {
-        "column": 17,
-        "line": 26,
-        "offset": 779
+        "column": 10,
+        "line": 35,
+        "offset": 1025
       },
       "modifiers": {},
       "sectionType": "Card",

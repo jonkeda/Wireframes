@@ -58,7 +58,8 @@ either side meets these.
 
 ## What looks wrong in the renderer, and was copied on purpose
 
-Not fixed: the set records what the implementation draws. Each is for the owner to decide.
+Fixed later for 1, 2, 3, 6 and 7: see [680-LanguageFixes.md](680-LanguageFixes.md). At the time: not fixed: the
+set records what the implementation draws. Each is for the owner to decide.
 
 | # | What | Where in the TypeScript | Shown by |
 | --- | --- | --- | --- |

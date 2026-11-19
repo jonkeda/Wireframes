@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="608" viewBox="0 0 800 608" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="612" viewBox="0 0 800 612" role="img">
   <style>
     .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
     .wire-text-secondary { fill: #6c757d; }
@@ -7,16 +7,19 @@
     .wire-text-small { font-size: 12px; }
     .wire-text-large { font-size: 18px; }
   </style>
-  
+  <defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15" /></filter></defs>
   <rect width="100%" height="100%" fill="#fefefe" />
   <path d="M16.0 16.3 Q400.0 18.5 784.0 15.7 M785.2 16.0 Q787.0 50.0 782.5 84.0 M784.0 83.6 Q400.0 82.4 16.0 85.4 M15.0 84.0 Q10.8 50.0 16.7 16.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="MyApp"><text x="32" y="56" class="wire-text wire-text-bold" style="font-size: 24px">MyApp</text></g><g role="link" aria-label="Home"><g>
-      <text x="148" y="47" class="wire-text" fill="#4a90d9" style="text-decoration: underline">Home</text>
+      <text x="148" y="47" class="wire-text" style="fill: #4a90d9; text-decoration: underline">Home</text>
     </g></g><g role="link" aria-label="About"><g>
-      <text x="196" y="47" class="wire-text" fill="#4a90d9" style="text-decoration: underline">About</text>
+      <text x="196" y="47" class="wire-text" style="fill: #4a90d9; text-decoration: underline">About</text>
     </g></g><g role="link" aria-label="Contact"><g>
-      <text x="244" y="47" class="wire-text" fill="#4a90d9" style="text-decoration: underline">Contact</text>
+      <text x="244" y="47" class="wire-text" style="fill: #4a90d9; text-decoration: underline">Contact</text>
     </g></g><g role="button" aria-label="Sign In"><g opacity="1">
       <path d="M668.0 33.5 Q718.0 38.6 768.0 31.3 M767.9 32.0 Q771.0 50.0 769.2 68.0 M768.0 69.4 Q718.0 64.6 668.0 66.8 M668.2 68.0 Q665.7 50.0 668.7 32.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
-      <text x="718" y="55" text-anchor="middle" class="wire-text" fill="#ffffff">Sign In</text>
-    </g></g><path d="M16.0 84.1 Q136.0 77.6 256.0 84.7 M257.3 84.0 Q256.2 334.0 255.5 584.0 M256.0 583.7 Q136.0 591.2 16.0 584.1 M14.8 584.0 Q19.0 334.0 15.4 84.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><path d="M256.0 83.8 Q520.0 84.0 784.0 84.4 M782.7 84.0 Q779.0 334.0 783.4 584.0 M784.0 584.1 Q520.0 584.9 256.0 584.6 M257.4 584.0 Q261.9 334.0 255.5 84.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="Dashboard"><text x="272" y="122.67" class="wire-text wire-text-bold" style="font-size: 20px">Dashboard</text></g><g role="group" aria-label="Welcome to your dashboard"><text x="272" y="155" class="wire-text">Welcome to your dashboard</text></g><path d="M256.0 536.7 Q520.0 544.4 784.0 534.7 M784.8 536.0 Q782.8 564.0 785.2 592.0 M784.0 591.2 Q520.0 585.6 256.0 593.0 M255.3 592.0 Q256.6 564.0 256.8 536.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="© 2025 MyApp"><text x="272" y="567" class="wire-text">© 2025 MyApp</text></g>
+      <text x="718" y="55" text-anchor="middle" class="wire-text" style="fill: #ffffff">Sign In</text>
+    </g></g><path d="M16.0 84.7 Q116.0 84.4 216.0 83.6 M216.8 84.0 Q223.3 334.0 217.3 584.0 M216.0 583.2 Q116.0 584.5 16.0 582.5 M15.4 584.0 Q11.0 334.0 17.0 84.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g>
+      <rect x="32" y="100" width="168" height="188" rx="0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" />
+      
+    </g><g opacity="1"><rect x="32" y="104" width="168" height="36" fill="transparent" /><path d="M52 117 L47 122 H49 V127 H55 V122 H57 Z" stroke="#333333" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" /><text x="68" y="127" class="wire-text" style="fill: #333333">Dashboard</text></g><g opacity="1"><rect x="32" y="140" width="168" height="36" fill="transparent" /><rect x="44" y="150" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /><text x="68" y="163" class="wire-text" style="fill: #333333">Projects</text></g><g opacity="1"><rect x="32" y="176" width="168" height="36" fill="transparent" /><path d="M47 194 L51 198 L57 190" stroke="#333333" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" /><text x="68" y="199" class="wire-text" style="fill: #333333">Tasks</text></g><g opacity="1"><rect x="32" y="212" width="168" height="36" fill="transparent" /><rect x="44" y="222" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /><text x="68" y="235" class="wire-text" style="fill: #333333">Reports</text></g><g opacity="1"><rect x="32" y="248" width="168" height="36" fill="transparent" /><path d="M52 266 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" stroke="#333333" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" /><text x="68" y="271" class="wire-text" style="fill: #333333">Settings</text></g><path d="M216.0 83.8 Q500.0 84.0 784.0 84.4 M782.7 84.0 Q779.0 334.0 783.4 584.0 M784.0 584.1 Q500.0 584.9 216.0 584.6 M217.4 584.0 Q221.9 334.0 215.5 84.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="Dashboard"><text x="232" y="122.67" class="wire-text wire-text-bold" style="font-size: 20px">Dashboard</text></g><g role="group" aria-label="Welcome to your dashboard"><text x="232" y="155" class="wire-text">Welcome to your dashboard</text></g><path d="M216.0 543.5 Q500.0 549.9 784.0 544.3 M782.9 544.0 Q784.6 570.0 784.3 596.0 M784.0 596.4 Q500.0 591.0 216.0 596.8 M217.2 596.0 Q212.6 570.0 214.7 544.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="© 2025 MyApp"><text x="232" y="575" class="wire-text">© 2025 MyApp</text></g>
 </svg>

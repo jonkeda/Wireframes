@@ -11,7 +11,7 @@
   <rect width="100%" height="100%" fill="#fefefe" />
   <g role="button" aria-label="Click Me"><g opacity="1">
       <path d="M16.0 15.0 Q66.0 22.3 116.0 14.8 M115.4 16.0 Q118.2 34.0 114.8 52.0 M116.0 52.8 Q66.0 42.6 16.0 51.3 M16.7 52.0 Q14.5 34.0 16.2 16.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="66" y="39" text-anchor="middle" class="wire-text" fill="#333333">Click Me</text>
+      <text x="66" y="39" text-anchor="middle" class="wire-text" style="fill: #333333">Click Me</text>
     </g></g><g role="textbox" aria-label="Enter name..." aria-placeholder="Enter name..."><g>
       <path d="M16.0 58.7 Q116.0 56.0 216.0 60.6 M215.7 60.0 Q213.8 78.0 215.3 96.0 M216.0 97.1 Q116.0 96.9 16.0 96.5 M16.4 96.0 Q17.1 78.0 15.7 60.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
       <text x="28" y="83" class="wire-text wire-text-secondary">Enter name...</text>

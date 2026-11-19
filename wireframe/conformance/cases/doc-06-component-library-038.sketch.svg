@@ -11,12 +11,12 @@
   <rect width="100%" height="100%" fill="#fefefe" />
   <g role="group" aria-label="JD"><g>
       <circle cx="36" cy="36" r="20" fill="#4a90d9" />
-      <text x="36" y="40.44" text-anchor="middle" class="wire-text" style="font-size: 13.33px" fill="#ffffff">J</text>
+      <text x="36" y="40.44" text-anchor="middle" class="wire-text" style="fill: #ffffff; font-size: 13.33px">J</text>
     </g></g><g role="group" aria-label="John Doe"><g>
       <circle cx="36" cy="84" r="20" fill="#4a90d9" />
-      <text x="36" y="88.44" text-anchor="middle" class="wire-text" style="font-size: 13.33px" fill="#ffffff">JD</text>
+      <text x="36" y="88.44" text-anchor="middle" class="wire-text" style="fill: #ffffff; font-size: 13.33px">JD</text>
     </g></g><g role="group"><g>
       <circle cx="44" cy="140" r="28" fill="#4a90d9" />
-      <text x="44" y="146.22" text-anchor="middle" class="wire-text" style="font-size: 18.67px" fill="#ffffff">?</text>
+      <text x="44" y="146.22" text-anchor="middle" class="wire-text" style="fill: #ffffff; font-size: 18.67px">?</text>
     </g></g>
 </svg>

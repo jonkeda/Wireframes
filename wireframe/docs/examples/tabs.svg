@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="713" viewBox="0 0 800 713" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
   <style>
     .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
     .wire-text-secondary { fill: #6c757d; }
@@ -7,14 +7,48 @@
     .wire-text-small { font-size: 12px; }
     .wire-text-large { font-size: 18px; }
   </style>
-  
+  <defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15" /></filter></defs>
   <rect width="100%" height="100%" fill="#ffffff" />
-  <g role="group" aria-label="**Basic Tabs**"><text x="16" y="31" class="wire-text wire-text-bold">Basic Tabs</text></g><rect x="16" y="52" width="768" height="184" fill="none" stroke="#dee2e6" stroke-width="1" /><g role="group"><line x1="16" y1="252" x2="216" y2="252" stroke="#dee2e6" stroke-width="1" /></g><g role="group" aria-label="**Tabs with Content**"><text x="16" y="284" class="wire-text wire-text-bold">Tabs with Content</text></g><rect x="16" y="305" width="768" height="376" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><rect x="32" y="321" width="736" height="144" fill="none" stroke="#dee2e6" stroke-width="1" /><rect x="32" y="473" width="736" height="192" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group" aria-label="**Profile Settings**"><text x="48" y="504" class="wire-text wire-text-bold">Profile Settings</text></g><g role="group" aria-label="Manage your profile information"><text x="48" y="532" class="wire-text">Manage your profile information</text></g><g role="group" aria-label="Display Name:"><text x="48" y="560" class="wire-text">Display Name:</text></g><g role="textbox" aria-label="John Doe" aria-placeholder="John Doe"><g>
-      <rect x="48" y="569" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
-      <text x="60" y="592" class="wire-text wire-text-secondary">John Doe</text>
+  <g role="group" aria-label="Basic Tabs"><text x="16" y="31" class="wire-text wire-text-bold">Basic Tabs</text></g><rect x="16" y="52" width="768" height="40" fill="none" stroke="#dee2e6" stroke-width="1" /><g>
+      <rect x="16" y="52" width="768" height="40" fill="#f8f9fa" />
+      <line x1="16" y1="92" x2="784" y2="92" stroke="#dee2e6" stroke-width="1" />
+    </g><g>
+      <rect x="16" y="52" width="96" height="40" fill="#ffffff" />
+      <text x="64" y="77" text-anchor="middle" class="wire-text" style="fill: #0d6efd">Overview</text>
+      <rect x="16" y="90" width="96" height="2" fill="#0d6efd" />
+    </g><g>
+      <rect x="112" y="52" width="88" height="40" fill="transparent" />
+      <text x="156" y="77" text-anchor="middle" class="wire-text" style="fill: #6c757d">Details</text>
+      
+    </g><g>
+      <rect x="200" y="52" width="96" height="40" fill="transparent" />
+      <text x="248" y="77" text-anchor="middle" class="wire-text" style="fill: #6c757d">Settings</text>
+      
+    </g><g>
+      <rect x="296" y="52" width="80" height="40" fill="transparent" />
+      <text x="336" y="77" text-anchor="middle" class="wire-text" style="fill: #6c757d">Help</text>
+      
+    </g><g role="group"><line x1="16" y1="108" x2="216" y2="108" stroke="#dee2e6" stroke-width="1" /></g><g role="group" aria-label="Tabs with Content"><text x="16" y="140" class="wire-text wire-text-bold">Tabs with Content</text></g><rect x="16" y="161" width="768" height="272" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><rect x="32" y="177" width="736" height="40" fill="none" stroke="#dee2e6" stroke-width="1" /><g>
+      <rect x="32" y="177" width="736" height="40" fill="#f8f9fa" />
+      <line x1="32" y1="217" x2="768" y2="217" stroke="#dee2e6" stroke-width="1" />
+    </g><g>
+      <rect x="32" y="177" width="88" height="40" fill="#ffffff" />
+      <text x="76" y="202" text-anchor="middle" class="wire-text" style="fill: #0d6efd">Profile</text>
+      <rect x="32" y="215" width="88" height="2" fill="#0d6efd" />
+    </g><g>
+      <rect x="120" y="177" width="88" height="40" fill="transparent" />
+      <text x="164" y="202" text-anchor="middle" class="wire-text" style="fill: #6c757d">Account</text>
+      
+    </g><g>
+      <rect x="208" y="177" width="136" height="40" fill="transparent" />
+      <text x="276" y="202" text-anchor="middle" class="wire-text" style="fill: #6c757d">Notifications</text>
+      
+    </g><rect x="32" y="225" width="736" height="192" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group" aria-label="Profile Settings"><text x="48" y="256" class="wire-text wire-text-bold">Profile Settings</text></g><g role="group" aria-label="Manage your profile information"><text x="48" y="284" class="wire-text">Manage your profile information</text></g><g role="group" aria-label="Display Name:"><text x="48" y="312" class="wire-text">Display Name:</text></g><g role="textbox" aria-label="John Doe" aria-placeholder="John Doe"><g>
+      <rect x="48" y="321" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="60" y="344" class="wire-text wire-text-secondary">John Doe</text>
       
     </g></g><g role="button" aria-label="Save Changes"><g opacity="1">
-      <rect x="48" y="613" width="128" height="36" rx="4" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
-      <text x="112" y="636" text-anchor="middle" class="wire-text" fill="#ffffff">Save Changes</text>
+      <rect x="48" y="365" width="128" height="36" rx="4" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="112" y="388" text-anchor="middle" class="wire-text" style="fill: #ffffff">Save Changes</text>
     </g></g>
 </svg>

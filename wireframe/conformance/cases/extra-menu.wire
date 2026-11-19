@@ -1,0 +1,13 @@
+wireframe clean
+    Horizontal gap=16
+        Menu "File"
+            MenuItem "Open" $folder
+            MenuItem "Save"
+            Separator
+            MenuItem "Close" disabled
+        /Menu
+        Menu w=120
+            MenuItem "One"
+        /Menu
+    /Horizontal
+/wireframe

@@ -1,0 +1,14 @@
+wireframe clean
+    Table w=420
+        Row selected
+            Cell "Name"
+            Cell "Amount" align=right
+            Cell "Done" align=center
+        /Row
+        Row
+            Cell "Rent"
+            Cell "1,200.00" align=right
+            Button "Pay"
+        /Row
+    /Table
+/wireframe

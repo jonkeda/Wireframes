@@ -8,6 +8,7 @@ import {
   isComponentToken,
   isModifierToken,
   CLOSING_KEYWORDS,
+  ownValue,
 } from '../lexer/tokens.js';
 import { Lexer } from '../lexer/lexer.js';
 import {
@@ -120,6 +121,15 @@ const TOKEN_TO_CONTROL: Record<string, ControlType> = {
 /**
  * Token type to component type mapping
  */
+/** How deep elements may be nested */
+export const MAX_NESTING = 200;
+
+class NestedTooDeeply extends Error {
+  constructor() {
+    super(`Elements are nested more than ${MAX_NESTING} deep`);
+  }
+}
+
 const TOKEN_TO_COMPONENT: Record<string, ComponentType> = {
   [TokenType.TABS]: 'Tabs',
   [TokenType.TAB]: 'Tab',
@@ -190,6 +200,7 @@ export class Parser {
   private ids: Set<string> = new Set();
   /** Names of the blocks open around the current position, innermost last ('if' for a conditional) */
   private openBlocks: string[] = [];
+  private depth = 0;
 
   /**
    * Parse Wireframe source code
@@ -203,6 +214,7 @@ export class Parser {
     this.errors = [];
     this.ids = new Set();
     this.openBlocks = [];
+    this.depth = 0;
 
     // Add lexer errors
     for (const error of lexerErrors) {
@@ -219,7 +231,7 @@ export class Parser {
         errors: this.errors,
       };
     } catch (error) {
-      this.addError(`Unexpected parser error: ${error}`);
+      this.addError(error instanceof NestedTooDeeply ? error.message : `Unexpected parser error: ${error}`);
       return {
         document: null,
         errors: this.errors,
@@ -236,6 +248,7 @@ export class Parser {
     this.errors = [];
     this.ids = new Set();
     this.openBlocks = [];
+    this.depth = 0;
 
     try {
       const document = this.parseDocument();
@@ -244,7 +257,7 @@ export class Parser {
         errors: this.errors,
       };
     } catch (error) {
-      this.addError(`Unexpected parser error: ${error}`);
+      this.addError(error instanceof NestedTooDeeply ? error.message : `Unexpected parser error: ${error}`);
       return {
         document: null,
         errors: this.errors,
@@ -322,7 +335,8 @@ export class Parser {
     if (this.check(TokenType.END_WIREFRAME)) {
       const endToken = this.advance();
       doc.end = endToken.end;
-    } else if (!this.isAtEnd()) {
+    } else {
+      // Also at the end of the source: a document that was opened is closed
       this.addError('Expected /wireframe to close document');
     }
 
@@ -378,7 +392,7 @@ export class Parser {
       const token = this.peek();
       if (token.type === TokenType.END_BLOCK && !this.isOpenBlock(token.closingKeyword)) {
         this.addError(
-          CLOSING_KEYWORDS[token.value]
+          ownValue(CLOSING_KEYWORDS, token.value)
             ? `Unexpected ${token.value}: no ${token.closingKeyword} is open here`
             : `Unknown closing keyword ${token.value}`,
           token
@@ -411,6 +425,20 @@ export class Parser {
   }
 
   private parseElement(): ElementNode | null {
+    // A limit both implementations hold: without one, a source nested deep enough ends the
+    // .NET process, where a stack that is full cannot be caught
+    if (this.depth >= MAX_NESTING) {
+      throw new NestedTooDeeply();
+    }
+    this.depth++;
+    try {
+      return this.parseElementAt();
+    } finally {
+      this.depth--;
+    }
+  }
+
+  private parseElementAt(): ElementNode | null {
     const token = this.peek();
 
     if (isLayoutToken(token.type)) {
@@ -651,6 +679,10 @@ export class Parser {
           const rowToken = this.advance();
           node.tableRows.push(this.parseTableRow(rowToken));
           this.skipNewlines();
+        }
+        // A table written with Row and Cell elements in place of `| a | b |` lines
+        if (node.tableRows.length === 0) {
+          node.children = this.parseElements();
         }
         if (this.check(TokenType.DEDENT)) {
           this.advance();

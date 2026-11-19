@@ -1,0 +1,203 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {
+            "dock": "top"
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 24,
+                "line": 4,
+                "offset": 72
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 61
+              },
+              "text": "top",
+              "type": "Control"
+            }
+          ],
+          "dock": "top",
+          "end": {
+            "column": 16,
+            "line": 5,
+            "offset": 88
+          },
+          "modifiers": {},
+          "sectionType": "Header",
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 33
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {
+            "dock": "bottom"
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 27,
+                "line": 7,
+                "offset": 142
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 7,
+                "offset": 128
+              },
+              "text": "bottom",
+              "type": "Control"
+            }
+          ],
+          "dock": "bottom",
+          "end": {
+            "column": 16,
+            "line": 8,
+            "offset": 158
+          },
+          "modifiers": {},
+          "sectionType": "Footer",
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 97
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {
+            "dock": "left"
+          },
+          "children": [
+            {
+              "attributes": {},
+              "controlType": "Label",
+              "end": {
+                "column": 25,
+                "line": 10,
+                "offset": 209
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 197
+              },
+              "text": "left",
+              "type": "Control"
+            }
+          ],
+          "dock": "left",
+          "end": {
+            "column": 17,
+            "line": 11,
+            "offset": 226
+          },
+          "modifiers": {},
+          "sectionType": "Sidebar",
+          "start": {
+            "column": 9,
+            "line": 9,
+            "offset": 167
+          },
+          "type": "Section"
+        },
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {},
+                  "controlType": "Label",
+                  "end": {
+                    "column": 50,
+                    "line": 14,
+                    "offset": 309
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 14,
+                    "offset": 276
+                  },
+                  "text": "a card in the filled part",
+                  "type": "Control"
+                }
+              ],
+              "end": {
+                "column": 18,
+                "line": 15,
+                "offset": 327
+              },
+              "modifiers": {},
+              "sectionType": "Card",
+              "start": {
+                "column": 13,
+                "line": 13,
+                "offset": 255
+              },
+              "type": "Section"
+            }
+          ],
+          "end": {
+            "column": 17,
+            "line": 16,
+            "offset": 344
+          },
+          "modifiers": {},
+          "sectionType": "Content",
+          "start": {
+            "column": 9,
+            "line": 12,
+            "offset": 235
+          },
+          "type": "Section"
+        }
+      ],
+      "end": {
+        "column": 10,
+        "line": 17,
+        "offset": 354
+      },
+      "layoutType": "Dock",
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Layout"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 18,
+    "offset": 365
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

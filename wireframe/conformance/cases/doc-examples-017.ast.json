@@ -240,7 +240,64 @@
                   "children": [
                     {
                       "attributes": {},
-                      "children": [],
+                      "children": [
+                        {
+                          "attributes": {},
+                          "children": [],
+                          "componentType": "BreadcrumbItem",
+                          "end": {
+                            "column": 1,
+                            "line": 27,
+                            "offset": 840
+                          },
+                          "modifiers": {},
+                          "navigation": "Home",
+                          "start": {
+                            "column": 25,
+                            "line": 26,
+                            "offset": 812
+                          },
+                          "text": "Home",
+                          "type": "Component"
+                        },
+                        {
+                          "attributes": {},
+                          "children": [],
+                          "componentType": "BreadcrumbItem",
+                          "end": {
+                            "column": 1,
+                            "line": 28,
+                            "offset": 906
+                          },
+                          "modifiers": {},
+                          "navigation": "Electronics",
+                          "start": {
+                            "column": 25,
+                            "line": 27,
+                            "offset": 864
+                          },
+                          "text": "Electronics",
+                          "type": "Component"
+                        },
+                        {
+                          "attributes": {},
+                          "children": [],
+                          "componentType": "BreadcrumbItem",
+                          "end": {
+                            "column": 1,
+                            "line": 29,
+                            "offset": 958
+                          },
+                          "modifiers": {},
+                          "start": {
+                            "column": 25,
+                            "line": 28,
+                            "offset": 930
+                          },
+                          "text": "Headphones",
+                          "type": "Component"
+                        }
+                      ],
                       "componentType": "Breadcrumb",
                       "end": {
                         "column": 32,

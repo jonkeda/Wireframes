@@ -15,6 +15,6 @@
       
     </g></g><g role="button" aria-label="Overzicht"><g opacity="1">
       <path d="M16.0 58.8 Q68.0 53.7 120.0 58.8 M119.6 60.0 Q118.3 78.0 119.4 96.0 M120.0 97.1 Q68.0 102.1 16.0 96.9 M16.5 96.0 Q16.5 78.0 15.6 60.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="68" y="83" text-anchor="middle" class="wire-text" fill="#333333">Overzicht</text>
+      <text x="68" y="83" text-anchor="middle" class="wire-text" style="fill: #333333">Overzicht</text>
     </g></g>
 </svg>

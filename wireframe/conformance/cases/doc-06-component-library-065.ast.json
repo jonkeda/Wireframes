@@ -1,6 +1,65 @@
 {
   "attributes": {},
-  "children": [],
+  "children": [
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "Cell",
+      "end": {
+        "column": 1,
+        "line": 3,
+        "offset": 35
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Content",
+      "type": "Component"
+    },
+    {
+      "attributes": {
+        "align": "center"
+      },
+      "children": [],
+      "componentType": "Cell",
+      "end": {
+        "column": 1,
+        "line": 4,
+        "offset": 68
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 39
+      },
+      "text": "Centered",
+      "type": "Component"
+    },
+    {
+      "attributes": {
+        "align": "right"
+      },
+      "children": [],
+      "componentType": "Cell",
+      "end": {
+        "column": 1,
+        "line": 5,
+        "offset": 105
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 72
+      },
+      "text": "Right-aligned",
+      "type": "Component"
+    }
+  ],
   "dataSections": [],
   "end": {
     "column": 11,

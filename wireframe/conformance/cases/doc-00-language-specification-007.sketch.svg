@@ -11,9 +11,9 @@
   <rect width="100%" height="100%" fill="#fefefe" />
   <g role="button" aria-label="One"><g opacity="1">
       <path d="M16.0 15.0 Q66.0 22.3 116.0 14.8 M115.4 16.0 Q118.2 34.0 114.8 52.0 M116.0 52.8 Q66.0 42.6 16.0 51.3 M16.7 52.0 Q14.5 34.0 16.2 16.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="66" y="39" text-anchor="middle" class="wire-text" fill="#333333">One</text>
+      <text x="66" y="39" text-anchor="middle" class="wire-text" style="fill: #333333">One</text>
     </g></g><g role="button" aria-label="Two"><g opacity="1">
       <path d="M16.0 68.7 Q66.0 74.5 116.0 67.0 M116.8 68.0 Q117.5 86.0 117.5 104.0 M116.0 103.2 Q66.0 98.4 16.0 103.0 M15.3 104.0 Q13.8 86.0 16.4 68.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="66" y="91" text-anchor="middle" class="wire-text" fill="#333333">Two</text>
+      <text x="66" y="91" text-anchor="middle" class="wire-text" style="fill: #333333">Two</text>
     </g></g>
 </svg>

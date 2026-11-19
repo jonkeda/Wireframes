@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="604" viewBox="0 0 800 604" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  <defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15" /></filter></defs>
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <rect x="16" y="16" width="768" height="56" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group" aria-label="top"><text x="32" y="47" class="wire-text">top</text></g><rect x="16" y="536" width="768" height="52" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group" aria-label="bottom"><text x="32" y="567" class="wire-text">bottom</text></g><rect x="16" y="72" width="240" height="460" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group" aria-label="left"><text x="32" y="103" class="wire-text">left</text></g><rect x="256" y="72" width="528" height="460" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><rect x="272" y="88" width="496" height="52" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><g role="group" aria-label="a card in the filled part"><text x="288" y="119" class="wire-text">a card in the filled part</text></g>
+</svg>

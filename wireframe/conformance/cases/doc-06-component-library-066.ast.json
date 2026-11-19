@@ -5,7 +5,98 @@
       "attributes": {
         "rows": 5
       },
-      "children": [],
+      "children": [
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnText",
+          "end": {
+            "column": 1,
+            "line": 4,
+            "offset": 71
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 53
+          },
+          "text": "Name",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnDate",
+          "end": {
+            "column": 1,
+            "line": 5,
+            "offset": 100
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 79
+          },
+          "text": "Created",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnNumber",
+          "end": {
+            "column": 1,
+            "line": 6,
+            "offset": 129
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 108
+          },
+          "text": "Count",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnCheckbox",
+          "end": {
+            "column": 1,
+            "line": 7,
+            "offset": 161
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 137
+          },
+          "text": "Active",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnButton",
+          "end": {
+            "column": 1,
+            "line": 8,
+            "offset": 192
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 7,
+            "offset": 169
+          },
+          "text": "Actions",
+          "type": "Component"
+        }
+      ],
       "componentType": "DataGrid",
       "end": {
         "column": 14,

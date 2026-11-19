@@ -1,6 +1,65 @@
 {
   "attributes": {},
-  "children": [],
+  "children": [
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "Step",
+      "end": {
+        "column": 1,
+        "line": 3,
+        "offset": 38
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Step Label",
+      "type": "Component"
+    },
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "Step",
+      "end": {
+        "column": 1,
+        "line": 4,
+        "offset": 69
+      },
+      "modifiers": {
+        "completed": true
+      },
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 42
+      },
+      "text": "Completed",
+      "type": "Component"
+    },
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "Step",
+      "end": {
+        "column": 1,
+        "line": 5,
+        "offset": 94
+      },
+      "modifiers": {
+        "active": true
+      },
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 73
+      },
+      "text": "Active",
+      "type": "Component"
+    }
+  ],
   "dataSections": [],
   "end": {
     "column": 11,

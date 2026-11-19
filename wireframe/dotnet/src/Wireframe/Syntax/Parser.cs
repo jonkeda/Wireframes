@@ -16,6 +16,7 @@ public sealed class Parser
     private readonly List<Diagnostic> errors = new();
     private readonly HashSet<string> ids = new(StringComparer.Ordinal);
     private readonly List<string> openBlocks = new();
+    private int depth;
 
     /// <summary>Parse a source: the lexer's errors come first, then the parser's.</summary>
     public ParseResult Parse(string source)
@@ -23,14 +24,34 @@ public sealed class Parser
         var (lexed, lexerErrors) = Lexer.Tokenize(source);
         Reset(lexed);
         errors.AddRange(lexerErrors);
-        return new ParseResult(ParseDocument(), errors.ToArray());
+        return Parsed();
     }
 
     /// <summary>Parse tokens already made by the lexer.</summary>
     public ParseResult ParseTokens(IReadOnlyList<Token> tokens)
     {
         Reset(tokens);
-        return new ParseResult(ParseDocument(), errors.ToArray());
+        return Parsed();
+    }
+
+    /// <summary>How deep elements may be nested. Without a limit a source nested deep enough ends the process.</summary>
+    public const int MaxNesting = 200;
+
+    private sealed class NestedTooDeeplyException : Exception
+    {
+    }
+
+    private ParseResult Parsed()
+    {
+        try
+        {
+            return new ParseResult(ParseDocument(), errors.ToArray());
+        }
+        catch (NestedTooDeeplyException)
+        {
+            AddError("Elements are nested more than " + MaxNesting.ToString(System.Globalization.CultureInfo.InvariantCulture) + " deep");
+            return new ParseResult(null, errors.ToArray());
+        }
     }
 
     private void Reset(IReadOnlyList<Token> lexed)
@@ -40,6 +61,7 @@ public sealed class Parser
         errors.Clear();
         ids.Clear();
         openBlocks.Clear();
+        depth = 0;
     }
 
     // ============ The document ============
@@ -114,8 +136,9 @@ public sealed class Parser
         {
             doc.End = Advance().End;
         }
-        else if (!IsAtEnd())
+        else
         {
+            // Also at the end of the source: a document that was opened is closed
             AddError("Expected /wireframe to close document");
         }
 
@@ -234,6 +257,24 @@ public sealed class Parser
     }
 
     private ElementNode? ParseElement()
+    {
+        if (depth >= MaxNesting)
+        {
+            throw new NestedTooDeeplyException();
+        }
+
+        depth++;
+        try
+        {
+            return ParseElementAt();
+        }
+        finally
+        {
+            depth--;
+        }
+    }
+
+    private ElementNode? ParseElementAt()
     {
         var token = Peek();
         if (Keywords.IsLayout(token.Kind))
@@ -528,6 +569,12 @@ public sealed class Parser
                 {
                     tableRows.Add(ParseTableRow(Advance()));
                     SkipNewlines();
+                }
+
+                // A table written with Row and Cell elements in place of `| a | b |` lines
+                if (tableRows.Count == 0)
+                {
+                    children = ParseElements();
                 }
 
                 if (Check(TokenKind.Dedent))

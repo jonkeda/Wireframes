@@ -59,11 +59,10 @@ draws it, and you show the picture.
 
 ## What the tool does not tell you
 
-- **An attribute the renderer does not know is accepted and does nothing.** `width=200` and `justify=between`
-  give no error and no effect; the width is `w=200`. The attributes that work are listed in the reference.
-- **A `title="…"` on a card, a modal or a dialog is not drawn.** Put the title in as a bold `Label`.
-- **Some words in older documentation do not parse**: `Step`, `BreadcrumbItem`, `Row`, `Cell`, `ColumnText`. The
-  reference shows what to write instead.
+- **An attribute nothing reads is accepted and does nothing.** A misspelt attribute (`widht=200`) gives no error
+  and no effect. The attributes that work are listed in the reference.
+- **A word that is not in the language is an error at its line** (`Unexpected token: RadioButton`). Older
+  documentation uses a few such words; the reference has what to write.
 
 ## Do not
 

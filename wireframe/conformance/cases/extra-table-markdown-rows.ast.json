@@ -1,0 +1,104 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "Table",
+      "end": {
+        "column": 11,
+        "line": 7,
+        "offset": 180
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "tableRows": [
+        {
+          "cells": [
+            "Number",
+            "Customer",
+            "Total"
+          ],
+          "isSeparator": false
+        },
+        {
+          "cells": [
+            "--------",
+            "----------",
+            "-------"
+          ],
+          "isSeparator": true
+        },
+        {
+          "cells": [
+            "1001",
+            "Acme",
+            ""
+          ],
+          "isSeparator": false
+        },
+        {
+          "cells": [
+            "1002",
+            "Globex & Sons",
+            "75.50"
+          ],
+          "isSeparator": false
+        }
+      ],
+      "type": "Component"
+    },
+    {
+      "attributes": {
+        "w": 300
+      },
+      "children": [],
+      "componentType": "Table",
+      "end": {
+        "column": 11,
+        "line": 11,
+        "offset": 255
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 8,
+        "offset": 185
+      },
+      "tableRows": [
+        {
+          "cells": [
+            "no",
+            "header"
+          ],
+          "isSeparator": false
+        },
+        {
+          "cells": [
+            "only",
+            "rows"
+          ],
+          "isSeparator": false
+        }
+      ],
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 12,
+    "offset": 266
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

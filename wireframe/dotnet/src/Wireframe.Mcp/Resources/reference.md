@@ -83,10 +83,11 @@ Any word may be an attribute; the renderer reads these:
 | Flow | `Repeat`, `if`, `else` |
 | Data sections | `data`, `fields`, `validations`, `calculations`, `rules`, `component` |
 
-Keywords are case-sensitive. **Not elements**, although they are keywords: `Step`, `BreadcrumbItem`, `Row`, `Cell`,
-`ColumnText`, `ColumnDate`, `ColumnNumber`, `ColumnCheckbox`, `ColumnImage`, `ColumnLink`, `ColumnButton`. A line
-starting with one of them, or with any unknown word, is an error (`Unexpected token: Step`). Use `Stepper steps=4
-current=2`, `Breadcrumb` holding `Link`s, and `Table` rows instead.
+Keywords are case-sensitive. A line starting with a word that is not in the language is an error (`Unexpected
+token: Bubble`). The parts of components: `Tab` in `Tabs`, `MenuItem` in `Menu`, `Step` in `Stepper`,
+`BreadcrumbItem` in `Breadcrumb`, `Row` and `Cell` in `Table`, `TreeItem` in `Tree`, `AccordionSection` in
+`Accordion`, and `ColumnText`, `ColumnDate`, `ColumnNumber`, `ColumnCheckbox`, `ColumnImage`, `ColumnLink`,
+`ColumnButton` in `DataGrid`.
 
 ## Content that is not elements
 
@@ -110,9 +111,8 @@ wireframe clean
 /wireframe
 ```
 
-- `Table`: Markdown table rows; a row of only `|`, `-`, `:` is the separator under the header. **The rows are read and
-  not drawn: a `Table`, with rows or with `rows=` and `cols=`, leaves the picture empty.** To show a table, write a
-  `Grid cols=3` of `Label`s, the first row the column names in bold (`Label "**Name**"`), inside a `Card`.
+- `Table`: Markdown table rows; a row of only `|`, `-`, `:` is the separator, and the rows above it are drawn as the
+  header. Or `Row` … `/Row` elements holding `Cell "text"` lines. With neither, `rows=` and `cols=` draw a placeholder.
 - `Tree`: `+ branch` (its items indented under it) and `- leaf`; or `TreeItem "Name"` elements.
 - `List`: `- item` lines.
 - `Dropdown`: options as strings after the placeholder, or `Option "Red" selected` lines under it.

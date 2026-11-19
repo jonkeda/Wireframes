@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="348" height="173" viewBox="0 0 348 173" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  <defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15" /></filter></defs>
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <g>
+      <rect x="16" y="16" width="180" height="141" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" />
+      <text x="28" y="36" class="wire-text wire-text-bold wire-text-small">File</text>
+    </g><g opacity="1"><rect x="16" y="44" width="180" height="36" fill="transparent" /><rect x="28" y="54" width="16" height="16" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /><text x="52" y="67" class="wire-text" style="fill: #212529">Open</text></g><g opacity="1"><rect x="16" y="80" width="180" height="36" fill="transparent" /><text x="28" y="103" class="wire-text" style="fill: #212529">Save</text></g><g role="group"><line x1="16" y1="116" x2="216" y2="116" stroke="#dee2e6" stroke-width="1" /></g><g opacity="0.5"><rect x="16" y="117" width="180" height="36" fill="transparent" /><text x="28" y="140" class="wire-text" style="fill: #adb5bd">Close</text></g><g>
+      <rect x="212" y="16" width="120" height="44" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" />
+      
+    </g><g opacity="1"><rect x="212" y="20" width="120" height="36" fill="transparent" /><text x="224" y="43" class="wire-text" style="fill: #212529">One</text></g>
+</svg>

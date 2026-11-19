@@ -17,7 +17,7 @@ namespace Wireframe.Cli;
 public static class WireCli
 {
     /// <summary>The tool's version, the same as the TypeScript tool it mirrors.</summary>
-    public const string Version = "0.0.9";
+    public const string Version = "0.1.0";
 
     /// <summary>The output value meaning "write to standard output".</summary>
     public const string StdoutPath = "-";

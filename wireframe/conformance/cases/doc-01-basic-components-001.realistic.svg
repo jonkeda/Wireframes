@@ -11,15 +11,15 @@
   <rect width="100%" height="100%" fill="#ffffff" />
   <g role="button" aria-label="Click Me"><g opacity="1">
       <rect x="16" y="16" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="66" y="39" text-anchor="middle" class="wire-text" fill="#212529">Click Me</text>
+      <text x="66" y="39" text-anchor="middle" class="wire-text" style="fill: #212529">Click Me</text>
     </g></g><g role="button" aria-label="Primary"><g opacity="1">
       <rect x="124" y="16" width="100" height="36" rx="6" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
-      <text x="174" y="39" text-anchor="middle" class="wire-text" fill="#ffffff">Primary</text>
+      <text x="174" y="39" text-anchor="middle" class="wire-text" style="fill: #ffffff">Primary</text>
     </g></g><g role="button" aria-label="Secondary"><g opacity="1">
       <rect x="232" y="16" width="104" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="284" y="39" text-anchor="middle" class="wire-text" fill="#212529">Secondary</text>
+      <text x="284" y="39" text-anchor="middle" class="wire-text" style="fill: #212529">Secondary</text>
     </g></g><g role="button" aria-label="Disabled" aria-disabled="true"><g opacity="0.5">
       <rect x="344" y="16" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="394" y="39" text-anchor="middle" class="wire-text" fill="#212529">Disabled</text>
+      <text x="394" y="39" text-anchor="middle" class="wire-text" style="fill: #212529">Disabled</text>
     </g></g>
 </svg>

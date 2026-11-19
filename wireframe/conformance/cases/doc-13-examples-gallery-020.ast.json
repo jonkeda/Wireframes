@@ -390,12 +390,175 @@
       "children": [
         {
           "attributes": {},
-          "children": [],
+          "children": [
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "Cell",
+                  "end": {
+                    "column": 1,
+                    "line": 58,
+                    "offset": 1899
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 25,
+                    "line": 57,
+                    "offset": 1882
+                  },
+                  "text": "Processor",
+                  "type": "Component"
+                },
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "Cell",
+                  "end": {
+                    "column": 1,
+                    "line": 59,
+                    "offset": 1943
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 25,
+                    "line": 58,
+                    "offset": 1923
+                  },
+                  "text": "Apple M3 Pro",
+                  "type": "Component"
+                }
+              ],
+              "componentType": "Row",
+              "end": {
+                "column": 25,
+                "line": 59,
+                "offset": 1967
+              },
+              "modifiers": {},
+              "start": {
+                "column": 21,
+                "line": 56,
+                "offset": 1854
+              },
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "Cell",
+                  "end": {
+                    "column": 1,
+                    "line": 62,
+                    "offset": 2031
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 25,
+                    "line": 61,
+                    "offset": 2016
+                  },
+                  "text": "Display",
+                  "type": "Component"
+                },
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "Cell",
+                  "end": {
+                    "column": 1,
+                    "line": 63,
+                    "offset": 2090
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 25,
+                    "line": 62,
+                    "offset": 2055
+                  },
+                  "text": "14.2-inch Liquid Retina XDR",
+                  "type": "Component"
+                }
+              ],
+              "componentType": "Row",
+              "end": {
+                "column": 25,
+                "line": 63,
+                "offset": 2114
+              },
+              "modifiers": {},
+              "start": {
+                "column": 21,
+                "line": 60,
+                "offset": 1988
+              },
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "Cell",
+                  "end": {
+                    "column": 1,
+                    "line": 66,
+                    "offset": 2178
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 25,
+                    "line": 65,
+                    "offset": 2163
+                  },
+                  "text": "Battery",
+                  "type": "Component"
+                },
+                {
+                  "attributes": {},
+                  "children": [],
+                  "componentType": "Cell",
+                  "end": {
+                    "column": 1,
+                    "line": 67,
+                    "offset": 2224
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 25,
+                    "line": 66,
+                    "offset": 2202
+                  },
+                  "text": "Up to 17 hours",
+                  "type": "Component"
+                }
+              ],
+              "componentType": "Row",
+              "end": {
+                "column": 25,
+                "line": 67,
+                "offset": 2248
+              },
+              "modifiers": {},
+              "start": {
+                "column": 21,
+                "line": 64,
+                "offset": 2135
+              },
+              "type": "Component"
+            }
+          ],
           "componentType": "Table",
           "end": {
-            "column": 21,
-            "line": 56,
-            "offset": 1854
+            "column": 23,
+            "line": 68,
+            "offset": 2271
           },
           "modifiers": {},
           "start": {
@@ -409,9 +572,9 @@
       ],
       "componentType": "Tab",
       "end": {
-        "column": 21,
-        "line": 59,
-        "offset": 1963
+        "column": 17,
+        "line": 69,
+        "offset": 2288
       },
       "modifiers": {},
       "start": {

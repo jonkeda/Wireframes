@@ -81,6 +81,11 @@ Number 1 is the one an author meets most: a wireframe that validates and renders
 what was written. A warning for an attribute nothing reads would be a change to the diagnostics, in both
 implementations and in the set.
 
+## Later
+
+The faults in the table above were fixed the same day: see [680-LanguageFixes.md](680-LanguageFixes.md). The
+skills and the reference no longer teach the ways round them.
+
 ## Open
 
 - The MCP server's `wireframe_components` shows the attributes the documentation's examples use. That is not the

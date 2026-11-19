@@ -7,13 +7,13 @@
     .wire-text-small { font-size: 12px; }
     .wire-text-large { font-size: 18px; }
   </style>
-  
+  <defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15" /></filter></defs>
   <rect width="100%" height="100%" fill="#fefefe" />
-  <path d="M16.0 15.3 Q400.0 8.4 784.0 15.4 M783.2 16.0 Q780.9 66.0 783.5 116.0 M784.0 116.6 Q400.0 122.2 16.0 117.4 M16.9 116.0 Q18.2 66.0 15.4 16.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="**STORE**"><text x="48" y="63" class="wire-text wire-text-bold">STORE</text></g><g role="textbox" aria-label="Search products..." aria-placeholder="Search products..."><g>
-      <path d="M128.0 47.5 Q228.0 47.6 328.0 49.1 M326.9 48.0 Q332.1 66.0 327.8 84.0 M328.0 84.4 Q228.0 81.3 128.0 84.0 M129.2 84.0 Q126.9 66.0 127.5 48.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
-      <text x="140" y="71" class="wire-text wire-text-secondary">Search products...</text>
+  <path d="M16.0 15.3 Q400.0 8.4 784.0 15.4 M783.2 16.0 Q780.9 66.0 783.5 116.0 M784.0 116.6 Q400.0 122.2 16.0 117.4 M16.9 116.0 Q18.2 66.0 15.4 16.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="STORE"><text x="48" y="63" class="wire-text wire-text-bold">STORE</text></g><g role="textbox" aria-label="Search products..." aria-placeholder="Search products..."><g>
+      <path d="M296.0 48.9 Q396.0 52.5 496.0 49.0 M496.6 48.0 Q494.9 66.0 495.5 84.0 M496.0 83.0 Q396.0 76.4 296.0 84.0 M295.6 84.0 Q293.4 66.0 296.1 48.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="308" y="71" class="wire-text wire-text-secondary">Search products...</text>
       
-    </g></g><g role="button" aria-label="Cart"><g><rect x="336" y="48" width="80" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><path d="M351 62 H353 L355 68 H359 L361 62 M356 71 a1,1 0 1,0 0,0.1 M357 71 a1,1 0 1,0 0,0.1" stroke="#333333" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" /><text x="372" y="71" class="wire-text" fill="#333333">Cart</text></g></g><path d="M16.0 116.2 Q400.0 117.4 784.0 116.8 M785.3 116.0 Q791.5 350.0 783.8 584.0 M784.0 583.7 Q400.0 583.5 16.0 584.3 M14.8 584.0 Q11.6 350.0 15.2 116.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><path d="M32.0 130.6 Q232.0 126.7 432.0 132.2 M431.8 132.0 Q429.1 350.0 431.3 568.0 M432.0 569.2 Q232.0 575.5 32.0 568.5 M32.3 568.0 Q34.0 350.0 31.6 132.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="img" aria-label="product-image"><g>
+    </g></g><g role="button" aria-label="Cart"><g><rect x="672" y="48" width="80" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><path d="M687 62 H689 L691 68 H695 L697 62 M692 71 a1,1 0 1,0 0,0.1 M693 71 a1,1 0 1,0 0,0.1" stroke="#333333" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" /><text x="708" y="71" class="wire-text" style="fill: #333333">Cart</text></g></g><path d="M16.0 116.2 Q400.0 117.4 784.0 116.8 M785.3 116.0 Q791.5 350.0 783.8 584.0 M784.0 583.7 Q400.0 583.5 16.0 584.3 M14.8 584.0 Q11.6 350.0 15.2 116.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><path d="M32.0 132.6 Q232.0 138.1 432.0 130.7 M432.8 132.0 Q432.3 342.0 431.5 552.0 M432.0 551.2 Q232.0 546.8 32.0 551.4 M31.3 552.0 Q32.7 342.0 32.1 132.0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" /><g role="img" aria-label="product-image"><g>
       <rect x="48" y="148" width="150" height="300" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
       <line x1="48" y1="148" x2="198" y2="448" stroke="#888888" stroke-width="1" />
       <line x1="198" y1="148" x2="48" y2="448" stroke="#888888" stroke-width="1" />
@@ -33,24 +33,24 @@
       <line x1="224" y1="456" x2="304" y2="536" stroke="#888888" stroke-width="1" />
       <line x1="304" y1="456" x2="224" y2="536" stroke="#888888" stroke-width="1" />
       <text x="264" y="501" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Image</text>
-    </g></g><g role="group" aria-label="**Premium Wireless Headphones**"><text x="456" y="195" class="wire-text wire-text-bold">Premium Wireless Headphones</text></g><g role="group" aria-label="**$299**"><text x="456" y="231" class="wire-text wire-text-bold">$299</text></g><g role="group" aria-label="~~$399~~"><text x="528" y="231" class="wire-text">~~$399~~</text></g><g role="group" aria-label="25% OFF"><g>
-      <rect x="600" y="216" width="24" height="24" rx="12" fill="#6c757d" />
-      <text x="612" y="232" text-anchor="middle" class="wire-text wire-text-small" fill="#ffffff">25% OFF</text>
-    </g></g><g role="group" aria-label="★★★★☆ (128 reviews)"><text x="456" y="271" class="wire-text">★★★★☆ (128 reviews)</text></g><g role="group"><line x1="456" y1="292" x2="656" y2="292" stroke="#888888" stroke-width="1" /></g><g role="group" aria-label="**Color**"><text x="456" y="324" class="wire-text wire-text-bold">Color</text></g><g role="group" aria-label="Black"><g>
-      <rect x="456" y="345" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
-      <text x="496" y="363" text-anchor="middle" class="wire-text wire-text-small" fill="#333333">Black</text>
+    </g></g><g><text x="456" y="149" class="wire-text" style="fill: #4a90d9">Home</text><text x="496" y="149" class="wire-text wire-text-secondary">/</text><text x="512" y="149" class="wire-text" style="fill: #4a90d9">Electronics</text><text x="608" y="149" class="wire-text wire-text-secondary">/</text><text x="624" y="149" class="wire-text" style="fill: #333333">Headphones</text></g><g role="group" aria-label="Premium Wireless Headphones"><text x="456" y="187" class="wire-text wire-text-bold">Premium Wireless Headphones</text></g><g role="group" aria-label="$299"><text x="456" y="223" class="wire-text wire-text-bold">$299</text></g><g role="group" aria-label="~~$399~~"><text x="528" y="223" class="wire-text">~~$399~~</text></g><g role="group" aria-label="25% OFF"><g>
+      <rect x="600" y="208" width="24" height="24" rx="12" fill="#6c757d" />
+      <text x="612" y="224" text-anchor="middle" class="wire-text wire-text-small" style="fill: #ffffff">25% OFF</text>
+    </g></g><g role="group" aria-label="★★★★☆ (128 reviews)"><text x="456" y="263" class="wire-text">★★★★☆ (128 reviews)</text></g><g role="group"><line x1="456" y1="284" x2="656" y2="284" stroke="#888888" stroke-width="1" /></g><g role="group" aria-label="Color"><text x="456" y="316" class="wire-text wire-text-bold">Color</text></g><g role="group" aria-label="Black"><g>
+      <rect x="456" y="337" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
+      <text x="496" y="355" text-anchor="middle" class="wire-text wire-text-small" style="fill: #333333">Black</text>
     </g></g><g role="group" aria-label="White"><g>
-      <rect x="544" y="345" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
-      <text x="584" y="363" text-anchor="middle" class="wire-text wire-text-small" fill="#333333">White</text>
+      <rect x="544" y="337" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
+      <text x="584" y="355" text-anchor="middle" class="wire-text wire-text-small" style="fill: #333333">White</text>
     </g></g><g role="group" aria-label="Navy"><g>
-      <rect x="632" y="345" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
-      <text x="672" y="363" text-anchor="middle" class="wire-text wire-text-small" fill="#333333">Navy</text>
-    </g></g><g role="group"><line x1="456" y1="389" x2="656" y2="389" stroke="#888888" stroke-width="1" /></g><g role="spinbutton" aria-label="1" aria-placeholder="1"><g>
-      <path d="M456.0 407.1 Q496.0 413.4 536.0 406.0 M536.4 406.0 Q535.8 424.0 536.6 442.0 M536.0 440.8 Q496.0 435.5 456.0 443.1 M455.8 442.0 Q455.0 424.0 457.4 406.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
-      <text x="468" y="429" class="wire-text wire-text-secondary">123</text>
+      <rect x="632" y="337" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
+      <text x="672" y="355" text-anchor="middle" class="wire-text wire-text-small" style="fill: #333333">Navy</text>
+    </g></g><g role="group"><line x1="456" y1="381" x2="656" y2="381" stroke="#888888" stroke-width="1" /></g><g role="spinbutton" aria-label="1" aria-placeholder="1"><g>
+      <path d="M456.0 397.0 Q496.0 405.3 536.0 398.5 M535.5 398.0 Q537.2 416.0 536.0 434.0 M536.0 434.9 Q496.0 427.6 456.0 434.5 M456.7 434.0 Q455.5 416.0 454.9 398.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
+      <text x="468" y="421" class="wire-text wire-text-secondary">123</text>
       
     </g></g><g role="button" aria-label="Add to Cart"><g opacity="1">
-      <path d="M544.0 406.0 Q604.0 408.4 664.0 406.8 M665.5 406.0 Q667.7 424.0 663.8 442.0 M664.0 441.9 Q604.0 440.4 544.0 442.3 M542.7 442.0 Q542.3 424.0 543.5 406.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
-      <text x="604" y="429" text-anchor="middle" class="wire-text" fill="#ffffff">Add to Cart</text>
-    </g></g><g role="button" aria-label="Favorite"><g><rect x="672" y="406" width="112" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="684" y="416" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /><text x="708" y="429" class="wire-text" fill="#333333">Favorite</text></g></g>
+      <path d="M544.0 398.9 Q604.0 400.7 664.0 399.3 M664.6 398.0 Q664.1 416.0 662.9 434.0 M664.0 433.0 Q604.0 429.2 544.0 435.4 M543.6 434.0 Q541.1 416.0 544.4 398.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
+      <text x="604" y="421" text-anchor="middle" class="wire-text" style="fill: #ffffff">Add to Cart</text>
+    </g></g><g role="button" aria-label="Favorite"><g><rect x="672" y="398" width="112" height="36" rx="0" fill="#f0f0f0" stroke="#888888" stroke-width="2" /><rect x="684" y="408" width="16" height="16" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /><text x="708" y="421" class="wire-text" style="fill: #333333">Favorite</text></g></g>
 </svg>

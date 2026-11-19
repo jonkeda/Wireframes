@@ -48,7 +48,8 @@ The renderer's port meets each of these again.
 
 ## What looks wrong in the language, and was copied on purpose
 
-Not fixed: the set records what the implementation does. Each is for the owner to decide; a decision to change one
+Fixed later for a, b, c, d (keywords) and h: see [680-LanguageFixes.md](680-LanguageFixes.md). At the time:
+not fixed: the set records what the implementation does. Each is for the owner to decide; a decision to change one
 is a change to the set, in both implementations.
 
 | # | What | Where in the TypeScript | Shown by |

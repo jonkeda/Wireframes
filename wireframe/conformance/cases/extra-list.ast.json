@@ -1,0 +1,60 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "List",
+      "end": {
+        "column": 10,
+        "line": 6,
+        "offset": 92
+      },
+      "listItems": [
+        "first",
+        "second & third",
+        "fourth"
+      ],
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Component"
+    },
+    {
+      "attributes": {
+        "w": 200
+      },
+      "children": [],
+      "componentType": "List",
+      "end": {
+        "column": 10,
+        "line": 8,
+        "offset": 117
+      },
+      "listItems": [],
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 7,
+        "offset": 97
+      },
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 9,
+    "offset": 128
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

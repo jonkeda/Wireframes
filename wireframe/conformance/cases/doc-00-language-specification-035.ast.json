@@ -3,7 +3,84 @@
   "children": [
     {
       "attributes": {},
-      "children": [],
+      "children": [
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Step",
+          "end": {
+            "column": 1,
+            "line": 4,
+            "offset": 61
+          },
+          "modifiers": {
+            "completed": true
+          },
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 36
+          },
+          "text": "Account",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Step",
+          "end": {
+            "column": 1,
+            "line": 5,
+            "offset": 91
+          },
+          "modifiers": {
+            "active": true
+          },
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 69
+          },
+          "text": "Details",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Step",
+          "end": {
+            "column": 1,
+            "line": 6,
+            "offset": 113
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 99
+          },
+          "text": "Review",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Step",
+          "end": {
+            "column": 1,
+            "line": 7,
+            "offset": 136
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 121
+          },
+          "text": "Confirm",
+          "type": "Component"
+        }
+      ],
       "componentType": "Stepper",
       "end": {
         "column": 13,

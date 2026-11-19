@@ -53,10 +53,8 @@ test names `:btnSave`, a picture is linked from a document. What you did not mea
 
 ## What the tool does not tell you
 
-- **An attribute the renderer does not know is accepted and does nothing**: `width=200`, `justify=between`. The
-  width is `w=200`. If the block you are changing has such attributes, leave them and mention them; removing them
-  is a change nobody asked for.
-- **A `title="…"` on a card, a modal or a dialog is not drawn.**
+- **An attribute nothing reads is accepted and does nothing.** If the block you are changing has one that looks
+  misspelt, leave it and mention it; removing it is a change nobody asked for.
 - **A block without an id is named by its number in the document.** Adding a block above it renames its picture.
   If you add a block to a document whose blocks have no ids, say so, and propose ids rather than adding them
   unasked.

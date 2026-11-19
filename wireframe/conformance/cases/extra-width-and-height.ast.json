@@ -1,0 +1,77 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "height": 48,
+        "width": 240
+      },
+      "controlType": "Button",
+      "end": {
+        "column": 38,
+        "line": 2,
+        "offset": 53
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Wide",
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "w": 120,
+        "width": 300
+      },
+      "controlType": "TextInput",
+      "end": {
+        "column": 39,
+        "line": 3,
+        "offset": 92
+      },
+      "modifiers": {},
+      "placeholder": "w wins",
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 58
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "height": 60,
+        "width": 200
+      },
+      "controlType": "Image",
+      "end": {
+        "column": 34,
+        "line": 4,
+        "offset": 126
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 97
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 137
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

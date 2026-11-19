@@ -12,14 +12,18 @@
   <g>
           <rect x="16" y="16" width="768" height="52" rx="6" fill="#0dcaf020" stroke="#0dcaf0" stroke-width="1" />
           <rect x="16" y="16" width="4" height="52" fill="#0dcaf0" />
+          
         </g><g role="group" aria-label="This is an informational message"><text x="32" y="47" class="wire-text">This is an informational message</text></g><g>
           <rect x="16" y="76" width="768" height="52" rx="6" fill="#19875420" stroke="#198754" stroke-width="1" />
           <rect x="16" y="76" width="4" height="52" fill="#198754" />
+          
         </g><g role="group" aria-label="Operation completed successfully"><text x="32" y="107" class="wire-text">Operation completed successfully</text></g><g>
           <rect x="16" y="136" width="768" height="52" rx="6" fill="#ffc10720" stroke="#ffc107" stroke-width="1" />
           <rect x="16" y="136" width="4" height="52" fill="#ffc107" />
+          
         </g><g role="group" aria-label="Please review your settings"><text x="32" y="167" class="wire-text">Please review your settings</text></g><g>
           <rect x="16" y="196" width="768" height="52" rx="6" fill="#dc354520" stroke="#dc3545" stroke-width="1" />
           <rect x="16" y="196" width="4" height="52" fill="#dc3545" />
+          
         </g><g role="group" aria-label="An error occurred"><text x="32" y="227" class="wire-text">An error occurred</text></g>
 </svg>

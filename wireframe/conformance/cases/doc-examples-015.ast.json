@@ -3,7 +3,84 @@
   "children": [
     {
       "attributes": {},
-      "children": [],
+      "children": [
+        {
+          "attributes": {
+            "completed": true
+          },
+          "children": [],
+          "componentType": "Step",
+          "end": {
+            "column": 1,
+            "line": 4,
+            "offset": 76
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 49
+          },
+          "text": "Cart",
+          "type": "Component"
+        },
+        {
+          "attributes": {
+            "current": true
+          },
+          "children": [],
+          "componentType": "Step",
+          "end": {
+            "column": 1,
+            "line": 5,
+            "offset": 113
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 84
+          },
+          "text": "Shipping",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Step",
+          "end": {
+            "column": 1,
+            "line": 6,
+            "offset": 136
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 121
+          },
+          "text": "Payment",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Step",
+          "end": {
+            "column": 1,
+            "line": 7,
+            "offset": 159
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 144
+          },
+          "text": "Confirm",
+          "type": "Component"
+        }
+      ],
       "componentType": "Stepper",
       "end": {
         "column": 13,

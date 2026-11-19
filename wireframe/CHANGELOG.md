@@ -28,13 +28,36 @@ theme. Both implementations are tested against it; `pnpm conformance:check` and 
 
 - The VS Code Markdown preview takes a fence with more than the language on it (` ```wireframe id=login `).
 
+### Fixed
+
+**Components draw** (both implementations). The parser made component nodes and the renderer drew them as an
+empty box, so most components showed a frame or nothing.
+- `Table` draws its rows (`| a | b |` lines, or `Row` and `Cell` elements), or a placeholder for `rows=`/`cols=`.
+- `Tabs` (with the content of the `active` tab), `Menu`, `Tree`, `List`, `Accordion`, `Expander`, `Stepper`,
+  `DataGrid`, `Breadcrumb`, `Hamburger`, `Hover` and the text of an `Alert` are drawn.
+- `Step`, `BreadcrumbItem`, `Row`, `Cell` and the typed `Column…` words are parsed, as parts of their components.
+
+**Layout and drawing**
+- `title="…"` on a card, a panel, a modal or a dialog is drawn; a dialog's title no longer lies over its content.
+- `width=` and `height=` are read as `w=` and `h=`; `justify=end|center|between` places a `Horizontal`'s children.
+- A section is as high as its content and honours `w=` and `h=`; before, a card took the whole height of the page.
+- The colour of a text (a tab, a link, a page number) is applied; the class of every text used to win over it.
+- The shadow filter that cards, menus and toasts point at is defined.
+- A section docked at the bottom has one height; an `aria-label` has no `**`; `page="2"` is read as a number.
+
+**Parser and lexer**
+- An unterminated string is reported once; a document that is never closed is reported.
+- A backslash as the last character adds nothing; `constructor`, `toString` and the like are ordinary words.
+- Elements nested more than 200 deep are an error, in place of a failure of the program.
+
+### Changed
+
+- The command-line tools are version 0.1.0: every picture counts as stale once and is drawn again.
+
 ### Known
 
-Found while the second implementation was written, the same in both, and not changed:
-- A `Table` validates and draws nothing, with `rows=`/`cols=` or with rows of its own.
-- An attribute the renderer does not read (`width=`, `justify=`) is accepted without a word and does nothing.
-- A `title="…"` on a card, a modal or a dialog is not drawn.
-- `Step`, `BreadcrumbItem`, `Row`, `Cell` and the `Column…` words are keywords that do not parse.
+- An attribute nothing reads is accepted without a word and does nothing.
+- The documentation uses a few words that are not in the language (`RadioButton`, `Group`, `ListItem`, `Bubble`).
 
 Fixes from a review of the language as a source for specifications (2026-11-18).
 

@@ -12,11 +12,11 @@
   <g>
           <rect x="16" y="16" width="350" height="180" rx="12" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
           <text x="32" y="40" class="wire-text wire-text-bold">Confirm Action</text>
-        </g><g role="group" aria-label="Are you sure you want to delete this item?"><text x="32" y="47" class="wire-text">Are you sure you want to delete this item?</text></g><g role="button" aria-label="Cancel"><g opacity="1">
-      <rect x="56" y="68" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="106" y="91" text-anchor="middle" class="wire-text" fill="#212529">Cancel</text>
+        </g><g role="group" aria-label="Are you sure you want to delete this item?"><text x="32" y="75" class="wire-text">Are you sure you want to delete this item?</text></g><g role="button" aria-label="Cancel"><g opacity="1">
+      <rect x="56" y="96" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="106" y="119" text-anchor="middle" class="wire-text" style="fill: #212529">Cancel</text>
     </g></g><g role="button" aria-label="Delete"><g opacity="1">
-      <rect x="164" y="68" width="100" height="36" rx="6" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
-      <text x="214" y="91" text-anchor="middle" class="wire-text" fill="#ffffff">Delete</text>
+      <rect x="164" y="96" width="100" height="36" rx="6" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="214" y="119" text-anchor="middle" class="wire-text" style="fill: #ffffff">Delete</text>
     </g></g>
 </svg>

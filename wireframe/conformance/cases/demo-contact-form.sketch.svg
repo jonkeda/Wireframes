@@ -7,9 +7,9 @@
     .wire-text-small { font-size: 12px; }
     .wire-text-large { font-size: 18px; }
   </style>
-  
+  <defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15" /></filter></defs>
   <rect width="100%" height="100%" fill="#fefefe" />
-  <path d="M16.0 16.1 Q400.0 19.7 784.0 14.5 M785.3 16.0 Q787.9 340.0 783.4 664.0 M784.0 663.8 Q400.0 661.2 16.0 663.6 M14.8 664.0 Q9.9 340.0 15.9 16.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="**Get in Touch**"><text x="32" y="47" class="wire-text wire-text-bold">Get in Touch</text></g><g role="group" aria-label="We&apos;d love to hear from you. Send us a message!"><text x="32" y="75" class="wire-text">We&apos;d love to hear from you. Send us a message!</text></g><g role="group" aria-label="First Name:"><text x="32" y="119" class="wire-text">First Name:</text></g><g role="textbox" aria-label="John" aria-required="true" aria-placeholder="John"><g>
+  <path d="M16.0 16.1 Q400.0 19.7 784.0 14.5 M785.3 16.0 Q787.9 340.0 783.4 664.0 M784.0 663.8 Q400.0 661.2 16.0 663.6 M14.8 664.0 Q9.9 340.0 15.9 16.0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" /><g role="group" aria-label="Get in Touch"><text x="32" y="47" class="wire-text wire-text-bold">Get in Touch</text></g><g role="group" aria-label="We&apos;d love to hear from you. Send us a message!"><text x="32" y="75" class="wire-text">We&apos;d love to hear from you. Send us a message!</text></g><g role="group" aria-label="First Name:"><text x="32" y="119" class="wire-text">First Name:</text></g><g role="textbox" aria-label="John" aria-required="true" aria-placeholder="John"><g>
       <path d="M32.0 127.5 Q132.0 127.4 232.0 126.6 M230.9 128.0 Q229.7 146.0 231.6 164.0 M232.0 164.4 Q132.0 165.5 32.0 163.5 M33.2 164.0 Q36.1 146.0 32.7 128.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
       <text x="44" y="151" class="wire-text wire-text-secondary">John</text>
       <text x="220" y="151" text-anchor="end" fill="#dc3545">*</text>
@@ -51,6 +51,6 @@
       <line x1="318" y1="534" x2="324" y2="540" stroke="#888888" stroke-width="2" />
     </g></g><g role="checkbox" aria-label="I agree to the Terms of Service" aria-required="true" aria-checked="false"><g><rect x="32" y="571" width="18" height="18" rx="2" fill="#ffffff" stroke="#888888" stroke-width="2" /><text x="58" y="585" class="wire-text">I agree to the Terms of Service</text></g></g><g role="button" aria-label="Send Message"><g opacity="1">
       <path d="M32.0 610.8 Q96.0 616.6 160.0 612.3 M159.7 612.0 Q162.2 630.0 160.9 648.0 M160.0 649.1 Q96.0 644.3 32.0 648.7 M32.5 648.0 Q30.9 630.0 33.4 612.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
-      <text x="96" y="635" text-anchor="middle" class="wire-text" fill="#ffffff">Send Message</text>
+      <text x="96" y="635" text-anchor="middle" class="wire-text" style="fill: #ffffff">Send Message</text>
     </g></g>
 </svg>

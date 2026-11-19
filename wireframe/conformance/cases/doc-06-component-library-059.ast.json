@@ -1,6 +1,26 @@
 {
   "attributes": {},
-  "children": [],
+  "children": [
+    {
+      "attributes": {},
+      "children": [],
+      "componentType": "BreadcrumbItem",
+      "end": {
+        "column": 1,
+        "line": 3,
+        "offset": 55
+      },
+      "modifiers": {},
+      "navigation": "navigation",
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "text": "Label",
+      "type": "Component"
+    }
+  ],
   "dataSections": [],
   "end": {
     "column": 11,

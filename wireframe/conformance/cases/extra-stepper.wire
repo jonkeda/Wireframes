@@ -1,0 +1,19 @@
+wireframe clean
+    Stepper
+        Step "Account" completed
+        Step "Details" active
+        Step "Review"
+    /Stepper
+    Stepper w=300
+        Step "One" completed
+        Step "Two" completed
+        Step "Three"
+    /Stepper
+    Stepper
+        Step
+        Step
+    /Stepper
+    Stepper steps=5 current=3
+    Stepper steps="3" current="2"
+    Step "Alone"
+/wireframe

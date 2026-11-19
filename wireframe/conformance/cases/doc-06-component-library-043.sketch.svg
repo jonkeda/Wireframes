@@ -11,12 +11,12 @@
   <rect width="100%" height="100%" fill="#fefefe" />
   <g role="group" aria-label="Tag"><g>
       <rect x="16" y="16" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
-      <text x="56" y="34" text-anchor="middle" class="wire-text wire-text-small" fill="#333333">Tag</text>
+      <text x="56" y="34" text-anchor="middle" class="wire-text wire-text-small" style="fill: #333333">Tag</text>
     </g></g><g role="group" aria-label="Removable"><g>
       <rect x="16" y="52" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
-      <text x="56" y="70" text-anchor="middle" class="wire-text wire-text-small" fill="#333333">Removable</text>
+      <text x="56" y="70" text-anchor="middle" class="wire-text wire-text-small" style="fill: #333333">Removable</text>
     </g></g><g role="group" aria-label="Primary"><g>
       <rect x="16" y="88" width="80" height="28" rx="14" fill="#f5f5f5" stroke="#888888" stroke-width="2" />
-      <text x="56" y="106" text-anchor="middle" class="wire-text wire-text-small" fill="#333333">Primary</text>
+      <text x="56" y="106" text-anchor="middle" class="wire-text wire-text-small" style="fill: #333333">Primary</text>
     </g></g>
 </svg>

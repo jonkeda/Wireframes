@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  <defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15" /></filter></defs>
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <path d="M16.0 15.1 Q166.0 13.7 316.0 16.7 M315.3 16.0 Q311.7 56.0 316.5 96.0 M316.0 96.8 Q166.0 98.7 16.0 96.3 M16.8 96.0 Q22.3 56.0 15.8 16.0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" /><text x="32" y="40" class="wire-text wire-text-bold">First</text><g role="group" aria-label="one"><text x="32" y="75" class="wire-text">one</text></g><path d="M16.0 105.3 Q400.0 104.4 784.0 102.8 M784.1 104.0 Q777.9 130.0 782.7 156.0 M784.0 154.6 Q400.0 154.1 16.0 154.6 M16.0 156.0 Q11.8 130.0 14.6 104.0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" /><g role="group" aria-label="as high as its content"><text x="32" y="135" class="wire-text">as high as its content</text></g><path d="M16.0 162.9 Q146.0 159.7 276.0 165.5 M275.6 164.0 Q272.3 224.0 275.1 284.0 M276.0 285.0 Q146.0 287.7 16.0 282.9 M16.5 284.0 Q18.8 224.0 15.9 164.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><text x="32" y="188" class="wire-text wire-text-bold">A panel</text><g role="group" aria-label="three"><text x="32" y="223" class="wire-text">three</text></g>
+</svg>

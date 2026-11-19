@@ -11,6 +11,6 @@
   <rect width="100%" height="100%" fill="#ffffff" />
   <g role="button" aria-label="Hello World"><g opacity="1">
       <rect x="16" y="16" width="120" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="76" y="39" text-anchor="middle" class="wire-text" fill="#212529">Hello World</text>
+      <text x="76" y="39" text-anchor="middle" class="wire-text" style="fill: #212529">Hello World</text>
     </g></g>
 </svg>

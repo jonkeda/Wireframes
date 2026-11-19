@@ -13,7 +13,7 @@ public class McpServerTests
     private static readonly UTF8Encoding Utf8 = new(false);
 
     private const string GoodWire = "wireframe clean\n    Vertical gap=8\n        Label \"Hello\"\n        Button \"OK\" primary\n    /Vertical\n/wireframe\n";
-    private const string BadWire = "wireframe clean\n    Step \"one\"\n/wireframe\n";
+    private const string BadWire = "wireframe clean\n    Nope \"one\"\n/wireframe\n";
 
     private static string Json(string text) => JsonSerializer.Serialize(text, McpTestJson.Default.String);
 
@@ -170,7 +170,7 @@ public class McpServerTests
         var result = client.Call("wireframe_validate", "{\"source\":" + Json(BadWire) + "}");
         Assert.True(McpTestClient.IsError(result));
         var lines = McpTestClient.Text(result).Split('\n');
-        Assert.Equal("source(2,5): error: Unexpected token: Step", lines[0]);
+        Assert.Equal("source(2,5): error: Unexpected token: Nope", lines[0]);
         Assert.Equal("source(2,10): error: Unexpected token: one", lines[1]);
         Assert.Equal("2 errors: the wireframe is not valid", lines[2]);
     }
@@ -179,12 +179,12 @@ public class McpServerTests
     public void Validate_a_markdown_block_gives_the_documents_line_and_column()
     {
         using var folder = new CliFolder();
-        folder.File("docs/spec.md", Spec("    Step \"x\""));
+        folder.File("docs/spec.md", Spec("    Nope \"x\""));
         using var client = new McpTestClient(folder.Dir);
 
         var result = client.Call("wireframe_validate", "{\"path\":\"docs/spec.md\",\"block\":\"login\"}");
         Assert.True(McpTestClient.IsError(result));
-        Assert.StartsWith("docs/spec.md(7,5): error: Unexpected token: Step\n", McpTestClient.Text(result), StringComparison.Ordinal);
+        Assert.StartsWith("docs/spec.md(7,5): error: Unexpected token: Nope\n", McpTestClient.Text(result), StringComparison.Ordinal);
 
         var second = client.Call("wireframe_validate", "{\"path\":\"docs/spec.md\",\"block\":\"2\"}");
         Assert.False(McpTestClient.IsError(second));
@@ -248,13 +248,13 @@ public class McpServerTests
     {
         using var folder = new CliFolder();
         using var client = new McpTestClient(folder.Dir);
-        var bad = "wireframe clean\n    Label \"Hello\"\n    Step \"one\"\n/wireframe\n";
+        var bad = "wireframe clean\n    Label \"Hello\"\n    Nope \"one\"\n/wireframe\n";
 
         var refused = client.Call("wireframe_render", "{\"source\":" + Json(bad) + "}");
         Assert.True(McpTestClient.IsError(refused));
         Assert.Single(McpTestClient.Content(refused));
         var text = McpTestClient.Text(refused);
-        Assert.StartsWith("source(3,5): error: Unexpected token: Step\n", text, StringComparison.Ordinal);
+        Assert.StartsWith("source(3,5): error: Unexpected token: Nope\n", text, StringComparison.Ordinal);
         Assert.Contains("force", text, StringComparison.Ordinal);
 
         var forced = client.Call("wireframe_render", "{\"source\":" + Json(bad) + ",\"force\":true,\"image\":true}");
@@ -391,11 +391,11 @@ public class McpServerTests
     public void Render_document_with_a_bad_block_says_where_in_the_document()
     {
         using var folder = new CliFolder();
-        folder.File("spec.md", Spec("    Step \"x\""));
+        folder.File("spec.md", Spec("    Nope \"x\""));
         using var client = new McpTestClient(folder.Dir);
         var result = client.Call("wireframe_render_document", "{\"path\":\"spec.md\"}");
         Assert.True(McpTestClient.IsError(result));
-        Assert.StartsWith("spec.md(7,5): error: Unexpected token: Step\n", McpTestClient.Text(result), StringComparison.Ordinal);
+        Assert.StartsWith("spec.md(7,5): error: Unexpected token: Nope\n", McpTestClient.Text(result), StringComparison.Ordinal);
         Assert.Contains("spec.2.svg: written", McpTestClient.Text(result), StringComparison.Ordinal);
     }
 
@@ -460,7 +460,7 @@ public class McpServerTests
         AssertExampleParses(button);
 
         var step = McpTestClient.Text(client.Call("wireframe_components", "{\"name\":\"Step\"}"));
-        Assert.Contains("does not read Step as an element", step, StringComparison.Ordinal);
+        Assert.Contains("Step: component; no closing keyword", step, StringComparison.Ordinal);
 
         var wrong = client.Call("wireframe_components", "{\"name\":\"button\"}");
         Assert.True(McpTestClient.IsError(wrong));
@@ -494,12 +494,13 @@ public class McpServerTests
     }
 
     [Fact]
-    public void The_embedded_examples_all_parse_and_the_broken_ones_are_left_out()
+    public void The_embedded_examples_all_parse()
     {
         Assert.NotEmpty(Library.Examples);
         Assert.All(Library.Examples, e => Assert.Empty(WireframeParser.Parse(e.Source).Diagnostics));
         Assert.Contains(Library.Examples, e => e.Origin == "docs/EXAMPLES.md" && e.Title == "Login Form");
-        Assert.DoesNotContain(Library.Examples, e => e.Title == "Breadcrumb Navigation");
+        // It was left out while BreadcrumbItem did not parse
+        Assert.Contains(Library.Examples, e => e.Title == "Breadcrumb Navigation");
         Assert.Equal(34, Library.Examples.Count(e => e.Origin.StartsWith("docs/examples/", StringComparison.Ordinal)));
     }
 

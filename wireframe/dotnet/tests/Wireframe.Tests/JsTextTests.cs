@@ -56,11 +56,11 @@ public class JsTextTests
     }
 
     [Fact]
-    public void A_backslash_at_the_very_end_reads_undefined_as_JavaScript_does()
+    public void A_backslash_at_the_very_end_escapes_nothing()
     {
         var result = WireframeParser.Parse("Button \"a\\");
         var control = Assert.IsType<ControlNode>(Assert.Single(result.Document!.Children));
-        Assert.Equal("aundefined", control.Text);
+        Assert.Equal("a", control.Text);
     }
 
     [Fact]

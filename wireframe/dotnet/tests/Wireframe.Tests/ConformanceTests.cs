@@ -42,7 +42,7 @@ public class ConformanceTests
     [Fact]
     public void The_set_has_every_case()
     {
-        Assert.Equal(371, Directory.GetFiles(CasesDirectory(), "*.wire").Length);
+        Assert.Equal(396, Directory.GetFiles(CasesDirectory(), "*.wire").Length);
     }
 
     [Theory]

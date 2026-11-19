@@ -1,0 +1,5 @@
+wireframe clean
+    Button "Wide" width=240 height=48
+    TextInput "w wins" w=120 width=300
+    Image width="200" height="60"
+/wireframe

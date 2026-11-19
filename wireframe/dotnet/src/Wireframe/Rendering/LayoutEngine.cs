@@ -35,6 +35,9 @@ internal sealed class LayoutInfo
     public BoundingBox Bounds { get; }
     public List<LayoutInfo> Children { get; }
     public SyntaxNode Node { get; }
+
+    /// <summary>How deep a tree item lies under its tree; 0 for the top ones.</summary>
+    public double? Level { get; init; }
 }
 
 /// <summary>The helpers the layout engine and the renderer share (<c>control-helpers.ts</c>).</summary>
@@ -50,20 +53,122 @@ internal static class ControlHelpers
 
     /// <summary>The text a control shows: its quoted string, or the placeholder.</summary>
     public static string? ControlText(ControlNode node) => node.Text ?? node.Placeholder;
+
+    // ============ Components ============
+
+    /// <summary>The room a title takes at the top of a dialog, an alert or a section.</summary>
+    public const double ComponentTitleHeight = 28;
+
+    /// <summary>The height of a row of a table, written out or drawn as a placeholder.</summary>
+    public const double TableRowHeight = 36;
+
+    /// <summary>The room a menu's title takes.</summary>
+    public const double MenuTitleHeight = 28;
+
+    /// <summary>The room above and below a menu's items.</summary>
+    public const double MenuPadding = 4;
+
+    /// <summary>The room of the "/" between two items of a breadcrumb.</summary>
+    public const double BreadcrumbSeparatorWidth = 16;
+
+    /// <summary>The room of the names under the circles of a stepper.</summary>
+    public const double StepLabelHeight = 20;
+
+    /// <summary>The room above and below the items of a tree.</summary>
+    public const double TreePadding = 4;
+
+    public const double ListItemHeight = 24;
+
+    /// <summary>The header of an accordion section or an expander.</summary>
+    public const double FoldHeaderHeight = 40;
+
+    public const double HoverTipHeight = 28;
+    public const double HoverTipGap = 4;
+    public const double TabBarHeight = 40;
+    public const double TreeItemHeight = 32;
+    public const double StepperCircleY = 30;
+
+    /// <summary>The title of a dialog or a section: its quoted string, else its <c>title="…"</c>.</summary>
+    public static string? ComponentTitle(ElementNode node)
+    {
+        if (node is ComponentNode { Text.Length: > 0 } component)
+        {
+            return component.Text;
+        }
+
+        return node.Attributes.TryGetValue("title", out var title) && title.Kind == AttributeKind.String && title.Text.Length > 0
+            ? title.Text
+            : null;
+    }
+
+    /// <summary>The items of a breadcrumb written as one text, "Home, Products, Details".</summary>
+    public static List<string> BreadcrumbTexts(string? text) => string.IsNullOrEmpty(text)
+        ? new List<string> { "Home", "Section", "Page" }
+        : text!.Split(',').Select(JsText.Trim).ToList();
+
+    /// <summary>A count of rows or columns: the attribute when it is a number above zero, else the default.</summary>
+    public static double TableSize(ElementNode node, string name, double fallback) =>
+        node.Attributes.TryGetValue(name, out var value) && value.Kind == AttributeKind.Number && value.Number > 0
+            ? value.Number
+            : fallback;
+
+    /// <summary>An attribute that is a number, also when it was written as text (<c>page="2"</c>); else the default.</summary>
+    public static double NumberAttribute(ElementNode node, string name, double fallback)
+    {
+        if (!node.Attributes.TryGetValue(name, out var value))
+        {
+            return fallback;
+        }
+
+        if (value.Kind == AttributeKind.Number)
+        {
+            return Js.Or(value.Number, fallback);
+        }
+
+        if (value.Kind == AttributeKind.String)
+        {
+            var parsed = Js.ParseFloat(value.Text);
+            return double.IsNaN(parsed) ? fallback : Js.Or(parsed, fallback);
+        }
+
+        return fallback;
+    }
+
+    /// <summary>A text without the <c>**</c> that makes a part of it bold.</summary>
+    public static string? WithoutBoldMarks(string? text) => text?.Replace("**", string.Empty);
+
+    /// <summary>The lines a tree of <c>+ branch</c> and <c>- leaf</c> takes.</summary>
+    public static double CountTreeItems(IReadOnlyList<TreeItemNode> items)
+    {
+        double count = 0;
+        foreach (var item in items)
+        {
+            count += 1 + CountTreeItems(item.Children);
+        }
+
+        return count;
+    }
+
+    /// <summary>The width of the tip of a Hover.</summary>
+    public static double HoverTipWidth(string? text) => ((string.IsNullOrEmpty(text) ? 3 : text!.Length) * 7) + 16;
 }
 
 /// <summary>Calculates positions and sizes for all elements of a document (<c>layout.ts</c>).</summary>
-internal sealed class LayoutEngine
+internal sealed partial class LayoutEngine
 {
     private readonly struct Context
     {
-        public Context(double x, double y, double availableWidth, double availableHeight)
+        public Context(double x, double y, double availableWidth, double availableHeight, bool fill = false)
         {
             X = x;
             Y = y;
             AvailableWidth = availableWidth;
             AvailableHeight = availableHeight;
+            Fill = fill;
         }
+
+        /// <summary>Set by a Dock for its children: a section takes the whole of the region it is given.</summary>
+        public bool Fill { get; }
 
         public double X { get; }
         public double Y { get; }
@@ -163,29 +268,37 @@ internal sealed class LayoutEngine
     private LayoutInfo LayoutSection(SectionNode node, Context context)
     {
         var padding = theme.Spacing.Padding;
-        var width = context.AvailableWidth;
-        var height = context.AvailableHeight;
+
+        // A section is as wide as it is given room and as high as what it holds, unless it says w= or h= itself.
+        // In a Dock it takes the whole region it is given.
+        var width = Js.Or(GetSizeAttribute(node, "w"), context.AvailableWidth);
+        var height = Js.Or(GetSizeAttribute(node, "h"), context.Fill ? context.AvailableHeight : 0);
+        var top = ControlHelpers.ComponentTitle(node) is null ? 0 : ControlHelpers.ComponentTitleHeight;
 
         var dock = DockText(node);
         if (dock == "top" || dock == "bottom")
         {
-            height = Js.Or(GetSizeAttribute(node, "h"), theme.Components.HeaderHeight);
+            width = context.AvailableWidth;
+            height = Js.Or(
+                GetSizeAttribute(node, "h"),
+                dock == "bottom" ? theme.Components.FooterHeight : theme.Components.HeaderHeight);
         }
         else if (dock == "left" || dock == "right")
         {
             width = Js.Or(GetSizeAttribute(node, "w"), theme.Components.SidebarWidth);
+            height = context.Fill ? context.AvailableHeight : height;
         }
 
         var inner = new Context(
             context.X + padding,
-            context.Y + padding,
+            context.Y + padding + top,
             width - (padding * 2),
-            height - (padding * 2));
+            Js.Max(height, context.AvailableHeight) - (padding * 2) - top);
 
         var children = LayoutChildren(node.Children, inner, "Vertical", null, null);
 
         return new LayoutInfo(
-            new BoundingBox(context.X, context.Y, width, Js.Max(height, CalculateContentHeight(children) + (padding * 2))),
+            new BoundingBox(context.X, context.Y, width, Js.Max(height, CalculateContentHeight(children) + (padding * 2) + top)),
             children,
             node);
     }
@@ -203,28 +316,6 @@ internal sealed class LayoutEngine
             var childContext = new Context(context.X, context.Y + height, width, context.AvailableHeight - height);
             children = LayoutChildren(node.Children, childContext, "Vertical", null, null);
         }
-
-        return new LayoutInfo(new BoundingBox(context.X, context.Y, width, height), children, node);
-    }
-
-    private LayoutInfo LayoutComponent(ComponentNode node, Context context)
-    {
-        var padding = theme.Spacing.Md;
-        var gap = theme.Spacing.Gap;
-
-        var width = Js.Or(GetSizeAttribute(node, "w"), context.AvailableWidth);
-        var minHeight = Js.Or(GetSizeAttribute(node, "h"), 0);
-
-        var inner = new Context(
-            context.X + padding,
-            context.Y + padding,
-            width - (padding * 2),
-            context.AvailableHeight - (padding * 2));
-
-        var children = LayoutChildren(node.Children, inner, "Vertical", gap, null);
-
-        var contentHeight = CalculateContentHeight(children);
-        var height = Js.Max(minHeight, contentHeight + (padding * 2));
 
         return new LayoutInfo(new BoundingBox(context.X, context.Y, width, height), children, node);
     }
@@ -279,7 +370,7 @@ internal sealed class LayoutEngine
         return layoutType switch
         {
             "Vertical" => LayoutVertical(children, context, effectiveGap),
-            "Horizontal" => LayoutHorizontal(children, context, effectiveGap),
+            "Horizontal" => JustifyHorizontal(LayoutHorizontal(children, context, effectiveGap), context, parentNode),
             "Grid" => LayoutGrid(children, context, effectiveGap, parentNode),
             "Dock" => LayoutDock(children, context),
             "Canvas" => LayoutCanvas(children, context),
@@ -522,7 +613,7 @@ internal sealed class LayoutEngine
                 case "top":
                 {
                     var height = Js.Or(GetSizeAttribute(child, "h"), theme.Components.HeaderHeight);
-                    var layout = LayoutElement(child, new Context(left, top, right - left, height));
+                    var layout = LayoutElement(child, new Context(left, top, right - left, height, true));
                     layouts.Add(layout);
                     top += layout.Bounds.Height;
                     break;
@@ -531,7 +622,7 @@ internal sealed class LayoutEngine
                 case "bottom":
                 {
                     var height = Js.Or(GetSizeAttribute(child, "h"), theme.Components.FooterHeight);
-                    var layout = LayoutElement(child, new Context(left, bottom - height, right - left, height));
+                    var layout = LayoutElement(child, new Context(left, bottom - height, right - left, height, true));
                     layouts.Add(layout);
                     bottom -= layout.Bounds.Height;
                     break;
@@ -540,7 +631,7 @@ internal sealed class LayoutEngine
                 case "left":
                 {
                     var width = Js.Or(GetSizeAttribute(child, "w"), theme.Components.SidebarWidth);
-                    var layout = LayoutElement(child, new Context(left, top, width, bottom - top));
+                    var layout = LayoutElement(child, new Context(left, top, width, bottom - top, true));
                     layouts.Add(layout);
                     left += layout.Bounds.Width;
                     break;
@@ -549,7 +640,7 @@ internal sealed class LayoutEngine
                 case "right":
                 {
                     var width = Js.Or(GetSizeAttribute(child, "w"), theme.Components.SidebarWidth);
-                    var layout = LayoutElement(child, new Context(right - width, top, width, bottom - top));
+                    var layout = LayoutElement(child, new Context(right - width, top, width, bottom - top, true));
                     layouts.Add(layout);
                     right -= layout.Bounds.Width;
                     break;
@@ -557,7 +648,7 @@ internal sealed class LayoutEngine
 
                 default:
                 {
-                    var layout = LayoutElement(child, new Context(left, top, right - left, bottom - top));
+                    var layout = LayoutElement(child, new Context(left, top, right - left, bottom - top, true));
                     layouts.Add(layout);
                     break;
                 }
@@ -806,7 +897,9 @@ internal sealed class LayoutEngine
 
     private static double? GetSizeAttribute(ElementNode node, string name)
     {
-        if (!node.Attributes.TryGetValue(name, out var value))
+        // width= and height= say the same as w= and h=
+        var longName = name == "w" ? "width" : name == "h" ? "height" : name;
+        if (!node.Attributes.TryGetValue(name, out var value) && !node.Attributes.TryGetValue(longName, out value))
         {
             return null;
         }

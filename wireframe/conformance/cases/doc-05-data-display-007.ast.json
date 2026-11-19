@@ -6,7 +6,116 @@
         "rows": 6,
         "w": 700
       },
-      "children": [],
+      "children": [
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnText",
+          "end": {
+            "column": 1,
+            "line": 4,
+            "offset": 85
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 59
+          },
+          "text": "Product Name",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnNumber",
+          "end": {
+            "column": 1,
+            "line": 5,
+            "offset": 114
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 93
+          },
+          "text": "Price",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnNumber",
+          "end": {
+            "column": 1,
+            "line": 6,
+            "offset": 143
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 122
+          },
+          "text": "Stock",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnDate",
+          "end": {
+            "column": 1,
+            "line": 7,
+            "offset": 170
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 151
+          },
+          "text": "Added",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnCheckbox",
+          "end": {
+            "column": 1,
+            "line": 8,
+            "offset": 204
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 7,
+            "offset": 178
+          },
+          "text": "Featured",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnButton",
+          "end": {
+            "column": 1,
+            "line": 9,
+            "offset": 235
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 212
+          },
+          "text": "Actions",
+          "type": "Component"
+        }
+      ],
       "componentType": "DataGrid",
       "end": {
         "column": 14,

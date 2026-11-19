@@ -9,11 +9,11 @@
   </style>
   
   <rect width="100%" height="100%" fill="#1e3a5f" />
-  <g role="group" aria-label="**Title**"><text x="16" y="31" class="wire-text wire-text-bold">Title</text></g><g role="button" aria-label="Cancel"><g opacity="1">
+  <g role="group" aria-label="Title"><text x="16" y="31" class="wire-text wire-text-bold">Title</text></g><g role="button" aria-label="Cancel"><g opacity="1">
       <rect x="16" y="52" width="100" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
-      <text x="66" y="75" text-anchor="middle" class="wire-text" fill="#ffffff">Cancel</text>
+      <text x="66" y="75" text-anchor="middle" class="wire-text" style="fill: #ffffff">Cancel</text>
     </g></g><g role="button" aria-label="Submit"><g opacity="1">
       <rect x="124" y="52" width="100" height="36" rx="4" fill="#ffffff" stroke="#4a7ab0" stroke-width="1" />
-      <text x="174" y="75" text-anchor="middle" class="wire-text" fill="#1e3a5f">Submit</text>
+      <text x="174" y="75" text-anchor="middle" class="wire-text" style="fill: #1e3a5f">Submit</text>
     </g></g>
 </svg>

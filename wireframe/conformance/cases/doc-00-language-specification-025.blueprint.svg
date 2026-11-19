@@ -10,10 +10,10 @@
   
   <rect width="100%" height="100%" fill="#1e3a5f" />
   <g role="link" aria-label="Click here"><g>
-      <text x="16" y="31" class="wire-text" fill="#ffffff" style="text-decoration: underline">Click here</text>
+      <text x="16" y="31" class="wire-text" style="fill: #ffffff; text-decoration: underline">Click here</text>
     </g></g><g role="link" aria-label="Go to page"><g>
-      <text x="16" y="59" class="wire-text" fill="#ffffff" style="text-decoration: underline">Go to page</text>
+      <text x="16" y="59" class="wire-text" style="fill: #ffffff; text-decoration: underline">Go to page</text>
     </g></g><g role="link" aria-label="External"><g>
-      <text x="16" y="87" class="wire-text" fill="#ffffff" style="text-decoration: underline">External</text>
+      <text x="16" y="87" class="wire-text" style="fill: #ffffff; text-decoration: underline">External</text>
     </g></g>
 </svg>

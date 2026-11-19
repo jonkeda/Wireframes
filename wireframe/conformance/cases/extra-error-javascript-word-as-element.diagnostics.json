@@ -1,0 +1,22 @@
+[
+  {
+    "column": 0,
+    "line": 2,
+    "message": "Unknown wireframe style: tostring"
+  },
+  {
+    "column": 5,
+    "line": 2,
+    "message": "Unexpected token: constructor"
+  },
+  {
+    "column": 17,
+    "line": 2,
+    "message": "Unexpected token: x"
+  },
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Unexpected token: hasOwnProperty"
+  }
+]

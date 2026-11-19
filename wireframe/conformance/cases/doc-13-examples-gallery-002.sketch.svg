@@ -11,15 +11,15 @@
   <rect width="100%" height="100%" fill="#fefefe" />
   <g role="button" aria-label="Primary"><g opacity="1">
       <path d="M16.0 15.0 Q66.0 22.3 116.0 14.8 M115.4 16.0 Q118.2 34.0 114.8 52.0 M116.0 52.8 Q66.0 42.6 16.0 51.3 M16.7 52.0 Q14.5 34.0 16.2 16.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
-      <text x="66" y="39" text-anchor="middle" class="wire-text" fill="#ffffff">Primary</text>
+      <text x="66" y="39" text-anchor="middle" class="wire-text" style="fill: #ffffff">Primary</text>
     </g></g><g role="button" aria-label="Secondary"><g opacity="1">
       <path d="M16.0 68.9 Q68.0 76.7 120.0 67.9 M120.5 68.0 Q119.3 86.0 120.6 104.0 M120.0 103.0 Q68.0 96.2 16.0 105.1 M15.6 104.0 Q17.0 86.0 15.0 68.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="68" y="91" text-anchor="middle" class="wire-text" fill="#333333">Secondary</text>
+      <text x="68" y="91" text-anchor="middle" class="wire-text" style="fill: #333333">Secondary</text>
     </g></g><g role="button" aria-label="Default"><g opacity="1">
       <path d="M16.0 119.3 Q66.0 126.2 116.0 119.3 M115.2 120.0 Q118.3 138.0 114.9 156.0 M116.0 156.6 Q66.0 150.7 16.0 154.7 M17.0 156.0 Q14.9 138.0 16.7 120.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="66" y="143" text-anchor="middle" class="wire-text" fill="#333333">Default</text>
+      <text x="66" y="143" text-anchor="middle" class="wire-text" style="fill: #333333">Default</text>
     </g></g><g role="button" aria-label="Disabled" aria-disabled="true"><g opacity="0.5">
       <path d="M16.0 172.9 Q66.0 177.9 116.0 171.6 M116.6 172.0 Q118.1 190.0 114.6 208.0 M116.0 207.0 Q66.0 203.0 16.0 209.5 M15.6 208.0 Q14.2 190.0 17.0 172.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="66" y="195" text-anchor="middle" class="wire-text" fill="#333333">Disabled</text>
+      <text x="66" y="195" text-anchor="middle" class="wire-text" style="fill: #333333">Disabled</text>
     </g></g>
 </svg>

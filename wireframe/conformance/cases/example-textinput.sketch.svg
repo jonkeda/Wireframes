@@ -9,7 +9,7 @@
   </style>
   
   <rect width="100%" height="100%" fill="#fefefe" />
-  <g role="group" aria-label="**Text Input Variants**"><text x="16" y="31" class="wire-text wire-text-bold">Text Input Variants</text></g><g role="group" aria-label="Default:"><text x="16" y="67" class="wire-text">Default:</text></g><g role="textbox" aria-label="Enter text here..." aria-placeholder="Enter text here..."><g>
+  <g role="group" aria-label="Text Input Variants"><text x="16" y="31" class="wire-text wire-text-bold">Text Input Variants</text></g><g role="group" aria-label="Default:"><text x="16" y="67" class="wire-text">Default:</text></g><g role="textbox" aria-label="Enter text here..." aria-placeholder="Enter text here..."><g>
       <path d="M16.0 81.0 Q116.0 80.3 216.0 81.5 M216.5 80.0 Q220.3 98.0 215.4 116.0 M216.0 114.9 Q116.0 112.6 16.0 115.6 M15.7 116.0 Q13.7 98.0 15.9 80.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
       <text x="28" y="103" class="wire-text wire-text-secondary">Enter text here...</text>
       
@@ -25,7 +25,7 @@
       <path d="M16.0 296.5 Q116.0 291.9 216.0 296.7 M216.9 296.0 Q214.6 314.0 215.2 332.0 M216.0 331.4 Q116.0 334.6 16.0 331.7 M15.2 332.0 Q20.3 314.0 15.7 296.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
       <text x="28" y="319" class="wire-text wire-text-secondary">Read only value</text>
       
-    </g></g><g role="group"><line x1="16" y1="348" x2="216" y2="348" stroke="#888888" stroke-width="1" /></g><g role="group" aria-label="**Specialized Inputs**"><text x="16" y="380" class="wire-text wire-text-bold">Specialized Inputs</text></g><g role="group" aria-label="Number Input:"><text x="16" y="416" class="wire-text">Number Input:</text></g><g role="spinbutton" aria-label="42" aria-placeholder="42"><g>
+    </g></g><g role="group"><line x1="16" y1="348" x2="216" y2="348" stroke="#888888" stroke-width="1" /></g><g role="group" aria-label="Specialized Inputs"><text x="16" y="380" class="wire-text wire-text-bold">Specialized Inputs</text></g><g role="group" aria-label="Number Input:"><text x="16" y="416" class="wire-text">Number Input:</text></g><g role="spinbutton" aria-label="42" aria-placeholder="42"><g>
       <path d="M16.0 429.8 Q116.0 424.2 216.0 427.7 M216.6 429.0 Q212.9 447.0 214.8 465.0 M216.0 464.1 Q116.0 468.5 16.0 464.4 M15.5 465.0 Q18.0 447.0 16.1 429.0" fill="#ffffff" stroke="#888888" stroke-width="2" />
       <text x="28" y="452" class="wire-text wire-text-secondary">123</text>
       

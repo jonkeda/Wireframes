@@ -1,0 +1,23 @@
+wireframe clean
+    Horizontal gap=16
+        Tree
+            TreeItem "Root" expanded
+                TreeItem "Child" expanded
+                    TreeItem "Grandchild"
+                /TreeItem
+                TreeItem "Second child"
+            /TreeItem
+            TreeItem "Closed"
+                TreeItem "Hidden"
+            /TreeItem
+            TreeItem "Leaf"
+        /Tree
+        Tree w=200
+            + src
+                + core
+                    - parser.ts
+                - index.ts
+            - README.md
+        /Tree
+    /Horizontal
+/wireframe

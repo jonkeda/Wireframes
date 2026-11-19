@@ -11,12 +11,12 @@
   <rect width="100%" height="100%" fill="#ffffff" />
   <g role="button" aria-label="A"><g opacity="1">
       <rect x="16" y="16" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="66" y="39" text-anchor="middle" class="wire-text" fill="#212529">A</text>
+      <text x="66" y="39" text-anchor="middle" class="wire-text" style="fill: #212529">A</text>
     </g></g><g role="button" aria-label="B"><g opacity="1">
       <rect x="16" y="60" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="66" y="83" text-anchor="middle" class="wire-text" fill="#212529">B</text>
+      <text x="66" y="83" text-anchor="middle" class="wire-text" style="fill: #212529">B</text>
     </g></g><g role="button" aria-label="C"><g opacity="1">
       <rect x="16" y="104" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="66" y="127" text-anchor="middle" class="wire-text" fill="#212529">C</text>
+      <text x="66" y="127" text-anchor="middle" class="wire-text" style="fill: #212529">C</text>
     </g></g>
 </svg>

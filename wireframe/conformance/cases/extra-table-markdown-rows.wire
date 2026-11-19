@@ -1,0 +1,12 @@
+wireframe clean
+    Table
+        | Number | Customer | Total |
+        |--------|----------|-------|
+        | 1001 | Acme |  |
+        | 1002 | Globex & Sons | 75.50 |
+    /Table
+    Table w=300
+        | no | header |
+        | only | rows |
+    /Table
+/wireframe

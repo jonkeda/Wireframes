@@ -9,7 +9,84 @@
         {
           "attributes": {},
           "binding": "step",
-          "children": [],
+          "children": [
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Step",
+              "end": {
+                "column": 1,
+                "line": 5,
+                "offset": 94
+              },
+              "modifiers": {
+                "completed": true
+              },
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 69
+              },
+              "text": "Account",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Step",
+              "end": {
+                "column": 1,
+                "line": 6,
+                "offset": 128
+              },
+              "modifiers": {
+                "active": true
+              },
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 106
+              },
+              "text": "Profile",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Step",
+              "end": {
+                "column": 1,
+                "line": 7,
+                "offset": 154
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 140
+              },
+              "text": "Review",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Step",
+              "end": {
+                "column": 1,
+                "line": 8,
+                "offset": 182
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 7,
+                "offset": 166
+              },
+              "text": "Complete",
+              "type": "Component"
+            }
+          ],
           "componentType": "Stepper",
           "end": {
             "column": 17,

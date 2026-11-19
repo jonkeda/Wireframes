@@ -4,7 +4,7 @@ using Wireframe.Syntax;
 namespace Wireframe.Rendering;
 
 /// <summary>Renders a document to SVG (<c>svg-renderer.ts</c>). Every template is copied as the TypeScript writes it.</summary>
-internal sealed class SvgRenderer
+internal sealed partial class SvgRenderer
 {
     /// <summary>The theme with its colours escaped for attribute values.</summary>
     private Theme theme;
@@ -49,8 +49,10 @@ internal sealed class SvgRenderer
 
         var content = RenderLayout(layout, padding, padding);
 
-        // Nothing is ever put into the defs
-        var defs = "";
+        // The shadow that cards, menus and toasts point at, when one of them is drawn
+        var defs = content.Contains("url(#shadow)")
+            ? "<defs><filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"130%\"><feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"2\" flood-opacity=\"0.15\" /></filter></defs>"
+            : "";
 
         var a11yAttrs = new List<string>();
         if (isAccessible)
@@ -164,7 +166,7 @@ internal sealed class SvgRenderer
                 // Layouts are transparent containers
                 break;
             case ComponentNode component:
-                svg.Append(RenderComponent(component, bounds.With(x, y)));
+                svg.Append(RenderComponent(component, bounds.With(x, y), layout));
                 break;
         }
 
@@ -186,7 +188,7 @@ internal sealed class SvgRenderer
         var m = node.Modifiers;
         var attrs = Accessibility.GetAriaAttributes(node.ControlType, new Accessibility.AriaProps
         {
-            Label = node.Label ?? ControlHelpers.ControlText(node),
+            Label = ControlHelpers.WithoutBoldMarks(node.Label ?? ControlHelpers.ControlText(node)),
             Placeholder = node.Placeholder,
             Disabled = m.Disabled,
             Required = m.Required,
@@ -288,7 +290,7 @@ internal sealed class SvgRenderer
 
         return $"<g opacity=\"{N(opacity)}\">\n"
             + $"      {rect}\n"
-            + $"      <text x=\"{N(x + (width / 2))}\" y=\"{N(y + (height / 2) + 5)}\" text-anchor=\"middle\" class=\"wire-text\" fill=\"{textColor}\">{E(Or(ControlHelpers.ControlText(node), "Button"))}</text>\n"
+            + $"      <text x=\"{N(x + (width / 2))}\" y=\"{N(y + (height / 2) + 5)}\" text-anchor=\"middle\" class=\"wire-text\" style=\"fill: {textColor}\">{E(Or(ControlHelpers.ControlText(node), "Button"))}</text>\n"
             + "    </g>";
     }
 
@@ -311,7 +313,7 @@ internal sealed class SvgRenderer
         if (hasText)
         {
             var textX = iconX + iconSize + 8;
-            svg += $"<text x=\"{N(textX)}\" y=\"{N(y + (height / 2) + 5)}\" class=\"wire-text\" fill=\"{iconColor}\">{E(node.Text!)}</text>";
+            svg += $"<text x=\"{N(textX)}\" y=\"{N(y + (height / 2) + 5)}\" class=\"wire-text\" style=\"fill: {iconColor}\">{E(node.Text!)}</text>";
         }
 
         return $"<g>{svg}</g>";
@@ -548,7 +550,7 @@ internal sealed class SvgRenderer
 
         return "<g>\n"
             + $"      <circle cx=\"{N(cx)}\" cy=\"{N(cy)}\" r=\"{N(size / 2)}\" fill=\"{theme.Colors.Primary}\" />\n"
-            + $"      <text x=\"{N(cx)}\" y=\"{N(cy + (fontSize / 3))}\" text-anchor=\"middle\" class=\"wire-text\" style=\"font-size: {N(fontSize)}px\" fill=\"{theme.Colors.PrimaryText}\">{E(Or(initials, "?"))}</text>\n"
+            + $"      <text x=\"{N(cx)}\" y=\"{N(cy + (fontSize / 3))}\" text-anchor=\"middle\" class=\"wire-text\" style=\"fill: {theme.Colors.PrimaryText}; font-size: {N(fontSize)}px\">{E(Or(initials, "?"))}</text>\n"
             + "    </g>";
     }
 
@@ -611,7 +613,7 @@ internal sealed class SvgRenderer
 
         return "<g>\n"
             + $"      <rect x=\"{N(x)}\" y=\"{N(y)}\" width=\"{N(width)}\" height=\"{N(height)}\" rx=\"{N(height / 2)}\" fill=\"{bgColor}\" stroke=\"{theme.Colors.Border}\" stroke-width=\"{N(theme.Borders.Width)}\" />\n"
-            + $"      <text x=\"{N(x + (width / 2))}\" y=\"{N(y + (height / 2) + 4)}\" text-anchor=\"middle\" class=\"wire-text wire-text-small\" fill=\"{textColor}\">{E(node.Text ?? "")}</text>\n"
+            + $"      <text x=\"{N(x + (width / 2))}\" y=\"{N(y + (height / 2) + 4)}\" text-anchor=\"middle\" class=\"wire-text wire-text-small\" style=\"fill: {textColor}\">{E(node.Text ?? "")}</text>\n"
             + "    </g>";
     }
 
@@ -635,7 +637,7 @@ internal sealed class SvgRenderer
 
         return "<g>\n"
             + $"      <rect x=\"{N(x)}\" y=\"{N(y)}\" width=\"{N(width)}\" height=\"{N(height)}\" rx=\"{N(height / 2)}\" fill=\"{bg}\" />\n"
-            + $"      <text x=\"{N(x + (width / 2))}\" y=\"{N(y + (height / 2) + 4)}\" text-anchor=\"middle\" class=\"wire-text wire-text-small\" fill=\"{text}\">{E(node.Text ?? "")}</text>\n"
+            + $"      <text x=\"{N(x + (width / 2))}\" y=\"{N(y + (height / 2) + 4)}\" text-anchor=\"middle\" class=\"wire-text wire-text-small\" style=\"fill: {text}\">{E(node.Text ?? "")}</text>\n"
             + "    </g>";
     }
 
@@ -662,7 +664,7 @@ internal sealed class SvgRenderer
 
         return "<g>\n"
             + $"      <rect x=\"{N(x)}\" y=\"{N(y)}\" width=\"{N(width)}\" height=\"{N(height)}\" fill=\"{bgColor}\" />\n"
-            + $"      <text x=\"{N(x + (width / 2))}\" y=\"{N(y + (height / 2) + 5)}\" text-anchor=\"middle\" class=\"wire-text\" fill=\"{textColor}\">{E(Or(node.Text, "Tab"))}</text>\n"
+            + $"      <text x=\"{N(x + (width / 2))}\" y=\"{N(y + (height / 2) + 5)}\" text-anchor=\"middle\" class=\"wire-text\" style=\"fill: {textColor}\">{E(Or(node.Text, "Tab"))}</text>\n"
             + $"      {borderBottom}\n"
             + "    </g>";
     }
@@ -695,7 +697,7 @@ internal sealed class SvgRenderer
             textX = x + 36;
         }
 
-        svg += $"<text x=\"{N(textX)}\" y=\"{N(y + (height / 2) + 5)}\" class=\"wire-text\" fill=\"{textColor}\">{E(Or(node.Text, "Menu Item"))}</text>";
+        svg += $"<text x=\"{N(textX)}\" y=\"{N(y + (height / 2) + 5)}\" class=\"wire-text\" style=\"fill: {textColor}\">{E(Or(node.Text, "Menu Item"))}</text>";
 
         return $"<g opacity=\"{(isDisabled ? "0.5" : "1")}\">{svg}</g>";
     }
@@ -716,12 +718,12 @@ internal sealed class SvgRenderer
             var isLast = index == items.Length - 1;
             var textColor = isLast ? theme.Colors.Text : theme.Colors.Primary;
 
-            svg.Append($"<text x=\"{N(currentX)}\" y=\"{N(y + (height / 2) + 5)}\" class=\"wire-text\" fill=\"{textColor}\">{E(item)}</text>");
+            svg.Append($"<text x=\"{N(currentX)}\" y=\"{N(y + (height / 2) + 5)}\" class=\"wire-text\" style=\"fill: {textColor}\">{E(item)}</text>");
             currentX += (item.Length * 8) + 8;
 
             if (!isLast)
             {
-                svg.Append($"<text x=\"{N(currentX)}\" y=\"{N(y + (height / 2) + 5)}\" class=\"wire-text\" fill=\"{theme.Colors.TextSecondary}\">/</text>");
+                svg.Append($"<text x=\"{N(currentX)}\" y=\"{N(y + (height / 2) + 5)}\" class=\"wire-text\" style=\"fill: {theme.Colors.TextSecondary}\">/</text>");
                 currentX += 16;
             }
         }
@@ -732,8 +734,8 @@ internal sealed class SvgRenderer
     private string RenderPagination(ControlNode node, BoundingBox bounds)
     {
         double x = bounds.X, y = bounds.Y, height = bounds.Height;
-        var currentPage = JsValue.Attribute(node, "page").Or(1);
-        var totalPages = JsValue.Attribute(node, "total").Or(5);
+        var currentPage = ControlHelpers.NumberAttribute(node, "page", 1);
+        var totalPages = ControlHelpers.NumberAttribute(node, "total", 5);
         var c = theme.Colors;
 
         var svg = new StringBuilder();
@@ -745,18 +747,17 @@ internal sealed class SvgRenderer
         svg.Append($"<path d=\"M{N(currentX + 13)} {N(y + (buttonHeight / 2) - 4)} L{N(currentX + 9)} {N(y + (buttonHeight / 2))} L{N(currentX + 13)} {N(y + (buttonHeight / 2) + 4)}\" stroke=\"{c.Text}\" stroke-width=\"2\" fill=\"none\" />");
         currentX += buttonWidth + 4;
 
-        // currentPage - 2 and the comparisons coerce a text value to a number; i === currentPage does not
-        var startPage = Js.Max(1, currentPage.ToNumber() - 2);
-        var endPage = Js.Min(totalPages.ToNumber(), startPage + 4);
+        var startPage = Js.Max(1, currentPage - 2);
+        var endPage = Js.Min(totalPages, startPage + 4);
 
         for (var i = startPage; i <= endPage; i++)
         {
-            var isActive = currentPage.StrictEquals(i);
+            var isActive = i == currentPage;
             var bgColor = isActive ? c.Primary : c.ButtonBackground;
             var textColor = isActive ? c.PrimaryText : c.Text;
 
             svg.Append($"<rect x=\"{N(currentX)}\" y=\"{N(y)}\" width=\"{N(buttonWidth)}\" height=\"{N(buttonHeight)}\" rx=\"{N(theme.Borders.Radius)}\" fill=\"{bgColor}\" stroke=\"{c.Border}\" stroke-width=\"{N(theme.Borders.Width)}\" />");
-            svg.Append($"<text x=\"{N(currentX + (buttonWidth / 2))}\" y=\"{N(y + (buttonHeight / 2) + 5)}\" text-anchor=\"middle\" class=\"wire-text\" fill=\"{textColor}\">{N(i)}</text>");
+            svg.Append($"<text x=\"{N(currentX + (buttonWidth / 2))}\" y=\"{N(y + (buttonHeight / 2) + 5)}\" text-anchor=\"middle\" class=\"wire-text\" style=\"fill: {textColor}\">{N(i)}</text>");
             currentX += buttonWidth + 4;
         }
 
@@ -819,12 +820,16 @@ internal sealed class SvgRenderer
             + "    </g>";
     }
 
-    private string RenderTreeItem(ControlNode node, BoundingBox bounds)
+    private string RenderTreeItem(ControlNode node, BoundingBox bounds) => RenderTreeRow(
+        node.Text,
+        JsValue.Attribute(node, "level").Or(0).ToNumber(),
+        node.Modifiers.Expanded,
+        node.Children is { Count: > 0 },
+        bounds);
+
+    private string RenderTreeRow(string? text, double level, bool expanded, bool hasChildren, BoundingBox bounds)
     {
         double x = bounds.X, y = bounds.Y, width = bounds.Width, height = bounds.Height;
-        var level = JsValue.Attribute(node, "level").Or(0).ToNumber();
-        var expanded = node.Modifiers.Expanded;
-        var hasChildren = node.Children is { Count: > 0 };
         var indent = level * 20;
 
         var svg = $"<rect x=\"{N(x)}\" y=\"{N(y)}\" width=\"{N(width)}\" height=\"{N(height)}\" fill=\"transparent\" />";
@@ -839,7 +844,7 @@ internal sealed class SvgRenderer
         }
 
         var textX = hasChildren ? x + indent + 24 : x + indent + 8;
-        svg += $"<text x=\"{N(textX)}\" y=\"{N(y + (height / 2) + 5)}\" class=\"wire-text\">{E(Or(node.Text, "Tree Item"))}</text>";
+        svg += $"<text x=\"{N(textX)}\" y=\"{N(y + (height / 2) + 5)}\" class=\"wire-text\">{E(Or(text, "Tree Item"))}</text>";
 
         return $"<g>{svg}</g>";
     }
@@ -882,8 +887,9 @@ internal sealed class SvgRenderer
         var c = theme.Colors;
 
         var columnChildren = (node.Children ?? Array.Empty<ElementNode>())
-            .OfType<ControlNode>()
-            .Where(col => col.ControlType.StartsWith("Column", StringComparison.Ordinal))
+            .Select(col => col is ComponentNode component ? Part(component) : col as ControlNode)
+            .Where(col => col is not null && col.ControlType.StartsWith("Column", StringComparison.Ordinal))
+            .Select(col => col!)
             .ToList();
         var cols = columnChildren.Count > 0 ? columnChildren.Count : JsValue.Attribute(node, "cols").Or(4).ToNumber();
 
@@ -959,7 +965,7 @@ internal sealed class SvgRenderer
             "ColumnNumber" => $"<text x=\"{N(x)}\" y=\"{N(y + 4)}\" class=\"wire-text wire-text-small wire-text-secondary\" font-family=\"monospace\">#</text>",
             "ColumnCheckbox" => $"<rect x=\"{N(x)}\" y=\"{N(y - 5)}\" width=\"10\" height=\"10\" rx=\"2\" fill=\"none\" stroke=\"{secondary}\" stroke-width=\"1\" />",
             "ColumnImage" => $"<rect x=\"{N(x)}\" y=\"{N(y - 5)}\" width=\"10\" height=\"10\" rx=\"1\" fill=\"none\" stroke=\"{secondary}\" stroke-width=\"1\" /><line x1=\"{N(x + 2)}\" y1=\"{N(y + 3)}\" x2=\"{N(x + 8)}\" y2=\"{N(y - 3)}\" stroke=\"{secondary}\" stroke-width=\"1\" />",
-            "ColumnLink" => $"<text x=\"{N(x)}\" y=\"{N(y + 4)}\" class=\"wire-text wire-text-small\" fill=\"{theme.Colors.Primary}\">\U0001F517</text>",
+            "ColumnLink" => $"<text x=\"{N(x)}\" y=\"{N(y + 4)}\" class=\"wire-text wire-text-small\" style=\"fill: {theme.Colors.Primary}\">\U0001F517</text>",
             "ColumnButton" => $"<rect x=\"{N(x)}\" y=\"{N(y - 4)}\" width=\"12\" height=\"8\" rx=\"2\" fill=\"none\" stroke=\"{secondary}\" stroke-width=\"1\" />",
             _ => "",
         };
@@ -1009,7 +1015,7 @@ internal sealed class SvgRenderer
             }
 
             case "ColumnLink":
-                return $"<text x=\"{N(textX)}\" y=\"{N(textY)}\" class=\"wire-text wire-text-small\" fill=\"{c.Primary}\" style=\"text-decoration: underline\">Link {N(rowIndex)}</text>";
+                return $"<text x=\"{N(textX)}\" y=\"{N(textY)}\" class=\"wire-text wire-text-small\" style=\"fill: {c.Primary}; text-decoration: underline\">Link {N(rowIndex)}</text>";
 
             case "ColumnButton":
             {
@@ -1076,7 +1082,7 @@ internal sealed class SvgRenderer
             "ColumnNumber" => $"<text x=\"{N(iconX)}\" y=\"{N(iconY + 4)}\" class=\"wire-text wire-text-small wire-text-secondary\">#</text>",
             "ColumnCheckbox" => $"<rect x=\"{N(iconX)}\" y=\"{N(iconY - 6)}\" width=\"12\" height=\"12\" rx=\"2\" fill=\"none\" stroke=\"{secondary}\" stroke-width=\"1\" />",
             "ColumnImage" => $"<rect x=\"{N(iconX)}\" y=\"{N(iconY - 6)}\" width=\"12\" height=\"12\" rx=\"1\" fill=\"none\" stroke=\"{secondary}\" stroke-width=\"1\" />",
-            "ColumnLink" => $"<text x=\"{N(iconX)}\" y=\"{N(iconY + 4)}\" class=\"wire-text wire-text-small\" fill=\"{theme.Colors.Primary}\">\U0001F517</text>",
+            "ColumnLink" => $"<text x=\"{N(iconX)}\" y=\"{N(iconY + 4)}\" class=\"wire-text wire-text-small\" style=\"fill: {theme.Colors.Primary}\">\U0001F517</text>",
             "ColumnButton" => $"<rect x=\"{N(iconX - 2)}\" y=\"{N(iconY - 5)}\" width=\"16\" height=\"10\" rx=\"2\" fill=\"none\" stroke=\"{secondary}\" stroke-width=\"1\" />",
             _ => "",
         };
@@ -1119,7 +1125,7 @@ internal sealed class SvgRenderer
         double x = bounds.X, y = bounds.Y, height = bounds.Height;
 
         return "<g>\n"
-            + $"      <text x=\"{N(x)}\" y=\"{N(y + (height / 2) + 5)}\" class=\"wire-text\" fill=\"{theme.Colors.Primary}\" style=\"text-decoration: underline\">{E(Or(ControlHelpers.ControlText(node), "Link"))}</text>\n"
+            + $"      <text x=\"{N(x)}\" y=\"{N(y + (height / 2) + 5)}\" class=\"wire-text\" style=\"fill: {theme.Colors.Primary}; text-decoration: underline\">{E(Or(ControlHelpers.ControlText(node), "Link"))}</text>\n"
             + "    </g>";
     }
 
@@ -1167,13 +1173,11 @@ internal sealed class SvgRenderer
     private string RenderStepper(ControlNode node, BoundingBox bounds)
     {
         double x = bounds.X, y = bounds.Y, width = bounds.Width, height = bounds.Height;
-        var stepsValue = JsValue.Attribute(node, "steps").Or(4);
-        var current = JsValue.Attribute(node, "current").Or(1);
-        var steps = stepsValue.ToNumber();
+        var steps = ControlHelpers.NumberAttribute(node, "steps", 4);
+        var currentNumber = ControlHelpers.NumberAttribute(node, "current", 1);
         var stepWidth = width / steps;
         const double circleRadius = 14;
         var c = theme.Colors;
-        var currentNumber = current.ToNumber();
 
         var svg = new StringBuilder();
 
@@ -1182,7 +1186,7 @@ internal sealed class SvgRenderer
             var stepX = x + ((i - 0.5) * stepWidth);
             var stepY = y + (height / 2);
             var isCompleted = i < currentNumber;
-            var isCurrent = current.StrictEquals(i);
+            var isCurrent = i == currentNumber;
 
             if (i > 1)
             {
@@ -1203,7 +1207,7 @@ internal sealed class SvgRenderer
             }
             else
             {
-                svg.Append($"<text x=\"{N(stepX)}\" y=\"{N(stepY + 5)}\" text-anchor=\"middle\" class=\"wire-text wire-text-small\" fill=\"{textColor}\">{N(i)}</text>");
+                svg.Append($"<text x=\"{N(stepX)}\" y=\"{N(stepY + 5)}\" text-anchor=\"middle\" class=\"wire-text wire-text-small\" style=\"fill: {textColor}\">{N(i)}</text>");
             }
         }
 
@@ -1228,60 +1232,22 @@ internal sealed class SvgRenderer
         if (node.SectionType == "Card")
         {
             var cardRect = CreateRect(x, y, width, height, theme.Borders.RadiusLarge, theme.Colors.Background, strokeColor, theme.Borders.Width);
-            // String.prototype.replace with a string: the first "/>" only
-            var at = cardRect.IndexOf("/>", StringComparison.Ordinal);
-            return at < 0 ? cardRect : cardRect.Substring(0, at) + " filter=\"url(#shadow)\" />" + cardRect.Substring(at + 2);
+            // String.prototype.replace with a string: the first " />" only
+            var at = cardRect.IndexOf(" />", StringComparison.Ordinal);
+            var withShadow = at < 0 ? cardRect : cardRect.Substring(0, at) + " filter=\"url(#shadow)\" />" + cardRect.Substring(at + 3);
+            return withShadow + RenderSectionTitle(node, bounds);
         }
 
-        return CreateRect(x, y, width, height, 0, theme.Colors.Surface, strokeColor, theme.Borders.Width);
+        return CreateRect(x, y, width, height, 0, theme.Colors.Surface, strokeColor, theme.Borders.Width) + RenderSectionTitle(node, bounds);
     }
 
-    private string RenderComponent(ComponentNode node, BoundingBox bounds)
+    /// <summary>The <c>title="…"</c> of a section, as its first line.</summary>
+    private string RenderSectionTitle(SectionNode node, BoundingBox bounds)
     {
-        double x = bounds.X, y = bounds.Y, width = bounds.Width, height = bounds.Height;
-        var c = theme.Colors;
-
-        switch (node.ComponentType)
-        {
-            case "Card":
-                return CreateRect(x, y, width, height, theme.Borders.RadiusLarge, c.Background, c.Border, theme.Borders.Width);
-
-            case "Dialog":
-            {
-                var dialogRect = CreateRect(x, y, width, height, theme.Borders.RadiusLarge, c.Background, c.Border, theme.Borders.Width);
-                var title = !string.IsNullOrEmpty(node.Text)
-                    ? $"<text x=\"{N(x + 16)}\" y=\"{N(y + 24)}\" class=\"wire-text wire-text-bold\">{E(node.Text!)}</text>"
-                    : "";
-                return "<g>\n"
-                    + $"          {dialogRect}\n"
-                    + $"          {title}\n"
-                    + "        </g>";
-            }
-
-            case "Alert":
-            {
-                var alertType = JsValue.Attribute(node, "type").Or("info").ToString();
-                var alertColor = alertType switch
-                {
-                    "success" => c.Success,
-                    "warning" => c.Warning,
-                    "error" => c.Error,
-                    _ => c.Info,
-                };
-                var alertRect = CreateRect(x, y, width, height, theme.Borders.Radius, alertColor + "20", alertColor, theme.Borders.Width);
-
-                return "<g>\n"
-                    + $"          {alertRect}\n"
-                    + $"          <rect x=\"{N(x)}\" y=\"{N(y)}\" width=\"4\" height=\"{N(height)}\" fill=\"{alertColor}\" />\n"
-                    + "        </g>";
-            }
-
-            case "Tabs":
-                return CreateRect(x, y, width, height, 0, "none", c.Border, theme.Borders.Width);
-
-            default:
-                return "";
-        }
+        var title = ControlHelpers.ComponentTitle(node);
+        return title is null
+            ? ""
+            : $"<text x=\"{N(bounds.X + 16)}\" y=\"{N(bounds.Y + 24)}\" class=\"wire-text wire-text-bold\">{E(title)}</text>";
     }
 
     /// <summary>A rectangle: drawn by hand in the sketch theme.</summary>

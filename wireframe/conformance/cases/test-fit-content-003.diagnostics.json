@@ -8,5 +8,10 @@
     "column": 16,
     "line": 1,
     "message": "Unknown wireframe style: n"
+  },
+  {
+    "column": 1,
+    "line": 2,
+    "message": "Expected /wireframe to close document"
   }
 ]

@@ -24,17 +24,17 @@ wireframe clean
 - `:name` gives an element an id (`:txtEmail`). Give one to every field a rule, a test or a later change will name.
 - `@Target` says where a click leads (`Label "Sign up" @Register`).
 - `name=value` is an attribute (`gap=16`, `w=300`); a bare word is a modifier (`primary`).
-- **An attribute the renderer does not know is accepted and does nothing.** No error is given. The ones that do
-  something: `w`, `h`, `gap`, `padding`, `cols`, `rows`, `align`, `level`, `size`, `variant`, `type`, `value`,
-  `page`, `total`, `steps`, `current`, `dock`, and `canvas`, `x`, `y` in a `Canvas`. `width`, `height`, `justify`
-  and `title` are not among them, whatever an older example shows.
+- **An attribute nothing reads is accepted and does nothing**: no error is given, so a misspelt one is silent. The
+  ones that do something: `w` and `h` (also written `width` and `height`), `gap`, `padding`, `cols`, `rows`,
+  `align`, `justify`, `title`, `level`, `size`, `variant`, `type`, `value`, `page`, `total`, `steps`, `current`,
+  `dock`, and `canvas`, `x`, `y` in a `Canvas`.
 
 ## Layouts: how things are placed
 
 | Layout | Places its children | Attributes that matter |
 | --- | --- | --- |
 | `Vertical` | Under each other | `gap`, `padding`, `align=center` |
-| `Horizontal` | Beside each other | `gap`, `padding` |
+| `Horizontal` | Beside each other | `gap`, `padding`, `justify=end`, `center` or `between` for where they stand when they do not fill the row |
 | `Grid` | In columns, row after row | `cols` (2 when left out), `gap` |
 | `Dock` | Against the edges, the rest in the middle | Its children say `dock=top`, `left`, `right`, `bottom` or `fill` |
 
@@ -69,8 +69,8 @@ wireframe clean
 ## Sections: the parts of a page
 
 `Header`, `Footer`, `Sidebar`, `Content`, `Toolbar`, `StatusBar`, `Card`, `Panel`, `Modal`, `Drawer`. Each holds
-children and is closed by its name. A width or a height is `w=` and `h=`. **A `title="…"` on a card, a modal or a
-dialog is not drawn**: put the title in as a bold `Label`.
+children and is closed by its name. A width or a height is `w=` and `h=`; without them a section is as wide as the
+room it has and as high as what it holds. `title="…"` is drawn as its first line, in bold.
 
 ## The controls that cover most screens
 
@@ -94,16 +94,17 @@ Modifiers a field may carry: `required`, `disabled`, `readonly`.
 
 | For | Write |
 | --- | --- |
-| Tabs | `Tabs` with a `Tab "…"` per tab, the open one `active`, closed by `/Tabs` |
-| A table | A `Grid cols=3` of `Label`s, row after row: the first row the column names in bold (`Label "**Number**"`), then two or three rows of sample values. Put it in a `Card` for a border. **Do not use `Table`: it validates and draws nothing** |
-| A dialog | `Dialog` … `/Dialog`, with its title as a bold `Label` inside |
-| A menu | `Menu` with a `MenuItem "…"` per line, closed by `/Menu` |
-| A breadcrumb | `Breadcrumb` with a `Link "…"` per step and a `Label "…"` for the last, closed by `/Breadcrumb` |
-| Steps of a flow | `Stepper steps=4 current=2`, with a `Label "…"` per step when they have names, closed by `/Stepper` |
-| A message | `Alert type=warning` … `/Alert` |
-
-**Do not use** `Step`, `BreadcrumbItem`, `Row`, `Cell`, `ColumnText` and the other `Column…` words. The
-documentation shows them and the parser does not read them: they give "Unexpected token".
+| Tabs | `Tabs` with a `Tab "…"` per tab, closed by `/Tabs`. What stands under a `Tab` (closed by `/Tab`) is its content; the tab marked `active` is the open one |
+| A table | `Table`, then the rows as lines `\| Number \| Customer \| Total \|`, a line `\|---\|---\|---\|` under the header, a line per row, closed by `/Table`. Or `Row` … `/Row` holding a `Cell "…"` per cell, the header row marked `selected`. `Table rows=4 cols=3` alone draws a placeholder |
+| A grid of data with typed columns | `DataGrid rows=5` with a `ColumnText "Name"`, `ColumnDate`, `ColumnNumber`, `ColumnCheckbox` … per column, closed by `/DataGrid` |
+| A dialog | `Dialog "Title"` … `/Dialog` |
+| A menu | `Menu` (or `Menu "Title"`) with a `MenuItem "…"` per line, closed by `/Menu` |
+| A breadcrumb | `Breadcrumb` with a `BreadcrumbItem "…"` per step, closed by `/Breadcrumb` |
+| Steps of a flow | `Stepper` with a `Step "…"` per step, the done ones `completed` and the current one `active`, closed by `/Stepper`. Without names: `Stepper steps=4 current=2` |
+| A tree | `Tree` with `TreeItem "…"` lines, an item's own items indented under it and shown when it says `expanded`; closed by `/Tree` |
+| A list | `List` with a line `- item` per item, closed by `/List` |
+| Sections that fold | `Accordion` with an `AccordionSection "…"` per section (`expanded` shows its content), closed by `/Accordion` |
+| A message | `Alert "Text" type=warning` … `/Alert` (`info`, `success`, `warning`, `error`) |
 
 ## Five whole examples
 
@@ -152,22 +153,12 @@ wireframe clean
                 Option "Paid"
             /Dropdown
         /Horizontal
-        Card
-            Grid cols=4 gap=8
-                Label "**Number**"
-                Label "**Customer**"
-                Label "**Date**"
-                Label "**Total**"
-                Label "2026-0041"
-                Label "Acme"
-                Label "3 Nov 2026"
-                Label "€ 120.00"
-                Label "2026-0042"
-                Label "Globex"
-                Label "5 Nov 2026"
-                Label "€ 75.50"
-            /Grid
-        /Card
+        Table
+            | Number | Customer | Date | Total |
+            |--------|----------|------|-------|
+            | 2026-0041 | Acme | 3 Nov 2026 | € 120.00 |
+            | 2026-0042 | Globex | 5 Nov 2026 | € 75.50 |
+        /Table
         Pagination page=1 total=10
     /Vertical
 /wireframe

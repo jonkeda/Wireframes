@@ -608,7 +608,116 @@
                     "rows": 6,
                     "w": "100%"
                   },
-                  "children": [],
+                  "children": [
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "ColumnText",
+                      "end": {
+                        "column": 1,
+                        "line": 52,
+                        "offset": 1705
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 51,
+                        "offset": 1683
+                      },
+                      "text": "Order ID",
+                      "type": "Component"
+                    },
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "ColumnText",
+                      "end": {
+                        "column": 1,
+                        "line": 53,
+                        "offset": 1747
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 52,
+                        "offset": 1725
+                      },
+                      "text": "Customer",
+                      "type": "Component"
+                    },
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "ColumnDate",
+                      "end": {
+                        "column": 1,
+                        "line": 54,
+                        "offset": 1785
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 53,
+                        "offset": 1767
+                      },
+                      "text": "Date",
+                      "type": "Component"
+                    },
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "ColumnNumber",
+                      "end": {
+                        "column": 1,
+                        "line": 55,
+                        "offset": 1827
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 54,
+                        "offset": 1805
+                      },
+                      "text": "Amount",
+                      "type": "Component"
+                    },
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "ColumnCheckbox",
+                      "end": {
+                        "column": 1,
+                        "line": 56,
+                        "offset": 1869
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 55,
+                        "offset": 1847
+                      },
+                      "text": "Paid",
+                      "type": "Component"
+                    },
+                    {
+                      "attributes": {},
+                      "children": [],
+                      "componentType": "ColumnButton",
+                      "end": {
+                        "column": 1,
+                        "line": 57,
+                        "offset": 1909
+                      },
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 56,
+                        "offset": 1889
+                      },
+                      "text": "View",
+                      "type": "Component"
+                    }
+                  ],
                   "componentType": "DataGrid",
                   "end": {
                     "column": 26,

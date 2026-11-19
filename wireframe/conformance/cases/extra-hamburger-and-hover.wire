@@ -1,0 +1,14 @@
+wireframe clean
+    Hamburger
+    /Hamburger
+    Hamburger expanded
+        Menu
+            MenuItem "Home"
+        /Menu
+    /Hamburger
+    Hover "Saves the form"
+        Button "Save"
+    /Hover
+    Hover
+    /Hover
+/wireframe

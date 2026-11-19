@@ -1,0 +1,17 @@
+wireframe clean
+    Accordion
+        AccordionSection "Open" expanded
+            Label "inside"
+            Button "Do"
+        /AccordionSection
+        AccordionSection "Closed"
+            Label "hidden"
+        /AccordionSection
+    /Accordion
+    Expander "More" expanded
+        Label "shown"
+    /Expander
+    Expander "Less"
+        Label "hidden"
+    /Expander
+/wireframe

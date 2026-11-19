@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="272" height="293" viewBox="0 0 272 293" role="img">
   <style>
     .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
     .wire-text-secondary { fill: #6c757d; }
@@ -7,7 +7,10 @@
     .wire-text-small { font-size: 12px; }
     .wire-text-large { font-size: 18px; }
   </style>
-  
+  <defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15" /></filter></defs>
   <rect width="100%" height="100%" fill="#ffffff" />
-  <rect x="16" y="16" width="768" height="568" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="Navigation"><text x="32" y="54" class="wire-text wire-text-bold" style="font-size: 18px">Navigation</text></g><g role="group"><line x1="48" y1="208" x2="248" y2="208" stroke="#dee2e6" stroke-width="1" /></g>
+  <rect x="16" y="16" width="240" height="261" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><g role="group" aria-label="Navigation"><text x="32" y="54" class="wire-text wire-text-bold" style="font-size: 18px">Navigation</text></g><g>
+      <rect x="32" y="72" width="180" height="189" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" />
+      
+    </g><g opacity="1"><rect x="32" y="76" width="180" height="36" fill="transparent" /><path d="M52 89 L47 94 H49 V99 H55 V94 H57 Z" stroke="#212529" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" /><text x="68" y="99" class="wire-text" style="fill: #212529">Home</text></g><g opacity="1"><rect x="32" y="112" width="180" height="36" fill="transparent" /><rect x="44" y="122" width="16" height="16" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /><text x="68" y="135" class="wire-text" style="fill: #212529">Documents</text></g><g opacity="1"><rect x="32" y="148" width="180" height="36" fill="transparent" /><rect x="44" y="158" width="16" height="16" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /><text x="68" y="171" class="wire-text" style="fill: #212529">Images</text></g><g role="group"><line x1="32" y1="184" x2="232" y2="184" stroke="#dee2e6" stroke-width="1" /></g><g opacity="1"><rect x="32" y="185" width="180" height="36" fill="transparent" /><path d="M52 203 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" stroke="#212529" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" /><text x="68" y="208" class="wire-text" style="fill: #212529">Settings</text></g><g opacity="1"><rect x="32" y="221" width="180" height="36" fill="transparent" /><rect x="44" y="231" width="16" height="16" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /><text x="68" y="244" class="wire-text" style="fill: #212529">Help</text></g>
 </svg>

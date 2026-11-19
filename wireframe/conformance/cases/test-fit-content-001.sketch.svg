@@ -15,6 +15,6 @@
       <text x="204" y="99" text-anchor="end" fill="#dc3545">*</text>
     </g></g><g role="button" aria-label="Create"><g opacity="1">
       <path d="M16.0 119.3 Q66.0 126.2 116.0 119.3 M115.2 120.0 Q118.3 138.0 114.9 156.0 M116.0 156.6 Q66.0 150.7 16.0 154.7 M17.0 156.0 Q14.9 138.0 16.7 120.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
-      <text x="66" y="143" text-anchor="middle" class="wire-text" fill="#ffffff">Create</text>
+      <text x="66" y="143" text-anchor="middle" class="wire-text" style="fill: #ffffff">Create</text>
     </g></g>
 </svg>

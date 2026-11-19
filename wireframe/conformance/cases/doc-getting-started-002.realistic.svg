@@ -11,7 +11,7 @@
   <rect width="100%" height="100%" fill="#ffffff" />
   <g role="button" aria-label="Click Me"><g opacity="1">
       <rect x="16" y="16" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="66" y="39" text-anchor="middle" class="wire-text" fill="#212529">Click Me</text>
+      <text x="66" y="39" text-anchor="middle" class="wire-text" style="fill: #212529">Click Me</text>
     </g></g><g role="textbox" aria-label="Enter name..." aria-placeholder="Enter name..."><g>
       <rect x="16" y="60" width="200" height="36" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
       <text x="28" y="83" class="wire-text wire-text-secondary">Enter name...</text>

@@ -41,7 +41,7 @@ export interface CLIIO {
 /** A usage error: reported to stderr, exit code 2 */
 export class UsageError extends Error {}
 
-export const VERSION = '0.0.9';
+export const VERSION = '0.1.0';
 
 /** Output value meaning "write to stdout" */
 export const STDOUT = '-';

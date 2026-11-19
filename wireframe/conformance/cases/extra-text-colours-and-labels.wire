@@ -1,0 +1,8 @@
+wireframe clean
+    Label "**Bold** label"
+    Link "A link"
+    Tabs
+        Tab "On" active
+        Tab "Off"
+    /Tabs
+/wireframe

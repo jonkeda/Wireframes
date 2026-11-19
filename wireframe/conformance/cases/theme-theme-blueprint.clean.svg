@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="948" viewBox="0 0 800 948" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="541" viewBox="0 0 800 541" role="img">
   <style>
     .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
     .wire-text-secondary { fill: #6c757d; }
@@ -7,58 +7,61 @@
     .wire-text-small { font-size: 12px; }
     .wire-text-large { font-size: 18px; }
   </style>
-  
+  <defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15" /></filter></defs>
   <rect width="100%" height="100%" fill="#ffffff" />
-  <g role="group" aria-label="**Blueprint Theme**"><text x="16" y="31" class="wire-text wire-text-bold">Blueprint Theme</text></g><g role="group" aria-label="A technical style reminiscent of engineering blueprints and schematics."><text x="16" y="67" class="wire-text">A technical style reminiscent of engineering blueprints and schematics.</text></g><g role="group"><line x1="16" y1="88" x2="216" y2="88" stroke="#dee2e6" stroke-width="1" /></g><rect x="16" y="105" width="768" height="479" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group" aria-label="**ACME Dashboard**"><text x="32" y="136" class="wire-text wire-text-bold">ACME Dashboard</text></g><g role="textbox" aria-label="Search..." aria-placeholder="Search..."><g>
+  <g role="group" aria-label="Blueprint Theme"><text x="16" y="31" class="wire-text wire-text-bold">Blueprint Theme</text></g><g role="group" aria-label="A technical style reminiscent of engineering blueprints and schematics."><text x="16" y="67" class="wire-text">A technical style reminiscent of engineering blueprints and schematics.</text></g><g role="group"><line x1="16" y1="88" x2="216" y2="88" stroke="#dee2e6" stroke-width="1" /></g><rect x="16" y="105" width="768" height="72" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group" aria-label="ACME Dashboard"><text x="32" y="136" class="wire-text wire-text-bold">ACME Dashboard</text></g><g role="textbox" aria-label="Search..." aria-placeholder="Search..."><g>
       <rect x="224" y="121" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
       <text x="236" y="144" class="wire-text wire-text-secondary">Search...</text>
       
     </g></g><g role="group" aria-label="JD"><g>
       <circle cx="460" cy="141" r="20" fill="#0d6efd" />
-      <text x="460" y="145.44" text-anchor="middle" class="wire-text" style="font-size: 13.33px" fill="#ffffff">J</text>
-    </g></g><rect x="16" y="600" width="376" height="240" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group" aria-label="**Navigation**"><text x="32" y="631" class="wire-text wire-text-bold">Navigation</text></g><rect x="408" y="600" width="376" height="92" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="**System Status**"><text x="424" y="631" class="wire-text wire-text-bold">System Status</text></g><g role="group" aria-label="CPU Usage"><text x="424" y="659" class="wire-text">CPU Usage</text></g><g role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"><g>
-      <rect x="424" y="668" width="200" height="8" rx="4" fill="#f8f9fa" />
-      <rect x="424" y="668" width="90" height="8" rx="4" fill="#0d6efd" />
-    </g></g><g role="group" aria-label="Memory"><text x="640" y="659" class="wire-text">Memory</text></g><g role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"><g>
-      <rect x="640" y="668" width="200" height="8" rx="4" fill="#f8f9fa" />
-      <rect x="640" y="668" width="144" height="8" rx="4" fill="#0d6efd" />
-    </g></g><g role="group" aria-label="Storage"><text x="856" y="659" class="wire-text">Storage</text></g><g role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"><g>
-      <rect x="856" y="668" width="200" height="8" rx="4" fill="#f8f9fa" />
-      <rect x="856" y="668" width="76" height="8" rx="4" fill="#0d6efd" />
-    </g></g><rect x="408" y="708" width="376" height="140" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"  filter="url(#shadow)" /><g role="group" aria-label="**Configuration**"><text x="424" y="739" class="wire-text wire-text-bold">Configuration</text></g><g role="combobox" aria-label="Select Region" aria-placeholder="Select Region" aria-expanded="false" aria-haspopup="listbox"><g>
-      <rect x="424" y="752" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
-      <text x="436" y="775" class="wire-text">US-East</text>
-      <path d="M604 768 L610 774 L616 768" stroke="#212529" stroke-width="2" fill="none" />
+      <text x="460" y="145.44" text-anchor="middle" class="wire-text" style="fill: #ffffff; font-size: 13.33px">J</text>
+    </g></g><rect x="16" y="193" width="376" height="208" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group" aria-label="Navigation"><text x="32" y="224" class="wire-text wire-text-bold">Navigation</text></g><g>
+      <rect x="32" y="233" width="180" height="152" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" />
+      
+    </g><g opacity="1"><rect x="32" y="237" width="180" height="36" fill="transparent" /><path d="M52 250 L47 255 H49 V260 H55 V255 H57 Z" stroke="#212529" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" /><text x="68" y="260" class="wire-text" style="fill: #212529">Overview</text></g><g opacity="1"><rect x="32" y="273" width="180" height="36" fill="transparent" /><rect x="44" y="283" width="16" height="16" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /><text x="68" y="296" class="wire-text" style="fill: #212529">Analytics</text></g><g opacity="1"><rect x="32" y="309" width="180" height="36" fill="transparent" /><rect x="44" y="319" width="16" height="16" rx="2" fill="none" stroke="#212529" stroke-width="1" stroke-dasharray="2,2" /><text x="68" y="332" class="wire-text" style="fill: #212529">Reports</text></g><g opacity="1"><rect x="32" y="345" width="180" height="36" fill="transparent" /><path d="M52 363 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" stroke="#212529" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" /><text x="68" y="368" class="wire-text" style="fill: #212529">Settings</text></g><rect x="408" y="193" width="376" height="92" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><g role="group" aria-label="System Status"><text x="424" y="224" class="wire-text wire-text-bold">System Status</text></g><g role="group" aria-label="CPU Usage"><text x="424" y="252" class="wire-text">CPU Usage</text></g><g role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"><g>
+      <rect x="424" y="261" width="200" height="8" rx="4" fill="#f8f9fa" />
+      <rect x="424" y="261" width="90" height="8" rx="4" fill="#0d6efd" />
+    </g></g><g role="group" aria-label="Memory"><text x="640" y="252" class="wire-text">Memory</text></g><g role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"><g>
+      <rect x="640" y="261" width="200" height="8" rx="4" fill="#f8f9fa" />
+      <rect x="640" y="261" width="144" height="8" rx="4" fill="#0d6efd" />
+    </g></g><g role="group" aria-label="Storage"><text x="856" y="252" class="wire-text">Storage</text></g><g role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"><g>
+      <rect x="856" y="261" width="200" height="8" rx="4" fill="#f8f9fa" />
+      <rect x="856" y="261" width="76" height="8" rx="4" fill="#0d6efd" />
+    </g></g><rect x="408" y="301" width="376" height="140" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1" filter="url(#shadow)" /><g role="group" aria-label="Configuration"><text x="424" y="332" class="wire-text wire-text-bold">Configuration</text></g><g role="combobox" aria-label="Select Region" aria-placeholder="Select Region" aria-expanded="false" aria-haspopup="listbox"><g>
+      <rect x="424" y="345" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="436" y="368" class="wire-text">US-East</text>
+      <path d="M604 361 L610 367 L616 361" stroke="#212529" stroke-width="2" fill="none" />
     </g></g><g role="group" aria-label="US-East"><g>
-      <rect x="424" y="788" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
-      <text x="474" y="808" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+      <rect x="424" y="381" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="474" y="401" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
     </g></g><g role="group" aria-label="US-West"><g>
-      <rect x="424" y="826" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
-      <text x="474" y="846" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+      <rect x="424" y="419" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="474" y="439" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
     </g></g><g role="group" aria-label="EU-Central"><g>
-      <rect x="424" y="864" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
-      <text x="474" y="884" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+      <rect x="424" y="457" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="474" y="477" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
     </g></g><g role="group" aria-label="Asia-Pacific"><g>
-      <rect x="424" y="902" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
-      <text x="474" y="922" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+      <rect x="424" y="495" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="474" y="515" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
     </g></g><g role="combobox" aria-label="Environment" aria-placeholder="Environment" aria-expanded="false" aria-haspopup="listbox"><g>
-      <rect x="640" y="752" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
-      <text x="652" y="775" class="wire-text">Production</text>
-      <path d="M820 768 L826 774 L832 768" stroke="#212529" stroke-width="2" fill="none" />
+      <rect x="640" y="345" width="200" height="36" rx="4" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+      <text x="652" y="368" class="wire-text">Production</text>
+      <path d="M820 361 L826 367 L832 361" stroke="#212529" stroke-width="2" fill="none" />
     </g></g><g role="group" aria-label="Production"><g>
-      <rect x="640" y="788" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
-      <text x="690" y="808" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+      <rect x="640" y="381" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="690" y="401" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
     </g></g><g role="group" aria-label="Staging"><g>
-      <rect x="640" y="826" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
-      <text x="690" y="846" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+      <rect x="640" y="419" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="690" y="439" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
     </g></g><g role="group" aria-label="Development"><g>
-      <rect x="640" y="864" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
-      <text x="690" y="884" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
+      <rect x="640" y="457" width="100" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,2" />
+      <text x="690" y="477" text-anchor="middle" class="wire-text wire-text-secondary wire-text-small">Option</text>
     </g></g><g role="button" aria-label="Apply"><g opacity="1">
-      <rect x="424" y="796" width="100" height="36" rx="4" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
-      <text x="474" y="819" text-anchor="middle" class="wire-text" fill="#ffffff">Apply</text>
+      <rect x="424" y="389" width="100" height="36" rx="4" fill="#0d6efd" stroke="#dee2e6" stroke-width="1" />
+      <text x="474" y="412" text-anchor="middle" class="wire-text" style="fill: #ffffff">Apply</text>
     </g></g><g role="button" aria-label="Reset"><g opacity="1">
-      <rect x="532" y="796" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="582" y="819" text-anchor="middle" class="wire-text" fill="#212529">Reset</text>
-    </g></g><rect x="16" y="864" width="768" height="52" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group" aria-label="System v2.1.0"><text x="32" y="895" class="wire-text">System v2.1.0</text></g><g role="group" aria-label="Last updated: 2025-12-27"><text x="184" y="895" class="wire-text">Last updated: 2025-12-27</text></g>
+      <rect x="532" y="389" width="100" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
+      <text x="582" y="412" text-anchor="middle" class="wire-text" style="fill: #212529">Reset</text>
+    </g></g><rect x="16" y="457" width="768" height="52" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" /><g role="group" aria-label="System v2.1.0"><text x="32" y="488" class="wire-text">System v2.1.0</text></g><g role="group" aria-label="Last updated: 2025-12-27"><text x="184" y="488" class="wire-text">Last updated: 2025-12-27</text></g>
 </svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="452" height="110" viewBox="0 0 452 110" role="img">
+  <style>
+    .wire-text { font-family: "Courier New", monospace; font-size: 14px; fill: #ffffff; }
+    .wire-text-secondary { fill: #a0c4e8; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#1e3a5f" />
+  <rect x="16" y="16" width="420" height="78" fill="#1e3a5f" stroke="#4a7ab0" stroke-width="1" /><g><rect x="16" y="16" width="420" height="36" fill="#2a4a6f" /><line x1="16" y1="52" x2="436" y2="52" stroke="#4a7ab0" stroke-width="1" /></g><g><rect x="16" y="16" width="140" height="36" fill="transparent" /><line x1="156" y1="16" x2="156" y2="52" stroke="#4a7ab0" stroke-width="1" /><text x="24" y="39" text-anchor="start" class="wire-text wire-text-small">Name</text></g><g><rect x="156" y="16" width="140" height="36" fill="transparent" /><line x1="296" y1="16" x2="296" y2="52" stroke="#4a7ab0" stroke-width="1" /><text x="288" y="39" text-anchor="end" class="wire-text wire-text-small">Amount</text></g><g><rect x="296" y="16" width="140" height="36" fill="transparent" /><line x1="436" y1="16" x2="436" y2="52" stroke="#4a7ab0" stroke-width="1" /><text x="366" y="39" text-anchor="middle" class="wire-text wire-text-small">Done</text></g><g><rect x="16" y="52" width="420" height="42" fill="transparent" /><line x1="16" y1="94" x2="436" y2="94" stroke="#4a7ab0" stroke-width="1" /></g><g><rect x="16" y="52" width="140" height="36" fill="transparent" /><line x1="156" y1="52" x2="156" y2="88" stroke="#4a7ab0" stroke-width="1" /><text x="24" y="75" text-anchor="start" class="wire-text wire-text-small">Rent</text></g><g><rect x="156" y="52" width="140" height="36" fill="transparent" /><line x1="296" y1="52" x2="296" y2="88" stroke="#4a7ab0" stroke-width="1" /><text x="288" y="75" text-anchor="end" class="wire-text wire-text-small">1,200.00</text></g><g role="button" aria-label="Pay"><g opacity="1">
+      <rect x="304" y="58" width="100" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
+      <text x="354" y="81" text-anchor="middle" class="wire-text" style="fill: #ffffff">Pay</text>
+    </g></g>
+</svg>

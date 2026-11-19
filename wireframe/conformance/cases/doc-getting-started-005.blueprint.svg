@@ -11,10 +11,10 @@
   <rect width="100%" height="100%" fill="#1e3a5f" />
   <g role="button" aria-label="Primary"><g opacity="1">
       <rect x="16" y="16" width="100" height="36" rx="4" fill="#ffffff" stroke="#4a7ab0" stroke-width="1" />
-      <text x="66" y="39" text-anchor="middle" class="wire-text" fill="#1e3a5f">Primary</text>
+      <text x="66" y="39" text-anchor="middle" class="wire-text" style="fill: #1e3a5f">Primary</text>
     </g></g><g role="button" aria-label="Disabled" aria-disabled="true"><g opacity="0.5">
       <rect x="16" y="60" width="100" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
-      <text x="66" y="83" text-anchor="middle" class="wire-text" fill="#ffffff">Disabled</text>
+      <text x="66" y="83" text-anchor="middle" class="wire-text" style="fill: #ffffff">Disabled</text>
     </g></g><g role="textbox" aria-label="Email" aria-required="true" aria-placeholder="Email"><g>
       <rect x="16" y="104" width="200" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
       <text x="28" y="127" class="wire-text wire-text-secondary">Email</text>

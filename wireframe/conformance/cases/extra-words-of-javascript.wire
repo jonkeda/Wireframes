@@ -1,0 +1,4 @@
+wireframe clean
+    Label "constructor"
+    Button "toString" constructor=1 valueOf=2
+/wireframe

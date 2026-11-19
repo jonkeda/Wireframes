@@ -19,6 +19,6 @@
       
     </g></g><g role="checkbox" aria-label="Remember me" aria-checked="false"><g><rect x="16" y="107" width="18" height="18" rx="2" fill="#ffffff" stroke="#888888" stroke-width="2" /><text x="42" y="121" class="wire-text">Remember me</text></g></g><g role="button" aria-label="Submit"><g opacity="1">
       <path d="M16.0 136.5 Q66.0 138.7 116.0 135.8 M117.0 136.0 Q119.3 154.0 116.7 172.0 M116.0 171.4 Q66.0 170.2 16.0 173.2 M15.1 172.0 Q14.3 154.0 14.6 136.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
-      <text x="66" y="159" text-anchor="middle" class="wire-text" fill="#ffffff">Submit</text>
+      <text x="66" y="159" text-anchor="middle" class="wire-text" style="fill: #ffffff">Submit</text>
     </g></g>
 </svg>

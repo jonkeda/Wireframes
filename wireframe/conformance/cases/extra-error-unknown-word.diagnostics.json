@@ -1,0 +1,12 @@
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Unexpected token: Bubble"
+  },
+  {
+    "column": 12,
+    "line": 3,
+    "message": "Unexpected token: not a word"
+  }
+]

@@ -3,12 +3,465 @@
   "children": [
     {
       "attributes": {},
-      "children": [],
+      "children": [
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Column",
+          "end": {
+            "column": 22,
+            "line": 3,
+            "offset": 47
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 34
+          },
+          "text": "Name",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Column",
+          "end": {
+            "column": 23,
+            "line": 4,
+            "offset": 79
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 65
+          },
+          "text": "Email",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Column",
+          "end": {
+            "column": 1,
+            "line": 6,
+            "offset": 111
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 97
+          },
+          "text": "Role",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Column",
+          "end": {
+            "column": 1,
+            "line": 7,
+            "offset": 135
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 119
+          },
+          "text": "Status",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "Column",
+          "end": {
+            "column": 1,
+            "line": 9,
+            "offset": 169
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 7,
+            "offset": 143
+          },
+          "text": "Actions",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Cell",
+              "end": {
+                "column": 1,
+                "line": 11,
+                "offset": 209
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 193
+              },
+              "text": "John Doe",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Cell",
+              "end": {
+                "column": 1,
+                "line": 12,
+                "offset": 245
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 11,
+                "offset": 221
+              },
+              "text": "john@example.com",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Cell",
+              "end": {
+                "column": 1,
+                "line": 13,
+                "offset": 270
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 12,
+                "offset": 257
+              },
+              "text": "Admin",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {
+                    "color": "green"
+                  },
+                  "controlType": "Badge",
+                  "end": {
+                    "column": 43,
+                    "line": 14,
+                    "offset": 329
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 14,
+                    "offset": 303
+                  },
+                  "text": "Active",
+                  "type": "Control"
+                }
+              ],
+              "componentType": "Cell",
+              "end": {
+                "column": 18,
+                "line": 15,
+                "offset": 347
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 13,
+                "offset": 282
+              },
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {
+                    "gap": 8
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "IconButton",
+                      "end": {
+                        "column": 42,
+                        "line": 18,
+                        "offset": 439
+                      },
+                      "icon": "icon:edit",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 18,
+                        "offset": 418
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "IconButton",
+                      "end": {
+                        "column": 43,
+                        "line": 19,
+                        "offset": 482
+                      },
+                      "icon": "icon:trash",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 19,
+                        "offset": 460
+                      },
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 20,
+                    "offset": 510
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 17,
+                    "offset": 381
+                  },
+                  "type": "Layout"
+                }
+              ],
+              "componentType": "Cell",
+              "end": {
+                "column": 18,
+                "line": 21,
+                "offset": 528
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 16,
+                "offset": 360
+              },
+              "type": "Component"
+            }
+          ],
+          "componentType": "Row",
+          "end": {
+            "column": 13,
+            "line": 22,
+            "offset": 541
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 9,
+            "offset": 177
+          },
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Cell",
+              "end": {
+                "column": 1,
+                "line": 25,
+                "offset": 584
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 24,
+                "offset": 566
+              },
+              "text": "Jane Smith",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Cell",
+              "end": {
+                "column": 1,
+                "line": 26,
+                "offset": 620
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 25,
+                "offset": 596
+              },
+              "text": "jane@example.com",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Cell",
+              "end": {
+                "column": 1,
+                "line": 27,
+                "offset": 644
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 26,
+                "offset": 632
+              },
+              "text": "User",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {
+                    "color": "yellow"
+                  },
+                  "controlType": "Badge",
+                  "end": {
+                    "column": 45,
+                    "line": 28,
+                    "offset": 705
+                  },
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 28,
+                    "offset": 677
+                  },
+                  "text": "Pending",
+                  "type": "Control"
+                }
+              ],
+              "componentType": "Cell",
+              "end": {
+                "column": 18,
+                "line": 29,
+                "offset": 723
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 27,
+                "offset": 656
+              },
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {
+                    "gap": 8
+                  },
+                  "children": [
+                    {
+                      "attributes": {},
+                      "controlType": "IconButton",
+                      "end": {
+                        "column": 42,
+                        "line": 32,
+                        "offset": 815
+                      },
+                      "icon": "icon:edit",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 32,
+                        "offset": 794
+                      },
+                      "type": "Control"
+                    },
+                    {
+                      "attributes": {},
+                      "controlType": "IconButton",
+                      "end": {
+                        "column": 43,
+                        "line": 33,
+                        "offset": 858
+                      },
+                      "icon": "icon:trash",
+                      "modifiers": {},
+                      "start": {
+                        "column": 21,
+                        "line": 33,
+                        "offset": 836
+                      },
+                      "type": "Control"
+                    }
+                  ],
+                  "end": {
+                    "column": 28,
+                    "line": 34,
+                    "offset": 886
+                  },
+                  "layoutType": "Horizontal",
+                  "modifiers": {},
+                  "start": {
+                    "column": 17,
+                    "line": 31,
+                    "offset": 757
+                  },
+                  "type": "Layout"
+                }
+              ],
+              "componentType": "Cell",
+              "end": {
+                "column": 18,
+                "line": 35,
+                "offset": 904
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 30,
+                "offset": 736
+              },
+              "type": "Component"
+            }
+          ],
+          "componentType": "Row",
+          "end": {
+            "column": 13,
+            "line": 36,
+            "offset": 917
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 23,
+            "offset": 550
+          },
+          "type": "Component"
+        }
+      ],
       "componentType": "Table",
       "end": {
-        "column": 9,
-        "line": 3,
-        "offset": 34
+        "column": 11,
+        "line": 37,
+        "offset": 928
       },
       "modifiers": {},
       "start": {
@@ -18,242 +471,6 @@
       },
       "tableRows": [],
       "type": "Component"
-    },
-    {
-      "attributes": {},
-      "children": [],
-      "componentType": "Column",
-      "end": {
-        "column": 22,
-        "line": 3,
-        "offset": 47
-      },
-      "modifiers": {},
-      "start": {
-        "column": 9,
-        "line": 3,
-        "offset": 34
-      },
-      "text": "Name",
-      "type": "Component"
-    },
-    {
-      "attributes": {},
-      "children": [],
-      "componentType": "Column",
-      "end": {
-        "column": 23,
-        "line": 4,
-        "offset": 79
-      },
-      "modifiers": {},
-      "start": {
-        "column": 9,
-        "line": 4,
-        "offset": 65
-      },
-      "text": "Email",
-      "type": "Component"
-    },
-    {
-      "attributes": {},
-      "children": [],
-      "componentType": "Column",
-      "end": {
-        "column": 1,
-        "line": 6,
-        "offset": 111
-      },
-      "modifiers": {},
-      "start": {
-        "column": 9,
-        "line": 5,
-        "offset": 97
-      },
-      "text": "Role",
-      "type": "Component"
-    },
-    {
-      "attributes": {},
-      "children": [],
-      "componentType": "Column",
-      "end": {
-        "column": 1,
-        "line": 7,
-        "offset": 135
-      },
-      "modifiers": {},
-      "start": {
-        "column": 9,
-        "line": 6,
-        "offset": 119
-      },
-      "text": "Status",
-      "type": "Component"
-    },
-    {
-      "attributes": {},
-      "children": [],
-      "componentType": "Column",
-      "end": {
-        "column": 1,
-        "line": 9,
-        "offset": 169
-      },
-      "modifiers": {},
-      "start": {
-        "column": 9,
-        "line": 7,
-        "offset": 143
-      },
-      "text": "Actions",
-      "type": "Component"
-    },
-    {
-      "attributes": {
-        "color": "green"
-      },
-      "controlType": "Badge",
-      "end": {
-        "column": 43,
-        "line": 14,
-        "offset": 329
-      },
-      "modifiers": {},
-      "start": {
-        "column": 17,
-        "line": 14,
-        "offset": 303
-      },
-      "text": "Active",
-      "type": "Control"
-    },
-    {
-      "attributes": {
-        "gap": 8
-      },
-      "children": [
-        {
-          "attributes": {},
-          "controlType": "IconButton",
-          "end": {
-            "column": 42,
-            "line": 18,
-            "offset": 439
-          },
-          "icon": "icon:edit",
-          "modifiers": {},
-          "start": {
-            "column": 21,
-            "line": 18,
-            "offset": 418
-          },
-          "type": "Control"
-        },
-        {
-          "attributes": {},
-          "controlType": "IconButton",
-          "end": {
-            "column": 43,
-            "line": 19,
-            "offset": 482
-          },
-          "icon": "icon:trash",
-          "modifiers": {},
-          "start": {
-            "column": 21,
-            "line": 19,
-            "offset": 460
-          },
-          "type": "Control"
-        }
-      ],
-      "end": {
-        "column": 28,
-        "line": 20,
-        "offset": 510
-      },
-      "layoutType": "Horizontal",
-      "modifiers": {},
-      "start": {
-        "column": 17,
-        "line": 17,
-        "offset": 381
-      },
-      "type": "Layout"
-    },
-    {
-      "attributes": {
-        "color": "yellow"
-      },
-      "controlType": "Badge",
-      "end": {
-        "column": 45,
-        "line": 28,
-        "offset": 705
-      },
-      "modifiers": {},
-      "start": {
-        "column": 17,
-        "line": 28,
-        "offset": 677
-      },
-      "text": "Pending",
-      "type": "Control"
-    },
-    {
-      "attributes": {
-        "gap": 8
-      },
-      "children": [
-        {
-          "attributes": {},
-          "controlType": "IconButton",
-          "end": {
-            "column": 42,
-            "line": 32,
-            "offset": 815
-          },
-          "icon": "icon:edit",
-          "modifiers": {},
-          "start": {
-            "column": 21,
-            "line": 32,
-            "offset": 794
-          },
-          "type": "Control"
-        },
-        {
-          "attributes": {},
-          "controlType": "IconButton",
-          "end": {
-            "column": 43,
-            "line": 33,
-            "offset": 858
-          },
-          "icon": "icon:trash",
-          "modifiers": {},
-          "start": {
-            "column": 21,
-            "line": 33,
-            "offset": 836
-          },
-          "type": "Control"
-        }
-      ],
-      "end": {
-        "column": 28,
-        "line": 34,
-        "offset": 886
-      },
-      "layoutType": "Horizontal",
-      "modifiers": {},
-      "start": {
-        "column": 17,
-        "line": 31,
-        "offset": 757
-      },
-      "type": "Layout"
     }
   ],
   "dataSections": [],

@@ -9,7 +9,7 @@
   </style>
   
   <rect width="100%" height="100%" fill="#ffffff" />
-  <g role="group" aria-label="**Text Input Variants**"><text x="16" y="31" class="wire-text wire-text-bold">Text Input Variants</text></g><g role="group" aria-label="Default:"><text x="16" y="67" class="wire-text">Default:</text></g><g role="textbox" aria-label="Enter text here..." aria-placeholder="Enter text here..."><g>
+  <g role="group" aria-label="Text Input Variants"><text x="16" y="31" class="wire-text wire-text-bold">Text Input Variants</text></g><g role="group" aria-label="Default:"><text x="16" y="67" class="wire-text">Default:</text></g><g role="textbox" aria-label="Enter text here..." aria-placeholder="Enter text here..."><g>
       <rect x="16" y="80" width="200" height="36" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
       <text x="28" y="103" class="wire-text wire-text-secondary">Enter text here...</text>
       
@@ -25,7 +25,7 @@
       <rect x="16" y="296" width="200" height="36" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
       <text x="28" y="319" class="wire-text wire-text-secondary">Read only value</text>
       
-    </g></g><g role="group"><line x1="16" y1="348" x2="216" y2="348" stroke="#dee2e6" stroke-width="1" /></g><g role="group" aria-label="**Specialized Inputs**"><text x="16" y="380" class="wire-text wire-text-bold">Specialized Inputs</text></g><g role="group" aria-label="Number Input:"><text x="16" y="416" class="wire-text">Number Input:</text></g><g role="spinbutton" aria-label="42" aria-placeholder="42"><g>
+    </g></g><g role="group"><line x1="16" y1="348" x2="216" y2="348" stroke="#dee2e6" stroke-width="1" /></g><g role="group" aria-label="Specialized Inputs"><text x="16" y="380" class="wire-text wire-text-bold">Specialized Inputs</text></g><g role="group" aria-label="Number Input:"><text x="16" y="416" class="wire-text">Number Input:</text></g><g role="spinbutton" aria-label="42" aria-placeholder="42"><g>
       <rect x="16" y="429" width="200" height="36" rx="6" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
       <text x="28" y="452" class="wire-text wire-text-secondary">123</text>
       

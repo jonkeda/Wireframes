@@ -342,6 +342,7 @@ export const CLOSING_KEYWORDS: Record<string, TokenType> = {
   '/Toast': TokenType.END_BLOCK,
   '/Skeleton': TokenType.END_BLOCK,
   '/Table': TokenType.END_BLOCK,
+  '/Row': TokenType.END_BLOCK,
   '/DataGrid': TokenType.END_BLOCK,
   '/Column': TokenType.END_BLOCK,
   '/data': TokenType.END_BLOCK,
@@ -542,6 +543,19 @@ export function isComponentToken(type: TokenType): boolean {
     TokenType.TABLE,
     TokenType.DATA_GRID,
     TokenType.COLUMN,
+    // Parts of the components above: a step of a stepper, an item of a breadcrumb,
+    // a row and its cells in a table, a typed column of a data grid
+    TokenType.STEP,
+    TokenType.BREADCRUMB_ITEM,
+    TokenType.ROW,
+    TokenType.CELL,
+    TokenType.COLUMN_TEXT,
+    TokenType.COLUMN_DATE,
+    TokenType.COLUMN_NUMBER,
+    TokenType.COLUMN_CHECKBOX,
+    TokenType.COLUMN_IMAGE,
+    TokenType.COLUMN_LINK,
+    TokenType.COLUMN_BUTTON,
   ].includes(type);
 }
 
@@ -586,4 +600,12 @@ export function canHaveChildren(type: TokenType): boolean {
     type === TokenType.COMPONENT ||
     type === TokenType.REPEAT
   );
+}
+
+/**
+ * A table's own entry for a word, or undefined. A plain lookup would also find what every
+ * JavaScript object has (`constructor`, `toString`, `__proto__`), and take those words for keywords.
+ */
+export function ownValue<T>(table: Record<string, T>, key: string): T | undefined {
+  return Object.prototype.hasOwnProperty.call(table, key) ? table[key] : undefined;
 }

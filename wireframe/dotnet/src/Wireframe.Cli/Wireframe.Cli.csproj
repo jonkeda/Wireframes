@@ -12,7 +12,7 @@
     <Nullable>enable</Nullable>
     <RootNamespace>Wireframe.Cli</RootNamespace>
     <AssemblyName>wire</AssemblyName>
-    <Version>0.0.9</Version>
+    <Version>0.1.0</Version>
 
     <!-- A .NET tool: dotnet tool install wireframe.cli, run as `wire` -->
     <IsPackable>true</IsPackable>

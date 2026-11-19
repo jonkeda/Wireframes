@@ -1,0 +1,15 @@
+wireframe clean
+    Tabs
+        Tab "General"
+            Label "in general"
+        /Tab
+        Tab "Advanced" active
+            TextInput "Timeout"
+            Checkbox "Verbose"
+        /Tab
+        Tab "About" w=160
+    /Tabs
+    Tabs w=300
+        Tab "Only"
+    /Tabs
+/wireframe

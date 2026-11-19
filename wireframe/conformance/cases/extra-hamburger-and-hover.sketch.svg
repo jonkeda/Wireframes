@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="212" height="252" viewBox="0 0 212 252" role="img">
+  <style>
+    .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  <defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15" /></filter></defs>
+  <rect width="100%" height="100%" fill="#fefefe" />
+  <g><line x1="19" y1="22" x2="37" y2="22" stroke="#333333" stroke-width="2" stroke-linecap="round" /><line x1="19" y1="28" x2="37" y2="28" stroke="#333333" stroke-width="2" stroke-linecap="round" /><line x1="19" y1="34" x2="37" y2="34" stroke="#333333" stroke-width="2" stroke-linecap="round" /></g><g><line x1="19" y1="54" x2="37" y2="54" stroke="#333333" stroke-width="2" stroke-linecap="round" /><line x1="19" y1="60" x2="37" y2="60" stroke="#333333" stroke-width="2" stroke-linecap="round" /><line x1="19" y1="66" x2="37" y2="66" stroke="#333333" stroke-width="2" stroke-linecap="round" /></g><g>
+      <rect x="16" y="80" width="180" height="44" rx="0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" />
+      
+    </g><g opacity="1"><rect x="16" y="84" width="180" height="36" fill="transparent" /><text x="28" y="107" class="wire-text" style="fill: #333333">Home</text></g><g>
+      <rect x="16" y="172" width="114" height="28" rx="0" fill="#333333" />
+      <text x="24" y="190" class="wire-text wire-text-small" style="fill: #fefefe">Saves the form</text>
+    </g><g role="button" aria-label="Save"><g opacity="1">
+      <path d="M16.0 131.4 Q66.0 128.8 116.0 132.1 M115.0 132.0 Q113.5 150.0 116.4 168.0 M116.0 168.5 Q66.0 172.9 16.0 168.6 M17.1 168.0 Q16.3 150.0 15.9 132.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="66" y="155" text-anchor="middle" class="wire-text" style="fill: #333333">Save</text>
+    </g></g><g>
+      <rect x="16" y="208" width="37" height="28" rx="0" fill="#333333" />
+      <text x="24" y="226" class="wire-text wire-text-small" style="fill: #fefefe">Tip</text>
+    </g>
+</svg>

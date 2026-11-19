@@ -3,11 +3,126 @@
   "children": [
     {
       "attributes": {},
-      "children": [],
+      "children": [
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {
+                "align": "left"
+              },
+              "children": [],
+              "componentType": "Cell",
+              "end": {
+                "column": 1,
+                "line": 5,
+                "offset": 85
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 62
+              },
+              "text": "Name",
+              "type": "Component"
+            },
+            {
+              "attributes": {
+                "align": "center"
+              },
+              "children": [],
+              "componentType": "Cell",
+              "end": {
+                "column": 1,
+                "line": 6,
+                "offset": 123
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 97
+              },
+              "text": "Email",
+              "type": "Component"
+            }
+          ],
+          "componentType": "Row",
+          "end": {
+            "column": 13,
+            "line": 6,
+            "offset": 135
+          },
+          "modifiers": {
+            "selected": true
+          },
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 37
+          },
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Cell",
+              "end": {
+                "column": 1,
+                "line": 9,
+                "offset": 176
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 8,
+                "offset": 160
+              },
+              "text": "John Doe",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Cell",
+              "end": {
+                "column": 1,
+                "line": 10,
+                "offset": 212
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 188
+              },
+              "text": "john@example.com",
+              "type": "Component"
+            }
+          ],
+          "componentType": "Row",
+          "end": {
+            "column": 13,
+            "line": 10,
+            "offset": 224
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 7,
+            "offset": 144
+          },
+          "type": "Component"
+        }
+      ],
       "end": {
-        "column": 9,
-        "line": 6,
-        "offset": 131
+        "column": 14,
+        "line": 11,
+        "offset": 238
       },
       "layoutType": "Vertical",
       "modifiers": {},

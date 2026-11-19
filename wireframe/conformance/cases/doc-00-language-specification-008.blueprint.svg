@@ -11,9 +11,9 @@
   <rect width="100%" height="100%" fill="#1e3a5f" />
   <g role="button" aria-label="One"><g opacity="1">
       <rect x="16" y="16" width="100" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
-      <text x="66" y="39" text-anchor="middle" class="wire-text" fill="#ffffff">One</text>
+      <text x="66" y="39" text-anchor="middle" class="wire-text" style="fill: #ffffff">One</text>
     </g></g><g role="button" aria-label="Two"><g opacity="1">
       <rect x="16" y="68" width="100" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
-      <text x="66" y="91" text-anchor="middle" class="wire-text" fill="#ffffff">Two</text>
+      <text x="66" y="91" text-anchor="middle" class="wire-text" style="fill: #ffffff">Two</text>
     </g></g>
 </svg>

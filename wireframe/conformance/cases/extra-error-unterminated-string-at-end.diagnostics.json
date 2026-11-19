@@ -5,8 +5,8 @@
     "message": "Unterminated string literal"
   },
   {
-    "column": 34,
-    "line": 2,
-    "message": "Unterminated string literal"
+    "column": 1,
+    "line": 3,
+    "message": "Expected /wireframe to close document"
   }
 ]

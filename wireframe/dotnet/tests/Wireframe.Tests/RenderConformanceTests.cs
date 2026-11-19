@@ -33,7 +33,11 @@ public class RenderConformanceTests
     [Fact]
     public void The_largest_example_is_parsed_and_rendered_in_under_50_ms()
     {
-        var largest = Directory.GetFiles(CasesDirectory(), "*.wire").OrderByDescending(f => new FileInfo(f).Length).First();
+        // Of the cases that are drawn: one nested too deeply is larger, and has no picture
+        var largest = Directory.GetFiles(CasesDirectory(), "*.wire")
+            .Where(f => File.Exists(Path.ChangeExtension(f, ".clean.svg")))
+            .OrderByDescending(f => new FileInfo(f).Length)
+            .First();
         var source = ReadRaw(largest);
         WireframeCompiler.Compile(source);
 
@@ -135,6 +139,6 @@ public class RenderConformanceTests
             }
         }
 
-        Assert.Equal(1484, count);
+        Assert.Equal(1580, count);
     }
 }

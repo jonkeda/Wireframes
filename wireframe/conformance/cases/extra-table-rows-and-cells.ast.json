@@ -1,0 +1,190 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "w": 420
+      },
+      "children": [
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Cell",
+              "end": {
+                "column": 1,
+                "line": 5,
+                "offset": 77
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 4,
+                "offset": 65
+              },
+              "text": "Name",
+              "type": "Component"
+            },
+            {
+              "attributes": {
+                "align": "right"
+              },
+              "children": [],
+              "componentType": "Cell",
+              "end": {
+                "column": 1,
+                "line": 6,
+                "offset": 115
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 5,
+                "offset": 89
+              },
+              "text": "Amount",
+              "type": "Component"
+            },
+            {
+              "attributes": {
+                "align": "center"
+              },
+              "children": [],
+              "componentType": "Cell",
+              "end": {
+                "column": 1,
+                "line": 7,
+                "offset": 152
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 6,
+                "offset": 127
+              },
+              "text": "Done",
+              "type": "Component"
+            }
+          ],
+          "componentType": "Row",
+          "end": {
+            "column": 13,
+            "line": 7,
+            "offset": 164
+          },
+          "modifiers": {
+            "selected": true
+          },
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 40
+          },
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "children": [],
+              "componentType": "Cell",
+              "end": {
+                "column": 1,
+                "line": 10,
+                "offset": 201
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 9,
+                "offset": 189
+              },
+              "text": "Rent",
+              "type": "Component"
+            },
+            {
+              "attributes": {
+                "align": "right"
+              },
+              "children": [],
+              "componentType": "Cell",
+              "end": {
+                "column": 1,
+                "line": 11,
+                "offset": 241
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 10,
+                "offset": 213
+              },
+              "text": "1,200.00",
+              "type": "Component"
+            },
+            {
+              "attributes": {},
+              "controlType": "Button",
+              "end": {
+                "column": 25,
+                "line": 11,
+                "offset": 265
+              },
+              "modifiers": {},
+              "start": {
+                "column": 13,
+                "line": 11,
+                "offset": 253
+              },
+              "text": "Pay",
+              "type": "Control"
+            }
+          ],
+          "componentType": "Row",
+          "end": {
+            "column": 13,
+            "line": 12,
+            "offset": 278
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 8,
+            "offset": 173
+          },
+          "type": "Component"
+        }
+      ],
+      "componentType": "Table",
+      "end": {
+        "column": 11,
+        "line": 13,
+        "offset": 289
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "tableRows": [],
+      "type": "Component"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 14,
+    "offset": 300
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

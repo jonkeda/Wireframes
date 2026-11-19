@@ -11,12 +11,12 @@
   <rect width="100%" height="100%" fill="#ffffff" />
   <g role="button" aria-label="Span 2 cols"><g opacity="1">
       <rect x="16" y="16" width="120" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="76" y="39" text-anchor="middle" class="wire-text" fill="#212529">Span 2 cols</text>
+      <text x="76" y="39" text-anchor="middle" class="wire-text" style="fill: #212529">Span 2 cols</text>
     </g></g><g role="button" aria-label="Normal"><g opacity="1">
       <rect x="533.33" y="16" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="583.33" y="39" text-anchor="middle" class="wire-text" fill="#212529">Normal</text>
+      <text x="583.33" y="39" text-anchor="middle" class="wire-text" style="fill: #212529">Normal</text>
     </g></g><g role="button" aria-label="Span 2 rows"><g opacity="1">
       <rect x="16" y="304" width="120" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="76" y="327" text-anchor="middle" class="wire-text" fill="#212529">Span 2 rows</text>
+      <text x="76" y="327" text-anchor="middle" class="wire-text" style="fill: #212529">Span 2 rows</text>
     </g></g>
 </svg>

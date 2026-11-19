@@ -1,0 +1,5 @@
+wireframe clean
+    Label "before"
+    Bubble "not a word"
+    Label "after"
+/wireframe

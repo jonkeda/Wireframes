@@ -11,21 +11,21 @@
   <rect width="100%" height="100%" fill="#ffffff" />
   <g role="button" aria-label="Cell 1"><g opacity="1">
       <rect x="16" y="16" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="66" y="39" text-anchor="middle" class="wire-text" fill="#212529">Cell 1</text>
+      <text x="66" y="39" text-anchor="middle" class="wire-text" style="fill: #212529">Cell 1</text>
     </g></g><g role="button" aria-label="Cell 2"><g opacity="1">
       <rect x="277.33" y="16" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="327.33" y="39" text-anchor="middle" class="wire-text" fill="#212529">Cell 2</text>
+      <text x="327.33" y="39" text-anchor="middle" class="wire-text" style="fill: #212529">Cell 2</text>
     </g></g><g role="button" aria-label="Cell 3"><g opacity="1">
       <rect x="538.67" y="16" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="588.67" y="39" text-anchor="middle" class="wire-text" fill="#212529">Cell 3</text>
+      <text x="588.67" y="39" text-anchor="middle" class="wire-text" style="fill: #212529">Cell 3</text>
     </g></g><g role="button" aria-label="Cell 4"><g opacity="1">
       <rect x="16" y="308" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="66" y="331" text-anchor="middle" class="wire-text" fill="#212529">Cell 4</text>
+      <text x="66" y="331" text-anchor="middle" class="wire-text" style="fill: #212529">Cell 4</text>
     </g></g><g role="button" aria-label="Cell 5"><g opacity="1">
       <rect x="277.33" y="308" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="327.33" y="331" text-anchor="middle" class="wire-text" fill="#212529">Cell 5</text>
+      <text x="327.33" y="331" text-anchor="middle" class="wire-text" style="fill: #212529">Cell 5</text>
     </g></g><g role="button" aria-label="Cell 6"><g opacity="1">
       <rect x="538.67" y="308" width="100" height="36" rx="6" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="588.67" y="331" text-anchor="middle" class="wire-text" fill="#212529">Cell 6</text>
+      <text x="588.67" y="331" text-anchor="middle" class="wire-text" style="fill: #212529">Cell 6</text>
     </g></g>
 </svg>

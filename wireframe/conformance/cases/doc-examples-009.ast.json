@@ -3,7 +3,83 @@
   "children": [
     {
       "attributes": {},
-      "children": [],
+      "children": [
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "BreadcrumbItem",
+          "end": {
+            "column": 1,
+            "line": 4,
+            "offset": 67
+          },
+          "modifiers": {},
+          "navigation": "Home",
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 39
+          },
+          "text": "Home",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "BreadcrumbItem",
+          "end": {
+            "column": 1,
+            "line": 5,
+            "offset": 111
+          },
+          "modifiers": {},
+          "navigation": "Products",
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 75
+          },
+          "text": "Products",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "BreadcrumbItem",
+          "end": {
+            "column": 1,
+            "line": 6,
+            "offset": 161
+          },
+          "modifiers": {},
+          "navigation": "Electronics",
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 119
+          },
+          "text": "Electronics",
+          "type": "Component"
+        },
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "BreadcrumbItem",
+          "end": {
+            "column": 1,
+            "line": 7,
+            "offset": 193
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 6,
+            "offset": 169
+          },
+          "text": "Phones",
+          "type": "Component"
+        }
+      ],
       "componentType": "Breadcrumb",
       "end": {
         "column": 16,

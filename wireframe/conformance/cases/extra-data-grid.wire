@@ -1,0 +1,11 @@
+wireframe clean
+    DataGrid rows=3
+        ColumnText "Name"
+        ColumnDate "Born"
+        ColumnNumber "Age"
+        ColumnCheckbox "Active"
+    /DataGrid
+    DataGrid rows=2 cols=2 selected w=300
+    /DataGrid
+    ColumnLink "Alone"
+/wireframe

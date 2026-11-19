@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="232" height="332" viewBox="0 0 232 332" role="img">
   <style>
     .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
     .wire-text-secondary { fill: #6c757d; }
@@ -9,14 +9,14 @@
   </style>
   
   <rect width="100%" height="100%" fill="#fefefe" />
-  <path d="M16.0 17.2 Q400.0 18.9 784.0 14.6 M784.3 16.0 Q791.0 300.0 783.6 584.0 M784.0 582.7 Q400.0 581.9 16.0 583.5 M15.8 584.0 Q10.4 300.0 15.7 16.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="button" aria-label="Dashboard"><g opacity="1">
+  <path d="M16.0 16.5 Q116.0 24.8 216.0 15.8 M216.9 16.0 Q217.6 166.0 217.4 316.0 M216.0 315.4 Q116.0 324.1 16.0 315.4 M15.2 316.0 Q17.5 166.0 16.5 16.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="button" aria-label="Dashboard"><g opacity="1">
       <path d="M32.0 33.2 Q82.0 38.0 132.0 31.5 M132.2 32.0 Q132.0 50.0 130.7 68.0 M132.0 66.7 Q82.0 76.1 32.0 67.3 M31.9 68.0 Q33.8 50.0 30.6 32.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="82" y="55" text-anchor="middle" class="wire-text" fill="#333333">Dashboard</text>
+      <text x="82" y="55" text-anchor="middle" class="wire-text" style="fill: #333333">Dashboard</text>
     </g></g><g role="button" aria-label="Settings"><g opacity="1">
       <path d="M32.0 71.7 Q82.0 73.6 132.0 73.3 M130.7 72.0 Q136.6 90.0 130.6 108.0 M132.0 108.2 Q82.0 107.3 32.0 107.8 M33.4 108.0 Q30.3 90.0 32.7 72.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="82" y="95" text-anchor="middle" class="wire-text" fill="#333333">Settings</text>
+      <text x="82" y="95" text-anchor="middle" class="wire-text" style="fill: #333333">Settings</text>
     </g></g><g role="button" aria-label="Profile"><g opacity="1">
       <path d="M32.0 113.2 Q82.0 106.3 132.0 110.7 M132.3 112.0 Q130.0 130.0 133.1 148.0 M132.0 146.7 Q82.0 152.3 32.0 147.0 M31.8 148.0 Q32.9 130.0 32.8 112.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="82" y="135" text-anchor="middle" class="wire-text" fill="#333333">Profile</text>
+      <text x="82" y="135" text-anchor="middle" class="wire-text" style="fill: #333333">Profile</text>
     </g></g>
 </svg>

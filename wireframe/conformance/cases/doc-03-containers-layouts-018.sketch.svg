@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="868" viewBox="0 0 800 868" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="368" viewBox="0 0 800 368" role="img">
   <style>
     .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
     .wire-text-secondary { fill: #6c757d; }
@@ -7,28 +7,28 @@
     .wire-text-small { font-size: 12px; }
     .wire-text-large { font-size: 18px; }
   </style>
-  
+  <defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15" /></filter></defs>
   <rect width="100%" height="100%" fill="#fefefe" />
-  <path d="M16.0 17.2 Q400.0 18.9 784.0 14.6 M784.3 16.0 Q791.0 300.0 783.6 584.0 M784.0 582.7 Q400.0 581.9 16.0 583.5 M15.8 584.0 Q10.4 300.0 15.7 16.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="**MyApp**"><text x="32" y="47" class="wire-text wire-text-bold">MyApp</text></g><g role="link" aria-label="Home"><g>
-      <text x="152" y="47" class="wire-text" fill="#4a90d9" style="text-decoration: underline">Home</text>
+  <path d="M16.0 16.3 Q400.0 18.5 784.0 15.7 M785.2 16.0 Q787.0 50.0 782.5 84.0 M784.0 83.6 Q400.0 82.4 16.0 85.4 M15.0 84.0 Q10.8 50.0 16.7 16.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="MyApp"><text x="32" y="47" class="wire-text wire-text-bold">MyApp</text></g><g role="link" aria-label="Home"><g>
+      <text x="152" y="47" class="wire-text" style="fill: #4a90d9; text-decoration: underline">Home</text>
     </g></g><g role="link" aria-label="About"><g>
-      <text x="208" y="47" class="wire-text" fill="#4a90d9" style="text-decoration: underline">About</text>
+      <text x="208" y="47" class="wire-text" style="fill: #4a90d9; text-decoration: underline">About</text>
     </g></g><g role="link" aria-label="Contact"><g>
-      <text x="264" y="47" class="wire-text" fill="#4a90d9" style="text-decoration: underline">Contact</text>
+      <text x="264" y="47" class="wire-text" style="fill: #4a90d9; text-decoration: underline">Contact</text>
     </g></g><g role="button" aria-label="Sign In"><g opacity="1">
       <path d="M336.0 31.0 Q386.0 28.8 436.0 32.3 M435.4 32.0 Q435.7 50.0 435.6 68.0 M436.0 68.9 Q386.0 72.1 336.0 68.8 M336.7 68.0 Q339.2 50.0 335.4 32.0" fill="#4a90d9" stroke="#888888" stroke-width="2" />
-      <text x="386" y="55" text-anchor="middle" class="wire-text" fill="#ffffff">Sign In</text>
-    </g></g><path d="M16.0 593.1 Q116.0 591.2 216.0 590.8 M216.3 592.0 Q208.4 692.0 214.7 792.0 M216.0 790.8 Q116.0 791.4 16.0 790.6 M15.8 792.0 Q25.7 692.0 14.6 592.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="button" aria-label="Dashboard"><g opacity="1">
-      <path d="M32.0 607.0 Q82.0 611.9 132.0 608.1 M131.4 608.0 Q133.9 626.0 132.4 644.0 M132.0 644.9 Q82.0 637.0 32.0 644.9 M32.7 644.0 Q31.2 626.0 30.6 608.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="82" y="631" text-anchor="middle" class="wire-text" fill="#333333">Dashboard</text>
+      <text x="386" y="55" text-anchor="middle" class="wire-text" style="fill: #ffffff">Sign In</text>
+    </g></g><path d="M16.0 91.2 Q116.0 89.6 216.0 93.4 M215.2 92.0 Q210.9 192.0 215.2 292.0 M216.0 292.6 Q116.0 293.9 16.0 291.0 M16.9 292.0 Q23.1 192.0 17.1 92.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="button" aria-label="Dashboard"><g opacity="1">
+      <path d="M32.0 108.1 Q82.0 109.9 132.0 107.7 M133.3 108.0 Q135.0 126.0 133.2 144.0 M132.0 143.8 Q82.0 139.0 32.0 145.4 M30.8 144.0 Q30.6 126.0 33.1 108.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="82" y="131" text-anchor="middle" class="wire-text" style="fill: #333333">Dashboard</text>
     </g></g><g role="button" aria-label="Projects"><g opacity="1">
-      <path d="M32.0 650.5 Q82.0 659.5 132.0 653.0 M131.9 652.0 Q131.9 670.0 131.5 688.0 M132.0 689.4 Q82.0 680.9 32.0 688.1 M32.2 688.0 Q32.7 670.0 31.4 652.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="82" y="675" text-anchor="middle" class="wire-text" fill="#333333">Projects</text>
+      <path d="M32.0 151.6 Q82.0 153.9 132.0 152.5 M130.8 152.0 Q133.0 170.0 132.0 188.0 M132.0 188.2 Q82.0 183.0 32.0 188.5 M33.3 188.0 Q28.2 170.0 31.6 152.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="82" y="175" text-anchor="middle" class="wire-text" style="fill: #333333">Projects</text>
     </g></g><g role="button" aria-label="Tasks"><g opacity="1">
-      <path d="M32.0 697.0 Q82.0 704.4 132.0 694.8 M132.4 696.0 Q131.3 714.0 130.7 732.0 M132.0 730.8 Q82.0 724.5 32.0 731.2 M31.7 732.0 Q33.0 714.0 32.9 696.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="82" y="719" text-anchor="middle" class="wire-text" fill="#333333">Tasks</text>
+      <path d="M32.0 195.1 Q82.0 201.5 132.0 197.4 M131.3 196.0 Q134.9 214.0 133.5 232.0 M132.0 232.7 Q82.0 227.0 32.0 231.7 M32.8 232.0 Q32.0 214.0 32.4 196.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="82" y="219" text-anchor="middle" class="wire-text" style="fill: #333333">Tasks</text>
     </g></g><g role="button" aria-label="Reports"><g opacity="1">
-      <path d="M32.0 740.5 Q82.0 748.4 132.0 739.7 M132.9 740.0 Q130.5 758.0 132.2 776.0 M132.0 775.3 Q82.0 768.5 32.0 777.4 M31.2 776.0 Q32.8 758.0 30.7 740.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="82" y="763" text-anchor="middle" class="wire-text" fill="#333333">Reports</text>
-    </g></g><path d="M224.0 593.2 Q504.0 598.7 784.0 593.3 M784.2 592.0 Q785.8 676.0 783.2 760.0 M784.0 758.6 Q504.0 754.2 224.0 759.7 M223.9 760.0 Q221.3 676.0 223.7 592.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="Dashboard"><text x="240" y="632" class="wire-text wire-text-bold" style="font-size: 24px">Dashboard</text></g><path d="M240.0 656.1 Q322.7 654.0 405.3 655.1 M406.6 656.0 Q398.8 700.0 406.1 744.0 M405.3 743.7 Q322.7 746.9 240.0 743.0 M238.8 744.0 Q245.7 700.0 241.1 656.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Total Users"><text x="256" y="687" class="wire-text">Total Users</text></g><g role="group" aria-label="1,234"><text x="256" y="718.67" class="wire-text wire-text-bold" style="font-size: 20px">1,234</text></g><path d="M421.3 656.8 Q504.0 653.5 586.7 656.1 M587.3 656.0 Q579.1 700.0 587.8 744.0 M586.7 743.1 Q504.0 747.4 421.3 745.0 M420.8 744.0 Q426.9 700.0 420.5 656.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Revenue"><text x="437.33" y="687" class="wire-text">Revenue</text></g><g role="group" aria-label="$5,678"><text x="437.33" y="718.67" class="wire-text wire-text-bold" style="font-size: 20px">$5,678</text></g><path d="M602.7 656.1 Q685.3 663.0 768.0 655.9 M769.4 656.0 Q769.9 700.0 768.6 744.0 M768.0 743.8 Q685.3 737.9 602.7 745.1 M601.4 744.0 Q601.3 700.0 601.7 656.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Active Projects"><text x="618.67" y="687" class="wire-text">Active Projects</text></g><g role="group" aria-label="42"><text x="618.67" y="718.67" class="wire-text wire-text-bold" style="font-size: 20px">42</text></g><path d="M16.0 800.5 Q400.0 794.8 784.0 799.9 M784.9 800.0 Q781.6 826.0 784.0 852.0 M784.0 851.4 Q400.0 858.0 16.0 852.2 M15.2 852.0 Q16.3 826.0 16.3 800.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="© 2024 MyApp Inc."><text x="32" y="831" class="wire-text">© 2024 MyApp Inc.</text></g>
+      <path d="M32.0 238.7 Q82.0 245.5 132.0 239.2 M131.8 240.0 Q135.1 258.0 132.6 276.0 M132.0 277.2 Q82.0 272.5 32.0 276.5 M32.4 276.0 Q31.7 258.0 33.3 240.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="82" y="263" text-anchor="middle" class="wire-text" style="fill: #333333">Reports</text>
+    </g></g><path d="M224.0 91.3 Q504.0 96.1 784.0 92.9 M783.1 92.0 Q787.5 176.0 784.0 260.0 M784.0 260.5 Q504.0 256.7 224.0 260.2 M225.0 260.0 Q219.7 176.0 223.3 92.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="Dashboard"><text x="240" y="132" class="wire-text wire-text-bold" style="font-size: 24px">Dashboard</text></g><path d="M240.0 157.2 Q322.7 151.5 405.3 154.6 M405.5 156.0 Q400.8 200.0 406.6 244.0 M405.3 242.6 Q322.7 249.4 240.0 243.5 M239.9 244.0 Q243.6 200.0 240.7 156.0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" /><g role="group" aria-label="Total Users"><text x="256" y="187" class="wire-text">Total Users</text></g><g role="group" aria-label="1,234"><text x="256" y="218.67" class="wire-text wire-text-bold" style="font-size: 20px">1,234</text></g><path d="M421.3 154.9 Q504.0 151.8 586.7 155.3 M586.2 156.0 Q581.6 200.0 585.2 244.0 M586.7 244.9 Q504.0 249.1 421.3 242.7 M421.9 244.0 Q424.4 200.0 420.1 156.0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" /><g role="group" aria-label="Revenue"><text x="437.33" y="187" class="wire-text">Revenue</text></g><g role="group" aria-label="$5,678"><text x="437.33" y="218.67" class="wire-text wire-text-bold" style="font-size: 20px">$5,678</text></g><path d="M602.7 157.2 Q685.3 160.5 768.0 155.5 M768.3 156.0 Q771.9 200.0 769.0 244.0 M768.0 242.7 Q685.3 240.4 602.7 242.6 M602.5 244.0 Q599.3 200.0 601.2 156.0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" /><g role="group" aria-label="Active Projects"><text x="618.67" y="187" class="wire-text">Active Projects</text></g><g role="group" aria-label="42"><text x="618.67" y="218.67" class="wire-text wire-text-bold" style="font-size: 20px">42</text></g><path d="M16.0 298.6 Q400.0 306.2 784.0 300.8 M783.8 300.0 Q784.4 326.0 783.8 352.0 M784.0 353.2 Q400.0 346.7 16.0 352.3 M16.3 352.0 Q16.8 326.0 15.2 300.0" fill="#f5f5f5" stroke="#888888" stroke-width="2" /><g role="group" aria-label="© 2024 MyApp Inc."><text x="32" y="331" class="wire-text">© 2024 MyApp Inc.</text></g>
 </svg>

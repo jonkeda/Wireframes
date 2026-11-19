@@ -11,9 +11,9 @@
   <rect width="100%" height="100%" fill="#1e3a5f" />
   <g role="button" aria-label="At 10,20"><g opacity="1">
       <rect x="26" y="36" width="100" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
-      <text x="76" y="59" text-anchor="middle" class="wire-text" fill="#ffffff">At 10,20</text>
+      <text x="76" y="59" text-anchor="middle" class="wire-text" style="fill: #ffffff">At 10,20</text>
     </g></g><g role="button" aria-label="At 200,150"><g opacity="1">
       <rect x="216" y="166" width="112" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
-      <text x="272" y="189" text-anchor="middle" class="wire-text" fill="#ffffff">At 200,150</text>
+      <text x="272" y="189" text-anchor="middle" class="wire-text" style="fill: #ffffff">At 200,150</text>
     </g></g><g role="img"><rect x="366" y="266" width="24" height="24" rx="2" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2,2" /></g>
 </svg>

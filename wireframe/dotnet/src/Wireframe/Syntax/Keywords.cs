@@ -110,19 +110,6 @@ public static class Keywords
         ["true"] = TokenKind.Boolean,
         ["false"] = TokenKind.Boolean,
 
-        // The TypeScript table is a plain object: these words find a property it inherits from Object.prototype.
-        ["constructor"] = TokenKind.PrototypeProperty,
-        ["hasOwnProperty"] = TokenKind.PrototypeProperty,
-        ["isPrototypeOf"] = TokenKind.PrototypeProperty,
-        ["propertyIsEnumerable"] = TokenKind.PrototypeProperty,
-        ["toLocaleString"] = TokenKind.PrototypeProperty,
-        ["toString"] = TokenKind.PrototypeProperty,
-        ["valueOf"] = TokenKind.PrototypeProperty,
-        ["__proto__"] = TokenKind.PrototypeProperty,
-        ["__defineGetter__"] = TokenKind.PrototypeProperty,
-        ["__defineSetter__"] = TokenKind.PrototypeProperty,
-        ["__lookupGetter__"] = TokenKind.PrototypeProperty,
-        ["__lookupSetter__"] = TokenKind.PrototypeProperty,
     };
 
     private static readonly HashSet<string> closing = new(StringComparer.Ordinal)
@@ -131,11 +118,11 @@ public static class Keywords
         "/Sidebar", "/Content", "/Panel", "/Card", "/Toolbar", "/StatusBar", "/Modal", "/Drawer", "/Dropdown",
         "/Tabs", "/Tab", "/Expander", "/Tree", "/TreeItem", "/List", "/Menu", "/MenuItem", "/Hamburger",
         "/Breadcrumb", "/Accordion", "/AccordionSection", "/Stepper", "/Dialog", "/Alert", "/Hover", "/Toast",
-        "/Skeleton", "/Table", "/DataGrid", "/Column", "/data", "/validations", "/calculations", "/rules",
+        "/Skeleton", "/Table", "/Row", "/DataGrid", "/Column", "/data", "/validations", "/calculations", "/rules",
         "/fields", "/component", "/Repeat", "/if",
     };
 
-    /// <summary>The kind of a word, when it is a keyword (or a word the TypeScript table finds by accident).</summary>
+    /// <summary>The kind of a word, when it is a keyword .</summary>
     public static bool TryGetKeyword(string word, out TokenKind kind) => words.TryGetValue(word, out kind);
 
     /// <summary>Whether a closing keyword (with its slash, such as <c>/Grid</c>) is one the language knows.</summary>
@@ -167,12 +154,14 @@ public static class Keywords
         or TokenKind.Slider or TokenKind.Switch or TokenKind.Chip or TokenKind.Pagination or TokenKind.Toast
         or TokenKind.Skeleton;
 
-    /// <summary>The components the parser reads (Step, BreadcrumbItem, Row, Cell and the typed columns are not among them).</summary>
+    /// <summary>The components, and their parts: a step, a breadcrumb item, a row and its cells, the typed columns.</summary>
     public static bool IsComponent(TokenKind kind) => kind is TokenKind.Tabs or TokenKind.Tab or TokenKind.Expander
         or TokenKind.Tree or TokenKind.TreeItem or TokenKind.List or TokenKind.Menu or TokenKind.MenuItem
         or TokenKind.Hamburger or TokenKind.Breadcrumb or TokenKind.Accordion or TokenKind.AccordionSection
         or TokenKind.Stepper or TokenKind.Dialog or TokenKind.Alert or TokenKind.Hover or TokenKind.Table
-        or TokenKind.DataGrid or TokenKind.Column;
+        or TokenKind.DataGrid or TokenKind.Column or TokenKind.Step or TokenKind.BreadcrumbItem or TokenKind.Row
+        or TokenKind.Cell or TokenKind.ColumnText or TokenKind.ColumnDate or TokenKind.ColumnNumber
+        or TokenKind.ColumnCheckbox or TokenKind.ColumnImage or TokenKind.ColumnLink or TokenKind.ColumnButton;
 
     /// <summary>The modifiers: primary, secondary, required, …</summary>
     public static bool IsModifier(TokenKind kind) => kind is TokenKind.Primary or TokenKind.Secondary

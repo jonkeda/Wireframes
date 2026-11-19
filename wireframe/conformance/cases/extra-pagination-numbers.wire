@@ -1,0 +1,5 @@
+wireframe clean
+    Pagination page=2 total=4
+    Pagination page="3" total="9"
+    Pagination
+/wireframe

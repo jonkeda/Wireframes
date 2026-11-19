@@ -11,6 +11,6 @@
   <rect width="100%" height="100%" fill="#ffffff" />
   <g role="group" aria-label="Escapes: &lt;b&gt; &amp; &quot;quoted&quot; &gt; done"><text x="16" y="31" class="wire-text">Escapes: &lt;b&gt; &amp; &quot;quoted&quot; &gt; done</text></g><g role="button" aria-label="Ünïcödé — ✓ 日本"><g opacity="1">
       <rect x="16" y="44" width="144" height="36" rx="4" fill="#e9ecef" stroke="#dee2e6" stroke-width="1" />
-      <text x="88" y="67" text-anchor="middle" class="wire-text" fill="#212529">Ünïcödé — ✓ 日本</text>
+      <text x="88" y="67" text-anchor="middle" class="wire-text" style="fill: #212529">Ünïcödé — ✓ 日本</text>
     </g></g>
 </svg>

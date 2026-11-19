@@ -5,7 +5,68 @@
       "attributes": {
         "rows": 3
       },
-      "children": [],
+      "children": [
+        {
+          "attributes": {},
+          "children": [],
+          "componentType": "ColumnText",
+          "end": {
+            "column": 1,
+            "line": 4,
+            "offset": 71
+          },
+          "modifiers": {
+            "editable": true
+          },
+          "start": {
+            "column": 9,
+            "line": 3,
+            "offset": 44
+          },
+          "text": "Name",
+          "type": "Component"
+        },
+        {
+          "attributes": {
+            "editable": false
+          },
+          "children": [],
+          "componentType": "ColumnCheckbox",
+          "end": {
+            "column": 1,
+            "line": 5,
+            "offset": 118
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 4,
+            "offset": 79
+          },
+          "text": "Active",
+          "type": "Component"
+        },
+        {
+          "attributes": {
+            "editable": true
+          },
+          "children": [],
+          "componentType": "ColumnNumber",
+          "end": {
+            "column": 1,
+            "line": 6,
+            "offset": 161
+          },
+          "modifiers": {},
+          "start": {
+            "column": 9,
+            "line": 5,
+            "offset": 126
+          },
+          "text": "Score",
+          "type": "Component"
+        }
+      ],
       "componentType": "DataGrid",
       "end": {
         "column": 14,

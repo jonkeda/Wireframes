@@ -1,0 +1,72 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {
+        "page": 2,
+        "total": 4
+      },
+      "controlType": "Pagination",
+      "end": {
+        "column": 30,
+        "line": 2,
+        "offset": 45
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 20
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {
+        "page": 3,
+        "total": 9
+      },
+      "controlType": "Pagination",
+      "end": {
+        "column": 34,
+        "line": 3,
+        "offset": 79
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 3,
+        "offset": 50
+      },
+      "type": "Control"
+    },
+    {
+      "attributes": {},
+      "controlType": "Pagination",
+      "end": {
+        "column": 15,
+        "line": 4,
+        "offset": 94
+      },
+      "modifiers": {},
+      "start": {
+        "column": 5,
+        "line": 4,
+        "offset": 84
+      },
+      "type": "Control"
+    }
+  ],
+  "dataSections": [],
+  "end": {
+    "column": 11,
+    "line": 5,
+    "offset": 105
+  },
+  "start": {
+    "column": 1,
+    "line": 1,
+    "offset": 0
+  },
+  "style": "clean",
+  "type": "Document"
+}

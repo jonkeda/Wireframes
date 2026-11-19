@@ -9,7 +9,7 @@
   </style>
   
   <rect width="100%" height="100%" fill="#ffffff" />
-  <g role="group" aria-label="**Progress Bar Variants**"><text x="16" y="31" class="wire-text wire-text-bold">Progress Bar Variants</text></g><g role="group" aria-label="0% Complete"><text x="16" y="67" class="wire-text">0% Complete</text></g><g role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><g>
+  <g role="group" aria-label="Progress Bar Variants"><text x="16" y="31" class="wire-text wire-text-bold">Progress Bar Variants</text></g><g role="group" aria-label="0% Complete"><text x="16" y="67" class="wire-text">0% Complete</text></g><g role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><g>
       <rect x="16" y="76" width="200" height="8" rx="4" fill="#f8f9fa" />
       <rect x="16" y="76" width="0" height="8" rx="4" fill="#0d6efd" />
     </g></g><g role="group" aria-label="25% Complete"><text x="16" y="111" class="wire-text">25% Complete</text></g><g role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><g>
@@ -24,7 +24,7 @@
     </g></g><g role="group" aria-label="100% Complete"><text x="16" y="243" class="wire-text">100% Complete</text></g><g role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><g>
       <rect x="16" y="252" width="200" height="8" rx="4" fill="#f8f9fa" />
       <rect x="16" y="252" width="200" height="8" rx="4" fill="#0d6efd" />
-    </g></g><g role="group"><line x1="16" y1="276" x2="216" y2="276" stroke="#dee2e6" stroke-width="1" /></g><g role="group" aria-label="**Loading State**"><text x="16" y="308" class="wire-text wire-text-bold">Loading State</text></g><g role="progressbar"><g>
+    </g></g><g role="group"><line x1="16" y1="276" x2="216" y2="276" stroke="#dee2e6" stroke-width="1" /></g><g role="group" aria-label="Loading State"><text x="16" y="308" class="wire-text wire-text-bold">Loading State</text></g><g role="progressbar"><g>
       <rect x="16" y="329" width="200" height="8" rx="4" fill="#f8f9fa" />
       <rect x="16" y="329" width="0" height="8" rx="4" fill="#0d6efd" />
     </g></g>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="972" viewBox="0 0 800 972" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="456" viewBox="0 0 800 456" role="img">
   <style>
     .wire-text { font-family: "Comic Sans MS", cursive, sans-serif; font-size: 14px; fill: #333333; }
     .wire-text-secondary { fill: #6c757d; }
@@ -7,16 +7,16 @@
     .wire-text-small { font-size: 12px; }
     .wire-text-large { font-size: 18px; }
   </style>
-  
+  <defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15" /></filter></defs>
   <rect width="100%" height="100%" fill="#fefefe" />
-  <path d="M16.0 17.2 Q400.0 18.9 784.0 14.6 M784.3 16.0 Q791.0 300.0 783.6 584.0 M784.0 582.7 Q400.0 581.9 16.0 583.5 M15.8 584.0 Q10.4 300.0 15.7 16.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Card content"><text x="32" y="47" class="wire-text">Card content</text></g><path d="M16.0 592.1 Q400.0 586.8 784.0 592.8 M785.4 592.0 Q782.8 618.0 783.7 644.0 M784.0 643.8 Q400.0 648.3 16.0 644.2 M14.7 644.0 Q20.2 618.0 15.2 592.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Card content"><text x="32" y="623" class="wire-text">Card content</text></g><path d="M16.0 652.8 Q400.0 647.4 784.0 651.5 M784.7 652.0 Q782.1 678.0 784.0 704.0 M784.0 703.1 Q400.0 711.2 16.0 705.2 M15.5 704.0 Q16.8 678.0 14.9 652.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Card content"><text x="32" y="683" class="wire-text">Card content</text></g><path d="M16.0 713.5 Q400.0 721.1 784.0 711.5 M784.0 712.0 Q784.8 738.0 782.7 764.0 M784.0 765.4 Q400.0 771.0 16.0 763.9 M16.2 764.0 Q18.1 738.0 16.3 712.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Card content"><text x="32" y="743" class="wire-text">Card content</text></g><path d="M16.0 771.2 Q400.0 777.2 784.0 772.9 M783.3 772.0 Q784.6 798.0 783.0 824.0 M784.0 824.7 Q400.0 819.3 16.0 824.2 M16.9 824.0 Q14.4 798.0 16.0 772.0" fill="#fefefe" stroke="#888888" stroke-width="2"  filter="url(#shadow)" /><g role="group" aria-label="Card content"><text x="32" y="803" class="wire-text">Card content</text></g><g role="button" aria-label="Click"><g opacity="1">
-      <path d="M16.0 831.6 Q66.0 827.4 116.0 830.9 M114.8 832.0 Q116.1 850.0 117.3 868.0 M116.0 868.2 Q66.0 870.4 16.0 866.8 M17.3 868.0 Q18.8 850.0 16.6 832.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="66" y="855" text-anchor="middle" class="wire-text" fill="#333333">Click</text>
+  <path d="M16.0 15.3 Q400.0 13.3 784.0 16.1 M783.2 16.0 Q777.6 42.0 784.4 68.0 M784.0 68.6 Q400.0 67.6 16.0 68.9 M17.0 68.0 Q21.4 42.0 14.6 16.0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" /><g role="group" aria-label="Card content"><text x="32" y="47" class="wire-text">Card content</text></g><path d="M16.0 76.0 Q400.0 71.3 784.0 75.2 M785.4 76.0 Q782.3 102.0 784.7 128.0 M784.0 127.9 Q400.0 129.6 16.0 126.9 M14.7 128.0 Q21.1 102.0 17.3 76.0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" /><g role="group" aria-label="Card content"><text x="32" y="107" class="wire-text">Card content</text></g><path d="M16.0 136.7 Q400.0 130.1 784.0 136.9 M784.7 136.0 Q784.1 162.0 783.3 188.0 M784.0 187.2 Q400.0 192.6 16.0 187.9 M15.4 188.0 Q18.9 162.0 15.6 136.0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" /><g role="group" aria-label="Card content"><text x="32" y="167" class="wire-text">Card content</text></g><path d="M16.0 197.4 Q400.0 203.2 784.0 196.2 M784.0 196.0 Q783.9 222.0 783.6 248.0 M784.0 249.5 Q400.0 254.5 16.0 247.8 M16.1 248.0 Q15.1 222.0 15.3 196.0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" /><g role="group" aria-label="Card content"><text x="32" y="227" class="wire-text">Card content</text></g><path d="M16.0 255.1 Q400.0 262.2 784.0 255.9 M783.3 256.0 Q786.0 282.0 784.6 308.0 M784.0 308.8 Q400.0 302.3 16.0 309.1 M16.8 308.0 Q14.8 282.0 17.3 256.0" fill="#fefefe" stroke="#888888" stroke-width="2" filter="url(#shadow)" /><g role="group" aria-label="Card content"><text x="32" y="287" class="wire-text">Card content</text></g><g role="button" aria-label="Click"><g opacity="1">
+      <path d="M16.0 315.6 Q66.0 311.8 116.0 316.2 M114.9 316.0 Q115.1 334.0 115.3 352.0 M116.0 352.3 Q66.0 354.8 16.0 352.5 M17.3 352.0 Q19.8 334.0 15.7 316.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="66" y="339" text-anchor="middle" class="wire-text" style="fill: #333333">Click</text>
     </g></g><g role="button" aria-label="Click"><g opacity="1">
-      <path d="M16.0 875.2 Q66.0 874.1 116.0 876.1 M115.3 876.0 Q112.3 894.0 116.5 912.0 M116.0 912.7 Q66.0 914.3 16.0 913.0 M16.8 912.0 Q18.6 894.0 17.5 876.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="66" y="899" text-anchor="middle" class="wire-text" fill="#333333">Click</text>
+      <path d="M16.0 359.1 Q66.0 357.6 116.0 361.4 M115.3 360.0 Q115.4 378.0 117.4 396.0 M116.0 396.8 Q66.0 397.8 16.0 395.0 M16.8 396.0 Q19.5 378.0 16.5 360.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="66" y="383" text-anchor="middle" class="wire-text" style="fill: #333333">Click</text>
     </g></g><g role="button" aria-label="Click"><g opacity="1">
-      <path d="M16.0 918.7 Q66.0 918.1 116.0 920.9 M115.8 920.0 Q112.6 938.0 115.6 956.0 M116.0 957.2 Q66.0 957.3 16.0 955.5 M16.4 956.0 Q18.3 938.0 15.3 920.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="66" y="943" text-anchor="middle" class="wire-text" fill="#333333">Click</text>
+      <path d="M16.0 402.6 Q66.0 399.1 116.0 403.9 M115.8 404.0 Q115.6 422.0 116.6 440.0 M116.0 441.3 Q66.0 441.8 16.0 441.1 M16.3 440.0 Q19.3 422.0 17.3 404.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
+      <text x="66" y="427" text-anchor="middle" class="wire-text" style="fill: #333333">Click</text>
     </g></g>
 </svg>

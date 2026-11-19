@@ -11,9 +11,9 @@
   <rect width="100%" height="100%" fill="#fefefe" />
   <g role="button" aria-label="At 10,20"><g opacity="1">
       <path d="M26.0 34.9 Q76.0 35.1 126.0 37.0 M125.5 36.0 Q122.2 54.0 125.5 72.0 M126.0 73.0 Q76.0 72.3 26.0 71.4 M26.6 72.0 Q28.7 54.0 25.4 36.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="76" y="59" text-anchor="middle" class="wire-text" fill="#333333">At 10,20</text>
+      <text x="76" y="59" text-anchor="middle" class="wire-text" style="fill: #333333">At 10,20</text>
     </g></g><g role="button" aria-label="At 200,150"><g opacity="1">
       <path d="M216.0 166.4 Q272.0 167.9 328.0 166.4 M329.0 166.0 Q332.7 184.0 328.4 202.0 M328.0 201.5 Q272.0 202.1 216.0 201.3 M215.1 202.0 Q213.4 184.0 215.5 166.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="272" y="189" text-anchor="middle" class="wire-text" fill="#333333">At 200,150</text>
+      <text x="272" y="189" text-anchor="middle" class="wire-text" style="fill: #333333">At 200,150</text>
     </g></g><g role="img"><rect x="366" y="266" width="24" height="24" rx="2" fill="none" stroke="#333333" stroke-width="1" stroke-dasharray="2,2" /></g>
 </svg>

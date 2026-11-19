@@ -11,12 +11,12 @@
   <rect width="100%" height="100%" fill="#fefefe" />
   <g role="button" aria-label="Span 2 cols"><g opacity="1">
       <path d="M16.0 16.3 Q76.0 13.3 136.0 15.2 M137.2 16.0 Q132.7 34.0 137.4 52.0 M136.0 51.6 Q76.0 57.8 16.0 50.9 M15.0 52.0 Q18.2 34.0 16.6 16.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="76" y="39" text-anchor="middle" class="wire-text" fill="#333333">Span 2 cols</text>
+      <text x="76" y="39" text-anchor="middle" class="wire-text" style="fill: #333333">Span 2 cols</text>
     </g></g><g role="button" aria-label="Normal"><g opacity="1">
       <path d="M533.3 15.5 Q583.3 16.0 633.3 15.7 M632.3 16.0 Q635.9 34.0 633.2 52.0 M633.3 52.4 Q583.3 48.9 533.3 53.4 M534.5 52.0 Q531.9 34.0 534.1 16.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="583.33" y="39" text-anchor="middle" class="wire-text" fill="#333333">Normal</text>
+      <text x="583.33" y="39" text-anchor="middle" class="wire-text" style="fill: #333333">Normal</text>
     </g></g><g role="button" aria-label="Span 2 rows"><g opacity="1">
       <path d="M16.0 304.7 Q76.0 298.3 136.0 303.5 M136.8 304.0 Q136.8 322.0 137.0 340.0 M136.0 339.2 Q76.0 344.4 16.0 338.6 M15.4 340.0 Q18.5 322.0 16.9 304.0" fill="#f0f0f0" stroke="#888888" stroke-width="2" />
-      <text x="76" y="327" text-anchor="middle" class="wire-text" fill="#333333">Span 2 rows</text>
+      <text x="76" y="327" text-anchor="middle" class="wire-text" style="fill: #333333">Span 2 rows</text>
     </g></g>
 </svg>

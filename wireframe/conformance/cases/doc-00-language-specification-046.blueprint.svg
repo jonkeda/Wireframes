@@ -11,6 +11,6 @@
   <rect width="100%" height="100%" fill="#1e3a5f" />
   <g role="button" aria-label="Log out"><g opacity="1">
       <rect x="16" y="16" width="100" height="36" rx="4" fill="#2a4a6f" stroke="#4a7ab0" stroke-width="1" />
-      <text x="66" y="39" text-anchor="middle" class="wire-text" fill="#ffffff">Log out</text>
+      <text x="66" y="39" text-anchor="middle" class="wire-text" style="fill: #ffffff">Log out</text>
     </g></g>
 </svg>

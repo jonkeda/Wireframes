@@ -1,0 +1,16 @@
+wireframe clean
+    Alert "Careful" type=warning
+    /Alert
+    Alert "Saved" type=success
+        Label "All changes are stored."
+    /Alert
+    Alert
+        Label "no text of its own"
+    /Alert
+    Dialog "Delete?"
+        Label "This cannot be undone."
+    /Dialog
+    Dialog title="By attribute" w=300
+        Button "OK"
+    /Dialog
+/wireframe

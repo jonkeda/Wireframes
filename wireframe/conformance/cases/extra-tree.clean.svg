@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="498" height="232" viewBox="0 0 498 232" role="img">
+  <style>
+    .wire-text { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #212529; }
+    .wire-text-secondary { fill: #6c757d; }
+    .wire-text-disabled { fill: #adb5bd; }
+    .wire-text-bold { font-weight: 600; }
+    .wire-text-small { font-size: 12px; }
+    .wire-text-large { font-size: 18px; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <g>
+      <rect x="16" y="16" width="250" height="200" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+    </g><g><rect x="16" y="20" width="250" height="32" fill="transparent" /><path d="M20 32 L28 32 L24 40 Z" fill="#6c757d" /><text x="40" y="41" class="wire-text">Root</text></g><g><rect x="16" y="52" width="250" height="32" fill="transparent" /><path d="M40 64 L48 64 L44 72 Z" fill="#6c757d" /><text x="60" y="73" class="wire-text">Child</text></g><g><rect x="16" y="84" width="250" height="32" fill="transparent" /><text x="64" y="105" class="wire-text">Grandchild</text></g><g><rect x="16" y="116" width="250" height="32" fill="transparent" /><text x="44" y="137" class="wire-text">Second child</text></g><g><rect x="16" y="148" width="250" height="32" fill="transparent" /><path d="M20 160 L28 164 L20 168 Z" fill="#6c757d" /><text x="40" y="169" class="wire-text">Closed</text></g><g><rect x="16" y="180" width="250" height="32" fill="transparent" /><text x="24" y="201" class="wire-text">Leaf</text></g><g>
+      <rect x="282" y="16" width="200" height="168" fill="#ffffff" stroke="#dee2e6" stroke-width="1" />
+    </g><g><rect x="282" y="20" width="200" height="32" fill="transparent" /><path d="M286 32 L294 32 L290 40 Z" fill="#6c757d" /><text x="306" y="41" class="wire-text">src</text></g><g><rect x="282" y="52" width="200" height="32" fill="transparent" /><path d="M306 64 L314 64 L310 72 Z" fill="#6c757d" /><text x="326" y="73" class="wire-text">core</text></g><g><rect x="282" y="84" width="200" height="32" fill="transparent" /><text x="330" y="105" class="wire-text">parser.ts</text></g><g><rect x="282" y="116" width="200" height="32" fill="transparent" /><text x="310" y="137" class="wire-text">index.ts</text></g><g><rect x="282" y="148" width="200" height="32" fill="transparent" /><text x="290" y="169" class="wire-text">README.md</text></g>
+</svg>
